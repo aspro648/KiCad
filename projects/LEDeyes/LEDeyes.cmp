@@ -1,0 +1,94 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 11/20/2014 3:57:49 PM
+
+BeginCmp
+TimeStamp = /54481DA4;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = BATT_CR2032;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482DAB;
+Reference = B_N1;
+ValeurCmp = GND;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482E6F;
+Reference = B_N2;
+ValeurCmp = GND;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482E69;
+Reference = B_P1;
+ValeurCmp = PWR;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482E7A;
+Reference = B_P2;
+ValeurCmp = PWR;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54481F7A;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /546E810B;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /546E811E;
+Reference = L1;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482EA9;
+Reference = L1_C1;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482EA3;
+Reference = L1_C2;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /546E8124;
+Reference = L2;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5448256B;
+Reference = R1;
+ValeurCmp = 330;
+IdModule  = R3-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /546E8111;
+Reference = R2;
+ValeurCmp = 330;
+IdModule  = R3-LARGE_PADS;
+EndCmp
+
+EndListe

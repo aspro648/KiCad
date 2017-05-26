@@ -1,0 +1,20 @@
+(module ARROW (layer F.Cu) (tedit 56D351DA)
+  (descr "LED 3mm - Lead pitch 100mil (2,54mm)")
+  (tags "LED led 3mm 3MM 100mil 2,54mm")
+  (fp_text reference Q1 (at 2.54 0 90) (layer F.SilkS) hide
+    (effects (font (size 0.762 0.762) (thickness 0.0889)))
+  )
+  (fp_text value OPTO_NPN (at 0.35921 0.35921 180) (layer F.SilkS) hide
+    (effects (font (size 0.508 0.508) (thickness 0.127)))
+  )
+  (fp_line (start 1.25 -0.25) (end -0.15 -0.25) (layer F.SilkS) (width 0.3))
+  (fp_line (start -0.15 -0.25) (end 0.15 0.45) (layer F.SilkS) (width 0.3))
+  (fp_line (start 0.15 0.45) (end -1.05 0.45) (layer F.SilkS) (width 0.3))
+  (fp_line (start 1.45 -0.25) (end 0.85 -0.55) (layer F.SilkS) (width 0.3))
+  (fp_line (start 0.85 0.05) (end 1.45 -0.25) (layer F.SilkS) (width 0.3))
+  (model LEDs.3dshapes/LED-3MM.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 -90))
+  )
+)

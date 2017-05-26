@@ -1,0 +1,45 @@
+Cmp-Mod V01 Created by Cvpcb (2015-04-22 BZR 5621)-product   date = 4/25/2015 5:25:52 PM
+
+BeginCmp
+TimeStamp = /553C1258;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = myFootPrints:LED_10MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /553C12C2;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = myFootPrints:LED_10MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /553C14F6;
+Reference = P1;
+ValeurCmp = CONN_01X10;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x10;
+EndCmp
+
+BeginCmp
+TimeStamp = /553C137C;
+Reference = R1;
+ValeurCmp = 220;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /553C13EB;
+Reference = R2;
+ValeurCmp = 220;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /553C154A;
+Reference = SP1;
+ValeurCmp = SPEAKER;
+IdModule  = myFootPrints:PS1240_piezo;
+EndCmp
+
+EndListe

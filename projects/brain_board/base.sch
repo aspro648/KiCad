@@ -1,0 +1,513 @@
+EESchema Schematic File Version 2
+LIBS:base-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:base-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Pixel Pal Base"
+Date ""
+Rev ""
+Comp "Soldering Sunday"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-P IC1
+U 1 1 553EFD0A
+P 3750 3600
+F 0 "IC1" H 2600 4000 40  0000 C CNN
+F 1 "ATTINY85" H 4750 3200 40  0000 C CNN
+F 2 "Housings_DIP:DIP-8__300" H 4750 3600 35  0001 C CIN
+F 3 "" H 3750 3600 60  0000 C CNN
+	1    3750 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L USB J1
+U 1 1 553EFD45
+P 7700 4350
+F 0 "J1" H 7650 4750 60  0000 C CNN
+F 1 "USB" V 7450 4500 60  0000 C CNN
+F 2 "Connect:USB_B" H 7700 4350 60  0001 C CNN
+F 3 "" H 7700 4350 60  0000 C CNN
+	1    7700 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 553EFED0
+P 7750 3750
+F 0 "C2" V 7850 3800 50  0000 L CNN
+F 1 "10uF" V 7600 3600 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 7750 3750 60  0001 C CNN
+F 3 "" H 7750 3750 60  0000 C CNN
+	1    7750 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D-RESCUE-base D4
+U 1 1 553EFF0C
+P 7750 3350
+F 0 "D4" H 7750 3450 50  0000 C CNN
+F 1 "1N4001" H 7750 3250 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10" H 7750 3350 60  0001 C CNN
+F 3 "" H 7750 3350 60  0000 C CNN
+	1    7750 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 553EFF3F
+P 7350 3050
+F 0 "R4" V 7430 3050 50  0000 C CNN
+F 1 "330" V 7350 3050 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 7280 3050 30  0001 C CNN
+F 3 "" H 7350 3050 30  0000 C CNN
+	1    7350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 553F0099
+P 7500 2300
+F 0 "#PWR01" H 7500 2150 50  0001 C CNN
+F 1 "+5V" H 7500 2440 50  0000 C CNN
+F 2 "" H 7500 2300 60  0000 C CNN
+F 3 "" H 7500 2300 60  0000 C CNN
+	1    7500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 553F01DC
+P 8100 3750
+F 0 "#PWR02" H 8100 3500 50  0001 C CNN
+F 1 "GND" H 8100 3600 50  0000 C CNN
+F 2 "" H 8100 3750 60  0000 C CNN
+F 3 "" H 8100 3750 60  0000 C CNN
+	1    8100 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +BATT #PWR03
+U 1 1 553F01F6
+P 8100 3350
+F 0 "#PWR03" H 8100 3200 50  0001 C CNN
+F 1 "+BATT" H 8100 3490 50  0000 C CNN
+F 2 "" H 8100 3350 60  0000 C CNN
+F 3 "" H 8100 3350 60  0000 C CNN
+	1    8100 3350
+	0    1    1    0   
+$EndComp
+NoConn ~ 7250 3950
+NoConn ~ 7250 4700
+$Comp
+L R R3
+U 1 1 553F0382
+P 6800 4550
+F 0 "R3" V 6880 4550 50  0000 C CNN
+F 1 "1K5" V 6800 4550 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6730 4550 30  0001 C CNN
+F 3 "" H 6800 4550 30  0000 C CNN
+	1    6800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 553F03AA
+P 6500 4550
+F 0 "R2" V 6580 4550 50  0000 C CNN
+F 1 "22" V 6500 4550 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6430 4550 30  0001 C CNN
+F 3 "" H 6500 4550 30  0000 C CNN
+	1    6500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 553F03CB
+P 6200 4550
+F 0 "R1" V 6280 4550 50  0000 C CNN
+F 1 "22" V 6200 4550 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6130 4550 30  0001 C CNN
+F 3 "" H 6200 4550 30  0000 C CNN
+	1    6200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER-RESCUE-base D2
+U 1 1 553F04BF
+P 6500 5200
+F 0 "D2" H 6500 5300 50  0000 C CNN
+F 1 "ZD3V6" H 6500 5100 50  0000 C CNN
+F 2 "Discret:D3" H 6500 5200 60  0001 C CNN
+F 3 "" H 6500 5200 60  0000 C CNN
+	1    6500 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ZENER-RESCUE-base D1
+U 1 1 553F04E8
+P 6200 5200
+F 0 "D1" H 6200 5300 50  0000 C CNN
+F 1 "ZD3V6" H 6200 5100 50  0000 C CNN
+F 2 "Discret:D3" H 6200 5200 60  0001 C CNN
+F 3 "" H 6200 5200 60  0000 C CNN
+	1    6200 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 553F09F6
+P 5500 5500
+F 0 "#PWR04" H 5500 5250 50  0001 C CNN
+F 1 "GND" H 5500 5350 50  0000 C CNN
+F 2 "" H 5500 5500 60  0000 C CNN
+F 3 "" H 5500 5500 60  0000 C CNN
+	1    5500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPTO_NPN Q1
+U 1 1 553F0F1B
+P 6450 3100
+F 0 "Q1" H 6600 3150 50  0000 L CNN
+F 1 "LIGHT" V 6300 3000 50  0000 L CNN
+F 2 "myFootPrints:PHOTO_TRANS" H 6450 3100 60  0001 C CNN
+F 3 "" H 6450 3100 60  0000 C CNN
+	1    6450 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH TOUCH1
+U 1 1 553F2A7C
+P 5500 4500
+F 0 "TOUCH1" H 5650 4610 50  0000 C CNN
+F 1 "SW_PUSH" H 5500 4420 50  0000 C CNN
+F 2 "myFootPrints:SW_PUSH_TOUCH" H 5500 4500 60  0001 C CNN
+F 3 "" H 5500 4500 60  0000 C CNN
+	1    5500 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X10 P1
+U 1 1 553F4A67
+P 5950 1950
+F 0 "P1" H 5950 2500 50  0000 C CNN
+F 1 "CONN_01X10" V 6050 1950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 5950 1950 60  0001 C CNN
+F 3 "" H 5950 1950 60  0000 C CNN
+	1    5950 1950
+	0    -1   -1   0   
+$EndComp
+Text Notes 5100 3350 0    60   ~ 0
+D5/A0
+Text Notes 5100 3450 0    60   ~ 0
+D4/A2
+Text Notes 5100 3550 0    60   ~ 0
+D3/A3
+Text Notes 5100 3650 0    60   ~ 0
+D2/A1
+Text Notes 5100 3750 0    60   ~ 0
+D1/pwm
+Text Notes 5100 3850 0    60   ~ 0
+D0/pwm
+Text Notes 5500 2450 1    60   ~ 0
+TOUCH
+Text Notes 5600 2450 1    60   ~ 0
+SOUND
+Text Notes 5700 2450 1    60   ~ 0
+RT EYE
+Text Notes 5800 2450 1    60   ~ 0
+LF EYE
+Text Notes 6100 2450 1    60   ~ 0
+GND
+$Comp
+L GND #PWR05
+U 1 1 553F952C
+P 2250 3350
+F 0 "#PWR05" H 2250 3100 50  0001 C CNN
+F 1 "GND" H 2250 3200 50  0000 C CNN
+F 2 "" H 2250 3350 60  0000 C CNN
+F 3 "" H 2250 3350 60  0000 C CNN
+	1    2250 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L +BATT #PWR06
+U 1 1 553F9565
+P 2250 3850
+F 0 "#PWR06" H 2250 3700 50  0001 C CNN
+F 1 "+BATT" H 2250 3990 50  0000 C CNN
+F 2 "" H 2250 3850 60  0000 C CNN
+F 3 "" H 2250 3850 60  0000 C CNN
+	1    2250 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SPST SW1
+U 1 1 553F9580
+P 3250 4500
+F 0 "SW1" H 3250 4600 50  0000 C CNN
+F 1 "SPST" H 3250 4400 50  0000 C CNN
+F 2 "myFootPrints:SW_SPST" H 3250 4500 60  0001 C CNN
+F 3 "" H 3250 4500 60  0000 C CNN
+	1    3250 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 553F9619
+P 4400 4900
+F 0 "BT1" H 4500 4950 50  0000 L CNN
+F 1 "Battery" H 4500 4850 50  0000 L CNN
+F 2 "myFootPrints:BATT_CR2032" V 4400 4940 60  0001 C CNN
+F 3 "" V 4400 4940 60  0000 C CNN
+	1    4400 4900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6300 2150
+NoConn ~ 6400 2150
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 553FAE81
+P 900 900
+F 0 "#FLG07" H 900 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 1080 50  0000 C CNN
+F 2 "" H 900 900 60  0000 C CNN
+F 3 "" H 900 900 60  0000 C CNN
+	1    900  900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 553FAEA5
+P 1250 900
+F 0 "#FLG08" H 1250 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 1250 1080 50  0000 C CNN
+F 2 "" H 1250 900 60  0000 C CNN
+F 3 "" H 1250 900 60  0000 C CNN
+	1    1250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 553FAEE7
+P 1250 1000
+F 0 "#PWR09" H 1250 750 50  0001 C CNN
+F 1 "GND" H 1250 850 50  0000 C CNN
+F 2 "" H 1250 1000 60  0000 C CNN
+F 3 "" H 1250 1000 60  0000 C CNN
+	1    1250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR010
+U 1 1 553FAF12
+P 900 1000
+F 0 "#PWR010" H 900 850 50  0001 C CNN
+F 1 "+BATT" H 900 1140 50  0000 C CNN
+F 2 "" H 900 1000 60  0000 C CNN
+F 3 "" H 900 1000 60  0000 C CNN
+	1    900  1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 553FDF53
+P 2400 3600
+F 0 "C1" H 2425 3700 50  0000 L CNN
+F 1 "0.1 uF" H 2425 3500 50  0000 L CNN
+F 2 "myFootPrints:C1" H 2438 3450 30  0001 C CNN
+F 3 "" H 2400 3600 60  0000 C CNN
+	1    2400 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2450 7350 2450
+Wire Wire Line
+	7350 2450 7350 2500
+Wire Wire Line
+	7500 2300 7500 3950
+Wire Wire Line
+	7350 2900 7350 2900
+Wire Wire Line
+	7350 3200 7350 3950
+Wire Wire Line
+	6800 3750 7600 3750
+Connection ~ 7500 3750
+Wire Wire Line
+	7600 3350 7500 3350
+Connection ~ 7500 3350
+Wire Wire Line
+	8100 3350 7900 3350
+Wire Wire Line
+	8100 3750 7900 3750
+Wire Wire Line
+	6200 4700 6200 5000
+Wire Wire Line
+	6500 4700 6500 5000
+Wire Wire Line
+	7350 4800 7350 4700
+Wire Wire Line
+	6200 4800 7350 4800
+Connection ~ 6200 4800
+Wire Wire Line
+	7500 4700 7500 4900
+Wire Wire Line
+	7500 4900 6500 4900
+Connection ~ 6500 4900
+Wire Wire Line
+	6800 4800 6800 4700
+Connection ~ 6800 4800
+Wire Wire Line
+	4400 5400 6500 5400
+Wire Wire Line
+	6800 3750 6800 4400
+Wire Wire Line
+	6500 3450 6500 4400
+Wire Wire Line
+	5100 3450 6500 3450
+Wire Wire Line
+	5100 3550 6200 3550
+Wire Wire Line
+	6200 3550 6200 4400
+Wire Wire Line
+	6800 3000 6650 3000
+Wire Wire Line
+	5100 3350 6200 3350
+Wire Wire Line
+	6200 3350 6200 3000
+Wire Wire Line
+	6200 3000 6250 3000
+Connection ~ 6200 5400
+Wire Wire Line
+	5100 3850 5600 3850
+Wire Wire Line
+	5500 2150 5500 4200
+Connection ~ 5500 3650
+Wire Wire Line
+	5600 3850 5600 2150
+Wire Wire Line
+	5100 3750 5700 3750
+Wire Wire Line
+	5700 3750 5700 2150
+Wire Wire Line
+	5800 2150 5800 3450
+Connection ~ 5800 3450
+Wire Wire Line
+	6100 2150 6100 2500
+Wire Wire Line
+	4400 5400 4400 5050
+Wire Wire Line
+	4400 4750 4400 4500
+Wire Wire Line
+	4400 4500 3750 4500
+Wire Wire Line
+	2400 4500 2750 4500
+Wire Wire Line
+	2400 3750 2400 4500
+Wire Wire Line
+	2400 3850 2250 3850
+Wire Wire Line
+	2250 3350 2400 3350
+Wire Wire Line
+	900  900  900  1000
+Wire Wire Line
+	1250 900  1250 1000
+Wire Wire Line
+	2400 3350 2400 3450
+Connection ~ 2400 3850
+Wire Wire Line
+	5500 4800 5500 5500
+Connection ~ 5500 5400
+Wire Wire Line
+	5500 3650 5100 3650
+Wire Wire Line
+	6000 2500 6800 2500
+Wire Wire Line
+	6800 2500 6800 3450
+$Comp
+L GND #PWR011
+U 1 1 553FA1FB
+P 6800 3450
+F 0 "#PWR011" H 6800 3200 50  0001 C CNN
+F 1 "GND" H 6800 3300 50  0000 C CNN
+F 2 "" H 6800 3450 60  0000 C CNN
+F 3 "" H 6800 3450 60  0000 C CNN
+	1    6800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3350 7350 3350
+Connection ~ 7350 3350
+Connection ~ 6800 3000
+Connection ~ 8600 4850
+Connection ~ 7500 2450
+Connection ~ 6800 3350
+Wire Wire Line
+	5900 3350 5900 2150
+Connection ~ 5900 3350
+Text Notes 5900 2450 1    60   ~ 0
+LIGHT
+Wire Wire Line
+	6000 2500 6000 2150
+Connection ~ 6100 2500
+$Comp
+L +BATT #PWR012
+U 1 1 55426DB4
+P 6200 2300
+F 0 "#PWR012" H 6200 2150 50  0001 C CNN
+F 1 "+BATT" V 6250 2350 50  0000 C CNN
+F 2 "" H 6200 2300 60  0000 C CNN
+F 3 "" H 6200 2300 60  0000 C CNN
+	1    6200 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 2150 6200 2300
+$Comp
+L LED D3
+U 1 1 55F7837D
+P 7350 2700
+F 0 "D3" H 7350 2800 50  0000 C CNN
+F 1 "LED" H 7350 2600 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 7350 2700 60  0001 C CNN
+F 3 "" H 7350 2700 60  0000 C CNN
+	1    7350 2700
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+QTY   Description   Link
+2     10MM LED
+1     Piezo   http://www.digikey.com/product-detail/en/0/445-2525-1-ND

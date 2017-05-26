@@ -1,0 +1,13 @@
+(module SW_SPST_TOGGLE (layer F.Cu) (tedit 567A8033)
+  (descr "Switch inverseur")
+  (tags "SWITCH DEV")
+  (fp_text reference SW1 (at 0 1.905 180) (layer F.SilkS) hide
+    (effects (font (size 1.016 1.016) (thickness 0.2032)))
+  )
+  (fp_text value TOGGLE (at 0 -2.54 180) (layer F.SilkS) hide
+    (effects (font (size 0.508 0.508) (thickness 0.127)))
+  )
+  (pad 2 thru_hole oval (at 0 0) (size 3.556 1.778) (drill oval 2.286 0.8128) (layers *.Cu *.Mask F.SilkS))
+  (pad 1 thru_hole oval (at 0 -4.445) (size 3.556 1.778) (drill oval 2.286 0.8128) (layers *.Cu *.Mask F.SilkS))
+  (pad 3 thru_hole oval (at 0 4.445) (size 3.556 1.778) (drill oval 2.286 0.8128) (layers *.Cu *.Mask F.SilkS))
+)

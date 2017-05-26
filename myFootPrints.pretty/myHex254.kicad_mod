@@ -1,0 +1,14 @@
+(module myHex254 (layer F.Cu) (tedit 56B7CBB7)
+  (fp_text reference REF** (at 0 0.5) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value myHex (at 5.08 13.97) (layer Dwgs.User) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start 0 0) (end 22 12.7) (layer Edge.Cuts) (width 0.1))
+  (fp_line (start 22 12.7) (end 22 38.1) (layer Edge.Cuts) (width 0.1))
+  (fp_line (start 22 38.1) (end 0 50.8) (layer Edge.Cuts) (width 0.1))
+  (fp_line (start 0 50.8) (end -22 38.1) (layer Edge.Cuts) (width 0.1))
+  (fp_line (start -22 38.1) (end -22 12.7) (layer Edge.Cuts) (width 0.1))
+  (fp_line (start -22 12.7) (end 0 0) (layer Edge.Cuts) (width 0.1))
+)

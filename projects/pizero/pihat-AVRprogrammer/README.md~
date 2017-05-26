@@ -1,0 +1,33 @@
+# PiZero USB Hub - 4 #
+
+The PiZero Hub is a USB hub designed in the form factor of the Raspberry Pi
+Zero. This Raspberry Pi Zero was created to be much smaller than the Raspberry
+Pi, however some projects still require the functianlity of multiple USB ports.
+This Hub uses the TUSB2046B, this device driver registers as a "Generic USB Hub"
+to this effect no programming of the device is needed if you are making it
+yourself.
+
+This device is not USB compliant as there are some key features missing, this 
+device does not comply with Raspberry Pi Hat standards. That being said this
+device can power the Raspberry Pi and downstream USB devices.
+
+The device can be connected to the Raspberry Pi be soldering wires between the 
+USB test points and P3. Or a USB micro to USB micro cable can be used. The power
+can come from the Raspberry Pi or can come from the barrel jack on the board.
+
+*This project is licensed under the CERN OHL v1.2*
+
+### Features ###
+
+- TUSB2046B 4 - port USB controller
+- 3.3v Supply for future additions
+- USB micro port
+- 4 x USB A port
+- Header Pins for upstream USB device
+
+### To do ###
+
+- build and test
+- add the Power control and over current monitoring for USB compliance
+- add eeprom for configurable vendor ID and drivers
+- add ferrite beads to vcc on each port
