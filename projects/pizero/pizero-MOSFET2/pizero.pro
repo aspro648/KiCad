@@ -1,4 +1,4 @@
-update=5/4/2017 9:50:20 AM
+update=6/8/2017 1:56:03 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -26,8 +26,6 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.4
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -120,4 +118,5 @@ LibName75=video
 LibName76=Xicor
 LibName77=xilinx
 LibName78=Zilog
-LibName79=project_libs/raspberry_pi_+_conn
+[general]
+version=1
