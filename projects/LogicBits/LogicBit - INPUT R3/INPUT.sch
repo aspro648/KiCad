@@ -226,4 +226,24 @@ F 3 "" H 3950 2700 30  0000 C CNN
 	1    3950 2700
 	0    -1   -1   0   
 $EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 594C7413
+P 3800 1100
+F 0 "P1" H 3800 1300 50  0000 C CNN
+F 1 "JMP_OUT" V 3900 1100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3800 1100 60  0001 C CNN
+F 3 "" H 3800 1100 60  0000 C CNN
+	1    3800 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 1300 3700 1550
+Connection ~ 3700 1550
+Wire Wire Line
+	3800 1300 3800 1650
+Connection ~ 3800 1650
+Wire Wire Line
+	3900 1300 3900 1750
+Connection ~ 3900 1750
 $EndSCHEMATC
