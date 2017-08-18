@@ -25,11 +25,11 @@ Bill Of Materials
 
 Design Files
 ============
-This project is designed using Open Source [KiCad](http://kicad-pcb.org/). Design files are located in the [design_files](design_files/) folder.   
+This project is designed using Open Source [KiCad](http://kicad-pcb.org/). Design files are located in the [design_files](design_files/) folder.  You can oogle the [schematic](images/base.sch.png).
 
 Firmware
 ========
-This project is programed using the Open Source [Arduino](https://www.arduino.cc/). I use my Open Source [AVR Programming Shield](https://www.tindie.com/products/MakersBox/yet-another-programming-shield/) to program the Attiny85. The firmware is locagted in the "firmware" folder.
+This project is programed using the Open Source [Arduino](https://www.arduino.cc/). I use my Open Source [AVR Programming Shield](https://www.tindie.com/products/MakersBox/yet-another-programming-shield/) to program the Attiny85. The firmware is locagted in the [firmware](folder/).
 
 Assembly Instructions
 =====================
