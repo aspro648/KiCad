@@ -36,11 +36,11 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Pixel Pal Base"
+Title "I Can Surface Mount Solder"
 Date ""
 Rev ""
-Comp "Soldering Sunday"
-Comment1 ""
+Comp "www.MakersBox.us"
+Comment1 "K. Olsen"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -155,28 +155,6 @@ F 3 "" H 1950 2100 60  0000 C CNN
 	1    1950 2100
 	0    -1   -1   0   
 $EndComp
-Text Notes 8100 5050 0    60   ~ 0
-D0
-Text Notes 8100 5150 0    60   ~ 0
-D1
-Text Notes 8100 5250 0    60   ~ 0
-D2 PWM
-Text Notes 8100 4750 0    60   ~ 0
-D4/A6 PWM
-Text Notes 8100 4850 0    60   ~ 0
-D3/A7 PWM
-Text Notes 8100 4650 0    60   ~ 0
-D5/A5 PWM\n
-Text Notes 8100 4550 0    60   ~ 0
-D6/A4
-Text Notes 8100 4450 0    60   ~ 0
-D7/A3
-Text Notes 8100 4350 0    60   ~ 0
-D8/A2
-Text Notes 8100 4250 0    60   ~ 0
-D9/A1
-Text Notes 8100 4150 0    60   ~ 0
-D10/A0
 $Comp
 L +BATT #PWR08
 U 1 1 56DD00C2
@@ -216,11 +194,6 @@ F 3 "" H 6850 2400 60  0000 C CNN
 	1    6850 2400
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 8100 5150
-NoConn ~ 8100 5050
-NoConn ~ 8100 4450
-NoConn ~ 8100 4350
-NoConn ~ 8100 4250
 $Comp
 L GND #PWR011
 U 1 1 56ED00B6
@@ -232,7 +205,6 @@ F 3 "" H 6850 2100 60  0000 C CNN
 	1    6850 2100
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 8100 4150
 $Comp
 L AVR-ISP-6 CON1
 U 1 1 58609061
@@ -303,7 +275,7 @@ U 1 1 58C478D3
 P 4050 1850
 F 0 "IC1" H 2900 2250 50  0000 C CNN
 F 1 "ATTINY85-S" H 5050 1450 50  0000 C CNN
-F 2 "Housings_SOIC:SOIJ-8_5.3x5.3mm_Pitch1.27mm" H 5000 1850 50  0000 C CIN
+F 2 "Housings_SOIC:SOIJ-8_5.3x5.3mm_Pitch1.27mm" H 4150 2250 50  0000 C CIN
 F 3 "" H 4050 1850 50  0000 C CNN
 	1    4050 1850
 	-1   0    0    1   
