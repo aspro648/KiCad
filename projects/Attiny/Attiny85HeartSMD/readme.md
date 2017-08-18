@@ -1,7 +1,7 @@
 Introduction
 ============
 
-![Attiny85](/images/base.png) 
+![Attiny85](images/base.png) 
 Surface mount soldering can be a daunting to a hobbiest, but it can be done, and is actually much easier than it looks. I've designed this project to be a gentle introduction.
 
 This project used "1206" size components which are pretty easy to hand solder, and that is where we'll start. The Attiny microcontroller is an "SOIC" package, which is a bit more of a challenge, but still quite within the abilities of hand soldering with hobby equipment.
@@ -25,7 +25,7 @@ Bill Of Materials
 
 Design Files
 ============
-This project is designed using Open Source [KiCad](http://kicad-pcb.org/). Design files are located in the "design_files" folder.   
+This project is designed using Open Source [KiCad](http://kicad-pcb.org/). Design files are located in the [design_files](design_files/) folder.   
 
 Firmware
 ========
@@ -37,8 +37,7 @@ I have posted [detailed instructions at Instructables](https://www.instructables
 
 License
 =======
-[Attribution-NonCommercial-ShareAlike 3.0 United States (CC BY-NC-SA 3.0 US)]
-(https://creativecommons.org/licenses/by-nc-sa/3.0/us/)
+[Attribution-NonCommercial-ShareAlike 3.0 United States (CC BY-NC-SA 3.0 US)](https://creativecommons.org/licenses/by-nc-sa/3.0/us/)
 
 You are free to:
 
