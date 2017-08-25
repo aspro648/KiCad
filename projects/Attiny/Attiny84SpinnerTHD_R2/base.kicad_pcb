@@ -3,7 +3,7 @@
   (general
     (links 46)
     (no_connects 0)
-    (area 158.699999 68.529999 247.700001 96.570001)
+    (area 157.48 66.04 247.700001 98.425001)
     (thickness 1.6)
     (drawings 25)
     (tracks 152)
@@ -1637,7 +1637,7 @@
   (gr_text D1 (at 185.928 85.09) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text CR1220 (at 227.457 93.599) (layer F.SilkS)
+  (gr_text CR2032 (at 227.457 93.599) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text "GEEK\nSPINNER" (at 233.68 75.565) (layer B.SilkS)
