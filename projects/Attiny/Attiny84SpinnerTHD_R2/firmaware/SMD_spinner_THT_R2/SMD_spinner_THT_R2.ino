@@ -1,6 +1,8 @@
 
 /*
 
+avrdude -C ..\etc\avrdude.conf -P COM8 -b 19200 -c avrisp -p attiny84 -v -e -U lfuse:w:0xE2:m -U hfuse:w:0xD7:m -U efuse:w:0xFf:m  -U flash:w:SMD_spinner_THT_R2.cpp.hex
+
 Not all Attiny cores support the tone() function. Try this one
 https://github.com/SpenceKonde/ATTinyCore
 
@@ -35,7 +37,7 @@ https://github.com/SpenceKonde/ATTinyCore
 const int charHeight = 8;
 const int charWidth = 5;
 int rows= 8;		                 // Total LED's in a row
-int LEDS[] = {10, 9, 8, 7, 6, 5, 3, 4};  // Port A
+int LEDS[] = {10, 9, 8, 7, 6, 5, 4, 3};  // Port A
 bool STATES[] = {LOW, LOW, LOW, LOW, LOW, LOW, LOW, LOW};
 
 char charArray[6];                       // holds characters to display
