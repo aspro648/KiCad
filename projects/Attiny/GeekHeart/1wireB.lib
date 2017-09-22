@@ -1,0 +1,1761 @@
+EESchema-LIBRARY Version 2.3  29/04/2008-12:21:01
+# Converted with eagle2kicad.ulp Version 0.9
+# Device count = 52
+#
+# Dev Name: 1W_SUP
+# Dev Tech: ''
+# Dev Prefix: 
+# Gate count = 1
+#
+DEF 1W_SUP ?? 0 40 Y Y 1 L N
+# Gate Name: G$1
+# Symbol Name: 1W_SUP
+DRAW
+P 2 1 0 0 -300 50 -100 50
+P 2 1 0 0 -100 50 -100 -50
+P 2 1 0 0 -100 -50 -300 -50
+P 2 1 0 0 -300 -50 -300 50
+T 0 -200 0 50 0 1 0 1W
+X 1W ~ 0 0 100 L 40 40 1 1 w 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS18B20
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS18B20 IC 0 40 Y Y 3 L N
+# Gate Name: A
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS18B20" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS18B20U
+# Package Name: UMAX8
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS18B20U IC 0 40 Y Y 3 L N
+# Gate Name: A
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS18B20U" 225 -75 50 H V L B
+F2 "1wire-UMAX8" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 4 0 -300 200 U 40 40 2 1 W 
+X VDD 8 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 1 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS18B20Z
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS18B20Z IC 0 40 Y Y 3 L N
+# Gate Name: A
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS18B20Z" 225 -75 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 5 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 4 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS18S20
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS18S20 IC 0 40 Y Y 3 L N
+# Gate Name: A
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS18S20" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS18S20Z
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS18S20Z IC 0 40 Y Y 3 L N
+# Gate Name: A
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS18S20Z" 225 -75 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 5 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 4 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS1822
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS1822 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS1822" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS1822Z
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS1822Z IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS1822Z" 225 -75 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 5 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 4 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2223
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2223 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2223" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2223Z
+# Package Name: SOT223
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2223Z IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2223Z" 225 -75 50 H V L B
+F2 "1wire-SOT223" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2401
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2401 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2401" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2401P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2401P IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2401P" 225 -75 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2401Z
+# Package Name: SOT223
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2401Z IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2401Z" 225 -75 50 H V L B
+F2 "1wire-SOT223" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 4 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2404
+# Package Name: DIL16
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2404 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: DS2404
+F0 "IC" -300 525 50 H V L B
+F1 "DS2404" -300 425 50 H V L B
+F2 "1wire-DIL16" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -300 400 300 400
+P 2 1 0 0 300 400 300 -400
+P 2 1 0 0 300 -400 -300 -400
+P 2 1 0 0 -300 -400 -300 400
+X 1HZ 11 500 0 200 L 40 40 1 1 O 
+X 1W/PIO 5 -500 -100 200 R 40 40 1 1 C 
+X IRQ 2 -500 -300 200 R 40 40 1 1 O I
+X RST 3 -500 100 200 R 40 40 1 1 I I
+X SCLK 6 -500 200 200 R 40 40 1 1 I C
+X SDATA 4 -500 300 200 R 40 40 1 1 B 
+X VBATB 9 500 -200 200 L 40 40 1 1 W 
+X VBATO 10 500 -300 200 L 40 40 1 1 W 
+X X1 15 500 300 200 L 40 40 1 1 P 
+X X2 14 500 200 200 L 40 40 1 1 P 
+# Gate Name: P1
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 8 0 -300 200 U 40 40 2 1 W 
+X VDD 1 0 300 200 D 40 40 2 1 W 
+# Gate Name: P2
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 3 0 GND
+T 1 50 175 50 0 3 0 VDD
+X GND 13 0 -300 200 U 40 40 3 1 W 
+X VDD 16 0 300 200 D 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2404B
+# Package Name: SSOP16
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2404B IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: DS2404
+F0 "IC" -300 525 50 H V L B
+F1 "DS2404B" -300 425 50 H V L B
+F2 "1wire-SSOP16" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -300 400 300 400
+P 2 1 0 0 300 400 300 -400
+P 2 1 0 0 300 -400 -300 -400
+P 2 1 0 0 -300 -400 -300 400
+X 1HZ 11 500 0 200 L 40 40 1 1 O 
+X 1W/PIO 5 -500 -100 200 R 40 40 1 1 C 
+X IRQ 2 -500 -300 200 R 40 40 1 1 O I
+X RST 3 -500 100 200 R 40 40 1 1 I I
+X SCLK 6 -500 200 200 R 40 40 1 1 I C
+X SDATA 4 -500 300 200 R 40 40 1 1 B 
+X VBATB 9 500 -200 200 L 40 40 1 1 W 
+X VBATO 10 500 -300 200 L 40 40 1 1 W 
+X X1 15 500 300 200 L 40 40 1 1 P 
+X X2 14 500 200 200 L 40 40 1 1 P 
+# Gate Name: P1
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 8 0 -300 200 U 40 40 2 1 W 
+X VDD 1 0 300 200 D 40 40 2 1 W 
+# Gate Name: P2
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 3 0 GND
+T 1 50 175 50 0 3 0 VDD
+X GND 13 0 -300 200 U 40 40 3 1 W 
+X VDD 16 0 300 200 D 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2404S
+# Package Name: SO16
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2404S IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: DS2404
+F0 "IC" -300 525 50 H V L B
+F1 "DS2404S" -300 425 50 H V L B
+F2 "1wire-SO16" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -300 400 300 400
+P 2 1 0 0 300 400 300 -400
+P 2 1 0 0 300 -400 -300 -400
+P 2 1 0 0 -300 -400 -300 400
+X 1HZ 11 500 0 200 L 40 40 1 1 O 
+X 1W/PIO 5 -500 -100 200 R 40 40 1 1 C 
+X IRQ 2 -500 -300 200 R 40 40 1 1 O I
+X RST 3 -500 100 200 R 40 40 1 1 I I
+X SCLK 6 -500 200 200 R 40 40 1 1 I C
+X SDATA 4 -500 300 200 R 40 40 1 1 B 
+X VBATB 9 500 -200 200 L 40 40 1 1 W 
+X VBATO 10 500 -300 200 L 40 40 1 1 W 
+X X1 15 500 300 200 L 40 40 1 1 P 
+X X2 14 500 200 200 L 40 40 1 1 P 
+# Gate Name: P1
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 8 0 -300 200 U 40 40 2 1 W 
+X VDD 1 0 300 200 D 40 40 2 1 W 
+# Gate Name: P2
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 3 0 GND
+T 1 50 175 50 0 3 0 VDD
+X GND 13 0 -300 200 U 40 40 3 1 W 
+X VDD 16 0 300 200 D 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2405
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2405 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: OC
+F0 "IC" -200 225 50 H V L B
+F1 "DS2405" -200 125 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+X IO 3 400 0 200 L 40 40 1 1 C 
+# Gate Name: GND
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2405P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2405P IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: OC
+F0 "IC" -200 225 50 H V L B
+F1 "DS2405P" -200 125 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+X IO 3 400 0 200 L 40 40 1 1 C 
+# Gate Name: GND
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2405T
+# Package Name: SOT223
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2405T IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: OC
+F0 "IC" -200 225 50 H V L B
+F1 "DS2405T" -200 125 50 H V L B
+F2 "1wire-SOT223" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+X IO 3 400 0 200 L 40 40 1 1 C 
+# Gate Name: GND
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2406
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2406 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: OC_POWER
+F0 "IC" -200 225 50 H V L B
+F1 "DS2406" -200 125 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+P 2 1 0 0 125 50 175 0
+P 2 1 0 0 175 0 125 -50
+P 2 1 0 0 125 -50 125 50
+X IO 3 400 0 200 L 40 40 1 1 C 
+# Gate Name: GND
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2406P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 4
+#
+DEF DS2406P IC 0 40 Y Y 4 L N
+# Gate Name: A
+# Symbol Name: OC_POWER
+F0 "IC" -200 225 50 H V L B
+F1 "DS2406P" -200 125 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+P 2 1 0 0 125 50 175 0
+P 2 1 0 0 175 0 125 -50
+P 2 1 0 0 125 -50 125 50
+X IO 3 400 0 200 L 40 40 1 1 C 
+# Gate Name: B
+# Symbol Name: OC
+P 2 2 0 0 -200 100 200 100
+P 2 2 0 0 200 100 200 -100
+P 2 2 0 0 200 -100 -200 -100
+P 2 2 0 0 -200 -100 -200 100
+X IO 6 400 0 200 L 40 40 2 1 C 
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 3 0 GND
+T 1 50 175 50 0 3 0 VDD
+X GND 1 0 -300 200 U 40 40 3 1 W 
+X VDD 4 0 300 200 D 40 40 3 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 4 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2408S
+# Package Name: SO16
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2408S IC 0 40 Y Y 3 L N
+# Gate Name: A
+# Symbol Name: DS2408
+F0 "IC" -200 625 50 H V L B
+F1 "DS2408S" -200 525 50 H V L B
+F2 "1wire-SO16" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 500 200 500
+P 2 1 0 0 200 500 200 -600
+P 2 1 0 0 200 -600 -200 -600
+P 2 1 0 0 -200 -600 -200 500
+X P0 2 400 -300 200 L 40 40 1 1 C 
+X P1 14 400 -200 200 L 40 40 1 1 C 
+X P2 13 400 -100 200 L 40 40 1 1 C 
+X P3 12 400 0 200 L 40 40 1 1 C 
+X P4 11 400 100 200 L 40 40 1 1 C 
+X P5 9 400 200 200 L 40 40 1 1 C 
+X P6 8 400 300 200 L 40 40 1 1 C 
+X P7 7 400 400 200 L 40 40 1 1 C 
+X RSTZ 10 400 -500 200 L 40 40 1 1 C 
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 5 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 4 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2409P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 2
+#
+DEF DS2409P IC 0 40 Y Y 2 L N
+# Gate Name: G$1
+# Symbol Name: DS2409
+F0 "IC" -300 425 50 H V L B
+F1 "DS2409P" -300 325 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -300 300 300 300
+P 2 1 0 0 300 300 300 -300
+P 2 1 0 0 300 -300 -300 -300
+P 2 1 0 0 -300 -300 -300 300
+X 1W_AUX 4 500 -200 200 L 40 40 1 1 C 
+X 1W_IN 2 -500 -100 200 R 40 40 1 1 C 
+X 1W_OUT 3 500 0 200 L 40 40 1 1 C 
+X CO 5 500 200 200 L 40 40 1 1 C 
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 6 0 300 200 D 40 40 2 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2411P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2411P IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2411P" 225 -75 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 6 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2411R
+# Package Name: SOT23
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2411R IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2411R" 225 -75 50 H V L B
+F2 "1wire-SOT23" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 3 0 -300 200 U 40 40 2 1 W 
+X VDD 2 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 1 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2413P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: 
+# Gate count = 5
+#
+DEF DS2413P ?? 0 40 Y Y 5 L N
+# Gate Name: A
+# Symbol Name: OC_POWER
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+P 2 1 0 0 125 50 175 0
+P 2 1 0 0 175 0 125 -50
+P 2 1 0 0 125 -50 125 50
+X IO 6 400 0 200 L 40 40 1 1 C 
+# Gate Name: B
+# Symbol Name: OC_POWER
+P 2 2 0 0 -200 100 200 100
+P 2 2 0 0 200 100 200 -100
+P 2 2 0 0 200 -100 -200 -100
+P 2 2 0 0 -200 -100 -200 100
+P 2 2 0 0 125 50 175 0
+P 2 2 0 0 175 0 125 -50
+P 2 2 0 0 125 -50 125 50
+X IO 4 400 0 200 L 40 40 2 1 C 
+# Gate Name: GND@0
+# Symbol Name: GND
+T 1 100 -175 50 0 3 0 GND
+X GND 1 0 -300 200 U 40 40 3 1 W 
+# Gate Name: GND@1
+# Symbol Name: GND
+T 1 100 -175 50 0 4 0 GND
+X GND 5 0 -300 200 U 40 40 4 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 5 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2417P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2417P IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: DS2417
+F0 "IC" -800 825 50 H V L B
+F1 "DS2417P" -800 725 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -800 700 -400 700
+P 2 1 0 0 -400 700 -400 100
+P 2 1 0 0 -400 100 -800 100
+P 2 1 0 0 -800 100 -800 700
+X INT 3 -200 200 200 L 40 40 1 1 C I
+X X1 5 -200 600 200 L 40 40 1 1 P 
+X X2 6 -200 500 200 L 40 40 1 1 P 
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 4 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2422
+# Package Name: SO24L
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2422 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: DS2422
+F0 "IC" -400 600 50 H V L B
+F1 "DS2422" -400 525 50 H V L B
+F2 "1wire-SO24L" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -400 500 -400 -500
+P 2 1 0 0 -400 -500 400 -500
+P 2 1 0 0 400 -500 400 500
+P 2 1 0 0 400 500 -400 500
+X AGND 9 600 -400 200 L 40 40 1 1 W 
+X ALARM 11 -600 400 200 R 40 40 1 1 O 
+X CNVST 4 600 100 200 L 40 40 1 1 O 
+X PUMP_ONZ 22 600 300 200 L 40 40 1 1 O 
+X SCLK 2 600 -100 200 L 40 40 1 1 O 
+X SDATA 3 600 0 200 L 40 40 1 1 B 
+X TEST_CG 24 -600 -200 200 R 40 40 1 1 W 
+X TEST_SPLY 16 -600 -300 200 R 40 40 1 1 W 
+X TEXT_RX 21 -600 -400 200 R 40 40 1 1 W 
+X VPAD 1 600 400 200 L 40 40 1 1 W 
+X X1 10 -600 100 200 R 40 40 1 1 P 
+X X2 12 -600 0 200 R 40 40 1 1 P 
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 14 0 -300 200 U 40 40 2 1 W 
+X VDD 23 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 13 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2423P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 4
+#
+DEF DS2423P IC 0 40 Y Y 4 L N
+# Gate Name: A
+# Symbol Name: CNT
+F0 "IC" -200 225 50 H V L B
+F1 "DS2423P" -200 125 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+X CNT 6 -400 0 200 R 40 40 1 1 I IC
+# Gate Name: B
+# Symbol Name: CNT
+P 2 2 0 0 -200 100 200 100
+P 2 2 0 0 200 100 200 -100
+P 2 2 0 0 200 -100 -200 -100
+P 2 2 0 0 -200 -100 -200 100
+X CNT 5 -400 0 200 R 40 40 2 1 I IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 3 0 GND
+T 1 50 175 50 0 3 0 VDD
+X GND 1 0 -300 200 U 40 40 3 1 W 
+X VDD 3 0 300 200 D 40 40 3 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 4 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2431
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2431 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2431" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2431P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2431P IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2431P" 225 -75 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2432P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2432P IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2432P" 225 -75 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 4 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 3 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2433
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2433 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2433" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2433S
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2433S IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2433S" 225 -75 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 4 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 3 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2436B
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2436B IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2436B" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2436Z
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2436Z IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2436Z" 225 -75 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 4 0 -300 200 U 40 40 2 1 W 
+X VDD 8 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 3 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2438Z
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2438Z IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: DS2438
+F0 "IC" -200 425 50 H V L B
+F1 "DS2438Z" -200 325 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 300 200 300
+P 2 1 0 0 200 300 200 -300
+P 2 1 0 0 200 -300 -200 -300
+P 2 1 0 0 -200 -300 -200 300
+X AIN 4 400 200 200 L 40 40 1 1 I 
+X I+ 2 400 0 200 L 40 40 1 1 I 
+X I- 3 400 -200 200 L 40 40 1 1 I 
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 5 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 8 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2450S
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 6
+#
+DEF DS2450S IC 0 40 Y Y 6 L N
+# Gate Name: A
+# Symbol Name: AIN
+F0 "IC" 225 25 50 H V L B
+F1 "DS2450S" 225 -75 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+X AIN 5 -400 0 200 R 40 40 1 1 C 
+# Gate Name: B
+# Symbol Name: AIN
+P 2 2 0 0 -200 100 200 100
+P 2 2 0 0 200 100 200 -100
+P 2 2 0 0 200 -100 -200 -100
+P 2 2 0 0 -200 -100 -200 100
+X AIN 6 -400 0 200 R 40 40 2 1 C 
+# Gate Name: C
+# Symbol Name: AIN
+P 2 3 0 0 -200 100 200 100
+P 2 3 0 0 200 100 200 -100
+P 2 3 0 0 200 -100 -200 -100
+P 2 3 0 0 -200 -100 -200 100
+X AIN 7 -400 0 200 R 40 40 3 1 C 
+# Gate Name: D
+# Symbol Name: AIN
+P 2 4 0 0 -200 100 200 100
+P 2 4 0 0 200 100 200 -100
+P 2 4 0 0 200 -100 -200 -100
+P 2 4 0 0 -200 -100 -200 100
+X AIN 8 -400 0 200 R 40 40 4 1 C 
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 5 0 GND
+T 1 50 175 50 0 5 0 VDD
+X GND 4 0 -300 200 U 40 40 5 1 W 
+X VDD 1 0 300 200 D 40 40 5 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 3 -200 0 200 R 40 40 6 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2480B
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 1
+#
+DEF DS2480B IC 0 40 Y Y 1 L N
+# Gate Name: G$1
+# Symbol Name: DS2480
+F0 "IC" -350 800 50 H V L B
+F1 "DS2480B" -350 725 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -500 700 100 700
+P 2 1 0 0 100 700 100 -100
+P 2 1 0 0 100 -100 -500 -100
+P 2 1 0 0 -500 -100 -500 700
+X 1W 2 300 300 200 L 40 40 1 1 C 
+X GND 1 -200 -300 200 U 40 40 1 1 W 
+X POL 6 -700 0 200 R 40 40 1 1 I 
+X RXD 8 -700 200 200 R 40 40 1 1 O 
+X TXD 7 -700 300 200 R 40 40 1 1 I 
+X VDD 4 -400 900 200 D 40 40 1 1 W 
+X VPP 5 0 900 200 D 40 40 1 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2482-100S
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 2
+#
+DEF DS2482-100S IC 0 40 Y Y 2 L N
+# Gate Name: G$1
+# Symbol Name: DS2482-100
+F0 "IC" -300 400 50 H V L B
+F1 "DS2482-100S" -300 325 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -300 300 -300 -300
+P 2 1 0 0 -300 -300 300 -300
+P 2 1 0 0 300 -300 300 300
+P 2 1 0 0 300 300 -300 300
+X 1W 2 500 -100 200 L 40 40 1 1 C 
+X AD0 8 -500 -200 200 R 40 40 1 1 I 
+X AD1 7 -500 -100 200 R 40 40 1 1 I 
+X PCT 6 500 200 200 L 40 40 1 1 O 
+X SCL 4 -500 100 200 R 40 40 1 1 I 
+X SDA 5 -500 200 200 R 40 40 1 1 B 
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 3 0 -300 200 U 40 40 2 1 W 
+X VDD 1 0 300 200 D 40 40 2 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2482-800
+# Package Name: SO16
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 2
+#
+DEF DS2482-800 IC 0 40 Y Y 2 L N
+# Gate Name: G$1
+# Symbol Name: DS2482-800
+F0 "IC" -300 500 50 H V L B
+F1 "DS2482-800" -300 425 50 H V L B
+F2 "1wire-SO16" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -300 400 -300 -500
+P 2 1 0 0 -300 -500 300 -500
+P 2 1 0 0 300 -500 300 400
+P 2 1 0 0 300 400 -300 400
+X 1W_0 14 500 -400 200 L 40 40 1 1 C 
+X 1W_1 15 500 -300 200 L 40 40 1 1 C 
+X 1W_2 16 500 -200 200 L 40 40 1 1 C 
+X 1W_3 1 500 -100 200 L 40 40 1 1 C 
+X 1W_4 12 500 0 200 L 40 40 1 1 C 
+X 1W_5 11 500 100 200 L 40 40 1 1 C 
+X 1W_6 10 500 200 200 L 40 40 1 1 C 
+X 1W_7 9 500 300 200 L 40 40 1 1 C 
+X AD0 8 -500 -400 200 R 40 40 1 1 I 
+X AD1 7 -500 -300 200 R 40 40 1 1 I 
+X AD2 6 -500 -200 200 R 40 40 1 1 I 
+X SCL 2 -500 200 200 R 40 40 1 1 I 
+X SDA 3 -500 300 200 R 40 40 1 1 B 
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 13 0 -300 200 U 40 40 2 1 W 
+X VDD 4 0 300 200 D 40 40 2 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2502
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2502 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2502" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2502P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2502P IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2502P" 225 -75 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2502S
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2502S IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2502S" 225 -75 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 4 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 3 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2505
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2505 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2505" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2505P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2505P IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2505P" 225 -75 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2506
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2506 IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2506" 225 -75 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2506S
+# Package Name: SO08
+# Dev Tech: ''
+# Dev Prefix: IC
+# Gate count = 3
+#
+DEF DS2506S IC 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: IC
+F0 "IC" 225 25 50 H V L B
+F1 "DS2506S" 225 -75 50 H V L B
+F2 "1wire-SO08" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 100 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+T 0 50 0 150 0 1 0 IC
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 4 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 3 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2890
+# Package Name: TO92-
+# Dev Tech: ''
+# Dev Prefix: P
+# Gate count = 3
+#
+DEF DS2890 P 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: DS2890
+F0 "P" -300 625 50 H V L B
+F1 "DS2890" -300 525 50 H V L B
+F2 "1wire-TO92-" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -300 500 100 500
+P 2 1 0 0 100 500 100 400
+P 2 1 0 0 100 400 100 -100
+P 2 1 0 0 100 -100 -300 -100
+P 2 1 0 0 -300 -100 -300 500
+P 2 1 0 0 -150 100 -100 100
+P 2 1 0 0 -100 100 -50 100
+P 2 1 0 0 -50 100 -50 300
+P 2 1 0 0 -50 300 -100 300
+P 2 1 0 0 -100 300 -150 300
+P 2 1 0 0 -150 300 -150 100
+P 2 1 0 0 -100 300 -100 400
+P 2 1 0 0 -100 400 100 400
+P 2 1 0 0 -100 0 -100 100
+P 2 1 0 0 -200 150 0 250
+P 2 1 0 0 0 250 -25 250
+P 2 1 0 0 -150 0 -100 0
+P 2 1 0 0 -100 0 -50 0
+T 0 20 447 70 0 1 0 RH
+T 0 -147 -21 32 0 1 0 Software
+T 0 -115 -59 32 0 1 0 Controlled
+X RH 3 300 400 200 L 40 40 1 1 P 
+# Gate Name: P
+# Symbol Name: GND
+T 1 100 -175 50 0 2 0 GND
+X GND 1 0 -300 200 U 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS2890P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: P
+# Gate count = 3
+#
+DEF DS2890P P 0 40 Y Y 3 L N
+# Gate Name: G$1
+# Symbol Name: DS2890P
+F0 "P" -200 625 50 H V L B
+F1 "DS2890P" -200 525 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -200 500 200 500
+P 2 1 0 0 200 500 200 400
+P 2 1 0 0 200 400 200 200
+P 2 1 0 0 200 200 200 0
+P 2 1 0 0 200 0 200 -100
+P 2 1 0 0 200 -100 -200 -100
+P 2 1 0 0 -200 -100 -200 500
+P 2 1 0 0 50 100 50 300
+P 2 1 0 0 -50 300 -50 100
+P 2 1 0 0 -50 100 0 100
+P 2 1 0 0 0 100 50 100
+P 2 1 0 0 50 300 0 300
+P 2 1 0 0 0 300 -50 300
+P 2 1 0 0 200 0 0 0
+P 2 1 0 0 0 0 0 100
+P 2 1 0 0 0 300 0 400
+P 2 1 0 0 0 400 200 400
+P 2 1 0 0 200 200 100 200
+P 2 1 0 0 100 200 -100 250
+P 2 1 0 0 -100 250 -75 250
+T 0 132 447 70 0 1 0 RH
+T 0 145 47 70 0 1 0 RL
+T 0 157 247 70 0 1 0 WI
+T 0 -47 -21 32 0 1 0 Software
+T 0 -15 -59 32 0 1 0 Controlled
+X RH 4 400 400 200 L 40 40 1 1 P 
+X RL 6 400 0 200 L 40 40 1 1 P 
+X WI 5 400 200 200 L 40 40 1 1 P 
+# Gate Name: P
+# Symbol Name: VDD-GND
+T 1 100 -175 50 0 2 0 GND
+T 1 50 175 50 0 2 0 VDD
+X GND 1 0 -300 200 U 40 40 2 1 W 
+X VDD 3 0 300 200 D 40 40 2 1 W 
+# Gate Name: _1W
+# Symbol Name: 1W
+X 1W 2 -200 0 200 R 40 40 3 1 W 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS9502P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: ZD
+# Gate count = 1
+#
+DEF DS9502P ZD 0 40 Y Y 1 L N
+# Gate Name: G$1
+# Symbol Name: DS9502
+F0 "ZD" -400 325 50 H V L B
+F1 "DS9502P" -400 225 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -250 50 -200 50
+P 2 1 0 0 -200 50 -137 50
+P 2 1 0 0 -137 50 -137 25
+P 2 1 0 0 -200 50 -250 -50
+P 2 1 0 0 -250 -50 -150 -50
+P 2 1 0 0 -150 -50 -200 50
+P 2 1 0 0 -200 100 -200 50
+P 2 1 0 0 -200 50 -200 -100
+P 2 1 0 0 -400 100 -200 100
+P 2 1 0 0 -200 100 0 100
+P 2 1 0 0 0 -100 -200 -100
+P 2 1 0 0 -200 -100 -400 -100
+P 2 1 0 0 -400 200 0 200
+P 2 1 0 0 0 200 0 100
+P 2 1 0 0 0 100 0 -100
+P 2 1 0 0 0 -100 0 -200
+P 2 1 0 0 0 -200 -400 -200
+P 2 1 0 0 -400 -200 -400 -100
+P 2 1 0 0 -400 -100 -400 100
+P 2 1 0 0 -400 100 -400 200
+C -200 100 3 1 1 0 F
+C -200 -100 3 1 1 0 F
+X P$1 1 -500 100 100 R 40 40 1 1 P 
+X P$2 2 -500 -100 100 R 40 40 1 1 P 
+X P$3 5 100 -100 100 L 40 40 1 1 P 
+X P$4 6 100 100 100 L 40 40 1 1 P 
+ENDDRAW
+ENDDEF
+
+#
+# Dev Name: DS9503P
+# Package Name: TSOC6
+# Dev Tech: ''
+# Dev Prefix: ZD
+# Gate count = 1
+#
+DEF DS9503P ZD 0 40 Y Y 1 L N
+# Gate Name: G$1
+# Symbol Name: DS9503
+F0 "ZD" -200 325 50 H V L B
+F1 "DS9503P" -200 225 50 H V L B
+F2 "1wire-TSOC6" 0 150 50 H I C C
+DRAW
+P 2 1 0 0 -125 50 -75 50
+P 2 1 0 0 -75 50 -12 50
+P 2 1 0 0 -12 50 -12 25
+P 2 1 0 0 -75 50 -125 -50
+P 2 1 0 0 -125 -50 -25 -50
+P 2 1 0 0 -25 -50 -75 50
+P 2 1 0 0 -75 100 -75 50
+P 2 1 0 0 -75 50 -75 -100
+P 2 1 0 0 -200 100 -75 100
+P 2 1 0 0 -75 -100 -200 -100
+P 2 1 0 0 -200 200 200 200
+P 2 1 0 0 200 200 200 100
+P 2 1 0 0 200 100 200 -100
+P 2 1 0 0 200 -100 200 -200
+P 2 1 0 0 200 -200 -200 -200
+P 2 1 0 0 -200 -200 -200 -100
+P 2 1 0 0 -200 -100 -200 100
+P 2 1 0 0 -200 100 -200 200
+P 2 1 0 0 -75 100 25 100
+P 2 1 0 0 25 100 25 125
+P 2 1 0 0 25 125 125 125
+P 2 1 0 0 125 125 125 100
+P 2 1 0 0 125 100 125 75
+P 2 1 0 0 125 75 25 75
+P 2 1 0 0 25 75 25 100
+P 2 1 0 0 125 100 200 100
+P 2 1 0 0 -75 -100 25 -100
+P 2 1 0 0 25 -75 125 -75
+P 2 1 0 0 125 -75 125 -100
+P 2 1 0 0 125 -100 125 -125
+P 2 1 0 0 125 -125 25 -125
+P 2 1 0 0 25 -125 25 -75
+P 2 1 0 0 125 -100 200 -100
+C -75 100 3 1 1 0 F
+C -75 -100 3 1 1 0 F
+X P$1 1 -300 100 100 R 40 40 1 1 P 
+X P$2 2 -300 -100 100 R 40 40 1 1 P 
+X P$3 5 300 -100 100 L 40 40 1 1 P 
+X P$4 6 300 100 100 L 40 40 1 1 P 
+ENDDRAW
+ENDDEF
+
+#End Library

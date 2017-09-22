@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS2431P
+D 1-Ohm SPDT Analog Switch, Make-Before-Break
+K SDPT Switch
+F http://www.ti.com/lit/ds/symlink/ts5a3160.pdf
+$ENDCMP
+#
+#End Doc Library
