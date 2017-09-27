@@ -3,7 +3,7 @@
   (general
     (links 46)
     (no_connects 0)
-    (area 157.48 66.04 247.700001 98.425001)
+    (area 158.699999 68.529999 247.700001 96.570001)
     (thickness 1.6)
     (drawings 25)
     (tracks 152)
@@ -1649,7 +1649,7 @@
   (gr_line (start 233.68 68.58) (end 172.72 68.58) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 172.72 96.52) (end 233.68 96.52) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 233.68 80.01) (end 233.68 85.09) (angle 90) (layer Dwgs.User) (width 0.254))
-  (gr_text "Rev 1.0\nAug 2017" (at 229.235 92.075) (layer B.SilkS)
+  (gr_text "Rev 1.1\nSep 2017" (at 229.235 92.075) (layer B.SilkS)
     (effects (font (size 1.25 1.25) (thickness 0.15)) (justify mirror))
   )
   (gr_text www.MakersBox.us (at 177.8 90.17) (layer B.SilkS)
