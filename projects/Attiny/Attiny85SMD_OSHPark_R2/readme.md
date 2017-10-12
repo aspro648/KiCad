@@ -33,7 +33,7 @@ This project is programed using the Open Source [Arduino](https://www.arduino.cc
 
 Assembly Instructions
 =====================
-I have posted [detailed instructions at Instructables](https://www.instructables.com/id/I-Can-Surface-Mount-Solder/).
+I have posted [detailed instructions at Instructables](https://www.instructables.com/id/OSH-Park-Badge/).
 
 License
 =======
