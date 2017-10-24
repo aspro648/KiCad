@@ -40,9 +40,9 @@ This project is programed using the Open Source [Arduino](https://www.arduino.cc
 Assembly Instructions
 =====================
 
-- [Trinket Shield](docs/Trinket Robot Instructions.odt)
-- [Robot Chassis](docs/Trinket Robot Shield Instructions.odt)
-- [Customized Name Place](docs/Name Plate 3D Design.odt)
+- [Trinket Shield]<docs/Trinket Robot Instructions.odt>
+- [Robot Chassis]<docs/Trinket Robot Shield Instructions.odt>
+- [Customized Name Plate]<docs/Name Plate 3D Design.odt>
 
 License
 =======
