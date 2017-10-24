@@ -29,15 +29,19 @@ Bill Of Materials
 
 Design Files
 ============
-This project is designed using Open Source [KiCad](http://kicad-pcb.org/). Design files are located in the [design_files](design_files/) folder.  You can oogle the [schematic](docs/Schematic.pdf).
+The electronics were designed using Open Source [KiCad](http://kicad-pcb.org/). Design files are located in the [design_files](design_files/) folder.  You can oogle the [schematic](docs/Schematic.pdf).
+
+The 3D Design files are located in the [3D](docs/3D) folder.
 
 Firmware
 ========
-This project is programed using the Open Source [Arduino](https://www.arduino.cc/). I use my Open Source [AVR Programming Shield](https://www.tindie.com/products/MakersBox/yet-another-programming-shield/) to program the Attiny85. The firmware is located in the [firmware](firmware/) folder.
+This project is programed using the Open Source [Arduino](https://www.arduino.cc/). The firmware is located in the [firmware](firmware/) folder.  Instructions for setting up the Arduino enviroment for the Adafruit Trinket Pro are at [https://learn.adafruit.com/introducing-pro-trinket](https://learn.adafruit.com/introducing-pro-trinket).
 
 Assembly Instructions
 =====================
-I have posted [detailed instructions at Instructables](https://www.instructables.com/id/Low-Cost-Arduino-Compatible-Drawing-Robot/).
+[Trinket Shield](docs/Trinket Robot Instructions.odt)
+[Robot Chassis](docs/Trinket Robot Shield Instructions.odt)
+[Custamize Name Place](docs/Name Plate 3D Design.odt)
 
 License
 =======
