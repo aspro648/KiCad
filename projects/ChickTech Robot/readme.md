@@ -31,7 +31,7 @@ Design Files
 ============
 The electronics were designed using Open Source [KiCad](http://kicad-pcb.org/). Design files are located in the [design_files](design_files/) folder.  You can oogle the [schematic](docs/Schematic.pdf).
 
-The 3D Design files are located in the [3D](docs/3D) folder.
+The 3D Design files are located in the [3D](3D/) folder.
 
 Firmware
 ========
@@ -39,9 +39,10 @@ This project is programed using the Open Source [Arduino](https://www.arduino.cc
 
 Assembly Instructions
 =====================
-[Trinket Shield](docs/Trinket Robot Instructions.odt)
-[Robot Chassis](docs/Trinket Robot Shield Instructions.odt)
-[Custamize Name Place](docs/Name Plate 3D Design.odt)
+
+- [Trinket Shield](docs/Trinket Robot Instructions.odt)
+- [Robot Chassis](docs/Trinket Robot Shield Instructions.odt)
+- [Customized Name Place](docs/Name Plate 3D Design.odt)
 
 License
 =======
