@@ -1,0 +1,21 @@
+(module R1 (layer F.Cu) (tedit 544F0EED)
+  (descr "Resistance verticale")
+  (tags R)
+  (autoplace_cost90 10)
+  (autoplace_cost180 10)
+  (fp_text reference R6 (at -1.016 2.54) (layer F.SilkS) hide
+    (effects (font (size 1.397 1.27) (thickness 0.2032)))
+  )
+  (fp_text value 330 (at -1.143 2.54) (layer F.SilkS) hide
+    (effects (font (size 1.397 1.27) (thickness 0.2032)))
+  )
+  (fp_line (start -1.27 0) (end 1.27 0) (layer F.SilkS) (width 0.381))
+  (fp_circle (center -1.27 0) (end -0.635 1.27) (layer F.SilkS) (width 0.381))
+  (pad 1 thru_hole circle (at -1.27 0) (size 1.397 1.397) (drill 0.8128) (layers *.Cu *.Mask F.SilkS))
+  (pad 2 thru_hole circle (at 1.27 0) (size 1.397 1.397) (drill 0.8128) (layers *.Cu *.Mask F.SilkS))
+  (model discret/verti_resistor.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)

@@ -1,0 +1,20 @@
+1 ea., PCB 	OSH Park	
+1 ea., MOSFET, Infineon IRLB8721PBF, https://www.digikey.com/short/qq990t
+1 ea., CAP CER 10UF 25V X7R RADIAL, TDK FG16X7R1E106KRT06, https://www.digikey.com/short/qq9908
+1 ea., Power Jack 2.1x5.5mm, MPD EJ508A, https://www.digikey.com/short/qq990j
+1 ea., RES 330 OHM 1/8W 5% CF AXIAL, Stackpole CF18JT330R, http://www.digikey.com/short/7zzrbn
+1 ea., RES 180 OHM 1/8W 5% CF AXIAL, Stackpole CF18JT180R, http://www.digikey.com/short/79t72r
+1 ea., 10K resistor 1/8W, Stackpole CF18JT10K0, http://www.digikey.com/short/7thw1q
+1 ea., 6 mm tactile button black, Omron 3F-1020, http://www.digikey.com/short/34fnz5
+1 ea., 6 mm tactile button red, Omron B3F-1005, https://www.digikey.com/short/qq990z
+1 ea., 20 Position Header Connector, Female	Sullins PPPC102LFBN-RC, https://www.digikey.com/short/qq990h
+1 ea., LED YELLOW DIFF 3MM ROUND T/H, Wurth 151031YS06000, https://www.digikey.com/short/qq990b
+1 ea., LED RED DIFF 3MM ROUND T/H, Wurth 151031SS04000, https://www.digikey.com/short/qq990r
+1 ea., LED GRN DIFF 3MM ROUND T/H, Wurth 151031VS06000, https://www.digikey.com/short/qq9902
+1 ea., Kick-back diode 1N4001, Comchip 1N4001-G, http://www.digikey.com/short/7thwwp
+1 ea., CONN TERM BLOCK 2.54MM 2POS PCB, On Shore OSTVN02A150, http://www.digikey.com/short/7zj1rz
+1 ea., DC/DC CONVERTER 5V 5W, Recom R-78E5.0-1.0, https://www.digikey.com/short/qq990w
+
+1 ea., IR Camera adjustable focus, Seed 114990837, https://www.digikey.com/short/q373nz
+1 ea., 8 Gb SD Class 10, Apacer AP8GMCSH10U1-B, https://www.digikey.com/short/q37320
+1 ea., AC/DC WALL MOUNT ADAPTER 12V 12W 1A, XP Power VEL12US120-US-JA, https://www.digikey.com/short/qqm5mh

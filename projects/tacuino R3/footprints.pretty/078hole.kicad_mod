@@ -1,0 +1,11 @@
+(module 078hole (layer F.Cu) (tedit 54A58DC9)
+  (descr "module 1 pin (ou trou mecanique de percage)")
+  (tags DEV)
+  (fp_text reference HOLE_2 (at 0 -0.254) (layer F.SilkS) hide
+    (effects (font (size 0.254 0.254) (thickness 0.0635)))
+  )
+  (fp_text value CONN_1 (at 0.254 0.254) (layer F.SilkS) hide
+    (effects (font (size 0.254 0.254) (thickness 0.0635)))
+  )
+  (pad "" thru_hole circle (at 0 0) (size 1.984375 1.984375) (drill 1.984375) (layers *.Cu F.SilkS))
+)

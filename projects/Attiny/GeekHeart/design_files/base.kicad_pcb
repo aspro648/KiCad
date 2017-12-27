@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
 
   (general
-    (links 34)
+    (links 37)
     (no_connects 9)
-    (area 208.229999 87.579999 241.350001 120.700001)
+    (area 205.74 83.82 252.96 124.460001)
     (thickness 1.6)
     (drawings 84)
     (tracks 163)
     (zones 0)
-    (modules 36)
+    (modules 37)
     (nets 4)
   )
 
@@ -101,6 +101,29 @@
     (add_net "Net-(P1-Pad1)")
     (add_net "Net-(P1-Pad2)")
     (add_net "Net-(P1-Pad3)")
+  )
+
+  (module Pin_Headers:Pin_Header_Straight_1x03 (layer F.Cu) (tedit 59B219E2) (tstamp 5A0F11E3)
+    (at 222.25 101.6 270)
+    (descr "Through hole pin header")
+    (tags "pin header")
+    (path /59B21445)
+    (fp_text reference P1 (at 0 -1.75 270) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value CONN_01X03 (at 0 2.54 360) (layer F.Fab) hide
+      (effects (font (size 0.254 0.254) (thickness 0.0635)))
+    )
+    (fp_line (start -1.75 -1.75) (end -1.75 6.85) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 1.75 -1.75) (end 1.75 6.85) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.75 -1.75) (end 1.75 -1.75) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.75 6.85) (end 1.75 6.85) (layer F.CrtYd) (width 0.05))
+    (pad 1 thru_hole rect (at 0 0 270) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask F.SilkS)
+      (net 1 "Net-(P1-Pad1)"))
+    (pad 2 thru_hole oval (at 0 2.54 270) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask F.SilkS)
+      (net 2 "Net-(P1-Pad2)"))
+    (pad 3 thru_hole oval (at 0 5.08 270) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask F.SilkS)
+      (net 3 "Net-(P1-Pad3)"))
   )
 
   (module myFootPrints:heart (layer F.Cu) (tedit 0) (tstamp 59B5FB93)

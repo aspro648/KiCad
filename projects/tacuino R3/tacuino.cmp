@@ -1,0 +1,304 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 1/1/2015 9:22:04 AM
+
+BeginCmp
+TimeStamp = /544EFEB2;
+Reference = 1N4001;
+ValeurCmp = DIODE;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54481DA4;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = BATT_CR2032;
+EndCmp
+
+BeginCmp
+TimeStamp = /544830BD;
+Reference = B_C1;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5448305B;
+Reference = B_C2;
+ValeurCmp = CONN_1;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482DAB;
+Reference = B_N1;
+ValeurCmp = GND;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482E6F;
+Reference = B_N2;
+ValeurCmp = GND;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482E69;
+Reference = B_P1;
+ValeurCmp = PWR;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482E7A;
+Reference = B_P2;
+ValeurCmp = PWR;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5346C1FD;
+Reference = C1;
+ValeurCmp = 0.1uF;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5346C20C;
+Reference = C2;
+ValeurCmp = 10uF;
+IdModule  = C1V5;
+EndCmp
+
+BeginCmp
+TimeStamp = /544EFED5;
+Reference = D2;
+ValeurCmp = PWR;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5346C1BB;
+Reference = D3;
+ValeurCmp = ZD3V6;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54481F7A;
+Reference = D4;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5346C1C1;
+Reference = D5;
+ValeurCmp = ZD3V6;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5346C108;
+Reference = IC1;
+ValeurCmp = ATTINY85;
+IdModule  = DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /5346C0AD;
+Reference = J1;
+ValeurCmp = USB;
+IdModule  = USB_B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482EA9;
+Reference = L1_C1;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54482EA3;
+Reference = L1_C2;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /53481C96;
+Reference = P1;
+ValeurCmp = CONN_4;
+IdModule  = SIL-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /53481CA3;
+Reference = P2;
+ValeurCmp = CONN_4;
+IdModule  = SIL-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /5449814C;
+Reference = PD0;
+ValeurCmp = 0;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54498146;
+Reference = PD1;
+ValeurCmp = 1;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5449817F;
+Reference = PD2;
+ValeurCmp = 2;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A58204;
+Reference = PD3;
+ValeurCmp = 1;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A4EC53;
+Reference = PD4;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54498136;
+Reference = PD5;
+ValeurCmp = 5;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54498120;
+Reference = PDGND1;
+ValeurCmp = G;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54498596;
+Reference = PDGND2;
+ValeurCmp =  G;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5450F659;
+Reference = PDGND3;
+ValeurCmp = G;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5449811A;
+Reference = PDVCC1;
+ValeurCmp = P;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54483120;
+Reference = P_1;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5448311A;
+Reference = P_2;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54481F34;
+Reference = Q1;
+ValeurCmp = PHOTO;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5448256B;
+Reference = R1;
+ValeurCmp = 330;
+IdModule  = R3-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /5346C154;
+Reference = R2;
+ValeurCmp = 1k5;
+IdModule  = R3-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /5346C161;
+Reference = R3;
+ValeurCmp = 22;
+IdModule  = R3-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /5346C167;
+Reference = R4;
+ValeurCmp = 22;
+IdModule  = R3-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /544EFEE2;
+Reference = R6;
+ValeurCmp = 330;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54481F25;
+Reference = SP1;
+ValeurCmp = SPEAKER;
+IdModule  = SPEAKER;
+EndCmp
+
+BeginCmp
+TimeStamp = /5346C23E;
+Reference = SW1;
+ValeurCmp = TOUCH;
+IdModule  = SW_PUSH_TOUCH;
+EndCmp
+
+BeginCmp
+TimeStamp = /54481E7D;
+Reference = SW2;
+ValeurCmp = ON;
+IdModule  = SW_SPST;
+EndCmp
+
+BeginCmp
+TimeStamp = /544830B7;
+Reference = S_C1;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+BeginCmp
+TimeStamp = /54483055;
+Reference = S_C2;
+ValeurCmp =  ;
+IdModule  = 1pin-Sew-thin;
+EndCmp
+
+EndListe

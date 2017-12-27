@@ -1,0 +1,11 @@
+(module 1pin-Sew-thin (layer F.Cu) (tedit 54A59B97)
+  (descr "module 1 pin (ou trou mecanique de percage)")
+  (tags DEV)
+  (fp_text reference PD4 (at 0 -3.048) (layer F.SilkS) hide
+    (effects (font (size 1.016 1.016) (thickness 0.254)))
+  )
+  (fp_text value " 4" (at 1.524 -0.635) (layer F.SilkS)
+    (effects (font (size 1.27 1.27) (thickness 0.254)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 3.048 3.048) (drill 1.984375) (layers *.Cu *.Mask F.SilkS))
+)
