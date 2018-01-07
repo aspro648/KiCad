@@ -205,7 +205,7 @@ U 1 1 5860AE9A
 P 3700 4950
 F 0 "P5" H 3700 5050 50  0000 C CNN
 F 1 "CONN_01X01" H 3800 4850 50  0000 C CNN
-F 2 "footprints:Pin_Header_Angled_1x01" H 3700 4950 50  0001 C CNN
+F 2 "footprints:Pin_Header_Straight_1x01" H 3700 4950 50  0001 C CNN
 F 3 "" H 3700 4950 50  0000 C CNN
 	1    3700 4950
 	1    0    0    -1  
@@ -528,7 +528,6 @@ Connection ~ 5950 4900
 Connection ~ 5850 5250
 Connection ~ 5700 5600
 Connection ~ 7100 5600
-NoConn ~ 3500 5000
 NoConn ~ 3500 4950
 Wire Wire Line
 	5550 5250 6200 5250

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/MakersBox/Documents/git/KiCad/projects/Attiny/Attiny85Challenge/design_files/base.sch)
-    (date "12/9/2017 7:59:54 PM")
+    (date "1/2/2018 11:49:03 AM")
     (tool "Eeschema 4.0.4-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -83,7 +83,7 @@
       (tstamp 58D339BB))
     (comp (ref D3)
       (value LED)
-      (footprint footprints:LED-0603)
+      (footprint footprints:LED_0402)
       (libsource (lib schematic) (part LED))
       (sheetpath (names /) (tstamps /))
       (tstamp 58D34030))
@@ -95,7 +95,7 @@
       (tstamp 58D3406E))
     (comp (ref D4)
       (value LED)
-      (footprint footprints:LED-0603)
+      (footprint footprints:LED_0201)
       (libsource (lib schematic) (part LED))
       (sheetpath (names /) (tstamps /))
       (tstamp 58DDCAFF))
