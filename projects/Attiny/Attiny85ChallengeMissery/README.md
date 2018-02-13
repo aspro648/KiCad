@@ -1,0 +1,1 @@
+Photos and project details at https://hackaday.io/project/25265-an-unfortunate-smd-project

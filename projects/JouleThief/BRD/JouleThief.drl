@@ -1,11 +1,11 @@
 M48
-;DRILL file {KiCad (2015-08-15 BZR 6092)-product} date 4/11/2016 5:41:10 PM
+;DRILL file {KiCad 4.0.7} date 01/27/18 21:13:37
 ;FORMAT={-:-/ absolute / inch / decimal}
 FMAT,2
 INCH,TZ
 T1C0.032
 T2C0.052
-T3C0.075
+T3C0.079
 %
 G90
 G05
