@@ -8,7 +8,7 @@ Test your surface mount soldering skills out, starting with a 0805 package and w
 Bill Of Materials
 =================
   
-- 1 ea., Perfect Purple PCB from OSH Park
+- 1 ea., Perfect Purple PCB from OSH Park, https://oshpark.com/shared_projects/qlJc1M6i
 - 1 ea., Attiny84 QFN, https://www.digikey.com/short/qjwthf
 - 1 ea., CAP CER 0.1UF 50V X7R 0805, KMET C0805C104K5RACTU, https://www.digikey.com/short/qjwt9j
 - 1 ea., SWITCH SLIDE SPDT, C&K JS102011SAQN, http://www.digikey.com/short/3rbvmh
