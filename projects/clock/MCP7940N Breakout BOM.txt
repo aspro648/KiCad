@@ -1,0 +1,14 @@
+
+MCP7940N Breakout BOM
+
+C1, 1, 0.1uF Capacitor 0603, KEMET C0603C104K8RACTU, https://www.digikey.com/product-detail/en/kemet/C0603C104K8RACTU/399-1095-1-ND/411370
+C2, 1, 100pF Capacitor 0603, KEMET C0603C101J5GACTU, https://www.digikey.com/product-detail/en/kemet/C0603C101J5GACTU/399-1061-1-ND/411336
+CX1, CX2, 2, 10pF Capacitor 0603, KEMET C0603C100J5GACTU, https://www.digikey.com/product-detail/en/kemet/C0603C100J5GACTU/399-1049-1-ND/411324
+Crystal1, 1, 32.768 Khz crystal 2.00mm x 1.20mm, AVX Corp/Kyocera Corp ST2012SB32768E0HPWBB, https://www.digikey.com/product-detail/en/ST2012SB32768E0HPWBB/1253-1343-1-ND/4896433
+D1, 1 ea., D_Schottky,  
+JL1, JR1, 2, Conn_01x04, 
+P1, P2, P3, P4, 4, Pin, 
+R1, 1 ea., 1K resistor 0603, Yageo RC0603JR-071KL, https://www.digikey.com/product-detail/en/yageo/RC0603JR-071KL/311-1.0KGRCT-ND/729624
+R2, R3, 2 ea., 2K resistor 0603, Yageo RC0603JR-072KL, https://www.digikey.com/product-detail/en/yageo/RC0603JR-072KL/311-2.0KGRCT-ND/729673
+R4, 1 ea., 10K resistor 0603, Yageo RC0603JR-0710KL, https://www.digikey.com/product-detail/en/yageo/RC0603JR-0710KL/311-10KGRCT-ND/729647
+U1, RTC Microchip Technology MCP7940NT-I/SN SOIC-8, https://www.digikey.com/product-detail/en/microchip-technology/MCP7940NT-I-SN/MCP7940NT-I-SNCT-ND/5818704
