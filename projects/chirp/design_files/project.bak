@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:MB_switches_buttons
 LIBS:project-cache
 EELAYER 25 0
 EELAYER END
@@ -50,7 +51,7 @@ U 1 1 553EFD0A
 P 3750 3600
 F 0 "IC1" H 2600 4000 40  0000 C CNN
 F 1 "ATTINY85" H 4750 3200 40  0000 C CNN
-F 2 "footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4750 3600 35  0001 C CIN
+F 2 "footprints:SOIJ-8_5.3x5.3mm_Pitch1.27mm" H 4750 3600 35  0001 C CIN
 F 3 "" H 3750 3600 60  0000 C CNN
 	1    3750 3600
 	-1   0    0    1   
@@ -172,7 +173,7 @@ U 1 1 553FDF53
 P 2400 3600
 F 0 "C1" H 2425 3700 50  0000 L CNN
 F 1 "0.1 uF" H 2425 3500 50  0000 L CNN
-F 2 "footprints:C_1206_HandSoldering" H 2438 3450 30  0001 C CNN
+F 2 "footprints:C_1206" H 2438 3450 30  0001 C CNN
 F 3 "" H 2400 3600 60  0000 C CNN
 	1    2400 3600
 	1    0    0    -1  
@@ -194,7 +195,7 @@ U 1 1 561A9A26
 P 6300 2550
 F 0 "CON1" H 6195 2790 50  0000 C CNN
 F 1 "ISP" H 6200 2300 50  0000 L BNN
-F 2 "footprints:Pin_Header_Straight_2x03_Pitch2.54mm_SMD" V 5780 2590 50  0001 C CNN
+F 2 "footprints:Pin_Header_Straight_2x03_Pitch2.54mm" V 5780 2590 50  0001 C CNN
 F 3 "" H 6275 2550 60  0000 C CNN
 	1    6300 2550
 	1    0    0    -1  
@@ -225,8 +226,6 @@ Wire Wire Line
 	5100 3550 6900 3550
 Wire Wire Line
 	5100 3850 5550 3850
-Wire Wire Line
-	5100 3750 5950 3750
 Wire Wire Line
 	2400 4500 4400 4500
 Wire Wire Line
@@ -264,7 +263,6 @@ Wire Wire Line
 	6150 2550 5750 2550
 Wire Wire Line
 	5750 2550 5750 3650
-Connection ~ 5650 3750
 Wire Wire Line
 	5550 2250 6950 2250
 Wire Wire Line
@@ -281,14 +279,14 @@ Wire Wire Line
 	6900 5400 6900 4700
 Connection ~ 2400 3350
 Text Notes 4050 2800 0    60   ~ 0
-D0 Speaker\nD2 Touch\nA3 Photo \nD4 LED
+D0 Speaker\nD1 LED\nA3 Photo \nD4 Jumper
 $Comp
 L LED D1
 U 1 1 561BE7BF
 P 5950 4200
 F 0 "D1" H 5950 4300 50  0000 C CNN
 F 1 "LED" H 5950 4100 50  0000 C CNN
-F 2 "LEDs:LED_1206_HandSoldering" H 5950 4200 60  0001 C CNN
+F 2 "footprints:LED_1206" H 5950 4200 60  0001 C CNN
 F 3 "" H 5950 4200 60  0000 C CNN
 	1    5950 4200
 	0    -1   -1   0   
@@ -299,13 +297,13 @@ U 1 1 561BE85C
 P 5950 4550
 F 0 "R1" V 6030 4550 50  0000 C CNN
 F 1 "330" V 5950 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5880 4550 30  0001 C CNN
+F 2 "footprints:R_1206" V 5880 4550 30  0001 C CNN
 F 3 "" H 5950 4550 30  0000 C CNN
 	1    5950 4550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5950 3750 5950 4050
+	5950 3450 5950 4050
 Wire Wire Line
 	5950 4700 5950 5400
 Connection ~ 5950 5400
@@ -318,22 +316,18 @@ https://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/TEM
 Wire Wire Line
 	5950 4350 5950 4400
 Wire Wire Line
-	5750 3650 5100 3650
+	5100 3650 6400 3650
 $Comp
 L R J1
 U 1 1 5A7D01B3
 P 6400 4550
 F 0 "J1" V 6480 4550 50  0000 C CNN
 F 1 "JMP" V 6400 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 6330 4550 30  0001 C CNN
+F 2 "footprints:R_1206_HandSoldering" V 6330 4550 30  0001 C CNN
 F 3 "" H 6400 4550 30  0000 C CNN
 	1    6400 4550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5100 3450 6400 3450
-Wire Wire Line
-	6400 3450 6400 4400
 Wire Wire Line
 	6400 4700 6400 5400
 Connection ~ 6400 5400
@@ -341,4 +335,11 @@ Wire Wire Line
 	4400 5100 4400 5400
 Wire Wire Line
 	4400 4500 4400 4700
+Wire Wire Line
+	6400 3650 6400 4400
+Connection ~ 5750 3650
+Wire Wire Line
+	5950 3450 5100 3450
+Wire Wire Line
+	5650 3750 5100 3750
 $EndSCHEMATC

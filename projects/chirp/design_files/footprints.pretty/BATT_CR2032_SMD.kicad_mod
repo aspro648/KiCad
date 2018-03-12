@@ -1,4 +1,4 @@
-(module myFootPrints:BATT_CR2032_SMD locked (layer F.Cu) (tedit 5A7D2CD7)
+(module footprints:BATT_CR2032_SMD locked (layer F.Cu) (tedit 5A7D2CD7)
   (tags battery)
   (fp_text reference BT1 (at 0 5.08) (layer F.SilkS) hide
     (effects (font (size 1.72974 1.08712) (thickness 0.27178)))

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="8.5in"
+   height="11in"
+   viewBox="0 0 765 990"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="SMD challenge part card.svg"
+   inkscape:export-filename="C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeMisery2\docs\SMD Misery part card.png"
+   inkscape:export-xdpi="150"
+   inkscape:export-ydpi="150">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2502642"
+     inkscape:cx="85.303713"
+     inkscape:cy="605.36"
+     inkscape:document-units="in"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="in"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-width="1523"
+     inkscape:window-height="877"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3336"
+       units="in"
+       spacingx="22.5"
+       spacingy="22.5" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-62.362205)">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.75724733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 202.5,452.35291 0,129.02029"
+       id="path3352"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.74779963px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 315,453.55139 0,125.82096"
+       id="path3354"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 90,510.86221 315,0"
+       id="path3356"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="166.875"
+       y="506.73718"
+       id="text3358-4"><tspan
+         sodipodi:role="line"
+         id="tspan3360-5"
+         x="166.875"
+         y="506.73718"
+         style="font-size:12.5px;line-height:1.25">0805</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="236.875"
+       y="507.36221"
+       id="text3358-8"><tspan
+         sodipodi:role="line"
+         id="tspan3360-53"
+         x="236.875"
+         y="507.36221"
+         style="font-size:12.5px;line-height:1.25">0603</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="320.75"
+       y="506.11218"
+       id="text3358-2"><tspan
+         sodipodi:role="line"
+         id="tspan3360-6"
+         x="320.75"
+         y="506.11218"
+         style="font-size:12.5px;line-height:1.25">0402</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="167.125"
+       y="525.86218"
+       id="text3358-7"><tspan
+         sodipodi:role="line"
+         id="tspan3360-1"
+         x="167.125"
+         y="525.86218"
+         style="font-size:12.5px;line-height:1.25">0201</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="321.25"
+       y="522.86218"
+       id="text3358-71"><tspan
+         sodipodi:role="line"
+         id="tspan3360-12"
+         x="321.25"
+         y="522.86218"
+         style="font-size:12.5px;line-height:1.25">Attiny</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3358"
+       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(13,66.683675)"><flowRegion
+         id="flowRegion3360"><rect
+           id="rect3362"
+           width="315"
+           height="22.5"
+           x="90"
+           y="360"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara3364"
+         style="font-size:7.5px;line-height:1.25"><flowSpan
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;font-family:'Marker Felt';-inkscape-font-specification:'Marker Felt Medium';text-align:center;text-anchor:middle"
+           id="flowSpan3366">SMD Misery</flowSpan></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3358-5"
+       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(8.5,218.18367)"><flowRegion
+         id="flowRegion3360-8"><rect
+           id="rect3362-3"
+           width="315"
+           height="22.5"
+           x="90"
+           y="360"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara3364-7"
+         style="font-size:7.5px;line-height:1.25"><flowSpan
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;font-family:'Marker Felt';-inkscape-font-specification:'Marker Felt Medium';text-align:center;text-anchor:middle"
+           id="flowSpan3366-0">https://goo.gl/RVfDrH</flowSpan></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="240.25"
+       y="525.86218"
+       id="text3358-7-3"><tspan
+         sodipodi:role="line"
+         id="tspan3360-1-2"
+         x="240.25"
+         y="525.86218"
+         style="font-size:12.50000095px;line-height:1.25;stroke-width:1px">1005</tspan></text>
+  </g>
+</svg>

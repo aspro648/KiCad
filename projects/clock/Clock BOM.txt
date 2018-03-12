@@ -1,13 +1,13 @@
 
 
-Arduino Clock Bill Of Materials
+Arduino Clock V 0.1 Bill Of Materials
 =================
   
 - 1 ea. Perfect Purple PCB from OSH Park
 - 1 ea., Atmega328P-PU, https://www.digikey.com/product-detail/en/microchip-technology/ATMEGA328P-PU/ATMEGA328P-PU-ND/1914589
-- 1 ea., MCP7940N RTC, https://www.digikey.com/product-detail/en/microchip-technology/MCP7940N-I-P/MCP7940N-I-P-ND/3872279
+- 1 ea., Maxim DS1302+, https://www.digikey.com/product-detail/en/maxim-integrated/DS1302/DS1302-ND/956878
 - 1 ea., 0.56in 4-Digit 7-Segment Display https://www.digikey.com/product-detail/en/adafruit-industries-llc/811/1528-1509-ND/5774235
-- 1 ea., CRYSTAL 32.7680KHZ 12.5PF T/H, http://www.digikey.com/short/39p5fr
+- 1 ea., CRYSTAL 32.7680KHZ 6 PF T/H, Citizens CFS-20632768DZBB, https://www.digikey.com/product-detail/en/citizen-finedevice-co-ltd/CFS-20632768DZBB/300-8301-ND/862578
 - 1 ea., RETAINER BATT CR1216/1225 PC PIN, http://www.digikey.com/short/39p52t
 - 2 ea., 6mm Tactile button, https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536
 - 2 ea., 0.1uF Cap, http://www.digikey.com/short/7j4hb0
@@ -24,6 +24,9 @@ Arduino Clock Bill Of Materials
 - 4 ea., RES 100 OHM 1/8W 5% CF AXIAL, Stackpole CF18JT100R, https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF18JT100R/CF18JT100RCT-ND/2022718 
 - 2 ea., RES 330 OHM 1/8W 5% CF AXIAL, Stackpole CF18JT330R, https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF18JT330R/CF18JT330RCT-ND/2022730
 - 4 ea., RES 1K OHM 1/8W 5% CF AXIAL, Stackpole CF18JT1K00, https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF18JT1K00/CF18JT1K00CT-ND/2022742
-- 2 ea., RES 4K7 OHM 1/8W 5% CF AXIAL, Stackpole CF18JT4K70, https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF18JT4K70/CF18JT4K70CT-ND/2022758
+- 1 ea., Battery holder, http://www.digikey.com/short/tz5bd1 
+
+Extras:
 - 1 ea., 28-pin socket, https://www.digikey.com/product-detail/en/on-shore-technology-inc/ED281DT/ED3050-5-ND/4147600
 - 1 ea., 8-pin socket, https://www.digikey.com/product-detail/en/assmann-wsw-components/A-08-LC-TR/AE9988-ND/821742
+

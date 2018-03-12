@@ -1,0 +1,253 @@
+EESchema Schematic File Version 2
+LIBS:schematic
+LIBS:base-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:base-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "SMD Challenge"
+Date ""
+Rev ""
+Comp "MakersBox"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 553FAE81
+P 900 900
+F 0 "#FLG01" H 900 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 1080 50  0000 C CNN
+F 2 "" H 900 900 60  0000 C CNN
+F 3 "" H 900 900 60  0000 C CNN
+	1    900  900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 553FAEA5
+P 1250 900
+F 0 "#FLG02" H 1250 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 1250 1080 50  0000 C CNN
+F 2 "" H 1250 900 60  0000 C CNN
+F 3 "" H 1250 900 60  0000 C CNN
+	1    1250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 553FAEE7
+P 1250 1000
+F 0 "#PWR03" H 1250 750 50  0001 C CNN
+F 1 "GND" H 1250 850 50  0000 C CNN
+F 2 "" H 1250 1000 60  0000 C CNN
+F 3 "" H 1250 1000 60  0000 C CNN
+	1    1250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR04
+U 1 1 553FAF12
+P 900 1000
+F 0 "#PWR04" H 900 850 50  0001 C CNN
+F 1 "+BATT" H 900 1140 50  0000 C CNN
+F 2 "" H 900 1000 60  0000 C CNN
+F 3 "" H 900 1000 60  0000 C CNN
+	1    900  1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L +BATT #PWR05
+U 1 1 56DD00C2
+P 8000 2850
+F 0 "#PWR05" H 8000 2700 50  0001 C CNN
+F 1 "+BATT" H 8000 2990 50  0000 C CNN
+F 2 "" H 8000 2850 60  0000 C CNN
+F 3 "" H 8000 2850 60  0000 C CNN
+	1    8000 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 56DD0136
+P 7200 3050
+F 0 "#PWR06" H 7200 2800 50  0001 C CNN
+F 1 "GND" H 7200 2900 50  0000 C CNN
+F 2 "" H 7200 3050 60  0000 C CNN
+F 3 "" H 7200 3050 60  0000 C CNN
+	1    7200 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AVR-ISP-6 CON1
+U 1 1 58609061
+P 6800 2950
+F 0 "CON1" H 6695 3190 50  0000 C CNN
+F 1 "AVR-ISP-6" H 6535 2720 50  0000 L BNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" V 6280 2990 50  0001 C CNN
+F 3 "" H 6775 2950 50  0000 C CNN
+	1    6800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  900  900  1000
+Wire Wire Line
+	1250 900  1250 1000
+Wire Wire Line
+	6900 2950 7600 2950
+Wire Wire Line
+	6900 2850 8000 2850
+Wire Wire Line
+	7200 3050 6900 3050
+NoConn ~ 5900 6250
+$Comp
+L AVR-ISP-6 CON2
+U 1 1 5AA202EB
+P 6850 3700
+F 0 "CON2" H 6745 3940 50  0000 C CNN
+F 1 "AVR-ISP-6" H 6585 3470 50  0000 L BNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" V 6330 3740 50  0001 C CNN
+F 3 "" H 6825 3700 50  0000 C CNN
+	1    6850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3700 7450 3700
+Wire Wire Line
+	7450 3700 7450 2950
+Wire Wire Line
+	6700 3600 6150 3600
+Wire Wire Line
+	6150 3600 6150 2850
+Wire Wire Line
+	6150 2850 6650 2850
+Wire Wire Line
+	5950 3700 6700 3700
+Wire Wire Line
+	5950 3700 5950 2950
+Wire Wire Line
+	5950 2950 6650 2950
+Wire Wire Line
+	6700 3800 5800 3800
+Wire Wire Line
+	5800 3800 5800 3050
+Wire Wire Line
+	5800 3050 6650 3050
+$Comp
+L GND #PWR07
+U 1 1 5AA20351
+P 7950 3800
+F 0 "#PWR07" H 7950 3550 50  0001 C CNN
+F 1 "GND" H 7950 3650 50  0000 C CNN
+F 2 "" H 7950 3800 60  0000 C CNN
+F 3 "" H 7950 3800 60  0000 C CNN
+	1    7950 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +BATT #PWR08
+U 1 1 5AA20362
+P 7250 3600
+F 0 "#PWR08" H 7250 3450 50  0001 C CNN
+F 1 "+BATT" H 7250 3740 50  0000 C CNN
+F 2 "" H 7250 3600 60  0000 C CNN
+F 3 "" H 7250 3600 60  0000 C CNN
+	1    7250 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 3600 7250 3600
+Wire Wire Line
+	6950 3800 7950 3800
+$Comp
+L LED D1
+U 1 1 5AA20546
+P 7900 3150
+F 0 "D1" H 7900 3250 50  0000 C CNN
+F 1 "LED" H 7900 3050 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 7900 3150 50  0001 C CNN
+F 3 "" H 7900 3150 50  0000 C CNN
+	1    7900 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5AA20593
+P 7900 3550
+F 0 "R1" V 7980 3550 50  0000 C CNN
+F 1 "330" V 7900 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7830 3550 50  0001 C CNN
+F 3 "" H 7900 3550 50  0000 C CNN
+	1    7900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3800 7900 3700
+Connection ~ 7900 3800
+Connection ~ 7900 2850
+$Comp
+L LED D2
+U 1 1 5AA206DD
+P 7600 3150
+F 0 "D2" H 7600 3250 50  0000 C CNN
+F 1 "LED" H 7600 3050 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 7600 3150 50  0001 C CNN
+F 3 "" H 7600 3150 50  0000 C CNN
+	1    7600 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5AA20729
+P 7600 3550
+F 0 "R2" V 7680 3550 50  0000 C CNN
+F 1 "330" V 7600 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7530 3550 50  0001 C CNN
+F 3 "" H 7600 3550 50  0000 C CNN
+	1    7600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2850 7900 2950
+Wire Wire Line
+	7600 3700 7600 3800
+Connection ~ 7600 3800
+Wire Wire Line
+	7600 3400 7600 3350
+Wire Wire Line
+	7900 3350 7900 3400
+Connection ~ 7450 2950
+$EndSCHEMATC

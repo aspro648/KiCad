@@ -1,4 +1,4 @@
-update=2/13/2018 6:54:52 PM
+update=3/4/2018 10:14:40 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,3 +69,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+LibName31=C:/Users/Maker's Box/Documents/git/KiCad/MB_symbols/MB_switches_buttons

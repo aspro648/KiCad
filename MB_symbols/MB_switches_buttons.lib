@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Switch_Tact_THT_6x6mm
+#
+DEF Switch_Tact_THT_6x6mm S 0 40 Y Y 1 F N
+F0 "S" -200 300 60 H V C CNN
+F1 "Switch_Tact_THT_6x6mm" 0 -300 60 H V C CNN
+F2 "MB_switches_buttons:Switch_Tactile_Switch_Tact_THT_6x6mm" 200 200 60 H I L CNN
+F3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf" 200 300 60 H I L CNN
+F4 "SW400-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "B3F-1000" 200 500 60 H I L CNN "MPN"
+F6 "Switches" 200 600 60 H I L CNN "Category"
+F7 "Tactile Switches" 200 700 60 H I L CNN "Family"
+F8 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/omron-electronics-inc-emc-div/B3F-1000/SW400-ND/33150" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "SWITCH TACTILE SPST-NO 0.05A 24V" 200 1000 60 H I L CNN "Description"
+F11 "Omron Electronics Inc-EMC Div" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 200 200 -200 0 1 0 f
+P 2 0 1 0 -200 -100 200 -100 N
+P 2 0 1 0 -25 -100 -25 -25 N
+P 2 0 1 0 -25 100 -25 25 N
+P 2 0 1 0 25 0 100 0 N
+P 2 0 1 0 25 50 25 -50 N
+P 2 0 1 0 200 100 -200 100 N
+X ~ 1 -400 100 200 R 50 50 1 1 B
+X ~ 2 400 100 200 L 50 50 1 1 B
+X ~ 3 -400 -100 200 R 50 50 1 1 B
+X ~ 4 400 -100 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

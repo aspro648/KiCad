@@ -1,4 +1,4 @@
-(module myFootPrints:PS1240_piezo (layer F.Cu) (tedit 5A7D0A37)
+(module footprints:PS1240_piezo (layer F.Cu) (tedit 5A7D0A37)
   (descr "piezo speaker 12 mm")
   (tags "buzzer speaker piezo")
   (fp_text reference SP1 (at 0 -0.4) (layer F.SilkS)
