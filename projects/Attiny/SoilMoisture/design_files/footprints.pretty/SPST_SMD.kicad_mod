@@ -1,4 +1,4 @@
-(module myFootPrints:SPST_SMD (layer F.Cu) (tedit 5860A656)
+(module footprints:SPST_SMD (layer F.Cu) (tedit 5860A656)
   (descr "Through hole pin header")
   (tags "pin header")
   (fp_text reference SW1 (at 0 3) (layer F.SilkS)
