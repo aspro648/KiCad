@@ -1,0 +1,32 @@
+
+
+Arduino Clock Shield V 0.0 Bill Of Materials
+=================
+  
+- 1 ea. Perfect Purple PCB from OSH Park (2.1 x 2.0")
+- 1 ea., Maxim DS1302+, https://www.digikey.com/product-detail/en/maxim-integrated/DS1302/DS1302-ND/956878
+- 1 ea., 0.56in 4-Digit 7-Segment Display https://www.digikey.com/product-detail/en/adafruit-industries-llc/811/1528-1509-ND/5774235
+- 1 ea., CRYSTAL 32.7680KHZ 6 PF T/H, Citizens CFS-20632768DZBB, https://www.digikey.com/product-detail/en/citizen-finedevice-co-ltd/CFS-20632768DZBB/300-8301-ND/862578
+- 1 ea., RETAINER BATT CR1216/1225 PC PIN, http://www.digikey.com/short/39p52t
+- 2 ea., 6mm Tactile button, https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536
+- 1 ea., 0.1uF Cap, http://www.digikey.com/short/7j4hb0
+- 1 ea., Photo transistor, www.digikey.com/product-detail/en/LTR-4206/160-1988-ND/214965
+- 2 ea., RES 330 OHM 1/8W 5% CF AXIAL, 
+- 4 ea., TRANS NPN 40V 1A TO92, https://www.digikey.com/product-detail/en/PN2222ATA/PN2222ATACT-ND/3042489
+- 1 ea., AUDIO PIEZO TRANSDUCER 30V TH, TDK PS1240P02CT3, http://www.digikey.com/short/7hcrp1
+- 4 ea., RES 100 OHM 1/8W 5% CF AXIAL, Stackpole CF18JT100R, https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF18JT100R/CF18JT100RCT-ND/2022718 
+- 2 ea., RES 330 OHM 1/8W 5% CF AXIAL, Stackpole CF18JT330R, https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF18JT330R/CF18JT330RCT-ND/2022730
+- 4 ea., RES 1K OHM 1/8W 5% CF AXIAL, Stackpole CF18JT1K00, https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF18JT1K00/CF18JT1K00CT-ND/2022742
+- 1 ea., Battery holder, http://www.digikey.com/short/tz5bd1 
+- 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/product-detail/en/PREC040SAAN-RC/S1012EC-40-ND/2774814
+
+Extras:
+- 1 ea., 8-pin socket, https://www.digikey.com/product-detail/en/assmann-wsw-components/A-08-LC-TR/AE9988-ND/821742
+
+Crystals to Try (32.7680KHZ 6PF):
+https://www.digikey.com/product-detail/en/citizen-finedevice-co-ltd/CFS-20632768DZBB/300-8301-ND/862578
+https://www.digikey.com/product-detail/en/seiko-instruments/VT200F-6PF20PPM/728-1000-ND/1626715
+https://www.digikey.com/product-detail/en/citizen-finedevice-co-ltd/CFS-20632768EZBB/300-8761-ND/2217072
+https://www.digikey.com/product-detail/en/diodes-incorporated/G23270006/G23270006-ND/6096621
+
+

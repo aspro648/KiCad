@@ -7,7 +7,7 @@ Chirp V 0.1 Bill Of Materials
 - 1 ea., ATTINY 85 SOIC8, ATMEL ATTINY85V-10SURCT-ND, http://www.digikey.com/short/3253mp
 - 1 ea., LED RED CLEAR 0805 SMD, Dialight 5988130107F, https://www.digikey.com/short/qjwthb
 - 1 ea., RES SMD 330 OHM 5% 1/4W 0805, Yageo RC0805JR-07330RL, https://www.digikey.com/short/3wzz2f 
-- 1 ea., CAP CER 0.1UF 50V X7R 0805, KMET C0805C104K5RACTU, https://www.digikey.com/short/qjwt9j
+- 1 ea., CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/product-detail/en/kemet/C0805C104M5RACTU/399-1169-1-ND/411444
 - 1 ea., AUDIO PIEZO TRANSDUCER 12.5V SMD, Murata PKMCS0909E4000-R1, https://www.digikey.com/short/qjn4nh
 - 1 ea., AMBIENT LIGHT SENSOR, Everlight ALS-PT19-315C/L177/TR8, https://www.digikey.com/product-detail/en/everlight-electronics-co-ltd/ALS-PT19-315C-L177-TR8/1080-1244-1-ND/2675978
 - 1 ea., HOLDER BATTERY 20MM COIN, Linx BAT-HLD-001, http://www.digikey.com/short/3rbvh8

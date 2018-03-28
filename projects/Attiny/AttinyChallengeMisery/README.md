@@ -10,7 +10,7 @@ Bill Of Materials
   
 - 1 ea., Perfect Purple PCB from OSH Park, https://oshpark.com/shared_projects/qlJc1M6i
 - 1 ea., Attiny84 QFN, https://www.digikey.com/short/qjwthf
-- 1 ea., CAP CER 0.1UF 50V X7R 0805, KMET C0805C104K5RACTU, https://www.digikey.com/short/qjwt9j
+- 1 ea., CAP CER 0.1UF 50V X8R 0805, TDK C2012X8R1H104K125AA, https://www.digikey.com/product-detail/en/tdk-corporation/C2012X8R1H104K125AA/445-2514-1-ND/927171
 - 1 ea., SWITCH SLIDE SPDT, C&K JS102011SAQN, http://www.digikey.com/short/3rbvmh
 - 1 ea., LED ORANGE CLEAR 0805 SMD, https://www.digikey.com/short/qjwthb
 - 1 ea., RES SMD 330 OHM 5% 1/8W 0805, Yageo RC0805JR-07330RL, https://www.digikey.com/short/3wzz2f
