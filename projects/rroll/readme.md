@@ -2,6 +2,7 @@ Introduction
 ============
 
 ![Project](images/project.png) 
+
 I came across an [interesting article] (http://cornellsun.com/2017/11/10/hundreds-rickrolled-in-mysterious-campus-prank-at-cornell/) about someone placing Attiny coin cell based "Rick Roll" devices around a college campus. I've been "Rick Rolling" student for years with my [Snap-n-sew Kit](https://www.tindie.com/products/MakersBox/snapnsew-kit-a-soft-circuit--embedded-platform/), so it was quite easy to strip that project down, switch to surface mount components, and put it on a footprint encompasing the size of a CR2032 battery.
 
 I also came across this [similar project] (https://github.com/rogertheriault/firefly) that chirps and blinks at intervals.  My idea is to use sound/light to attract attention to the device and then have the victim press a button to activate the Rick Roll.
