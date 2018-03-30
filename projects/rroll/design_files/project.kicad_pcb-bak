@@ -124,7 +124,7 @@
     (add_net "Net-(IC1-Pad3)")
   )
 
-  (module myFootPrints:SW_SMD_TOUCH (layer F.Cu) (tedit 5A9F81E5) (tstamp 5A94E024)
+  (module myFootPrints:SW_SMD_TOUCH (layer F.Cu) (tedit 5A9F829B) (tstamp 5A94E024)
     (at 209.389 98.508 180)
     (path /5A7D01B3)
     (fp_text reference J1 (at 0.127 4.572 180) (layer F.SilkS) hide
@@ -142,7 +142,7 @@
       (net 1 GND))
     (pad 2 smd rect (at 0 0.635 180) (size 1.8 0.5) (layers F.Cu F.Paste F.Mask)
       (net 3 "Net-(IC1-Pad2)"))
-    (pad 3 smd circle (at 0 -0.75 180) (size 4 4) (layers F.Paste F.Mask))
+    (pad 3 smd circle (at 0 -0.75 180) (size 3.5 3.5) (layers F.Paste F.Mask))
   )
 
   (module Opto-Devices:PhotoDiode_SMD-DIL2_4.5x4 (layer F.Cu) (tedit 5A9E0CC7) (tstamp 5A9E0C7B)

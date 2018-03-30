@@ -3,14 +3,14 @@ Introduction
 
 ![Project](images/project.png) 
 
-I came across an [interesting article] (http://cornellsun.com/2017/11/10/hundreds-rickrolled-in-mysterious-campus-prank-at-cornell/) about someone placing Attiny coin cell based "Rick Roll" devices around a college campus. I've been "Rick Rolling" student for years with my [Snap-n-sew Kit](https://www.tindie.com/products/MakersBox/snapnsew-kit-a-soft-circuit--embedded-platform/), so it was quite easy to strip that project down, switch to surface mount components, and put it on a footprint encompasing the size of a CR2032 battery.
+I came across an [interesting article](http://cornellsun.com/2017/11/10/hundreds-rickrolled-in-mysterious-campus-prank-at-cornell/) about someone placing Attiny coin cell based "Rick Roll" devices around a college campus. I've been "Rick Rolling" student for years with my [Snap-n-sew Kit](https://www.tindie.com/products/MakersBox/snapnsew-kit-a-soft-circuit--embedded-platform/), so it was quite easy to strip that project down, switch to surface mount components, and put it on a footprint encompasing the size of a CR2032 battery.
 
-I also came across this [similar project] (https://github.com/rogertheriault/firefly) that chirps and blinks at intervals.  My idea is to use sound/light to attract attention to the device and then have the victim press a button to activate the Rick Roll.
+I also came across this [similar project](https://github.com/rogertheriault/firefly) that chirps and blinks at intervals.  My idea is to use sound/light to attract attention to the device and then have the victim press a button to activate the Rick Roll.
 
 Bill Of Materials
 =================
   
-- 1 ea. Perfect Purple PCB from OSH Park
+- 1 ea. Perfect Purple PCB from OSH Park, https://oshpark.com/shared_projects/lpA38MDw
 - 1 ea., ATTINY 85 SOIC8, ATMEL ATTINY85V-10SURCT-ND, http://www.digikey.com/short/3253mp
 - 1 ea., LED RED CLEAR 0805 SMD, Dialight 5988130107F, https://www.digikey.com/short/qjwthb
 - 1 ea., RES SMD 330 OHM 5% 1/4W 0805, Yageo RC0805JR-07330RL, https://www.digikey.com/short/3wzz2f 
