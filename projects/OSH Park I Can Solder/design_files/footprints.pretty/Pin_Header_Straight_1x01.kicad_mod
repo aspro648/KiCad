@@ -1,0 +1,11 @@
+(module Pin_Headers:Pin_Header_Straight_1x01 (layer F.Cu) (tedit 5ADA5840)
+  (descr "Through hole pin header")
+  (tags "pin header")
+  (fp_text reference P1 (at -0.6 -0.5) (layer F.SilkS) hide
+    (effects (font (size 0.127 0.127) (thickness 0.03175)))
+  )
+  (fp_text value CONN_01X01 (at 0 0.9) (layer F.Fab)
+    (effects (font (size 0.127 0.127) (thickness 0.03175)))
+  )
+  (pad "" thru_hole circle (at 0.18 -0.25) (size 5 5) (drill 2) (layers *.Cu B.Mask))
+)

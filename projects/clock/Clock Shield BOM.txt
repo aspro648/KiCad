@@ -11,13 +11,11 @@ Arduino Clock Shield V 0.0 Bill Of Materials
 - 2 ea., 6mm Tactile button, https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536
 - 1 ea., 0.1uF Cap, http://www.digikey.com/short/7j4hb0
 - 1 ea., Photo transistor, www.digikey.com/product-detail/en/LTR-4206/160-1988-ND/214965
-- 2 ea., RES 330 OHM 1/8W 5% CF AXIAL, 
 - 4 ea., TRANS NPN 40V 1A TO92, https://www.digikey.com/product-detail/en/PN2222ATA/PN2222ATACT-ND/3042489
 - 1 ea., AUDIO PIEZO TRANSDUCER 30V TH, TDK PS1240P02CT3, http://www.digikey.com/short/7hcrp1
 - 4 ea., RES 100 OHM 1/8W 5% CF AXIAL, Stackpole CF18JT100R, https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF18JT100R/CF18JT100RCT-ND/2022718 
 - 2 ea., RES 330 OHM 1/8W 5% CF AXIAL, Stackpole CF18JT330R, https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF18JT330R/CF18JT330RCT-ND/2022730
 - 4 ea., RES 1K OHM 1/8W 5% CF AXIAL, Stackpole CF18JT1K00, https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF18JT1K00/CF18JT1K00CT-ND/2022742
-- 1 ea., Battery holder, http://www.digikey.com/short/tz5bd1 
 - 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/product-detail/en/PREC040SAAN-RC/S1012EC-40-ND/2774814
 
 Extras:
