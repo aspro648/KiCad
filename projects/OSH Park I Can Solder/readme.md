@@ -10,6 +10,7 @@ A quick and easy "I Can Solder!" badge project.
 Bill Of Materials
 =================
   
+- 1 ea. Perfect purple PCB, [OSHPark](https://oshpark.com/shared_projects/SdA1N3BS)  
 - 1 ea. SMD Battery holder, [Linx BAT-HLD-001](https://www.digikey.com/short/jz1cf5)
 - 1 ea. 5 mm RGB Color changing LED, [Digikey](https://www.digikey.com/short/jzvzvb) or [Amazon](http://a.co/841utUf) 
 - 2 ea. 100 ohm 1/8W Resistor, [Stackpole CF18JT100R](https://www.digikey.com/short/qq8mtn)
