@@ -1,0 +1,18 @@
+(module SW_SPST (layer F.Cu) (tedit 5AE141D8)
+  (descr "Switch inverseur")
+  (tags "SWITCH DEV")
+  (fp_text reference SW2 (at -1.651 2.032 90) (layer F.SilkS) hide
+    (effects (font (size 1.016 1.016) (thickness 0.2032)))
+  )
+  (fp_text value ON (at -4.318 -4.826) (layer F.SilkS) hide
+    (effects (font (size 1.016 1.016) (thickness 0.254)))
+  )
+  (fp_line (start -0.254 4.064) (end -2.794 4.064) (layer F.SilkS) (width 0.15))
+  (fp_line (start -2.794 -4.064) (end -0.254 -4.064) (layer F.SilkS) (width 0.15))
+  (pad 2 thru_hole circle (at 0 0) (size 1.651 1.651) (drill 0.9652) (layers *.Cu *.Mask F.SilkS))
+  (pad 1 thru_hole circle (at 0 -2.54) (size 1.651 1.651) (drill 0.9652) (layers *.Cu *.Mask F.SilkS))
+  (pad 3 thru_hole circle (at 0 2.54) (size 1.651 1.651) (drill 0.9652) (layers *.Cu *.Mask F.SilkS))
+  (pad 3 thru_hole circle (at -3.302 -2.54) (size 1.651 1.651) (drill 0.9652) (layers *.Cu *.Mask F.SilkS))
+  (pad 3 thru_hole circle (at -3.302 0) (size 1.651 1.651) (drill 0.9652) (layers *.Cu *.Mask F.SilkS))
+  (pad 3 thru_hole circle (at -3.302 2.54) (size 1.651 1.651) (drill 0.9652) (layers *.Cu *.Mask F.SilkS))
+)
