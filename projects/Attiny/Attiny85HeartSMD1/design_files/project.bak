@@ -1,5 +1,7 @@
 EESchema Schematic File Version 2
-LIBS:base-rescue
+LIBS:project
+LIBS:valves
+LIBS:project-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,9 +30,7 @@ LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:valves
-LIBS:MMA8452Q
-LIBS:base-cache
+LIBS:project-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -123,7 +123,7 @@ F 3 "" H 6550 2400 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Battery BT1
+L Battery-RESCUE-project BT1
 U 1 1 56CFA61E
 P 4750 2650
 F 0 "BT1" H 4850 2700 50  0000 L CNN
@@ -182,9 +182,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 900  1250 1000
 Wire Wire Line
-	1950 2100 2500 2100
-Wire Wire Line
-	2500 2100 2700 2100
+	1950 2100 2700 2100
 $Comp
 L GND #PWR010
 U 1 1 56ED00B6
@@ -272,28 +270,20 @@ F 3 "" H 4050 1850 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1950 1600 2500 1600
-Wire Wire Line
-	2500 1600 2700 1600
+	1950 1600 2700 1600
 Wire Wire Line
 	2500 1700 2500 1600
 Connection ~ 2500 1600
 Wire Wire Line
-	2500 2000 2500 2100
-Wire Wire Line
-	2500 2100 2500 2650
+	2500 2000 2500 2650
 Connection ~ 2500 2100
 Connection ~ 1950 2100
 Wire Wire Line
 	5400 2100 5950 2100
 Wire Wire Line
-	5950 1250 5950 2100
+	5950 1250 5950 2400
 Wire Wire Line
-	5950 2100 5950 2400
-Wire Wire Line
-	5400 2000 5850 2000
-Wire Wire Line
-	5850 2000 6850 2000
+	5400 2000 6850 2000
 Wire Wire Line
 	5850 2000 5850 850 
 Wire Wire Line
@@ -310,7 +300,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 1800 6250 1800
 $Comp
-L LED D1
+L LED-RESCUE-project D1
 U 1 1 58C49927
 P 6150 2400
 F 0 "D1" H 6150 2500 50  0000 C CNN
@@ -320,8 +310,6 @@ F 3 "" H 6150 2400 50  0000 C CNN
 	1    6150 2400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5950 2400 5950 2400
 Wire Wire Line
 	6350 2400 6400 2400
 Wire Wire Line

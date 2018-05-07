@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
     (links 15)
@@ -15,7 +15,7 @@
   (page USLetter)
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal)
+    (31 B.Cu signal hide)
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
@@ -27,7 +27,7 @@
   )
 
   (setup
-    (last_trace_width 0.3048)
+    (last_trace_width 0.1524)
     (user_trace_width 0.254)
     (user_trace_width 0.3048)
     (user_trace_width 0.4064)
@@ -54,12 +54,12 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 1 1)
-    (pad_drill 0)
+    (pad_size 5 5)
+    (pad_drill 2)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (grid_origin 210.82 95.25)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFFFBFF)
     (pcbplotparams
       (layerselection 0x010f0_80000001)
       (usegerberextensions true)
@@ -119,13 +119,13 @@
   )
 
   (module myFootPrints:BATT_CR2032_SMD (layer B.Cu) (tedit 56CFB5D2) (tstamp 586093B2)
-    (at 207.645 92.075 45)
+    (at 207.645 92.075 225)
     (tags battery)
     (path /56CFA61E)
-    (fp_text reference BT1 (at 0 -5.08 45) (layer B.SilkS) hide
+    (fp_text reference BT1 (at 0 -5.08 225) (layer B.SilkS) hide
       (effects (font (size 1.72974 1.08712) (thickness 0.27178)) (justify mirror))
     )
-    (fp_text value Battery (at 0 2.54 45) (layer B.SilkS) hide
+    (fp_text value Battery (at 0 2.54 225) (layer B.SilkS) hide
       (effects (font (size 1.524 1.016) (thickness 0.254)) (justify mirror))
     )
     (fp_line (start -7.1755 -6.5405) (end -10.541 -4.572) (layer B.SilkS) (width 0.15))
@@ -139,11 +139,11 @@
     (fp_line (start -10.541 -4.572) (end -10.541 4.572) (layer B.SilkS) (width 0.15))
     (fp_line (start 10.541 -4.572) (end 10.541 4.572) (layer B.SilkS) (width 0.15))
     (fp_circle (center 0 0) (end -10.16 0) (layer Dwgs.User) (width 0.15))
-    (pad 2 smd circle (at 0 0 45) (size 17.78 17.78) (layers B.Cu B.Paste B.Mask)
+    (pad 2 smd circle (at 0 0 225) (size 17.78 17.78) (layers B.Cu B.Paste B.Mask)
       (net 1 GND))
-    (pad 1 smd rect (at -11.43 0 45) (size 2.54 5.08) (layers B.Cu B.Paste B.Mask)
+    (pad 1 smd rect (at -11.43 0 225) (size 2.54 5.08) (layers B.Cu B.Paste B.Mask)
       (net 3 "Net-(BT1-Pad1)"))
-    (pad 1 smd rect (at 11.43 0 45) (size 2.54 5.08) (layers B.Cu B.Paste B.Mask)
+    (pad 1 smd rect (at 11.43 0 225) (size 2.54 5.08) (layers B.Cu B.Paste B.Mask)
       (net 3 "Net-(BT1-Pad1)"))
   )
 
@@ -310,8 +310,8 @@
     (pad "" np_thru_hole circle (at -3.4 2.75 270) (size 0.9 0.9) (drill 0.9) (layers *.Cu *.Mask))
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x01 (layer F.Cu) (tedit 58C4AD73) (tstamp 5860AB5B)
-    (at 209.804 79.502)
+  (module Pin_Headers:Pin_Header_Straight_1x01 (layer F.Cu) (tedit 5AE5BA91) (tstamp 5860AB5B)
+    (at 210.185 78.74)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /5860AE9A)
@@ -321,7 +321,7 @@
     (fp_text value CONN_01X01 (at 0 0.9) (layer F.Fab)
       (effects (font (size 0.127 0.127) (thickness 0.03175)))
     )
-    (pad "" thru_hole circle (at 0 0) (size 3 3) (drill 2) (layers *.Cu *.Mask))
+    (pad "" thru_hole circle (at 0 0) (size 5 5) (drill 2) (layers *.Cu B.Mask))
   )
 
   (module Capacitors_SMD:C_1206_HandSoldering (layer F.Cu) (tedit 58C47DA8) (tstamp 58C47A8D)
@@ -514,12 +514,12 @@
       (xy -6.518611 -1.882257)) (layer F.SilkS) (width 0.01))
   )
 
-  (module myFootPrints:SW_SMD_PUSH (layer F.Cu) (tedit 5A2A174E) (tstamp 5A2A110C)
+  (module myFootPrints:SW_SMD_PUSH (layer F.Cu) (tedit 5A2A1ABD) (tstamp 5A2A110C)
     (at 212.09 90.17 90)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /58609F3B)
-    (fp_text reference SW2 (at 3.81 2.54 90) (layer F.SilkS)
+    (fp_text reference SW2 (at 3.429 2.032 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value SW_PUSH (at 0 -3.1 90) (layer F.Fab)
