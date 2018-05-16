@@ -32,7 +32,7 @@ This project is designed using Open Source [KiCad](http://kicad-pcb.org/). Desig
 
 Firmware
 ========
-This project is programed using the Open Source [Arduino](https://www.arduino.cc/). I use my Open Source [AVR Programming Shield](https://www.tindie.com/products/MakersBox/yet-another-programming-shield/) to program the Attiny84. The firmware is located in the [firmware](firmware/) folder.
+This project is programed using the Open Source [Arduino](https://www.arduino.cc/). I use my Open Source [AVR Programming Shield](https://www.tindie.com/products/MakersBox/yet-another-programming-shield/) to program the Attiny. The firmware is located in the [firmware](firmware/) folder.
 
 Assembly Instructions
 =====================

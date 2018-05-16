@@ -203,7 +203,7 @@ F 3 "" H 6300 2350 60  0000 C CNN
 	1    6300 2350
 	0    1    1    0   
 $EndComp
-Text Notes 5050 3600 0    67   ~ 0
+Text Notes 4950 4100 0    67   ~ 0
 D5/A0\nD4/A2\nD3/A3\nD2/A1\nD1/pwm\nD0/pwm
 Text Notes 6150 2500 0    60   ~ 0
 D0
@@ -284,7 +284,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 1900 6350 1900
 Text Notes 6050 1100 0    60   ~ 0
-D4
+D1
 Wire Wire Line
 	2200 5250 3000 5250
 Wire Wire Line

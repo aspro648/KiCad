@@ -4,7 +4,8 @@ Arduino Clock Shield V 0.0 Bill Of Materials
 =================
   
 - 1 ea. Perfect Purple PCB from OSH Park (2.1 x 2.0")
-- 1 ea., Maxim DS1302+, https://www.digikey.com/product-detail/en/maxim-integrated/DS1302/DS1302-ND/956878
+- 1 ea., Maxim DS1302+, https://www.digikey.com/product-detail/en/maxim-integrated/DS1302/DS1302-ND/956878 or
+- 1 ea., Maxim DS1307+, https://www.digikey.com/short/jm4wzd
 - 1 ea., 0.56in 4-Digit 7-Segment Display https://www.digikey.com/product-detail/en/adafruit-industries-llc/811/1528-1509-ND/5774235
 - 1 ea., CRYSTAL 32.7680KHZ 6 PF T/H, Citizens CFS-20632768DZBB, https://www.digikey.com/product-detail/en/citizen-finedevice-co-ltd/CFS-20632768DZBB/300-8301-ND/862578
 - 1 ea., RETAINER BATT CR1216/1225 PC PIN, http://www.digikey.com/short/39p52t
@@ -20,6 +21,7 @@ Arduino Clock Shield V 0.0 Bill Of Materials
 
 Extras:
 - 1 ea., 8-pin socket, https://www.digikey.com/product-detail/en/assmann-wsw-components/A-08-LC-TR/AE9988-ND/821742
+- 4 ea., 0-ohm 0402 resistor, https://www.digikey.com/short/jm4wz8
 
 Crystals to Try (32.7680KHZ 6PF):
 https://www.digikey.com/product-detail/en/citizen-finedevice-co-ltd/CFS-20632768DZBB/300-8301-ND/862578
