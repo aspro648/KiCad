@@ -36,8 +36,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Pogo"
-Date "2018-03-08"
-Rev "0.0"
+Date "2018-05-16"
+Rev "0.1"
 Comp "MakersBox"
 Comment1 ""
 Comment2 ""
