@@ -35,9 +35,9 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Tinsy Stepper Board"
-Date ""
-Rev ""
+Title "Itsy Robot Base"
+Date "2018-04-28"
+Rev "0.3"
 Comp "www.MakersBox.us"
 Comment1 "K. Olsen"
 Comment2 ""

@@ -400,23 +400,211 @@ LEFT SIDE    RIGHT SIDE
 $Comp
 L R R6
 U 1 1 59FB2507
-P 4850 4400
-F 0 "R6" V 4930 4400 50  0000 C CNN
-F 1 "10K" V 4850 4400 50  0000 C CNN
-F 2 "myFootPrints:Resistor_Horz" V 4780 4400 50  0001 C CNN
-F 3 "" H 4850 4400 50  0000 C CNN
-	1    4850 4400
+P 5500 4400
+F 0 "R6" V 5580 4400 50  0000 C CNN
+F 1 "10K" V 5500 4400 50  0000 C CNN
+F 2 "myFootPrints:Resistor_Horz" V 5430 4400 50  0001 C CNN
+F 3 "" H 5500 4400 50  0000 C CNN
+	1    5500 4400
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R7
 U 1 1 59FB2613
-P 4550 4400
-F 0 "R7" V 4630 4400 50  0000 C CNN
-F 1 "10K" V 4550 4400 50  0000 C CNN
-F 2 "myFootPrints:Resistor_Horz" V 4480 4400 50  0001 C CNN
-F 3 "" H 4550 4400 50  0000 C CNN
-	1    4550 4400
+P 5150 4400
+F 0 "R7" V 5230 4400 50  0000 C CNN
+F 1 "10K" V 5150 4400 50  0000 C CNN
+F 2 "myFootPrints:Resistor_Horz" V 5080 4400 50  0001 C CNN
+F 3 "" H 5150 4400 50  0000 C CNN
+	1    5150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 59FBD881
+P 4600 5750
+F 0 "SW2" H 4750 5860 50  0000 C CNN
+F 1 "SW_PUSH" H 4600 5670 50  0000 C CNN
+F 2 "myFootPrints:SW_PUSH_SMALL" H 4600 5750 50  0001 C CNN
+F 3 "" H 4600 5750 50  0000 C CNN
+	1    4600 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X14 J1
+U 1 1 5ADA316C
+P 3200 3450
+F 0 "J1" H 3200 4200 50  0000 C CNN
+F 1 "Isty_Left" V 3300 3450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 3200 3450 50  0001 C CNN
+F 3 "" H 3200 3450 50  0001 C CNN
+	1    3200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X14 J2
+U 1 1 5ADA3C08
+P 3850 3450
+F 0 "J2" H 3850 4200 50  0000 C CNN
+F 1 "Itsy_right" V 3950 3450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 3850 3450 50  0001 C CNN
+F 3 "" H 3850 3450 50  0001 C CNN
+	1    3850 3450
+	-1   0    0    -1  
+$EndComp
+Text Label 2850 2800 0    60   ~ 0
+RST
+Text Label 2850 2900 0    60   ~ 0
+3V
+Text Label 2850 3200 0    60   ~ 0
+A0
+Text Label 2850 3300 0    60   ~ 0
+A1
+Text Label 2850 3400 0    60   ~ 0
+A2
+Text Label 2850 3500 0    60   ~ 0
+A3
+Text Label 2850 3600 0    60   ~ 0
+A4
+Text Label 2850 3700 0    60   ~ 0
+A5
+Text Label 2800 3800 0    60   ~ 0
+D15
+Text Label 2800 3900 0    60   ~ 0
+D16
+Text Label 2800 4000 0    60   ~ 0
+D14
+NoConn ~ 3000 3000
+NoConn ~ 3000 3100
+NoConn ~ 3000 4100
+Text Label 4050 2800 0    60   ~ 0
+BAT
+Text Label 4050 2900 0    60   ~ 0
+GND
+Text Label 4050 3000 0    60   ~ 0
+USB
+Text Label 4050 3100 0    60   ~ 0
+D13
+Text Label 4050 3200 0    60   ~ 0
+D12
+Text Label 4050 3300 0    60   ~ 0
+D11
+Text Label 4050 3400 0    60   ~ 0
+D10
+Text Label 4050 3500 0    60   ~ 0
+D9
+Text Label 4050 3600 0    60   ~ 0
+D7
+Text Label 4050 3700 0    60   ~ 0
+D5
+Text Label 4050 3800 0    60   ~ 0
+SCL
+Text Label 4050 3900 0    60   ~ 0
+SDA
+Text Label 4050 4000 0    60   ~ 0
+TX
+Text Label 4050 4100 0    60   ~ 0
+RX
+$Comp
+L PWR_FLAG #FLG012
+U 1 1 5ADA8A03
+P 1200 900
+F 0 "#FLG012" H 1200 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 1200 1080 50  0000 C CNN
+F 2 "" H 1200 900 60  0000 C CNN
+F 3 "" H 1200 900 60  0000 C CNN
+	1    1200 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR013
+U 1 1 5ADA8A47
+P 1200 1000
+F 0 "#PWR013" H 1200 850 50  0001 C CNN
+F 1 "+3.3V" H 1200 1140 50  0000 C CNN
+F 2 "" H 1200 1000 50  0001 C CNN
+F 3 "" H 1200 1000 50  0001 C CNN
+	1    1200 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR014
+U 1 1 5ADA90E0
+P 2850 2900
+F 0 "#PWR014" H 2850 2750 50  0001 C CNN
+F 1 "+3.3V" H 2850 3040 50  0000 C CNN
+F 2 "" H 2850 2900 50  0001 C CNN
+F 3 "" H 2850 2900 50  0001 C CNN
+	1    2850 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR015
+U 1 1 5ADA9793
+P 5350 4050
+F 0 "#PWR015" H 5350 3900 50  0001 C CNN
+F 1 "+3.3V" H 5350 4190 50  0000 C CNN
+F 2 "" H 5350 4050 50  0001 C CNN
+F 3 "" H 5350 4050 50  0001 C CNN
+	1    5350 4050
+	1    0    0    -1  
+$EndComp
+Text Label 5850 3450 0    60   ~ 0
+A5
+Text Label 5850 3350 0    60   ~ 0
+A4
+Text Label 5850 3250 0    60   ~ 0
+A3
+Text Label 5850 3150 0    60   ~ 0
+A2
+Text Label 5850 3550 0    60   ~ 0
+D15
+Text Label 5850 3650 0    60   ~ 0
+D16
+Text Label 5850 3750 0    60   ~ 0
+D14
+Text Label 5850 3850 0    60   ~ 0
+D9
+Text Label 3850 5250 0    60   ~ 0
+A1
+Text Label 3850 4750 0    60   ~ 0
+A0
+Text Label 3850 5050 0    60   ~ 0
+D7
+Text Label 3850 5150 0    60   ~ 0
+D10
+Text Label 3850 4950 0    60   ~ 0
+D11
+Text Label 3850 5350 0    60   ~ 0
+D12
+Text Label 3850 4850 0    60   ~ 0
+D13
+Text Label 6950 2500 0    60   ~ 0
+D5
+NoConn ~ 2850 2800
+NoConn ~ 4150 3000
+NoConn ~ 4150 4000
+NoConn ~ 4150 4100
+$Comp
+L R R1
+U 1 1 5B3AEB76
+P 4600 4400
+F 0 "R1" V 4680 4400 50  0000 C CNN
+F 1 "0" V 4600 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4530 4400 50  0001 C CNN
+F 3 "" H 4600 4400 50  0000 C CNN
+	1    4600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5B3AEBE4
+P 4800 4400
+F 0 "R8" V 4880 4400 50  0000 C CNN
+F 1 "0" V 4800 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4730 4400 50  0001 C CNN
+F 3 "" H 4800 4400 50  0000 C CNN
+	1    4800 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -507,7 +695,7 @@ Connection ~ 7250 3300
 Wire Wire Line
 	3850 5250 5150 5250
 Wire Wire Line
-	5150 5250 5150 5750
+	5150 4550 5150 5750
 Wire Wire Line
 	6550 4750 6550 5750
 Wire Wire Line
@@ -522,44 +710,11 @@ Wire Wire Line
 	3850 4750 6550 4750
 Wire Wire Line
 	3850 5050 5600 5050
-$Comp
-L SW_PUSH SW2
-U 1 1 59FBD881
-P 4600 5750
-F 0 "SW2" H 4750 5860 50  0000 C CNN
-F 1 "SW_PUSH" H 4600 5670 50  0000 C CNN
-F 2 "myFootPrints:SW_PUSH_SMALL" H 4600 5750 50  0001 C CNN
-F 3 "" H 4600 5750 50  0000 C CNN
-	1    4600 5750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5600 5050 5600 5450
 Connection ~ 5350 6150
-$Comp
-L CONN_01X14 J1
-U 1 1 5ADA316C
-P 3200 3450
-F 0 "J1" H 3200 4200 50  0000 C CNN
-F 1 "Isty_Left" V 3300 3450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 3200 3450 50  0001 C CNN
-F 3 "" H 3200 3450 50  0001 C CNN
-	1    3200 3450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4050 2800 7250 2800
-$Comp
-L CONN_01X14 J2
-U 1 1 5ADA3C08
-P 3850 3450
-F 0 "J2" H 3850 4200 50  0000 C CNN
-F 1 "Itsy_right" V 3950 3450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 3850 3450 50  0001 C CNN
-F 3 "" H 3850 3450 50  0001 C CNN
-	1    3850 3450
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3000 4000 2800 4000
 Wire Wire Line
@@ -601,169 +756,44 @@ Wire Wire Line
 Wire Wire Line
 	4050 3700 4150 3700
 Wire Wire Line
-	4050 3800 4150 3800
+	4050 3800 4800 3800
 Wire Wire Line
-	4050 3900 4150 3900
+	4050 3900 4600 3900
 Wire Wire Line
 	4050 4000 4150 4000
 Wire Wire Line
 	4050 4100 4150 4100
-Text Label 2850 2800 0    60   ~ 0
-RST
-Text Label 2850 2900 0    60   ~ 0
-3V
-Text Label 2850 3200 0    60   ~ 0
-A0
-Text Label 2850 3300 0    60   ~ 0
-A1
-Text Label 2850 3400 0    60   ~ 0
-A2
-Text Label 2850 3500 0    60   ~ 0
-A3
-Text Label 2850 3600 0    60   ~ 0
-A4
-Text Label 2850 3700 0    60   ~ 0
-A5
-Text Label 2800 3800 0    60   ~ 0
-D15
-Text Label 2800 3900 0    60   ~ 0
-D16
-Text Label 2800 4000 0    60   ~ 0
-D14
-NoConn ~ 3000 3000
-NoConn ~ 3000 3100
-NoConn ~ 3000 4100
-Text Label 4050 2800 0    60   ~ 0
-BAT
-Text Label 4050 2900 0    60   ~ 0
-GND
-Text Label 4050 3000 0    60   ~ 0
-USB
-Text Label 4050 3100 0    60   ~ 0
-D13
-Text Label 4050 3200 0    60   ~ 0
-D12
-Text Label 4050 3300 0    60   ~ 0
-D11
-Text Label 4050 3400 0    60   ~ 0
-D10
-Text Label 4050 3500 0    60   ~ 0
-D9
-Text Label 4050 3600 0    60   ~ 0
-D7
-Text Label 4050 3700 0    60   ~ 0
-D5
-Text Label 4050 3800 0    60   ~ 0
-SCL
-Text Label 4050 3900 0    60   ~ 0
-SDA
-Text Label 4050 4000 0    60   ~ 0
-TX
-Text Label 4050 4100 0    60   ~ 0
-RX
-$Comp
-L PWR_FLAG #FLG012
-U 1 1 5ADA8A03
-P 1200 900
-F 0 "#FLG012" H 1200 995 50  0001 C CNN
-F 1 "PWR_FLAG" H 1200 1080 50  0000 C CNN
-F 2 "" H 1200 900 60  0000 C CNN
-F 3 "" H 1200 900 60  0000 C CNN
-	1    1200 900 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 900  1200 1000
-$Comp
-L +3.3V #PWR013
-U 1 1 5ADA8A47
-P 1200 1000
-F 0 "#PWR013" H 1200 850 50  0001 C CNN
-F 1 "+3.3V" H 1200 1140 50  0000 C CNN
-F 2 "" H 1200 1000 50  0001 C CNN
-F 3 "" H 1200 1000 50  0001 C CNN
-	1    1200 1000
-	-1   0    0    1   
-$EndComp
-$Comp
-L +3.3V #PWR014
-U 1 1 5ADA90E0
-P 2850 2900
-F 0 "#PWR014" H 2850 2750 50  0001 C CNN
-F 1 "+3.3V" H 2850 3040 50  0000 C CNN
-F 2 "" H 2850 2900 50  0001 C CNN
-F 3 "" H 2850 2900 50  0001 C CNN
-	1    2850 2900
-	0    -1   -1   0   
-$EndComp
-Connection ~ 4850 4750
-Connection ~ 4550 5250
+Connection ~ 5500 4750
+Connection ~ 5150 5250
 Wire Wire Line
-	4550 4250 4550 4050
+	5150 4250 5150 4050
 Wire Wire Line
-	4550 4050 4850 4050
+	5150 4050 5500 4050
 Wire Wire Line
-	4850 4050 4850 4250
-$Comp
-L +3.3V #PWR015
-U 1 1 5ADA9793
-P 4700 4050
-F 0 "#PWR015" H 4700 3900 50  0001 C CNN
-F 1 "+3.3V" H 4700 4190 50  0000 C CNN
-F 2 "" H 4700 4050 50  0001 C CNN
-F 3 "" H 4700 4050 50  0001 C CNN
-	1    4700 4050
-	1    0    0    -1  
-$EndComp
-Connection ~ 4700 4050
-Text Label 5850 3450 0    60   ~ 0
-A5
-Text Label 5850 3350 0    60   ~ 0
-A4
-Text Label 5850 3250 0    60   ~ 0
-A3
-Text Label 5850 3150 0    60   ~ 0
-A2
-Text Label 5850 3550 0    60   ~ 0
-D15
-Text Label 5850 3650 0    60   ~ 0
-D16
-Text Label 5850 3750 0    60   ~ 0
-D14
-Text Label 5850 3850 0    60   ~ 0
-D9
+	5500 4050 5500 4250
+Connection ~ 5350 4050
 Wire Wire Line
 	6000 4950 3850 4950
 Wire Wire Line
 	3850 5150 5350 5150
 Wire Wire Line
-	4850 4550 4850 4750
-Wire Wire Line
-	4550 4550 4550 5250
-Text Label 3850 5250 0    60   ~ 0
-A1
-Text Label 3850 4750 0    60   ~ 0
-A0
-Text Label 3850 5050 0    60   ~ 0
-D7
-Text Label 3850 5150 0    60   ~ 0
-D10
-Text Label 3850 4950 0    60   ~ 0
-D11
+	5500 4550 5500 4750
 Wire Wire Line
 	4600 5450 4600 5350
 Wire Wire Line
 	4600 5350 3850 5350
-Text Label 3850 5350 0    60   ~ 0
-D12
-Text Label 3850 4850 0    60   ~ 0
-D13
-Text Label 6950 2500 0    60   ~ 0
-D5
-NoConn ~ 2850 2800
-NoConn ~ 4150 3000
-NoConn ~ 4150 3800
-NoConn ~ 4150 3900
-NoConn ~ 4150 4000
-NoConn ~ 4150 4100
+Wire Wire Line
+	4800 3800 4800 4500
+Wire Wire Line
+	4800 4250 4800 4750
+Connection ~ 4800 4750
+Wire Wire Line
+	4600 3900 4600 5250
+Connection ~ 4600 5250
+Connection ~ 4600 4250
+Connection ~ 4600 4550
+Connection ~ 4800 4250
+Connection ~ 4800 4550
 $EndSCHEMATC

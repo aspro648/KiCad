@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri "$(KIPRJMOD)/footprints.pretty")(options "")(descr ""))
+  (lib (name myFootPrints)(type KiCad)(uri "C:/Users/Maker's Box/Documents/git/KiCad/myFootPrints.pretty")(options "")(descr ""))
+)
