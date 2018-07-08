@@ -1,4 +1,4 @@
-SMD CHallenge Bodge Edition
+SMD Challenge Bodge Edition
 ----------------
 
 ![SMD Challenge](images/project.png) 
