@@ -1,7 +1,7 @@
 Introduction
 ============
 
-![ICanSolder](images/project.JPG) 
+![ICanSolder](images/project.jpg) 
 As simple as it gets.  An LED, resistor, switch, and battery.
 
 
