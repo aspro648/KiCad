@@ -1,7 +1,7 @@
 Introduction
 ============
 
-![ICanSolder](images/project.png) 
+![ICanSolder](images/project.jpg) 
 As simple as it gets.  An LED, resistor, switch, and battery.
 
 
@@ -26,7 +26,8 @@ None
 
 Assembly Instructions
 =====================
-I have posted [detailed instructions at Instructables](https://www.instructables.com/member/MakersBox/instructables/).
+If you can't figure this out, I can't help you.
+
 
 License
 =======

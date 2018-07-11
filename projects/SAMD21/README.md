@@ -9,7 +9,9 @@ Bill Of Materials
 ----------------
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [design_files](design_files/) folder.
-- U1, ATMEGA32U4-AU, IC MCU 8BIT 32KB FLASH 44TQFP, https://www.digikey.com/short/jb25pc
+- IC1, IC MCU 32BIT 256KB FLASH 48TQFP, ATSAMD21G18, https://www.digikey.com/short/jbd9qw 
+- U1, IC FLASH 2M SPI 104MHZ 8SOIC, W25X20CLSNIG, https://www.digikey.com/short/jbd973
+
 - U2, IC REG LINEAR 3.3V 150MA SOT23-5, MIC5225-3.3YM5-TR, https://www.digikey.com/short/jb2rq8
 - SW1, TACTILE KMR231NG LFS, https://www.digikey.com/short/jb2r5m
 - U3, IC BUFFER NON-INVERT 5.5V 5TSOP SOT-753, 74HCT1G125GV,125 https://www.digikey.com/short/jb2f3p
@@ -22,7 +24,7 @@ or
 - C7, C14 1uF SMD 0603 
 - X3, CONN RCPT MICRO USB R/A SMD, Molex 1050170001, https://www.digikey.com/short/jb2205
 
-
+- D13, Reverse Mounted LED, https://www.digikey.com/short/jb0qpq
 
 
 
