@@ -398,11 +398,11 @@ Text Notes 7400 4250 0    60   ~ 0
 Text Notes 7400 4550 0    60   ~ 0
 0805 Orange
 Text Notes 7400 4900 0    60   ~ 0
-0603 Yellow
+0603 Amber
 Text Notes 7400 5250 0    60   ~ 0
-0402 Green
+0402 Yellow
 Text Notes 7400 5600 0    60   ~ 0
-0201 Blue
+0201 Green
 Wire Wire Line
 	6150 4900 6250 4900
 Wire Wire Line
@@ -427,19 +427,11 @@ Wire Wire Line
 	6050 3000 6050 4550
 Wire Wire Line
 	6050 4550 6250 4550
-$Comp
-L GND #PWR011
-U 1 1 5B39B04A
-P 4350 5350
-F 0 "#PWR011" H 4350 5100 50  0001 C CNN
-F 1 "GND" H 4350 5200 50  0000 C CNN
-F 2 "" H 4350 5350 60  0000 C CNN
-F 3 "" H 4350 5350 60  0000 C CNN
-	1    4350 5350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6600 5250 6650 5250
 Wire Wire Line
 	6950 5250 7100 5250
+Text Notes 5700 3900 0    60   ~ 0
+D4\nD3\nD2\nD1\nD0
+NoConn ~ 4350 5350
 $EndSCHEMATC

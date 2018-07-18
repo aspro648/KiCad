@@ -1,8 +1,8 @@
-(module footprints:LED_1206_SHORT (layer F.Cu) (tedit 5B3E5FAE)
+(module LED_1206_SHORT (layer F.Cu) (tedit 5B3E50FE)
   (descr "LED 1206 smd package")
   (tags "LED led 1206 SMD smd SMT smt smdled SMDLED smtled SMTLED")
   (attr smd)
-  (fp_text reference D0 (at 1.4605 0 90) (layer F.SilkS) hide
+  (fp_text reference D10 (at 1.4605 0 90) (layer F.SilkS) hide
     (effects (font (size 0.508 0.508) (thickness 0.127)))
   )
   (fp_text value LED (at -1.4605 0 90) (layer F.Fab)

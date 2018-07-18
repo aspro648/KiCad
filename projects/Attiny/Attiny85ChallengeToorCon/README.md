@@ -11,18 +11,20 @@ Bill Of Materials
 - 1 ea., Perfect Purple PCB from OSH Park, https://oshpark.com/shared_projects/UFefat4N
 - 1 ea., Atmel ATTINY85V-10SUR, https://www.digikey.com/short/3253mp
 - 1 ea., CAP CER 0.1UF 50V X7R 1206, KEMET C1206C104K5RAC7867, https://www.digikey.com/short/32vmjq
-- 1 ea., LED RED CLEAR 1206 SMD, Lite-On LTST-C150KRKT, https://www.digikey.com/short/3253m7
-- 1 ea., RES SMD 330 OHM 5% 1/4W 1206, Yageo RC1206JR-07330RL, https://www.digikey.com/short/3253mf
-- 1 ea., LED ORANGE CLEAR 0805 SMD, https://www.digikey.com/short/qjwthb
-- 1 ea., RES SMD 330 OHM 5% 1/8W 0805, Yageo RC0805JR-07330RL, https://www.digikey.com/short/3wzz2f
-- 1 ea., LED YELLOW CLEAR 0603 SMD, Lite-On LTST-C191KSKT, https://www.digikey.com/short/3wzzr2
-- 1 ea., RES SMD 330 OHM 5% 1/10W 0603, Yageo RC0603JR-07330RL, https://www.digikey.com/short/3wzz20
-- 1 ea., LED GREEN CLEAR 0402 SMD, SunLED XZVG68W-2, https://www.digikey.com/short/3wzzfm
-- 1 ea., RES SMD 330 OHM 5% 1/16W 0402, Yageo RC0402JR-07330RL, https://www.digikey.com/short/3wzzwq
-- 1 ea., LED BLUE CLEAR 0201 SMD, Kingbright APG0603PBC-TT-5MAV, https://www.digikey.com/short/3wzzfr
-- 1 ea., RES SMD 180 OHM 5% 1/20W 0201, Panasonic ERJ-1GEJ181C, https://www.digikey.com/short/3wzzwz
 - 1 ea. SMD Battery holder, Linx BAT-HLD-001, Digikey BAT-HLD-001-ND
 - 1 ea. CR2032 Battery, Panasonic CR2032, Digikey P189-ND (requires ground shipping, or buy locally).
+
+- 1 ea., 201 SMD LED green, https://www.digikey.com/short/j5h3zc
+- 1 ea., 402 SMD LED yellow, https://www.digikey.com/short/j5h3mh
+- 1 ea., 603 SMD LED amber, https://www.digikey.com/short/j5h3h5
+- 1 ea., 806 SMD LED orange, https://www.digikey.com/short/j5h39n
+- 1 ea., 1206 SMD LED red, https://www.digikey.com/short/j5h355
+
+- 1 ea., RES SMD 330 OHM 5% 1/4W 1206, Yageo RC1206JR-07330RL, https://www.digikey.com/short/3253mf
+- 1 ea., RES SMD 330 OHM 5% 1/8W 0805, Yageo RC0805JR-07330RL, https://www.digikey.com/short/3wzz2f
+- 1 ea., RES SMD 330 OHM 5% 1/10W 0603, Yageo RC0603JR-07330RL, https://www.digikey.com/short/3wzz20
+- 1 ea., RES SMD 330 OHM 5% 1/16W 0402, Yageo RC0402JR-07330RL, https://www.digikey.com/short/3wzzwq
+- 1 ea., RES SMD 180 OHM 5% 1/20W 0201, Yageo RC0201JR-07330RL, https://www.digikey.com/short/j5h4h7
 
 
 Design Files
