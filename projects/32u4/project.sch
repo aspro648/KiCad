@@ -681,11 +681,11 @@ F 3 "" H 1800 5750 50  0001 C CNN
 $EndComp
 Text Label 3100 6350 0    60   ~ 0
 D12
-Text Label 1800 6850 0    60   ~ 0
+Text Label 1800 6550 0    60   ~ 0
 D11
-Text Label 1800 6750 0    60   ~ 0
+Text Label 1800 6950 0    60   ~ 0
 D10
-Text Label 1800 6650 0    60   ~ 0
+Text Label 1800 6850 0    60   ~ 0
 D9
 Text Label 3100 6950 0    60   ~ 0
 SCL
@@ -695,7 +695,7 @@ Text Label 3150 6650 0    60   ~ 0
 D1
 Text Label 3150 6750 0    60   ~ 0
 D0
-Text Label 1800 6950 0    60   ~ 0
+Text Label 1800 6650 0    60   ~ 0
 ~RESET
 $Comp
 L +3V3 #PWR023
@@ -806,7 +806,7 @@ Wire Wire Line
 	8400 4800 8400 4950
 Text Label 3150 6250 0    60   ~ 0
 D6
-Text Label 1800 6550 0    60   ~ 0
+Text Label 1800 6750 0    60   ~ 0
 D8
 $Comp
 L Resonator Y1
@@ -1002,4 +1002,57 @@ Wire Wire Line
 	4250 6350 4250 6150
 Text Label 4250 6300 1    60   ~ 0
 VHI
+$Comp
+L AVR-ISP-6 CON1
+U 1 1 5B52901B
+P 7700 1200
+F 0 "CON1" H 7595 1440 50  0000 C CNN
+F 1 "AVR-ISP-6" H 7435 970 50  0000 L BNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" V 7180 1240 50  0001 C CNN
+F 3 "" H 7675 1200 50  0001 C CNN
+	1    7700 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1200 7100 1200
+Wire Wire Line
+	7550 1100 7100 1100
+Wire Wire Line
+	7550 1300 7100 1300
+Wire Wire Line
+	7800 1200 8350 1200
+Wire Wire Line
+	7800 1100 8350 1100
+Wire Wire Line
+	7800 1300 8350 1300
+Text Label 7100 1100 0    60   ~ 0
+MISO
+Text Label 7100 1200 0    60   ~ 0
+SCK
+Text Label 7100 1300 0    60   ~ 0
+~RESET
+Text Label 8150 1200 0    60   ~ 0
+MOSI
+$Comp
+L +3V3 #PWR032
+U 1 1 5B529627
+P 8350 1100
+F 0 "#PWR032" H 8350 950 50  0001 C CNN
+F 1 "+3V3" H 8350 1240 50  0000 C CNN
+F 2 "" H 8350 1100 50  0001 C CNN
+F 3 "" H 8350 1100 50  0001 C CNN
+	1    8350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR033
+U 1 1 5B5296C8
+P 8350 1300
+F 0 "#PWR033" H 8350 1050 50  0001 C CNN
+F 1 "GND" H 8350 1150 50  0000 C CNN
+F 2 "" H 8350 1300 50  0001 C CNN
+F 3 "" H 8350 1300 50  0001 C CNN
+	1    8350 1300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

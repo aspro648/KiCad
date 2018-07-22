@@ -1,0 +1,16 @@
+(module myFootPrints:SEWPAD (layer F.Cu) (tedit 561AD6CC)
+  (descr "Through hole pin header")
+  (tags "pin header")
+  (fp_text reference J1 (at -1.077631 -4.130918) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value CONN_01X01 (at 0 -0.254) (layer F.Fab) hide
+    (effects (font (size 0.254 0.254) (thickness 0.0254)))
+  )
+  (pad 1 thru_hole oval (at 0 0) (size 2.54 3.048) (drill 2.032 (offset 0 -0.3048)) (layers *.Cu *.Mask F.SilkS))
+  (model Pin_Headers.3dshapes/Pin_Header_Straight_1x01.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
+)
