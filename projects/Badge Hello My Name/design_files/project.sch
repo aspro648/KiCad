@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:project
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -31,7 +32,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:project
 LIBS:project-cache
 EELAYER 25 0
 EELAYER END
@@ -1028,7 +1028,7 @@ L Battery_Cell BT1
 U 1 1 5B359C0B
 P 4900 5800
 F 0 "BT1" H 5000 5900 50  0000 L CNN
-F 1 "Battery_Cell" H 5000 5800 50  0000 L CNN
+F 1 "Battery_Cell" H 4950 5700 50  0000 L CNN
 F 2 "footprints:BATT_CR2032_SMD" V 4900 5860 50  0001 C CNN
 F 3 "" V 4900 5860 50  0001 C CNN
 	1    4900 5800
@@ -2117,8 +2117,8 @@ $Comp
 L Battery_Cell BT2
 U 1 1 5B41E5F9
 P 4700 5800
-F 0 "BT2" H 4800 5900 50  0000 L CNN
-F 1 "Battery_Cell" H 4800 5800 50  0000 L CNN
+F 0 "BT2" H 4450 5900 50  0000 L CNN
+F 1 "Battery_Cell" H 4400 5700 50  0000 L CNN
 F 2 "footprints:BATT_CR2032_SMD" V 4700 5860 50  0001 C CNN
 F 3 "" V 4700 5860 50  0001 C CNN
 	1    4700 5800
@@ -2136,4 +2136,34 @@ Connection ~ 4250 4050
 Connection ~ 10150 4050
 Text Notes -4750 3850 0    60   ~ 0
 A1\n\nA2\n\nA3\n\nA4\n\nA5\n     A0 D13 D12 D11 D10  D9  D8  D7  D6  D5  D4  D3  D2  D1  D0\n
+NoConn ~ 6250 5700
+NoConn ~ 3600 5550
+NoConn ~ 3600 5650
+NoConn ~ 4700 5550
+$Comp
+L SW_Push SW2
+U 1 1 5B5636BD
+P 5700 5600
+F 0 "SW2" H 5750 5700 50  0000 L CNN
+F 1 "SW_Push" H 5700 5540 50  0000 C CNN
+F 2 "footprints:SW_SMD_PUSH" H 5700 5800 50  0001 C CNN
+F 3 "" H 5700 5800 50  0001 C CNN
+	1    5700 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5B563852
+P 5700 5800
+F 0 "#PWR014" H 5700 5550 50  0001 C CNN
+F 1 "GND" H 5700 5650 50  0000 C CNN
+F 2 "" H 5700 5800 50  0001 C CNN
+F 3 "" H 5700 5800 50  0001 C CNN
+	1    5700 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5400 5700 5200
+Text Label 5700 5200 3    60   ~ 0
+PB6
 $EndSCHEMATC

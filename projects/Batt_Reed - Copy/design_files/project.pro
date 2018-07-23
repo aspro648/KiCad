@@ -1,4 +1,4 @@
-update=7/22/2018 9:09:16 PM
+update=7/20/2018 2:22:33 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -70,3 +70,4 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=switches
+LibName32=C:/Users/kolsen/Documents/git/KiCad/projects/Altimeter/design_files/lib_sch/lis3dh

@@ -6,10 +6,4 @@ K AVR 8-bit Microcontroller tinyAVR Discontinued
 F http://www.atmel.com/Images/doc1006.pdf
 $ENDCMP
 #
-$CMP MS5803
-D DIP8, 1k OTP Flash, No SRAM, 64B EEPROM (For reference only)
-K AVR 8-bit Microcontroller tinyAVR Discontinued
-F http://www.atmel.com/Images/doc1006.pdf
-$ENDCMP
-#
 #End Doc Library
