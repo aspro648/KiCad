@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74AHC1G14
+D inverting buffer with Schmitt trigger.
+F 74xx/74ahc_ahct1g14.pdf
+$ENDCMP
+#
+$CMP 74HCT1G125
+D inverting buffer with Schmitt trigger.
+F 74xx/74ahc_ahct1g14.pdf
+$ENDCMP
+#
+#End Doc Library

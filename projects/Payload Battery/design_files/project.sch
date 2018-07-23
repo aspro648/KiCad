@@ -1,0 +1,282 @@
+EESchema Schematic File Version 2
+LIBS:project
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:pcf8523
+LIBS:project-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Altimeter"
+Date "2018-07-20"
+Rev ""
+Comp "www.MakersBox.us"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "648.ken@gmail.com"
+$EndDescr
+$Comp
+L Battery_Cell BT1
+U 1 1 5AF1FE3D
+P 3750 2350
+F 0 "BT1" V 3850 2500 50  0000 L CNN
+F 1 "Battery_Cell" V 3600 2200 50  0000 L CNN
+F 2 "footprints:BATT_CR2032_SMD" V 3750 2410 50  0001 C CNN
+F 3 "" V 3750 2410 50  0001 C CNN
+	1    3750 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_Reed SW2
+U 1 1 5B4A076E
+P 2700 2600
+F 0 "SW2" H 2700 2700 50  0000 C CNN
+F 1 "SW_Reed" H 2700 2500 50  0000 C CNN
+F 2 "footprints:REED_SWITCH" H 2700 2600 50  0001 C CNN
+F 3 "" H 2700 2600 50  0001 C CNN
+	1    2700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_SPDT SW1
+U 1 1 5B4A3BF4
+P 2700 2200
+F 0 "SW1" H 2700 2370 50  0000 C CNN
+F 1 "SW_SPDT" H 2700 2000 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPDT_CK-JS102011SAQN" H 2700 2200 50  0001 C CNN
+F 3 "" H 2700 2200 50  0001 C CNN
+	1    2700 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5B4A3F12
+P 4200 2500
+F 0 "#PWR01" H 4200 2250 50  0001 C CNN
+F 1 "GND" H 4200 2350 50  0000 C CNN
+F 2 "" H 4200 2500 50  0001 C CNN
+F 3 "" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 5B4A3F44
+P 2100 2050
+F 0 "#PWR02" H 2100 1900 50  0001 C CNN
+F 1 "VCC" H 2100 2200 50  0000 C CNN
+F 2 "" H 2100 2050 50  0001 C CNN
+F 3 "" H 2100 2050 50  0001 C CNN
+	1    2100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2600 2900 2600
+Wire Wire Line
+	2100 2600 2500 2600
+Wire Wire Line
+	2900 2200 3250 2200
+Wire Wire Line
+	3250 2350 3550 2350
+Wire Wire Line
+	3850 2350 4200 2350
+Wire Wire Line
+	4200 2350 4200 2500
+Wire Wire Line
+	3250 2200 3250 2600
+Connection ~ 3250 2350
+Wire Wire Line
+	2100 2050 2100 2600
+Wire Wire Line
+	2500 2300 2100 2300
+Connection ~ 2100 2300
+$Comp
+L Conn_01x14 J1
+U 1 1 5B5636A7
+P 3150 4450
+F 0 "J1" H 3150 5150 50  0000 C CNN
+F 1 "Isty Left" H 3150 3650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 3150 4450 50  0001 C CNN
+F 3 "" H 3150 4450 50  0001 C CNN
+	1    3150 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x14 J2
+U 1 1 5B5636FE
+P 3950 4450
+F 0 "J2" H 3950 5150 50  0000 C CNN
+F 1 "Itsy Right" H 3950 3650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 3950 4450 50  0001 C CNN
+F 3 "" H 3950 4450 50  0001 C CNN
+	1    3950 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 5B563A10
+P 2750 3950
+F 0 "#PWR03" H 2750 3800 50  0001 C CNN
+F 1 "VCC" H 2750 4100 50  0000 C CNN
+F 2 "" H 2750 3950 50  0001 C CNN
+F 3 "" H 2750 3950 50  0001 C CNN
+	1    2750 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 4950 4450 4950
+Wire Wire Line
+	4150 4850 4450 4850
+Text Label 4250 4850 0    60   ~ 0
+SCL
+Text Label 4250 4950 0    60   ~ 0
+SDA
+$Comp
+L GND #PWR04
+U 1 1 5B564455
+P 4300 3950
+F 0 "#PWR04" H 4300 3700 50  0001 C CNN
+F 1 "GND" H 4300 3800 50  0000 C CNN
+F 2 "" H 4300 3950 50  0001 C CNN
+F 3 "" H 4300 3950 50  0001 C CNN
+	1    4300 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 3950 4300 3950
+Wire Wire Line
+	2750 3950 2950 3950
+Wire Wire Line
+	4150 4650 4400 4650
+Text Label 4200 4650 0    60   ~ 0
+INT6
+$Comp
+L SW_Push SW3
+U 1 1 5B565344
+P 3600 6150
+F 0 "SW3" H 3650 6250 50  0000 L CNN
+F 1 "SW_Push" H 3600 6090 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVQQ2" H 3600 6350 50  0001 C CNN
+F 3 "" H 3600 6350 50  0001 C CNN
+	1    3600 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5B5653FD
+P 3950 6150
+F 0 "#PWR05" H 3950 5900 50  0001 C CNN
+F 1 "GND" H 3950 6000 50  0000 C CNN
+F 2 "" H 3950 6150 50  0001 C CNN
+F 3 "" H 3950 6150 50  0001 C CNN
+	1    3950 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 6150 3950 6150
+Wire Wire Line
+	3400 6150 3150 6150
+Text Label 3150 6150 0    60   ~ 0
+D5
+Wire Wire Line
+	4150 4750 4400 4750
+Text Label 4300 4750 0    60   ~ 0
+D5
+NoConn ~ 2950 3850
+NoConn ~ 2950 4050
+NoConn ~ 2950 4150
+NoConn ~ 2950 4250
+NoConn ~ 2950 4350
+NoConn ~ 2950 4450
+NoConn ~ 2950 4550
+NoConn ~ 2950 4650
+NoConn ~ 2950 4750
+NoConn ~ 2950 4950
+NoConn ~ 2950 5050
+NoConn ~ 2950 5150
+NoConn ~ 4150 5150
+NoConn ~ 4150 5050
+NoConn ~ 4150 4550
+NoConn ~ 4150 4450
+NoConn ~ 4150 4350
+NoConn ~ 4150 4250
+NoConn ~ 4150 4150
+NoConn ~ 4150 4050
+NoConn ~ 4150 3850
+NoConn ~ 2500 2100
+Wire Wire Line
+	2950 4850 2700 4850
+Text Label 2700 4850 0    60   ~ 0
+D13
+$Comp
+L R R6
+U 1 1 5B5694FE
+P 4600 4850
+F 0 "R6" V 4500 4850 50  0000 C CNN
+F 1 "4K7" V 4600 4850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4530 4850 50  0001 C CNN
+F 3 "" H 4600 4850 50  0001 C CNN
+	1    4600 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 5B5696E0
+P 4600 4950
+F 0 "R7" V 4680 4950 50  0000 C CNN
+F 1 "4K7" V 4600 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4530 4950 50  0001 C CNN
+F 3 "" H 4600 4950 50  0001 C CNN
+	1    4600 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR06
+U 1 1 5B5698EF
+P 4900 4800
+F 0 "#PWR06" H 4900 4650 50  0001 C CNN
+F 1 "VCC" H 4900 4950 50  0000 C CNN
+F 2 "" H 4900 4800 50  0001 C CNN
+F 3 "" H 4900 4800 50  0001 C CNN
+	1    4900 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4850 4900 4850
+Wire Wire Line
+	4900 4800 4900 4950
+Wire Wire Line
+	4900 4950 4750 4950
+Connection ~ 4900 4850
+$EndSCHEMATC

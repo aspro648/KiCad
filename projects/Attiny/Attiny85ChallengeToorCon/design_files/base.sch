@@ -394,7 +394,7 @@ Wire Wire Line
 	5700 5600 6250 5600
 NoConn ~ 5900 6250
 Text Notes 7400 4250 0    60   ~ 0
-1206 RED
+1206 Red
 Text Notes 7400 4550 0    60   ~ 0
 0805 Orange
 Text Notes 7400 4900 0    60   ~ 0

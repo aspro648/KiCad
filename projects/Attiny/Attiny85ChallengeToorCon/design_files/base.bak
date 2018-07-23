@@ -398,11 +398,11 @@ Text Notes 7400 4250 0    60   ~ 0
 Text Notes 7400 4550 0    60   ~ 0
 0805 Orange
 Text Notes 7400 4900 0    60   ~ 0
-0603 Yellow
+0603 Amber
 Text Notes 7400 5250 0    60   ~ 0
-0402 Green
+0402 Yellow
 Text Notes 7400 5600 0    60   ~ 0
-0201 Blue
+0201 Green
 Wire Wire Line
 	6150 4900 6250 4900
 Wire Wire Line

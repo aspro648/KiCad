@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCF8563
+D Realtime Clock/Calendar I2C Interface, DIP/SOIC/TSSOP-8
+K I2C RTC Clock Calendar
+F http://www.nxp.com/documents/data_sheet/PCF8563.pdf
+$ENDCMP
+#
+#End Doc Library
