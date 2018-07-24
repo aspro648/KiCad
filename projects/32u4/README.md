@@ -18,10 +18,10 @@ or
   Y1, CER RES 8.0000MHZ 30PF SMD, PBRC8.00HR50X000 7.40mm x 3.40mm
 
 - D1, D4, DIODE SCHOTTKY 20V 1A SOD123FL, MBR120VLSFT3GOSCT-ND, https://www.digikey.com/short/jb22rn 
-- C6, C8, C9, 10uF SMD 0805 
-- C7, C14 1uF SMD 0603 
+- C6, C8, C9, 10uF SMD 0805, https://www.digikey.com/short/j5d39w 
+- C7, C14 1uF SMD 0603, https://www.digikey.com/short/j5d397
 - X3, CONN RCPT MICRO USB R/A SMD, Molex 1050170001, https://www.digikey.com/short/jb2205
-
+100K ohm 0603 SMD resistor, https://www.digikey.com/short/j5d3b3
 
 
 
