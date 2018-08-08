@@ -99,12 +99,21 @@ void loop() {
     display.display();
     return;
   }
-  float pascals = baro.getPressure();  
-  Serial.print(pascals/3377); Serial.println(" Inches (Hg)");
-  display.print(pascals/3377); display.println(" InHg");
 
+  //Serial.print(pascals/3377); Serial.println(" Inches (Hg)");
+
+
+  // Corvallis, Oregon altitude = 235 feet
+  // The standard sea-level pressure is 29.92 in Hg (1013 mb).
+  // Corrected barometeric pressue @ 235 ft = 1004.5 mb (100.45 kPa)
+  float kPa = baro.getPressure()/1000;  // function returns pascals
+  float atm_kPa = 100.83;
+  float vac_kPa = kPa - atm_kPa;
+  display.print(vac_kPa); display.println(" kPa");
+  //display.print(pascals/3377); display.println(" InHg");
+  display.print(abs(vac_kPa) * 4.0146, 1); display.println(" \"H2O");
   float tempC = baro.getTemperature();
-  Serial.print(tempC); Serial.println("*C");
+  //Serial.print(tempC); Serial.println("*C");
   display.print(tempC, 1); display.println(" C");
   display.display();
   delay(1000);
