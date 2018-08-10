@@ -1,0 +1,45 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 5/22/2014 12:38:21 PM
+
+BeginCmp
+TimeStamp = /536BD889;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = BAT_CLIP;
+EndCmp
+
+BeginCmp
+TimeStamp = /536BDA2F;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /536BDA18;
+Reference = Q1;
+ValeurCmp = PN2222A;
+IdModule  = TO92-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /536BD99A;
+Reference = R1;
+ValeurCmp = 1000;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /536BD975;
+Reference = SW1;
+ValeurCmp = SPST;
+IdModule  = MICROSWITCH_SPST;
+EndCmp
+
+BeginCmp
+TimeStamp = /536BD944;
+Reference = T1;
+ValeurCmp = TRANSFO;
+IdModule  = TRANS_JOULE_THIEF;
+EndCmp
+
+EndListe
