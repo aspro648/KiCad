@@ -1,4 +1,4 @@
-update=2/12/2018 9:38:55 PM
+update=8/15/2018 10:21:21 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../images/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -60,13 +70,4 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=switches
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=../images/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName32=lib_sch/badgelife_shitty_connector
