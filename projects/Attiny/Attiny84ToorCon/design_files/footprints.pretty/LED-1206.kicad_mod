@@ -1,8 +1,8 @@
-(module LEDs:LED-1206 (layer F.Cu) (tedit 5902C0FC)
+(module footprints:LED-1206 (layer F.Cu) (tedit 5B6134D0)
   (descr "LED 1206 smd package")
   (tags "LED1206 SMD")
   (attr smd)
-  (fp_text reference D0 (at 2.667 1.778) (layer F.SilkS)
+  (fp_text reference D2 (at 2.667 1.778) (layer F.SilkS) hide
     (effects (font (size 1.25 1.25) (thickness 0.3125)))
   )
   (fp_text value LED (at 0 2) (layer F.Fab)

@@ -2,7 +2,7 @@
   (descr "LED 0603 smd package")
   (tags "LED led 0603 SMD smd SMT smt smdled SMDLED smtled SMTLED")
   (attr smd)
-  (fp_text reference D1 (at 1.778 1.0795) (layer F.SilkS) hide
+  (fp_text reference D6 (at 1.778 1.0795) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.25)))
   )
   (fp_text value LED (at 0 1.5) (layer F.Fab)

@@ -1,7 +1,7 @@
-(module footprints:testPad (layer F.Cu) (tedit 5A715723)
+(module footprints:testPad (layer F.Cu) (tedit 5B75F65B)
   (descr "module 1 pin (ou trou mecanique de percage)")
   (tags DEV)
-  (fp_text reference PG4 (at -2.3325 1.745) (layer F.SilkS) hide
+  (fp_text reference PG8 (at 1.27 0) (layer F.SilkS) hide
     (effects (font (size 0.635 0.635) (thickness 0.127)))
   )
   (fp_text value CONN_01X01 (at 0 0) (layer F.Fab)

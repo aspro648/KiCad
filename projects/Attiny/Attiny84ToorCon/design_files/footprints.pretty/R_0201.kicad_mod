@@ -2,10 +2,10 @@
   (descr "Resistor SMD 0201, reflow soldering, Vishay (see crcw0201e3.pdf)")
   (tags "resistor 0201")
   (attr smd)
-  (fp_text reference R3 (at 1.397 0.762) (layer F.SilkS) hide
+  (fp_text reference R8 (at 1.397 0.762) (layer F.SilkS) hide
     (effects (font (size 0.762 0.762) (thickness 0.15)))
   )
-  (fp_text value 330 (at 0 1.7) (layer F.Fab)
+  (fp_text value 100 (at 0 1.7) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.35 -0.175) (end 0.35 0.175) (layer F.CrtYd) (width 0.05))
