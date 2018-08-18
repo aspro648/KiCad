@@ -39,8 +39,8 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Beetje "
-Date ""
+Title "Beetje Blok SD Card"
+Date "2018-08-17"
 Rev "0.0"
 Comp "www.MakersBox.us"
 Comment1 "648.ken@gmail.com"
@@ -250,4 +250,75 @@ F 3 "" H 1850 1350 50  0001 C CNN
 	1    1850 1350
 	-1   0    0    1   
 $EndComp
+Text Notes 3350 7450 0    60   ~ 0
+D2\nD3\nD15\nD14\nD16
+Text Notes 3650 7450 0    60   ~ 0
+DO\nDI\nCLK
+Text Notes 1500 7050 0    60   ~ 0
+CS
+$Comp
+L LED D1
+U 1 1 5B773B85
+P 3150 3800
+F 0 "D1" H 3150 3900 50  0000 C CNN
+F 1 "LED" H 3150 3700 50  0000 C CNN
+F 2 "footprints:LED_0603" H 3150 3800 50  0001 C CNN
+F 3 "" H 3150 3800 50  0001 C CNN
+	1    3150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B773C20
+P 3150 3500
+F 0 "R1" V 3230 3500 50  0000 C CNN
+F 1 "1K" V 3150 3500 50  0000 C CNN
+F 2 "footprints:R_0603" V 3080 3500 50  0001 C CNN
+F 3 "" H 3150 3500 50  0001 C CNN
+	1    3150 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 3800 2850 3800
+Wire Wire Line
+	2850 3800 2850 3500
+Wire Wire Line
+	2850 3500 3000 3500
+$Comp
+L VCC #PWR015
+U 1 1 5B77413E
+P 2400 3600
+F 0 "#PWR015" H 2400 3450 50  0001 C CNN
+F 1 "VCC" H 2400 3750 50  0000 C CNN
+F 2 "" H 2400 3600 50  0001 C CNN
+F 3 "" H 2400 3600 50  0001 C CNN
+	1    2400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5B774158
+P 2400 4000
+F 0 "#PWR016" H 2400 3750 50  0001 C CNN
+F 1 "GND" H 2400 3850 50  0000 C CNN
+F 2 "" H 2400 4000 50  0001 C CNN
+F 3 "" H 2400 4000 50  0001 C CNN
+	1    2400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5B77416F
+P 2400 3800
+F 0 "C1" H 2425 3900 50  0000 L CNN
+F 1 "0.1uF" H 2425 3700 50  0000 L CNN
+F 2 "footprints:C_0603" H 2438 3650 50  0001 C CNN
+F 3 "" H 2400 3800 50  0001 C CNN
+	1    2400 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3600 2400 3650
+Wire Wire Line
+	2400 3950 2400 4000
 $EndSCHEMATC
