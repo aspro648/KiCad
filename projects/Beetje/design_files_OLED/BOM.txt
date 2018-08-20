@@ -1,0 +1,14 @@
+Beetje Blok SD Card Rev 0.0
+
+Bill Of Materials
+----------------
+  
+- 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [design_files](design_files/) folder.
+- 1 ea., CrystalFonts display CFAL4864A
+- 2 ea., CONN FPC TOP 12POS 0.50MM R/A	1-1734839-2
+- 2 ea., CAP CER 0.1UF 25V X7R 0603	C1608X7R1E104K080AA
+- 2 ea., CONN HEADER 12POS .100 STR TIN	68000-412HLF
+- 1 ea., CAP CER 1UF 25V X5R 0603	GRM188R61E105KAADD
+- 2 ea., Resistor 4.7K ohm SMD 0603
+- 4 ea., Resistor 10K ohm SMD 0603
+- 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/short/jfcn42
