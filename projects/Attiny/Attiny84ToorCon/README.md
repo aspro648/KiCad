@@ -14,7 +14,7 @@ Bill Of Materials
 | 1   | C1    | CAP CER 0.1UF 250V X7R 1206          | Samsung         | CL31B104KEHSNNE   | 1276-3084-1-ND        |
 | 1   | BT1   | HOLDER BATTERY 20MM COIN             | Linx            | BAT-HLD-001       | BAT-HLD-001-ND        |
 | 2   | D1-D2 | LED RED CLEAR 1206 SMD               | Lite-On Inc.    | LTST-C150KRKT     | 160-1405-1-ND         |
-| 2   | D2-D4 | LED ORANGE CLEAR 0805 SMD            | Dialight        | 5988130107F       | 350-2040-1-ND         |
+| 2   | D2-D4 | LED ORANGE CLEAR 0805 SMD            | Lite-On Inc.    | LTST-C170KFKT     | 160-1413-1-ND         |
 | 2   | D5-D6 | LED AMBER DIFFUSED SMD 0603          | Broadcom        | ASMT-RA45-AP932   | 516-3217-1-ND         |
 | 1   | D7    | LED YELLOW CLEAR CHIP SMD 0402       | Kingbright      | APHHS1005SYCK     | 754-1105-1-ND         |
 | 2   | D8    | LED GREEN CLEAR 2SMD 0201            | Kingbright      | APG0603CGC-TT     | 754-2021-1-ND         |
