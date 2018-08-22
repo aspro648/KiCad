@@ -20,7 +20,7 @@ Bill Of Materials
 - R9, 100K ohm 0603 SMD resistor, https://www.digikey.com/short/j5d3b3
 - D3, D5, D13, 0603 SMD LED, https://www.digikey.com/short/j5h3h5
 - F1, PTC 1206, Bel 0ZCJ0025AF2E, https://www.digikey.com/short/jfcbc8
-- SW1, RA Tactile SPST, Pansonic EVQ-PA01P, https://www.digikey.com/short/jfc9vq
+- SW1, RA Tactile SPST, Pansonic EVQ-P7J01P, https://www.digikey.com/short/jfwprn
 - J2, CONN HEADER FEMALE 6POS .1" GOLD, https://www.digikey.com/short/jfcnz3
 - J4, CONN HEADER FEMALE 8POS .1" GOLD, https://www.digikey.com/short/jfcnzj
 

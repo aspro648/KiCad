@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# SW_Reed-RESCUE-project
+#
+DEF SW_Reed-RESCUE-project SW 0 0 N N 1 F N
+F0 "SW" 0 100 50 H V C CNN
+F1 "SW_Reed-RESCUE-project" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -85 0 55 901 -901 0 0 10 N -85 55 -85 -55
+A 85 0 55 -899 899 0 0 10 N 85 -55 85 55
+P 2 0 0 0 -100 0 50 30 N
+P 2 0 0 10 -85 -55 90 -55 N
+P 2 0 0 10 85 55 -85 55 N
+P 2 0 0 0 100 0 -50 -30 N
+X 1 1 -200 0 100 R 50 50 1 1 P
+X 2 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

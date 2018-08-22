@@ -5,7 +5,7 @@ Beetje Bloks
 
 What if breakout boards had a common footprint? You could design, build, and program larger projects in functional blocks and then synthesize the final project out of tested and characterized subsystems. 
 
-Beetje Bloks are a test of that concept. We are going to build things bit-by-bit. Since I sell a disproportionate number of kits to the [Netherlands](http://www.makersbox.us/2017/11/500-tindie-orders.html), I’m going to call these "Beetje Bloks", which translates from Dutch to “bit blocks”.  I’m not sure how to pronounce it.  Let’s say it “Beet-Cha”, as in, “I betcha can’t design a one-inch square dev board”.  I've written a lot more words about concept and execution on [Hack-A-Day](https://hackaday.io/project/160638-beetje-bloks).
+This is a test of that concept. We are going to build things bit-by-bit. Since I sell a disproportionate number of kits to the [Netherlands](http://www.makersbox.us/2017/11/500-tindie-orders.html), I’m going to call these "Beetje Bloks", which translates from Dutch to “bit blocks”.  I’m not sure how to pronounce it.  Let’s say it “Beet-Cha”, as in, “I betcha can’t design a one-inch square dev board”.  I've written a lot more words about concept and execution on [Hack-A-Day](https://hackaday.io/project/160638-beetje-bloks).
 
 The following Bloks have been designed / tested, with BOMs and particulars in their respective folders:
 

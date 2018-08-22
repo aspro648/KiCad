@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.7)
+(kicad_pcb (version 4) (host pcbnew 4.0.6)
 
   (general
     (links 77)
@@ -394,6 +394,11 @@
     (model ${KISYS3DMOD}/Crystals.3dshapes/Resonator_SMD_muRata_TPSKA-3pin_7.9x3.8mm_HandSoldering.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model Crystals.3dshapes/Crystal_SMD_SeikoEpson_TSX3225-4pin_3.2x2.5mm_HandSoldering.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 0.25 0.15 0.25))
       (rotate (xyz 0 0 0))
     )
   )

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:project-rescue
 LIBS:project
 LIBS:power
 LIBS:device
@@ -57,7 +58,7 @@ F 3 "" V 3750 2410 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_Reed SW1
+L SW_Reed-RESCUE-project SW1
 U 1 1 5B4A076E
 P 2700 2600
 F 0 "SW1" H 2700 2700 50  0000 C CNN

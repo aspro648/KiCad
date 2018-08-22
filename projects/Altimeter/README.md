@@ -21,10 +21,9 @@ Bill Of Materials
 - 1 ea., U1 ATMEGA328P-AU-ND 32TQFP, https://www.digikey.com/short/jbpvp7
 - 1 ea., U2 IC ALTIMETER I2C VERSION 8LGA, NXP MPL3115A2R1, https://www.digikey.com/short/j587bt
 - 3 ea., C1, 3, 4, CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/j58qjp
-- 2 ea., C2, 6 CAP CER 10UF 10V X5R 1206, https://www.digikey.com/short/j58q80
+- 1 ea., C2 CAP CER 10UF 10V X5R 1206, https://www.digikey.com/short/j58q80
 - 1 ea., D1 LED ORANGE CLEAR 0805 SMD, https://www.digikey.com/short/j58qzz
-- 1 ea., R1 RES 330 OHM 5% 1/8W 0805, https://www.digikey.com/short/j58qzr
-- 2 ea., R2, R3 RES 1K OHM 5% 1/4W 0805, https://www.digikey.com/short/j58q4m
+- 3 ea., R1, R2, R3 RES 1K OHM 5% 1/4W 0805, https://www.digikey.com/short/j58q4m
 - 1 ea., HOLDER BATTERY 20MM COIN, Lynx BAT-HLD-001, https://www.digikey.com/short/j58q42
 - 1 ea., CR2032 Battery, Panasonic CR2032, Digikey P189-ND (requires ground shipping, or buy locally).
 

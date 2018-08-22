@@ -36,10 +36,10 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "LED Eyes"
+Title "Altimeter"
 Date "2018-05-17"
 Rev ""
-Comp "www.MakersBox.us"
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
