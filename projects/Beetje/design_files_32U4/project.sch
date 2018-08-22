@@ -601,7 +601,7 @@ L Conn_01x08 J4
 U 1 1 5B6D51CD
 P 3000 5450
 F 0 "J4" H 3000 5850 50  0000 C CNN
-F 1 "Beetja Top" H 3000 4950 50  0000 C CNN
+F 1 "Beetje Top" H 3000 4950 50  0000 C CNN
 F 2 "footprints:Pin_Header_Straight_1x08_Pitch2.54mm" H 3000 5450 50  0001 C CNN
 F 3 "" H 3000 5450 50  0001 C CNN
 	1    3000 5450
@@ -612,7 +612,7 @@ L Conn_01x06 J2
 U 1 1 5B6D5224
 P 3650 5350
 F 0 "J2" H 3650 5650 50  0000 C CNN
-F 1 "Beetja Bottom" H 3650 4950 50  0000 C CNN
+F 1 "Beetje Bottom" H 3650 4950 50  0000 C CNN
 F 2 "footprints:Pin_Header_Straight_1x06_Pitch2.54mm" H 3650 5350 50  0001 C CNN
 F 3 "" H 3650 5350 50  0001 C CNN
 	1    3650 5350
@@ -982,5 +982,5 @@ Wire Notes Line
 Wire Notes Line
 	4250 4900 2200 4900
 Text Notes 2250 5000 0    60   ~ 0
-Beetja Footprint
+Beetje Footprint
 $EndSCHEMATC

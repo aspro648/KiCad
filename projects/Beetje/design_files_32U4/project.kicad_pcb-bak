@@ -22,8 +22,8 @@
   )
 
   (layers
-    (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
+    (0 F.Cu signal)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -38,7 +38,7 @@
     (43 Eco2.User user)
     (44 Edge.Cuts user)
     (45 Margin user)
-    (46 B.CrtYd user)
+    (46 B.CrtYd user hide)
     (47 F.CrtYd user)
     (48 B.Fab user hide)
     (49 F.Fab user hide)
@@ -434,16 +434,6 @@
       (net 1 GND))
     (pad 1 smd rect (at -1.8 -0.7 90) (size 1.4 1.05) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Buttons_Switches_SMD.3dshapes/SW_SPST_KMR2.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model "C:/Users/Maker's Box/Downloads/3d_switch (1)/walter/switch/smd_push2.wrl"
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (module myFootPrints:MadeInOregonRev25 (layer F.Cu) (tedit 0) (tstamp 5B6DE625)
