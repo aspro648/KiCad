@@ -1,5 +1,8 @@
 Beetje Blok 32U4 Rev 0.0
 
+Project page on [Hack-A-Day](https://hackaday.io/project/160638-beetja-bloks).
+
+
 Bill Of Materials
 ----------------
   
@@ -19,3 +22,17 @@ Bill Of Materials
 - SW1, RA Tactile SPST, Pansonic EVQ-PA01P, https://www.digikey.com/short/jfc9vq
 - J2, CONN HEADER FEMALE 6POS .1" GOLD, https://www.digikey.com/short/jfcnz3
 - J4, CONN HEADER FEMALE 8POS .1" GOLD, https://www.digikey.com/short/jfcnzj
+
+License
+----------------
+[Attribution-ShareAlike 3.0 United States (CC BY-SA 3.0 US)](https://creativecommons.org/licenses/by-sa/3.0/us/)
+
+You are free to:
+
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
