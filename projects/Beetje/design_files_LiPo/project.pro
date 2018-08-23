@@ -1,4 +1,4 @@
-update=8/23/2018 9:21:53 AM
+update=8/23/2018 9:38:38 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,6 +33,8 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -70,5 +72,4 @@ LibName30=opto
 LibName31=atmel
 LibName32=contrib
 LibName33=valves
-[general]
-version=1
+LibName34=lib_sch/MCP73831
