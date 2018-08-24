@@ -1,5 +1,9 @@
 Beetje Blok 32U4 Rev 0.0
 
+![Beetje Block](project.png) 
+
+Based on Adafruit's [ItsyBitsy](https://learn.adafruit.com/introducting-itsy-bitsy-32u4) and SparkFun's [Pro Micro](https://www.sparkfun.com/products/12587) 3.3V/8Mhz versions.
+
 Project page on [Hack-A-Day](https://hackaday.io/project/160638-beetje-bloks).
 
 This is the first "dev blok" for this proof-of-concept project.  It is a KiCad mash-up of Adafruit's [ItsyBity](https://learn.adafruit.com/introducting-itsy-bitsy-32u4) and SparkFun's [Pro Micro](https://www.sparkfun.com/products/12587), jammed into Hack-A-Day's [Once Square Inch Scheme](https://hackaday.io/project/7813-the-square-inch-project) ("HADOSIS").
