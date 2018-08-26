@@ -9,6 +9,7 @@ verifying efuse memory against 0xFF
  
 Attiny Core:
 https://github.com/SpenceKonde/ATTinyCore
+(add to preferences: http://drazzy.com/package_drazzy.com_index.json)
 Board: Attiny 24/44/84
 Pin Mapping: Counter-Clockwise
 Chip: Attiny 84
@@ -27,9 +28,20 @@ Clock: 8 MHz (internal)
 
 */
 
-
-int LEDS[] = {6, 7, 8, 9, 10};
-
+byte codes[] = {
+                0b01110011,
+                0b01100100,
+                0b01100110,
+                0b01100001,
+                0b01101101,
+                0b01101001,
+                0b01101100,
+                0b01111001};
+                
+int LEDS[] = {6, 5, 4, 2, 8, 9, 10, 7};
+int touchPin = 3;  //D3
+int touchRead = 7; //A7 
+int touchLevel = 1010; // (<1023)
 
 void setup(){
   #if (ARDUINO)
@@ -41,7 +53,11 @@ void setup(){
   // setup LED pind
   for(int LED=0; LED<(sizeof(LEDS)/sizeof(int)); LED++){
     pinMode(LEDS[LED], OUTPUT);
+    digitalWrite(LEDS[LED], LOW);
   }
+
+  pinMode(touchPin, INPUT);
+  digitalWrite(touchPin, HIGH); // pull up
   
   // setup sink pins PB0 / PB1 (D0, D1)
   pinMode(0, OUTPUT);
@@ -51,6 +67,24 @@ void setup(){
 
 
 void loop(){
+  while(analogRead(touchRead) > touchLevel){
+    cylon();
+  }
+
+  // sinc pins
+  digitalWrite(0, LOW);
+  digitalWrite(1, LOW);
+  digitalWrite(LEDS[0], HIGH);
+  while(analogRead(touchRead) < touchLevel){1;}
+  digitalWrite(LEDS[0], LOW);
+  delay(10);
+  blinkAscii();
+}
+
+
+
+
+void cylon(){
   
   // sinc pins
   digitalWrite(0, LOW);
@@ -58,12 +92,13 @@ void loop(){
 
   for(int LED=0; LED<(sizeof(LEDS)/sizeof(int)); LED++){
     flash(LEDS[LED]);
+    if(analogRead(touchRead) < touchLevel){return;}
   }  
 
   for(int LED = (sizeof(LEDS)/sizeof(int))-1; LED >= 0; LED--){
     flash(LEDS[LED]);
+    if(analogRead(touchRead) < touchLevel){return;}
   } 
-
 
   // source (shows if LED backwards)
   digitalWrite(0, HIGH);
@@ -71,12 +106,36 @@ void loop(){
 
   for(int LED=0; LED<(sizeof(LEDS)/sizeof(int)); LED++){
     flash(LEDS[LED]);
+    if(analogRead(touchRead) < touchLevel){return;}
   }  
 
   for(int LED = (sizeof(LEDS)/sizeof(int))-1; LED >= 0; LED--){
     flash(LEDS[LED]);
-  } 
+    if(analogRead(touchRead) < touchLevel){return;}
+    } 
 
+}
+
+
+void blinkAscii(){
+  // sinc pins
+  digitalWrite(0, LOW);
+  digitalWrite(1, LOW);
+  for (int code=0; code<(sizeof(codes)/sizeof(byte)); code++){
+    blinkByte(codes[code]);
+    delay(1000);
+  }
+}
+
+
+void blinkByte(byte bt){
+  for(int led=0; led<8; led++){
+    digitalWrite(LEDS[7-led], bitRead(bt, led));
+  }
+  delay(1000);
+  for(int x=7; x>=0; x--){
+    digitalWrite(LEDS[x], LOW);
+  }   
 }
 
 
