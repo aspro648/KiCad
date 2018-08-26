@@ -1,6 +1,8 @@
 Beetje Blok Template
 
-Project website: https://hackaday.io/project/160638-beetje-bloks
+![Beetje Block](project.png)
+
+This is the place to start if you want to design a Beetje Blok. Contains frequently used parts in footprints.pretty folder. Project website: https://hackaday.io/project/160638-beetje-bloks
 
 Bill Of Materials
 ----------------
