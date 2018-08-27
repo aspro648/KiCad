@@ -6,6 +6,7 @@ This is the place to start if you want to design a Beetje Blok. Contains frequen
 
 https://playground.arduino.cc/code/I2CEEPROM
 https://www.instructables.com/id/Add-I2C-EEPROM-to-Arduino/
+https://learn.sparkfun.com/tutorials/reading-and-writing-serial-eeproms
 
 Bill Of Materials
 ----------------
@@ -14,7 +15,9 @@ Bill Of Materials
 - 1 ea., C1 CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/j58qjp
 - 1 ea., R1, R2 4K7 0603 SMD Resistor, 
 
+- 1 ea., U1, IC EEPROM 256K I2C 400KHZ 8SOIC, https://www.digikey.com/short/jf1v8j
 - 1 ea., U1, IC EEPROM 1M I2C 1MHZ 8SOIC, https://www.digikey.com/short/jf10qw
+IC CBRAM 512K I2C 1MHZ 8TSSOP, https://www.digikey.com/short/jf1vmd
  or
 - 1 ea., U1, IC EEPROM 1M I2C 400KHZ 8SOIC, https://www.digikey.com/short/jf10h0
 
