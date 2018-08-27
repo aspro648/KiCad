@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.6)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
     (links 7)
     (no_connects 7)
-    (area 140.894999 85.014999 166.445001 110.565001)
+    (area 123.114999 92.634999 148.665001 118.185001)
     (thickness 1.6)
     (drawings 16)
     (tracks 0)
@@ -1107,7 +1107,7 @@
   )
 
   (module footprints:C_0603 (layer F.Cu) (tedit 5B7EDB1C) (tstamp 5B773964)
-    (at 127 127 90)
+    (at 127.635 123.317 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5B77416F)
@@ -1143,7 +1143,7 @@
   )
 
   (module footprints:LED_0603 (layer F.Cu) (tedit 5B773708) (tstamp 5B773979)
-    (at 134.62 129.54)
+    (at 133.223 124.968)
     (descr "LED 0603 smd package")
     (tags "LED led 0603 SMD smd SMT smt smdled SMDLED smtled SMTLED")
     (path /5B773B85)
@@ -1181,7 +1181,7 @@
   )
 
   (module footprints:R_0603 (layer F.Cu) (tedit 5B773702) (tstamp 5B7739DD)
-    (at 134.62 124.46)
+    (at 132.969 121.666)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /5B773C20)
@@ -1217,7 +1217,7 @@
   )
 
   (module footprints:SW_SPST_KMR2 (layer F.Cu) (tedit 5B7EDB2D) (tstamp 5B7EDC36)
-    (at 147.32 127)
+    (at 141.732 123.444)
     (descr "CK components KMR2 tactile switch http://www.ckswitches.com/media/1479/kmr2.pdf")
     (tags "tactile switch kmr2")
     (path /5B7EE011)
