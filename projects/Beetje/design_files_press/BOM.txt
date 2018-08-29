@@ -7,5 +7,5 @@ Bill Of Materials
 - 1 ea., U1 IC ALTIMETER I2C VERSION 8LGA, NXP MPL3115A2R1, https://www.digikey.com/short/jf5qh3
 - 2 ea., C3,4 CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/j58qjp
 - 1 ea., C2 CAP CER 10UF 10V X5R 1206, https://www.digikey.com/short/j58q80
-- 2 ea., R1, R2 4K7 0603 SMD Resistor
+- 2 ea., R1, R2 4K7 0603 SMD Resistor, https://www.digikey.com/short/j2qcwt
 - 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/short/jfcn42
