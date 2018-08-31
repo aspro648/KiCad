@@ -12,9 +12,9 @@
  * 
 */
 
-bool worldWrap = false; // continous world by wraping around edges
+bool worldWrap = true; // continous world by wraping around edges
 bool randWorld = false; // false starts with startWorld
-bool DEBUG = true;      // print worlds out to serial
+bool DEBUG = false;      // print worlds out to serial
 int genDelay = 1000;    // type between sucessive generations
 
 bool world[8][8];     // current world
@@ -51,6 +51,8 @@ void setup() {
   if(DEBUG){Serial.begin(9600);}
   randomSeed(analogRead(0));
   setWorld();
+  DDRD =  B11111111; // ports to outputs
+  DDRB =  B11111111; 
 }
 
 
@@ -60,11 +62,17 @@ void loop() {
   int curPopulation = 0;
   int populationRepeat = 0;
   bool gameover = false; //This is what breaks the game loop 
+  long timer;
+
+  while(1){
+    displayGeneration();
+  }
 
   while(gameover == false){
     gameover = true; //True until discovered false
-    displayGeneration();
-    delay(genDelay);
+    for(int x=0; x<100; x++){
+      displayGeneration();
+    }
     curPopulation = 0;
     for (int i = 0; i < 8; i++){
       for (int j = 0; j < 8; j++){
@@ -90,8 +98,6 @@ void loop() {
         }
       }
     }
-    Serial.println(curPopulation);
-    Serial.println(populationRepeat);
     
     if (memcmp(world, nextWorld, sizeof(world)) == 0){ // If in stable or repetitive state, restart.
       gameover = true; 
@@ -136,11 +142,12 @@ void setWorld(){
 
 void displayGeneration(){
   if(DEBUG){Serial.println("-------------------");}
+  PORTB = 0b10000000; 
   for (int row = 0; row < 8; row++){
     byte temp = 0;
     if(DEBUG){Serial.print("| ");}
     for (int col = 0; col <8; col++){
-      bitWrite(temp, col, world[row][col]);
+      bitWrite(PORTD, col, world[row][col]);
       if(DEBUG){
         if (world[row][col]){
           Serial.print("O ");
@@ -150,7 +157,10 @@ void displayGeneration(){
         }
       }    
     }
+    delay(1);
+    PORTD = 0;
     if(DEBUG){Serial.println("|");}
+    PORTB = PORTB>>1;
   }
   if(DEBUG){
     Serial.println("-------------------");
