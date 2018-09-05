@@ -2,7 +2,7 @@ Beetje Blok Template
 
 ![Beetje Block](project.png)
 
-This is the place to start if you want to design a Beetje Blok. Contains frequently used parts in footprints.pretty folder. Project website: https://hackaday.io/project/160638-beetje-bloks
+Based on https://jeelabs.org/2009/09/19/memory-plug-v1/
 
 https://playground.arduino.cc/code/I2CEEPROM
 https://www.instructables.com/id/Add-I2C-EEPROM-to-Arduino/

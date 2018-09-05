@@ -983,4 +983,6 @@ Wire Notes Line
 	4250 4900 2200 4900
 Text Notes 2250 5000 0    60   ~ 0
 Beetje Footprint
+Wire Wire Line
+	3950 4550 3950 4650
 $EndSCHEMATC
