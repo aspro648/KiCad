@@ -1,5 +1,8 @@
 Beetje Blok SD Card Rev 0.0
 
+https://learn.adafruit.com/adafruit-micro-sd-breakout-board-card-tutorial?view=all
+
+
 Bill Of Materials
 ----------------
   

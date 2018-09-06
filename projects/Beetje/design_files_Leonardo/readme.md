@@ -28,7 +28,7 @@ Bill Of Materials
 - 1 ea., C2 CAP CER 22pF SMD 0805
 
 - F1, PTC 1206, Bel 0ZCJ0025AF2E, https://www.digikey.com/short/jfcbc8
-- 2 ea., RV1, RV2 VARISTOR 0603, CG0603MLC-05E, https://www.digikey.com/short/j29hj5
+- 2 ea., RV1, RV2 VARISTOR 	VARISTOR 10.8V 40A 0805, https://www.digikey.com/product-detail/en/VCUG080050L1DP/478-5584-1-ND/2048376/?itemSeq=271121312
 - 4 ea., R1-R4 Resistor 1K OHM SMD 0805
 - 2 ea., R5, R8 Resistor 10K OHM SMD 0805
 - 2 ea., R6, R7 Resistor 22 OHM SMD 0805
@@ -37,7 +37,7 @@ Bill Of Materials
 
 - 1 ea., SW1 SWITCH TACTILE SPST-NO 0.05A 12V, PTS645SK50SMTR92 LFS, https://www.digikey.com/short/j29hvc
 - 1 ea., X3, CONN RCPT MICRO USB R/A SMD, Molex 1050170001, https://www.digikey.com/short/jb2205
-- 1 ea., J1 Barrel Jack
+- 1 ea., J1 Barrel Jack, https://www.digikey.com/short/j2fz43
 - 1 ea., 6-Pin header
 - 2 ea., 8-Pin header
 - 1 ea., 10-Pin header
