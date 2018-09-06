@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source "C:/Users/Maker's Box/Documents/git/KiCad/projects/Beetje/design_files_press/project.sch")
-    (date "8/13/2018 5:35:57 PM")
-    (tool "Eeschema 4.0.7")
+    (source C:/Users/kolsen/Documents/git/KiCad/projects/Beetje/design_files_press/project.sch)
+    (date "9/5/2018 4:37:26 PM")
+    (tool "Eeschema 4.0.6")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "Beetje Pressure Blok")
@@ -47,7 +47,7 @@
       (tstamp 5B4A29A6))
     (comp (ref U2)
       (value MPL3115A)
-      (footprint Housings_LGA:LGA-8_3x5mm_Pitch1.25mm)
+      (footprint footprints:MPL3115A)
       (libsource (lib MPL3115A) (part MPL3115A))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B4A2B5B))
@@ -136,10 +136,10 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical MPL3115A)
-      (uri "C:\\Users\\Maker's Box\\Documents\\git\\KiCad\\projects\\Beetje\\design_files_press\\lib_sch\\MPL3115A.lib"))
     (library (logical project)
-      (uri "C:\\Users\\Maker's Box\\Documents\\git\\KiCad\\projects\\Beetje\\design_files_press\\lib_sch\\project.lib")))
+      (uri C:\Users\kolsen\Documents\git\KiCad\projects\Beetje\design_files_press\lib_sch\project.lib))
+    (library (logical MPL3115A)
+      (uri C:\Users\kolsen\Documents\git\KiCad\projects\Beetje\design_files_press\lib_sch\MPL3115A.lib)))
   (nets
     (net (code 1) (name VCC)
       (node (ref C2) (pin 1))

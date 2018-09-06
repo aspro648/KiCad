@@ -15,7 +15,7 @@ Bill Of Materials
 - U1, ATMEGA32U4-AU, IC MCU 8BIT 32KB FLASH 44TQFP, https://www.digikey.com/short/jb25pc
 - U2, IC REG LINEAR 3.3V 150MA SOT23-5, MIC5225-3.3YM5-TR, https://www.digikey.com/short/jb2rq8
 - Y1, Resonator 8MHZ, CSTNE8M00G55Z000R0, https://www.digikey.com/short/jb22j1
-- D1, D4, DIODE SCHOTTKY 20V 1A SOD123FL, MBR120VLSFT3GOSCT-ND, https://www.digikey.com/short/jb22rn 
+- D1, D4, DIODE SCHOTTKY 20V 1A SOD123FL, MBR120ESFT1G, https://www.digikey.com/short/j2r1f3
 - C6, C8, C9, 10uF SMD 0805, https://www.digikey.com/short/j5d39w 
 - C7 1uF SMD 0603, https://www.digikey.com/short/j5d397
 - X3, CONN RCPT MICRO USB R/A SMD, Molex 1050170001, https://www.digikey.com/short/jb2205
