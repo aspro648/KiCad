@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
     (links 12)
     (no_connects 0)
-    (area 128.219999 102.819999 182.930001 121.970001)
+    (area 125.200715 95.899999 184.224939 126.440419)
     (thickness 1.6)
     (drawings 110)
     (tracks 38)
@@ -32,7 +32,7 @@
   )
 
   (setup
-    (last_trace_width 0.6096)
+    (last_trace_width 0.254)
     (user_trace_width 0.3048)
     (user_trace_width 0.4064)
     (user_trace_width 0.6096)
@@ -85,7 +85,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory BRD/))
+      (outputdirectory gerbers/))
   )
 
   (net 0 "")
