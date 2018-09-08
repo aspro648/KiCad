@@ -1,4 +1,4 @@
-(module KiCad-Logo2_8mm_SilkScreen (layer F.Cu) (tedit 5B7EDCB3)
+(module KiCad-Logo2_8mm_SilkScreen (layer F.Cu) (tedit 0)
   (descr "KiCad Logo")
   (tags "Logo KiCad")
   (attr virtual)
@@ -6,7 +6,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value KiCad-Logo2_8mm_SilkScreen (at 0.75 0) (layer F.Fab) hide
-    (effects (font (size 0.5 0.5) (thickness 0.125)))
+    (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_poly (pts (xy -3.922722 -3.342976) (xy -3.908256 -3.191281) (xy -3.866163 -3.047997) (xy -3.798393 -2.916193)
     (xy -3.706899 -2.798942) (xy -3.593635 -2.699313) (xy -3.46451 -2.622271) (xy -3.323028 -2.569521)

@@ -1,4 +1,4 @@
-Beetje Blok Template
+Beetje LiPo Battery Blok
 
 ![Beetje Block](project.png) 
 
@@ -11,20 +11,28 @@ Bill Of Materials
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [project.kicad_pcb](project.kicad_pcb) file.
 - 1 ea., C1 CAP CER 10UF SMD 0805, https://www.digikey.com/short/j5d39w 
-- 1 ea., IC CONTROLLR LI-ION 4.2V SOT23-5, Microchip MCP73831T-2ATI/OT, https://www.digikey.com/short/jfnvjp
+- 1 ea., U1 IC CONTROLLR LI-ION 4.2V SOT23-5, Microchip MCP73831T-2ATI/OT, https://www.digikey.com/short/jfnvjp
 - 1 ea., BATTERY LITHIUM 3.7V 150MA, TinyCircuits ASR00003, https://www.digikey.com/short/jf925w
 - 1 ea., JST SH CONN HEADER SH 2POS 1MM, SM02B-SRSS-TB(LF)(SN), https://www.digikey.com/short/jfdccc
 - 1 ea., JST PH CONN HEADER PH SIDE 2POS 2MM, S2B-PH-K-S(LF)(SN), https://www.digikey.com/short/jfdct5
-- 1 ea., Resistor 10K SMD 0603 https://www.digikey.com/short/jfdm79
-- 2 ea., Resistor 1K SMD 0603 https://www.digikey.com/short/jfd41d
-- 1 ea., LED red SMD 0603, https://www.digikey.com/short/jfdm8t
-- 1 ea., LED green SMD 0603, https://www.digikey.com/short/jfdm3r
+- 1 ea., R3 Resistor 10K SMD 0603 https://www.digikey.com/short/jfdm79
+- 2 ea., R1, R2 Resistor 1K SMD 0603 https://www.digikey.com/short/jfd41d
+- 1 ea., D1 LED red SMD 0603, https://www.digikey.com/short/jfdm8t
+- 1 ea., D2 LED green SMD 0603, https://www.digikey.com/short/jfdm3r
+- 1 ea., D3 DIODE SCHOTTKY 20V 1A SOD123L, https://www.digikey.com/short/j2wzf5
 
 Optional
 
 - 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/short/jfcn42
 - J2, CONN HEADER FEMALE 6POS .1" GOLD, https://www.digikey.com/short/jfcnz3
 - J4, CONN HEADER FEMALE 8POS .1" GOLD, https://www.digikey.com/short/jfcnzj
+
+
+Revisions
+------------------
+0.0 Aug 2018 Initial build
+0.1 Sep 2018 Switch to 0805 packages. Swap J1 & J3 connector polarities.  Add power switch and reverse current diode.
+
 
 License
 ----------------

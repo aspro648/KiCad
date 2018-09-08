@@ -1,9 +1,9 @@
-(module MadeInOregonRev25 (layer F.Cu) (tedit 5B7EDC92)
+(module myFootPrints:MadeInOregonRev25 (layer F.Cu) (tedit 0)
   (fp_text reference VAL (at 0 0) (layer F.SilkS) hide
     (effects (font (size 1.143 1.143) (thickness 0.1778)))
   )
   (fp_text value MadeInOregonRev25 (at 0 0) (layer F.SilkS) hide
-    (effects (font (size 0.5 0.5) (thickness 0.125)))
+    (effects (font (size 1.143 1.143) (thickness 0.1778)))
   )
   (fp_poly (pts (xy -3.09626 -1.76022) (xy -3.09626 -1.72212) (xy -3.09372 -1.69672) (xy -3.09118 -1.67386)
     (xy -3.0861 -1.65608) (xy -3.07594 -1.63576) (xy -3.0734 -1.62814) (xy -3.0607 -1.6002)

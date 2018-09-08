@@ -475,4 +475,6 @@ Wire Wire Line
 	7100 3700 7100 4100
 Wire Wire Line
 	7100 4100 7150 4100
+Text Notes 4300 2700 0    60   ~ 0
+ToDo:\nAdd diode on input
 $EndSCHEMATC

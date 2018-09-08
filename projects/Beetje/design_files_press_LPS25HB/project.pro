@@ -1,4 +1,4 @@
-update=8/23/2018 9:21:53 AM
+update=9/7/2018 3:28:56 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -70,5 +72,6 @@ LibName30=opto
 LibName31=atmel
 LibName32=contrib
 LibName33=valves
-[general]
-version=1
+LibName34=lib_sch/LIS3Dh
+LibName35=lib_sch/MPL3115A
+LibName36=sensors

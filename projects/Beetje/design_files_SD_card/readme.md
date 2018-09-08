@@ -1,23 +1,22 @@
-Beetje Blok Template
+Beetje Blok SD Card Rev 0.0
 
-![Beetje Block](project.png)
+Project website: https://hackaday.io/project/160638-beetje-bloks
 
-This is the place to start if you want to design a Beetje Blok. Contains frequently used parts in footprints.pretty folder. Project website: https://hackaday.io/project/160638-beetje-bloks
+Project website: https://hackaday.io/project/160638-beetje-bloks
+
+https://learn.adafruit.com/adafruit-micro-sd-breakout-board-card-tutorial?view=all
+
 
 Bill Of Materials
 ----------------
   
-- 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [project.kicad_pcb](project.kicad_pcb) file.
+- 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [design_files](design_files/) folder.
+- 1 ea., J1 CONN MICRO SD CARD PUSH-PULL, Hirose DM3D-SF, https://www.digikey.com/short/jfh304
 - 1 ea., C1 CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/j58qjp
-- 1 ea., D1 LED 0603 SMD https://www.digikey.com/short/j5h3h5
-- 1 ea., R1 1K 0603 SMD Resistor, https://www.digikey.com/short/jfhzq7
-- 1 ea., SW1 TACTILE KMR231NG LFS, https://www.digikey.com/short/jb2r5m
-
-Optional
-
+- 1 ea., D1 LED 0603 SMD
+- 1 ea., R1 1K 0603 SMD Resistor
 - 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/short/jfcn42
-- J2, CONN HEADER FEMALE 6POS .1" GOLD, https://www.digikey.com/short/jfcnz3
-- J4, CONN HEADER FEMALE 8POS .1" GOLD, https://www.digikey.com/short/jfcnzj
+
 
 License
 ----------------
