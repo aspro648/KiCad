@@ -4,16 +4,19 @@ Beetje Blok 7-SEG Rev 0.0
 
 Project website: https://hackaday.io/project/160638-beetje-bloks
 
+Based on Adafruit's [LED Backpack]{https://learn.adafruit.com/adafruit-led-backpack/downloads}. 
+
 Bill Of Materials
 ----------------
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [design_files](design_files/) folder.
-- 1 ea., J1 CONN MICRO SD CARD PUSH-PULL, Hirose DM3D-SF, https://www.digikey.com/short/jfh304
-- 1 ea., C1 CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/j58qjp
-- 1 ea., D1 LED 0603 SMD
-- 1 ea., R1 1K 0603 SMD Resistor, https://www.digikey.com/short/jfhzq7
+- 1 ea., IC1 Holtek HT16K33
+- 1 ea., U1 7-segment CC LED
+- 1 ea., C1 CAP CER 10UF 50V X7R, https://www.digikey.com/short/j5d39w 
+- 2 ea., R1, R2 Resistor 10K 0805 SMD, https://www.digikey.com/short/j2d0w4
+- 3 ea., R3, R4, R5 Resistor 47K 0805 SMD, https://www.digikey.com/short/j2d00m 
 - 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/short/jfcn42
-
+- 1 ea., SW1 RA Tactile SPST, Pansonic EVQ-P7J01P, https://www.digikey.com/short/jfwprn
 
 License
 ----------------

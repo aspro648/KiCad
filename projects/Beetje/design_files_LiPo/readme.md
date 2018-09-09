@@ -2,9 +2,10 @@ Beetje LiPo Battery Blok
 
 ![Beetje Block](project.png) 
 
+Project website: https://hackaday.io/project/160638-beetje-bloks
+
 Based on Adafruit's [Adafruit Pro Trinket LiPoly/LiIon Backpack](https://learn.adafruit.com/adafruit-pro-trinket-lipoly-slash-liion-backpack/downloads)
 
-Project website: https://hackaday.io/project/160638-beetje-bloks
 
 Bill Of Materials
 ----------------
@@ -15,10 +16,10 @@ Bill Of Materials
 - 1 ea., BATTERY LITHIUM 3.7V 150MA, TinyCircuits ASR00003, https://www.digikey.com/short/jf925w
 - 1 ea., JST SH CONN HEADER SH 2POS 1MM, SM02B-SRSS-TB(LF)(SN), https://www.digikey.com/short/jfdccc
 - 1 ea., JST PH CONN HEADER PH SIDE 2POS 2MM, S2B-PH-K-S(LF)(SN), https://www.digikey.com/short/jfdct5
-- 1 ea., R3 Resistor 10K SMD 0603 https://www.digikey.com/short/jfdm79
-- 2 ea., R1, R2 Resistor 1K SMD 0603 https://www.digikey.com/short/jfd41d
-- 1 ea., D1 LED red SMD 0603, https://www.digikey.com/short/jfdm8t
-- 1 ea., D2 LED green SMD 0603, https://www.digikey.com/short/jfdm3r
+- 1 ea., R3 Resistor 10K SMD 0805, https://www.digikey.com/short/j2d0w4
+- 2 ea., R1, R2 Resistor 1K SMD 0805, https://www.digikey.com/short/j2d0wt
+- 1 ea., D1 LED red SMD 0805, https://www.digikey.com/short/j20zct
+- 1 ea., D2 LED green SMD 0805, https://www.digikey.com/short/j20p1h
 - 1 ea., D3 DIODE SCHOTTKY 20V 1A SOD123L, https://www.digikey.com/short/j2wzf5
 
 Optional

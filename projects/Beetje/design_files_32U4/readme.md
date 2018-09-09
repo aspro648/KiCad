@@ -12,21 +12,26 @@ Bill Of Materials
 ----------------
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect kicad.pcb file.
-- U1, ATMEGA32U4-AU, IC MCU 8BIT 32KB FLASH 44TQFP, https://www.digikey.com/short/jb25pc
-- U2, IC REG LINEAR 3.3V 150MA SOT23-5, MIC5225-3.3YM5-TR, https://www.digikey.com/short/jb2rq8
-- Y1, Resonator 8MHZ, CSTNE8M00G55Z000R0, https://www.digikey.com/short/jb22j1
-- D1, D4, DIODE SCHOTTKY 20V 1A SOD123FL, MBR120ESFT1G, https://www.digikey.com/short/j2r1f3
-- C6, C8, C9, 10uF SMD 0805, https://www.digikey.com/short/j5d39w 
-- C7 1uF SMD 0603, https://www.digikey.com/short/j5d397
-- X3, CONN RCPT MICRO USB R/A SMD, Molex 1050170001, https://www.digikey.com/short/jb2205
-- R4, R5, 22 Ohm 5% 0603 SMD resistor, https://www.digikey.com/short/jfcbtj
-- R1, R2, R7, 330 Ohm 0603 SMD resistor, https://www.digikey.com/short/jfcb32
-- R9, 100K ohm 0603 SMD resistor, https://www.digikey.com/short/j5d3b3
-- D3, D5, D13, 0603 SMD LED, https://www.digikey.com/short/j5h3h5
-- F1, PTC 1206, Bel 0ZCJ0025AF2E, https://www.digikey.com/short/jfcbc8
-- SW1, RA Tactile SPST, Pansonic EVQ-P7J01P, https://www.digikey.com/short/jfwprn
+- 1 ea., U1, ATMEGA32U4-AU, IC MCU 8BIT 32KB FLASH 44TQFP, https://www.digikey.com/short/jb25pc
+- 1 ea., U2, IC REG LINEAR 3.3V 150MA SOT23-5, MIC5225-3.3YM5-TR, https://www.digikey.com/short/jb2rq8
+- 1 ea., Y1 Resonator 8MHZ, CSTNE8M00G55Z000R0, https://www.digikey.com/short/jb22j1
+- 2 ea., D1, D4 DIODE SCHOTTKY 20V 1A SOD123FL, MBR120ESFT1G, https://www.digikey.com/short/j2r1f3
+- 3 ea,, C6, C8, C9 10uF SMD 0805, https://www.digikey.com/short/j5d39w 
+- 1 ea., C7 1uF SMD 0603, https://www.digikey.com/short/j5d397
+- 1 ea., X3, CONN RCPT MICRO USB R/A SMD, Molex 1050170001, https://www.digikey.com/short/jb2205
+- 2 ea., R4, R5, 22 Ohm 5% 0603 SMD resistor, https://www.digikey.com/short/jfcbtj
+- 3 ea., R1, R2, R7, 330 Ohm 0603 SMD resistor, https://www.digikey.com/short/jfcb32
+- 1 ea., R9 100K ohm 0603 SMD resistor, https://www.digikey.com/short/j5d3b3
+- 3 ea., D3, D5, D13 0603 SMD LED, https://www.digikey.com/short/j5h3h5
+- 2 ea., R3, R6 Resistor 4.7K SMD 0603, https://www.digikey.com/short/j2d05w
+- 1 ea., F1 PTC 1206, Bel 0ZCJ0025AF2E, https://www.digikey.com/short/jfcbc8
+- 2 ea., SW1, Sw2 RA Tactile SPST, Pansonic EVQ-P7J01P, https://www.digikey.com/short/jfwprn
 - J2, CONN HEADER FEMALE 6POS .1" GOLD, https://www.digikey.com/short/jfcnz3
 - J4, CONN HEADER FEMALE 8POS .1" GOLD, https://www.digikey.com/short/jfcnzj
+
+
+Revision 0.1 - diodes and polyfuse to front.
+Revision 0.2 - I2C pullups, added SW2, enlarge holes for headers
 
 License
 ----------------

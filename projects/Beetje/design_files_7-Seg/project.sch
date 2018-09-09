@@ -142,10 +142,10 @@ F 3 "" H 1950 6300 50  0001 C CNN
 	1    1950 6300
 	0    -1   -1   0   
 $EndComp
-Text Label 1950 5700 0    60   ~ 0
+Text Label 1950 5900 0    60   ~ 0
 D10
-Text Label 3400 5600 0    60   ~ 0
-D9
+Text Label 3350 5600 0    60   ~ 0
+An0
 Text Label 3350 5800 0    60   ~ 0
 SCL
 Text Label 3350 5700 0    60   ~ 0
@@ -174,7 +174,7 @@ L Conn_01x08 J4
 U 1 1 5B6D51CD
 P 2350 5900
 F 0 "J4" H 2350 6300 50  0000 C CNN
-F 1 "Conn_01x08" H 2350 5400 50  0000 C CNN
+F 1 "Beetje_Top" H 2350 5400 50  0000 C CNN
 F 2 "footprints:Pin_Header_Straight_1x08_Pitch2.54mm" H 2350 5900 50  0001 C CNN
 F 3 "" H 2350 5900 50  0001 C CNN
 	1    2350 5900
@@ -185,7 +185,7 @@ L Conn_01x06 J2
 U 1 1 5B6D5224
 P 3000 5800
 F 0 "J2" H 3000 6100 50  0000 C CNN
-F 1 "Conn_01x06" H 3000 5400 50  0000 C CNN
+F 1 "Beetje_Bottom" H 3000 5400 50  0000 C CNN
 F 2 "footprints:Pin_Header_Straight_1x06_Pitch2.54mm" H 3000 5800 50  0001 C CNN
 F 3 "" H 3000 5800 50  0001 C CNN
 	1    3000 5800
@@ -423,33 +423,33 @@ Wire Wire Line
 Wire Wire Line
 	3700 2350 3700 2900
 $Comp
-L Jumper_NO_Small JP1
+L Jumper_NO_Small A0
 U 1 1 5B7E3B7C
 P 6300 5700
-F 0 "JP1" H 6300 5780 50  0000 C CNN
-F 1 "jmp" H 6310 5640 50  0000 C CNN
+F 0 "A0" H 6300 5780 50  0000 C CNN
+F 1 "JMP" H 6310 5640 50  0000 C CNN
 F 2 "footprints:Jumper" H 6300 5700 50  0001 C CNN
 F 3 "" H 6300 5700 50  0001 C CNN
 	1    6300 5700
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper_NO_Small JP2
+L Jumper_NO_Small A1
 U 1 1 5B7E3C40
 P 6550 5700
-F 0 "JP2" H 6550 5780 50  0000 C CNN
-F 1 "jmp" H 6560 5640 50  0000 C CNN
+F 0 "A1" H 6550 5780 50  0000 C CNN
+F 1 "JMP" H 6560 5640 50  0000 C CNN
 F 2 "footprints:Jumper" H 6550 5700 50  0001 C CNN
 F 3 "" H 6550 5700 50  0001 C CNN
 	1    6550 5700
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper_NO_Small JP3
+L Jumper_NO_Small A2
 U 1 1 5B7E3C71
 P 6750 5700
-F 0 "JP3" H 6750 5780 50  0000 C CNN
-F 1 "jmp" H 6760 5640 50  0000 C CNN
+F 0 "A2" H 6750 5780 50  0000 C CNN
+F 1 "JMP" H 6760 5640 50  0000 C CNN
 F 2 "footprints:Jumper" H 6750 5700 50  0001 C CNN
 F 3 "" H 6750 5700 50  0001 C CNN
 	1    6750 5700
@@ -578,4 +578,8 @@ Wire Notes Line
 	5750 2500 5750 2200
 Wire Notes Line
 	5750 2200 5800 2200
+Text Label 1950 5800 0    60   ~ 0
+D9
+Text Label 1950 5700 0    60   ~ 0
+D6
 $EndSCHEMATC

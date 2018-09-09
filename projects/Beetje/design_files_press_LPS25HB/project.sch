@@ -129,7 +129,7 @@ F 3 "" H 3550 4500 50  0001 C CNN
 $EndComp
 Text Label 3150 3900 0    60   ~ 0
 INT_DRDY
-Text Label 4750 3800 0    60   ~ 0
+Text Label 3450 4000 0    60   ~ 0
 ~CS
 Text Label 4750 4000 0    60   ~ 0
 SCL/SCLK
@@ -137,10 +137,8 @@ Text Label 4750 3900 0    60   ~ 0
 SDA/MOSI
 Text Label 3300 3800 0    60   ~ 0
 ~RESET
-Text Label 3450 4000 0    60   ~ 0
-A0
 Text Label 3450 4100 0    60   ~ 0
-A1
+D10
 Text Label 4750 4300 0    60   ~ 0
 SCL/SCLK
 Text Label 4750 4200 0    60   ~ 0
@@ -164,7 +162,7 @@ U 1 1 5B6D51CD
 P 3750 4100
 F 0 "J4" H 3750 4500 50  0000 C CNN
 F 1 "Beetje_Top" H 3750 3600 50  0000 C CNN
-F 2 "footprints:Pin_Header_Straight_1x08_Pitch2.54mm" H 3750 4100 50  0001 C CNN
+F 2 "footprints:Beetje_Top" H 3750 4100 50  0001 C CNN
 F 3 "" H 3750 4100 50  0001 C CNN
 	1    3750 4100
 	1    0    0    -1  
@@ -175,7 +173,7 @@ U 1 1 5B6D5224
 P 4550 4000
 F 0 "J2" H 4550 4300 50  0000 C CNN
 F 1 "Beetje_Bottom" H 4550 3600 50  0000 C CNN
-F 2 "footprints:Pin_Header_Straight_1x06_Pitch2.54mm" H 4550 4000 50  0001 C CNN
+F 2 "footprints:Beetje_Bottom" H 4550 4000 50  0001 C CNN
 F 3 "" H 4550 4000 50  0001 C CNN
 	1    4550 4000
 	-1   0    0    -1  
@@ -344,7 +342,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 4500 3550 4500
 Wire Wire Line
-	4750 3800 5050 3800
+	4750 3800 4900 3800
 Wire Wire Line
 	4750 3900 5050 3900
 Wire Wire Line
@@ -461,9 +459,9 @@ Text Label 6200 2800 0    60   ~ 0
 Text Label 6200 3000 0    60   ~ 0
 INT_DRDY
 Text Notes 4300 4300 0    60   ~ 0
-D9\nSDA\nSCL\nMISO\nMOSI\nSCK
+A0\nSDA\nSCL\nMISO\nMOSI\nSCK
 Text Notes 3850 4500 0    60   ~ 0
-~RESET\nD10\nA0\nA1\nBATT\nVCC\nGND\nVBUS
+~RESET\nD6\nD9\nD10\nBATT\nVCC\nGND\nVBUS
 Text Notes 5700 3800 0    60   ~ 0
 https://www.sparkfun.com/products/14767
 Wire Notes Line
@@ -477,7 +475,6 @@ Wire Notes Line
 Text Notes 4650 4750 0    60   ~ 0
 Beetje Pinout
 NoConn ~ 3450 4100
-NoConn ~ 3450 4000
 NoConn ~ 3300 3800
 Connection ~ 5850 2800
 $Comp
@@ -529,4 +526,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 2000 6600 2000
 Connection ~ 6600 2000
+NoConn ~ 4900 3800
+Text Label 4850 3800 2    60   ~ 0
+A0
 $EndSCHEMATC
