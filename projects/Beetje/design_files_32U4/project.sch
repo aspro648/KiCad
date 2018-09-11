@@ -422,12 +422,12 @@ $EndComp
 $Comp
 L +BATT #PWR017
 U 1 1 5B402C38
-P 2600 5550
-F 0 "#PWR017" H 2600 5400 50  0001 C CNN
-F 1 "+BATT" V 2600 5800 50  0000 C CNN
-F 2 "" H 2600 5550 50  0001 C CNN
-F 3 "" H 2600 5550 50  0001 C CNN
-	1    2600 5550
+P 2600 5750
+F 0 "#PWR017" H 2600 5600 50  0001 C CNN
+F 1 "+BATT" V 2600 6000 50  0000 C CNN
+F 2 "" H 2600 5750 50  0001 C CNN
+F 3 "" H 2600 5750 50  0001 C CNN
+	1    2600 5750
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -441,25 +441,25 @@ F 3 "" H 2600 5850 50  0001 C CNN
 	1    2600 5850
 	0    -1   -1   0   
 $EndComp
-Text Label 2600 5450 0    60   ~ 0
-D10
 Text Label 2600 5350 0    60   ~ 0
+D10
+Text Label 2600 5250 0    60   ~ 0
 D9
 Text Label 4000 5350 0    60   ~ 0
 SCL
-Text Label 4000 5250 0    60   ~ 0
+Text Label 4000 5450 0    60   ~ 0
 SDA
-Text Label 2600 5150 0    60   ~ 0
+Text Label 3900 5150 0    60   ~ 0
 ~RESET
-Text Label 4050 5150 0    60   ~ 0
+Text Label 2600 5150 0    60   ~ 0
 A0
-Text Label 2600 5250 0    60   ~ 0
+Text Label 4050 5250 0    60   ~ 0
 D6
-Text Label 4000 5650 0    60   ~ 0
+Text Label 2600 5650 0    60   ~ 0
 SCK
-Text Label 3950 5550 0    60   ~ 0
+Text Label 2600 5550 0    60   ~ 0
 MOSI
-Text Label 3950 5450 0    60   ~ 0
+Text Label 2600 5450 0    60   ~ 0
 MISO
 $Comp
 L R R7
@@ -508,13 +508,13 @@ $EndComp
 $Comp
 L GND #PWR020
 U 1 1 5B41D2F5
-P 2600 5750
-F 0 "#PWR020" H 2600 5500 50  0001 C CNN
-F 1 "GND" V 2600 5550 50  0000 C CNN
-F 2 "" H 2600 5750 50  0001 C CNN
-F 3 "" H 2600 5750 50  0001 C CNN
-	1    2600 5750
-	0    1    1    0   
+P 3950 5650
+F 0 "#PWR020" H 3950 5400 50  0001 C CNN
+F 1 "GND" V 3950 5450 50  0000 C CNN
+F 2 "" H 3950 5650 50  0001 C CNN
+F 3 "" H 3950 5650 50  0001 C CNN
+	1    3950 5650
+	0    -1   -1   0   
 $EndComp
 Text Label 7300 2800 0    60   ~ 0
 RXLED
@@ -672,13 +672,13 @@ $EndComp
 $Comp
 L VCC #PWR026
 U 1 1 5B6E81BF
-P 2600 5650
-F 0 "#PWR026" H 2600 5500 50  0001 C CNN
-F 1 "VCC" V 2600 5850 50  0000 C CNN
-F 2 "" H 2600 5650 50  0001 C CNN
-F 3 "" H 2600 5650 50  0001 C CNN
-	1    2600 5650
-	0    -1   -1   0   
+P 3950 5550
+F 0 "#PWR026" H 3950 5400 50  0001 C CNN
+F 1 "VCC" V 3950 5750 50  0000 C CNN
+F 2 "" H 3950 5550 50  0001 C CNN
+F 3 "" H 3950 5550 50  0001 C CNN
+	1    3950 5550
+	0    1    1    0   
 $EndComp
 NoConn ~ 7550 3200
 NoConn ~ 7550 3500
@@ -958,9 +958,9 @@ Wire Wire Line
 Wire Wire Line
 	3850 5450 4150 5450
 Wire Wire Line
-	3850 5550 4150 5550
+	3850 5550 3950 5550
 Wire Wire Line
-	3850 5650 4150 5650
+	3850 5650 3950 5650
 Wire Wire Line
 	2650 1950 2900 1950
 Wire Wire Line
@@ -1046,4 +1046,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 3250 8300 3350
 Connection ~ 8200 3250
+Text Notes 2350 6850 0    60   ~ 0
+SparkFun's Qwiic:\nBlack = GND\nRed = 3.3V\nBlue = SDA\nYellow = SCL
 $EndSCHEMATC

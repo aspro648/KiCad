@@ -13,7 +13,7 @@ Bill Of Materials
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [design_files](design_files/) folder.
 - 1 ea., U1 IC MEMS PRESSURE SENSOR 10HCLGA, ST LPS25HBTR, https://www.digikey.com/short/j2n1qn
 - 1 ea., C1 CAP CER 4.7uF SMD 0805,https://www.digikey.com/short/j2dvcm 
-- 1 ea., C2 CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/j58qjp
+- 1 ea., C2 CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/j20p01
 - 2 ea., R1, R2 Resistor 4.7K OHM SMD 0805, https://www.digikey.com/short/j2d0wd  
 - 3 ea., R3, R4, R5 Resistor 10K OHM SMD 0805, https://www.digikey.com/short/j2d0w4  
 - 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/short/jfcn42

@@ -44,10 +44,6 @@ bool STATES[] = {true, true, true, true, true};
 
 
 void setup(){
-  #if (ARDUINO)
-    Serial.begin(9600);
-    Serial.println("SMD_heart");
-  #endif
 
   // setup heart pin
   pinMode(ledPin, INPUT);
@@ -79,6 +75,3 @@ void flash(int led){  // psuedo PWM
     delay(3);
   }
 }
-
-
-

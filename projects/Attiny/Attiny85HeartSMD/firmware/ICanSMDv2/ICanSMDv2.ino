@@ -31,10 +31,6 @@ int on_time = 10;  // in seconds
 
 
 void setup(){
-  #if (ARDUINO)
-    Serial.begin(9600);
-    Serial.println("SMD_heart");
-  #endif
 
   // test: with a weak pullup, the pin will read HIGH if LED in backward (no path for current)
   pinMode(ledPinNeg, INPUT);
@@ -142,7 +138,7 @@ boolean heartBeat(int on_time){
   return(true);
 }
 
-
+/*
 
 void blinks(int val){
   int msd = 1000;
@@ -177,4 +173,4 @@ void blink(int val){
   delay(val);
 }
 
-
+*/

@@ -30,8 +30,10 @@ Bill Of Materials
 - J4, CONN HEADER FEMALE 8POS .1" GOLD, https://www.digikey.com/short/jfcnzj
 
 
-Revision 0.1 - diodes and polyfuse to front.
-Revision 0.2 - I2C pullups, added SW2, enlarge holes for headers
+Revisions
+----------------
+- Revision 0.1 - diodes and polyfuse to front.
+- Revision 0.2 - I2C pullups, added SW2, enlarge holes for headers
 
 License
 ----------------
