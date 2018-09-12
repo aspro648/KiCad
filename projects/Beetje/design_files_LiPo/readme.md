@@ -33,6 +33,7 @@ Revisions
 ------------------
 - 0.0 Aug 2018 Initial build
 - 0.1 Sep 2018 Switch to 0805 packages. Swap J1 & J3 connector polarities.  Add power switch and reverse current diode.
+- 0.2 Sep 2018 Pinout to match 32U4 rev 0.3, added pour planes per datasheet, rerouted.
 
 
 License

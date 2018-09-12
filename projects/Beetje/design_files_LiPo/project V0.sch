@@ -39,8 +39,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Beetje LiPo Blok "
-Date "2018-09-11"
-Rev "0.2"
+Date "2018-09-07"
+Rev "0.1"
 Comp "www.MakersBox.us"
 Comment1 "648.ken@gmail.com"
 Comment2 ""
@@ -105,62 +105,62 @@ $EndComp
 $Comp
 L +BATT #PWR06
 U 1 1 5B402C38
-P 4200 5700
-F 0 "#PWR06" H 4200 5550 50  0001 C CNN
-F 1 "+BATT" V 4200 5950 50  0000 C CNN
-F 2 "" H 4200 5700 50  0001 C CNN
-F 3 "" H 4200 5700 50  0001 C CNN
-	1    4200 5700
+P 4050 5500
+F 0 "#PWR06" H 4050 5350 50  0001 C CNN
+F 1 "+BATT" V 4050 5750 50  0000 C CNN
+F 2 "" H 4050 5500 50  0001 C CNN
+F 3 "" H 4050 5500 50  0001 C CNN
+	1    4050 5500
 	0    -1   -1   0   
 $EndComp
 $Comp
 L VBUS #PWR07
 U 1 1 5B402FA5
-P 4200 5800
-F 0 "#PWR07" H 4200 5650 50  0001 C CNN
-F 1 "VBUS" V 4200 6000 50  0000 C CNN
-F 2 "" H 4200 5800 50  0001 C CNN
-F 3 "" H 4200 5800 50  0001 C CNN
-	1    4200 5800
+P 4050 5800
+F 0 "#PWR07" H 4050 5650 50  0001 C CNN
+F 1 "VBUS" V 4050 6000 50  0000 C CNN
+F 2 "" H 4050 5800 50  0001 C CNN
+F 3 "" H 4050 5800 50  0001 C CNN
+	1    4050 5800
 	0    -1   -1   0   
 $EndComp
-Text Label 5500 5200 0    60   ~ 0
+Text Label 4050 5200 0    60   ~ 0
 D6
 Text Label 5500 5100 0    60   ~ 0
 A0
 Text Label 5450 5300 0    60   ~ 0
 SCL
-Text Label 5450 5400 0    60   ~ 0
+Text Label 5450 5200 0    60   ~ 0
 SDA
 Text Label 4050 5100 0    60   ~ 0
 ~RESET
-Text Label 4050 5200 0    60   ~ 0
-D9
 Text Label 4050 5300 0    60   ~ 0
-D10
-Text Label 4050 5600 0    60   ~ 0
-SCK
-Text Label 4050 5500 0    60   ~ 0
-MOSI
+D9
 Text Label 4050 5400 0    60   ~ 0
+D10
+Text Label 5450 5600 0    60   ~ 0
+SCK
+Text Label 5400 5500 0    60   ~ 0
+MOSI
+Text Label 5400 5400 0    60   ~ 0
 MISO
 $Comp
 L GND #PWR08
 U 1 1 5B41D2F5
-P 5350 5600
-F 0 "#PWR08" H 5350 5350 50  0001 C CNN
-F 1 "GND" V 5350 5400 50  0000 C CNN
-F 2 "" H 5350 5600 50  0001 C CNN
-F 3 "" H 5350 5600 50  0001 C CNN
-	1    5350 5600
-	0    -1   -1   0   
+P 4050 5700
+F 0 "#PWR08" H 4050 5450 50  0001 C CNN
+F 1 "GND" V 4050 5500 50  0000 C CNN
+F 2 "" H 4050 5700 50  0001 C CNN
+F 3 "" H 4050 5700 50  0001 C CNN
+	1    4050 5700
+	0    1    1    0   
 $EndComp
 $Comp
 L Conn_01x08 J4
 U 1 1 5B6D51CD
 P 4450 5400
 F 0 "J4" H 4450 5800 50  0000 C CNN
-F 1 "Beetje_Top" H 4300 4900 50  0000 C CNN
+F 1 "Beetje_Top" H 4450 4900 50  0000 C CNN
 F 2 "footprints:Beetje_Top" H 4450 5400 50  0001 C CNN
 F 3 "" H 4450 5400 50  0001 C CNN
 	1    4450 5400
@@ -171,7 +171,7 @@ L Conn_01x06 J2
 U 1 1 5B6D5224
 P 5100 5300
 F 0 "J2" H 5100 5600 50  0000 C CNN
-F 1 "Beetje_Bottom" H 4800 4900 50  0000 C CNN
+F 1 "Beetje_Bottom" H 5100 4900 50  0000 C CNN
 F 2 "footprints:Beetje_Bottom" H 5100 5300 50  0001 C CNN
 F 3 "" H 5100 5300 50  0001 C CNN
 	1    5100 5300
@@ -191,13 +191,13 @@ $EndComp
 $Comp
 L VCC #PWR010
 U 1 1 5B6E81BF
-P 5350 5500
-F 0 "#PWR010" H 5350 5350 50  0001 C CNN
-F 1 "VCC" V 5350 5700 50  0000 C CNN
-F 2 "" H 5350 5500 50  0001 C CNN
-F 3 "" H 5350 5500 50  0001 C CNN
-	1    5350 5500
-	0    1    1    0   
+P 4050 5600
+F 0 "#PWR010" H 4050 5450 50  0001 C CNN
+F 1 "VCC" V 4050 5800 50  0000 C CNN
+F 2 "" H 4050 5600 50  0001 C CNN
+F 3 "" H 4050 5600 50  0001 C CNN
+	1    4050 5600
+	0    -1   -1   0   
 $EndComp
 $Comp
 L PWR_FLAG #FLG011
@@ -221,6 +221,10 @@ F 3 "" H 1850 1350 50  0001 C CNN
 	1    1850 1350
 	-1   0    0    1   
 $EndComp
+Text Notes 5650 5600 0    60   ~ 0
+D2\nD3\nD15\nD14\nD16
+Text Notes 5950 5600 0    60   ~ 0
+DO\nDI\nCLK
 $Comp
 L LED D1
 U 1 1 5B773B85
@@ -255,7 +259,7 @@ F 3 "" H 3800 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3650 4950 0    60   ~ 0
-Beetje Footprint Rev 0.3
+Beetje Footprint
 $Comp
 L GND #PWR013
 U 1 1 5B7EE8E2
@@ -324,9 +328,9 @@ Wire Wire Line
 Wire Wire Line
 	4250 5600 4050 5600
 Wire Wire Line
-	4250 5700 4200 5700
+	4250 5700 4050 5700
 Wire Wire Line
-	4250 5800 4200 5800
+	4250 5800 4050 5800
 Wire Wire Line
 	5300 5100 5600 5100
 Wire Wire Line
@@ -336,9 +340,9 @@ Wire Wire Line
 Wire Wire Line
 	5300 5400 5600 5400
 Wire Wire Line
-	5300 5500 5350 5500
+	5300 5500 5600 5500
 Wire Wire Line
-	5300 5600 5350 5600
+	5300 5600 5600 5600
 Wire Notes Line
 	3600 6000 6250 6000
 Wire Notes Line
@@ -433,7 +437,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 3800 6950 3800
 Wire Wire Line
-	6950 4200 6950 3800
+	6950 3800 6950 4200
 Wire Wire Line
 	6350 4200 7150 4200
 Wire Wire Line
@@ -493,6 +497,8 @@ F 3 "" H 6650 3300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 6550 3100
+NoConn ~ 5600 5600
+NoConn ~ 5600 5500
 NoConn ~ 5600 5400
 NoConn ~ 5600 5300
 NoConn ~ 5600 5200
@@ -501,14 +507,4 @@ NoConn ~ 4050 5100
 NoConn ~ 4050 5200
 NoConn ~ 4050 5300
 NoConn ~ 4050 5400
-NoConn ~ 4050 5500
-NoConn ~ 4050 5600
-Text Notes 5600 4600 0    60   ~ 0
-R3:\n10K= 100 mA\n5K = 200 mA\n2K = 500 mA\n1K = 1000 mA
-Wire Notes Line
-	5800 4150 6100 4150
-Wire Notes Line
-	6100 4150 6100 3950
-Text Notes 2000 6550 0    60   ~ 0
-Project website: https://hackaday.io/project/160638-beetje-bloks\n\nBased on Adafruit's [Adafruit Pro Trinket LiPoly/LiIon Backpack](https://learn.adafruit.com/adafruit-pro-trinket-lipoly-slash-liion-backpack/downloads)
 $EndSCHEMATC

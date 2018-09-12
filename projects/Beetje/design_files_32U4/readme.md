@@ -1,4 +1,4 @@
-Beetje Blok 32U4 Rev 0.0
+Beetje Blok 32U4
 
 ![Beetje Block](project.png) 
 
@@ -32,8 +32,9 @@ Bill Of Materials
 
 Revisions
 ----------------
-- Revision 0.1 - diodes and polyfuse to front.
+- Revision 0.1 - Diodes and polyfuse to front.
 - Revision 0.2 - I2C pullups, added SW2, enlarge holes for headers
+- Revision 0.3 - Pinout change, rerouted
 
 License
 ----------------

@@ -1,4 +1,4 @@
-update=9/11/2018 2:33:08 PM
+update=9/8/2018 8:35:22 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -60,15 +62,13 @@ LibName30=opto
 LibName31=atmel
 LibName32=contrib
 LibName33=valves
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=Pcbnew
+NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
