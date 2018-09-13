@@ -13,10 +13,11 @@
 */
 
 bool worldWrap = true; // continous world by wraping around edges
-bool randWorld = false; // false starts with startWorld
+bool randWorld = true; // false starts with startWorld
 bool DEBUG = false;      // print worlds out to serial
 int genDelay = 1000;    // type between sucessive generations
 
+int button = A0;
 bool world[8][8];     // current world
 bool nextWorld[8][8]; // next world
 
@@ -49,10 +50,11 @@ bool startWorld[8][8] = {{0,1,1,0,0,0,0,0},
 
 void setup() {
   if(DEBUG){Serial.begin(9600);}
-  randomSeed(analogRead(0));
+  randomSeed(analogRead(1));
   setWorld();
   DDRD =  B11111111; // ports to outputs
   DDRB =  B11111111; 
+  pinMode(button, INPUT_PULLUP);
 }
 
 
@@ -64,14 +66,19 @@ void loop() {
   bool gameover = false; //This is what breaks the game loop 
   long timer;
 
-  while(1){
-    displayGeneration();
-  }
+  //while(1){
+  //  displayGeneration();
+  //}
 
   while(gameover == false){
     gameover = true; //True until discovered false
-    for(int x=0; x<100; x++){
+    for(int x=0; x<50; x++){
       displayGeneration();
+      if (!digitalRead(button)){
+        while(!digitalRead(button)){1;}
+        gameover = true; 
+        setWorld();
+      }
     }
     curPopulation = 0;
     for (int i = 0; i < 8; i++){
