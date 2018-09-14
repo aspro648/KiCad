@@ -1,0 +1,496 @@
+EESchema Schematic File Version 2
+LIBS:project
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mpxv7002
+LIBS:mcp3021
+LIBS:project-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Beetje LiPo Blok "
+Date "2018-09-11"
+Rev "0.2"
+Comp "www.MakersBox.us"
+Comment1 "648.ken@gmail.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VBUS #PWR01
+U 1 1 5B3FDCD2
+P 1450 1350
+F 0 "#PWR01" H 1450 1200 50  0001 C CNN
+F 1 "VBUS" H 1450 1500 50  0000 C CNN
+F 2 "" H 1450 1350 50  0001 C CNN
+F 3 "" H 1450 1350 50  0001 C CNN
+	1    1450 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5B3FDCF5
+P 2700 1350
+F 0 "#PWR02" H 2700 1100 50  0001 C CNN
+F 1 "GND" H 2700 1200 50  0000 C CNN
+F 2 "" H 2700 1350 50  0001 C CNN
+F 3 "" H 2700 1350 50  0001 C CNN
+	1    2700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5B3FDD3A
+P 1450 1350
+F 0 "#FLG03" H 1450 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1450 1500 50  0000 C CNN
+F 2 "" H 1450 1350 50  0001 C CNN
+F 3 "" H 1450 1350 50  0001 C CNN
+	1    1450 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5B3FDD50
+P 2250 1350
+F 0 "#FLG04" H 2250 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 2250 1500 50  0000 C CNN
+F 2 "" H 2250 1350 50  0001 C CNN
+F 3 "" H 2250 1350 50  0001 C CNN
+	1    2250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5B3FDD67
+P 2700 1350
+F 0 "#FLG05" H 2700 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 2700 1500 50  0000 C CNN
+F 2 "" H 2700 1350 50  0001 C CNN
+F 3 "" H 2700 1350 50  0001 C CNN
+	1    2700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR06
+U 1 1 5B402C38
+P 4800 5750
+F 0 "#PWR06" H 4800 5600 50  0001 C CNN
+F 1 "+BATT" V 4800 6000 50  0000 C CNN
+F 2 "" H 4800 5750 50  0001 C CNN
+F 3 "" H 4800 5750 50  0001 C CNN
+	1    4800 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VBUS #PWR07
+U 1 1 5B402FA5
+P 4800 5850
+F 0 "#PWR07" H 4800 5700 50  0001 C CNN
+F 1 "VBUS" V 4800 6050 50  0000 C CNN
+F 2 "" H 4800 5850 50  0001 C CNN
+F 3 "" H 4800 5850 50  0001 C CNN
+	1    4800 5850
+	0    -1   -1   0   
+$EndComp
+Text Label 6100 5250 0    60   ~ 0
+D6
+Text Label 6100 5150 0    60   ~ 0
+A0
+Text Label 6050 5350 0    60   ~ 0
+SCL
+Text Label 6050 5450 0    60   ~ 0
+SDA
+Text Label 4650 5150 0    60   ~ 0
+~RESET
+Text Label 4650 5250 0    60   ~ 0
+D9
+Text Label 4650 5350 0    60   ~ 0
+D10
+Text Label 4650 5650 0    60   ~ 0
+SCK
+Text Label 4650 5550 0    60   ~ 0
+MOSI
+Text Label 4650 5450 0    60   ~ 0
+MISO
+$Comp
+L GND #PWR08
+U 1 1 5B41D2F5
+P 5950 5650
+F 0 "#PWR08" H 5950 5400 50  0001 C CNN
+F 1 "GND" V 5950 5450 50  0000 C CNN
+F 2 "" H 5950 5650 50  0001 C CNN
+F 3 "" H 5950 5650 50  0001 C CNN
+	1    5950 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x08 J4
+U 1 1 5B6D51CD
+P 5050 5450
+F 0 "J4" H 5050 5850 50  0000 C CNN
+F 1 "Beetje_Top" H 4900 4950 50  0000 C CNN
+F 2 "footprints:Beetje_Top" H 5050 5450 50  0001 C CNN
+F 3 "" H 5050 5450 50  0001 C CNN
+	1    5050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J2
+U 1 1 5B6D5224
+P 5700 5350
+F 0 "J2" H 5700 5650 50  0000 C CNN
+F 1 "Beetje_Bottom" H 5400 4950 50  0000 C CNN
+F 2 "footprints:Beetje_Bottom" H 5700 5350 50  0001 C CNN
+F 3 "" H 5700 5350 50  0001 C CNN
+	1    5700 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 5B6E5416
+P 2250 1350
+F 0 "#PWR09" H 2250 1200 50  0001 C CNN
+F 1 "VCC" H 2250 1500 50  0000 C CNN
+F 2 "" H 2250 1350 50  0001 C CNN
+F 3 "" H 2250 1350 50  0001 C CNN
+	1    2250 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR010
+U 1 1 5B6E81BF
+P 5950 5550
+F 0 "#PWR010" H 5950 5400 50  0001 C CNN
+F 1 "VCC" V 5950 5750 50  0000 C CNN
+F 2 "" H 5950 5550 50  0001 C CNN
+F 3 "" H 5950 5550 50  0001 C CNN
+	1    5950 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 5B3FFE6E
+P 1850 1350
+F 0 "#FLG011" H 1850 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1850 1500 50  0000 C CNN
+F 2 "" H 1850 1350 50  0001 C CNN
+F 3 "" H 1850 1350 50  0001 C CNN
+	1    1850 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR012
+U 1 1 5B6E4208
+P 1850 1350
+F 0 "#PWR012" H 1850 1200 50  0001 C CNN
+F 1 "+BATT" V 1850 1600 50  0000 C CNN
+F 2 "" H 1850 1350 50  0001 C CNN
+F 3 "" H 1850 1350 50  0001 C CNN
+	1    1850 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 5B77416F
+P 3450 3950
+F 0 "C1" H 3475 4050 50  0000 L CNN
+F 1 "1uF" H 3475 3850 50  0000 L CNN
+F 2 "footprints:C_0805" H 3488 3800 50  0001 C CNN
+F 3 "" H 3450 3950 50  0001 C CNN
+	1    3450 3950
+	1    0    0    -1  
+$EndComp
+Text Notes 4250 5000 0    60   ~ 0
+Beetje Footprint Rev 0.3
+$Comp
+L C C2
+U 1 1 5B7EFC72
+P 3750 3950
+F 0 "C2" H 3775 4050 50  0000 L CNN
+F 1 "10nF" H 3775 3850 50  0000 L CNN
+F 2 "footprints:C_0805" H 3788 3800 50  0001 C CNN
+F 3 "" H 3750 3950 50  0001 C CNN
+	1    3750 3950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6200 5450
+NoConn ~ 6200 5350
+NoConn ~ 6200 5250
+NoConn ~ 4650 5150
+NoConn ~ 4650 5250
+NoConn ~ 4650 5350
+NoConn ~ 4650 5450
+NoConn ~ 4650 5550
+NoConn ~ 4650 5650
+$Comp
+L MPXV7002 U1
+U 1 1 5B9BF8B5
+P 4500 3900
+F 0 "U1" H 4250 4200 60  0000 C CNN
+F 1 "MP3V5010" H 4750 3600 60  0000 C CNN
+F 2 "Housings_SSOP:SSOP-8_2.95x2.8mm_Pitch0.65mm" H 4500 3900 60  0001 C CNN
+F 3 "" H 4500 3900 60  0001 C CNN
+	1    4500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR013
+U 1 1 5B9BF957
+P 4500 3450
+F 0 "#PWR013" H 4500 3300 50  0001 C CNN
+F 1 "VCC" H 4500 3600 50  0000 C CNN
+F 2 "" H 4500 3450 50  0001 C CNN
+F 3 "" H 4500 3450 50  0001 C CNN
+	1    4500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5B9C070E
+P 5200 4100
+F 0 "C3" H 5225 4200 50  0000 L CNN
+F 1 "470pF" H 5225 4000 50  0000 L CNN
+F 2 "footprints:C_0805" H 5238 3950 50  0001 C CNN
+F 3 "" H 5200 4100 50  0001 C CNN
+	1    5200 4100
+	1    0    0    -1  
+$EndComp
+Text Notes 2000 6550 0    60   ~ 0
+Project website: https://hackaday.io/project/160638-beetje-bloks
+$Comp
+L GND #PWR014
+U 1 1 5B9C12C7
+P 4500 4400
+F 0 "#PWR014" H 4500 4150 50  0001 C CNN
+F 1 "GND" V 4500 4200 50  0000 C CNN
+F 2 "" H 4500 4400 50  0001 C CNN
+F 3 "" H 4500 4400 50  0001 C CNN
+	1    4500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP3021 U2
+U 1 1 5B9C1CBA
+P 6550 3900
+F 0 "U2" H 6250 4250 50  0000 L CNN
+F 1 "MCP3021" H 6600 4250 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6550 4350 50  0001 C CNN
+F 3 "" H 6250 4250 50  0001 C CNN
+	1    6550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR015
+U 1 1 5B9C1DB4
+P 6550 3450
+F 0 "#PWR015" H 6550 3300 50  0001 C CNN
+F 1 "VCC" H 6550 3600 50  0000 C CNN
+F 2 "" H 6550 3450 50  0001 C CNN
+F 3 "" H 6550 3450 50  0001 C CNN
+	1    6550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5B9C1DF0
+P 6550 4400
+F 0 "#PWR016" H 6550 4150 50  0001 C CNN
+F 1 "GND" V 6550 4200 50  0000 C CNN
+F 2 "" H 6550 4400 50  0001 C CNN
+F 3 "" H 6550 4400 50  0001 C CNN
+	1    6550 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP1
+U 1 1 5B9C1E6D
+P 7100 5150
+F 0 "JP1" H 7100 5230 50  0000 C CNN
+F 1 "Jumper" H 7110 5090 50  0000 C CNN
+F 2 "footprints:Jumper" H 7100 5150 50  0001 C CNN
+F 3 "" H 7100 5150 50  0001 C CNN
+	1    7100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B9C1FD6
+P 7500 3550
+F 0 "R1" V 7580 3550 50  0000 C CNN
+F 1 "4K7" V 7500 3550 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 7430 3550 50  0001 C CNN
+F 3 "" H 7500 3550 50  0001 C CNN
+	1    7500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5B9C204A
+P 7800 3550
+F 0 "R2" V 7880 3550 50  0000 C CNN
+F 1 "4K7" V 7800 3550 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 7730 3550 50  0001 C CNN
+F 3 "" H 7800 3550 50  0001 C CNN
+	1    7800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR017
+U 1 1 5B9C212C
+P 7650 3300
+F 0 "#PWR017" H 7650 3150 50  0001 C CNN
+F 1 "VCC" H 7650 3450 50  0000 C CNN
+F 2 "" H 7650 3300 50  0001 C CNN
+F 3 "" H 7650 3300 50  0001 C CNN
+	1    7650 3300
+	1    0    0    -1  
+$EndComp
+Text Label 7050 3800 0    60   ~ 0
+SDA
+Text Label 7050 4000 0    60   ~ 0
+SCL
+Text Label 6000 3900 0    60   ~ 0
+AIN
+Text Label 4900 3900 0    60   ~ 0
+VOUT
+Wire Wire Line
+	4850 5150 4650 5150
+Wire Wire Line
+	4650 5250 4850 5250
+Wire Wire Line
+	4850 5350 4650 5350
+Wire Wire Line
+	4850 5450 4650 5450
+Wire Wire Line
+	4850 5550 4650 5550
+Wire Wire Line
+	4850 5650 4650 5650
+Wire Wire Line
+	4850 5750 4800 5750
+Wire Wire Line
+	4850 5850 4800 5850
+Wire Wire Line
+	5900 5150 7250 5150
+Wire Wire Line
+	5900 5250 6200 5250
+Wire Wire Line
+	5900 5350 6200 5350
+Wire Wire Line
+	5900 5450 6200 5450
+Wire Wire Line
+	5900 5550 5950 5550
+Wire Wire Line
+	5900 5650 5950 5650
+Wire Notes Line
+	4200 6050 6850 6050
+Wire Notes Line
+	6850 4850 4200 4850
+Wire Notes Line
+	4200 4850 4200 6050
+Wire Notes Line
+	6850 6050 6850 4850
+Wire Wire Line
+	4900 3900 5700 3900
+Wire Wire Line
+	5200 3900 5200 3950
+Wire Wire Line
+	5200 4300 5200 4250
+Wire Wire Line
+	3450 4300 5200 4300
+Wire Wire Line
+	4500 4250 4500 4400
+Connection ~ 4500 4300
+Wire Wire Line
+	4500 3450 4500 3550
+Wire Wire Line
+	3450 3500 4500 3500
+Wire Wire Line
+	3750 3500 3750 3800
+Connection ~ 4500 3500
+Wire Wire Line
+	3450 3500 3450 3800
+Connection ~ 3750 3500
+Wire Wire Line
+	3750 4100 3750 4300
+Wire Wire Line
+	3450 4100 3450 4300
+Connection ~ 3750 4300
+Wire Wire Line
+	6550 4300 6550 4400
+Connection ~ 5200 3900
+Wire Wire Line
+	6550 3500 6550 3450
+Wire Wire Line
+	6950 3800 7500 3800
+Wire Wire Line
+	6950 4000 7800 4000
+Wire Wire Line
+	7500 3800 7500 3700
+Wire Wire Line
+	7800 4000 7800 3700
+Wire Wire Line
+	7500 3400 7500 3300
+Wire Wire Line
+	7500 3300 7800 3300
+Wire Wire Line
+	7800 3300 7800 3400
+Connection ~ 7650 3300
+Wire Wire Line
+	7250 5150 7250 4750
+Wire Wire Line
+	7250 4750 5550 4750
+Wire Wire Line
+	5550 4750 5550 3900
+$Comp
+L Jumper_NC_Small JP2
+U 1 1 5B9C2C5E
+P 5800 3900
+F 0 "JP2" H 5800 3980 50  0000 C CNN
+F 1 "Jumper" H 5810 3840 50  0000 C CNN
+F 2 "footprints:Jumper" H 5800 3900 50  0001 C CNN
+F 3 "" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 3900
+Wire Wire Line
+	6150 3900 5900 3900
+Text Notes 7650 5500 0    60   ~ 0
+      Analog  I2C\nJMP1   1      0\nJMP2   0      1
+Connection ~ 7200 5150
+Connection ~ 7000 5150
+$EndSCHEMATC
