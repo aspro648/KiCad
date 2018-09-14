@@ -1,4 +1,4 @@
-update=9/13/2018 10:53:32 AM
+update=9/8/2018 8:52:30 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -62,6 +60,10 @@ LibName30=opto
 LibName31=atmel
 LibName32=contrib
 LibName33=valves
+LibName34=lib_sch/LIS3Dh
+LibName35=lib_sch/eurocad
+[general]
+version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
