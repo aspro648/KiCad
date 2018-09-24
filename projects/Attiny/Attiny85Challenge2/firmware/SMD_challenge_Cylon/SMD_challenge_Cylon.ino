@@ -1,8 +1,10 @@
 
 /*
 
-cd C:\Users\MakersBox\Downloads\arduino-1.6.4\hardware\tools\avr\bin
+cd C:\Users\Maker's Box\Documents\arduino-1.6.4\hardware\tools\avr\bin
 avrdude -C ..\etc\avrdude.conf -P COM3 -b 19200 -c avrisp -p attiny85 -v -e -U lfuse:w:0xE2:m -U hfuse:w:0xD7:m -U efuse:w:0xFf:m  -U flash:w:SMD_challenge_Cylon.cpp.hex
+avrdude -C ..\etc\avrdude.conf -P COM12 -b 19200 -c avrisp -p attiny25 -v -e -U lfuse:w:0xE2:m -U hfuse:w:0xD7:m -U efuse:w:0xFf:m  -U flash:w:SMD_challenge_Cylon25.hex
+
 verifying lfuse memory against 0xE2:
 verifying hfuse memory against 0xD7
 verifying efuse memory against 0xFF

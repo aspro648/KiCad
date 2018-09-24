@@ -1,10 +1,10 @@
-Open Source Turtle Robot V0.0 Bill of Materials 
+Open Source Turtle Robot V0.2 Bill of Materials 
 ===============================================
 
 Electronics:
 
 - 1 ea. Park Purfect Purple PCB, [OSH Park](https://oshpark.com/shared_projects/K5tvnM4o)
-- 1 ea. Adafruit ItsyBitsy 3V, 
+- 1 ea. Adafruit ItsyBitsy 3V, https://www.digikey.com/short/jw9mwm
 - 1 ea. ULN2803 Darlington Driver, [STM ULN2803A](https://www.digikey.com/short/q728f3)
 - 2 ea. JST B5B-XH-A Receptical, [JST B5B-XH-A](https://www.digikey.com/short/qcrr5m)
 - 1 ea. SPST switch, [E-Switch EG1218](https://www.digikey.com/short/qcwd5b)
@@ -17,11 +17,11 @@ Electronics:
 - 1 ea. 10 uF cap, [Panasonic ECE-A1HKS100](http://www.digikey.com/short/7thwrt)
 - 1 ea. 1 uF cap, [AVX SR205E105MAR](http://www.digikey.com/short/747wv0)
 - 4 ea. AA batteries, [Panasonic LR6XWA/B](https://www.digikey.com/short/qcwdbb)
-- 2 ea. Photo Transistor, 
-- 2 ea. IR Emitter, 
-- 2 ea. 100 ohm resistor 1/8W, [Stackpole CF18JT100R](https://www.digikey.com/short/q72818)
+- 2 ea. Photo Transistor, https://www.digikey.com/short/jw9ht0
+- 2 ea. IR Emitter 940nm 1.2V, https://www.digikey.com/short/jw9m1r
+- 2 ea. 47 ohm resistor 1/8W, 
 - 2 ea. 330 ohm resistor 1/8W, [Stackpole CF18JT330R](https://www.digikey.com/short/jzr35t)
-- 2 ea. 10K resistor 1/8W, [Stackpole](http://www.digikey.com/short/7thw1q)
+- 2 ea. 22K resistor 1/8W, 
 - 2 ea. 3mm LEDs, [Wurth 151031VS06000](http://www.digikey.com/short/3335hz)
 - 2 ea. Geared 5V Stepper, [28byj](http://a.co/hwCrUy4)
 - 1 ea. Micro servo, [SG 9G](http://www.adafruit.com/products/169

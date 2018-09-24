@@ -1,332 +1,259 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 9/29/2014 9:55:00 AM
+Cmp-Mod V01 Created by PcbNew   date = 9/20/2018 7:12:51 PM
 
 BeginCmp
-TimeStamp = /54277320;
-Reference = C1;
-ValeurCmp = 100uf;
-IdModule  = C1V7;
-EndCmp
-
-BeginCmp
-TimeStamp = /54277344;
-Reference = C2;
-ValeurCmp = 10uf;
-IdModule  = C1V5;
-EndCmp
-
-BeginCmp
-TimeStamp = /5427735E;
-Reference = C3;
-ValeurCmp = 1uf;
-IdModule  = C1;
-EndCmp
-
-BeginCmp
-TimeStamp = /54259320;
-Reference = D1;
-ValeurCmp = 1N4001;
-IdModule  = D5;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB49;
-Reference = D2;
-ValeurCmp = 1N4001;
-IdModule  = D5;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB8E;
-Reference = D3;
-ValeurCmp = 1N4001;
-IdModule  = D5;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DBD3;
-Reference = D4;
-ValeurCmp = 1N4001;
-IdModule  = D5;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DC18;
-Reference = D5;
-ValeurCmp = 1N4001;
-IdModule  = D5;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DC5D;
-Reference = D6;
-ValeurCmp = 1N4001;
-IdModule  = D5;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425CB64;
-Reference = D8;
-ValeurCmp = LED;
-IdModule  = LED-3MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425D9D7;
-Reference = D11;
-ValeurCmp = LED;
-IdModule  = LED-3MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB58;
-Reference = D12;
-ValeurCmp = LED;
-IdModule  = LED-3MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB9D;
-Reference = D13;
-ValeurCmp = LED;
-IdModule  = LED-3MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DBE2;
-Reference = D14;
-ValeurCmp = LED;
-IdModule  = LED-3MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DC27;
-Reference = D15;
-ValeurCmp = LED;
-IdModule  = LED-3MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DC6C;
-Reference = D16;
-ValeurCmp = LED;
-IdModule  = LED-3MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /54298E9E;
-Reference = JP1;
-ValeurCmp = JUMPER;
-IdModule  = SIL-2;
-EndCmp
-
-BeginCmp
-TimeStamp = /542591D8;
-Reference = P1;
-ValeurCmp = LOAD_1;
-IdModule  = pt_1,5-2-3,5-h;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB3A;
-Reference = P2;
-ValeurCmp = LOAD_2;
-IdModule  = pt_1,5-2-3,5-h;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB7F;
-Reference = P3;
-ValeurCmp = LOAD_3;
-IdModule  = pt_1,5-2-3,5-h;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DBC4;
-Reference = P4;
-ValeurCmp = LOAD_4;
-IdModule  = pt_1,5-2-3,5-h;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DC09;
-Reference = P5;
-ValeurCmp = LOAD_5;
-IdModule  = pt_1,5-2-3,5-h;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DC4E;
-Reference = P6;
-ValeurCmp = LOAD_6;
-IdModule  = pt_1,5-2-3,5-h;
-EndCmp
-
-BeginCmp
-TimeStamp = /5429717C;
-Reference = P7;
-ValeurCmp = INPUT_1;
-IdModule  = pt_1,5-2-3,5-h;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425FB8C;
-Reference = P8;
-ValeurCmp = VCC;
-IdModule  = pt_1,5-2-3,5-h;
-EndCmp
-
-BeginCmp
-TimeStamp = /54297182;
-Reference = P9;
-ValeurCmp = INPUT_2;
-IdModule  = pt_1,5-2-3,5-h;
-EndCmp
-
-BeginCmp
-TimeStamp = /54259057;
-Reference = Q1;
-ValeurCmp = IRLB8721;
-IdModule  = TO220_MOSFET_HTSHIELD;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB28;
-Reference = Q2;
-ValeurCmp = IRLB8721;
-IdModule  = TO220_MOSFET_HTSHIELD;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB6D;
-Reference = Q3;
-ValeurCmp = IRLB8721;
-IdModule  = TO220_MOSFET_HTSHIELD;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DBB2;
-Reference = Q4;
-ValeurCmp = IRLB8721;
-IdModule  = TO220_MOSFET_HTSHIELD;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DBF7;
-Reference = Q5;
-ValeurCmp = IRLB8721;
-IdModule  = TO220_MOSFET_HTSHIELD;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DC3C;
-Reference = Q6;
-ValeurCmp = IRLB8721;
-IdModule  = TO220_MOSFET_HTSHIELD;
-EndCmp
-
-BeginCmp
-TimeStamp = /542590C2;
-Reference = R1;
-ValeurCmp = 10K;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB2E;
-Reference = R2;
-ValeurCmp = 10K;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB73;
-Reference = R3;
-ValeurCmp = 10K;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DBB8;
-Reference = R4;
-ValeurCmp = 10K;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DBFD;
-Reference = R5;
-ValeurCmp = 10K;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DC42;
-Reference = R6;
-ValeurCmp = 10K;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425A9BA;
-Reference = R8;
-ValeurCmp = 1000;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425D9DD;
-Reference = R11;
-ValeurCmp = 330;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DB5E;
-Reference = R12;
-ValeurCmp = 330;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DBA3;
-Reference = R13;
-ValeurCmp = 330;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DBE8;
-Reference = R14;
-ValeurCmp = 330;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DC2D;
-Reference = R15;
-ValeurCmp = 330;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /5425DC72;
-Reference = R16;
-ValeurCmp = 330;
-IdModule  = R4;
-EndCmp
-
-BeginCmp
-TimeStamp = /54259020;
+TimeStamp = 54263572
+Path = /54259020
 Reference = SHIELD1;
 ValeurCmp = ARDUINO_SHIELD;
 IdModule  = ARDUINO_SHIELD_040pins;
 EndCmp
 
 BeginCmp
-TimeStamp = /5427728C;
+TimeStamp = 5425F40C
+Path = /5425DC2D
+Reference = R15;
+ValeurCmp = 330;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5425F41A
+Path = /5425DBFD
+Reference = R5;
+ValeurCmp = 10K;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5425F428
+Path = /5425DBE8
+Reference = R14;
+ValeurCmp = 330;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5425F436
+Path = /5425DC42
+Reference = R6;
+ValeurCmp = 10K;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5425F444
+Path = /5425DBB8
+Reference = R4;
+ValeurCmp = 10K;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5425F4B4
+Path = /5425DC72
+Reference = R16;
+ValeurCmp = 330;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5425F4D8
+Path = /5425DC4E
+Reference = P6;
+ValeurCmp = LOAD_6;
+IdModule  = pt_1,5-2-3,5-h;
+EndCmp
+
+BeginCmp
+TimeStamp = 5425F4E4
+Path = /5425DC09
+Reference = P5;
+ValeurCmp = LOAD_5;
+IdModule  = pt_1,5-2-3,5-h;
+EndCmp
+
+BeginCmp
+TimeStamp = 5425F508
+Path = /5425DBC4
+Reference = P4;
+ValeurCmp = LOAD_4;
+IdModule  = pt_1,5-2-3,5-h;
+EndCmp
+
+BeginCmp
+TimeStamp = 542600BD
+Path = /5425DBE2
+Reference = D14;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 542600D6
+Path = /5425DC27
+Reference = D15;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 542600EF
+Path = /5425DC6C
+Reference = D16;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5426012F
+Path = /5425DBD3
+Reference = D4;
+ValeurCmp = 1N4001;
+IdModule  = D5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5426013F
+Path = /5425DC18
+Reference = D5;
+ValeurCmp = 1N4001;
+IdModule  = D5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5426014F
+Path = /5425DC5D
+Reference = D6;
+ValeurCmp = 1N4001;
+IdModule  = D5;
+EndCmp
+
+BeginCmp
+TimeStamp = 54260759
+Path = /5425FB8C
+Reference = P8;
+ValeurCmp = VCC;
+IdModule  = pt_1,5-2-3,5-h;
+EndCmp
+
+BeginCmp
+TimeStamp = 5426E017
+Path = /5425DBB2
+Reference = Q4;
+ValeurCmp = IRLB8721;
+IdModule  = TO220_MOSFET_HTSHIELD;
+EndCmp
+
+BeginCmp
+TimeStamp = 5426DF51
+Path = /5425DBF7
+Reference = Q5;
+ValeurCmp = IRLB8721;
+IdModule  = TO220_MOSFET_HTSHIELD;
+EndCmp
+
+BeginCmp
+TimeStamp = 5426DF6D
+Path = /5425DC3C
+Reference = Q6;
+ValeurCmp = IRLB8721;
+IdModule  = TO220_MOSFET_HTSHIELD;
+EndCmp
+
+BeginCmp
+TimeStamp = 5439F7FD
+Path = 
+Reference = VAL;
+ValeurCmp = MadeInOregonRev25;
+IdModule  = MadeInOregonRev25;
+EndCmp
+
+BeginCmp
+TimeStamp = 54277FE2
+Path = /54277320
+Reference = C1;
+ValeurCmp = 100uf;
+IdModule  = C1V7;
+EndCmp
+
+BeginCmp
+TimeStamp = 542778E5
+Path = /54277344
+Reference = C2;
+ValeurCmp = 10uf;
+IdModule  = C1V5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5429D185
+Path = /5427735E
+Reference = C3;
+ValeurCmp = 1uf;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 54277FF1
+Path = /5427728C
 Reference = U1;
-ValeurCmp = LM7812;
+ValeurCmp = LM7809;
 IdModule  = LM78XXV;
+EndCmp
+
+BeginCmp
+TimeStamp = 5431B8AE
+Path = /5425CB64
+Reference = D8;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 54297578
+Path = /5429717C
+Reference = P7;
+ValeurCmp = INPUT_1;
+IdModule  = pt_1,5-2-3,5-h;
+EndCmp
+
+BeginCmp
+TimeStamp = 54297099
+Path = /54297182
+Reference = P9;
+ValeurCmp = INPUT_2;
+IdModule  = pt_1,5-2-3,5-h;
+EndCmp
+
+BeginCmp
+TimeStamp = 54298F0A
+Path = /54298E9E
+Reference = JP1;
+ValeurCmp = JUMPER;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 5439F7EA
+Path = 
+Reference = OSHW_r_silk_23;
+ValeurCmp = [NoVal];
+IdModule  = OSHW_r_silk_23;
+EndCmp
+
+BeginCmp
+TimeStamp = 543A52BE
+Path = 
+Reference = Mosfet;
+ValeurCmp = [NoVal];
+IdModule  = Mosfet;
+EndCmp
+
+BeginCmp
+TimeStamp = 54321827
+Path = /5425A9BA
+Reference = R8;
+ValeurCmp = 1000;
+IdModule  = R4;
 EndCmp
 
 EndListe
