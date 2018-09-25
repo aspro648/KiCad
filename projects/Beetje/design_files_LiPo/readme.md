@@ -7,6 +7,9 @@ Project website: https://hackaday.io/project/160638-beetje-bloks
 Based on Adafruit's [Adafruit Pro Trinket LiPoly/LiIon Backpack](https://learn.adafruit.com/adafruit-pro-trinket-lipoly-slash-liion-backpack/downloads)
 
 
+Try adding TVS: https://www.digikey.com/product-detail/en/stmicroelectronics/SM2T3V3A/497-7878-1-ND/1883813
+Update to 0805 parts
+
 Bill Of Materials
 ----------------
   
@@ -34,6 +37,7 @@ Revisions
 - 0.0 Aug 2018 Initial build
 - 0.1 Sep 2018 Switch to 0805 packages. Swap J1 & J3 connector polarities.  Add power switch and reverse current diode.
 - 0.2 Sep 2018 Pinout to match 32U4 rev 0.3, added pour planes per datasheet, rerouted.
+- 0.3 Sep 2018 Fixed LED footprints.
 
 
 License

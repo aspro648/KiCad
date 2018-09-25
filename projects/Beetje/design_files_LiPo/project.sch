@@ -227,7 +227,7 @@ U 1 1 5B773B85
 P 4250 3900
 F 0 "D1" H 4250 4000 50  0000 C CNN
 F 1 "CHG" H 4250 3800 50  0000 C CNN
-F 2 "footprints:R_0805_HandSoldering" H 4250 3900 50  0001 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 4250 3900 50  0001 C CNN
 F 3 "" H 4250 3900 50  0001 C CNN
 	1    4250 3900
 	-1   0    0    1   
@@ -295,7 +295,7 @@ U 1 1 5B7EF1B7
 P 4250 4200
 F 0 "D2" H 4250 4300 50  0000 C CNN
 F 1 "DONE" H 4250 4100 50  0000 C CNN
-F 2 "footprints:R_0805_HandSoldering" H 4250 4200 50  0001 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 4250 4200 50  0001 C CNN
 F 3 "" H 4250 4200 50  0001 C CNN
 	1    4250 4200
 	1    0    0    -1  
@@ -433,7 +433,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 3800 6950 3800
 Wire Wire Line
-	6950 4200 6950 3800
+	6950 3800 6950 4200
 Wire Wire Line
 	6350 4200 7150 4200
 Wire Wire Line
