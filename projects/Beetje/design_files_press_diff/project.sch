@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:project-rescue
 LIBS:project
 LIBS:power
 LIBS:device
@@ -303,7 +304,7 @@ F 3 "" H 4500 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCP3021 U2
+L MCP3021-RESCUE-project U2
 U 1 1 5B9C1CBA
 P 6550 3900
 F 0 "U2" H 6250 4250 50  0000 L CNN
@@ -493,4 +494,6 @@ Text Notes 7650 5500 0    60   ~ 0
       Analog  I2C\nJMP1   1      0\nJMP2   0      1
 Connection ~ 7200 5150
 Connection ~ 7000 5150
+Text Notes 7250 4400 0    60   ~ 0
+I2C: 0x4D
 $EndSCHEMATC

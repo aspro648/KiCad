@@ -15,8 +15,15 @@ Bill Of Materials
 - 1 ea., C1 CAP CER 1uF SMD 0805, https://www.digikey.com/short/jwjfn1
 - 1 ea., C2 CAP CER 0.01uF SMD 0805, https://www.digikey.com/short/jwjf0c
 - 1 ea., C3 CAP CER 470PF SMD 0805, https://www.digikey.com/short/jwjfrp
-- 1 ea., MCP2031 I2C ADC SO23-5,
 
+Optional (for I2C ADC)
+-----------------
+- 1 ea., MCP2031 I2C ADC SO23-5, https://www.digikey.com/short/jnq819
+- 2 ea., 4.7K OHM 0805 Resistors, 
+
+Optional Sesnsors:
+-------------------
+- MPXV5050VC6T1CT-ND (5V, -7.25 PSI vacuum), https://www.digikey.com/short/jnqjrv
 
 
 Optional
