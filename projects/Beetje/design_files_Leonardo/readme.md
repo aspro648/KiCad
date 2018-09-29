@@ -29,7 +29,8 @@ Bill Of Materials
 - 1 ea., R9 Resistor 1M OHM SMD 0603, 
 - 4 ea., D1-D4 SMD LED 0805, https://www.digikey.com/short/jwj4rb
 
-- 1 ea., SW1 SWITCH TACTILE SPST-NO 0.05A 12V, SW416-ND, https://www.digikey.com/short/jwj4m9
+- 1 ea., SW1 (yellow) SWITCH TACTILE SPST-NO 0.05A 12V, SW416-ND, https://www.digikey.com/short/jwj4m9
+- or (purple) KSEM31J LFS https://www.digikey.com/short/jnqh3m
 - 1 ea., X3, CONN RCPT MICRO USB R/A SMD, Molex 1050170001, https://www.digikey.com/short/jb2205
 - 1 ea., J1 Barrel Jack, https://www.digikey.com/short/j2fz43
 - 1 ea., 6-Pin header, https://www.digikey.com/short/jwj4w4

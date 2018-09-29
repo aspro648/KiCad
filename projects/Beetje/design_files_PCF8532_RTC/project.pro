@@ -1,4 +1,4 @@
-update=9/5/2018 8:28:15 AM
+update=9/28/2018 3:45:11 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,7 +69,7 @@ PageLayoutDescrFile=
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
