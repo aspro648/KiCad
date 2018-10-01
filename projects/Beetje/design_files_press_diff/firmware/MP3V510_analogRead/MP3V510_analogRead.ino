@@ -14,10 +14,6 @@ void setup() {
   Serial.begin(9600);
 }
 
-
-// the loop function runs over and over again forever
-void loop() {
-  int val = analogRead(pressPin);
   float Vout = val / 1023.0 * 5;    // using Leonardo, Aref is 5 volts!
   //Vout = VS x (0.09 x P + 0.08)
   float kPa = (Vout - 0.08 * 3.3) / (0.09 * 3.3);
@@ -31,4 +27,8 @@ void loop() {
   Serial.print(psi);
   Serial.println("psi");
   delay(1000);
+// the loop function runs over and over again forever
+void loop() {
+  int val = analogRead(pressPin);
+
 }
