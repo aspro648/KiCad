@@ -407,4 +407,8 @@ F 3 "" H 5550 3150 50  0001 C CNN
 $EndComp
 NoConn ~ 6200 5150
 Connection ~ 5200 2650
+Text Notes 4000 2800 0    60   ~ 0
++\nIN\n-
+Text Notes 6200 2800 0    60   ~ 0
++\nOUT\n-
 $EndSCHEMATC
