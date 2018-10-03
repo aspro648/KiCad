@@ -40,9 +40,9 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Beetje LiPo Blok "
+Title "Beetje MOSFET"
 Date "2018-09-11"
-Rev "0.2"
+Rev "0.0"
 Comp "www.MakersBox.us"
 Comment1 "648.ken@gmail.com"
 Comment2 ""

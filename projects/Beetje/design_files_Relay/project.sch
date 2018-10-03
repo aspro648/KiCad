@@ -41,8 +41,8 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Beetje LiPo Blok "
-Date "2018-09-11"
+Title "Beetje Relay"
+Date "2018-09-29"
 Rev "0.2"
 Comp "www.MakersBox.us"
 Comment1 "648.ken@gmail.com"

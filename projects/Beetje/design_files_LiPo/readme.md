@@ -8,6 +8,7 @@ Based on Adafruit's [Adafruit Pro Trinket LiPoly/LiIon Backpack](https://learn.a
 
 
 Try adding TVS: https://www.digikey.com/product-detail/en/stmicroelectronics/SM2T3V3A/497-7878-1-ND/1883813
+https://www.digikey.com/product-detail/en/comchip-technology/CPDQC3V3T-HF/641-1893-1-ND/7100791
 Update to 0805 parts
 
 Bill Of Materials
@@ -23,7 +24,9 @@ Bill Of Materials
 - 2 ea., R1, R2 Resistor 1K SMD 0805, https://www.digikey.com/short/j2d0wt
 - 1 ea., D1 LED red SMD 0805, https://www.digikey.com/short/j20zct
 - 1 ea., D2 LED green SMD 0805, https://www.digikey.com/short/j20p1h
-- 1 ea., D3 DIODE SCHOTTKY 20V 1A SOD123L, https://www.digikey.com/short/j2wzf5
+- 1 ea., D3 TVS DIODE 3.3V 6.8V DO216AA, https://www.digikey.com/short/jn741r
+
+or maybe https://www.digikey.com/short/jn7mwh?
 
 Optional
 

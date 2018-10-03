@@ -227,7 +227,7 @@ U 1 1 5B773B85
 P 4250 3900
 F 0 "D1" H 4250 4000 50  0000 C CNN
 F 1 "CHG" H 4250 3800 50  0000 C CNN
-F 2 "footprints:R_0805_HandSoldering" H 4250 3900 50  0001 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 4250 3900 50  0001 C CNN
 F 3 "" H 4250 3900 50  0001 C CNN
 	1    4250 3900
 	-1   0    0    1   
@@ -295,7 +295,7 @@ U 1 1 5B7EF1B7
 P 4250 4200
 F 0 "D2" H 4250 4300 50  0000 C CNN
 F 1 "DONE" H 4250 4100 50  0000 C CNN
-F 2 "footprints:R_0805_HandSoldering" H 4250 4200 50  0001 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 4250 4200 50  0001 C CNN
 F 3 "" H 4250 4200 50  0001 C CNN
 	1    4250 4200
 	1    0    0    -1  
@@ -418,24 +418,22 @@ $EndComp
 $Comp
 L CONN_01X02 J1
 U 1 1 5B7EFCE9
-P 7350 3750
-F 0 "J1" H 7350 3900 50  0000 C CNN
-F 1 "JSTSH" V 7450 3750 50  0000 C CNN
-F 2 "footprints:JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled" H 7350 3750 50  0001 C CNN
-F 3 "" H 7350 3750 50  0001 C CNN
-	1    7350 3750
+P 7700 3750
+F 0 "J1" H 7700 3900 50  0000 C CNN
+F 1 "JSTSH" V 7800 3750 50  0000 C CNN
+F 2 "footprints:JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled" H 7700 3750 50  0001 C CNN
+F 3 "" H 7700 3750 50  0001 C CNN
+	1    7700 3750
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	5800 3700 6750 3700
+	5800 3700 7500 3700
 Wire Wire Line
-	7050 3700 7150 3700
+	7500 3800 7300 3800
 Wire Wire Line
-	7150 3800 6950 3800
+	7300 3800 7300 4200
 Wire Wire Line
-	6950 4200 6950 3800
-Wire Wire Line
-	6350 4200 7150 4200
+	6350 4200 7500 4200
 Wire Wire Line
 	6650 4100 6650 4300
 Connection ~ 6650 4200
@@ -456,31 +454,20 @@ $EndComp
 $Comp
 L CONN_01X02 J3
 U 1 1 5B7F07B5
-P 7350 4150
-F 0 "J3" H 7350 4300 50  0000 C CNN
-F 1 "JSTPH" V 7450 4150 50  0000 C CNN
-F 2 "footprints:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 7350 4150 50  0001 C CNN
-F 3 "" H 7350 4150 50  0001 C CNN
-	1    7350 4150
+P 7700 4150
+F 0 "J3" H 7700 4300 50  0000 C CNN
+F 1 "JSTPH" V 7800 4150 50  0000 C CNN
+F 2 "footprints:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 7700 4150 50  0001 C CNN
+F 3 "" H 7700 4150 50  0001 C CNN
+	1    7700 4150
 	1    0    0    1   
 $EndComp
-Connection ~ 7100 3700
-Connection ~ 6950 4200
+Connection ~ 7450 3700
+Connection ~ 7300 4200
 Wire Wire Line
-	7100 3700 7100 4100
+	7450 3700 7450 4100
 Wire Wire Line
-	7100 4100 7150 4100
-$Comp
-L D D3
-U 1 1 5B953260
-P 6900 3700
-F 0 "D3" H 6900 3800 50  0000 C CNN
-F 1 "D" H 6900 3600 50  0000 C CNN
-F 2 "footprints:D_SOD-123F" H 6900 3700 50  0001 C CNN
-F 3 "" H 6900 3700 50  0001 C CNN
-	1    6900 3700
-	1    0    0    -1  
-$EndComp
+	7450 4100 7500 4100
 $Comp
 L SW_SPDT SW1
 U 1 1 5B9534D5
@@ -511,4 +498,21 @@ Wire Notes Line
 	6100 4150 6100 3950
 Text Notes 2000 6550 0    60   ~ 0
 Project website: https://hackaday.io/project/160638-beetje-bloks\n\nBased on Adafruit's [Adafruit Pro Trinket LiPoly/LiIon Backpack](https://learn.adafruit.com/adafruit-pro-trinket-lipoly-slash-liion-backpack/downloads)
+$Comp
+L D_TVS D3
+U 1 1 5BAAF72F
+P 7050 3950
+F 0 "D3" H 7050 4050 50  0000 C CNN
+F 1 "D_TVS" H 7050 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 7050 3950 50  0001 C CNN
+F 3 "" H 7050 3950 50  0001 C CNN
+	1    7050 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 3800 7050 3700
+Connection ~ 7050 3700
+Wire Wire Line
+	7050 4100 7050 4200
+Connection ~ 7050 4200
 $EndSCHEMATC
