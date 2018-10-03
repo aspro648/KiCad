@@ -10,13 +10,16 @@ Bill Of Materials
 ----------------
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [design_files](design_files/) folder.
-- 1 ea., IC1 Holtek HT16K33
+- 1 ea., IC1 Holtek HT16K33, https://lcsc.com/product-detail/LED-Drivers_HT16K33_C87502.html
 - 1 ea., U1 7-segment CC LED
 - 1 ea., C1 CAP CER 10UF 50V X7R, https://www.digikey.com/short/j5d39w 
+- 1 ea., D1 DIODE SCHOTTKY 20V 1A SOD123L, https://www.digikey.com/short/j2wzf5
 - 2 ea., R1, R2 Resistor 10K 0805 SMD, https://www.digikey.com/short/j2d0w4
 - 3 ea., R3, R4, R5 Resistor 47K 0805 SMD, https://www.digikey.com/short/j2d00m 
 - 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/short/jfcn42
 - 1 ea., SW1 RA Tactile SPST, Pansonic EVQ-P7J01P, https://www.digikey.com/short/jfwprn
+
+try https://lcsc.com/product-detail/Led-Segment-Display_0-28-Digitron-red-RED_C109199.html
 
 License
 ----------------

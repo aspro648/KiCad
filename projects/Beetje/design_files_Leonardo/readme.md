@@ -35,6 +35,7 @@ Bill Of Materials
 - 1 ea., 6-Pin header, https://www.digikey.com/short/jwj4w4
 - 2 ea., 8-Pin header, https://www.digikey.com/short/jwj4dp
 - 1 ea., 10-Pin header, https://www.digikey.com/short/jwj4n7
+- 4 ea., Rubber feet, https://www.digikey.com/short/jntvm1 or https://www.digikey.com/short/jntvbz
 
 
 License
