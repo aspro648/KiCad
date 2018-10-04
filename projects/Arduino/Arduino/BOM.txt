@@ -5,8 +5,9 @@
 L7805CV IC REG LINEAR 5V 1.5A TO220AB, https://www.digikey.com/short/jn9qzp
 MCP1700-3302E/TO IC REG LINEAR 3.3V 250MA TO92-3, https://www.digikey.com/short/jn9q57
 0.33uF Capacitor
-0.1uf Capacitor
-
+CAP CER 0.1UF 25V Y5V RADIAL, Vishay K104Z15Y5VE5TL2, https://www.digikey.com/short/jn9pm2
+CAP CER 1UF 25V X7R RADIAL, TDK FG28X7R1E105KRT06, https://www.digikey.com/short/jn9p97
+CER RES 16.0000MHZ 30PF T/H, ECS ZTT-16.00MX, https://www.digikey.com/short/jn9pjv
 Atmega328P
 USB B Connector
 FT231XX
@@ -14,5 +15,5 @@ FT231XX
 4K7 Ohm Resistors
 10K Resistors
 LEDs
-
+PTC RESET FUSE 60V 750MA RADIAL, Bourns MF-R075, https://www.digikey.com/short/jn9p02
 SN74LS125AN, IC BUF NON-INVERT 5.25V 14DIP, https://www.digikey.com/short/jn973j
