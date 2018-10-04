@@ -1,0 +1,18 @@
+
+
+
+1N5819 DIODE SCHOTTKY 40V 1A DO41, https://www.digikey.com/short/jnh0mj
+L7805CV IC REG LINEAR 5V 1.5A TO220AB, https://www.digikey.com/short/jn9qzp
+MCP1700-3302E/TO IC REG LINEAR 3.3V 250MA TO92-3, https://www.digikey.com/short/jn9q57
+0.33uF Capacitor
+0.1uf Capacitor
+
+Atmega328P
+USB B Connector
+FT231XX
+470 Ohm Resistors
+4K7 Ohm Resistors
+10K Resistors
+LEDs
+
+SN74LS125AN, IC BUF NON-INVERT 5.25V 14DIP, https://www.digikey.com/short/jn973j
