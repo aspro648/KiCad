@@ -39,7 +39,7 @@
 %ADD53C,0.15748031496062992*%
 %ADD54C,0.70000000000000007*%
 %ADD55R,0.1X0.2*%
-G01G01*
+G01*
 D10*
 D11*
 X-0007643492Y0004156443D02*
@@ -53,7 +53,7 @@ G04 next file*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
 G04 Created by KiCad (PCBNEW 4.0.7) date 06/29/18 14:26:30*
-G01G01*
+G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
 D24*
@@ -69,7 +69,7 @@ G04 next file*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
 G04 Created by KiCad (PCBNEW 4.0.7) date 06/29/18 14:26:30*
-G01G01*
+G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
 D28*
@@ -85,7 +85,7 @@ G04 next file*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
 G04 Created by KiCad (PCBNEW 4.0.7) date 06/29/18 14:26:30*
-G01G01*
+G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
 D32*
@@ -101,7 +101,7 @@ G04 next file*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
 G04 Created by KiCad (PCBNEW 4.0.7) date 06/29/18 14:26:30*
-G01G01*
+G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
 D36*
@@ -117,7 +117,7 @@ G04 next file*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
 G04 Created by KiCad (PCBNEW 4.0.7) date 06/29/18 14:26:30*
-G01G01*
+G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
 D40*
@@ -133,7 +133,7 @@ G04 next file*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
 G04 Created by KiCad (PCBNEW 4.0.7) date 06/29/18 14:26:30*
-G01G01*
+G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
 D44*
@@ -149,7 +149,7 @@ G04 next file*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
 G04 Created by KiCad (PCBNEW 4.0.7) date 06/29/18 14:26:30*
-G01G01*
+G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
 D48*
@@ -165,7 +165,7 @@ G04 next file*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
 G04 Created by KiCad (PCBNEW 4.0.7) date 06/29/18 14:26:30*
-G01G01*
+G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
 D52*

@@ -1,7 +1,7 @@
 
 
 
-1N5819 DIODE SCHOTTKY 40V 1A DO41, https://www.digikey.com/short/jnh0mj
+DIODE SCHOTTKY 40V 2A DO15, SMC SB240TA, https://www.digikey.com/short/jn57cv
 L7805CV IC REG LINEAR 5V 1.5A TO220AB, https://www.digikey.com/short/jn9qzp
 MCP1700-3302E/TO IC REG LINEAR 3.3V 250MA TO92-3, https://www.digikey.com/short/jn9q57
 0.33uF Capacitor
@@ -10,7 +10,7 @@ CAP CER 1UF 25V X7R RADIAL, TDK FG28X7R1E105KRT06, https://www.digikey.com/short
 CER RES 16.0000MHZ 30PF T/H, ECS ZTT-16.00MX, https://www.digikey.com/short/jn9pjv
 Atmega328P
 USB B Connector
-FT231XX
+FT231XS
 470 Ohm Resistors
 4K7 Ohm Resistors
 10K Resistors

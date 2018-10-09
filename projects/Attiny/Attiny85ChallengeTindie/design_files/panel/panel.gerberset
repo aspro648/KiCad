@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GerberLayoutSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<GerberLayoutSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <LoadedOutlines>
-    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</string>
+    <string>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</string>
   </LoadedOutlines>
   <Instances>
     <GerberInstance>
@@ -10,7 +10,7 @@
         <Y>105.573654</Y>
       </Center>
       <Angle>0</Angle>
-      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
       <Generated>false</Generated>
     </GerberInstance>
     <GerberInstance>
@@ -19,7 +19,7 @@
         <Y>105.573654</Y>
       </Center>
       <Angle>0</Angle>
-      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
       <Generated>false</Generated>
     </GerberInstance>
     <GerberInstance>
@@ -28,7 +28,7 @@
         <Y>105.573654</Y>
       </Center>
       <Angle>0</Angle>
-      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
       <Generated>false</Generated>
     </GerberInstance>
     <GerberInstance>
@@ -37,7 +37,7 @@
         <Y>134.570953</Y>
       </Center>
       <Angle>0</Angle>
-      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
       <Generated>false</Generated>
     </GerberInstance>
     <GerberInstance>
@@ -46,7 +46,7 @@
         <Y>163.568268</Y>
       </Center>
       <Angle>0</Angle>
-      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
       <Generated>false</Generated>
     </GerberInstance>
     <GerberInstance>
@@ -55,7 +55,7 @@
         <Y>134.570953</Y>
       </Center>
       <Angle>0</Angle>
-      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
       <Generated>false</Generated>
     </GerberInstance>
     <GerberInstance>
@@ -64,7 +64,7 @@
         <Y>134.570953</Y>
       </Center>
       <Angle>0</Angle>
-      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
       <Generated>false</Generated>
     </GerberInstance>
     <GerberInstance>
@@ -73,7 +73,7 @@
         <Y>163.568268</Y>
       </Center>
       <Angle>0</Angle>
-      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
       <Generated>false</Generated>
     </GerberInstance>
     <GerberInstance>
@@ -82,15 +82,15 @@
         <Y>163.568268</Y>
       </Center>
       <Angle>0</Angle>
-      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\gerbers\base.zip</GerberPath>
       <Generated>false</Generated>
     </GerberInstance>
   </Instances>
   <Tabs>
     <BreakTab>
       <Center>
-        <X>27.9298668</X>
-        <Y>71.54776</Y>
+        <X>27.9270077</X>
+        <Y>70.6342</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -98,8 +98,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>56.921402</X>
-        <Y>71.54776</Y>
+        <X>57.09489</X>
+        <Y>70.9468155</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -107,8 +107,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>71.4171753</X>
-        <Y>57.0519943</Y>
+        <X>71.52252</X>
+        <Y>56.8696556</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -116,8 +116,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>71.4171753</X>
-        <Y>27.9298668</Y>
+        <X>13.3993759</X>
+        <Y>56.9822731</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -125,8 +125,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>57.0519943</X>
-        <Y>13.56469</Y>
+        <X>13.5119934</X>
+        <Y>27.8143921</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -134,8 +134,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>27.9298668</X>
-        <Y>13.4340973</Y>
+        <X>27.9270077</X>
+        <Y>12.9489069</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -143,8 +143,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>13.4340973</X>
-        <Y>27.9298668</Y>
+        <X>56.8696556</X>
+        <Y>13.08676</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -152,8 +152,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>13.4340973</X>
-        <Y>56.921402</Y>
+        <X>71.06037</X>
+        <Y>27.9143925</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -161,8 +161,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>42.4256363</X>
-        <Y>57.0519943</Y>
+        <X>42.95464</X>
+        <Y>28.0396252</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -170,8 +170,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>42.55623</X>
-        <Y>27.9298668</Y>
+        <X>42.91773</X>
+        <Y>57.09489</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -185,4 +185,7 @@
   <FillOffset>3</FillOffset>
   <Smoothing>1</Smoothing>
   <ExtraTabDrillDistance>0</ExtraTabDrillDistance>
+  <ClipToOutlines>true</ClipToOutlines>
+  <LastExportFolder>C:\Users\kolsen\Documents\git\KiCad\projects\Attiny\Attiny85ChallengeTindie\design_files\panel</LastExportFolder>
+  <DoNotGenerateMouseBites>false</DoNotGenerateMouseBites>
 </GerberLayoutSet>

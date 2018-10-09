@@ -1,4 +1,4 @@
-update=3/17/2018 8:14:30 PM
+update=10/4/2018 2:10:24 PM
 version=1
 last_client=kicad
 [general]
@@ -63,3 +63,13 @@ LibName29=atmel
 LibName30=contrib
 LibName31=valves
 LibName32=switches
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
