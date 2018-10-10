@@ -30,12 +30,17 @@ Bill Of Materials
 
 Headers:
 --------
+
 - J2, CONN HEADER FEMALE 6POS .1" GOLD, https://www.digikey.com/short/jfcnz3
 - J4, CONN HEADER FEMALE 8POS .1" GOLD, https://www.digikey.com/short/jfcnzj
    or
 - Stacking Arduino headers like https://www.digikey.com/short/jfcnz3
    or
 - 1 ea., 64-pin header(enough for 4.5 boards) Mill-max 311-43-164-41-001000, https://www.digikey.com/short/jnqdm2
+   or
+- 1 ea., CONN SOCKET SIP 8POS GOLD, Mill-Max 315-47-108-41-001000, https://www.digikey.com/short/jn51q5
+- 1 ea., CONN SOCKET SIP 6POS GOLD, Mill-Max 315-47-106-41-001000, https://www.digikey.com/short/jn5188
+
 
 Revisions
 ----------------

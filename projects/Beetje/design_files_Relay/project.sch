@@ -236,6 +236,127 @@ NoConn ~ 4650 5550
 NoConn ~ 4650 5650
 Text Notes 2000 6550 0    60   ~ 0
 Project website: https://hackaday.io/project/160638-beetje-bloks
+$Comp
+L Conn_01x02 J3
+U 1 1 5BA45833
+P 5350 4100
+F 0 "J3" H 5350 4200 50  0000 C CNN
+F 1 "Conn_01x02" H 5350 3900 50  0000 C CNN
+F 2 "footprints:TerminalBlock_bornier-2_P5.08mm" H 5350 4100 50  0001 C CNN
+F 3 "" H 5350 4100 50  0001 C CNN
+	1    5350 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x02 J1
+U 1 1 5BA458A5
+P 5200 2500
+F 0 "J1" H 5200 2600 50  0000 C CNN
+F 1 "Conn_01x02" H 5200 2300 50  0000 C CNN
+F 2 "footprints:TerminalBlock_bornier-2_P5.08mm" H 5200 2500 50  0001 C CNN
+F 3 "" H 5200 2500 50  0001 C CNN
+	1    5200 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 5BA45F52
+P 4850 3850
+F 0 "#PWR013" H 4850 3600 50  0001 C CNN
+F 1 "GND" H 4850 3700 50  0000 C CNN
+F 2 "" H 4850 3850 50  0001 C CNN
+F 3 "" H 4850 3850 50  0001 C CNN
+	1    4850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5BA4611C
+P 3950 3300
+F 0 "R2" V 4030 3300 50  0000 C CNN
+F 1 "1K" V 3950 3300 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 3880 3300 50  0001 C CNN
+F 3 "" H 3950 3300 50  0001 C CNN
+	1    3950 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5BA461C5
+P 4350 3300
+F 0 "D2" H 4350 3400 50  0000 C CNN
+F 1 "LED" H 4350 3200 50  0000 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 4350 3300 50  0001 C CNN
+F 3 "" H 4350 3300 50  0001 C CNN
+	1    4350 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5BA46201
+P 4550 3450
+F 0 "#PWR014" H 4550 3200 50  0001 C CNN
+F 1 "GND" H 4550 3300 50  0000 C CNN
+F 2 "" H 4550 3450 50  0001 C CNN
+F 3 "" H 4550 3450 50  0001 C CNN
+	1    4550 3450
+	1    0    0    -1  
+$EndComp
+Text Label 3600 3300 0    60   ~ 0
+D6
+NoConn ~ 6200 5150
+Text Notes 5350 2400 1    60   ~ 0
++\nIN\n-
+Text Notes 5450 4200 3    60   ~ 0
++\nOUT\n-
+$Comp
+L EC2-5NU RLY1
+U 1 1 5BA468C1
+P 5250 3350
+F 0 "RLY1" H 5300 3100 50  0000 C CNN
+F 1 "EC2-3NU" H 5550 3350 50  0000 R CNN
+F 2 "footprints:Relay_THT_EC2" H 5450 3550 50  0001 L CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/EC2-5NU.pdf" H 5450 3650 60  0001 L CNN
+F 4 "399-11052-5-ND" H 5450 3750 60  0001 L CNN "Digi-Key_PN"
+F 5 "EC2-5NU" H 5450 3850 60  0001 L CNN "MPN"
+F 6 "Relays" H 5450 3950 60  0001 L CNN "Category"
+F 7 "Signal Relays, Up to 2 Amps" H 5450 4050 60  0001 L CNN "Family"
+F 8 "https://api.kemet.com/component-edge/download/datasheet/EC2-5NU.pdf" H 5450 4150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/kemet/EC2-5NU/399-11052-5-ND/4291118" H 5450 4250 60  0001 L CNN "DK_Detail_Page"
+F 10 "RELAY GEN PURPOSE DPDT 2A 5V" H 5450 4350 60  0001 L CNN "Description"
+F 11 "KEMET" H 5450 4450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5450 4550 60  0001 L CNN "Status"
+	1    5250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BEC Q1
+U 1 1 5BA46F53
+P 4500 2650
+F 0 "Q1" H 4700 2700 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 4100 2450 50  0000 L CNN
+F 2 "footprints:SOT-23" H 4700 2750 50  0001 C CNN
+F 3 "" H 4500 2650 50  0001 C CNN
+	1    4500 2650
+	1    0    0    -1  
+$EndComp
+Text Label 4050 2650 0    60   ~ 0
+D6
+$Comp
+L VCC #PWR015
+U 1 1 5BA47232
+P 4600 2250
+F 0 "#PWR015" H 4600 2100 50  0001 C CNN
+F 1 "VCC" H 4600 2400 50  0000 C CNN
+F 2 "" H 4600 2250 50  0001 C CNN
+F 3 "" H 4600 2250 50  0001 C CNN
+	1    4600 2250
+	1    0    0    -1  
+$EndComp
+Text Notes 5800 3450 0    60   ~ 0
+2A\n250VAC\n220VDC
+Text Notes 4950 2100 0    60   ~ 0
+Caution! Possible Hazarous Voltages!
 Wire Wire Line
 	4850 5150 4650 5150
 Wire Wire Line
@@ -270,120 +391,16 @@ Wire Notes Line
 	4200 4850 4200 6050
 Wire Notes Line
 	6850 6050 6850 4850
-$Comp
-L Conn_01x02 J3
-U 1 1 5BA45833
-P 6150 2350
-F 0 "J3" H 6150 2450 50  0000 C CNN
-F 1 "Conn_01x02" H 6150 2150 50  0000 C CNN
-F 2 "footprints:terminal" H 6150 2350 50  0001 C CNN
-F 3 "" H 6150 2350 50  0001 C CNN
-	1    6150 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x02 J1
-U 1 1 5BA458A5
-P 4350 4150
-F 0 "J1" H 4350 4250 50  0000 C CNN
-F 1 "Conn_01x02" H 4350 3950 50  0000 C CNN
-F 2 "footprints:terminal_mirror" H 4350 4150 50  0001 C CNN
-F 3 "" H 4350 4150 50  0001 C CNN
-	1    4350 4150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L GND #PWR013
-U 1 1 5BA45F52
-P 4850 3850
-F 0 "#PWR013" H 4850 3600 50  0001 C CNN
-F 1 "GND" H 4850 3700 50  0000 C CNN
-F 2 "" H 4850 3850 50  0001 C CNN
-F 3 "" H 4850 3850 50  0001 C CNN
-	1    4850 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 5150 6200 5150
-$Comp
-L R R2
-U 1 1 5BA4611C
-P 7250 3150
-F 0 "R2" V 7330 3150 50  0000 C CNN
-F 1 "1K" V 7250 3150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7180 3150 50  0001 C CNN
-F 3 "" H 7250 3150 50  0001 C CNN
-	1    7250 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L LED D2
-U 1 1 5BA461C5
-P 7650 3150
-F 0 "D2" H 7650 3250 50  0000 C CNN
-F 1 "LED" H 7650 3050 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 7650 3150 50  0001 C CNN
-F 3 "" H 7650 3150 50  0001 C CNN
-	1    7650 3150
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR014
-U 1 1 5BA46201
-P 7850 3300
-F 0 "#PWR014" H 7850 3050 50  0001 C CNN
-F 1 "GND" H 7850 3150 50  0000 C CNN
-F 2 "" H 7850 3300 50  0001 C CNN
-F 3 "" H 7850 3300 50  0001 C CNN
-	1    7850 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7850 3300 7850 3150
+	4550 3450 4550 3300
 Wire Wire Line
-	7850 3150 7800 3150
+	4550 3300 4500 3300
 Wire Wire Line
-	7500 3150 7400 3150
+	4200 3300 4100 3300
 Wire Wire Line
-	7100 3150 6900 3150
-Text Label 6900 3150 0    60   ~ 0
-D6
-NoConn ~ 6200 5150
-Text Notes 4150 4300 0    60   ~ 0
-+\nIN\n-
-Text Notes 6250 2500 0    60   ~ 0
-+\nOUT\n-
-$Comp
-L EC2-5NU RLY1
-U 1 1 5BA468C1
-P 5250 3350
-F 0 "RLY1" H 4680 3600 50  0000 C CNN
-F 1 "EC2-5NU" V 4695 3535 50  0000 R CNN
-F 2 "footprints:Relay_THT_EC2" H 5450 3550 50  0001 L CNN
-F 3 "https://api.kemet.com/component-edge/download/datasheet/EC2-5NU.pdf" H 5450 3650 60  0001 L CNN
-F 4 "399-11052-5-ND" H 5450 3750 60  0001 L CNN "Digi-Key_PN"
-F 5 "EC2-5NU" H 5450 3850 60  0001 L CNN "MPN"
-F 6 "Relays" H 5450 3950 60  0001 L CNN "Category"
-F 7 "Signal Relays, Up to 2 Amps" H 5450 4050 60  0001 L CNN "Family"
-F 8 "https://api.kemet.com/component-edge/download/datasheet/EC2-5NU.pdf" H 5450 4150 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/kemet/EC2-5NU/399-11052-5-ND/4291118" H 5450 4250 60  0001 L CNN "DK_Detail_Page"
-F 10 "RELAY GEN PURPOSE DPDT 2A 5V" H 5450 4350 60  0001 L CNN "Description"
-F 11 "KEMET" H 5450 4450 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5450 4550 60  0001 L CNN "Status"
-	1    5250 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Q_NPN_BEC Q1
-U 1 1 5BA46F53
-P 4500 2650
-F 0 "Q1" H 4700 2700 50  0000 L CNN
-F 1 "Q_NPN_BEC" H 4700 2600 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 4700 2750 50  0001 C CNN
-F 3 "" H 4500 2650 50  0001 C CNN
-	1    4500 2650
-	1    0    0    -1  
-$EndComp
+	3800 3300 3600 3300
 Wire Wire Line
 	4600 2850 4600 2950
 Wire Wire Line
@@ -392,37 +409,40 @@ Wire Wire Line
 	4850 2950 4850 3050
 Wire Wire Line
 	4300 2650 4050 2650
-Text Label 4050 2650 0    60   ~ 0
-D6
-$Comp
-L VCC #PWR015
-U 1 1 5BA47232
-P 4600 2250
-F 0 "#PWR015" H 4600 2100 50  0001 C CNN
-F 1 "VCC" H 4600 2400 50  0000 C CNN
-F 2 "" H 4600 2250 50  0001 C CNN
-F 3 "" H 4600 2250 50  0001 C CNN
-	1    4600 2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4600 2250 4600 2450
 Wire Wire Line
 	4850 3650 4850 3850
+Wire Notes Line
+	4950 2150 6600 2150
+Wire Notes Line
+	4950 2150 4950 4450
+Wire Notes Line
+	4950 4450 6600 4450
+Wire Notes Line
+	6600 4450 6600 2150
 Wire Wire Line
-	4550 4150 5550 4150
+	5200 2700 5200 2800
 Wire Wire Line
-	5050 2450 5950 2450
+	5200 2800 5050 2800
 Wire Wire Line
-	5550 4150 5550 3650
+	5050 2800 5050 3050
 Wire Wire Line
-	4550 4250 5150 4250
+	5300 2700 5300 2800
 Wire Wire Line
-	5150 4250 5150 3650
+	5300 2800 5450 2800
 Wire Wire Line
-	5050 2450 5050 3050
+	5450 2800 5450 3050
 Wire Wire Line
-	5950 2350 5450 2350
+	5150 3650 5150 3750
 Wire Wire Line
-	5450 2350 5450 3050
+	5150 3750 5250 3750
+Wire Wire Line
+	5250 3750 5250 3900
+Wire Wire Line
+	5550 3650 5550 3750
+Wire Wire Line
+	5550 3750 5350 3750
+Wire Wire Line
+	5350 3750 5350 3900
 $EndSCHEMATC

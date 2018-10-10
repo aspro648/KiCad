@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 123.114999 92.634999 148.665001 118.185001)
     (thickness 1.6)
-    (drawings 17)
+    (drawings 18)
     (tracks 6)
     (zones 0)
     (modules 5)
@@ -45,7 +45,7 @@
   )
 
   (setup
-    (last_trace_width 0.4064)
+    (last_trace_width 0.25)
     (user_trace_width 0.3048)
     (user_trace_width 0.4064)
     (user_trace_width 0.6096)
@@ -1159,6 +1159,9 @@
     (pad HOLE np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu))
   )
 
+  (gr_text "Pin\nD9" (at 145.034 102.362) (layer B.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_line (start 135.89 87.63) (end 135.89 119.38) (angle 90) (layer Dwgs.User) (width 0.2))
   (gr_line (start 123.19 87.63) (end 135.89 87.63) (angle 90) (layer Dwgs.User) (width 0.2))
   (gr_line (start 120.65 105.41) (end 151.13 105.41) (angle 90) (layer Dwgs.User) (width 0.2))

@@ -14,18 +14,14 @@ Bill Of Materials
 - 1 ea., D2 LED SMD 0805, https://www.digikey.com/short/jwf4nw
 - 1 ea., R1 10K SMD 0805, https://www.digikey.com/short/j2d0w4 
 - 1 ea., R2 1K SMD 0805, https://www.digikey.com/short/j2d0wt
-- 2 ea., TERMINAL BLOCK 3.5MM 2POS PCB, https://www.digikey.com/short/7zj1f4
-
-
-Optional
-----------------
-
-- Headers
+- 2 ea., J1, J3 TERM BLOCK PCB 2POS 5.0MM GREEN, Phoenix 1935161 https://www.digikey.com/short/jnrmvw
+-- (was - 2 ea., TERMINAL BLOCK 3.5MM 2POS PCB, https://www.digikey.com/short/7zj1f4)
+- 1 ea., 64-pin header(enough for 4.5 boards) Mill-max 311-43-164-41-001000, https://www.digikey.com/short/jnqdm2
 
 
 Revisions
 ------------------
-
+0.1 Moved terminal blocks to avoid short on USB. Changed to 5mm terminal for 12 AWG wire.
 
 
 License
