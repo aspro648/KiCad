@@ -9,6 +9,11 @@ ATMEL ATTINY45/85 Pin Assignments
 
 */
 
+
+//cd C:\Users\Maker's Box\Documents\arduino-1.6.4\hardware\tools\avr\bin
+//avrdude -C ..\etc\avrdude.conf -P COM12 -b 19200 -c avrisp -p attiny85 -v -e -U lfuse:w:0xE2:m -U hfuse:w:0xD7:m -U efuse:w:0xFf:m  -U flash:w:TARDIS01.cpp.hex
+
+
 #include <Arduino.h>
 #include <EEPROMex.h>
 #include <avr/sleep.h>

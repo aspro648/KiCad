@@ -2,7 +2,7 @@ Introduction
 ============
 
 ![Project](images/project.png) 
-Um, its a TARDIS.
+Um, its a TARDIS.  Like the original, it is larger on the inside (8 kBytes!).  It has two modes, lights only, and lights + sounds.  Switch modes by pressing the gold touch area while switching it on.  Touching this area while on will start or stop the sequence.  The tie clutch lets you wear it with pride.  All parts are through-hole with the exception of the battery holder (see video to see how easy it is to make).
 
 
 Bill Of Materials
@@ -12,7 +12,7 @@ Bill Of Materials
 - 1 ea., Attiny85, [Atmel ATTINY85V-10PU](https://www.digikey.com/short/3ntz53)
 - 1 ea., SPDT Switch [C&K JS202011AQN](https://www.digikey.com/short/j48ddn)
 - 1 ea., White diffuse 5mm LED, [Lumex SSL-LX5093UWW](https://www.digikey.com/short/j48dv8)
-- 1 ea., 330 Ohm resisor 1/8w, [Stackpole CF18JT330K](https://www.digikey.com/short/j48dnf)
+- 1 ea., 100 ohm 1/6W 5% Resistor, [Yageo CFR-12JB-52-100R](https://www.digikey.com/short/jn2pjb)
 - 1 ea., Piezo speaker, [TDK PS1240P02CT3](http://www.digikey.com/short/7hcrp1)
 - 1 ea., CAP CER 0.1UF [Vishay BC1160CT-ND](https://www.digikey.com/short/314jvp)
 - 1 ea., SMD Battery holder, Linx BAT-HLD-001, Digikey BAT-HLD-001-ND
