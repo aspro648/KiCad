@@ -1017,5 +1017,4 @@ if __name__ == '__main__':
     left(90)
     forward(50)
     superS()
-    while True:
-        pass    
+    done()  
