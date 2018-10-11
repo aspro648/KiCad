@@ -3,9 +3,9 @@
 # scruss - 2014-05-06 - dual WTFPL (srsly)
 # https://github.com/scruss/python-hershey
 
-from string import split
 import turtle
 
+letters = 'TURTLE'
 
 def char2val(c):  # data is stored as signed bytes relative to ASCII R
     return ord(c) - ord('R')
@@ -17,17 +17,24 @@ def hersheyparse(dat):
     if int(dat[5:8]) - 1 < 2:  # fail if there impossibly few vertices
         return None
     lines = []
-
     # individual lines are stored separated by <space>+R
     # starting at col 11
-
-    for s in split(dat[10:], ' R'):
-
+    #for s in split(dat[10:], ' R'):
+    for s in dat[10:].split(' R'):
+        print('s= %s' %s)
         # each line is a list of pairs of coordinates
         # NB: origin is at centre(ish) of character
         #     Y coordinates **increase** downwards
 
-        line = map(None, *[iter(map(char2val, list(s)))] * 2)
+        #line = map(None, *[iter(map(char2val, list(s)))] * 2)
+        line = []
+        i = 0
+        temp = list(s)
+        while i < len(temp):
+            line.append((char2val(s[i]), char2val(s[i+1])))
+            i = i + 2          
+
+        print('line = %s' % line)
         lines.append(line)
     glyph = {  # character code in columns 1-6; it's not ASCII
                # indicative number of vertices in columns 6-9
@@ -100,8 +107,9 @@ y = 0
 turtle.penup()
 turtle.pensize(3)
 turtle.goto(x, y)
-for c in list('TURTLEhello'):
+for c in list(letters):
     glyph = hersheyparse(glyphs[c])
+    print(glyph)
     x_origin = x
     y_origin = y
     for line in glyph['lines']:

@@ -15,7 +15,7 @@ Bill Of Materials
 - 1 ea., 100 ohm 1/6W 5% Resistor, [Yageo CFR-12JB-52-100R](https://www.digikey.com/short/jn2pjb)
 - 1 ea., Piezo speaker, [TDK PS1240P02CT3](http://www.digikey.com/short/7hcrp1)
 - 1 ea., CAP CER 0.1UF [Vishay BC1160CT-ND](https://www.digikey.com/short/314jvp)
-- 1 ea., SMD Battery holder, Linx BAT-HLD-001, Digikey BAT-HLD-001-ND
+- 1 ea., SMD Battery holder, [Linx BAT-HLD-001](Digikey BAT-HLD-001-ND)
 - 1 ea., CR2032 Battery, Panasonic CR2032, Digikey P189-ND (requires ground shipping, or buy locally).
 
 
