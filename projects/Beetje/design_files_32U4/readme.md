@@ -48,6 +48,8 @@ Revisions
 - Revision 0.2 - I2C pullups, added SW2, enlarge holes for headers.
 - Revision 0.3 - Pinout change, rerouted. NOT BACKWARD COMPATIBLE.
 - Revision 0.4 - Renumbering, reordering references.
+- Revision 0.5 - Enlarge holes again (for 801 series headers).
+                 Switch to global beetje_footprints library.
 
 License
 ----------------

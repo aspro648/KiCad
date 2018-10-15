@@ -272,13 +272,13 @@ Wire Notes Line
 $Comp
 L Conn_01x02 J3
 U 1 1 5BA45833
-P 6100 2650
-F 0 "J3" H 6100 2750 50  0000 C CNN
-F 1 "Conn_01x02" H 6100 2450 50  0000 C CNN
-F 2 "footprints:terminal" H 6100 2650 50  0001 C CNN
-F 3 "" H 6100 2650 50  0001 C CNN
-	1    6100 2650
-	1    0    0    -1  
+P 6100 2750
+F 0 "J3" H 6100 2850 50  0000 C CNN
+F 1 "Conn_01x02" H 6100 2550 50  0000 C CNN
+F 2 "footprints:terminal" H 6100 2750 50  0001 C CNN
+F 3 "" H 6100 2750 50  0001 C CNN
+	1    6100 2750
+	1    0    0    1   
 $EndComp
 $Comp
 L Conn_01x02 J1

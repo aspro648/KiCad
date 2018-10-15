@@ -27,7 +27,7 @@ None
 
 Assembly Instructions
 =====================
-If you can't figure this out, I can't help you.
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/mBR9w3OL5rk/0.jpg)](https://www.youtube.com/watch?v=mBR9w3OL5rk)
 
 
 License

@@ -1,6 +1,0 @@
-
-1 ea., SW1 SWITCH SLIDE SPDT, E-Switch EG1218, https://www.digikey.com/product-detail/en/EG1218/EG1903-ND/101726
-1 ea., D1 330 Ohm 1/8w resistor, Stackpole CF18JT330R, http://www.digikey.com/short/7zzrbn
-1 ea., R1 5mm Red LED, SunLED XLUR12D, http://www.digikey.com/short/7hrv5j
-1 ea., BT1 CR2032 Batt retainer, Linx BAT-HLD-001-THM, https://www.digikey.com/product-detail/en/BAT-HLD-001-THM/BAT-HLD-001-THM-ND/3044009
-1 ea., CR2032 Battery

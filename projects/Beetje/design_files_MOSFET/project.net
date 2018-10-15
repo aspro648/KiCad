@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/kolsen/Documents/git/KiCad/projects/Beetje/design_files_MOSFET/project.sch)
-    (date "10/5/2018 12:48:45 PM")
+    (date "10/15/2018 12:37:33 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -64,7 +64,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5BA461C5))
     (comp (ref Q1)
-      (value Q_NMOS_GDS)
+      (value IRLB8721)
       (footprint TO_SOT_Packages_THT:TO-220-3_Horizontal)
       (libsource (lib device) (part Q_NMOS_GDS))
       (sheetpath (names /) (tstamps /))
@@ -167,12 +167,12 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
+    (library (logical conn)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical project)
-      (uri C:\Users\kolsen\Documents\git\KiCad\projects\Beetje\design_files_MOSFET\lib_sch\project.lib))
-    (library (logical conn)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib")))
+      (uri C:\Users\kolsen\Documents\git\KiCad\projects\Beetje\design_files_MOSFET\lib_sch\project.lib)))
   (nets
     (net (code 1) (name "Net-(D1-Pad2)")
       (node (ref Q1) (pin 2))
