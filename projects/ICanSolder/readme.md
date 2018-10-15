@@ -1,8 +1,10 @@
-Introduction
+I Can Solder Kit
 ============
 
 ![ICanSolder](images/project.JPG) 
+
 As simple as it gets.  An LED, resistor, switch, and battery.
+Kits available at [https://www.tindie.com/products/13440/](https://www.tindie.com/products/13440/).  Contact me for a custom silkscreen!
 
 
 Bill Of Materials
