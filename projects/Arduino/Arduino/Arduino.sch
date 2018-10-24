@@ -79,14 +79,6 @@ Text Label 9950 2100 0    60   ~ 0
 8
 Text Label 9950 2000 0    60   ~ 0
 9(**)
-Text Label 9900 1900 0    60   ~ 0
-10(**/SS)
-Text Label 9900 1800 0    60   ~ 0
-11(**/MOSI)
-Text Label 9900 1700 0    60   ~ 0
-12(MISO)
-Text Label 9900 1600 0    60   ~ 0
-13(SCK)
 Text Label 9900 1400 0    60   ~ 0
 AREF
 NoConn ~ 9000 1600
@@ -109,8 +101,6 @@ F 3 "" H 9200 1950 50  0000 C CNN
 	1    9200 1950
 	1    0    0    -1  
 $EndComp
-Text Label 8300 1800 0    60   ~ 0
-Reset
 $Comp
 L +3.3V #PWR01
 U 1 1 56D70538
@@ -1002,20 +992,10 @@ Wire Wire Line
 	7250 4650 7500 4650
 Wire Wire Line
 	7250 4750 7500 4750
-Text Label 7250 3900 0    60   ~ 0
-Reset
 Text Label 7250 2450 0    60   ~ 0
 8
 Text Label 7250 2550 0    60   ~ 0
 9(**)
-Text Label 7250 2650 0    60   ~ 0
-10(**/SS)
-Text Label 7250 2750 0    60   ~ 0
-11(**/MOSI)
-Text Label 7250 2850 0    60   ~ 0
-12(MISO)
-Text Label 7250 2950 0    60   ~ 0
-13(SCK)
 Text Label 7250 3300 0    60   ~ 0
 A0
 Text Label 7250 3400 0    60   ~ 0
@@ -1076,14 +1056,6 @@ Wire Wire Line
 	6350 1300 5650 1300
 Wire Wire Line
 	6350 1400 5650 1400
-Text Label 5650 1400 0    60   ~ 0
-Reset
-Text Label 5650 1300 0    60   ~ 0
-13(SCK)
-Text Label 5650 1200 0    60   ~ 0
-12(MISO)
-Text Label 6900 1300 0    60   ~ 0
-11(**/MOSI)
 $Comp
 L VCC #PWR023
 U 1 1 5BB6E9E6
@@ -1193,8 +1165,6 @@ F 3 "" H 4150 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 3700 4500 3700
-Text Label 4250 3700 0    60   ~ 0
-Reset
 $Comp
 L 74LS125 U3
 U 3 1 5BB74973
@@ -1404,4 +1374,35 @@ Text Label 1200 3950 0    60   ~ 0
 D-
 Wire Notes Line
 	8250 3450 10500 3450
+Text Label 4300 3700 0    60   ~ 0
+Reset
+Text Label 7250 3900 0    60   ~ 0
+Reset
+Text Label 5650 1400 0    60   ~ 0
+Reset
+Text Label 8300 1800 0    60   ~ 0
+Reset
+Text Label 6950 1300 0    60   ~ 0
+11(MOSI)
+Text Label 7250 2750 0    60   ~ 0
+11(MOSI)
+Text Label 9950 1800 0    60   ~ 0
+11(MOSI)
+Text Label 9950 1700 0    60   ~ 0
+12(MISO)
+Text Label 5650 1200 0    60   ~ 0
+12(MISO)
+Text Label 7250 2850 0    60   ~ 0
+12(MISO)
+Text Label 9950 1600 0    60   ~ 0
+13(SCK)
+Text Label 5650 1300 0    60   ~ 0
+13(SCK)
+Text Label 7250 2950 0    60   ~ 0
+13(SCK)
+Text Label 7250 2650 0    60   ~ 0
+10(SS)
+Text Label 9950 1900 0    60   ~ 0
+10(SS)
+Connection ~ 3000 6350
 $EndSCHEMATC
