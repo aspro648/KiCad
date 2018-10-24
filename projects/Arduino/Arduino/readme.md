@@ -8,25 +8,27 @@ Bill Of Materials
 ----------------
 - 1 ea., DIY Arduino PCB from kicad.pcb file.
 - 1 ea., FT231x breakout PCB from kicad.pcb file.
-- 1 ea., D1 DIODE SCHOTTKY 40V 2A DO15, SMC SB240TA, https://www.digikey.com/short/jn57cv
 - 1 ea., U1 L7805CV IC REG LINEAR 5V 1.5A TO220AB, https://www.digikey.com/short/jn9qzp
+- 1 ea., U2 FT231XQ 20QFN, https://www.digikey.com/short/jn57wn
+- 1 ea., U3 SN74LS125AN, IC BUF NON-INVERT 5.25V 14DIP, https://www.digikey.com/short/jn973j
 - 1 ea., U4 MCP1700-3302E/TO IC REG LINEAR 3.3V 250MA TO92-3, https://www.digikey.com/short/jn9q57
+- 1 ea., U5 Atmega328P-PU https://www.digikey.com/short/jn57wj
+- 1 ea., Y1 CER RES 16.0000MHZ 30PF T/H, ECS ZTT-16.00MX, https://www.digikey.com/short/jn9pjv
 - 1 ea., C1 0.33uF 50V electrolytic Capacitor 2.5mm lead spacing, Nichicon 	UMT1HR33MDD1TP, https://www.digikey.com/short/jddb2h
 - 4 ea., C2 - 5 CAP CER 0.1UF 25V Y5V RADIAL 2.5mm lead spacing, Vishay K104Z15Y5VE5TL2, https://www.digikey.com/short/jn9pm2
 - 3 ea., C6 - 8 CAP CER 1UF 25V X7R RADIAL 5mm lead spacing, TDK FG28X7R1E105KRT06, https://www.digikey.com/short/jn9p97
-- 1 ea., Y1 CER RES 16.0000MHZ 30PF T/H, ECS ZTT-16.00MX, https://www.digikey.com/short/jn9pjv
-- 1 ea., U5 Atmega328P-PU https://www.digikey.com/short/jn57wj
-- 1 ea., J1 USB B Connector, Pulse E8144-B02022-L, https://www.digikey.com/short/jn571j
-- 1 ea., U2 FT231XQ 20QFN, https://www.digikey.com/short/jn57wn
 - 1 ea., R1 4K7 Ohm Resistors 1/4 W 5%, https://www.digikey.com/short/jn5tmq
 - 2 ea., R2, R13 1K Ohm Resistors 1/4 W 5%, https://www.digikey.com/short/jn5t4d
 - 2 ea., R3 - 4 470 Ohm Resistors 1/4 W 5%, https://www.digikey.com/short/jn5tmp
+- 2 ea., R5 - 6 22 Ohm Resistors 1/4 W 5%, https://www.digikey.com/short/jd0wcj
 - 2 ea., R7 - 8 10K Resistors 1/4 W 5%, https://www.digikey.com/short/jn5t41
+- 1 ea., D1 DIODE SCHOTTKY 40V 2A DO15, SMC SB240TA, https://www.digikey.com/short/jn57cv
 - 1 ea., D2 (Power) Green 3mm LED 5.6mcd, LiteOn LTL-4231N https://www.digikey.com/short/jn5tr0
 - 1 ea., D13 (D13) Red 3mm LED 4.4mcd, LiteOn LTL-4211N, https://www.digikey.com/short/jn5trr
 - 2 ea., D3, D4 (TX/RX) Yellow 3mm LED 6.7mcd, LiteOn LTL-4251, https://www.digikey.com/short/jn5t5f
 - 1 ea., F1 PTC RESET FUSE 30V 700MA RADIAL, Littlefuse RHEF070-2, https://www.digikey.com/short/jddbbh
-- 1 ea., U3 SN74LS125AN, IC BUF NON-INVERT 5.25V 14DIP, https://www.digikey.com/short/jn973j
+- 1 ea., J1 USB B Connector, Pulse E8144-B02022-L, https://www.digikey.com/short/jn571j
+- 1 ea., J2 Barrel Jack 2.1mm, CUI 	PJ-202AH https://www.digikey.com/short/jd0wz3
 - 2 ea., P1, P3 8-Pin header, https://www.digikey.com/short/jwj4dp
 - 1 ea., P2 6-Pin header, https://www.digikey.com/short/jwj4w4
 - 1 ea., P3 10-Pin header, https://www.digikey.com/short/jwj4n7
