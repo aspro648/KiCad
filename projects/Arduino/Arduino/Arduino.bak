@@ -1404,4 +1404,5 @@ Text Label 7250 2650 0    60   ~ 0
 10(SS)
 Text Label 9950 1900 0    60   ~ 0
 10(SS)
+Connection ~ 3000 6350
 $EndSCHEMATC

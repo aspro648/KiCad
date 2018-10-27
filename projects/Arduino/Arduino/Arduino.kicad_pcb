@@ -41,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 0.4064)
+    (last_trace_width 0.25)
     (user_trace_width 0.254)
     (user_trace_width 0.3048)
     (user_trace_width 0.4064)
@@ -597,6 +597,11 @@
       (net 3 GND))
     (pad 3 thru_hole rect (at -3 4.7) (size 3.5 3.5) (drill oval 3 1) (layers *.Cu *.Mask)
       (net 3 GND))
+    (model "../../../../../../Users/Maker's Box/Documents/git/KiCad/projects/Arduino/Arduino/dc_socket.wrl"
+      (at (xyz -0.25 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module footprints:Pin_Header_Straight_1x03_Pitch2.54mm (layer F.Cu) (tedit 5BB6A039) (tstamp 5BB69994)
@@ -981,6 +986,11 @@
     (pad 3 thru_hole oval (at 5.08 0 90) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 29 "Net-(C4-Pad1)"))
     (model ${KISYS3DMOD}/TO_SOT_Packages_THT.3dshapes/TO-220-3_Horizontal.wrl
+      (at (xyz 0.1 0.1 0))
+      (scale (xyz 0.393701 0.393701 0.393701))
+      (rotate (xyz 0 0 0))
+    )
+    (model TO_SOT_Packages_THT.3dshapes/TO-220_Horizontal.wrl
       (at (xyz 0.1 0 0))
       (scale (xyz 0.393701 0.393701 0.393701))
       (rotate (xyz 0 0 0))

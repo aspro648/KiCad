@@ -34,11 +34,11 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date "lun. 30 mars 2015"
-Rev ""
-Comp ""
-Comment1 ""
+Title "DIY Arduino"
+Date "2018-10-27"
+Rev "0.1"
+Comp "@MakersBox"
+Comment1 "648.ken@gmail.com"
 Comment2 ""
 Comment3 ""
 Comment4 ""
