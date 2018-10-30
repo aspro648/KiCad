@@ -702,4 +702,10 @@ Wire Wire Line
 	5800 4800 5900 4800
 Wire Wire Line
 	5800 4900 5900 4900
+Text Notes 3550 3850 2    60   ~ 0
+CAT24M01: 0x54\n0x55
+Text Notes 3600 5350 2    60   ~ 0
+CAT24M01: 0x56\n0x57
+Text Notes 3550 4150 2    60   ~ 0
+24LC1025: 0x50\n0x54
 $EndSCHEMATC

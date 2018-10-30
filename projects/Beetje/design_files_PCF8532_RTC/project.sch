@@ -145,9 +145,9 @@ Text Label 4150 5100 0    60   ~ 0
 D10
 Text Label 4150 5000 0    60   ~ 0
 D9
-Text Label 5550 5200 0    60   ~ 0
-SCL
 Text Label 5550 5100 0    60   ~ 0
+SCL
+Text Label 5550 5200 0    60   ~ 0
 SDA
 Text Label 4150 4900 0    60   ~ 0
 ~RESET
@@ -482,7 +482,6 @@ Wire Wire Line
 	4350 3450 4350 3500
 NoConn ~ 4150 4900
 NoConn ~ 4150 5000
-NoConn ~ 4150 5100
 NoConn ~ 4150 5200
 NoConn ~ 4150 5300
 NoConn ~ 4150 5400
