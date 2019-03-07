@@ -10,7 +10,7 @@ Bill Of Materials
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [design_files](design_files/) folder.
 - 1 ea., Atmel ATTINY85V-10SUR, https://www.digikey.com/short/3253mp, flashed beforehand from [firmware](firmware/) folder
-- 1 ea., CAP CER 0.1UF 0603 SMD
+- 1 ea., CAP CER 0.1UF 0603 SMD, https://www.digikey.com/short/pq0m22 
 - 5 ea., LEDs 0603, your choice of colors
 - 5 ea., Resistors 0603 SMD, maybe 100 ohm-ish?
 - 1 ea., SMD Battery holder, Linx BAT-HLD-001, Digikey BAT-HLD-001-ND
