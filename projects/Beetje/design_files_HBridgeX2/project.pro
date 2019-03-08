@@ -1,4 +1,4 @@
-update=3/7/2019 5:19:10 PM
+update=3/7/2019 2:38:45 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,16 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[schematic_editor]
+[general]
 version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -73,5 +65,13 @@ LibName33=valves
 LibName34=lib_sch/mpxv7002
 LibName35=lib_sch/mcp3021
 LibName36=lib_sch/TB66212FNG
-[general]
+[schematic_editor]
 version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

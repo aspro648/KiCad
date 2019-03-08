@@ -1,0 +1,755 @@
+EESchema Schematic File Version 2
+LIBS:project
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mpxv7002
+LIBS:mcp3021
+LIBS:TB66212FNG
+LIBS:project-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Beetje H-Bridge"
+Date "2019-03-07"
+Rev "0.0"
+Comp "www.MakersBox.us"
+Comment1 "648.ken@gmail.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VBUS #PWR01
+U 1 1 5B3FDCD2
+P 950 1000
+F 0 "#PWR01" H 950 850 50  0001 C CNN
+F 1 "VBUS" H 950 1150 50  0000 C CNN
+F 2 "" H 950 1000 50  0001 C CNN
+F 3 "" H 950 1000 50  0001 C CNN
+	1    950  1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5B3FDCF5
+P 2200 1000
+F 0 "#PWR02" H 2200 750 50  0001 C CNN
+F 1 "GND" H 2200 850 50  0000 C CNN
+F 2 "" H 2200 1000 50  0001 C CNN
+F 3 "" H 2200 1000 50  0001 C CNN
+	1    2200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5B3FDD3A
+P 950 1000
+F 0 "#FLG03" H 950 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 950 1150 50  0000 C CNN
+F 2 "" H 950 1000 50  0001 C CNN
+F 3 "" H 950 1000 50  0001 C CNN
+	1    950  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5B3FDD50
+P 1750 1000
+F 0 "#FLG04" H 1750 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1750 1150 50  0000 C CNN
+F 2 "" H 1750 1000 50  0001 C CNN
+F 3 "" H 1750 1000 50  0001 C CNN
+	1    1750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5B3FDD67
+P 2200 1000
+F 0 "#FLG05" H 2200 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 1150 50  0000 C CNN
+F 2 "" H 2200 1000 50  0001 C CNN
+F 3 "" H 2200 1000 50  0001 C CNN
+	1    2200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR06
+U 1 1 5B402C38
+P 4800 5750
+F 0 "#PWR06" H 4800 5600 50  0001 C CNN
+F 1 "+BATT" V 4800 6000 50  0000 C CNN
+F 2 "" H 4800 5750 50  0001 C CNN
+F 3 "" H 4800 5750 50  0001 C CNN
+	1    4800 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VBUS #PWR07
+U 1 1 5B402FA5
+P 4800 5850
+F 0 "#PWR07" H 4800 5700 50  0001 C CNN
+F 1 "VBUS" V 4800 6050 50  0000 C CNN
+F 2 "" H 4800 5850 50  0001 C CNN
+F 3 "" H 4800 5850 50  0001 C CNN
+	1    4800 5850
+	0    -1   -1   0   
+$EndComp
+Text Label 6100 5250 0    60   ~ 0
+D6
+Text Label 6100 5150 0    60   ~ 0
+A0
+Text Label 6050 5350 0    60   ~ 0
+SCL
+Text Label 6050 5450 0    60   ~ 0
+SDA
+Text Label 4650 5150 0    60   ~ 0
+~RESET
+Text Label 4650 5250 0    60   ~ 0
+D9
+Text Label 4650 5350 0    60   ~ 0
+D10
+Text Label 4650 5650 0    60   ~ 0
+SCK
+Text Label 4650 5550 0    60   ~ 0
+MOSI
+Text Label 4650 5450 0    60   ~ 0
+MISO
+$Comp
+L GND #PWR08
+U 1 1 5B41D2F5
+P 5950 5650
+F 0 "#PWR08" H 5950 5400 50  0001 C CNN
+F 1 "GND" V 5950 5450 50  0000 C CNN
+F 2 "" H 5950 5650 50  0001 C CNN
+F 3 "" H 5950 5650 50  0001 C CNN
+	1    5950 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x08 J4
+U 1 1 5B6D51CD
+P 5050 5450
+F 0 "J4" H 5050 5850 50  0000 C CNN
+F 1 "Beetje_Top" H 4900 4950 50  0000 C CNN
+F 2 "footprints:Beetje_Top" H 5050 5450 50  0001 C CNN
+F 3 "" H 5050 5450 50  0001 C CNN
+	1    5050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J2
+U 1 1 5B6D5224
+P 5700 5350
+F 0 "J2" H 5700 5650 50  0000 C CNN
+F 1 "Beetje_Bottom" H 5400 4950 50  0000 C CNN
+F 2 "footprints:Beetje_Bottom" H 5700 5350 50  0001 C CNN
+F 3 "" H 5700 5350 50  0001 C CNN
+	1    5700 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 5B6E5416
+P 1750 1000
+F 0 "#PWR09" H 1750 850 50  0001 C CNN
+F 1 "VCC" H 1750 1150 50  0000 C CNN
+F 2 "" H 1750 1000 50  0001 C CNN
+F 3 "" H 1750 1000 50  0001 C CNN
+	1    1750 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR010
+U 1 1 5B6E81BF
+P 5950 5550
+F 0 "#PWR010" H 5950 5400 50  0001 C CNN
+F 1 "VCC" V 5950 5750 50  0000 C CNN
+F 2 "" H 5950 5550 50  0001 C CNN
+F 3 "" H 5950 5550 50  0001 C CNN
+	1    5950 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 5B3FFE6E
+P 1350 1000
+F 0 "#FLG011" H 1350 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 1150 50  0000 C CNN
+F 2 "" H 1350 1000 50  0001 C CNN
+F 3 "" H 1350 1000 50  0001 C CNN
+	1    1350 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR012
+U 1 1 5B6E4208
+P 1350 1000
+F 0 "#PWR012" H 1350 850 50  0001 C CNN
+F 1 "+BATT" V 1350 1250 50  0000 C CNN
+F 2 "" H 1350 1000 50  0001 C CNN
+F 3 "" H 1350 1000 50  0001 C CNN
+	1    1350 1000
+	-1   0    0    1   
+$EndComp
+Text Notes 4250 5000 0    60   ~ 0
+Beetje Footprint Rev 0.3
+NoConn ~ 4650 5150
+Text Notes 3750 6300 0    60   ~ 0
+Project website: https://hackaday.io/project/160638-beetje-bloks
+$Comp
+L Conn_01x02 J3
+U 1 1 5BA45833
+P 7950 3100
+F 0 "J3" H 7950 3200 50  0000 C CNN
+F 1 "Conn_01x02" H 7950 2900 50  0001 C CNN
+F 2 "footprints:terminal" H 7950 3100 50  0001 C CNN
+F 3 "" H 7950 3100 50  0001 C CNN
+	1    7950 3100
+	1    0    0    1   
+$EndComp
+$Comp
+L Conn_01x02 J1
+U 1 1 5BA458A5
+P 3450 2400
+F 0 "J1" H 3450 2500 50  0000 C CNN
+F 1 "Conn_01x02" H 3450 2200 50  0001 C CNN
+F 2 "footprints:terminal_mirror" H 3450 2400 50  0001 C CNN
+F 3 "" H 3450 2400 50  0001 C CNN
+	1    3450 2400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5BA45F69
+P 5350 2200
+F 0 "R1" V 5430 2200 50  0000 C CNN
+F 1 "10K" V 5350 2200 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 5280 2200 50  0001 C CNN
+F 3 "" H 5350 2200 50  0001 C CNN
+	1    5350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5BA4611C
+P 3300 4950
+F 0 "R2" V 3380 4950 50  0000 C CNN
+F 1 "1K" V 3300 4950 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 3230 4950 50  0001 C CNN
+F 3 "" H 3300 4950 50  0001 C CNN
+	1    3300 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5BA461C5
+P 3000 4950
+F 0 "D2" H 3000 5050 50  0000 C CNN
+F 1 "LED" H 3000 4850 50  0000 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 3000 4950 50  0001 C CNN
+F 3 "" H 3000 4950 50  0001 C CNN
+	1    3000 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 5BA46201
+P 3600 5100
+F 0 "#PWR013" H 3600 4850 50  0001 C CNN
+F 1 "GND" H 3600 4950 50  0000 C CNN
+F 2 "" H 3600 5100 50  0001 C CNN
+F 3 "" H 3600 5100 50  0001 C CNN
+	1    3600 5100
+	1    0    0    -1  
+$EndComp
+Text Label 2650 4950 0    60   ~ 0
+A0
+Text Notes 3300 2600 2    60   ~ 0
++\nIN\n-
+$Comp
+L TB66212FNG U1
+U 1 1 5C7FEA03
+P 6300 3300
+F 0 "U1" H 6700 2650 60  0000 C CNN
+F 1 "TB66212FNG" V 6300 3350 60  0000 C CNN
+F 2 "footprints:SSOP-24_5.3x8.2mm_Pitch0.65mm" H 6250 3200 60  0001 C CNN
+F 3 "" H 6250 3200 60  0001 C CNN
+	1    6300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5C7FF00D
+P 6050 4350
+F 0 "#PWR014" H 6050 4100 50  0001 C CNN
+F 1 "GND" V 6050 4150 50  0000 C CNN
+F 2 "" H 6050 4350 50  0001 C CNN
+F 3 "" H 6050 4350 50  0001 C CNN
+	1    6050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5C7FFE65
+P 5050 2200
+F 0 "C4" H 5075 2300 50  0000 L CNN
+F 1 "10uF" H 5075 2100 50  0000 L CNN
+F 2 "footprints:C_1206" H 5088 2050 50  0001 C CNN
+F 3 "" H 5050 2200 50  0001 C CNN
+	1    5050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR015
+U 1 1 5C7FFEE5
+P 5350 1900
+F 0 "#PWR015" H 5350 1750 50  0001 C CNN
+F 1 "VCC" V 5350 2100 50  0000 C CNN
+F 2 "" H 5350 1900 50  0001 C CNN
+F 3 "" H 5350 1900 50  0001 C CNN
+	1    5350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5150 4650 5150
+Wire Wire Line
+	4650 5250 4850 5250
+Wire Wire Line
+	4850 5350 4650 5350
+Wire Wire Line
+	4850 5450 4650 5450
+Wire Wire Line
+	4850 5550 4650 5550
+Wire Wire Line
+	4850 5650 4650 5650
+Wire Wire Line
+	4850 5750 4800 5750
+Wire Wire Line
+	4850 5850 4800 5850
+Wire Wire Line
+	5900 5250 6200 5250
+Wire Wire Line
+	5900 5350 6200 5350
+Wire Wire Line
+	5900 5450 6200 5450
+Wire Wire Line
+	5900 5550 5950 5550
+Wire Wire Line
+	5900 5650 5950 5650
+Wire Notes Line
+	4200 6050 6850 6050
+Wire Notes Line
+	6850 4850 4200 4850
+Wire Notes Line
+	4200 4850 4200 6050
+Wire Notes Line
+	6850 6050 6850 4850
+Wire Wire Line
+	5900 5150 6200 5150
+Wire Wire Line
+	3600 4950 3600 5100
+Wire Wire Line
+	3450 4950 3600 4950
+Wire Wire Line
+	2850 4950 2650 4950
+Wire Wire Line
+	6850 3000 7750 3000
+Wire Wire Line
+	6800 2950 6850 2950
+Wire Wire Line
+	6850 2850 6850 3000
+Wire Wire Line
+	6800 3100 7750 3100
+Wire Wire Line
+	6850 3100 6850 3200
+Wire Wire Line
+	6800 3450 6850 3450
+Wire Wire Line
+	6850 3350 6850 3500
+Wire Wire Line
+	6800 3600 7750 3600
+Wire Wire Line
+	6850 3600 6850 3700
+Wire Wire Line
+	6400 1550 6400 2350
+Wire Wire Line
+	6300 2350 6300 2200
+Wire Wire Line
+	6300 2200 6500 2200
+Connection ~ 6400 2200
+Wire Wire Line
+	6500 2200 6500 2350
+Wire Wire Line
+	6050 4250 6050 4350
+Wire Wire Line
+	6200 4250 6200 4300
+Wire Wire Line
+	6050 4300 6550 4300
+Connection ~ 6050 4300
+Wire Wire Line
+	6300 4300 6300 4250
+Connection ~ 6200 4300
+Wire Wire Line
+	6450 4300 6450 4250
+Connection ~ 6300 4300
+Wire Wire Line
+	6550 4300 6550 4250
+Connection ~ 6450 4300
+Wire Wire Line
+	5350 3300 5800 3300
+Wire Wire Line
+	5050 2050 5050 2000
+Wire Wire Line
+	4750 2000 6100 2000
+Wire Wire Line
+	5350 1900 5350 2050
+Connection ~ 5350 2000
+Wire Wire Line
+	5350 2350 5350 3300
+$Comp
+L GND #PWR016
+U 1 1 5C80022E
+P 4750 2500
+F 0 "#PWR016" H 4750 2250 50  0001 C CNN
+F 1 "GND" V 4750 2300 50  0000 C CNN
+F 2 "" H 4750 2500 50  0001 C CNN
+F 3 "" H 4750 2500 50  0001 C CNN
+	1    4750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2950 5800 2950
+Wire Wire Line
+	4700 3050 5800 3050
+Wire Wire Line
+	4900 3150 5800 3150
+Wire Wire Line
+	5100 3450 5800 3450
+Wire Wire Line
+	5300 3550 5800 3550
+Wire Wire Line
+	5500 3650 5800 3650
+Text Label 5650 3650 0    60   ~ 0
+D6
+Text Label 5600 2950 0    60   ~ 0
+SCK
+Text Label 5650 3550 0    60   ~ 0
+D9
+Text Label 5650 3450 0    60   ~ 0
+D10
+Text Label 5600 3150 0    60   ~ 0
+MOSI
+$Comp
+L C C2
+U 1 1 5C80172E
+P 4400 2200
+F 0 "C2" H 4425 2300 50  0000 L CNN
+F 1 "10uF" H 4425 2100 50  0000 L CNN
+F 2 "footprints:C_1206" H 4438 2050 50  0001 C CNN
+F 3 "" H 4400 2200 50  0001 C CNN
+	1    4400 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2500 4400 2500
+Wire Wire Line
+	4400 2500 4400 2350
+$Comp
+L GND #PWR017
+U 1 1 5C801898
+P 4400 2500
+F 0 "#PWR017" H 4400 2250 50  0001 C CNN
+F 1 "GND" V 4400 2300 50  0000 C CNN
+F 2 "" H 4400 2500 50  0001 C CNN
+F 3 "" H 4400 2500 50  0001 C CNN
+	1    4400 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2400 3700 2400
+Wire Wire Line
+	3700 2000 4400 2000
+Wire Wire Line
+	3700 2400 3700 2000
+Wire Wire Line
+	4400 1550 4400 2050
+Wire Wire Line
+	4400 1550 6400 1550
+$Comp
+L R R3
+U 1 1 5C801FA6
+P 5100 4050
+F 0 "R3" V 5180 4050 50  0000 C CNN
+F 1 "10K" V 5100 4050 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 5030 4050 50  0001 C CNN
+F 3 "" H 5100 4050 50  0001 C CNN
+	1    5100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5C801FFB
+P 5300 4050
+F 0 "R4" V 5380 4050 50  0000 C CNN
+F 1 "10K" V 5300 4050 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 5230 4050 50  0001 C CNN
+F 3 "" H 5300 4050 50  0001 C CNN
+	1    5300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5C802033
+P 5500 4050
+F 0 "R5" V 5580 4050 50  0000 C CNN
+F 1 "10K" V 5500 4050 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 5430 4050 50  0001 C CNN
+F 3 "" H 5500 4050 50  0001 C CNN
+	1    5500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3650 5500 3900
+Wire Wire Line
+	5300 3550 5300 3900
+Wire Wire Line
+	5100 3450 5100 3900
+Wire Wire Line
+	5100 4300 5100 4200
+Wire Wire Line
+	4500 4300 5500 4300
+Wire Wire Line
+	5500 4300 5500 4200
+Connection ~ 5300 4300
+$Comp
+L GND #PWR018
+U 1 1 5C80224D
+P 5000 4350
+F 0 "#PWR018" H 5000 4100 50  0001 C CNN
+F 1 "GND" V 5000 4150 50  0000 C CNN
+F 2 "" H 5000 4350 50  0001 C CNN
+F 3 "" H 5000 4350 50  0001 C CNN
+	1    5000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5C80253D
+P 4050 2200
+F 0 "C1" H 4075 2300 50  0000 L CNN
+F 1 "0.1uF" H 4075 2100 50  0000 L CNN
+F 2 "footprints:C_0805_HandSoldering" H 4088 2050 50  0001 C CNN
+F 3 "" H 4050 2200 50  0001 C CNN
+	1    4050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5C80282A
+P 4750 2200
+F 0 "C3" H 4775 2300 50  0000 L CNN
+F 1 "0.1uF" H 4775 2100 50  0000 L CNN
+F 2 "footprints:C_0805_HandSoldering" H 4788 2050 50  0001 C CNN
+F 3 "" H 4750 2200 50  0001 C CNN
+	1    4750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2350 4050 2500
+Connection ~ 4050 2500
+Wire Wire Line
+	4750 2000 4750 2050
+Connection ~ 5050 2000
+Wire Wire Line
+	4750 2350 4750 2500
+Wire Wire Line
+	4750 2500 5050 2500
+Wire Wire Line
+	5050 2500 5050 2350
+Wire Wire Line
+	4050 2050 4050 2000
+Connection ~ 4050 2000
+Connection ~ 4400 2000
+Text Label 3750 2000 0    60   ~ 0
+VMTR
+Text Label 7450 3000 0    60   ~ 0
+A01
+Text Label 7450 3100 0    60   ~ 0
+A02
+$Comp
+L MCP3021-RESCUE-project U2
+U 1 1 5B9C1CBA
+P 7850 5450
+F 0 "U2" H 7550 5800 50  0000 L CNN
+F 1 "MCP3021" H 7900 5800 50  0000 L CNN
+F 2 "footprints:SOT-23-5" H 7850 5900 50  0001 C CNN
+F 3 "" H 7550 5800 50  0001 C CNN
+	1    7850 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR019
+U 1 1 5C815B29
+P 7850 5050
+F 0 "#PWR019" H 7850 4900 50  0001 C CNN
+F 1 "VCC" V 7850 5250 50  0000 C CNN
+F 2 "" H 7850 5050 50  0001 C CNN
+F 3 "" H 7850 5050 50  0001 C CNN
+	1    7850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 5C815C54
+P 7850 5900
+F 0 "#PWR020" H 7850 5650 50  0001 C CNN
+F 1 "GND" V 7850 5700 50  0000 C CNN
+F 2 "" H 7850 5900 50  0001 C CNN
+F 3 "" H 7850 5900 50  0001 C CNN
+	1    7850 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 5350 8450 5350
+Wire Wire Line
+	8250 5550 8450 5550
+Text Label 8300 5350 0    60   ~ 0
+SDA
+Text Label 8300 5550 0    60   ~ 0
+SCL
+Wire Wire Line
+	7450 5450 7400 5450
+Wire Wire Line
+	7400 5450 7400 5900
+Wire Wire Line
+	7400 5900 7850 5900
+Wire Wire Line
+	7850 5900 7850 5850
+$Comp
+L R R6
+U 1 1 5C817863
+P 4500 4050
+F 0 "R6" V 4580 4050 50  0000 C CNN
+F 1 "10K" V 4500 4050 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 4430 4050 50  0001 C CNN
+F 3 "" H 4500 4050 50  0001 C CNN
+	1    4500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 5C817869
+P 4700 4050
+F 0 "R7" V 4780 4050 50  0000 C CNN
+F 1 "10K" V 4700 4050 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 4630 4050 50  0001 C CNN
+F 3 "" H 4700 4050 50  0001 C CNN
+	1    4700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5C81786F
+P 4900 4050
+F 0 "R8" V 4980 4050 50  0000 C CNN
+F 1 "10K" V 4900 4050 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 4830 4050 50  0001 C CNN
+F 3 "" H 4900 4050 50  0001 C CNN
+	1    4900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3150 4900 3900
+Wire Wire Line
+	4700 3050 4700 3900
+Wire Wire Line
+	4500 2950 4500 3900
+Wire Wire Line
+	4500 4200 4500 4300
+Wire Wire Line
+	4900 4300 4900 4200
+Connection ~ 5100 4300
+Wire Wire Line
+	4700 4200 4700 4300
+Connection ~ 4900 4300
+Connection ~ 4700 4300
+Wire Wire Line
+	5300 4200 5300 4300
+Wire Wire Line
+	5000 4350 5000 4300
+Connection ~ 5000 4300
+$Comp
+L Conn_01x02 J5
+U 1 1 5C818051
+P 7950 3500
+F 0 "J5" H 7950 3300 50  0000 C CNN
+F 1 "Conn_01x02" H 7950 3300 50  0001 C CNN
+F 2 "footprints:terminal" H 7950 3500 50  0001 C CNN
+F 3 "" H 7950 3500 50  0001 C CNN
+	1    7950 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3350 6800 3350
+Connection ~ 6850 3600
+Wire Wire Line
+	6850 3700 6800 3700
+Wire Wire Line
+	6850 3500 7750 3500
+Connection ~ 6850 3450
+Connection ~ 6850 3100
+Connection ~ 6850 2950
+Wire Wire Line
+	6800 2850 6850 2850
+Wire Wire Line
+	6850 3200 6800 3200
+Text Label 7450 3500 0    60   ~ 0
+B01
+Text Label 7450 3600 0    60   ~ 0
+B02
+Text Label 5600 3050 0    60   ~ 0
+MISO
+Text Notes 7150 6400 0    60   ~ 0
+For board identification purposes only:\nMCP3021A0T-E/OT = IC2 0x48
+Wire Wire Line
+	6100 2000 6100 2350
+Text Notes 8100 3100 0    60   ~ 0
+MTR A
+Text Notes 8100 3600 0    60   ~ 0
+MTR B
+Text Notes 3200 2750 0    60   ~ 0
+6 - 15 VDC
+$EndSCHEMATC
