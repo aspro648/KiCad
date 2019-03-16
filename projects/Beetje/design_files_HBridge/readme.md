@@ -1,4 +1,4 @@
-Beetje HBridge
+Beetje H-Bridge
 
 ![Beetje Block](project.png) 
 
@@ -9,11 +9,16 @@ Bill Of Materials
 ----------------
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [project.kicad_pcb](project.kicad_pcb) file.
-- 1 ea., U1 TB6612FNG IC MOTOR DRIVER 2.7V-5.5V 24SSOP, https://www.digikey.com/short/pq0nth  
-- 2 ea., CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/pq0ncp 
-- 2 ea., CAP CER 10UF 25V 1206, https://www.digikey.com/short/j29pwm
+- 1 ea., U1 DRV8871 IC MOTOR DRIVER, https://www.digikey.com/short/p877rm 
+- 1 ea., U2 MCP2031 I2C ADC SO23-5, MCP3021A1T-E/OT (address 0x49) https://www.digikey.com/short/p877wq
+- 1 ea., CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/pq0ncp 
+- 1 ea., CAP 47UF 63V SMD 8.3mm, https://www.digikey.com/short/p87c9p
 - 1 ea., D6 LED SMD 0805, https://www.digikey.com/short/jwf4nw
-- 3 ea., R1 10K SMD 0805, https://www.digikey.com/short/j2d0w4 
+- 1 ea., R1 SMD 0805, Current limiting 
+	- 3.5A  18K Ohm, https://www.digikey.com/short/p8779m
+	- 3A 22K Ohm, https://www.digikey.com/short/p8779n
+	- 2A 33K Ohm, https://www.digikey.com/short/p87791
+	- 1A 62K Ohm, https://www.digikey.com/short/p877bq
 - 1 ea., R2 1K SMD 0805, https://www.digikey.com/short/j2d0wt
 - 2 ea., J1, J3 TERM BLOCK PCB 2POS 5.0MM GREEN, Phoenix 1935161 https://www.digikey.com/short/jnrmvw
 - 1 ea., 64-pin header(enough for 4.5 boards) Mill-max 311-43-164-41-001000, https://www.digikey.com/short/jnqdm2

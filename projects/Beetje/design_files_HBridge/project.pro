@@ -1,4 +1,4 @@
-update=3/6/2019 7:31:42 AM
+update=3/7/2019 5:19:10 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -75,3 +73,5 @@ LibName33=valves
 LibName34=lib_sch/mpxv7002
 LibName35=lib_sch/mcp3021
 LibName36=lib_sch/TB66212FNG
+[general]
+version=1
