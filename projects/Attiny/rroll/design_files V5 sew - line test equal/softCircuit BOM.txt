@@ -1,0 +1,14 @@
+
+
+Chirp V 0.1 Bill Of Materials
+=================
+  
+- 25 ea., ATTINY 85 SOIC8, ATMEL ATTINY85V-10SURCT-ND, http://www.digikey.com/short/3253mp
+- 25 ea., LED RED CLEAR 1206 SMD, LiteOn LTST-C150KRKT, https://www.digikey.com/short/pjq03m
+- 100 ea., RES SMD 100 OHM 5% 1/4W 1206, Panasonic ERJ-8GEYJ101V or equiv, https://www.digikey.com/short/pjq0q3
+- 25 ea., CAP CER 0.1UF 50V X7R 0805, Kemet C0805C104K5RACTU or equiv, https://www.digikey.com/short/pjq0qf
+- 100 ea., RES SMD 0 OHM JUMPER 1/8W 0805, Panasonic ERJ-6GEY0R00V or equiv, https://www.digikey.com/short/pjq0pj
+- 100 ea., RES SMD 0 OHM JUMPER 1/4W 1206, Panasonic ERJ-8GEY0R00V or equiv, https://www.digikey.com/short/pjq0zz
+- 25 ea., AUDIO PIEZO TRANSDUCER 12.5V SMD, Murata PKMCS0909E4000-R1, https://www.digikey.com/short/qjn4nh
+- 25 ea., SENSOR PHOTO 940NM TOP VIEW 1206, Everlight PT15-21C/TR8, https://www.digikey.com/short/pjqd07
+- 25 ea., BATTERY HOLDER COIN 20MM SMD, MPD BA2032SM, https://www.digikey.com/short/pjqdvt

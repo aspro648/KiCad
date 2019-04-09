@@ -1,0 +1,16 @@
+(module SewPad (layer F.Cu) (tedit 5C9A7292)
+  (descr "Through hole angled pin header, 1x01, 1.00mm pitch, 2.0mm pin length, single row")
+  (tags "Through hole angled pin header THT 1x01 1.00mm single row")
+  (fp_text reference REF** (at 0 -0.25) (layer F.SilkS) hide
+    (effects (font (size 0.5 0.5) (thickness 0.125)))
+  )
+  (fp_text value Pad (at 0 0.5) (layer F.Fab)
+    (effects (font (size 0.6 0.6) (thickness 0.15)))
+  )
+  (pad 1 smd circle (at 0 0) (size 2 2) (layers F.Cu F.Mask))
+  (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Angled_1x01_Pitch1.00mm.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)
