@@ -1,0 +1,226 @@
+EESchema Schematic File Version 2
+LIBS:project
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:badgelife_shitty_connector
+LIBS:project-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Tail lights"
+Date "2019-03-15"
+Rev ""
+Comp "www.MakersBox.us"
+Comment1 "648.ken@gmail.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 553FAE81
+P 2200 2100
+F 0 "#FLG01" H 2200 2195 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 2280 50  0000 C CNN
+F 2 "" H 2200 2100 60  0000 C CNN
+F 3 "" H 2200 2100 60  0000 C CNN
+	1    2200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 553FAEA5
+P 2650 2100
+F 0 "#FLG02" H 2650 2195 50  0001 C CNN
+F 1 "PWR_FLAG" H 2650 2280 50  0000 C CNN
+F 2 "" H 2650 2100 60  0000 C CNN
+F 3 "" H 2650 2100 60  0000 C CNN
+	1    2650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 553FAEE7
+P 2650 2200
+F 0 "#PWR03" H 2650 1950 50  0001 C CNN
+F 1 "GND" H 2650 2050 50  0000 C CNN
+F 2 "" H 2650 2200 60  0000 C CNN
+F 3 "" H 2650 2200 60  0000 C CNN
+	1    2650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR04
+U 1 1 553FAF12
+P 2200 2200
+F 0 "#PWR04" H 2200 2050 50  0001 C CNN
+F 1 "+BATT" H 2200 2340 50  0000 C CNN
+F 2 "" H 2200 2200 60  0000 C CNN
+F 3 "" H 2200 2200 60  0000 C CNN
+	1    2200 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 2100 2200 2200
+Wire Wire Line
+	2650 2100 2650 2200
+$Comp
+L GND #PWR05
+U 1 1 5C623CD0
+P 6700 4600
+F 0 "#PWR05" H 6700 4350 50  0001 C CNN
+F 1 "GND" H 6700 4450 50  0000 C CNN
+F 2 "" H 6700 4600 60  0000 C CNN
+F 3 "" H 6700 4600 60  0000 C CNN
+	1    6700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 5C8C3960
+P 5300 4100
+F 0 "D2" H 5300 4200 50  0000 C CNN
+F 1 "LED" H 5300 4000 50  0000 C CNN
+F 2 "footprints:LED-5630" H 5300 4100 50  0001 C CNN
+F 3 "" H 5300 4100 50  0000 C CNN
+	1    5300 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D1
+U 1 1 5C8C3984
+P 4800 4100
+F 0 "D1" H 4800 4200 50  0000 C CNN
+F 1 "LED" H 4800 4000 50  0000 C CNN
+F 2 "footprints:LED-5630" H 4800 4100 50  0001 C CNN
+F 3 "" H 4800 4100 50  0000 C CNN
+	1    4800 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5C8C398A
+P 4350 4100
+F 0 "R1" V 4430 4100 50  0000 C CNN
+F 1 "100" V 4350 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_2512" V 4280 4100 30  0001 C CNN
+F 3 "" H 4350 4100 30  0000 C CNN
+	1    4350 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 5C8C3990
+P 6300 4100
+F 0 "D4" H 6300 4200 50  0000 C CNN
+F 1 "LED" H 6300 4000 50  0000 C CNN
+F 2 "footprints:LED-5630" H 6300 4100 50  0001 C CNN
+F 3 "" H 6300 4100 50  0000 C CNN
+	1    6300 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 4100 6700 4600
+Wire Wire Line
+	4500 4100 4600 4100
+Wire Wire Line
+	5000 4100 5100 4100
+Wire Wire Line
+	5500 4100 5600 4100
+Wire Wire Line
+	6000 4100 6100 4100
+Wire Wire Line
+	6500 4100 6700 4100
+Connection ~ 6700 4100
+Wire Wire Line
+	3850 3850 3750 3850
+Connection ~ 3850 3700
+Wire Wire Line
+	3850 4100 4200 4100
+Connection ~ 3850 3850
+Wire Wire Line
+	3750 3950 3750 4400
+Wire Wire Line
+	3750 4400 6700 4400
+Connection ~ 6700 4400
+Text Notes 2400 5600 0    60   ~ 0
+https://www.digikey.com/product-detail/en/everlight-electronics-co-ltd/62-227ET-KK7D-3M5050X6Y62629U6-2T-EU/1080-1530-1-ND/7930865
+Text Notes 2400 5850 0    60   ~ 0
+https://www.digikey.com/product-detail/en/bourns-inc/CRM2512-JW-101ELF/CRM2512-JW-101ELFCT-ND/3767850
+$Comp
+L LED D3
+U 1 1 5C8C397E
+P 5800 4100
+F 0 "D3" H 5800 4200 50  0000 C CNN
+F 1 "LED" H 5800 4000 50  0000 C CNN
+F 2 "footprints:LED-5630" H 5800 4100 50  0001 C CNN
+F 3 "" H 5800 4100 50  0000 C CNN
+	1    5800 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 3300 3850 4100
+$Comp
+L +BATT #PWR06
+U 1 1 5C8C501D
+P 3850 3300
+F 0 "#PWR06" H 3850 3150 50  0001 C CNN
+F 1 "+BATT" H 3850 3440 50  0000 C CNN
+F 2 "" H 3850 3300 60  0000 C CNN
+F 3 "" H 3850 3300 60  0000 C CNN
+	1    3850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P1
+U 1 1 5C8C5369
+P 3550 3850
+F 0 "P1" H 3550 3950 50  0000 C CNN
+F 1 "CONN_01X01" V 3650 3850 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 3550 3850 50  0001 C CNN
+F 3 "" H 3550 3850 50  0000 C CNN
+	1    3550 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 5C8C56A2
+P 3550 3950
+F 0 "P2" H 3550 4050 50  0000 C CNN
+F 1 "CONN_01X01" V 3650 3950 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 3550 3950 50  0001 C CNN
+F 3 "" H 3550 3950 50  0000 C CNN
+	1    3550 3950
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

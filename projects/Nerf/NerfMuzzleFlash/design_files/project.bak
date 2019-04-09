@@ -1,0 +1,263 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:project
+LIBS:switches
+LIBS:project-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D2
+U 1 1 5CA67C4A
+P 6000 2950
+F 0 "D2" H 6000 3050 50  0000 C CNN
+F 1 "LED" H 6000 2850 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 6000 2950 50  0001 C CNN
+F 3 "" H 6000 2950 50  0001 C CNN
+	1    6000 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 5CA67CC7
+P 5700 2950
+F 0 "R2" V 5780 2950 50  0000 C CNN
+F 1 "100" V 5700 2950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5630 2950 50  0001 C CNN
+F 3 "" H 5700 2950 50  0001 C CNN
+	1    5700 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 2950 5550 2950
+Wire Wire Line
+	6150 2950 6550 2950
+$Comp
+L LED D1
+U 1 1 5CABBDF8
+P 6000 3300
+F 0 "D1" H 6000 3400 50  0000 C CNN
+F 1 "LED" H 6000 3200 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 6000 3300 50  0001 C CNN
+F 3 "" H 6000 3300 50  0001 C CNN
+	1    6000 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5CABBDFE
+P 5700 3300
+F 0 "R1" V 5780 3300 50  0000 C CNN
+F 1 "100" V 5700 3300 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5630 3300 50  0001 C CNN
+F 3 "" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3300 5550 3300
+Wire Wire Line
+	6150 3300 6550 3300
+$Comp
+L LED D3
+U 1 1 5CABBED5
+P 6000 3650
+F 0 "D3" H 6000 3750 50  0000 C CNN
+F 1 "LED" H 6000 3550 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 6000 3650 50  0001 C CNN
+F 3 "" H 6000 3650 50  0001 C CNN
+	1    6000 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 5CABBEDB
+P 5700 3650
+F 0 "R3" V 5780 3650 50  0000 C CNN
+F 1 "100" V 5700 3650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5630 3650 50  0001 C CNN
+F 3 "" H 5700 3650 50  0001 C CNN
+	1    5700 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3650 5550 3650
+Wire Wire Line
+	6550 3650 6150 3650
+$Comp
+L LED D4
+U 1 1 5CABBEE3
+P 6000 4000
+F 0 "D4" H 6000 4100 50  0000 C CNN
+F 1 "LED" H 6000 3900 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 6000 4000 50  0001 C CNN
+F 3 "" H 6000 4000 50  0001 C CNN
+	1    6000 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 5CABBEE9
+P 5700 4000
+F 0 "R4" V 5780 4000 50  0000 C CNN
+F 1 "100" V 5700 4000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5630 4000 50  0001 C CNN
+F 3 "" H 5700 4000 50  0001 C CNN
+	1    5700 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 4000 5550 4000
+Wire Wire Line
+	6550 4000 6150 4000
+$Comp
+L LED D5
+U 1 1 5CABBFB7
+P 6000 4350
+F 0 "D5" H 6000 4450 50  0000 C CNN
+F 1 "LED" H 6000 4250 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 6000 4350 50  0001 C CNN
+F 3 "" H 6000 4350 50  0001 C CNN
+	1    6000 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 5CABBFBD
+P 5700 4350
+F 0 "R5" V 5780 4350 50  0000 C CNN
+F 1 "100" V 5700 4350 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5630 4350 50  0001 C CNN
+F 3 "" H 5700 4350 50  0001 C CNN
+	1    5700 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 4350 5550 4350
+Wire Wire Line
+	6550 4350 6150 4350
+$Comp
+L GND #PWR01
+U 1 1 5CABBC6F
+P 6550 4600
+F 0 "#PWR01" H 6550 4350 50  0001 C CNN
+F 1 "GND" H 6550 4450 50  0000 C CNN
+F 2 "" H 6550 4600 50  0001 C CNN
+F 3 "" H 6550 4600 50  0001 C CNN
+	1    6550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2950 6550 4600
+Connection ~ 6550 3300
+Connection ~ 6550 3650
+Connection ~ 6550 4000
+Connection ~ 6550 4350
+Text Notes 3550 5400 0    60   ~ 0
+https://www.digikey.com/product-detail/en/microchip-technology/TN0702N3-G/TN0702N3-G-ND/4902376\n
+Wire Wire Line
+	5250 2800 5250 4350
+Connection ~ 5250 2950
+Connection ~ 5250 4000
+Connection ~ 5250 3650
+Connection ~ 5250 3300
+$Comp
+L CONN_01X03 J1
+U 1 1 5CABC6A6
+P 4300 2550
+F 0 "J1" H 4300 2750 50  0000 C CNN
+F 1 "CONN_01X03" V 4400 2550 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4300 2550 50  0001 C CNN
+F 3 "" H 4300 2550 50  0001 C CNN
+	1    4300 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2250 5250 2250
+Wire Wire Line
+	5250 2250 5250 2400
+Wire Wire Line
+	4500 2650 4950 2650
+Wire Wire Line
+	4650 2550 4650 4550
+Wire Wire Line
+	4650 4550 6550 4550
+Connection ~ 6550 4550
+$Comp
+L R R6
+U 1 1 5CABCBFF
+P 4850 2950
+F 0 "R6" V 4930 2950 50  0000 C CNN
+F 1 "10K" V 4850 2950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4780 2950 50  0001 C CNN
+F 3 "" H 4850 2950 50  0001 C CNN
+	1    4850 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 2800 4850 2650
+Connection ~ 4850 2650
+Wire Wire Line
+	4850 3100 4850 3400
+Wire Wire Line
+	4850 3400 4650 3400
+Connection ~ 4650 3400
+$Comp
+L TN0702 Q1
+U 1 1 5CABD429
+P 5150 2600
+F 0 "Q1" H 5350 2675 50  0000 L CNN
+F 1 "TN0702" H 5350 2600 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 5350 2525 50  0001 L CIN
+F 3 "" H 5150 2600 50  0001 L CNN
+	1    5150 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2550 4500 2550
+Wire Wire Line
+	4500 2450 4650 2450
+Wire Wire Line
+	4650 2450 4650 2250
+Text Notes 4150 2700 0    60   ~ 0
++\n-\nS
+$EndSCHEMATC
