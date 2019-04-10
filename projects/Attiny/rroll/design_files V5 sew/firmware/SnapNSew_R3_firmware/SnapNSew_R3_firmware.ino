@@ -42,12 +42,12 @@ volatile boolean watchdog_flag = true;
 // Pins are different between Arduino and Attiny
 #if defined(__AVR_ATtiny85__)
   #define ARDUINO 0
-  #define buzzerPin 1 
+  #define buzzerPin 0 
   #define ledPin 4     
-  #define lightPin 0    // CdS or pushbutton hooked from PB4 (Pin 3, A2/D4) to ground
-  #define lightPullUp 0
-  #define touchPin 3
-  #define touchPullUp 3
+  #define lightPin 3    // CdS or pushbutton hooked from PB4 (Pin 3, A2/D4) to ground
+  #define lightPullUp 3
+  #define touchPin 1
+  #define touchPullUp 2
 #else  
   #define ARDUINO 1
   #define buzzerPin 11
