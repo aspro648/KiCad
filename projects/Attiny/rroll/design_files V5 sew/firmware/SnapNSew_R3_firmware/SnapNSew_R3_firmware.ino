@@ -43,9 +43,9 @@ volatile boolean watchdog_flag = true;
 #if defined(__AVR_ATtiny85__)
   #define ARDUINO 0
   #define buzzerPin 0 
-  #define ledPin 4     
-  #define lightPin 3    // CdS or pushbutton hooked from PB4 (Pin 3, A2/D4) to ground
-  #define lightPullUp 3
+  #define ledPin 1     
+  #define lightPin 2    // CdS or pushbutton hooked from PB4 (Pin 3, A2/D4) to ground
+  #define lightPullUp 4
   #define touchPin 1
   #define touchPullUp 2
 #else  
@@ -131,7 +131,7 @@ const char song3[] PROGMEM = "Happy Birthday:d=4,o=5,b=125:8g.,16g,a,g,c6,2b,8g.
 
 int on_time = 10;  // in seconds
 const int touch_level = 980; 
-float light_trigger = 0.1; // light change for trigger
+float light_trigger = 0.2; // light change for trigger
 
 void setup(){
   #if (ARDUINO)
