@@ -1,10 +1,10 @@
 /*
 
 M0 is faster 48 Mhz verse 16 Mhz
-All pins can be interupts (only 2 on a 328 and 5 on a 32U4
-Allows us to do analogRead on interupt pin for troubleshooting
+All pins can be interupts (compare to only 2 on a 328 and 5 on a 32U4)
+Allows us to do analogRead() on interupt pin for troubleshooting
+
 */
- 
 
 
 #include <Wire.h> // Enable this line if using Arduino Uno, Mega, etc.
@@ -18,80 +18,60 @@ Allows us to do analogRead on interupt pin for troubleshooting
 
 Adafruit_7segment matrix = Adafruit_7segment();
 
-
 int led = 13;
-int pin1 = A4;
-int pin2 = A3;
-int buttonPin = 4;
-long t1 = 0;
-long t2 = 0;
-bool flag = false;  // value to print
-int shot = 0;
-float trapDist = 26; // mm
-long interval;  // us between trap catches
-float speed = 0;
+int sensor1pin = A4;
+int sensor2pin = A3;
+int buttonPin = 12;
+int shot_count = 0;
+long time1_us = 0;
+long time2_us = 0;
+long interval_us;       // flight time between sensors
+float trapDist_mm = 26; // mm
+float speed_fps = 0;    // feet per second
+float speed_mps = 0;    // meters per second
+float speed_mph = 0;    // miles per hour
+bool flag = false;      // dart passes second sensor
 
 
-/*
-void pciSetup(byte pin){
-  // https://playground.arduino.cc/Main/PinChangeInterrupt/
-    *digitalPinToPCMSK(pin) |= bit (digitalPinToPCMSKbit(pin));  // enable pin
-    PCIFR  |= bit (digitalPinToPCICRbit(pin)); // clear any outstanding interrupt
-    PCICR  |= bit (digitalPinToPCICRbit(pin)); // enable interrupt for the group
-}
-
-
-ISR (PCINT0_vect){  // handle pin change interrupt for D8 to D13 here  
-   if(!digitalRead(8)){
-    shot = 0;
-    speed = 0;
-   }
- }
-*/
-
-void setup() {       
-           
+void setup() {                  
   matrix.begin(0x70);
-  matrix.setBrightness(6);
+  matrix.setBrightness(10); // Sets the display brightness with a value between 0 and 15
   pinMode(led, OUTPUT);     
-  pinMode(pin1, INPUT);
-  pinMode(pin2, INPUT);
+  pinMode(sensor1pin, INPUT);
+  pinMode(sensor2pin, INPUT);
   pinMode(buttonPin, INPUT_PULLUP);
-  attachInterrupt(pin1, trap1, RISING);
-  attachInterrupt(pin2, trap2, RISING);
-  attachInterrupt(buttonPin, buttonPress, FALLING);
-  //pciSetup(8);
+  attachInterrupt(sensor1pin, sensor1_interrupt, RISING);
+  attachInterrupt(sensor2pin, sensor2_interrupt, RISING);
+  attachInterrupt(buttonPin, button_interrupt, FALLING);
   Serial.begin(9600);
   Serial.println("Nerf Chronos, waiting for shot . . .");
-    
 }
 
 
-void trap1(){
-  t1 = micros();
+void sensor1_interrupt(){
+  time1_us = micros();
 }
 
 
-void trap2(){
-  t2 = micros();
+void sensor2_interrupt(){
+  time2_us = micros();
   flag = true;
 }
 
 
-void buttonPress(){
-   if(!digitalRead(buttonPin)){
-    shot = 0;
-    speed = 0;
-   }
+void button_interrupt(){
+  shot_count = 0;
+  speed_fps = 0;
 }
 
 
 void loop() {
   if (flag){ // traps detected a pass
-    shot += 1;
-    interval = t2 - t1;
-    speed = trapDist / interval / 25.4 / 12 * 1E+6; // fps
-
+    shot_count += 1;
+    interval_us = time2_us - time1_us;
+    speed_fps = trapDist_mm / interval_us / 25.4 / 12 * 1E+6; // feet per second
+    speed_mps = trapDist_mm / interval_us / 1000 * 1E+6;      // meter per second
+    speed_mph = trapDist_mm / interval_us / 25.4 / 12 * 1E+6 / 5280 * 3600; // miles per hour
     /*
     // speed test M0 micros() = 1us, digitalRead() = 1us
     //           328 micros() = 2us, digitalRead() = 5us
@@ -106,49 +86,45 @@ void loop() {
     */
     
     
-    if (speed > 0){
-      Serial.print("Shot ");
-      Serial.print(shot);
+    if (speed_fps > 0){
+      Serial.print("Shot #");
+      Serial.print(shot_count);
       Serial.print("  ");
-      //Serial.print(float(interval) / 1000, 1);
-      //Serial.print(" ms  ");
-      Serial.print(interval);
+      Serial.print(interval_us);
       Serial.print(" us  ");
-      Serial.print(speed, 1);
-      Serial.println(" fps");
-      //matrix.print(speed);
-      //matrix.writeDisplay();
+      Serial.print(speed_fps, 1);
+      Serial.print(" fps  ");
+      Serial.print(speed_mps, 1);
+      Serial.print(" m/s  ");
+      Serial.print(speed_mph, 1);
+      Serial.println(" mph  "); 
     }
     else{ // bad data or backward traps
-      Serial.println(interval);
+      Serial.println(interval_us);
     }
-   
     flag = false;
   }
+  
   if ((millis() / 1000 )%2){
-
-      if(speed ==0){
-        matrix.writeDigitRaw(0, B1000000); // dash
-        matrix.writeDigitRaw(1, B1000000);
-        matrix.writeDigitRaw(3, B1000000);
-        matrix.writeDigitRaw(4, B1000000);
-      }
-      else{
-        matrix.print(speed, 1); 
-       
-      }
+    if(speed_fps ==0){ // flash dashes until first shot detected
+      matrix.writeDigitRaw(0, B1000000); 
+      matrix.writeDigitRaw(1, B1000000);
+      matrix.writeDigitRaw(3, B1000000);
+      matrix.writeDigitRaw(4, B1000000);
+    }
+    else{ // pick units of measure to display, comment out others
+      matrix.print(speed_fps, 1);   
+      //matrix.print(speed_mps, 1); 
+      //matrix.print(speed_mph, 1);           
+    }
   }
   else{
-      if(speed ==0){
-        matrix.writeDigitRaw(0, B0000000);
-        matrix.writeDigitRaw(1, B0000000);
-        matrix.writeDigitRaw(3, B0000000);
-        matrix.writeDigitRaw(4, B0000000);
-      }
-      else{
-        matrix.print(shot);    
-      }
+    if(speed_fps == 0){
+      matrix.clear();  // clear dashes
+    }
+    else{
+      matrix.print(shot_count);    
+    }
   }
-
   matrix.writeDisplay();
 }

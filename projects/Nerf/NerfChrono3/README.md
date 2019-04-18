@@ -35,6 +35,9 @@ Optional:
 - 1 ea., 6mm SWITCH TACTILE SPST-NO 0.05A 24V, https://www.digikey.com/short/pph9np
 - 1 ea., SWITCH SLIDE SPDT 200MA 30V
 - 3 ea., AAA batteries
+- 6 ea., srew
+    - M3 x 6mm rounded head screw, https://www.mcmaster.com/#92005a116/=19rb37d or
+	- #2 x 1/4 thread forming screw, https://www.mcmaster.com/#90380a005/=19o9cmt
 
 Misc:
 
