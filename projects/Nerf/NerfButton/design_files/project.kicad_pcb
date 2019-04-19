@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.6)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
     (links 4)
     (no_connects 0)
-    (area 140.894999 100.254999 153.745001 113.105001)
+    (area 130.274287 93.82 153.75 113.105001)
     (thickness 1.6)
     (drawings 14)
     (tracks 7)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.4064)
+    (last_trace_width 0.25)
     (user_trace_width 0.4064)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -65,8 +65,8 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
-      (usegerberextensions false)
+      (layerselection 0x010f0_80000001)
+      (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -86,9 +86,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory gerbers))
   )
 
   (net 0 "")
@@ -232,12 +232,12 @@
   (gr_arc (start 151.13 110.49) (end 153.67 110.49) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 151.13 102.87) (end 151.13 100.33) (angle 90) (layer Edge.Cuts) (width 0.15))
 
-  (segment (start 145.034 103.355) (end 145.034 109.855) (width 0.4064) (layer B.Cu) (net 1) (status C00000))
-  (segment (start 142.875 105.41) (end 144.145 105.41) (width 0.4064) (layer F.Cu) (net 1) (status 400000))
-  (segment (start 145.034 104.521) (end 145.034 103.355) (width 0.4064) (layer F.Cu) (net 1) (tstamp 5CAD09B0) (status 800000))
+  (segment (start 145.034 103.355) (end 145.034 109.855) (width 0.4064) (layer B.Cu) (net 1))
+  (segment (start 142.875 105.41) (end 144.145 105.41) (width 0.4064) (layer F.Cu) (net 1))
+  (segment (start 145.034 104.521) (end 145.034 103.355) (width 0.4064) (layer F.Cu) (net 1) (tstamp 5CAD09B0))
   (segment (start 144.145 105.41) (end 145.034 104.521) (width 0.4064) (layer F.Cu) (net 1) (tstamp 5CAD09AF))
-  (segment (start 149.534 103.355) (end 149.534 109.855) (width 0.4064) (layer B.Cu) (net 2) (status C00000))
-  (segment (start 142.875 107.95) (end 147.629 107.95) (width 0.4064) (layer F.Cu) (net 2) (status 400000))
-  (segment (start 147.629 107.95) (end 149.534 109.855) (width 0.4064) (layer F.Cu) (net 2) (tstamp 5CAD09B3) (status 800000))
+  (segment (start 149.534 103.355) (end 149.534 109.855) (width 0.4064) (layer B.Cu) (net 2))
+  (segment (start 142.875 107.95) (end 147.629 107.95) (width 0.4064) (layer F.Cu) (net 2))
+  (segment (start 147.629 107.95) (end 149.534 109.855) (width 0.4064) (layer F.Cu) (net 2) (tstamp 5CAD09B3))
 
 )
