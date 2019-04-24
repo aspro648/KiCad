@@ -1,0 +1,342 @@
+EESchema Schematic File Version 2
+LIBS:project
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:project-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D2
+U 1 1 5CA67C4A
+P 6000 2650
+F 0 "D2" H 6000 2750 50  0000 C CNN
+F 1 "LED" H 6000 2550 50  0000 C CNN
+F 2 "footprints:LED_D5.0mmCentered" H 6000 2650 50  0001 C CNN
+F 3 "" H 6000 2650 50  0001 C CNN
+	1    6000 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 5CA67CC7
+P 5700 2650
+F 0 "R2" V 5780 2650 50  0000 C CNN
+F 1 "*R" V 5700 2650 50  0000 C CNN
+F 2 "footprints:R_Axial_P5.08mm" V 5630 2650 50  0001 C CNN
+F 3 "" H 5700 2650 50  0001 C CNN
+	1    5700 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 2650 5550 2650
+Wire Wire Line
+	6150 2650 6550 2650
+$Comp
+L LED D1
+U 1 1 5CABBDF8
+P 6000 3000
+F 0 "D1" H 6000 3100 50  0000 C CNN
+F 1 "LED" H 6000 2900 50  0000 C CNN
+F 2 "footprints:LED_D5.0mmCentered" H 6000 3000 50  0001 C CNN
+F 3 "" H 6000 3000 50  0001 C CNN
+	1    6000 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5CABBDFE
+P 5700 3000
+F 0 "R1" V 5780 3000 50  0000 C CNN
+F 1 "*R" V 5700 3000 50  0000 C CNN
+F 2 "footprints:R_Axial_P5.08mm" V 5630 3000 50  0001 C CNN
+F 3 "" H 5700 3000 50  0001 C CNN
+	1    5700 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3000 5550 3000
+Wire Wire Line
+	6550 3000 6150 3000
+$Comp
+L LED D3
+U 1 1 5CABBED5
+P 6000 3350
+F 0 "D3" H 6000 3450 50  0000 C CNN
+F 1 "LED" H 6000 3250 50  0000 C CNN
+F 2 "footprints:LED_D5.0mmCentered" H 6000 3350 50  0001 C CNN
+F 3 "" H 6000 3350 50  0001 C CNN
+	1    6000 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 5CABBEDB
+P 5700 3350
+F 0 "R3" V 5780 3350 50  0000 C CNN
+F 1 "*R" V 5700 3350 50  0000 C CNN
+F 2 "footprints:R_Axial_P5.08mm" V 5630 3350 50  0001 C CNN
+F 3 "" H 5700 3350 50  0001 C CNN
+	1    5700 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3350 5550 3350
+Wire Wire Line
+	6550 3350 6150 3350
+$Comp
+L LED D4
+U 1 1 5CABBEE3
+P 6000 3700
+F 0 "D4" H 6000 3800 50  0000 C CNN
+F 1 "LED" H 6000 3600 50  0000 C CNN
+F 2 "footprints:LED_D5.0mmCentered" H 6000 3700 50  0001 C CNN
+F 3 "" H 6000 3700 50  0001 C CNN
+	1    6000 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 5CABBEE9
+P 5700 3700
+F 0 "R4" V 5780 3700 50  0000 C CNN
+F 1 "*R" V 5700 3700 50  0000 C CNN
+F 2 "footprints:R_Axial_P5.08mm" V 5630 3700 50  0001 C CNN
+F 3 "" H 5700 3700 50  0001 C CNN
+	1    5700 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3700 5550 3700
+Wire Wire Line
+	6550 3700 6150 3700
+$Comp
+L LED D5
+U 1 1 5CABBFB7
+P 6000 4050
+F 0 "D5" H 6000 4150 50  0000 C CNN
+F 1 "LED" H 6000 3950 50  0000 C CNN
+F 2 "footprints:LED_D5.0mmCentered" H 6000 4050 50  0001 C CNN
+F 3 "" H 6000 4050 50  0001 C CNN
+	1    6000 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 5CABBFBD
+P 5700 4050
+F 0 "R5" V 5780 4050 50  0000 C CNN
+F 1 "*R" V 5700 4050 50  0000 C CNN
+F 2 "footprints:R_Axial_P5.08mm" V 5630 4050 50  0001 C CNN
+F 3 "" H 5700 4050 50  0001 C CNN
+	1    5700 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 4050 5550 4050
+Wire Wire Line
+	6550 4050 6150 4050
+$Comp
+L GND #PWR01
+U 1 1 5CABBC6F
+P 6550 4600
+F 0 "#PWR01" H 6550 4350 50  0001 C CNN
+F 1 "GND" H 6550 4450 50  0000 C CNN
+F 2 "" H 6550 4600 50  0001 C CNN
+F 3 "" H 6550 4600 50  0001 C CNN
+	1    6550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2650 6550 4100
+Connection ~ 6550 3000
+Connection ~ 6550 3350
+Connection ~ 6550 3700
+Connection ~ 6550 4050
+Text Notes 3550 5400 0    60   ~ 0
+https://www.digikey.com/product-detail/en/microchip-technology/TN0702N3-G/TN0702N3-G-ND/4902376\n
+Wire Wire Line
+	5250 2100 5250 4050
+Connection ~ 5250 2650
+Connection ~ 5250 3700
+Connection ~ 5250 3350
+Connection ~ 5250 3000
+Wire Wire Line
+	4650 2250 5500 2250
+Wire Wire Line
+	4500 2650 5050 2650
+Wire Wire Line
+	4650 2550 4650 4550
+Wire Wire Line
+	4650 4550 6550 4550
+Connection ~ 6550 4550
+$Comp
+L R R8
+U 1 1 5CABCBFF
+P 4850 2950
+F 0 "R8" V 4930 2950 50  0000 C CNN
+F 1 "10K" V 4850 2950 50  0000 C CNN
+F 2 "footprints:R_Axial_P5.08mm" V 4780 2950 50  0001 C CNN
+F 3 "" H 4850 2950 50  0001 C CNN
+	1    4850 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 2800 4850 2650
+Connection ~ 4850 2650
+Wire Wire Line
+	4850 3100 4850 3400
+Wire Wire Line
+	4850 3400 4650 3400
+Connection ~ 4650 3400
+$Comp
+L TN0702 Q1
+U 1 1 5CABD429
+P 6450 4300
+F 0 "Q1" H 6650 4375 50  0000 L CNN
+F 1 "TN0702" H 6650 4300 50  0000 L CNN
+F 2 "footprints:TO-92_Inline_Wide" H 6650 4225 50  0001 L CIN
+F 3 "" H 6450 4300 50  0001 L CNN
+	1    6450 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2550 4500 2550
+Wire Wire Line
+	4500 2450 4650 2450
+Wire Wire Line
+	4650 2450 4650 2250
+Text Notes 4150 2750 0    60   ~ 0
++\n-\nS\nG
+Text Notes 7100 3650 0    60   ~ 0
+*R based on 3Vf, 20mA:\n  - 3.7V (1S) = 39 ohm\n  - 4.5V (3AA) = 82 ohm\n  - 7.2V (2S) = 220 ohm \n  - 11V (3S) = 470 ohm
+$Comp
+L CONN_01X04 J1
+U 1 1 5CBE2FDB
+P 4300 2600
+F 0 "J1" H 4300 2850 50  0000 C CNN
+F 1 "CONN_01X04" V 4400 2600 50  0001 C CNN
+F 2 "footprints:Pin_Header_Straight_1x04_Pitch2.54mm" H 4300 2600 50  0001 C CNN
+F 3 "" H 4300 2600 50  0001 C CNN
+	1    4300 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5CBE31F3
+P 5650 2250
+F 0 "R6" V 5730 2250 50  0000 C CNN
+F 1 "100" V 5650 2250 50  0000 C CNN
+F 2 "footprints:R_Axial_P5.08mm" V 5580 2250 50  0001 C CNN
+F 3 "" H 5650 2250 50  0001 C CNN
+	1    5650 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 5CBE32F4
+P 5950 2250
+F 0 "D6" H 5950 2350 50  0000 C CNN
+F 1 "IR" H 5950 2150 50  0000 C CNN
+F 2 "footprints:LED_IR_SQUARE" H 5950 2250 50  0001 C CNN
+F 3 "" H 5950 2250 50  0001 C CNN
+	1    5950 2250
+	-1   0    0    1   
+$EndComp
+Connection ~ 5250 2250
+Connection ~ 6550 2650
+$Comp
+L Q_Photo_NPN Q2
+U 1 1 5CBE38B4
+P 5750 1850
+F 0 "Q2" V 5950 1900 50  0000 L CNN
+F 1 "Q_Photo_NPN" V 5700 1250 50  0000 L CNN
+F 2 "footprints:PHOTOTRANS" H 5950 1950 50  0001 C CNN
+F 3 "" H 5750 1850 50  0001 C CNN
+	1    5750 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 5CBE3A44
+P 5250 1950
+F 0 "R7" V 5330 1950 50  0000 C CNN
+F 1 "10K" V 5250 1950 50  0000 C CNN
+F 2 "footprints:R_Axial_P5.08mm" V 5180 1950 50  0001 C CNN
+F 3 "" H 5250 1950 50  0001 C CNN
+	1    5250 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5250 1800 5250 1750
+Wire Wire Line
+	4550 1750 5550 1750
+Wire Wire Line
+	5950 1750 6550 1750
+Wire Wire Line
+	4550 2750 4500 2750
+Wire Wire Line
+	4550 1750 4550 2750
+Connection ~ 5250 1750
+Wire Wire Line
+	6100 2250 6550 2250
+Wire Wire Line
+	6550 4500 6550 4600
+Wire Wire Line
+	6250 4350 5050 4350
+Wire Wire Line
+	5050 4350 5050 2650
+$Comp
+L GND #PWR02
+U 1 1 5CBF505A
+P 6550 2350
+F 0 "#PWR02" H 6550 2100 50  0001 C CNN
+F 1 "GND" H 6550 2200 50  0000 C CNN
+F 2 "" H 6550 2350 50  0001 C CNN
+F 3 "" H 6550 2350 50  0001 C CNN
+	1    6550 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1750 6550 2350
+Connection ~ 6550 2250
+$EndSCHEMATC
