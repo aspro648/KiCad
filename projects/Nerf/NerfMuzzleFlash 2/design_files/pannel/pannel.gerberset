@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GerberLayoutSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LoadedOutlines>
+    <string>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\NerfMuzzleFlash 2\design_files\gerbers\muzzleFlash.zip</string>
+    <string>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\NerfButton - Copy\design_files\gerbers\switch.zip</string>
+    <string>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\NerfSwitch\design_files\gerbers\switch.zip</string>
+  </LoadedOutlines>
+  <Instances>
+    <GerberInstance>
+      <Center>
+        <X>-145</X>
+        <Y>166</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\NerfMuzzleFlash 2\design_files\gerbers\muzzleFlash.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-130.5</X>
+        <Y>186</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\NerfButton - Copy\design_files\gerbers\switch.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-118.9</X>
+        <Y>186</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\NerfSwitch\design_files\gerbers\switch.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+  </Instances>
+  <Tabs>
+    <BreakTab>
+      <Center>
+        <X>34.7857132</X>
+        <Y>79.57143</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>9.071427</X>
+        <Y>79.67857</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>22.0357132</X>
+        <Y>79.46429</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+  </Tabs>
+  <Width>100</Width>
+  <Height>100</Height>
+  <MarginBetweenBoards>2</MarginBetweenBoards>
+  <ConstructNegativePolygon>false</ConstructNegativePolygon>
+  <FillOffset>3</FillOffset>
+  <Smoothing>1</Smoothing>
+  <ExtraTabDrillDistance>0</ExtraTabDrillDistance>
+  <ClipToOutlines>true</ClipToOutlines>
+  <LastExportFolder>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\NerfMuzzleFlash 2\design_files\pannel</LastExportFolder>
+  <DoNotGenerateMouseBites>false</DoNotGenerateMouseBites>
+</GerberLayoutSet>
