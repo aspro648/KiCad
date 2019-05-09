@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP QRE1113
-D DC Optocoupler, Vce 70V, CTR 50-600% @ 5mA, Viso 5000Vrms, DIP4
-K NPN DC Optocoupler
-F http://www.vishay.com/docs/81753/vo615a.pdf
-$ENDCMP
-#
-#End Doc Library

@@ -11,7 +11,7 @@ Bill Of Materials
 - 1 ea., Q1 MOSFET N-CH 20V 530MA TO92-3, Microchip TN0702N3-G, https://www.digikey.com/short/pjvt3t
 - 5 ea., White 5mm LED, large viewing angle, high intensity, https://www.digikey.com/short/pjvt8v
 - 5 ea., 39 ohm 1/8W 5% current limiting resistors, based on 3Vf, 20mA:
-- 1 ea., 10K 1/8W 5% pulldown resistor
+- 1 ea., 10K 1/8W 5% pulldown resistor, https://www.digikey.com/short/7thw1q
 - 1 ea. Photo Transistor, [Everlight PT928-6B-F](https://www.digikey.com/short/qtrp5m)
 - 1 ea. IR Emitter, [Everlight IR928-6C-F](https://www.digikey.com/short/jzr3b8)
 - 1 ea. 100 ohm resistor 1/8W 5%, [Stackpole CF18JT100R](https://www.digikey.com/short/q72818)
