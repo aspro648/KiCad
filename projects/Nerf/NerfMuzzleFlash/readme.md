@@ -15,7 +15,7 @@ Bill Of Materials
   - 4.5V (3AA) = 82 ohm
   - 7.2V (2S) = 220 ohm 
   - 11V (3S) = 470 ohm
-- 1 ea., 10K pulldown resistor
+- 1 ea., 10K pulldown resistor, https://www.digikey.com/short/7thw1q
 
 
 Revisions
