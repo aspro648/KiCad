@@ -27,7 +27,7 @@ int shot_count = 0;
 long time1_us = 0;
 long time2_us = 0;
 long interval_us;       // flight time between sensors
-float trapDist_mm = 75; // mm
+float trapDist_mm = 72; // mm
 float speed_fps = 0;    // feet per second
 float speed_mps = 0;    // meters per second
 float speed_mph = 0;    // miles per hour
