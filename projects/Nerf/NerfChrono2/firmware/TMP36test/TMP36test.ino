@@ -27,7 +27,7 @@ int reading = 0;
 Serial.println(reading);
  
  // converting that reading to voltage, for 3.3v arduino use 3.3
- float voltage = reading / 1023.0 * 5 ;
+ float voltage = reading / 1023.0 * 3.3 ;
  
  // print out the voltage
  Serial.print(voltage); Serial.println(" volts");
