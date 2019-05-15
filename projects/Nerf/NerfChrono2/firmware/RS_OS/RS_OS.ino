@@ -44,7 +44,7 @@ bool flag2 = false;
 long nextTime = 0;
 float vcc = 3.3;
 float voltage = 0;
-float vd_factor = 10.7;
+float vd_factor = 10.75;
 float temperatureC;
 int rpm = 0;
 int screen = 0;
@@ -86,8 +86,8 @@ void setup() {
   
   attachInterrupt(sensorPin, sensor_interrupt, CHANGE);
   attachInterrupt(flyWheelPin, flywheel_interrupt, FALLING);
-  attachInterrupt(buttonPin1, button_interrupt1, FALLING);
-  attachInterrupt(buttonPin3, button_interrupt3, FALLING);
+  attachInterrupt(buttonPin1, button_reset, FALLING);
+  attachInterrupt(buttonPin3, button_screen, FALLING);
   //pciSetup(sensorPin);
   //pciSetup(buttonPin);
   //pciSetup(flyWheelPin);
@@ -136,14 +136,14 @@ void flywheel_interrupt(){
 }
 
 
-void button_interrupt1(){        // reset shot count (clip reload)
+void button_reset(){        // reset shot count (clip reload)
   shot_count = 0;
   speed_fps = 0;
   interval_total_us = 0;
 }
 
 
-void button_interrupt3(){        // reset shot count (clip reload)
+void button_screen(){        // advance through screens
   screen += 1;
   if (screen > 2){
     screen =0;
