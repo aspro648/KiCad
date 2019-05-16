@@ -9,20 +9,48 @@ Allows us to do analogRead() on interupt pin for troubleshooting
 
 #include <Wire.h> // Enable this line if using Arduino Uno, Mega, etc.
 #include <Adafruit_GFX.h>
-#include "Adafruit_LEDBackpack.h"
+#include <Adafruit_SSD1306.h>
 
 #if defined(ARDUINO_SAMD_ZERO) && defined(SERIAL_PORT_USBVIRTUAL)
   // Required for Serial on Zero based boards
   #define Serial SERIAL_PORT_USBVIRTUAL
 #endif
 
-Adafruit_7segment matrix = Adafruit_7segment();
+#define OLED_RESET 4
+Adafruit_SSD1306 display(OLED_RESET);
+
+#define LOGO16_GLCD_HEIGHT 16 
+#define LOGO16_GLCD_WIDTH  16 
+static const unsigned char PROGMEM logo16_glcd_bmp[] =
+{ B00000000, B11000000,
+  B00000001, B11000000,
+  B00000001, B11000000,
+  B00000011, B11100000,
+  B11110011, B11100000,
+  B11111110, B11111000,
+  B01111110, B11111111,
+  B00110011, B10011111,
+  B00011111, B11111100,
+  B00001101, B01110000,
+  B00011011, B10100000,
+  B00111111, B11100000,
+  B00111111, B11110000,
+  B01111100, B11110000,
+  B01110000, B01110000,
+  B00000000, B00110000 };
+
+#if (SSD1306_LCDHEIGHT != 64)
+#error("Height incorrect, please fix Adafruit_SSD1306.h!");
+#endif
+
+int z = 0;
+int m = 1;
 
 int led = 13;
 int flashPin = 10;
-int sensor1pin = A4;
+int sensor1pin = A1;
 int sensor2pin = A3;
-int buttonPin = 12;
+int buttonPin = A2;
 int shot_count = 0;
 long time1_us = 0;
 long time2_us = 0;
@@ -36,8 +64,9 @@ int flash_time_ms = 100;
 
 
 void setup() {                  
-  matrix.begin(0x70);
-  matrix.setBrightness(15); // Sets the display brightness with a value between 0 and 15
+  Serial.begin(9600);
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
+  
   pinMode(led, OUTPUT);  
   pinMode(flashPin, OUTPUT);   
   pinMode(sensor1pin, INPUT);
@@ -49,6 +78,7 @@ void setup() {
   digitalWrite(flashPin, LOW);
   Serial.begin(9600);
   Serial.println("Nerf Chronos, waiting for shot . . .");
+  writeDisplay();
 }
 
 
@@ -72,11 +102,32 @@ void sensor2_interrupt(){
 void button_interrupt(){
   shot_count = 0;
   speed_fps = 0;
-  digitalWrite(flashPin, LOW);
+  writeDisplay();
+}
+
+void writeDisplay(){
+    display.clearDisplay();
+    display.setTextSize(2);
+    display.setTextColor(WHITE);
+    display.setCursor(10,0);
+    if(speed_fps < 10){
+      display.print(" ");
+    }
+    display.print(speed_fps, 1);
+    display.println(" fps");
+    display.setTextSize(6);
+    display.setCursor(32, 16);
+    if(shot_count < 10){
+      display.print(" ");
+    }
+    display.println(shot_count);
+
+    display.display();
 }
 
 
 void loop() {
+  
   if (flag){ // traps detected a pass
     digitalWrite(flashPin, HIGH);
     shot_count += 1;
@@ -114,32 +165,8 @@ void loop() {
     else{ // bad data or backward traps
       Serial.println(interval_us);
     }
+    writeDisplay();
     flag = false;
   }
-  
-  if ((millis() / 1000 )%2){
-    if(speed_fps ==0){ // flash dashes until first shot detected
-      matrix.writeDigitRaw(0, B1000000); 
-      matrix.writeDigitRaw(1, B1000000);
-      matrix.writeDigitRaw(3, B1000000);
-      matrix.writeDigitRaw(4, B1000000);
-    }
-    else{ // pick units of measure to display, comment out others
-      matrix.print(speed_fps, 1);   
-      //matrix.print(speed_mps, 1); 
-      //matrix.print(speed_mph, 1);           
-    }
-  }
-  else{
-    if(speed_fps == 0){
-      matrix.clear();  // clear dashes
-    }
-    else{
-      matrix.print(shot_count);    
-    }
-  }
-  matrix.writeDisplay();
-  if ((micros() - time2_us) > flash_time_ms * 1000){  //
-    digitalWrite(flashPin, LOW);
-  }
+
 }
