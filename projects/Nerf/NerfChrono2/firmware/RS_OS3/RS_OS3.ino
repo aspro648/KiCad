@@ -29,8 +29,8 @@ Adafruit_SSD1306 display(OLED_RESET);
 
 int sensorPin = A1;        
 int buttonReset = A2;  
-int buttonScreen = A3;         
-int buttonPin3 = A4;        // interupt interferes with D7
+int buttonScreen = 2;         
+int buttonPin3 = A3;        // A4 interupt interferes with D7
 int voltagePin = A5;
 int flyWheelPin = 7;
 int tempPin = A0;
@@ -39,7 +39,7 @@ int trigger_switch = 13;
 int accel_switch = 12;
 int pusher_switch = 11;
 
-int flywheelPMW = 5;
+int flywheelPWM = 4;
 int pusherIn1 = 10; 
 int pusherIn2 = 9;
 
@@ -63,9 +63,17 @@ float vd_factor = 10.8;
 int rpm = 0;
 float voltage = 0;
 float temperatureC = 0;
-int screen = 1;
+int screen = 5;
 long debounce = 0;
 float version = 0.1;
+volatile bool trigger_state = false;
+volatile int irc = 0;
+
+volatile bool push_flag = false;
+volatile bool pushing_flag = false; 
+volatile long brake_time_ms = 0;
+volatile int cycle_count = 0;
+volatile bool backing = false;
 
 
 const unsigned char rapidstrike2 [] = {
@@ -149,31 +157,42 @@ void setup() {
   pinMode(trigger_switch, INPUT_PULLUP);
   pinMode(accel_switch, INPUT_PULLUP);
   pinMode(pusher_switch, INPUT_PULLUP);
-  pinMode(flywheelPMW, OUTPUT);
+  pinMode(flywheelPWM, OUTPUT);
+  
   pinMode(pusherIn1, OUTPUT);
   pinMode(pusherIn2, OUTPUT);
 
-  
-  attachInterrupt(sensorPin, sensor_interrupt, CHANGE);
-  attachInterrupt(buttonReset, button_reset, LOW);
-  attachInterrupt(buttonScreen, button_screen, LOW);
-
-  attachInterrupt(flyWheelPin, flywheel_interrupt, FALLING);
-  //
-  //attachInterrupt(buttonPin3, button_interrupt3, FALLING);
-  
+  trigger_state = false;
+   
   // Open serial coms to console
   Serial.begin(9600);
   Serial.println("Nerf Chronos, waiting for shot . . . ");
   Serial.println("Shot, time(s), fps, V, rpm, temp(C)");
-
+  
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
-  display.display();  
-  delay(2000);
+  digitalWrite(flywheelPWM, LOW);             // not sure why needed, otherwise flywheels rev
   display.clearDisplay();
-  showSplash();
   display.display();  
-  delay(2000);
+  delay(1000);
+  //display.clearDisplay();
+  //showSplash();
+  //display.display();  
+  //delay(2000);
+  
+      analogWrite(pusherIn1, 250);   
+      analogWrite(pusherIn2, 0);
+      delay(70);
+      analogWrite(pusherIn1, 0);   
+      analogWrite(pusherIn2, 0);    
+  delay(1000);
+  attachInterrupt(sensorPin, sensor_interrupt, CHANGE);
+  attachInterrupt(buttonReset, button_reset, LOW);
+  attachInterrupt(buttonScreen, button_screen, LOW);
+  attachInterrupt(flyWheelPin, flywheel_interrupt, FALLING);
+  attachInterrupt(pusher_switch, pushing_interrupt, FALLING);
+  attachInterrupt(trigger_switch, trigger_interrupt, FALLING);
+
+  
 }
 
 
@@ -206,9 +225,9 @@ void button_reset(){        // reset shot count (clip reload)
       speed_fps = 0;
       interval_total_us = 0;
       ave_fps = 0;
-      if (screen == 0 || screen > 4){// show a screen that shows shot count
-        screen = 1;
-      }
+      //if (screen == 0 || screen > 4){// show a screen that shows shot count
+      //  screen = 1;
+      //}
     }
   }
 }
@@ -219,11 +238,36 @@ void button_screen(){        // reset shot count (clip reload)
     if (!digitalRead(buttonScreen)){
       debounce = millis()+ 100;
       screen += 1;
-      if (screen > 5){
-        screen =0;
+      if (screen > 6){
+        screen = 0;
       }
     }
   } 
+}
+
+
+void pushing_interrupt(){
+
+  if(!backing){
+    cycle_count += 1;
+    if (cycle_count > 2){
+      pushing_flag = false;
+      brake_time_ms = millis() + 1000;
+      cycle_count = 0;
+    }
+  }
+  else{
+    pushing_flag = false;
+    backing = false;
+    brake_time_ms = millis() + 1000;
+  }
+}
+
+
+void trigger_interrupt(){
+  pushing_flag = true;
+  irc += 1;
+  //brake_time_ms = millis() + 1000;
 }
 
 
@@ -263,10 +307,9 @@ void showDisplay(){
   int x=0;
   int y=0;
   display.clearDisplay();
-
+  display.setTextSize(2);
+  display.setTextColor(WHITE);
   if (screen == 0){
-    display.setTextSize(2);
-    display.setTextColor(WHITE);
     if (voltage < 10){
       x = 5 * 12;
     }
@@ -316,103 +359,55 @@ void showDisplay(){
     display.print(rpm);
     display.println(" RPM");
   }
-  else {
-    display.setTextSize(2);
-    display.setTextColor(WHITE);
 
-    if (screen == 1){
- 
-      graph(6.5, 8.4, voltage); // min, max, value
-      display.setCursor(0, 16);
-      display.print("BAT");
-      /*
-      float fullV = 8.4;
-      float empV = 6.5;
-      float curV = voltage - empV;
-      float gage = curV / (fullV - empV) * 8;
-      //Serial.println(gage);
-      for (int xx=0; xx<8; xx++){
-        if(xx < gage){
-          display.fillRect(xx * 16, 0, 15, 15, WHITE);
-        }
-        else {
-          display.drawRect(xx * 16, 0, 15, 15, WHITE);
-        }
-      }
-      if(voltage < empV && !((millis()/1000) % 2)){
-        display.fillRect(0, 0, 15, 15, WHITE);
-      }*/
-    }
+  if (screen == 1){
+    graph(6.5, 8.4, voltage); // min, max, value
+    display.setCursor(0, 16);
+    display.print("BAT");
+  }
     
-    if (screen == 2){
-      graph(24, 40, temperatureC); // min, max, value
-      display.setCursor(0, 16);
-      display.print("TEMP");
-      /*
-      x = 4 * 12;
-      display.setCursor(x, 0);  
-      display.print(temperatureC, 1);
-      display.println(" C");    */  
-    }
+  if (screen == 2){
+    graph(24, 40, temperatureC); // min, max, value
+    display.setCursor(0, 16);
+    display.print("TEMP");
+  }
 
-    if (screen == 3){
-      graph(0, 100, speed_fps); // min, max, value
-      display.setCursor(0, 16);
-      display.print("FPS");
-      /*
-      x = 3 * 12;
-      if (speed_fps >= 10){
-        x = 2 * 12;
-      }
-      if (speed_fps >= 100){
-        x = 1 * 12;
-      } 
-      if (speed_fps >= 1000){
-        x = 0;
-      }
-      display.setCursor(x, 0);  
-      display.print(speed_fps, 1);
-      display.println(" fps");*/
-    }
+  if (screen == 3){
+    graph(0, 100, speed_fps); // min, max, value
+    display.setCursor(0, 16);
+    display.print("FPS");
+  }
     
-    if (screen == 4){
-      graph(0, 25000, rpm); // min, max, value
-      display.setCursor(0, 16);
-      display.print("RPM");
-      /*
-      x = 5 * 12;
-      if (rpm >= 10){
-        x = 4 * 12;
-      }
-      if (rpm >= 100){
-        x = 3 * 12;
-      } 
-      if (rpm >= 1000){
-        x = 2 * 12;
-      }
-      if (rpm >= 10000){
-        x = 1 * 12;
-      }  
-      if (rpm >= 100000){
-        x = 0;
-      }  
-      display.setCursor(x, 0);   
-      display.print(rpm);*/
+  if (screen == 4){
+    graph(0, 25000, rpm); // min, max, value
+    display.setCursor(0, 16);
+    display.print("RPM");
+  }
+  if (screen == 5){
+    display.setCursor(0, 0);
+    display.print("TRIGGER: ");
+    display.println(digitalRead(trigger_switch));
+    //display.print("  ACCEL: ");
+    //display.println(digitalRead(accel_switch));    
+    display.print("PUSH SW: ");
+    display.println(digitalRead(pusher_switch));  
+    display.print("PUSH FL: ");
+    display.println(pushing_flag); 
+    display.print("IRC: ");
+    display.println(irc);  
+  }
     
-    }
+  if (screen > 0 and screen < 5){
+    display.setCursor(54,18);
+    display.setTextSize(6);
 
-    if (screen <= 4){
-      display.setCursor(54,18);
-      display.setTextSize(6);
-  
-      if(shot_count<10){
-        display.print(" ");
-      }
-      display.print(shot_count);
+    if(shot_count<10){
+      display.print(" ");
     }
-    if (screen == 5){
-      showSplash();
-    }
+    display.print(shot_count);
+  }
+  if (screen == 6){
+    showSplash();
   }
   display.display();
 }
@@ -434,9 +429,9 @@ void loop() {
   int tempValue = analogRead(tempPin); 
   float tempVoltage = tempValue / 1023.0 * vcc;
   temperatureC = (tempVoltage - 0.5) * 100 ;  //converting from 10 mv per degree wit 500 mV offset
-  if ((rpm > 0) && (screen == 5)){  // switch from splash if accel or trigger
-    screen = 1;
-  }
+  //if ((rpm > 0) && (screen == 5)){  // switch from splash if accel or trigger
+  //  screen = 1;
+  //}
   if (flag2){ // dart has exited gate
     shot_count += 1;
     interval_us = time2_us - time1_us;
@@ -447,7 +442,7 @@ void loop() {
     // figure out average (shifting to ms)
     interval_total_us += interval_us;
     ave_fps = dartLength_mm / (interval_total_us / shot_count) / 25.4 / 12 * 1E+6;
-   
+    /*
     Serial.print(shot_count);
     Serial.print(", ");
     Serial.print(micros() - mtr_time1_us);
@@ -461,10 +456,49 @@ void loop() {
     Serial.print(rpm, 1);
     Serial.print(" rpm, ");
     Serial.println(temperatureC, 2);
+    */
     flag2 = false; // reset gate
   }
   if (millis() > nextTime){
     nextTime = millis() + 250; 
     showDisplay();
   }
+  if (!digitalRead(accel_switch)){
+    digitalWrite(flywheelPWM, HIGH);
+  }
+  else{
+    digitalWrite(flywheelPWM, LOW);
+  }
+
+  if (pushing_flag){
+    if(backing){
+      analogWrite(pusherIn1, 0);   
+      analogWrite(pusherIn2, 125);      
+    }
+    else{
+      analogWrite(pusherIn1, 255);   
+      analogWrite(pusherIn2, 0);
+    }
+  }
+  else {
+    if (digitalRead(pusher_switch)){// out of position
+      backing = true;
+      pushing_flag = true;
+    }
+    else {
+      if (millis() < brake_time_ms){ // brake for a second
+        analogWrite(pusherIn1, 255);   
+        analogWrite(pusherIn2, 255);      
+      }
+      else{
+        analogWrite(pusherIn1, 0);   
+        analogWrite(pusherIn2, 0);
+      }
+    }     
+  }
+
+  //if (!digitalRead(trigger_switch)){
+  //  pushing_flag = true;
+  //}
+
 }
