@@ -2,7 +2,7 @@
 Photo transistor connected to A0 with external 10K ohm pull-up
 */
 
-int sensorPin = A0;        // must be pin A0 to A5 for interrupt PCINT1_vect signal
+int sensorPin = 10;        // must be pin A0 to A5 for interrupt PCINT1_vect signal
 int shot_count = 0;
 long time1_us = 0;         // dart enters gate
 long time2_us = 0;         // dart exits gate
@@ -31,7 +31,7 @@ void setup() {
   Serial.println("Nerf Chronos, waiting for shot . . .");
 }
 
-ISR (PCINT1_vect) { // handle pin change interrupt for A0 to A5 here
+ISR (PCINT0_vect) { // handle pin change interrupt for A0 to A5 here
   if (digitalRead(sensorPin)) { // HIGH if dart present
     time1_us = micros(); 
   }

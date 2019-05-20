@@ -27,7 +27,7 @@ float speed_mph = 0;       // miles per hour
 float ave_fps = 0;         // average feet per second
 bool flag = false;         // dart exits gate
 int flash_time_ms = 100;   // time to strobe LEDs
-
+volatile int irc = 0;
 
 void pciSetup(byte pin){
     // https://playground.arduino.cc/Main/PinChangeInterrupt/
@@ -42,9 +42,9 @@ void setup() {
   pinMode(flashPin, OUTPUT);   
   pinMode(sensorPin, INPUT);  // should have external pull-up or use INPUT_PULLUP
   pinMode(buttonPin, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(sensorPin), sensor_interrupt, CHANGE);
-  attachInterrupt(buttonPin, button_interrupt, FALLING);
-  pciSetup(A0);
+  //attachInterrupt(digitalPinToInterrupt(sensorPin), sensor_interrupt, CHANGE);
+  //attachInterrupt(buttonPin, button_interrupt, FALLING);
+  pciSetup(sensorPin);
   // intialize display (if attached)
   matrix.begin(0x70);
   matrix.setBrightness(10); // Sets the display brightness with a value between 0 and 15
@@ -56,6 +56,7 @@ void setup() {
 
 
 void sensor_interrupt(){
+  irc += 1;
   if (digitalRead(sensorPin)) { // LOW if dart present
     time1_us = micros(); 
   }
@@ -66,9 +67,10 @@ void sensor_interrupt(){
 }
 
 
-ISR (PCINT1_vect) // handle pin change interrupt for A0 to A5 here
+ISR (PCINT0_vect) // handle pin change interrupt for A0 to A5 here
  {
-  if (digitalRead(A0)) { // LOW if dart present
+  irc += 1;
+  if (!digitalRead(sensorPin)) { // LOW if dart present
     time1_us = micros(); 
   }
   else {                        // dart exit
@@ -127,6 +129,7 @@ void loop() {
       matrix.writeDigitRaw(1, B1000000);
       matrix.writeDigitRaw(3, B1000000);
       matrix.writeDigitRaw(4, B1000000);
+      Serial.println(irc);
     }
     else{ // pick units of measure to display, comment out others
       matrix.print(speed_fps, 1);   
