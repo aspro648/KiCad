@@ -72,8 +72,10 @@ volatile int irc = 0;
 volatile bool push_flag = false;
 volatile bool pushing_flag = false; 
 volatile long brake_time_ms = 0;
+volatile long push_time_ms = 0;
 volatile int cycle_count = 0;
 volatile bool backing = false;
+bool SAFE = false;
 
 
 const unsigned char rapidstrike2 [] = {
@@ -171,20 +173,24 @@ void setup() {
   
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
   digitalWrite(flywheelPWM, LOW);             // not sure why needed, otherwise flywheels rev
-  display.clearDisplay();
+  //analogWrite(pusherIn1, 0);   
+  analogWrite(pusherIn2, 0);  
+  //display.clearDisplay();
   display.display();  
   delay(1000);
   //display.clearDisplay();
   //showSplash();
   //display.display();  
   //delay(2000);
-  
+
+  /*
       analogWrite(pusherIn1, 250);   
       analogWrite(pusherIn2, 0);
       delay(70);
       analogWrite(pusherIn1, 0);   
       analogWrite(pusherIn2, 0);    
   delay(1000);
+  */
   attachInterrupt(sensorPin, sensor_interrupt, CHANGE);
   attachInterrupt(buttonReset, button_reset, LOW);
   attachInterrupt(buttonScreen, button_screen, LOW);
@@ -247,7 +253,7 @@ void button_screen(){        // reset shot count (clip reload)
 
 
 void pushing_interrupt(){
-
+  irc += 1;
   if(!backing){
     cycle_count += 1;
     if (cycle_count > 2){
@@ -265,9 +271,13 @@ void pushing_interrupt(){
 
 
 void trigger_interrupt(){
-  pushing_flag = true;
-  irc += 1;
-  //brake_time_ms = millis() + 1000;
+
+  if(!digitalRead(trigger_switch)){
+    //irc += 1;
+    pushing_flag = true;
+    
+    //brake_time_ms = millis() + 1000;
+  }
 }
 
 
@@ -464,10 +474,17 @@ void loop() {
     showDisplay();
   }
   if (!digitalRead(accel_switch)){
-    digitalWrite(flywheelPWM, HIGH);
+    if(!SAFE){
+      if(!digitalRead(trigger_switch)){
+        analogWrite(flywheelPWM, 255);
+      }
+      else{
+        analogWrite(flywheelPWM, 75);        
+      }
+    }
   }
   else{
-    digitalWrite(flywheelPWM, LOW);
+    analogWrite(flywheelPWM, 0);
   }
 
   if (pushing_flag){
@@ -476,8 +493,10 @@ void loop() {
       analogWrite(pusherIn2, 125);      
     }
     else{
-      analogWrite(pusherIn1, 255);   
+      if(!SAFE){
+      analogWrite(pusherIn1, 100);   
       analogWrite(pusherIn2, 0);
+      }
     }
   }
   else {
@@ -487,8 +506,10 @@ void loop() {
     }
     else {
       if (millis() < brake_time_ms){ // brake for a second
-        analogWrite(pusherIn1, 255);   
-        analogWrite(pusherIn2, 255);      
+        if(!SAFE){
+          analogWrite(pusherIn1, 255);   
+          analogWrite(pusherIn2, 255);     
+        } 
       }
       else{
         analogWrite(pusherIn1, 0);   
@@ -500,5 +521,16 @@ void loop() {
   //if (!digitalRead(trigger_switch)){
   //  pushing_flag = true;
   //}
-
+  long curTime = millis();
+  if(!((curTime /100) % 2)){
+    if(!digitalRead(accel_switch)){
+      Serial.print(voltage);
+      Serial.print(",");
+      Serial.print(millis() / 1000.0, 2);
+      Serial.print(",");
+      //Serial.print(!digitalRead(trigger_switch));
+      //Serial.print(",");
+      Serial.println(rpm);
+    }
+  }
 }
