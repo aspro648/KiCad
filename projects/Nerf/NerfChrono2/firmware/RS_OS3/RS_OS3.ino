@@ -253,7 +253,7 @@ void button_screen(){        // reset shot count (clip reload)
 
 
 void pushing_interrupt(){
-  irc += 1;
+  //irc += 1;
   if(!backing){
     cycle_count += 1;
     if (cycle_count > 2){
@@ -272,12 +272,12 @@ void pushing_interrupt(){
 
 void trigger_interrupt(){
 
-  if(!digitalRead(trigger_switch)){
-    //irc += 1;
+  //if(!digitalRead(trigger_switch)){
+    irc += 1;
     pushing_flag = true;
     
     //brake_time_ms = millis() + 1000;
-  }
+  //}
 }
 
 
