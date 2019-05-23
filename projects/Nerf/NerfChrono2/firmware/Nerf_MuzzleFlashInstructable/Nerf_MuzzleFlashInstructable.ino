@@ -8,7 +8,7 @@ Photo transistor connected to A0 with external 10K ohm pull-up
 
 Adafruit_7segment matrix = Adafruit_7segment();
 
-int gatePin = A0;             // must be pin A0 to A5 for interrupt PCINT1_vect signal
+int gatePin = 10;             // must be pin A0 to A5 for interrupt PCINT1_vect signal
 int strobePin = 9;            // should be a PWM pin if you want to control brightness
 int buttonPin = 7;            // must be D7 for hardware interrupt
 volatile int shot_count = 0;
@@ -56,7 +56,7 @@ void button_interrupt(){  // button press (falling edge)
 }  
 
 
-ISR (PCINT1_vect) {  // handle pin change interrupt for A0 to A5 here
+ISR (PCINT0_vect) {  // handle pin change interrupt for A0 to A5 here
   if (digitalRead(gatePin)) { // HIGH if dart present
     time1_us = micros(); 
   }
@@ -79,8 +79,8 @@ void loop() {
     Serial.print("Shot #");
     Serial.print(shot_count);
     Serial.print("  ");
-    Serial.print(interval_us);
-    Serial.print(" us  ");
+    Serial.print(millis()/1000.0, 2);
+    Serial.print(" sec  ");
     Serial.print(speed_fps, 1);
     Serial.print(" fps  ");
     Serial.print(speed_mps, 1);

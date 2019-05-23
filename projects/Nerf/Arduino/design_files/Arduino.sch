@@ -251,7 +251,7 @@ L LED D2
 U 1 1 5BB7BB61
 P 9600 1200
 F 0 "D2" H 9550 1300 50  0000 C CNN
-F 1 "PWR" H 9600 1100 50  0000 C CNN
+F 1 "D13" H 9600 1100 50  0000 C CNN
 F 2 "LEDs:LED_D3.0mm_Horizontal_O1.27mm_Z10.0mm" H 9600 1200 50  0001 C CNN
 F 3 "" H 9600 1200 50  0001 C CNN
 	1    9600 1200
@@ -338,13 +338,13 @@ $EndComp
 $Comp
 L Conn_01x02 J3
 U 1 1 5CE004B8
-P 1200 3700
-F 0 "J3" H 1200 3800 50  0000 C CNN
-F 1 "Pusher" H 1200 3500 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_02x3.50mm_Vertical" H 1200 3700 50  0001 C CNN
-F 3 "" H 1200 3700 50  0001 C CNN
-	1    1200 3700
-	-1   0    0    1   
+P 1200 3600
+F 0 "J3" H 1200 3700 50  0000 C CNN
+F 1 "PUSHER" H 1200 3400 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_02x3.50mm_Vertical" H 1200 3600 50  0001 C CNN
+F 3 "" H 1200 3600 50  0001 C CNN
+	1    1200 3600
+	-1   0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR014
@@ -694,13 +694,13 @@ A5(SCL)
 $Comp
 L Conn_01x02 J4
 U 1 1 5CE1CB8F
-P 1950 1400
-F 0 "J4" H 1950 1500 50  0000 C CNN
-F 1 "JAM" H 1950 1200 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_02x3.50mm_Vertical" H 1950 1400 50  0001 C CNN
-F 3 "" H 1950 1400 50  0001 C CNN
-	1    1950 1400
-	0    1    -1   0   
+P 1850 1400
+F 0 "J4" H 1850 1500 50  0000 C CNN
+F 1 "JAM" H 1850 1200 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_02x3.50mm_Vertical" H 1850 1400 50  0001 C CNN
+F 3 "" H 1850 1400 50  0001 C CNN
+	1    1850 1400
+	0    -1   -1   0   
 $EndComp
 Text Notes 1750 1300 0    60   ~ 0
 Jam Door\nSwitch
@@ -751,7 +751,7 @@ F 3 "" H 9550 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 9250 5950 0    60   ~ 0
-A0
+A3
 Text Label 1300 1700 0    60   ~ 0
 BATT
 Text Label 9400 5450 0    60   ~ 0
@@ -779,11 +779,11 @@ F 3 "" H 3950 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5000 1000 0    60   ~ 0
-A1
-Text Label 5000 1300 0    60   ~ 0
 A2
+Text Label 5000 1300 0    60   ~ 0
+A1
 Text Label 5000 1700 0    60   ~ 0
-A3
+A0
 NoConn ~ 5100 800 
 $Comp
 L Conn_01x06 J7
@@ -942,16 +942,16 @@ F 3 "" H 9300 4650 50  0001 C CNN
 	1    9300 4650
 	0    -1   -1   0   
 $EndComp
-Text Label 9200 4450 0    60   ~ 0
-2
 Text Label 9200 4550 0    60   ~ 0
+2
+Text Label 9200 4450 0    60   ~ 0
 3(**)
 $Comp
 L MCP1700-5002E_TO92 U1
 U 1 1 5CE399AF
 P 2650 1700
 F 0 "U1" H 2500 1575 50  0000 C CNN
-F 1 "MCP1700-5002E_TO92" H 2250 1500 50  0000 L CNN
+F 1 "MCP1702" H 2700 1950 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 2650 1500 50  0001 C CIN
 F 3 "" H 2650 1700 50  0001 C CNN
 	1    2650 1700
@@ -1421,4 +1421,8 @@ Text Notes 5150 1800 0    60   ~ 0
 AUTO
 Text Label 2200 1700 0    60   ~ 0
 Vin
+Text Notes 4200 7150 0    60   ~ 0
+D2 INT pin 1\nD3 INT pin 2\nD4 Pusher SW\nD5 Pusher A\nD6 Pusher B\nD7 Accel SW\nD8 Trig SW\nD9 Flywheel\nD10 Clip U3\nD11 Clip U4\nD12 Clip U6\nD13 LED
+Text Notes 4200 5950 0    60   ~ 0
+A0 SEL 3\nA1 SEL 2\nA2 SEL 1\nA3 Voltage\n\n
 $EndSCHEMATC
