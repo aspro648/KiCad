@@ -64,7 +64,7 @@ float vd_factor = 10.8;
 int rpm = 0;
 float voltage = 0;
 float temperatureC = 0;
-int screen = 0;
+int screen = 5;
 long debounce = 0;
 float version = 0.1;
 volatile int irc = 0;
@@ -77,7 +77,7 @@ volatile bool push_flag = false;     // NOT USED
 volatile bool pushing_flag = false;  // true if firing
 long brake_time_ms = 225;            // time breaking applied after cycling stops
 long pusher_accel_time_ms = 200;     // time full power applied to pusher motor
-int pusher_idle_pwm = 80;
+int pusher_idle_pwm = 255; // was 80
 int pusher_full_pwm = 255;
 volatile long pusher_accel_till_ms = 0;       // time to full accel till
 
@@ -129,17 +129,16 @@ void setup() {
   
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
   digitalWrite(flywheelPWM, LOW);             // not sure why needed, otherwise flywheels rev
-  //analogWrite(pusherIn1, 0);   
+  analogWrite(pusherIn1, 0);   
   analogWrite(pusherIn2, 0);  
   //display.clearDisplay();
   display.display();  
-        analogWrite(pusherIn1, 0);   
-        analogWrite(pusherIn2, pusher_idle_pwm); 
-  
+
+  //analogWrite(pusherIn1, pusher_full_pwm);   
+  //analogWrite(pusherIn2, 0);    
   delay(1000);
-        analogWrite(pusherIn1, 0);   
-        analogWrite(pusherIn2, 0); 
-  
+  analogWrite(pusherIn1, 0);   
+  analogWrite(pusherIn2, 0);   
   //display.clearDisplay();
   //showSplash();
   //display.display();  
@@ -156,7 +155,7 @@ void setup() {
   attachInterrupt(sensorPin, sensor_interrupt, CHANGE);
   attachInterrupt(buttonReset, button_reset, LOW);
   attachInterrupt(buttonScreen, button_screen, LOW);
-  attachInterrupt(buttonPin3, button_cc, FALLING);  
+  //attachInterrupt(buttonPin3, button_cc, FALLING);  
   attachInterrupt(flyWheelPin, flywheel_interrupt, FALLING);
   attachInterrupt(pusher_switch, pushing_interrupt, FALLING);
   attachInterrupt(trigger_switch, trigger_interrupt, FALLING);
@@ -187,11 +186,14 @@ void flywheel_interrupt(){
 
 void button_cc(){
   irc += 1;
-  cycle_limit += 1;
-  if(cycle_limit > 3){
+  if(cycle_limit == 1){
+    cycle_limit = 3;
+  }
+  else{
     cycle_limit = 1;
   }
 }
+
 
 
 void button_reset(){        // reset shot count (clip reload)
@@ -252,8 +254,8 @@ void pushing_interrupt(){
     pushing_flag = false;
     braking_flag = true;
     brake_till_ms = millis() + brake_time_ms;
-    analogWrite(pusherIn1, pusher_full_pwm);
-    analogWrite(pusherIn2, pusher_full_pwm);   
+    //analogWrite(pusherIn1, pusher_full_pwm);
+    //analogWrite(pusherIn2, pusher_full_pwm);   
     //cycle_count = 0;
     flywheel_speed = flywheel_idle_pwm;
   }
@@ -290,7 +292,6 @@ void trigger_interrupt(){
   trigger_delay_til = millis() + trigger_delay_ms;
   pushing_flag = true;
   pusher_accel_till_ms = millis() + pusher_accel_time_ms + trigger_delay_ms;
-  flywheel_speed = flywheel_full_pwm;
 }
 
 
@@ -326,16 +327,7 @@ void graph(float minimum, float maximum, float value){
 }
 
 
-void pews(){ // display firing mode
-  for (int pew=0; pew<3; pew++){
-    if(pew < cycle_limit){
-      display.fillRoundRect(pew * 12, 40, 8, 21, 3, WHITE);
-    }
-    else {
-      display.drawRoundRect(pew * 12, 40, 8, 21, 3, WHITE);
-    }
-  }
-}
+
 
 
 void showDisplay(){
@@ -412,7 +404,6 @@ void showDisplay(){
 
   if (screen == 1){
     graph(6.5, 8.4, voltage); // min, max, value
-    pews();
     display.setCursor(0, 16);
     display.print("BAT");
   }
@@ -439,14 +430,19 @@ void showDisplay(){
     display.setCursor(0, 0);
     //display.print("cycles: ");
     //display.println(cycle_limit);
-    display.print("rev_state: ");
-    display.println(rev_state);    
+    //display.print("  ACCEL: ");
+    //display.println(digitalRead(accel_switch));    
     display.print("fws: ");
     display.println(flywheel_speed);  
     display.print("PUSH FL: ");
     display.println(pushing_flag); 
-    display.print("IRC: ");
-    display.println(irc);  
+    //display.print("IRC: ");
+    //display.println(irc);  
+
+    display.print("trig dl: ");
+    display.println(trigger_delay);  
+    display.print("rev st: ");
+    display.println(rev_state);  
     //display.print("CC: ");
     //display.println(cycle_count);  
   }
@@ -548,19 +544,21 @@ void loop() {
 
   // handle rev switch   
   if(rev_state){
-    if (millis() < accel_till_ms){
-      flywheel_speed = flywheel_full_pwm;
+    if (!pushing_flag){
+      if (millis() < accel_till_ms){
+        flywheel_speed = flywheel_full_pwm;
+      }
+      else{
+        flywheel_speed = flywheel_idle_pwm;
+      }
     }
     else{
-      flywheel_speed = flywheel_idle_pwm;
+      flywheel_speed = flywheel_full_pwm;
     }
   }
   else{
     flywheel_speed = 0;
   }   
-  if(pushing_flag){
-    flywheel_speed = flywheel_full_pwm;
-  }
   analogWrite(flywheelPWM, flywheel_speed);
 
   if (trigger_delay){
@@ -571,10 +569,12 @@ void loop() {
   else{
     if (pushing_flag){
       if (millis() < pusher_accel_till_ms){
+        Serial.print("-");
         analogWrite(pusherIn1, pusher_full_pwm);   
         analogWrite(pusherIn2, 0);
       }
       else{
+        Serial.print("+");
         analogWrite(pusherIn1, pusher_idle_pwm);   
         analogWrite(pusherIn2, 0);      
       }
@@ -628,7 +628,7 @@ void loop() {
   }*/
 
 
-
+  /*
   // serial display ever 1/10th second
   if(!((millis() /100) % 2)){
     if(!digitalRead(rev_switch)){
@@ -644,4 +644,5 @@ void loop() {
       Serial.println(rpm);
     }
   }
+  */
 }

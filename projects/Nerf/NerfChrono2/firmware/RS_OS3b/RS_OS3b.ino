@@ -1,19 +1,6 @@
 /*
-
-A0 temperature
-A1 photo gate
-A2 button 1
-A3 button 2
-A4 button 3
-A5 voltage
-
-D7 flywheel
-
-  trigger_switch
-  rev_switch
-  pusher_switch
-
-
+TODO:
+  count cycles verse gate?  
 
 */
 
@@ -28,7 +15,7 @@ D7 flywheel
 Adafruit_SSD1306 display(OLED_RESET);
 
 
-int sensorPin = A1;        
+int dartSensorPin = A1;        
 int buttonReset = A2;  
 int buttonScreen = 2;         
 int buttonPin3 = A3;        // A4 interupt interferes with D7
@@ -44,7 +31,7 @@ int flywheelPWM = 4;
 int pusherIn1 = 10; 
 int pusherIn2 = 9;
 
-volatile int shot_count = 24;
+volatile int shot_count = 0;
 volatile long time1_us = 0;         // dart enters gate
 volatile long time2_us = 0;         // dart exits gate
 volatile long mtr_time1_us = 0;
@@ -56,15 +43,15 @@ float speed_fps = 0;       // feet per second
 float speed_mps = 0;       // meters per second
 float speed_mph = 0;       // miles per hour
 float ave_fps = 0;         // average feet per second
-volatile bool flag1 = false;        // dart exits gate
-volatile bool flag2 = false;
+volatile bool dartSensorFlag1 = false;        // dart exits gate
+volatile bool dartSensorFlag2 = false;
 long nextTime = 0;
 float vcc = 3.3;
 float vd_factor = 10.8;
 int rpm = 0;
 float voltage = 0;
 float temperatureC = 0;
-int screen = 0;
+int screen = 1;
 long debounce = 0;
 float version = 0.1;
 volatile int irc = 0;
@@ -72,14 +59,14 @@ volatile int irc = 0;
 volatile bool trigger_state = false;
 volatile bool last_trigger_state = false;
 
-volatile bool braking_flag = false; // true if breaking pusher
+volatile bool braking_flag = false;  // true if breaking pusher
 volatile bool push_flag = false;     // NOT USED
 volatile bool pushing_flag = false;  // true if firing
 long brake_time_ms = 225;            // time breaking applied after cycling stops
-long pusher_accel_time_ms = 200;     // time full power applied to pusher motor
-int pusher_idle_pwm = 80;
+long pusher_accel_time_ms = 100;     // time full power applied to pusher motor
+int pusher_idle_pwm = 80; // was 80
 int pusher_full_pwm = 255;
-volatile long pusher_accel_till_ms = 0;       // time to full accel till
+volatile long pusher_accel_till_ms = 0;       // time marker to full accel till
 
 volatile bool trigger_delay = false;
 int trigger_delay_ms = 250;
@@ -90,23 +77,20 @@ volatile long push_time_ms = 0;
 volatile int cycle_count = 0;          // number of pusher cycles
 volatile int cycle_limit = 3;
 volatile bool backing = false;         // pusher out of position
-bool SAFE = false;
 
-
-bool rev_state = false;              // true when flywheels energized
-int flywheel_speed = 0;              // current accel pwm
-bool idle_state = false;
+volatile bool rev_state = false;              // true when flywheels energized
+volatile bool idle_state = false;             // true after starting_accel_time_ms
+volatile int flywheel_speed = 0;              // current accel pwm
 long debounce_time_ms = 0;
 long starting_accel_time_ms = 250;      // length of time for full accel
 int flywheel_idle_pwm = 80;          // pwm after full accel
 int flywheel_full_pwm = 255;
-volatile long accel_till_ms = 0;       // time to full accel till
-
+volatile long accel_till_ms = 0;       // time marker to full accel till
 
     
 void setup() {                  
   // pin setup
-  pinMode(sensorPin, INPUT);  // should have external pull-up or use INPUT_PULLUP
+  pinMode(dartSensorPin, INPUT);  // should have external pull-up or use INPUT_PULLUP
   pinMode(buttonScreen, INPUT_PULLUP);
   pinMode(buttonReset, INPUT_PULLUP);
   pinMode(buttonPin3, INPUT_PULLUP);
@@ -125,21 +109,20 @@ void setup() {
   // Open serial coms to console
   Serial.begin(9600);
   Serial.println("Nerf Chronos, waiting for shot . . . ");
-  Serial.println("Shot, time(s), fps, V, rpm, temp(C)");
+  Serial.println("Shot, time(s), fps, V");
   
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
   digitalWrite(flywheelPWM, LOW);             // not sure why needed, otherwise flywheels rev
-  //analogWrite(pusherIn1, 0);   
+  analogWrite(pusherIn1, 0);   
   analogWrite(pusherIn2, 0);  
   //display.clearDisplay();
   display.display();  
-        analogWrite(pusherIn1, 0);   
-        analogWrite(pusherIn2, pusher_idle_pwm); 
-  
+
+  //analogWrite(pusherIn1, pusher_full_pwm);   
+  //analogWrite(pusherIn2, 0);    
   delay(1000);
-        analogWrite(pusherIn1, 0);   
-        analogWrite(pusherIn2, 0); 
-  
+  analogWrite(pusherIn1, 0);   
+  analogWrite(pusherIn2, 0);   
   //display.clearDisplay();
   //showSplash();
   //display.display();  
@@ -153,7 +136,7 @@ void setup() {
       analogWrite(pusherIn2, 0);    
   delay(1000);
   */
-  attachInterrupt(sensorPin, sensor_interrupt, CHANGE);
+  attachInterrupt(dartSensorPin, dart_sensor_interrupt, CHANGE);
   attachInterrupt(buttonReset, button_reset, LOW);
   attachInterrupt(buttonScreen, button_screen, LOW);
   attachInterrupt(buttonPin3, button_cc, FALLING);  
@@ -164,16 +147,16 @@ void setup() {
 }
 
 
-void sensor_interrupt(){
-  if (digitalRead(sensorPin)) { // LOW if dart present
+void dart_sensor_interrupt(){
+  if (digitalRead(dartSensorPin)) { // LOW if dart present
     time1_us = micros(); 
-    flag1 = true;
+    dartSensorFlag1 = true;
   }
   else {                        // dart exit
-    if(flag1){
+    if(dartSensorFlag1){
       time2_us = micros();
-      flag2 = true; 
-      flag1 = false;  
+      dartSensorFlag2 = true; 
+      dartSensorFlag1 = false;  
     }  
   }
 }
@@ -186,10 +169,13 @@ void flywheel_interrupt(){
 
 
 void button_cc(){
-  irc += 1;
-  cycle_limit += 1;
-  if(cycle_limit > 3){
-    cycle_limit = 1;
+  if(millis() > debounce){
+    debounce = millis()+ 100;
+    irc += 1;
+    cycle_limit += 1;
+    if(cycle_limit > 4){
+      cycle_limit = 1;
+    }
   }
 }
 
@@ -246,25 +232,22 @@ void pushing_interrupt2(){
 
 void pushing_interrupt(){
   irc += 1;
-
-  cycle_count += 1;
-  if (cycle_count >= cycle_limit){
-    pushing_flag = false;
-    braking_flag = true;
-    brake_till_ms = millis() + brake_time_ms;
-    analogWrite(pusherIn1, pusher_full_pwm);
-    analogWrite(pusherIn2, pusher_full_pwm);   
-    //cycle_count = 0;
-    flywheel_speed = flywheel_idle_pwm;
+  if (cycle_limit > 0) { // not full auto
+    if (cycle_limit != 4){
+      cycle_count += 1;
+    }
+    if (cycle_count >= cycle_limit){
+      pushing_flag = false;
+      braking_flag = true;
+      brake_till_ms = millis() + brake_time_ms;
+      flywheel_speed = flywheel_idle_pwm;
+      analogWrite(pusherIn1, pusher_full_pwm);   
+      analogWrite(pusherIn2, pusher_full_pwm);
+    }
+    else{
+      pusher_accel_till_ms = millis() + pusher_accel_time_ms;
+    }
   }
-  else{
-    pusher_accel_till_ms = millis() + pusher_accel_time_ms;
-  }
-  /*else{
-    pushing_flag = false;
-    backing = false;
-    brake_till_ms = millis() + brake_time_ms;
-  }*/
 }
 
 
@@ -290,7 +273,6 @@ void trigger_interrupt(){
   trigger_delay_til = millis() + trigger_delay_ms;
   pushing_flag = true;
   pusher_accel_till_ms = millis() + pusher_accel_time_ms + trigger_delay_ms;
-  flywheel_speed = flywheel_full_pwm;
 }
 
 
@@ -326,14 +308,26 @@ void graph(float minimum, float maximum, float value){
 }
 
 
-void pews(){ // display firing mode
-  for (int pew=0; pew<3; pew++){
-    if(pew < cycle_limit){
-      display.fillRoundRect(pew * 12, 40, 8, 21, 3, WHITE);
+void pews(){ // graphic display of firing mode
+  if(cycle_limit <4){
+    for (int pew=0; pew<3; pew++){
+      if(pew < cycle_limit){
+        display.fillRoundRect(pew * 12, 36, 10, 28, 4, WHITE);
+      }
+      else {
+        display.drawRoundRect(pew * 12, 36, 10, 28, 4, WHITE);
+      }
     }
-    else {
-      display.drawRoundRect(pew * 12, 40, 8, 21, 3, WHITE);
-    }
+  }
+  else{ // flash for auto
+    for (int pew=0; pew<3; pew++){
+      if(!((millis()/1000) % 2)){
+        display.fillRoundRect(pew * 12, 36, 10, 28, 4, WHITE);
+      }
+      else {
+        display.drawRoundRect(pew * 12, 36, 10, 28, 4, WHITE);
+      }
+    }    
   }
 }
 
@@ -411,8 +405,8 @@ void showDisplay(){
   }
 
   if (screen == 1){
-    graph(6.5, 8.4, voltage); // min, max, value
     pews();
+    graph(6.5, 8.4, voltage); // min, max, value
     display.setCursor(0, 16);
     display.print("BAT");
   }
@@ -439,16 +433,21 @@ void showDisplay(){
     display.setCursor(0, 0);
     //display.print("cycles: ");
     //display.println(cycle_limit);
-    display.print("rev_state: ");
-    display.println(rev_state);    
+    //display.print("  ACCEL: ");
+    //display.println(digitalRead(accel_switch));    
     display.print("fws: ");
     display.println(flywheel_speed);  
     display.print("PUSH FL: ");
     display.println(pushing_flag); 
-    display.print("IRC: ");
-    display.println(irc);  
-    //display.print("CC: ");
-    //display.println(cycle_count);  
+    //display.print("IRC: ");
+    //display.println(irc);  
+
+    //display.print("trig dl: ");
+    //display.println(trigger_delay);  
+    display.print("rev st: ");
+    display.println(rev_state);  
+    display.print("CC: ");
+    display.println(cycle_count);  
   }
     
   if (screen > 0 and screen < 5){
@@ -486,7 +485,7 @@ void loop() {
   //if ((rpm > 0) && (screen == 5)){  // switch from splash if accel or trigger
   //  screen = 1;
   //}
-  if (flag2){ // dart has exited gate
+  if (dartSensorFlag2){ // dart has exited gate
     shot_count += 1;
     interval_us = time2_us - time1_us;
     speed_fps = dartLength_mm / interval_us / 25.4 / 12 * 1E+6;               // feet per second
@@ -496,71 +495,53 @@ void loop() {
     // figure out average (shifting to ms)
     interval_total_us += interval_us;
     ave_fps = dartLength_mm / (interval_total_us / shot_count) / 25.4 / 12 * 1E+6;
-    /*
+
     Serial.print(shot_count);
     Serial.print(", ");
-    Serial.print(micros() - mtr_time1_us);
-    Serial.print(" us, ");
-    //Serial.print(millis() / 1000.0);
-    //Serial.print(", ");
+    //Serial.print(micros() - mtr_time1_us);
+    //Serial.print(" us, ");
+    Serial.print(millis() / 1000.0);
+    Serial.print(" sec, ");
     Serial.print(speed_fps, 1);
     Serial.print(" fps, ");
     Serial.print(voltage, 2);
-    Serial.print(" v, ");
-    Serial.print(rpm, 1);
-    Serial.print(" rpm, ");
-    Serial.println(temperatureC, 2);
-    */
-    flag2 = false; // reset gate }
+    Serial.println(" v, ");
+    //Serial.print(rpm, 1);
+    //Serial.print(" rpm, ");
+    //Serial.println(temperatureC, 2);
+    dartSensorFlag2 = false; // reset gate }
   }
   
-  if (millis() > nextTime){
+  if (millis() > nextTime){ // update display every quarter second
     nextTime = millis() + 250; 
     showDisplay();
   }
-
-/*
-  // handle rev switch 
-  if (!digitalRead(rev_switch)){
-    if(!SAFE){
-      if(!rev_state){ // accel has been pushed
-        rev_state = true;
-        accel_till_ms = millis() + starting_accel_time_ms;
-        flywheel_speed = flywheel_full_pwm;
-      }
-      //if(!digitalRead(trigger_switch)){  // full speed overide by trigger
-      //  flywheel_speed = 255;
-      //}
-      else{  // accel if needed, else coast
-        if (millis() < accel_till_ms){
-          flywheel_speed = flywheel_full_pwm;
-        }
-        else{
-          flywheel_speed = flywheel_idle_pwm;
-        }
-      }           
+  
+  // handle auto mode
+  if(cycle_limit == 4){
+    if (digitalRead(trigger_switch)){ //switch released
+      cycle_count = 4;
+      pushing_interrupt();
     }
   }
-  else{
-    flywheel_speed = 0;
-    rev_state = false;
-  } */
 
   // handle rev switch   
   if(rev_state){
-    if (millis() < accel_till_ms){
-      flywheel_speed = flywheel_full_pwm;
+    if (!pushing_flag){
+      if (millis() < accel_till_ms){
+        flywheel_speed = flywheel_full_pwm;
+      }
+      else{
+        flywheel_speed = flywheel_idle_pwm;
+      }
     }
     else{
-      flywheel_speed = flywheel_idle_pwm;
+      flywheel_speed = flywheel_full_pwm;
     }
   }
   else{
     flywheel_speed = 0;
   }   
-  if(pushing_flag){
-    flywheel_speed = flywheel_full_pwm;
-  }
   analogWrite(flywheelPWM, flywheel_speed);
 
   if (trigger_delay){
@@ -580,6 +561,7 @@ void loop() {
       }
     }
   }
+  
   if (braking_flag){
     flywheel_speed = flywheel_idle_pwm;
     if(millis() < brake_till_ms){
@@ -593,55 +575,4 @@ void loop() {
     }
   }
 
-  
-  /*
-  // handle pushing
-  if (pushing_flag){
-    if(backing){
-      analogWrite(pusherIn1, 0);   
-      analogWrite(pusherIn2, 125);      
-    }
-    else{
-      if(!SAFE){
-      analogWrite(pusherIn1, 100);   
-      analogWrite(pusherIn2, 0);
-      }
-    }
-  }
-  else {
-    if (digitalRead(pusher_switch)){// out of position
-      backing = true;
-      pushing_flag = true;
-    }
-    else {
-      if (millis() < brake_till_ms){ // brake for a second
-        if(!SAFE){
-          analogWrite(pusherIn1, 255);   
-          analogWrite(pusherIn2, 255);     
-        } 
-      }
-      else{
-        analogWrite(pusherIn1, 0);   
-        analogWrite(pusherIn2, 0);
-      }
-    }     
-  }*/
-
-
-
-  // serial display ever 1/10th second
-  if(!((millis() /100) % 2)){
-    if(!digitalRead(rev_switch)){
-      Serial.print(voltage);
-      Serial.print(",");
-      Serial.print(flywheel_speed);
-      Serial.print(",");
-
-      Serial.print(millis() / 1000.0, 2);
-      Serial.print(",");
-      //Serial.print(!digitalRead(trigger_switch));
-      //Serial.print(",");
-      Serial.println(rpm);
-    }
-  }
 }
