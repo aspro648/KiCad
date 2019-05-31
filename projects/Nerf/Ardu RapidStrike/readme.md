@@ -29,18 +29,12 @@ Bill Of Materials
 - 1 ea., Selectorf switch knob, C&K 296F02000, https://www.digikey.com/short/p4f4z9
 - 1 ea., SWITCH TACTILE SPST-NO 0.05A 24V, https://www.digikey.com/short/p4w42v
 
-- 1 ea., D1 DIODE SCHOTTKY 40V 2A DO15, SMC SB240TA, https://www.digikey.com/short/jn57cv
-
 - 1 ea., 28 Pin socket, On Shore ED281DT, https://www.digikey.com/short/jn5tz5
 - 1 ea., 16 Pin socket, ??
 
-- 2 ea.,2POS Side Entry 3.5MM terminal:
-    - Phoenix 1984617 https://www.digikey.com/short/p45pt4
-    - On Shore OSTTE020161, https://www.digikey.com/short/p45p35
-	- Molex 0393570002, https://www.digikey.com/short/p45pqp
+- 2 ea.,2POS Side Entry 3.5MM terminal, Phoenix 1984617, https://www.digikey.com/short/p45pt4
 	
-- 2 ea., 3POS Side Entry 3.5mm terminal
-- 1 ea., 2POS Side Entry 5mm terminal
+- 2 ea., 3POS Side Entry 3.5mm terminal, Phonenix 1984620, https://www.digikey.com/short/p4wdbq
 
 - 1 ea., 2POS Picoblade header, https://www.digikey.com/short/p4wz0w
 - 1 ea., 2POS PicoBlade housing, https://www.digikey.com/short/p4wz0d
@@ -68,8 +62,9 @@ Optional:
 FTDI SERIAL TTL-232 USB CABLE, https://www.digikey.com/short/p4w47d
 SPARKFUN FT231X BREAKOUT, https://www.digikey.com/short/p4w4qb
 
-XT60 Connector
+1 XT30PW Connector pairs, https://www.banggood.com/5Pairs-Amass-XT30PW-30A-Low-Temperature-Rise-Fire-Retardant-Plug-p-1075324.html
 
+XT60 connector
 
 Revisions
 ----------------
