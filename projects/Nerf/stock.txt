@@ -1,0 +1,25 @@
+
+
+Everyready Gold
+
+2.1 amp startup, 2.7 amp stall
+
+14000 rpm 0.66 amp 
+18000 rmp 0.8 amp
+
+1.7 amp startup 0.185 amp ss
+
+Shot #1  5.64 sec  82.9 fps  25.3 m/s  56.6 mph  
+Shot #2  5.95 sec  73.5 fps  22.4 m/s  50.1 mph  
+Shot #3  6.28 sec  73.4 fps  22.4 m/s  50.0 mph  
+Shot #4  6.60 sec  70.1 fps  21.4 m/s  47.8 mph  
+Shot #5  6.92 sec  68.5 fps  20.9 m/s  46.7 mph  
+Shot #6  7.25 sec  69.6 fps  21.2 m/s  47.5 mph  
+Shot #7  7.57 sec  68.7 fps  21.0 m/s  46.9 mph  
+Shot #8  7.89 sec  66.1 fps  20.1 m/s  45.0 mph  
+Shot #9  8.18 sec  73.5 fps  22.4 m/s  50.1 mph  
+Shot #10  8.47 sec  70.3 fps  21.4 m/s  47.9 mph  
+
+Ave 71.7, High 82.9, low 66.1 fps
+10 shots in 2.83 seconds
+
