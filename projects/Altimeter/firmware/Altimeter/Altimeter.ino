@@ -36,7 +36,8 @@ atmega328bb.bootloader.extended_fuses=0x07
 #include <Adafruit_SSD1306.h>
 #include <Adafruit_MPL3115A2.h>
 
-#define OLED_RESET 4
+#define OLED_RESET -1
+
 Adafruit_SSD1306 display(OLED_RESET);
 
 #define NUMFLAKES 10
@@ -107,11 +108,15 @@ void loop() {
   // The standard sea-level pressure is 29.92 in Hg (1013 mb).
   // Corrected barometeric pressue @ 235 ft = 1004.5 mb (100.45 kPa)
   float kPa = baro.getPressure()/1000;  // function returns pascals
-  float atm_kPa = 100.83;
+  float psi = kPa * 0.14504;
+  float atm_kPa = 100.45;
   float vac_kPa = kPa - atm_kPa;
+
+  
   display.print(vac_kPa); display.println(" kPa");
+  display.print(psi, 2); display.println(" psi");
   //display.print(pascals/3377); display.println(" InHg");
-  display.print(abs(vac_kPa) * 4.0146, 1); display.println(" \"H2O");
+  //display.print(vac_kPa * 4.0146, 1); display.println(" \"H2O");
   float tempC = baro.getTemperature();
   //Serial.print(tempC); Serial.println("*C");
   display.print(tempC, 1); display.println(" C");
