@@ -10,6 +10,7 @@ Bill Of Materials
 
 - 1 ea., Atmega328P-PU https://www.digikey.com/short/jn57wj
 - 1 ea., L293D H-Bridge, STMicroelectronics L293D, https://www.digikey.com/short/p4fmdz
+- 1 ea., IC INVERTER SCHMITT 6CH 14DIP, TI SN74HC14N, https://www.digikey.com/short/pmzjfv
 - 3 ea., Hall Effect Sensor, Diodes Incorporated AH9246-P-B, https://www.digikey.com/short/p4f5dw
 - 1 ea., CER RES 16.0000MHZ 30PF T/H, ECS ZTT-16.00MX, https://www.digikey.com/short/jn9pjv
 - 4 ea., CER 0.1UF 25V Y5V RADIAL 2.5mm lead spacing, generic, https://www.digikey.com/short/jn9pm2
