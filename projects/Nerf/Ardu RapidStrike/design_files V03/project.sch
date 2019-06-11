@@ -32,7 +32,7 @@ LIBS:valves
 LIBS:motor_drivers
 LIBS:switches
 LIBS:sensors
-LIBS:Arduino-cache
+LIBS:project-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
@@ -817,30 +817,30 @@ CLIP DETECT
 $Comp
 L Conn_01x02 J2
 U 1 1 5CE59139
-P 1150 5950
-F 0 "J2" H 1150 6050 50  0000 C CNN
-F 1 "BATT_IN" H 1150 5750 50  0000 C CNN
-F 2 "footprints:XT30PW_M" H 1150 5950 50  0001 C CNN
-F 3 "" H 1150 5950 50  0001 C CNN
-	1    1150 5950
+P 950 5950
+F 0 "J2" H 950 6050 50  0000 C CNN
+F 1 "BATT_IN" H 950 5750 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 950 5950 50  0001 C CNN
+F 3 "" H 950 5950 50  0001 C CNN
+	1    950  5950
 	-1   0    0    -1  
 $EndComp
-Text Notes 1000 6100 0    60   ~ 0
+Text Notes 800  6100 0    60   ~ 0
 +\n-
 $Comp
 L Conn_01x02 J9
 U 1 1 5CE592FA
-P 1150 6450
-F 0 "J9" H 1150 6550 50  0000 C CNN
-F 1 "FLYWHEELS" H 1150 6250 50  0000 C CNN
-F 2 "footprints:XT30PW_F" H 1150 6450 50  0001 C CNN
-F 3 "" H 1150 6450 50  0001 C CNN
-	1    1150 6450
+P 950 6450
+F 0 "J9" H 950 6550 50  0000 C CNN
+F 1 "FLYWHEELS" H 950 6250 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 950 6450 50  0001 C CNN
+F 3 "" H 950 6450 50  0001 C CNN
+	1    950  6450
 	-1   0    0    -1  
 $EndComp
-Text Notes 1000 6600 0    60   ~ 0
+Text Notes 800  7050 0    60   ~ 0
 +\n-
-Text Label 1400 7350 0    60   ~ 0
+Text Label 1200 7350 0    60   ~ 0
 9(**)
 Text Notes 5300 2000 0    60   ~ 0
 SAFE
@@ -892,7 +892,7 @@ L R R13
 U 1 1 5CE6E6D6
 P 5050 1000
 F 0 "R13" V 4950 1000 50  0000 C CNN
-F 1 "100K" V 5050 1000 50  0000 C CNN
+F 1 "30K" V 5050 1000 50  0000 C CNN
 F 2 "footprints:R__P7mm" V 4980 1000 50  0001 C CNN
 F 3 "" H 5050 1000 50  0001 C CNN
 	1    5050 1000
@@ -914,7 +914,7 @@ L R R15
 U 1 1 5CE6EFB5
 P 5050 1750
 F 0 "R15" V 4950 1750 50  0000 C CNN
-F 1 "1K" V 5050 1750 50  0000 C CNN
+F 1 "3K3" V 5050 1750 50  0000 C CNN
 F 2 "footprints:R__P7mm" V 4980 1750 50  0001 C CNN
 F 3 "" H 5050 1750 50  0001 C CNN
 	1    5050 1750
@@ -1274,23 +1274,23 @@ Vin
 $Comp
 L Conn_01x02 J1
 U 1 1 5CF8ECC4
-P 1150 7000
-F 0 "J1" H 1150 7100 50  0000 C CNN
-F 1 "BATT_OUT" H 1150 6800 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 1150 7000 50  0001 C CNN
-F 3 "" H 1150 7000 50  0001 C CNN
-	1    1150 7000
-	-1   0    0    1   
+P 950 6900
+F 0 "J1" H 950 7000 50  0000 C CNN
+F 1 "BATT_OUT" H 950 6700 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 950 6900 50  0001 C CNN
+F 3 "" H 950 6900 50  0001 C CNN
+	1    950  6900
+	-1   0    0    -1  
 $EndComp
 $Comp
 L CONN_01X01 J10
 U 1 1 5CF8FA0D
-P 1150 7350
-F 0 "J10" H 1150 7250 50  0000 C CNN
-F 1 "PWM_IN" H 1150 7450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.00mm" H 1150 7350 50  0001 C CNN
-F 3 "" H 1150 7350 50  0001 C CNN
-	1    1150 7350
+P 950 7350
+F 0 "J10" H 950 7250 50  0000 C CNN
+F 1 "PWM" H 950 7450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.00mm" H 950 7350 50  0001 C CNN
+F 3 "" H 950 7350 50  0001 C CNN
+	1    950  7350
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1347,7 +1347,7 @@ Wire Wire Line
 	3150 3600 3150 3500
 Connection ~ 1800 6550
 Wire Wire Line
-	1350 6550 1800 6550
+	1150 6550 1800 6550
 Wire Wire Line
 	6500 5600 6500 5700
 Wire Wire Line
@@ -1466,19 +1466,17 @@ Wire Wire Line
 	2000 6550 2250 6550
 Wire Wire Line
 	2000 7350 2000 6550
-Connection ~ 1450 6450
+Connection ~ 1600 6450
 Wire Wire Line
-	1450 6900 1350 6900
+	1600 6900 1150 6900
 Wire Wire Line
-	1350 7350 2000 7350
+	1150 7350 2000 7350
 Wire Wire Line
-	2850 6050 1350 6050
+	2850 6050 1150 6050
 Wire Wire Line
-	1450 6450 1350 6450
+	1600 5950 1600 6900
 Wire Wire Line
-	1450 5950 1450 6900
-Wire Wire Line
-	1350 5950 1450 5950
+	1150 5950 1600 5950
 Wire Notes Line
 	6900 2000 6150 2000
 Wire Notes Line
@@ -1614,7 +1612,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 7000 1800 6900
 Wire Wire Line
-	1350 7000 2850 7000
+	1150 7000 2850 7000
 Wire Wire Line
 	2550 6750 2550 7100
 Wire Wire Line
@@ -1712,7 +1710,7 @@ Wire Wire Line
 Connection ~ 1900 1050
 Wire Wire Line
 	1900 1500 1900 1450
-Text Label 1600 6050 0    60   ~ 0
+Text Label 1250 5950 0    60   ~ 0
 BATT
 Text Label 9800 1600 0    60   ~ 0
 Vin
@@ -1876,7 +1874,7 @@ Wire Notes Line
 Text Notes 4950 7850 0    60   ~ 12
 TRIGGER BOARD
 Text Notes 950  7850 0    60   ~ 12
-FLYWHEELS BOARD
+MOSFET BOARD
 Text Notes 2250 5350 0    60   ~ 12
 PUSHER BOARD
 $Comp
@@ -2061,4 +2059,25 @@ Wire Notes Line
 	3700 7150 3700 8000
 Wire Notes Line
 	6100 5850 8500 5850
+Text Notes 5650 1850 0    60   ~ 0
+3.75V\n768
+Text Notes 5650 1500 0    60   ~ 0
+2.5V\n512
+Text Notes 5650 1150 0    60   ~ 0
+1.25V\n256
+$Comp
+L Polyfuse F1
+U 1 1 5CFFD544
+P 1350 6450
+F 0 "F1" V 1400 6600 50  0000 C CNN
+F 1 "Polyfuse" V 1250 6450 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_Littelfuse-LVR125" H 1400 6250 50  0001 L CNN
+F 3 "" H 1350 6450 50  0001 C CNN
+	1    1350 6450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 6450 1200 6450
+Wire Wire Line
+	1500 6450 1600 6450
 $EndSCHEMATC

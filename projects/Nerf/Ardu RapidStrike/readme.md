@@ -21,7 +21,7 @@ Bill Of Materials
 - 4 ea., 1K Ohm Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4fr81
 - 8 ea., 10K Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4frj2 
 - 2 ea., 100K ohm resistor, 1/8W 5% generic, https://www.digikey.com/short/p4frpj
-
+- 1 ea., PTC RESET FUSE 16V 10A RADIAL, https://www.digikey.com/short/pmf2q0
 - 2 ea., 1K Resistor, 1/4W 1% generic, https://www.digikey.com/short/p4frwz
 - 2 ea., 10K Resistors, 1/4W 1% generic, https://www.digikey.com/short/p4fr2q
 - 2 ea., 100K Resistors, 1/4W 1% generic, https://www.digikey.com/short/p4fr22
