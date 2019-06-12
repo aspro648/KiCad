@@ -2,7 +2,7 @@
 Photo transistor connected to A0 with external 10K ohm pull-up
 */
 
-int sensorPin = A0;        // must be pin A0 to A5 for interrupt PCINT1_vect signal
+int sensorPin = A1;        // must be pin A0 to A5 for interrupt PCINT1_vect signal
 int flyWheelPin = 2;
 int shot_count = 0;
 long time1_us = 0;         // dart enters gate
@@ -21,7 +21,7 @@ long nextTime = 0;
 int curPin = A1;
 int mVperAmp = 185; // use185 for 5A, 100 for 20A Module and 66 for 30A Module
 int RawValue= 0;
-int ACSoffset = 2500; 
+int ACSoffset = 2470; 
 double Voltage = 0;
 double Amps = 0;
 double maxA = 0;
