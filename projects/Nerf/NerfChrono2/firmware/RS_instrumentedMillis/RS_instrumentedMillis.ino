@@ -2,7 +2,7 @@
 Photo transistor connected to A0 with external 10K ohm pull-up
 */
 
-int sensorPin = A1;        // must be pin A0 to A5 for interrupt PCINT1_vect signal
+int sensorPin = A0;        // must be pin A0 to A5 for interrupt PCINT1_vect signal
 int flyWheelPin = 2;
 int shot_count = 0;
 long time1_us = 0;         // dart enters gate
@@ -14,16 +14,15 @@ float speed_mps = 0;       // meters per second
 float speed_mph = 0;       // miles per hour
 float ave_fps = 0;         // average feet per second
 bool flag = false;         // dart exits gate
-volatile long mtr_time1_us = 0;
-volatile long mtr_time2_us = 0;
+volatile unsigned long mtr_time1_us = 0;
+volatile unsigned long mtr_time2_us = 0;
 volatile byte cnt = 0;
 int rpm = 0;
 long nextTime = 0;
 int curPin = A1;
 int mVperAmp = 185; // use185 for 5A, 100 for 20A Module and 66 for 30A Module
 int RawValue= 0;
-
-int ACSoffset = 2530; 
+int ACSoffset = 2500; 
 double Voltage = 0;
 double Amps = 0;
 double maxA = 0;
@@ -43,7 +42,7 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, FALLING);  
   // Open serial coms to console
   pinMode(curPin, INPUT);
-  Serial.begin(57600);
+  Serial.begin(9600);
   Serial.println("time(s), rpm, amps, maxAmps");
 }
 
@@ -60,17 +59,13 @@ ISR (PCINT1_vect) { // handle pin change interrupt for A0 to A5 here
 
 
 void flywheel_interrupt(){
-  cnt += 1;
-  if(cnt>100){
-    cnt = 0;
     mtr_time2_us = mtr_time1_us;
     mtr_time1_us = micros(); 
-  }
 }
 
 
 void loop() {
-  long mtr_interval_us = mtr_time1_us - mtr_time2_us;
+  unsigned long mtr_interval_us = mtr_time1_us - mtr_time2_us;
   if (mtr_interval_us > 0){
     rpm = 1E+6 * 60 / mtr_interval_us;
   }
@@ -78,9 +73,9 @@ void loop() {
     rpm = 0;
   }
 
-  //RawValue = analogRead(curPin);
-  //Voltage = (RawValue / 1024.0) * 5000; // Gets you mV
-  //Amps = ((Voltage - ACSoffset) / mVperAmp);
+  RawValue = analogRead(curPin);
+  Voltage = (RawValue / 1024.0) * 5000; // Gets you mV
+  Amps = ((Voltage - ACSoffset) / mVperAmp);
   if (Amps > maxA){
     maxA = Amps;
   } 
@@ -110,11 +105,14 @@ void loop() {
     flag = false; // reset gate
   }
  if (millis() > nextTime && rpm > 0){
-   nextTime += 1000;
+   nextTime = millis() + 250;
    if(true){
 
+   Serial.print(mtr_interval_us); 
+   Serial.print(", " ); 
    Serial.print(millis() / 1000.0); 
    Serial.print(", " ); // shows pre-scaled value 
+      
    Serial.print(rpm); 
    Serial.print(", "); // shows the voltage measured 
    //Serial.print(Voltage,3); // the '3' after voltage allows you to display 3 digits after decimal point

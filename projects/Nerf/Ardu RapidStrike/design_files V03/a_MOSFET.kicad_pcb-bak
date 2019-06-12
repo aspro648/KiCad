@@ -768,7 +768,7 @@
   (gr_text @TheMakersBox (at 140.498 69.865) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3) italic) (justify mirror))
   )
-  (gr_text "Rev 0.3\nJun 2019" (at 151.998 54.365) (layer B.SilkS)
+  (gr_text "Rev 0.3\nJun 2019" (at 156.498 66.865) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.1)) (justify left mirror))
   )
 
