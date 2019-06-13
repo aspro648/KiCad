@@ -3,10 +3,10 @@ Measuring Current Using ACS712
 http://henrysbench.capnfatz.com/henrys-bench/arduino-current-measurements/acs712-current-sensor-user-manual/
 */
 
-const int analogIn = A2;
+const int analogIn = A1;
 int mVperAmp = 185; // use185 for 5A, 100 for 20A Module and 66 for 30A Module
 int RawValue= 0;
-int ACSoffset = 2500; 
+int ACSoffset = 2485; 
 double Voltage = 0;
 double Amps = 0;
 double maxA = 0;

@@ -104,21 +104,21 @@ void loop() {
 
     flag = false; // reset gate
   }
- if (millis() > nextTime && rpm > 0){
+ if (millis() > nextTime){
    nextTime = millis() + 250;
    if(true){
 
-   Serial.print(mtr_interval_us); 
+   Serial.print(RawValue); 
    Serial.print(", " ); 
-   Serial.print(millis() / 1000.0); 
-   Serial.print(", " ); // shows pre-scaled value 
+   Serial.print(Voltage); 
+   Serial.print("v, " ); // shows pre-scaled value 
       
    Serial.print(rpm); 
    Serial.print(", "); // shows the voltage measured 
    //Serial.print(Voltage,3); // the '3' after voltage allows you to display 3 digits after decimal point
    //Serial.print(", "); // shows the voltage measured 
    Serial.print(Amps,3); // the '3' after voltage allows you to display 3 digits after decimal point
-   Serial.print(", "); // shows the voltage measured 
+   Serial.print("A, "); // shows the voltage measured 
    Serial.println(maxA,3); // the '3' after voltage allows you to display 3 digits after decimal point
    }
    else{

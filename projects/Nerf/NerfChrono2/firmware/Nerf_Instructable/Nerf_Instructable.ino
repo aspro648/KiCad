@@ -52,7 +52,7 @@ void loop() {
     //Serial.print("Shot #");
     Serial.print(shot_count);
     Serial.print(", ");
-    Serial.print(millis()/1000.0, 1);
+    Serial.print(millis()/1000.0, 3);
     //Serial.print(" us  ");
     Serial.print(", ");
     Serial.println(speed_fps, 1);

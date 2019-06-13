@@ -43,7 +43,7 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, FALLING);  
   // Open serial coms to console
   pinMode(curPin, INPUT);
-  Serial.begin(57600);
+  Serial.begin(9600);
   Serial.println("time(s), rpm, amps, maxAmps");
 }
 
@@ -109,8 +109,8 @@ void loop() {
 
     flag = false; // reset gate
   }
- if (millis() > nextTime && rpm > 0){
-   nextTime += 1000;
+ if (millis() > nextTime && 0){
+   nextTime = nextTime + 1000;
    if(true){
 
    Serial.print(millis() / 1000.0); 
