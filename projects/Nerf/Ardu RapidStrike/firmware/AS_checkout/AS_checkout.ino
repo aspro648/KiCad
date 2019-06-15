@@ -15,10 +15,11 @@ Adafruit_SSD1306 display(OLED_RESET);
 float version = 0.2;
 
 int triggerSwitch = 8;
-int revSwitch = 2;
-int pusherSwitch = 4;
+int revSwitch = 7;
+int pusherSwitch = 2;
 int buttonPin = A0;
 int SELECT_pin = A2;
+int SPKR = 4;
 
 int clipU3pin = 10;
 int clipU4pin = 11;
@@ -59,7 +60,7 @@ void setup() {
   pinMode(revSwitch, INPUT);
   pinMode(pusherSwitch, INPUT);
   pinMode(voltagePin, INPUT);
-  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(buttonPin, INPUT);
 
   pinMode(clipU3pin, INPUT);          // Hall sensors have internal pullups
   pinMode(clipU4pin, INPUT);
@@ -68,6 +69,7 @@ void setup() {
   pinMode(flywheelPWM, OUTPUT);
   pinMode(pusherIn1, OUTPUT);
   pinMode(pusherIn2, OUTPUT);
+  pinMode(SPKR, OUTPUT);
 
   pciSetup(revSwitch);
   pciSetup(triggerSwitch);
@@ -79,6 +81,10 @@ void setup() {
   analogWrite(pusherIn2, 0);  
   //display.clearDisplay();
   display.display();  
+  tone(SPKR, 400, 100);
+  delay(100);
+  tone(SPKR, 800, 100);
+  
   delay(1000);  // splash screen
   
   //analogWrite(flywheelPWM,100);
@@ -101,11 +107,23 @@ void showDisplay(){
   display.setCursor(0, 0);
 
   display.print("trig: ");
-  display.println(digitalRead(triggerSwitch));
+  display.print(digitalRead(triggerSwitch));
+
+  display.print("  SEL:");
+  display.println(analogRead(SELECT_pin));
+  
   display.print(" rev: ");
-  display.println(digitalRead(revSwitch));
+  display.print(digitalRead(revSwitch));
+
+  display.print("  CLP:");
+  display.print(digitalRead(clipU3pin));
+  display.print(digitalRead(clipU4pin));  
+  display.println(digitalRead(clipU6pin));
+    
   display.print("push: ");  
   display.println(digitalRead(pusherSwitch));
+  display.print("butn: ");  
+  display.println(digitalRead(buttonPin));
   display.print("volt: ");
   display.println(voltage, 2);
   display.print("IRC:");
