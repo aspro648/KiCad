@@ -626,9 +626,9 @@ Text Notes 900  2400 0    60   ~ 0
 Text Label 2850 3300 0    60   ~ 0
 9(**)
 Text Notes 3550 3900 0    60   ~ 0
-A0 BUTTON\nA1 CLIP\nA2 DSP PWR\nA3 Voltage\nD2 \nD3 REV SW\nD4 SPKR\nD5 \nD6 \nD7 DART IR\nD8 \nD9 FW MTRS\nD10 Clip U3\nD11 Clip U4\nD12 Clip U6\nD13 LED
+A0 BUTTON\nA1 DART IR\nA2 DSP PWR\nA3 Voltage\nD2 \nD3 REV SW\nD4 SPKR\nD5 \nD6 \nD7 CLIP\nD8 \nD9 FW MTRS\nD10 Clip U3\nD11 Clip U4\nD12 Clip U6\nD13 LED
 Text Label 2550 5800 0    60   ~ 0
-A1
+7
 $Comp
 L CONN_01X01 J14
 U 1 1 5CE78195
@@ -1188,7 +1188,7 @@ Wire Wire Line
 	8850 3300 8650 3300
 Connection ~ 8850 3500
 Text Label 8700 3300 0    60   ~ 0
-7
+A1
 Text Label 2450 4750 0    60   ~ 0
 3(**)
 Wire Wire Line

@@ -10,7 +10,8 @@ Main Board
 - 1 ea., IC REG LINEAR 5V 250MA TO92-3, Microchip MCP1702-5002E/TO, https://www.digikey.com/short/pm2nmj
 - 3 ea., Hall Effect Sensor, Diodes Incorporated AH9246-P-B, https://www.digikey.com/short/p4f5dw
 - 1 ea., MOSFET N-CH 30V 58A DPAK, Infineon IRLR8729, https://www.digikey.com/short/pm0rdq
-- 1 ea., PTC RESET FUSE 16V 10A RADIAL, https://www.digikey.com/short/pmf2q0
+- 1 ea., CONN IC DIP SOCKET 16POS TIN, https://www.digikey.com/short/ph78mv
+- 1 ea., PTC RESET FUSE 16V 5A RADIAL, https://www.digikey.com/short/ph7qmn
 - 1 ea., 2N4401 NPN Transistor, https://www.digikey.com/short/pm0rwd
 - 2 ea., CER 0.1UF 25V Y5V RADIAL 2.5mm lead spacing, generic, https://www.digikey.com/short/jn9pm2
 - 2 ea., CER 1UF 25V X7R RADIAL 2.5 lead spacing, generic https://www.digikey.com/short/p4fr3w
@@ -24,7 +25,7 @@ Main Board
 - 4 ea., 10K Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4frj2 
 
 - 1 ea., 10K Resistors, 1/4W 1%, https://www.digikey.com/short/p4fr2q
-- 2 ea., 100K Resistors, 1/4W 1%, 
+- 2 ea., 100K Resistors, 1/8W 1%, https://www.digikey.com/short/ph7q59
 
 - 1 ea., SWITCH TACTILE SPST-NO 0.05A 24V, https://www.digikey.com/short/p4w42v
 - 1 ea., Piezo speaker, TDK PS1240P02CT3,  https://www.digikey.com/short/pmwzfc

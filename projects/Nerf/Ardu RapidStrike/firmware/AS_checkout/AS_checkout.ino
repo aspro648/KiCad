@@ -15,11 +15,13 @@ Adafruit_SSD1306 display(OLED_RESET);
 float version = 0.2;
 
 int triggerSwitch = 8;
-int revSwitch = 7;
+int revSwitch = 3;
+int DART_IR = A1;
 int pusherSwitch = 2;
 int buttonPin = A0;
 int SELECT_pin = A2;
 int SPKR = 4;
+int CLIP = 7;
 
 int clipU3pin = 10;
 int clipU4pin = 11;
@@ -61,10 +63,13 @@ void setup() {
   pinMode(pusherSwitch, INPUT);
   pinMode(voltagePin, INPUT);
   pinMode(buttonPin, INPUT);
+  pinMode(DART_IR, INPUT);
+  pinMode(CLIP, INPUT_PULLUP);
 
   pinMode(clipU3pin, INPUT);          // Hall sensors have internal pullups
   pinMode(clipU4pin, INPUT);
   pinMode(clipU6pin, INPUT);
+
 
   pinMode(flywheelPWM, OUTPUT);
   pinMode(pusherIn1, OUTPUT);
@@ -85,7 +90,7 @@ void setup() {
   delay(100);
   tone(SPKR, 800, 100);
   
-  delay(1000);  // splash screen
+  delay(500);  // splash screen
   
   //analogWrite(flywheelPWM,100);
   //delay(1000);
@@ -115,15 +120,23 @@ void showDisplay(){
   display.print(" rev: ");
   display.print(digitalRead(revSwitch));
 
-  display.print("  CLP:");
+  display.print("  MAG:");
   display.print(digitalRead(clipU3pin));
   display.print(digitalRead(clipU4pin));  
   display.println(digitalRead(clipU6pin));
     
   display.print("push: ");  
-  display.println(digitalRead(pusherSwitch));
+  display.print(digitalRead(pusherSwitch));
+
+  display.print("  DIR:");
+  display.println(digitalRead(DART_IR));
+  
   display.print("butn: ");  
-  display.println(digitalRead(buttonPin));
+  display.print(digitalRead(buttonPin));
+
+  display.print("  CLP:");
+  display.println(digitalRead(CLIP));
+  
   display.print("volt: ");
   display.println(voltage, 2);
   display.print("IRC:");

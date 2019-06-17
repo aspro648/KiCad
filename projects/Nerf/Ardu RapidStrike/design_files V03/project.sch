@@ -836,7 +836,7 @@ F 1 "CLIP" H 9300 1650 50  0000 C CNN
 F 2 "footprints:Molex_PicoBlade_53048-0210_02x1.25mm_Angled" H 9300 1800 50  0001 C CNN
 F 3 "" H 9300 1800 50  0001 C CNN
 	1    9300 1800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L GND #PWR028
@@ -918,7 +918,7 @@ $EndComp
 Text Label 8650 5200 0    60   ~ 0
 A2
 Text Label 8950 1750 0    60   ~ 0
-A1
+7
 $Comp
 L CONN_01X01 J14
 U 1 1 5CE78195
@@ -1300,7 +1300,7 @@ F 3 "" H 7100 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8950 6000 0    60   ~ 0
-7
+A1
 Text Label 1250 5950 0    60   ~ 0
 BATT
 Text Label 9800 1600 0    60   ~ 0
@@ -1585,7 +1585,7 @@ F 3 "" H 1350 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 5700 3700 0    60   ~ 0
-A0 BUTTON\nA1 CLIP\nA2 DSP PWR\nA3 Voltage\nD2 Pusher SW\nD3 Rev SW\nD4 SPKR\nD5 Pusher A\nD6 Pusher B\nD7 DART_IR\nD8 Trig SW\nD9 Flywheel\nD10 Clip U3\nD11 Clip U4\nD12 Clip U6\nD13 LED
+A0 BUTTON\nA1 DART IR\nA2 DSP PWR\nA3 Voltage\nD2 Pusher SW\nD3 Rev SW\nD4 SPKR\nD5 Pusher A\nD6 Pusher B\nD7 CLIP\nD8 Trig SW\nD9 Flywheel\nD10 Clip U3\nD11 Clip U4\nD12 Clip U6\nD13 LED
 Text Label 6450 5300 0    60   ~ 0
 3(**)
 $Comp
