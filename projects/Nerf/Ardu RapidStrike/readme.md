@@ -39,6 +39,7 @@ Main Board
 - 1 ea., CER RES 16.0000MHZ 30PF T/H, ECS ZTT-16.00MX, https://www.digikey.com/short/jn9pjv
 - 1 ea., IC REG LINEAR 5V 250MA TO92-3, Microchip MCP1702-5002E/TO, https://www.digikey.com/short/pm2nmj
 - 3 ea., Hall Effect Sensor, Diodes Incorporated AH9246-P-B, https://www.digikey.com/short/p4f5dw
+- 1 ea., 0.96 Inch 128x64 I2C OLED, https://www.amazon.com/gp/product/B072Q2X2LL/
 
 - 2 ea., CER 0.1UF 25V Y5V RADIAL 2.5mm lead spacing, generic, https://www.digikey.com/short/jn9pm2
 - 2 ea., CER 1UF 25V X7R RADIAL 2.5 lead spacing, generic https://www.digikey.com/short/p4fr3w

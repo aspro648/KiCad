@@ -66,10 +66,9 @@ void setup() {
   pinMode(DART_IR, INPUT);
   pinMode(CLIP, INPUT_PULLUP);
 
-  pinMode(clipU3pin, INPUT);          // Hall sensors have internal pullups
-  pinMode(clipU4pin, INPUT);
-  pinMode(clipU6pin, INPUT);
-
+  pinMode(clipU3pin, INPUT_PULLUP);          // Hall sensors have internal pullups
+  pinMode(clipU4pin, INPUT_PULLUP);
+  pinMode(clipU6pin, INPUT_PULLUP);
 
   pinMode(flywheelPWM, OUTPUT);
   pinMode(pusherIn1, OUTPUT);
@@ -96,8 +95,8 @@ void setup() {
   //delay(1000);
   //analogWrite(flywheelPWM, 0);
 
-  digitalWrite(pusherIn1, HIGH);
-  delay(1000);
+  //digitalWrite(pusherIn1, HIGH);
+  //delay(1000);
   digitalWrite(pusherIn1, LOW);
 
 }
@@ -114,8 +113,8 @@ void showDisplay(){
   display.print("trig: ");
   display.print(digitalRead(triggerSwitch));
 
-  display.print("  SEL:");
-  display.println(analogRead(SELECT_pin));
+  display.print(" DART:");
+  display.println(analogRead(DART_IR));
   
   display.print(" rev: ");
   display.print(digitalRead(revSwitch));

@@ -15,6 +15,7 @@ Main Board
 - 1 ea., 2N4401 NPN Transistor, https://www.digikey.com/short/pm0rwd
 - 2 ea., CER 0.1UF 25V Y5V RADIAL 2.5mm lead spacing, generic, https://www.digikey.com/short/jn9pm2
 - 2 ea., CER 1UF 25V X7R RADIAL 2.5 lead spacing, generic https://www.digikey.com/short/p4fr3w
+- 1 ea., 0.96 Inch 128x64 I2C OLED, https://www.amazon.com/gp/product/B072Q2X2LL/
 
 - 1 ea., 3mm LED red, https://www.digikey.com/short/pmwzdf
 - 1 ea., 3mm IR LED, https://www.digikey.com/short/pmwzdq
