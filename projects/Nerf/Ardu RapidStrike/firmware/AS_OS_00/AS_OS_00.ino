@@ -2,10 +2,10 @@
 
 TODO:
 Debug mode
-add fps to screen?
 firing algorythms
 pusher algorythms
 check sleep current
+battery alarm
 
 */
 
@@ -55,7 +55,6 @@ volatile bool lastPusherState = false;
 volatile long last_rev_ms = 0;
 
 volatile int shot_count = 0;
-volatile int cycle_limit = 2;
 volatile long dart_time1_us = 0;
 volatile long dart_time2_us = 0;
 volatile bool dart_flag = false;
@@ -66,6 +65,20 @@ bool sleep_flag = false;
 long idle_time_ms = 300000;
 int clip_capacity = 0;
 int clip_id = 0;
+
+volatile bool pushing_flag = false;  // set by trigger pull, true while cycling
+volatile int cycle_count = 0;        // number of pusher cycles
+volatile int cycle_limit = 2;        // number of pusher cycles to stop at
+int pusher_full_pwm = 200;
+int pusher_coast_pwm = 40;
+long stroke_time_ms = 50;
+volatile bool braking_flag = false;  // true if braking
+long brake_time_ms = 1000;            // time breaking applied after cycling stops
+volatile long push_till_ms = 0;     // time to apply breaking until
+volatile long brake_till_ms = 0;     // time to apply breaking until
+
+
+bool debug_flag = true;
 
 
 void pciSetup(byte pin){
@@ -99,9 +112,10 @@ void setup() {
   // Interrupt routines
   //pciSetup(revSwitch);
   pciSetup(triggerSwitch);
-  pciSetup(pusherSwitch);
+  //pciSetup(pusherSwitch);
   pciSetup(DART_IR);
   attachInterrupt(digitalPinToInterrupt(revSwitch), rev_interrupt, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(pusherSwitch), pusher_interrupt, FALLING);
   
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
   digitalWrite(flywheelPWM, LOW);             // not sure why needed, otherwise flywheels rev
@@ -115,13 +129,6 @@ void setup() {
   
   //delay(500);  // splash screen
   
-  //analogWrite(flywheelPWM,100);
-  //delay(1000);
-  //analogWrite(flywheelPWM, 0);
-
-  //digitalWrite(pusherIn1, HIGH);
-  //delay(1000);
-  digitalWrite(pusherIn1, LOW);
   digitalWrite(ledPin, HIGH); // turn LED on to indicate awake
 
 }
@@ -160,16 +167,84 @@ void showDisplay(){
   pews();
 
   graph(6.5, 8.4, voltage); // min, max, value
-  display.setCursor(0, 16);
-  display.print("BAT");
+  display.setCursor(5, 18);
+  if(dart_speed_fps < 10){
+    display.print(" ");
+  }
+  if(dart_speed_fps < 100){
+    display.print(dart_speed_fps, 1);
+  }
+  else {
+    display.setCursor(0, 18);
+    display.print(dart_speed_fps, 1);
+  }
+  display.setCursor(31, 33);
+  display.setTextSize(1);
+  display.println(" fps");
     
-  display.setCursor(54,18);
+  display.setCursor(56,18);
   display.setTextSize(6);
 
   if(shot_count<10){
     display.print(" ");
   }
   display.print(shot_count);
+  display.display();
+}
+
+
+void showDisplayDebug2(){
+  int x=0;
+  int y=0;
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0, 0);
+
+  display.print(voltage, 2);
+  display.print(" v ");
+  display.setCursor(56, 0);
+  display.print(dart_speed_fps, 1);
+  display.println(" fps");
+  
+  display.println("");
+  
+  display.print("trig:");
+  display.print(digitalRead(triggerSwitch));
+
+  display.print("     IR:");
+  display.println(analogRead(DART_IR));
+  
+  display.print(" rev:");
+  display.print(digitalRead(revSwitch));
+
+  display.print("    MAG:");
+  display.print(digitalRead(clipU6pin));
+  display.print(digitalRead(clipU4pin));  
+  display.println(digitalRead(clipU3pin));
+    
+  display.print("push:");  
+  display.print(digitalRead(pusherSwitch));
+
+  display.print(" clipID:");
+  display.println(clip_id);
+  
+  display.print("butn:");  
+  display.print(digitalRead(buttonPin));
+
+  display.print("    cap:");
+  display.println(clip_capacity);
+
+  display.print(" CLP:");
+  display.print(digitalRead(CLIP));
+  
+  display.print("  SHOTS:");
+  display.println(shot_count);
+
+  display.print(" IRC:");
+  display.println(irc);    
+
+
   display.display();
 }
 
@@ -182,46 +257,33 @@ void showDisplayDebug(){
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
 
+  display.print(voltage, 2);
+  display.print(" v ");
+  display.setCursor(56, 0);
+  display.print(dart_speed_fps, 1);
+  display.println(" fps");
+  
+  display.println("");
+  
   display.print("trig:");
   display.print(digitalRead(triggerSwitch));
+  display.print("   IRC:");
+  display.println(irc);    
 
-  display.print(" DART:");
-  display.println(analogRead(DART_IR));
-  
+
   display.print(" rev:");
-  display.print(digitalRead(revSwitch));
-
-  display.print("  MAG:");
-  display.print(digitalRead(clipU6pin));
-  display.print(digitalRead(clipU4pin));  
-  display.println(digitalRead(clipU3pin));
-    
+  display.println(digitalRead(revSwitch));
+  
   display.print("push:");  
-  display.print(digitalRead(pusherSwitch));
+  display.println(digitalRead(pusherSwitch));
 
-  display.print("  DIR:");
-  display.println(digitalRead(DART_IR));
-  
-  display.print("butn:");  
-  display.print(digitalRead(buttonPin));
+  display.print("pushing_flag:");  
+  display.println(pushing_flag);
 
-  display.print("  CLP:");
-  display.println(digitalRead(CLIP));
-  
-  display.print(" IRC:");
-  display.print(irc);
+  display.print("braking_flag:");  
+  display.println(braking_flag);
 
-  display.print(" FPS:");
-  display.println(dart_speed_fps);
 
-  display.print("SHOTS:");
-  display.println(shot_count);
-
-  display.print(" cap:");
-  display.println(clip_capacity);
-    
-  //display.print("volt: ");
- // display.println(voltage, 2);
 
   display.display();
 }
@@ -274,11 +336,9 @@ void pews(){ // graphic display of firing mode
 
 ISR (PCINT0_vect){// handle pin change interrupt for D8 to D13
   //irc += 1;
-  if (!digitalRead(triggerSwitch)) { // LOW if rev switch pressed
-    triggerFlag = true;
-  }
-  else{
-    triggerFlag = false;
+  if (!digitalRead(triggerSwitch) && !pushing_flag) { // LOW if switch pressed
+    pushing_flag = true;
+    analogWrite(pusherIn1, pusher_full_pwm);
   }
 }
 
@@ -295,7 +355,7 @@ ISR (PCINT1_vect) {  // handle pin change interrupt for A0 to A5 here
 
 
 void rev_interrupt(){
-  irc += 1;
+  //irc += 1;
   last_rev_ms = millis();
   if (!digitalRead(revSwitch)) { // LOW if rev switch pressed
     revFlag = true;
@@ -303,19 +363,28 @@ void rev_interrupt(){
   else{
     revFlag = false;
   }
-  
-  bool pusherState = digitalRead(pusherSwitch);
-  if (pusherState != lastPusherState) { // pusher cycle about 160 ms on 2S  
-    //irc += 1;
-    //if(pusherState == LOW){
-      lastPusherState = pusherState;
-      lastPusherTime = curPusherTime;
-      curPusherTime = millis();
-    //}
-  }
 } 
 
 
+void pusher_interrupt(){
+  // about 5 strokes per second, or once every 200 ms.
+  irc += 1;
+  cycle_count += 1;
+  if (cycle_count == cycle_limit){
+    braking_flag = true;
+    pushing_flag = false;
+    brake_till_ms = millis() + brake_time_ms;
+    digitalWrite(pusherIn1, HIGH);
+    digitalWrite(pusherIn2, HIGH);
+    cycle_count = 0;
+  }
+  else{
+    push_till_ms = millis + stroke_time_ms;
+  }
+}
+
+
+/*
 ISR (PCINT2_vect){// handle pin change interrupt for D0 to D7
   
   if (!digitalRead(revSwitch)) { // LOW if rev switch pressed
@@ -335,6 +404,7 @@ ISR (PCINT2_vect){// handle pin change interrupt for D0 to D7
     //}
   }
 } 
+*/
 
 
 
@@ -381,44 +451,60 @@ void loop() {
     //tone(SPKR, 200, 500);
   }
 
-  if (millis() > nextDisplayTime){ // update display every quarter second
-    nextDisplayTime = millis() + 250; 
-    showDisplay();
-    Serial.print(clip_id);
-    Serial.print(" ");
-    Serial.print(clip_capacity);
-    Serial.print(" ");  
+  if (!digitalRead(buttonPin)){
+    while(!digitalRead(buttonPin)){delay(10);}
+    debug_flag = !debug_flag;
+  }
 
-    Serial.print(dart_interval_us);
-    Serial.print(" us,  ");  
-    Serial.print(voltage, 2);
-    Serial.print(" v,  trig=");
-    Serial.print(digitalRead(triggerSwitch));
-    Serial.print(",  rev=");
-    Serial.print(digitalRead(revSwitch));
-    Serial.print(",  psh=");
-    Serial.println(digitalRead(pusherSwitch));
+  if (millis() > nextDisplayTime){ // update display every quarter second
+    nextDisplayTime = millis() + 100; 
+    if (debug_flag){
+      showDisplayDebug();
+      Serial.print(clip_id);
+      Serial.print(" ");
+      Serial.print(clip_capacity);
+      Serial.print(" ");  
+  
+      Serial.print(dart_interval_us);
+      Serial.print(" us,  ");  
+      Serial.print(voltage, 2);
+      Serial.print(" v,  trig=");
+      Serial.print(digitalRead(triggerSwitch));
+      Serial.print(",  rev=");
+      Serial.print(digitalRead(revSwitch));
+      Serial.print(",  psh=");
+      Serial.println(digitalRead(pusherSwitch));
+    }
+    else{
+      showDisplay();
+    }
   }
   
   if(revFlag){
-    if(triggerFlag){  
-      analogWrite(flywheelPWM, 125); 
+    if(pushing_flag){  
+      analogWrite(flywheelPWM, 80); 
+      if (millis() < push_till_ms){
+        analogWrite(pusherIn1, pusher_full_pwm); 
+      }
+      else{
+        analogWrite(pusherIn1, pusher_full_pwm);
+      }
+      
     }
     else{
-      analogWrite(flywheelPWM, 80); 
+      analogWrite(flywheelPWM, 40); 
     }
   }
   else{
     analogWrite(flywheelPWM, 0);
   }
 
-  if(triggerFlag){
-    analogWrite(pusherIn1, 255);   
-    analogWrite(pusherIn2, 0); 
-  }
-  else{
-    analogWrite(pusherIn1, 0);   
-    analogWrite(pusherIn2, 0);     
+  if(braking_flag){
+    if (millis() > brake_till_ms){
+      braking_flag = false;
+      analogWrite(pusherIn1, 0);   
+      analogWrite(pusherIn2, 0);  
+    }
   }
   
   if((last_rev_ms + idle_time_ms) < millis()){
