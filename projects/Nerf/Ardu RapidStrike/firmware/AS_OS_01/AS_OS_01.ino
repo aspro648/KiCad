@@ -69,7 +69,7 @@ int clip_id = 0;
 volatile bool pushing_flag = false;  // set by trigger pull, true while cycling
 volatile int cycle_count = 0;        // number of pusher cycles
 volatile int cycle_limit = 3;        // number of pusher cycles to stop at
-int pusher_full_pwm = 255;
+int pusher_full_pwm = 200;
 int pusher_coast_pwm = 255;
 int pusher_pwm = 0;
 
@@ -78,8 +78,8 @@ volatile bool braking_flag = false;  // true if braking
 long brake_time_ms = 100;             // time breaking applied after cycling stops
 volatile long push_till_ms = 0;      // time to apply breaking until
 volatile long brake_till_ms = 0;     // time to apply breaking until
-int flywheel_full_pwm = 100;
-int flywheel_coast_pwm = 40;
+int flywheel_full_pwm = 255;
+int flywheel_coast_pwm = 125;
 
 bool debug_flag = true;
 
@@ -131,6 +131,7 @@ void setup() {
   tone(SPKR, 400, 100);
   delay(100);
   tone(SPKR, 800, 100);
+
 
   if(digitalRead(pusherSwitch)){
     while(digitalRead(pusherSwitch)){
@@ -348,9 +349,10 @@ ISR (PCINT0_vect){// handle pin change interrupt for D8 to D13
   //irc += 1;
   if (!digitalRead(triggerSwitch) && !pushing_flag) { // LOW if switch pressed
     pushing_flag = true;
+    cycle_count = 0;
     //analogWrite(pusherIn1, pusher_full_pwm);
     pusher_pwm = pusher_full_pwm;
-    push_till_ms = millis + stroke_time_ms;
+    //push_till_ms = millis + stroke_time_ms;
   }
 }
 
@@ -387,15 +389,15 @@ void pusher_interrupt(){
     pushing_flag = false;
     brake_till_ms = millis() + brake_time_ms;
     pusher_pwm = 0;
-    digitalWrite(pusherIn1, LOW);
-    digitalWrite(pusherIn2, HIGH);
-    cycle_count = 0;
+    //digitalWrite(pusherIn1, HIGH);
+    //digitalWrite(pusherIn2, HIGH);
+    
   }
-  else{
-    push_till_ms = millis() + stroke_time_ms;
-    //analogWrite(pusherIn1, pusher_full_pwm);
-    pusher_pwm = pusher_full_pwm;
-  }
+  //else{
+  //  push_till_ms = millis() + stroke_time_ms;
+  //  //analogWrite(pusherIn1, pusher_full_pwm);
+  //  pusher_pwm = pusher_full_pwm;
+  //}
 }
 
 
@@ -532,20 +534,24 @@ void loop() {
       analogWrite(pusherIn1, 0);   
       analogWrite(pusherIn2, 0);  
     }
+    else {
+      if(digitalRead(pusherSwitch)){
+          analogWrite(pusherIn2, 100);
+      }
+      else{
+          analogWrite(pusherIn2, 0);
+      }
+    }  
   }
 
+
   if(pushing_flag){
-    if (millis() < push_till_ms){
-      pusher_pwm = pusher_full_pwm; 
-    }
-    else{
-      pusher_pwm = pusher_coast_pwm;
-    }
+    analogWrite(pusherIn1, pusher_pwm);
   }
 
   digitalWrite(ledPin, braking_flag);
 
-  analogWrite(pusherIn1, pusher_pwm);
+  
   
   if((last_rev_ms + idle_time_ms) < millis()){
     sleep_flag = true;
