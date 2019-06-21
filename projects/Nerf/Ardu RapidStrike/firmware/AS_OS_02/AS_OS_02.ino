@@ -1,9 +1,13 @@
 /*
 
+Memory optimization:
+https://cdn-learn.adafruit.com/downloads/pdf/memories-of-an-arduino.pdf
+
+
 TODO:
 check sleep current
-battery alarm
-total shot counter?
+idle chirp in leue of sleep?
+current shot count to EEPROM?
 
 */
 
@@ -11,35 +15,35 @@ total shot counter?
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-//#include "splash.h"
+#include <EEPROM.h>
 
 #define OLED_RESET -1
 Adafruit_SSD1306 display(OLED_RESET);
 
-float version = 0.2;
+float version = 0.3;
 
-int triggerSwitch = 8;
-int revSwitch = 3;
-int DART_IR = A1;
-int pusherSwitch = 2;
-int buttonPin = A0;
-int SELECT_pin = A2;
-int SPKR = 4;
-int CLIP = 7;
-int ledPin = 13;
+uint8_t triggerSwitch = 8;
+uint8_t revSwitch = 3;
+uint8_t DART_IR = A1;
+uint8_t pusherSwitch = 2;
+uint8_t buttonPin = A0;
+uint8_t SELECT_pin = A2;
+uint8_t SPKR = 4;
+uint8_t CLIP = 7;
+uint8_t ledPin = 13;
 
-int clipU3pin = 10;
-int clipU4pin = 11;
-int clipU6pin = 12;
+uint8_t clipU3pin = 10;
+uint8_t clipU4pin = 11;
+uint8_t clipU6pin = 12;
 
-int voltagePin = A3;
+uint8_t voltagePin = A3;
 float vcc = 5.0;
 float vd_factor = 10.7;
 float voltage = 0;
 
-int flywheelPWM = 9;
-int pusherIn1 = 5; 
-int pusherIn2 = 6;
+uint8_t flywheelPWM = 9;
+uint8_t pusherIn1 = 5; 
+uint8_t pusherIn2 = 6;
 
 long nextDisplayTime = 0;   // updates display
 
@@ -61,14 +65,14 @@ float dartLength_mm = 72;
 long dart_interval_us = 0;
 bool sleep_flag = false;
 long idle_time_ms = 300000;
-int clip_capacity = 0;
-int clip_id = 0;
+uint8_t clip_capacity = 0;
+uint8_t clip_id = 0;
 
 volatile bool pushing_flag = false;  // set by trigger pull, true while cycling
-volatile int cycle_count = 0;        // number of pusher cycles
-volatile int cycle_limit = 1;        // number of pusher cycles to stop at
-int pusher_full_pwm = 255;
-int pusher_coast_pwm = 100;
+volatile uint8_t cycle_count = 0;        // number of pusher cycles
+volatile uint8_t cycle_limit = 1;        // number of pusher cycles to stop at
+uint8_t pusher_full_pwm = 255;
+uint8_t pusher_coast_pwm = 100;
 long stroke_time_ms = 100;
 volatile long push_till_ms = 0;      // time to apply breaking until
 
@@ -78,6 +82,7 @@ int flywheel_full_pwm = 255;
 int flywheel_coast_pwm = 125;
 
 bool debug_flag = false;
+volatile word total_count = 0;
 
 
 void pciSetup(byte pin){
@@ -109,38 +114,68 @@ void setup() {
   pinMode(ledPin, OUTPUT);
 
   // Interrupt routines
-  //pciSetup(revSwitch);
   pciSetup(triggerSwitch);
-  //pciSetup(pusherSwitch);
   pciSetup(DART_IR);
   attachInterrupt(digitalPinToInterrupt(revSwitch), rev_interrupt, CHANGE);
   attachInterrupt(digitalPinToInterrupt(pusherSwitch), pusher_interrupt, FALLING);
   
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
-  display.clearDisplay();
-  
+  // startup tone
   tone(SPKR, 400, 100);
   delay(100);
   tone(SPKR, 800, 100);
 
+  // check if button pressed to enter debug mode
   if (!digitalRead(buttonPin)){
     tone(SPKR, 400, 100);
     while(!digitalRead(buttonPin)){delay(10);}
     debug_flag = true;
   }
-  //display.display();  
+  
+  // get counter from EEPROM
+  total_count = readEEPROM();
+  if (total_count == 65535){
+    total_count = 0;
+    writeEEPROM(total_count);
+  }
 
+  // splash screen
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0, 48);
+  display.println(F("Shots"));
+  if(total_count < 10000){display.print(F("0"));}
+  if(total_count < 1000){display.print(F("0"));}
+  if(total_count < 100){display.print(F("0"));}
+  if(total_count < 10){display.print(F("0"));}
+  display.print(total_count);
+  display.setCursor(68, 56);
+  display.print(F("Rev "));
+  display.print(version, 1);
+  display.display();  
+  delay(2000);  // splash screen
+
+  // retract pusher if out of position
   if(digitalRead(pusherSwitch)){
     while(digitalRead(pusherSwitch)){
       analogWrite(pusherIn2, 100);
     }
     analogWrite(pusherIn2, 0);
   }
-  
-  //delay(500);  // splash screen
-  
-  //digitalWrite(ledPin, HIGH); // turn LED on to indicate awake
+}
 
+
+word readEEPROM(){
+  //http://arduino.cc/en/Reference/WordCast
+  uint8_t msb = EEPROM.read(0);
+  uint8_t lsb = EEPROM.read(1);
+  return(word(msb, lsb));
+}
+
+
+void writeEEPROM(word val){
+  EEPROM.write(0, highByte(val));
+  EEPROM.write(1, lowByte(val));
 }
 
 
@@ -149,17 +184,13 @@ void sleepNow(void){
   display.display();  
   delay(100);
 
-  //
-  // Choose our preferred sleep mode:
-  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
-  //
-  // Set sleep enable (SE) bit:
-  sleep_enable();
-  //
+  set_sleep_mode(SLEEP_MODE_PWR_DOWN);   // Choose our preferred sleep mode:
+  sleep_enable();                        // Set sleep enable (SE) bit:
+
   // Put the device to sleep:
-  digitalWrite(ledPin, LOW); // turn LED off to indicate sleep
+  digitalWrite(ledPin, LOW); 
   sleep_mode();
-  //
+
   // Upon waking up, sketch continues from this point.
   sleep_disable();
   digitalWrite(ledPin, HIGH); // turn LED on to indicate awake
@@ -174,12 +205,12 @@ void showDisplay(){
   display.clearDisplay();
   display.setTextSize(2);
   display.setTextColor(WHITE);
-  pews();
+  pews();  // draws bullet shapes
 
   graph(6.5, 8.4, voltage); // min, max, value
   display.setCursor(5, 18);
   if(dart_speed_fps < 10){
-    display.print(" ");
+    display.print(F(" "));
   }
   if(dart_speed_fps < 100){
     display.print(dart_speed_fps, 1);
@@ -190,13 +221,13 @@ void showDisplay(){
   }
   display.setCursor(31, 33);
   display.setTextSize(1);
-  display.println(" fps");
+  display.println(F(" fps"));
     
   display.setCursor(56,18);
   display.setTextSize(6);
 
   if(shot_count<10){
-    display.print(" ");
+    display.print(F(" "));
   }
   display.print(shot_count);
   display.display();
@@ -204,58 +235,58 @@ void showDisplay(){
 
 
 void showDisplayDebug(){
-  int x=0;
-  int y=0;
+  uint8_t x=0;
+  uint8_t y=0;
   display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
 
   display.print(voltage, 2);
-  display.print(" v ");
+  display.print(F(" v "));
   display.setCursor(56, 0);
   display.print(dart_speed_fps, 1);
-  display.println(" fps");
+  display.println(F(" fps"));
   
   display.println("");
   
-  display.print("trig:");
+  display.print(F("trig:"));
   display.print(digitalRead(triggerSwitch));
 
-  display.print("     IR:");
+  display.print(F("     IR:"));
   display.println(analogRead(DART_IR));
   
-  display.print(" rev:");
+  display.print(F(" rev:"));
   display.print(digitalRead(revSwitch));
 
-  display.print("    MAG:");
+  display.print(F("    MAG:"));
   display.print(digitalRead(clipU6pin));
   display.print(digitalRead(clipU4pin));  
   display.println(digitalRead(clipU3pin));
     
-  display.print("push:");  
+  display.print(F("push:"));  
   display.print(digitalRead(pusherSwitch));
 
-  display.print(" clipID:");
+  display.print(F(" clipID:"));
   display.println(clip_id);
   
-  display.print("butn:");  
+  display.print(F("butn:"));  
   display.print(digitalRead(buttonPin));
 
-  display.print("    cap:");
+  display.print(F("    cap:"));
   display.println(clip_capacity);
 
-  display.print(" CLP:");
+  display.print(F(" CLP:"));
   display.print(digitalRead(CLIP));
   
-  display.print("  SHOTS:");
+  display.print(F("  SHOTS:"));
   display.println(shot_count);
 
-  display.print(" IRC:");
+  display.print(F(" IRC:"));
   display.print(irc);
       
-  display.print("  limit:");
-  display.println(cycle_limit);
+  display.print(F("  total:"));
+  display.println(total_count);
 
   display.display();
 }
@@ -270,25 +301,25 @@ void showDisplayDebug2(){
   display.setCursor(0, 0);
 
   display.print(voltage, 2);
-  display.print(" v ");
+  display.print(F(" v "));
   display.setCursor(56, 0);
   display.print(dart_speed_fps, 1);
-  display.println(" fps");
+  display.println(F(" fps"));
   
   display.println("");
   
-  display.print("trig:");
+  display.print(F("trig:"));
   display.print(digitalRead(triggerSwitch));
-  display.print("   IRC:");
+  display.print(F("   IRC:"));
   display.println(irc);    
 
-  display.print(" rev:");
+  display.print(F(" rev:"));
   display.println(digitalRead(revSwitch));
   
-  display.print("push:");  
+  display.print(F("push:"));  
   display.println(digitalRead(pusherSwitch));
 
-  display.print("pushing_flag:");  
+  display.print(F("pushing_flag:"));  
   display.println(pushing_flag);
 
   display.display();
@@ -296,8 +327,6 @@ void showDisplayDebug2(){
 
 
 void graph(float minimum, float maximum, float value){
-  //float fullV = 8.4;
-  //float empV = 6.5;
   float cur = value - minimum;
   float gage = cur / (maximum - minimum) * 8;
   //Serial.println(gage);
@@ -395,27 +424,23 @@ void pusher_interrupt(){
 }
 
 
-/*
-ISR (PCINT2_vect){// handle pin change interrupt for D0 to D7
-  
-  if (!digitalRead(revSwitch)) { // LOW if rev switch pressed
-    revFlag = true;
-  }
-  else{
-    revFlag = false;
-  }
-  
-  bool pusherState = digitalRead(pusherSwitch);
-  if (pusherState != lastPusherState) { // pusher cycle about 160 ms on 2S  
-    //irc += 1;
-    //if(pusherState == LOW){
-      lastPusherState = pusherState;
-      lastPusherTime = curPusherTime;
-      curPusherTime = millis();
-    //}
-  }
-} 
-*/
+// Memory debug stuff
+#ifdef __arm__
+// should use uinstd.h to define sbrk but Due causes a conflict
+extern "C" char* sbrk(int incr);
+#else // __ARM__
+extern char *__brkval;
+#endif // __arm__
+int freeMemory() {
+  char top;
+  #ifdef __arm__
+  return &top - reinterpret_cast<char*>(sbrk(0));
+  #elif defined(CORE_TEENSY) || (ARDUINO > 103 && ARDUINO != 151)
+  return &top - __brkval;
+  #else // __arm__
+  return __brkval ? &top - __brkval : &top - __malloc_heap_start;
+  #endif // __arm__
+}
 
 
 void loop() {
@@ -449,19 +474,30 @@ void loop() {
     else{
       shot_count += 1;
     }
+    total_count += 1;
+    writeEEPROM(total_count);    
     dart_interval_us = dart_time2_us - dart_time1_us;
     dart_speed_fps = dartLength_mm / dart_interval_us / 25.4 / 12 * 1E+6;      // feet per second
     dart_flag = false;
-    //tone(SPKR, 200, 500);
   }
 
   if (!digitalRead(buttonPin)){
     tone(SPKR, 400, 100);
-    while(!digitalRead(buttonPin)){delay(10);}
-    //debug_flag = !debug_flag;
-    cycle_limit = cycle_limit + 1;
-    if (cycle_limit > 4){
-      cycle_limit = 1;
+    long start_time = millis();
+    while(!digitalRead(buttonPin)){
+      delay(10);
+      if(millis() - start_time > 1000){
+        tone(SPKR, 400, 10);
+        }
+      }
+    if (millis() - start_time > 1000){
+      debug_flag = !debug_flag;
+    }
+    else{
+      cycle_limit = cycle_limit + 1;
+      if (cycle_limit > 4){
+        cycle_limit = 1;
+      }
     }
   }
 
@@ -483,7 +519,9 @@ void loop() {
         Serial.print(F(" pf:"));        
         Serial.print(pushing_flag);
         Serial.print(F(" ps:"));
-        Serial.println(digitalRead(pusherSwitch));
+        Serial.print(digitalRead(pusherSwitch));
+        Serial.print(F(" MEM:"));
+        Serial.println(freeMemory());
       }    
     }
     else{
@@ -517,9 +555,6 @@ void loop() {
       }
     }
   }
-  //else{
- //   digitalWrite(pusherIn1, LOW);
- // }
 
   if((last_rev_ms + idle_time_ms) < millis()){
     sleep_flag = true;
