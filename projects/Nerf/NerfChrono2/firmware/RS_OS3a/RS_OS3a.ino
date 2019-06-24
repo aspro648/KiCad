@@ -342,6 +342,11 @@ void showDisplay(){
   int x=0;
   int y=0;
   display.clearDisplay();
+
+  drawLine(0, 0, 127, 0, uint16_t WHITE);
+  drawLine(0, 0, 0, 63, uint16_t WHITE);
+  drawLine(0, 63, 127, 63, uint16_t WHITE);
+  drawLine(127, 0, 127, 63, uint16_t WHITE);
   display.setTextSize(2);
   display.setTextColor(WHITE);
   if (screen == 0){
