@@ -31,6 +31,7 @@ uint8_t SELECT_pin = A2;
 uint8_t SPKR = 4;
 uint8_t CLIP = 7;
 uint8_t ledPin = 13;
+uint8_t DSP_PWR = A2;
 
 uint8_t clipU3pin = 10;
 uint8_t clipU4pin = 11;
@@ -64,7 +65,7 @@ float dart_speed_fps = 0;
 float dartLength_mm = 72;
 long dart_interval_us = 0;
 bool sleep_flag = false;
-long idle_time_ms = 300000;
+long idle_time_ms = 10000;
 uint8_t clip_capacity = 0;
 uint8_t clip_id = 0;
 
@@ -112,7 +113,10 @@ void setup() {
   pinMode(pusherIn2, OUTPUT);
   pinMode(SPKR, OUTPUT);
   pinMode(ledPin, OUTPUT);
-
+  pinMode(DSP_PWR, OUTPUT); 
+  digitalWrite(DSP_PWR, HIGH);
+  delay(50);
+  
   // Interrupt routines
   pciSetup(triggerSwitch);
   pciSetup(DART_IR);
@@ -192,12 +196,18 @@ void sleepNow(void){
 
   // Put the device to sleep:
   digitalWrite(ledPin, LOW); 
+  digitalWrite(DSP_PWR, LOW);
+  delay(100);
   sleep_mode();
 
   // Upon waking up, sketch continues from this point.
   sleep_disable();
   digitalWrite(ledPin, HIGH); // turn LED on to indicate awake
+  digitalWrite(DSP_PWR, HIGH);
+  delay(100);
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)  
   sleep_flag = false;
+  last_rev_ms = millis();
 }
 
 

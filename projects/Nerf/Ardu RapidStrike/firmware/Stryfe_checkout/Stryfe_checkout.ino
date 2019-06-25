@@ -19,6 +19,10 @@ int revSwitch = 3;
 int CLIP = 7;
 int flywheelPWM = 9;
 
+uint8_t clipU3pin = 10;
+uint8_t clipU4pin = 11;
+uint8_t clipU6pin = 12;
+
 
 void setup() {                  
   Serial.begin(9500);
@@ -27,6 +31,10 @@ void setup() {
   pinMode(buttonPin, INPUT);   
   pinMode(CLIP, INPUT);
   pinMode(DART_IR, INPUT);
+
+  pinMode(clipU3pin, INPUT);          // Hall sensors have internal pullups
+  pinMode(clipU4pin, INPUT);
+  pinMode(clipU6pin, INPUT);
 
   pinMode(flywheelPWM, OUTPUT);
   pinMode(SPKR, OUTPUT); 
@@ -72,7 +80,13 @@ void loop() {
   display.println(" v");
   display.println("");
   display.print("  rev: ");
-  display.println(digitalRead(revSwitch));
+  display.print(digitalRead(revSwitch));
+  display.print(F("    MAG:"));
+  display.print(digitalRead(clipU6pin));
+  display.print(digitalRead(clipU4pin));  
+  display.println(digitalRead(clipU3pin));
+  
+  
   display.print(" butn: ");  
   display.println(digitalRead(buttonPin));
   display.print("   CLP:");

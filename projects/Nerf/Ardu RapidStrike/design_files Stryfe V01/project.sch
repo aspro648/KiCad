@@ -369,13 +369,13 @@ $EndComp
 $Comp
 L VCC #PWR016
 U 1 1 5CE19B8E
-P 8000 1850
-F 0 "#PWR016" H 8000 1700 50  0001 C CNN
-F 1 "VCC" H 8000 2000 50  0000 C CNN
-F 2 "" H 8000 1850 50  0001 C CNN
-F 3 "" H 8000 1850 50  0001 C CNN
-	1    8000 1850
-	1    0    0    -1  
+P 8700 1900
+F 0 "#PWR016" H 8700 1750 50  0001 C CNN
+F 1 "VCC" H 8700 2050 50  0000 C CNN
+F 2 "" H 8700 1900 50  0001 C CNN
+F 3 "" H 8700 1900 50  0001 C CNN
+	1    8700 1900
+	0    -1   -1   0   
 $EndComp
 Text Label 8650 1700 0    60   ~ 0
 A4(SDA)
@@ -593,7 +593,7 @@ Text Notes 900  2400 0    60   ~ 0
 Text Label 2850 3300 0    60   ~ 0
 9(**)
 Text Notes 3550 3900 0    60   ~ 0
-A0 BUTTON\nA1 DART IR\nA2 DSP PWR\nA3 Voltage\nD2 \nD3 REV SW\nD4 SPKR\nD5 \nD6 \nD7 CLIP\nD8 \nD9 FW MTRS\nD10 Clip U3\nD11 Clip U4\nD12 Clip U6\nD13 LED
+A0 BUTTON\nA1 DART IR\nA2 \nA3 Voltage\nD2 \nD3 REV SW\nD4 SPKR\nD5 \nD6 \nD7 CLIP\nD8 \nD9 FW MTRS\nD10 Clip U3\nD11 Clip U4\nD12 Clip U6\nD13 LED
 Text Label 2550 5800 0    60   ~ 0
 7
 $Comp
@@ -815,28 +815,6 @@ F 3 "" H 1550 5800 50  0001 C CNN
 	1    1550 5800
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Q_NPN_EBC Q3
-U 1 1 5D036D4E
-P 8250 2000
-F 0 "Q3" V 8450 2050 50  0000 L CNN
-F 1 "2N4401" V 8050 1700 50  0000 L CNN
-F 2 "footprints:TO-92_Inline_Narrow_Oval" H 8450 2100 50  0001 C CNN
-F 3 "" H 8250 2000 50  0001 C CNN
-	1    8250 2000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R1
-U 1 1 5D039142
-P 8000 2250
-F 0 "R1" V 7900 2250 50  0000 C CNN
-F 1 "1K" V 8000 2250 50  0000 C CNN
-F 2 "footprints:R__P5.08mm" V 7930 2250 50  0001 C CNN
-F 3 "" H 8000 2250 50  0001 C CNN
-	1    8000 2250
-	0    1    1    0   
-$EndComp
 Text Notes 1900 7600 0    60   ~ 12
 DEBOUNCE
 $Comp
@@ -1016,7 +994,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 2100 8900 2000
 Wire Wire Line
-	8450 1900 8950 1900
+	8700 1900 8950 1900
 Wire Wire Line
 	8600 1800 8950 1800
 Wire Wire Line
@@ -1078,8 +1056,6 @@ Wire Wire Line
 Wire Wire Line
 	6700 2700 6950 2700
 Wire Wire Line
-	6700 2600 7700 2600
-Wire Wire Line
 	6700 2500 6950 2500
 Wire Wire Line
 	6700 2400 6950 2400
@@ -1129,20 +1105,10 @@ Wire Wire Line
 Wire Wire Line
 	1750 6150 2100 6150
 Wire Wire Line
-	8050 1900 8000 1900
-Wire Wire Line
-	8000 1900 8000 1850
-Wire Wire Line
-	8150 2250 8250 2250
-Wire Wire Line
-	8250 2250 8250 2200
-Wire Wire Line
 	8800 2700 8950 2700
 Wire Wire Line
 	2700 3300 3050 3300
 Connection ~ 2800 3300
-Wire Wire Line
-	7700 2250 7850 2250
 Wire Wire Line
 	2800 3700 2800 3600
 Wire Wire Line
@@ -1190,26 +1156,15 @@ Wire Wire Line
 Wire Wire Line
 	8350 3650 8450 3650
 Wire Wire Line
-	8350 3250 8350 3650
+	8350 3350 8350 3650
 Wire Wire Line
 	8350 3500 8450 3500
-Wire Wire Line
-	8350 3250 8500 3250
-Wire Wire Line
-	8500 3250 8500 2350
-Wire Wire Line
-	8500 2350 8650 2350
-Wire Wire Line
-	8650 2350 8650 1900
-Connection ~ 8650 1900
 Connection ~ 8350 3500
 Wire Wire Line
 	8850 3300 8650 3300
 Connection ~ 8850 3500
 Wire Wire Line
 	6700 1550 6950 1550
-Wire Wire Line
-	7700 2600 7700 2250
 Wire Wire Line
 	7600 950  7900 950 
 Wire Wire Line
@@ -1228,4 +1183,19 @@ Wire Wire Line
 	7350 950  6900 950 
 Wire Wire Line
 	1800 1600 1800 1700
+Wire Wire Line
+	6700 2600 6950 2600
+$Comp
+L VCC #PWR034
+U 1 1 5D11B811
+P 8300 3350
+F 0 "#PWR034" H 8300 3200 50  0001 C CNN
+F 1 "VCC" H 8300 3500 50  0000 C CNN
+F 2 "" H 8300 3350 50  0001 C CNN
+F 3 "" H 8300 3350 50  0001 C CNN
+	1    8300 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8350 3350 8300 3350
 $EndSCHEMATC
