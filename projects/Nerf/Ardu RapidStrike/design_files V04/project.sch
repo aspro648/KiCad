@@ -568,13 +568,13 @@ A5(SCL)
 $Comp
 L Conn_01x02 J4
 U 1 1 5CE1CB8F
-P 1700 2300
-F 0 "J4" V 1700 2400 50  0000 C CNN
-F 1 "JAM" V 1800 2250 50  0000 C CNN
-F 2 "footprints:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 1700 2300 50  0001 C CNN
-F 3 "" H 1700 2300 50  0001 C CNN
-	1    1700 2300
-	0    -1   -1   0   
+P 1800 2300
+F 0 "J4" V 1800 2400 50  0000 C CNN
+F 1 "JAM" V 1900 2250 50  0000 C CNN
+F 2 "footprints:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 1800 2300 50  0001 C CNN
+F 3 "" H 1800 2300 50  0001 C CNN
+	1    1800 2300
+	0    1    -1   0   
 $EndComp
 Text Notes 1950 2350 0    60   ~ 0
 Jam Door\nSwitch

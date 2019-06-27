@@ -22,6 +22,7 @@ int buttonPin = A0;
 int SELECT_pin = A2;
 int SPKR = 4;
 int CLIP = 7;
+uint8_t DSP_PWR = A2;
 
 int clipU3pin = 10;
 int clipU4pin = 11;
@@ -78,6 +79,10 @@ void setup() {
   pciSetup(revSwitch);
   pciSetup(triggerSwitch);
   pciSetup(pusherSwitch);
+
+  pinMode(DSP_PWR, OUTPUT); 
+  digitalWrite(DSP_PWR, HIGH);
+  delay(50);
   
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
   digitalWrite(flywheelPWM, LOW);             // not sure why needed, otherwise flywheels rev
@@ -146,17 +151,19 @@ void showDisplay(){
 
 ISR (PCINT0_vect){// handle pin change interrupt for D8 to D13
   //irc += 1;
+  /*
   if (!digitalRead(triggerSwitch)) { // LOW if rev switch pressed
     triggerFlag = true;
   }
   else{
     triggerFlag = false;
   }
+  */
 }
 
 
 ISR (PCINT2_vect){// handle pin change interrupt for D0 to D7
-  
+  /*
   if (!digitalRead(revSwitch)) { // LOW if rev switch pressed
     revFlag = true;
   }
@@ -173,6 +180,7 @@ ISR (PCINT2_vect){// handle pin change interrupt for D0 to D7
       curPusherTime = millis();
     //}
   }
+  */
 } 
 
 
