@@ -14,8 +14,8 @@
   <Instances>
     <GerberInstance>
       <Center>
-        <X>-177</X>
-        <Y>183</Y>
+        <X>-193</X>
+        <Y>181</Y>
       </Center>
       <Angle>0</Angle>
       <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V04\gerbers\trigger_V04.zip</GerberPath>
@@ -23,8 +23,8 @@
     </GerberInstance>
     <GerberInstance>
       <Center>
-        <X>-214</X>
-        <Y>188</Y>
+        <X>-227</X>
+        <Y>181</Y>
       </Center>
       <Angle>0</Angle>
       <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V04\gerbers\trigger_V04.zip</GerberPath>
@@ -32,8 +32,8 @@
     </GerberInstance>
     <GerberInstance>
       <Center>
-        <X>-214</X>
-        <Y>153</Y>
+        <X>-159</X>
+        <Y>181</Y>
       </Center>
       <Angle>0</Angle>
       <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V04\gerbers\trigger_V04.zip</GerberPath>
@@ -41,17 +41,8 @@
     </GerberInstance>
     <GerberInstance>
       <Center>
-        <X>229</X>
-        <Y>-50</Y>
-      </Center>
-      <Angle>-180</Angle>
-      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V04\gerbers\pusher_V04.zip</GerberPath>
-      <Generated>false</Generated>
-    </GerberInstance>
-    <GerberInstance>
-      <Center>
-        <X>-126</X>
-        <Y>79</Y>
+        <X>-172.998</X>
+        <Y>76.365</Y>
       </Center>
       <Angle>0</Angle>
       <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V04\gerbers\pusher_V04.zip</GerberPath>
@@ -59,8 +50,17 @@
     </GerberInstance>
     <GerberInstance>
       <Center>
-        <X>-127</X>
-        <Y>107</Y>
+        <X>4.635002</X>
+        <Y>-172.998</Y>
+      </Center>
+      <Angle>90</Angle>
+      <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V04\gerbers\pusher_V04.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-172.998</X>
+        <Y>104.365</Y>
       </Center>
       <Angle>0</Angle>
       <GerberPath>C:\Users\kolsen\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V04\gerbers\pusher_V04.zip</GerberPath>
@@ -70,8 +70,8 @@
   <Tabs>
     <BreakTab>
       <Center>
-        <X>26.9803925</X>
-        <Y>27.4919376</Y>
+        <X>27.5610523</X>
+        <Y>27.1356678</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -79,8 +79,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>25.8549881</X>
-        <Y>62.78867</Y>
+        <X>15.8630219</X>
+        <Y>55.3172874</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -88,8 +88,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>44.8845329</X>
-        <Y>77.0096741</Y>
+        <X>32.34661</X>
+        <Y>71.37549</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -97,8 +97,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>70.0526352</X>
-        <Y>57.6732025</Y>
+        <X>66.5</X>
+        <Y>81</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -106,8 +106,8 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>70.0526352</X>
-        <Y>29.7427444</Y>
+        <X>66.5899353</X>
+        <Y>62.44245</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -115,8 +115,26 @@
     </BreakTab>
     <BreakTab>
       <Center>
-        <X>45.3983879</X>
-        <Y>19.5233536</Y>
+        <X>53.93479</X>
+        <Y>48.8746147</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>53.7221</X>
+        <Y>21.7120361</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>45.74617</X>
+        <Y>55.4236336</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
