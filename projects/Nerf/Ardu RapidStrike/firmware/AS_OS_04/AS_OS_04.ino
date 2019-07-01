@@ -47,7 +47,7 @@ uint8_t flywheelPWM = 9;
 uint8_t pusherIn1 = 5; 
 uint8_t pusherIn2 = 6;
 
-long nextDisplayTime = 0;   // updates display
+long nextDisplayTime = 2000;   // updates display, 2 second splash then 250 ms.
 
 bool revFlag = false;       // true if rev switch pulled
 bool triggerFlag = false;   // true if trigger pulled
@@ -65,10 +65,11 @@ volatile bool dart_flag = false;
 float dart_speed_fps = 0;
 float dartLength_mm = 72;
 long dart_interval_us = 0;
-//bool sleep_flag = false;
 long beep_time_ms = 0;
 uint8_t clip_capacity = 0;
 uint8_t clip_id = 0;
+bool cur_clip = true;
+bool last_clip = false;
 
 volatile bool pushing_flag = false;  // set by trigger pull, true while cycling
 volatile uint8_t cycle_count = 0;        // number of pusher cycles
@@ -88,10 +89,10 @@ volatile word total_count = 0;
 
 
 void pciSetup(byte pin){
-    // https://playground.arduino.cc/Main/PinChangeInterrupt/
-    *digitalPinToPCMSK(pin) |= bit (digitalPinToPCMSKbit(pin));  // enable pin
-    PCIFR  |= bit (digitalPinToPCICRbit(pin)); // clear any outstanding interrupt
-    PCICR  |= bit (digitalPinToPCICRbit(pin)); // enable interrupt for the group
+  // https://playground.arduino.cc/Main/PinChangeInterrupt/
+  *digitalPinToPCMSK(pin) |= bit (digitalPinToPCMSKbit(pin));  // enable pin
+  PCIFR  |= bit (digitalPinToPCICRbit(pin)); // clear any outstanding interrupt
+  PCICR  |= bit (digitalPinToPCICRbit(pin)); // enable interrupt for the group
 }
 
 
@@ -161,7 +162,6 @@ void setup() {
   display.print(F("Rev "));
   display.print(version, 1);
   display.display();  
-  delay(2000);  // splash screen
 
   // retract pusher if out of position
   if(!digitalRead(pusherSwitch)){
@@ -186,31 +186,6 @@ void writeEEPROM(word val){
   EEPROM.write(1, lowByte(val));
 }
 
-/*
-void sleepNow(void){
-  display.clearDisplay();
-  display.display();  
-  delay(100);
-
-  set_sleep_mode(SLEEP_MODE_PWR_DOWN);   // Choose our preferred sleep mode:
-  sleep_enable();                        // Set sleep enable (SE) bit:
-
-  // Put the device to sleep:
-  digitalWrite(ledPin, LOW); 
-  digitalWrite(DSP_PWR, LOW);
-  delay(100);
-  sleep_mode();
-
-  // Upon waking up, sketch continues from this point.
-  sleep_disable();
-  digitalWrite(ledPin, HIGH); // turn LED on to indicate awake
-  digitalWrite(DSP_PWR, HIGH);
-  delay(100);
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)  
-  sleep_flag = false;
-  last_rev_ms = millis();
-}
-*/
 
 
 void showDisplay(){
@@ -275,9 +250,9 @@ void showDisplayDebug(){
   display.print(digitalRead(revSwitch));
 
   display.print(F("    MAG:"));
-  display.print(digitalRead(clipU6pin));
-  display.print(digitalRead(clipU4pin));  
-  display.println(digitalRead(clipU3pin));
+  display.print(!digitalRead(clipU3pin));
+  display.print(!digitalRead(clipU4pin));    
+  display.println(!digitalRead(clipU6pin));
     
   display.print(F("push:"));  
   display.print(digitalRead(pusherSwitch));
@@ -292,7 +267,7 @@ void showDisplayDebug(){
   display.println(clip_capacity);
 
   display.print(F(" CLP:"));
-  display.print(digitalRead(CLIP));
+  display.print(cur_clip);
   
   display.print(F("     CC:"));
   display.println(cycle_count);
@@ -466,21 +441,20 @@ int freeMemory() {
 
 void loop() {
   // check clip
-  if (digitalRead(CLIP)){
-    if (clip_capacity == 0){
-      clip_id = !digitalRead(clipU6pin) + !digitalRead(clipU4pin) * 2 + !digitalRead(clipU3pin) * 4;
-      if (clip_id == 1) { clip_capacity = 6; }   // 0 0 1
-      if (clip_id == 2) { clip_capacity = 10; }  // 0 1 0
-      if (clip_id == 4) { clip_capacity = 12; }  // 1 0 1
-      if (clip_id == 3) { clip_capacity = 18; }  // 0 1 1
-      if (clip_id == 5) { clip_capacity = 25; }  // 1 0 1
-      if (clip_id == 6) { clip_capacity = 35; }  // 1 1 0   
-      if (clip_id == 7) { clip_capacity = 50; }  // 1 1 1    we can always dream   
-      shot_count = clip_capacity;
-    }
-  }
-  else{
-    clip_capacity = 0;
+  cur_clip = digitalRead(CLIP);
+  if (cur_clip != last_clip){
+    last_clip = cur_clip;
+    delay(100);                                    // AH9246 / AH9250 has 100 ms sleep time
+    clip_id = !digitalRead(clipU6pin) + !digitalRead(clipU4pin) * 2 + !digitalRead(clipU3pin) * 4;
+    if (clip_id == 0) { clip_capacity = 0; }   // 0 0 0 
+    if (clip_id == 1) { clip_capacity = 6; }   // 0 0 1
+    if (clip_id == 2) { clip_capacity = 10; }  // 0 1 0
+    if (clip_id == 4) { clip_capacity = 12; }  // 1 0 0
+    if (clip_id == 3) { clip_capacity = 18; }  // 0 1 1
+    if (clip_id == 5) { clip_capacity = 22; }  // 1 0 1
+    if (clip_id == 6) { clip_capacity = 25; }  // 1 1 0   
+    if (clip_id == 7) { clip_capacity = 35; }  // 1 1 1       
+    shot_count = clip_capacity;
   }
 
   if (dart_flag){ // dart has exited gate
@@ -489,7 +463,7 @@ void loop() {
       if(shot_count <= 0){
         tone(SPKR, 800, 1000);
         shot_count = 0;
-        clip_capacity = -1;  // lets start counting up
+        clip_capacity = 0;  // lets start counting up
       }
     }
     else{
@@ -547,6 +521,11 @@ void loop() {
     }
     else{
       showDisplay();
+      Serial.print(clip_id);
+      Serial.print(" ");      
+      Serial.print(cur_clip);
+      Serial.print(" ");
+      Serial.println(last_clip);
     }
   }
   
@@ -578,7 +557,7 @@ void loop() {
   }
 
   if (millis() > beep_time_ms){  // nag beep every 60 sec when idle
-    beep_time_ms = beep_time_ms + 60000;
+    beep_time_ms = beep_time_ms + 300000;
     tone(SPKR, 800, 200);
   }
 }
