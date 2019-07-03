@@ -1,8 +1,6 @@
 /*
 TODO:
-  debug if no display
-  serial if in debug
-  beep on IR high
+
 
 */
 
@@ -24,7 +22,6 @@ float vcc = 5.0;
 float vd_factor = 11;
 int SPKR = 4;
 int DART_IR = A1;
-int DSP_PWR = A2;
 int buttonPin = A0;
 int revSwitch = 3;
 int CLIP = 7;
@@ -41,13 +38,13 @@ volatile bool dart_flag = false;
 float dart_speed_fps = 0;
 float dartLength_mm = 72;
 long dart_interval_us = 0;
-long beep_time_ms = 0;
+long beep_time_ms = 300000;
 uint8_t clip_capacity = 0;
 uint8_t clip_id = 0;
 bool cur_clip = false;
 bool last_clip = false;
 
-long nextDisplayTime = 1000;   // updates display, 2 second splash then 250 ms.
+long nextDisplayTime = 2000;   // updates display, 2 second splash then 250 ms.
 bool debug_flag = false;
 volatile word total_count = 0;
 
@@ -87,20 +84,12 @@ void writeEEPROM(word val){
 
 void setup() {                  
   Serial.begin(9500);
-  Serial.print("ArduStryfe Ver. ");
-  Serial.print(version, 1);
 
   // probe for display
   Wire.begin();
   Wire.beginTransmission(0x3C);
-  OLED = Wire.endTransmission();
-  if (!OLED){
-    Serial.println(", OLED detected at I2C 0x3C");
-  }
-  else{
-    Serial.println(", no I2C display found");
-    debug_flag = true;
-  }
+  byte error = Wire.endTransmission();
+  if (error) { OLED = false;}
   
   pinMode(voltagePin, INPUT);         // external pullup w/ harware debounce
   pinMode(revSwitch, INPUT); 
@@ -114,9 +103,6 @@ void setup() {
 
   pinMode(flywheelPWM, OUTPUT);
   pinMode(SPKR, OUTPUT); 
-  pinMode(DSP_PWR, OUTPUT); 
-  digitalWrite(DSP_PWR, HIGH);
-  delay(50);
 
   pciSetup(DART_IR);
 
@@ -128,25 +114,45 @@ void setup() {
   }
 
   // splash screen
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
-  display.setTextSize(1);
-  display.setTextColor(WHITE);
-
-  display.setCursor(0, 24);
-  display.println(F("Rev "));
-  display.print(version, 1);  
+  if (OLED){
+    display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
+    display.setTextSize(1);
+    display.setTextColor(WHITE);
   
-  display.setCursor(0, 46);
-  display.println(F("Shots"));
-  if(total_count < 10000){display.print(F("0"));}
-  if(total_count < 1000){display.print(F("0"));}
-  if(total_count < 100){display.print(F("0"));}
-  if(total_count < 10){display.print(F("0"));}
-  display.print(total_count);
-  display.display();  
-  tone(SPKR, 400, 100);
-  delay(100);
-  tone(SPKR, 800, 100);
+    display.setCursor(0, 24);
+    display.println(F("Rev "));
+    display.print(version, 1);  
+    
+    display.setCursor(0, 46);
+    display.println(F("Shots"));
+    if(total_count < 10000){display.print(F("0"));}
+    if(total_count < 1000){display.print(F("0"));}
+    if(total_count < 100){display.print(F("0"));}
+    if(total_count < 10){display.print(F("0"));}
+    display.print(total_count);
+    display.display();  
+    tone(SPKR, 400, 100);
+    delay(100);
+    tone(SPKR, 800, 75);
+    delay(75);
+    tone(SPKR, 1200, 50);
+    delay(50);
+  }
+  else{
+    debug_flag = true;
+    tone(SPKR, 400, 500);
+  }
+
+  if (debug_flag){
+    Serial.print("ArduStryfe Ver. ");
+    Serial.print(version, 1);
+    if (OLED){
+      Serial.println(", OLED detected at I2C 0x3C");
+    }
+    else{
+      Serial.println(", no I2C display found");   
+    }
+  }
 }
 
 
@@ -170,83 +176,105 @@ void graph(float minimum, float maximum, float value){
 void showDisplay(){
   uint8_t x=0;
   uint8_t y=0;
-
-  display.clearDisplay();
-  display.setTextSize(2);
-  display.setTextColor(WHITE);
-  pews();  // draws bullet shapes
-
-  graph(6.5, 8.4, voltage); // min, max, value
-  display.setCursor(5, 18);
-  if(dart_speed_fps < 10){
-    display.print(F(" "));
+  if (OLED){
+    display.clearDisplay();
+    display.setTextSize(2);
+    display.setTextColor(WHITE);
+    pews();  // draws bullet shapes
+  
+    graph(6.5, 8.4, voltage); // min, max, value
+    display.setCursor(5, 18);
+    if(dart_speed_fps < 10){
+      display.print(F(" "));
+    }
+    if(dart_speed_fps < 100){
+      display.print(dart_speed_fps, 1);
+    }
+    else {
+      display.setCursor(0, 18);
+      display.print(dart_speed_fps, 1);
+    }
+    display.setCursor(33, 34);
+    display.setTextSize(1);
+    display.println(F("fps"));
+      
+    display.setCursor(56,20);
+    display.setTextSize(6);
+  
+    if(shot_count<10){
+      display.print(F("0"));
+    }
+    display.print(shot_count);
+    display.display();
   }
-  if(dart_speed_fps < 100){
-    display.print(dart_speed_fps, 1);
-  }
-  else {
-    display.setCursor(0, 18);
-    display.print(dart_speed_fps, 1);
-  }
-  display.setCursor(33, 34);
-  display.setTextSize(1);
-  display.println(F("fps"));
-    
-  display.setCursor(56,20);
-  display.setTextSize(6);
-
-  if(shot_count<10){
-    display.print(F("0"));
-  }
-  display.print(shot_count);
-  display.display();
 }
 
 
 void showDisplayDebug(){ 
-  display.clearDisplay();
-
-  display.drawLine(0, 0, 127, 0, WHITE);
-  display.drawLine(0, 0, 0, 63, WHITE);
-  display.drawLine(0, 63, 127, 63, WHITE);
-  display.drawLine(127, 0, 127, 63, WHITE);
+  if (OLED){
+    display.clearDisplay();
   
-  display.setTextSize(1);
-  display.setTextColor(WHITE);
-  display.setCursor(7, 3);
-  display.print(voltage, 2);
-  display.print(" v      ");
-  display.print("IR:");
-  display.println(analogRead(DART_IR));
-   
-  display.setCursor(0, 16); 
-  display.print(" rev_sw:");
-  display.print(digitalRead(revSwitch));
-  display.print(F("   MAG:"));
-
-  display.print(!digitalRead(clipU3pin));
-  display.print(!digitalRead(clipU4pin));    
-  display.println(!digitalRead(clipU6pin));
+    display.drawLine(0, 0, 127, 0, WHITE);
+    display.drawLine(0, 0, 0, 63, WHITE);
+    display.drawLine(0, 63, 127, 63, WHITE);
+    display.drawLine(127, 0, 127, 63, WHITE);
     
-  display.print("   butn:");  
-  display.print(digitalRead(buttonPin));
-  display.print("    ID:");
-  display.println(clip_id);
-
-  display.print(" CLP_sw:");
-  display.print(cur_clip);
-  display.print("   CAP:");
-  display.println(clip_capacity);
-
-  display.print("  SHOTS:");  
-  display.print(shot_count);
-  display.print("   fps:");
-  display.println(dart_speed_fps, 1);
+    display.setTextSize(1);
+    display.setTextColor(WHITE);
+    display.setCursor(7, 3);
+    display.print(voltage, 2);
+    display.print(" v      ");
+    display.print("IR:");
+    display.println(analogRead(DART_IR));
+     
+    display.setCursor(0, 16); 
+    display.print(" rev_sw:");
+    display.print(!digitalRead(revSwitch));
+    display.print(F("   MAG:"));
   
-  display.print("  Total:");  
-  display.println(total_count);
+    display.print(!digitalRead(clipU3pin));
+    display.print(!digitalRead(clipU4pin));    
+    display.println(!digitalRead(clipU6pin));
+      
+    display.print("   butn:");  
+    display.print(!digitalRead(buttonPin));
+    display.print("    ID:");
+    display.println(clip_id);
   
-  display.display();
+    display.print(" CLP_sw:");
+    display.print(cur_clip);
+    display.print("   CAP:");
+    display.println(clip_capacity);
+  
+    display.print("  SHOTS:");  
+    display.print(shot_count);
+    display.print("   fps:");
+    display.println(dart_speed_fps, 1);
+    
+    display.print("  Total:");  
+    display.println(total_count);
+    
+    display.display();
+  }
+  else{
+    Serial.print(voltage, 2);
+    Serial.print(" v, IR=");
+    Serial.print(analogRead(DART_IR));
+    Serial.print(" rev_sw=");
+    Serial.print(!digitalRead(revSwitch));
+    Serial.print(" CLP_sw=");
+    Serial.print(cur_clip);
+    Serial.print(" butn=");
+    Serial.print(!digitalRead(buttonPin));
+    Serial.print(" MAG=");
+    Serial.print(!digitalRead(clipU3pin));
+    Serial.print(!digitalRead(clipU4pin));    
+    Serial.print(!digitalRead(clipU6pin));          
+    Serial.print(" shots=");  
+    Serial.print(shot_count);
+    Serial.print(" fps=");
+    Serial.println(dart_speed_fps, 1);
+  }
 }
 
 
@@ -273,7 +301,6 @@ void pews(){ // graphic display of firing mode
 
 
 void loop() {
-  
   // check clip
   cur_clip = !digitalRead(CLIP);
   if (cur_clip != last_clip){
@@ -322,7 +349,7 @@ void loop() {
     dart_interval_us = dart_time2_us - dart_time1_us;
     dart_speed_fps = dartLength_mm / dart_interval_us / 25.4 / 12 * 1E+6;      // feet per second
     dart_flag = false;
-    if (debug_flag){
+    if ((!OLED && !debug_flag) || (OLED && debug_flag)){
       Serial.print("Shot #");
       Serial.print(shot_count);
       Serial.print(" @ ");

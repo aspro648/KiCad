@@ -209,11 +209,11 @@ void showDisplay(){
     display.setCursor(0, 18);
     display.print(dart_speed_fps, 1);
   }
-  display.setCursor(31, 33);
+  display.setCursor(33, 34);
   display.setTextSize(1);
-  display.println(F(" fps"));
+  display.println(F("fps"));
     
-  display.setCursor(56,18);
+  display.setCursor(56,20);
   display.setTextSize(6);
 
   if(shot_count<10){
@@ -444,7 +444,7 @@ void loop() {
   cur_clip = digitalRead(CLIP);
   if (cur_clip != last_clip){
     last_clip = cur_clip;
-    delay(100);                                    // AH9246 / AH9250 has 100 ms sleep time
+    delay(200);                                    // AH9246 / AH9250 has 100 ms sleep time
     clip_id = !digitalRead(clipU6pin) + !digitalRead(clipU4pin) * 2 + !digitalRead(clipU3pin) * 4;
     if (clip_id == 0) { clip_capacity = 0; }   // 0 0 0 
     if (clip_id == 1) { clip_capacity = 6; }   // 0 0 1
