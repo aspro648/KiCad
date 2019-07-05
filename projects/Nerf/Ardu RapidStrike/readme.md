@@ -5,13 +5,18 @@ ArduStrike
 MOSFET Board
 -------------
 - 1 ea., MOSFET N-CH 30V 62A TO-220AB, Infineon IRLB8721PBF, https://www.digikey.com/short/p4fhcm
-- 1 ea., CONN IC DIP SOCKET 16POS TIN, https://www.digikey.com/short/ph78mv
 - 1 ea., 1N5401 3A Gen Purpose diode, https://www.digikey.com/short/pmwc7m
 - 1 ea., 10K Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4frj2 
-- 1 ea., PTC RESET FUSE 16V 10A RADIAL, https://www.digikey.com/short/pmf2q0
+- 1 ea., PTC RESET FUSE 16V 5A RADIAL, https://www.digikey.com/short/ph7qmn
+- 3 ea., 2 POS 5.08mm terminal, https://www.digikey.com/short/p9tv29
 high current options:
-- 1 ea., FUSE HOLDER BLADE 500V 30A PCB, Keystone 3568, https://www.digikey.com/short/pmwt83
-- 1 ea., FUSE AUTO 30A 32VDC BLADE MINI, https://www.digikey.com/short/pmwt4h
+	- PTC RESET FUSE 16V 10A RADIAL, https://www.digikey.com/short/p9t07c
+	- PTC RESET FUSE 16V 14A RADIAL, https://www.digikey.com/short/p9t07f
+	or: Automotive Mini Blade Fuses
+	- FUSE HOLDER BLADE 500V PCB, Keystone 3568, https://www.digikey.com/short/pmwt83
+	- FUSE AUTO 15A 32VDC BLADE MINI, https://www.digikey.com/short/p9t0tm
+	- FUSE AUTO 20A 32VDC BLADE MINI, https://www.digikey.com/short/p9t07f
+	- FUSE AUTO 30A 32VDC BLADE MINI, https://www.digikey.com/short/pmwt4h
 
 Pusher Board
 -------------
@@ -21,7 +26,8 @@ Pusher Board
 - 1 ea., CER 1UF 25V X7R RADIAL 2.5 lead spacing, generic https://www.digikey.com/short/p4fr3w
 - 1 ea., 5POS Picoblade header VERT, Molex 0530470510, https://www.digikey.com/short/pm2n8f
 - 1 ea., PTC RESET FUSE 16V 2.5A RADIAL, https://www.digikey.com/short/pm20nc
-
+- 2 ea., 2 POS 3.5mm terminal, https://www.digikey.com/short/p9tvn0
+- 1 ea., 2 POS 5.08mm header, https://www.digikey.com/short/p9tv29
 
 Trigger Board
 --------------
@@ -30,7 +36,7 @@ Trigger Board
 - 4 ea., 1K Ohm Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4fr81
 - 4 ea., 10K Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4frj2 
 - 1 ea., 6POS PicoBlade header, https://www.digikey.com/short/p4wz22
-- 1 ea., 2POS PicoBlade header VERT, https://www.digikey.com/short/pmwz0h
+- 1 ea., 2POS Picoblade header, https://www.digikey.com/short/p4wz0w
 
 
 Main Board
@@ -40,6 +46,7 @@ Main Board
 - 1 ea., IC REG LINEAR 5V 250MA TO92-3, Microchip MCP1702-5002E/TO, https://www.digikey.com/short/pm2nmj
 - 3 ea., Hall Effect Sensor, Diodes Incorporated AH9246-P-B, https://www.digikey.com/short/p4f5dw
 - 1 ea., 0.96 Inch 128x64 I2C OLED, https://www.amazon.com/gp/product/B072Q2X2LL/
+- 1 ea., Header 6 POS RA, 
 
 - 2 ea., CER 0.1UF 25V Y5V RADIAL 2.5mm lead spacing, generic, https://www.digikey.com/short/jn9pm2
 - 2 ea., CER 1UF 25V X7R RADIAL 2.5 lead spacing, generic https://www.digikey.com/short/p4fr3w
@@ -52,15 +59,11 @@ Main Board
 - 1 ea., 1K ohm resistor 1/8W 5% generic, https://www.digikey.com/short/pmwzwq
 - 2 ea., 10K Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4frj2 
 
-- 2 ea., 3K3 Resistor, 1/4W 1%, https://www.digikey.com/short/pmwzw1
 - 1 ea., 10K Resistors, 1/4W 1%, https://www.digikey.com/short/p4fr2q
-- 2 ea., 30K Resistors, 1/4W 1%, https://www.digikey.com/short/pmwznm
+- 1 ea., 100K Resistors, 1/4W 1%, https://www.digikey.com/short/p9tnc3
 
-- 1 ea., 8-position sub-micro selector switch, C&K RM100772BCB, https://www.digikey.com/short/p4fm2c
-- 1 ea., Selector switch knob, C&K 296F02000, https://www.digikey.com/short/p4f4z9
 - 1 ea., SWITCH TACTILE SPST-NO 0.05A 24V, https://www.digikey.com/short/p4w42v
 - 1 ea., Piezo speaker, TDK PS1240P02CT3,  https://www.digikey.com/short/pmwzfc
-- 1 ea., 28 Pin socket, On Shore ED281DT, https://www.digikey.com/short/jn5tz5
 
 - 1 ea., 2POS Picoblade header, https://www.digikey.com/short/p4wz0w
 - 1 ea., 2POS PicoBlade housing, https://www.digikey.com/short/p4wz0d
@@ -83,6 +86,13 @@ Main Board
 12" PRE-CRIMP 1853 ORANGE, https://www.digikey.com/short/p4wz1r
 12" PRE-CRIMP 1853 GREEN, https://www.digikey.com/short/p4w4c4
 
+10" PRE-CRIMP 1852 RED, https://www.digikey.com/short/p937zh
+10" PRE-CRIMP 1852 BLACK, https://www.digikey.com/short/p937zv
+10" PRE-CRIMP 1852 YELLOW, https://www.digikey.com/short/p9374t
+10" PRE-CRIMP 1852 GREEN, https://www.digikey.com/short/p9374z
+10" PRE-CRIMP 1852 ORANGE, https://www.digikey.com/short/p9374f
+10" PRE-CRIMP 1852 BLUE, https://www.digikey.com/short/p937mc
+
 16 AWG Silicone wire, https://www.amazon.com/BNTECHGO-Silicone-Flexible-Strands-Stranded/dp/B00TG1TRL2
 18 AWG Silicone wire (7.5A, $0.40/ft), https://www.amazon.com/Silicone-Electrical-Conductor-Parallel-Flexible/dp/B07FMRDP87
 16 AWG Silicone wire (12A, $0.70/ft), https://www.amazon.com/Silicone-Electrical-Conductor-Parallel-Flexible/dp/B07FMLVF84
@@ -103,6 +113,10 @@ Revisions
 ----------------
 0.1 Added push button to A0.
 0.3 Removed XT30 connectors, added PTC, fuse holder.
+0.4 Major component repositioning
+0.5 Trigger moved clip connector
+	Pusher Bat conn to 5.08mm.
+	Mosfet layout change
 
 
 License

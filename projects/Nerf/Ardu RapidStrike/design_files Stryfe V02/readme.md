@@ -18,7 +18,6 @@ Main Board
 - 1 ea., 3mm LED red, https://www.digikey.com/short/pmwzdf
 - 1 ea., 3mm IR LED, https://www.digikey.com/short/pmwzdq
 - 1 ea., NPN photo transistor, https://www.digikey.com/short/pmwzdb
-- 1 ea., CONN JUMPER SHORTING 1.27MM GOLD, https://www.digikey.com/short/p93cc9
 
 - 1 ea., 100 ohm resistor 1/8W 5% generic, https://www.digikey.com/short/pmwz22
 - 3 ea., 1K ohm resistor 1/8W 5% generic, https://www.digikey.com/short/pmwzwq
