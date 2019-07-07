@@ -8,6 +8,7 @@ Main Board
 - 1 ea., Atmega328P-PU https://www.digikey.com/short/jn57wj
 - 1 ea., CER RES 16.0000MHZ 30PF T/H, ECS ZTT-16.00MX, https://www.digikey.com/short/jn9pjv
 - 1 ea., IC REG LINEAR 5V 250MA TO92-3, Microchip MCP1702-5002E/TO, https://www.digikey.com/short/pm2nmj
+- 1 ea., 1N5401 3A Gen Purpose diode, https://www.digikey.com/short/pmwc7m
 - 3 ea., Hall Effect Sensor, Diodes Incorporated AH9246-P-B, https://www.digikey.com/short/p4f5dw
 - 1 ea., MOSFET N-CH 30V 58A DPAK, Infineon IRLR8729, https://www.digikey.com/short/pm0rdq
 - 1 ea., PTC RESET FUSE 16V 5A RADIAL, https://www.digikey.com/short/ph7qmn
