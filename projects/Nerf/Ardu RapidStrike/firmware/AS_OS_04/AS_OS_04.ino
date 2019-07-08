@@ -65,7 +65,7 @@ volatile bool dart_flag = false;
 float dart_speed_fps = 0;
 float dartLength_mm = 72;
 long dart_interval_us = 0;
-long beep_time_ms = 0;
+long beep_time_ms = 3000000;
 uint8_t clip_capacity = 0;
 uint8_t clip_id = 0;
 bool cur_clip = true;
@@ -473,6 +473,7 @@ void loop() {
     writeEEPROM(total_count);    
     dart_interval_us = dart_time2_us - dart_time1_us;
     dart_speed_fps = dartLength_mm / dart_interval_us / 25.4 / 12 * 1E+6;      // feet per second
+    
     dart_flag = false;
   }
 
@@ -506,26 +507,10 @@ void loop() {
     
     if (debug_flag){
       showDisplayDebug();
-
-      if(revFlag){
-        Serial.print(millis());  
-        Serial.print(F(" cc:"));
-        Serial.print(cycle_count);
-        Serial.print(F(" pf:"));        
-        Serial.print(pushing_flag);
-        Serial.print(F(" ps:"));
-        Serial.print(digitalRead(pusherSwitch));
-        Serial.print(F(" MEM:"));
-        Serial.println(freeMemory());
-      }    
     }
     else{
       showDisplay();
-      Serial.print(clip_id);
-      Serial.print(" ");      
-      Serial.print(cur_clip);
-      Serial.print(" ");
-      Serial.println(last_clip);
+
     }
   }
   
