@@ -20,6 +20,9 @@ int voltagePin = A3;
 float voltage = 0;
 float vcc = 5.0;
 float vd_factor = 11;
+float voltage_low = 6.5;
+float voltage_high = 8.4;
+
 int SPKR = 4;
 int DART_IR = A1;
 int buttonPin = A0;
@@ -38,7 +41,12 @@ volatile bool dart_flag = false;
 float dart_speed_fps = 0;
 float dartLength_mm = 72;
 long dart_interval_us = 0;
-long beep_time_ms = 300000;
+
+long beep_time_ms = 300000;   // time next warning beep
+int beep_length = 200;        // beep duration (gets longer if low voltage)
+long beep_delay = 3000000;
+bool voltage_flag = false;     // true if voltage < voltage_low
+
 uint8_t clip_capacity = 0;
 uint8_t clip_id = 0;
 bool cur_clip = false;
@@ -182,7 +190,7 @@ void showDisplay(){
     display.setTextColor(WHITE);
     pews();  // draws bullet shapes
   
-    graph(6.5, 8.4, voltage); // min, max, value
+    graph(voltage_low, voltage_high, voltage); // min, max, value
     display.setCursor(5, 18);
     if(dart_speed_fps < 10){
       display.print(F(" "));
@@ -318,9 +326,9 @@ void loop() {
     shot_count = clip_capacity;
   }
   
-  if (!digitalRead(revSwitch)){
+  if (!digitalRead(revSwitch) && (voltage > voltage_low)){
     analogWrite(flywheelPWM, 255);
-    beep_time_ms = millis() + 300000;  // 5 min delay
+    beep_time_ms = millis() + beep_delay;  // 5 min delay
   }
   else{
     digitalWrite(flywheelPWM, LOW);
@@ -376,6 +384,23 @@ void loop() {
       voltValue = voltValue + analogRead(voltagePin); 
     }
     voltage = voltValue / 1023.0 * vcc * vd_factor / 25; 
+
+    if (voltage < voltage_low){
+      if (!voltage_flag){
+        beep_time_ms = millis();
+        beep_length = 500;
+        beep_delay = 5000;
+        voltage_flag = true;
+      }
+    }
+    else{
+      if (voltage_flag){
+      beep_length = 200;
+      beep_delay = 300000;
+      voltage_flag = false; 
+      }       
+    }
+        
     if (debug_flag){
       showDisplayDebug();
     }
@@ -384,9 +409,9 @@ void loop() {
     }
   }
 
-  if (millis() > beep_time_ms){  // nag beep when idle (don't kill your battery)
-    beep_time_ms = beep_time_ms + 300000;
-    tone(SPKR, 800, 200);
+  if (millis() > beep_time_ms){  // nag beep every 5 min when idle or ever 5 seconds when battery low
+    beep_time_ms = beep_time_ms + beep_delay;
+    tone(SPKR, 800, beep_length);
   }
    
 }

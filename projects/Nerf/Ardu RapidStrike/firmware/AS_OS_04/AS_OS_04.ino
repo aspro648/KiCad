@@ -7,9 +7,7 @@ https://cdn-learn.adafruit.com/downloads/pdf/memories-of-an-arduino.pdf
 
 
 TODO:
-check sleep current
-idle chirp in leue of sleep?
-current shot count to EEPROM?
+quick ramp to idle
 
 */
 
@@ -40,8 +38,10 @@ uint8_t clipU6pin = 12;
 
 uint8_t voltagePin = A3;
 float vcc = 5.0;
-float vd_factor = 10.7;
+float vd_factor = 11;
 float voltage = 0;
+float voltage_low = 6.5;
+float voltage_high = 8.4;
 
 uint8_t flywheelPWM = 9;
 uint8_t pusherIn1 = 5; 
@@ -65,7 +65,12 @@ volatile bool dart_flag = false;
 float dart_speed_fps = 0;
 float dartLength_mm = 72;
 long dart_interval_us = 0;
-long beep_time_ms = 3000000;
+
+long beep_time_ms = 3000000;  // time next warning beep
+int beep_length = 200;        // beep duration (gets longer if low voltage)
+long beep_delay = 3000000;
+bool voltage_flag = false;     // true if voltage < voltage_low
+
 uint8_t clip_capacity = 0;
 uint8_t clip_id = 0;
 bool cur_clip = true;
@@ -81,8 +86,8 @@ volatile long push_till_ms = 0;      // time to apply breaking until
 
 int fire_delay_ms = 250;            // delay time from trigger pull till pushing
 long delay_till_ms = 0;
-int flywheel_full_pwm = 155;
-int flywheel_coast_pwm = 125;
+int flywheel_full_pwm = 255;
+int flywheel_coast_pwm = 80;
 
 bool debug_flag = true;
 volatile word total_count = 0;
@@ -197,7 +202,7 @@ void showDisplay(){
   display.setTextColor(WHITE);
   pews();  // draws bullet shapes
 
-  graph(6.5, 8.4, voltage); // min, max, value
+  graph(voltage_low, voltage_high, voltage); // min, max, value
   display.setCursor(5, 18);
   if(dart_speed_fps < 10){
     display.print(F(" "));
@@ -361,7 +366,7 @@ void pews(){ // graphic display of firing mode
 
 
 ISR (PCINT0_vect){// handle pin change interrupt for D8 to D13
-  if (digitalRead(triggerSwitch) && !pushing_flag) { // HIGH if switch pressed
+  if (digitalRead(triggerSwitch) && !pushing_flag && (voltage > voltage_low)) { // HIGH if switch pressed
     pushing_flag = true;
     cycle_count = 0;
     //analogWrite(pusherIn1, pusher_full_pwm);
@@ -387,7 +392,7 @@ ISR (PCINT1_vect) {  // handle pin change interrupt for A0 to A5 here
 
 void rev_interrupt(){
   //irc += 1;
-  beep_time_ms = millis() + 60000;
+  beep_time_ms = millis() + beep_delay;
   if (digitalRead(revSwitch)) { // LOW if rev switch pressed
     revFlag = true;
   }
@@ -504,6 +509,22 @@ void loop() {
       voltValue = voltValue + analogRead(voltagePin); 
     }
     voltage = voltValue / 1023.0 * vcc * vd_factor / 10; 
+
+    if (voltage < voltage_low){
+      if (!voltage_flag){
+        beep_time_ms = millis();
+        beep_length = 500;
+        beep_delay = 5000;
+        voltage_flag = true;
+      }
+    }
+    else{
+      if (voltage_flag){
+      beep_length = 200;
+      beep_delay = 300000;
+      voltage_flag = false; 
+      }       
+    }
     
     if (debug_flag){
       showDisplayDebug();
@@ -515,11 +536,13 @@ void loop() {
   }
   
   if(revFlag){
-    if(pushing_flag){  
-      analogWrite(flywheelPWM, flywheel_full_pwm);      
-    }
-    else{
-      analogWrite(flywheelPWM, flywheel_coast_pwm); 
+    if (voltage > voltage_low){
+      if(pushing_flag){  
+        analogWrite(flywheelPWM, flywheel_full_pwm);      
+      }
+      else{
+        analogWrite(flywheelPWM, flywheel_coast_pwm); 
+      }
     }
   }
   else{
@@ -541,8 +564,8 @@ void loop() {
     }
   }
 
-  if (millis() > beep_time_ms){  // nag beep every 60 sec when idle
-    beep_time_ms = beep_time_ms + 300000;
-    tone(SPKR, 800, 200);
+  if (millis() > beep_time_ms){  // nag beep every 5 min when idle or ever 5 seconds when battery low
+    beep_time_ms = beep_time_ms + beep_delay;
+    tone(SPKR, 800, beep_length);
   }
 }
