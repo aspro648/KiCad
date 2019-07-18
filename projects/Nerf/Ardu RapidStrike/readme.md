@@ -5,7 +5,7 @@ ArduStrike
 MOSFET Board
 -------------
 - 1 ea., MOSFET N-CH 30V 62A TO-220AB, Infineon IRLB8721PBF, https://www.digikey.com/short/p4fhcm
-- 1 ea., 1N5401 3A Gen Purpose diode, https://www.digikey.com/short/pmwc7m
+- 1 ea., 1N4001 1A Gen Purpose diode, https://www.digikey.com/short/p9ffm9
 - 1 ea., 10K Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4frj2 
 - 1 ea., PTC RESET FUSE 16V 5A RADIAL, https://www.digikey.com/short/ph7qmn
 - 3 ea., 2 POS 5.08mm terminal, https://www.digikey.com/short/p9tv29

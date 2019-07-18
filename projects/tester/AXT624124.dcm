@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AXT624124
+D CONN HEADER F4S .4MM 24POS SMD
+K
+F https://componentsearchengine.com/Datasheets/1/AXT624124.pdf
+$ENDCMP
+#
+#End Doc Library

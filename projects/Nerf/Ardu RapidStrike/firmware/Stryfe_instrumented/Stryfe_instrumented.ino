@@ -73,6 +73,7 @@ void setup() {
   pinMode(flyWheelPin, INPUT);
   attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, FALLING);
   Serial.println("time (ms), rpm, mA, mA max");
+  Serial.println("shot, time (s), fps, rpm");
 }
 
 
@@ -115,16 +116,18 @@ void loop() {
     dart_interval_us = dart_time2_us - dart_time1_us;
     dart_speed_fps = dartLength_mm / dart_interval_us / 25.4 / 12 * 1E+6;      // feet per second
     dart_flag = false;
-    Serial.print("Shot #");
+   
     Serial.print(shot_count);
-    Serial.print(" @ ");
+    Serial.print(", ");
     Serial.print(millis()/1000.0, 1);
-    Serial.print(" sec,  ");
+    Serial.print(",  ");
     Serial.print(dart_speed_fps, 1);      
-    Serial.println(" fps");
+    Serial.print(", ");
+    Serial.println(rpm);
+   
   }
 
-  if (rpm > 0){
+  if (rpm > 0 && 0){
     if (!start_flag){
       start_flag = true;
       Serial.print(lastTime);
@@ -144,9 +147,17 @@ void loop() {
         Serial.print(", ");
         Serial.print(curAmp);
         Serial.print(", ");
-        Serial.println(maxAmp);
+        Serial.print(maxAmp);https://cdn.hackaday.io/images/5652491563320737340.jpg
+        if (dart_speed_fps > 0){
+          Serial.print(", ");
+          Serial.println(dart_speed_fps);
+          dart_speed_fps = 0;
+        }
+        else{
+          Serial.println(",");
+        }
         //Serial.println(", ");
-        showTime = mark + 10;
+        showTime = mark + 100;
       }
     }
   }
