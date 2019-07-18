@@ -1,0 +1,8 @@
+B003-5002 Jarngrepir3 PCA Power Cable Tester
+
+1 ea., CONN HEADER R/A 2POS, Molex 0430450200, https://www.digikey.com/short/p9ncqn
+1 ea., CONN HEADER R/A 2POS 2.5MM, Molex 1053131202, https://www.digikey.com/short/p9ncqm
+1 ea., CONN RCPT USB2.0 TYPEB 4POS R/A, Keystone 924, https://www.digikey.com/short/p9nczt
+1 ea., 330 Ohm resitstor
+1 ea., 3mm Green LED
+

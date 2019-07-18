@@ -22,7 +22,6 @@ int buttonPin = A0;
 int SELECT_pin = A2;
 int SPKR = 4;
 int CLIP = 7;
-uint8_t DSP_PWR = A2;
 
 int clipU3pin = 10;
 int clipU4pin = 11;
@@ -80,9 +79,6 @@ void setup() {
   pciSetup(triggerSwitch);
   pciSetup(pusherSwitch);
 
-  pinMode(DSP_PWR, OUTPUT); 
-  digitalWrite(DSP_PWR, HIGH);
-  delay(50);
   
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
   digitalWrite(flywheelPWM, LOW);             // not sure why needed, otherwise flywheels rev
@@ -96,9 +92,9 @@ void setup() {
   
   delay(500);  // splash screen
   
-  //analogWrite(flywheelPWM,100);
-  //delay(1000);
-  //analogWrite(flywheelPWM, 0);
+  analogWrite(flywheelPWM,100);
+  delay(100);
+  analogWrite(flywheelPWM, 0);
 
   //digitalWrite(pusherIn1, HIGH);
   //delay(1000);
@@ -207,10 +203,10 @@ void loop() {
   
   if(revFlag){
     if(triggerFlag){  
-      analogWrite(flywheelPWM, 125); 
+      //analogWrite(flywheelPWM, 125); 
     }
     else{
-      analogWrite(flywheelPWM, 80); 
+      //analogWrite(flywheelPWM, 80); 
     }
   }
   else{
@@ -218,7 +214,7 @@ void loop() {
   }
 
   if(triggerFlag){
-    analogWrite(pusherIn1, 255);   
+    //analogWrite(pusherIn1, 255);   
     analogWrite(pusherIn2, 0); 
   }
   else{
