@@ -51,7 +51,7 @@ void setup() {
   delay(100);
   tone(SPKR, 800, 100);
 
-  analogWrite(flywheelPWM, 100);
+  analogWrite(flywheelPWM, 255);
   delay(500);  // splash screen
   digitalWrite(flywheelPWM, LOW);
 }
