@@ -132,4 +132,99 @@ Wire Wire Line
 	5000 4050 5400 4050
 Text Notes 7300 2650 0    60   ~ 0
 AYF531465T
+$Comp
+L CONN_01X14 J4
+U 1 1 5D2E33F0
+P 7100 3450
+F 0 "J4" H 7100 4200 50  0000 C CNN
+F 1 "CONN_01X14" V 7200 3450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch1.00mm_SMD_Pin1Left" H 7100 3450 50  0001 C CNN
+F 3 "" H 7100 3450 50  0001 C CNN
+	1    7100 3450
+	-1   0    0    -1  
+$EndComp
+Text Label 3900 2950 0    60   ~ 0
+1
+Text Label 3900 3050 0    60   ~ 0
+2
+Text Label 3900 3150 0    60   ~ 0
+3
+Text Label 3900 3250 0    60   ~ 0
+4
+Text Label 3900 3350 0    60   ~ 0
+5
+Text Label 3900 3450 0    60   ~ 0
+6
+Text Label 3900 3550 0    60   ~ 0
+7
+Text Label 3900 3650 0    60   ~ 0
+8
+Text Label 3900 3750 0    60   ~ 0
+9
+Text Label 3900 3850 0    60   ~ 0
+10
+Text Label 3900 3950 0    60   ~ 0
+11
+Text Label 3900 4050 0    60   ~ 0
+12
+Wire Wire Line
+	7300 2800 7450 2800
+Wire Wire Line
+	7300 2900 7450 2900
+Wire Wire Line
+	7300 3000 7450 3000
+Wire Wire Line
+	7300 3100 7450 3100
+Wire Wire Line
+	7300 3200 7450 3200
+Wire Wire Line
+	7300 3300 7450 3300
+Wire Wire Line
+	7300 3400 7450 3400
+Wire Wire Line
+	7300 3500 7450 3500
+Wire Wire Line
+	7300 3600 7450 3600
+Wire Wire Line
+	7300 3700 7450 3700
+Wire Wire Line
+	7300 3800 7450 3800
+Wire Wire Line
+	7300 3900 7450 3900
+Wire Wire Line
+	7300 4000 7450 4000
+Wire Wire Line
+	7300 4100 7450 4100
+Text Label 5150 4050 0    60   ~ 0
+13
+Text Label 5150 3950 0    60   ~ 0
+14
+Text Label 7350 2800 0    60   ~ 0
+1
+Text Label 7350 3000 0    60   ~ 0
+3
+Text Label 7350 2900 0    60   ~ 0
+2
+Text Label 7350 3100 0    60   ~ 0
+4
+Text Label 7350 3200 0    60   ~ 0
+5
+Text Label 7350 3300 0    60   ~ 0
+6
+Text Label 7350 3400 0    60   ~ 0
+7
+Text Label 7350 3500 0    60   ~ 0
+8
+Text Label 7350 3600 0    60   ~ 0
+9
+Text Label 7300 3700 0    60   ~ 0
+10
+Text Label 7300 3800 0    60   ~ 0
+11
+Text Label 7300 3900 0    60   ~ 0
+12
+Text Label 7300 4000 0    60   ~ 0
+13
+Text Label 7300 4100 0    60   ~ 0
+14
 $EndSCHEMATC
