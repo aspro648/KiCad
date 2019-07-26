@@ -20,8 +20,8 @@ int voltagePin = A3;
 float voltage = 0;
 float vcc = 5.0;
 float vd_factor = 11;
-float voltage_low = 6.5;
-float voltage_high = 8.4;
+float voltage_low = 5.0; // 6.5;
+float voltage_high = 6.0; // 8.4;
 
 int SPKR = 4;
 int DART_IR = A1;
