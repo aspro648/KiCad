@@ -44,10 +44,12 @@ Main Board
 12" PRE-CRIMP 1853 BLUE, https://www.digikey.com/short/p4wz14
 12" PRE-CRIMP 1853 ORANGE, https://www.digikey.com/short/p4wz1r
 12" PRE-CRIMP 1853 GREEN, https://www.digikey.com/short/p4w4c4
+heat shrink
 
 16 AWG Silicone wire, https://www.amazon.com/BNTECHGO-Silicone-Flexible-Strands-Stranded/dp/B00TG1TRL2
 18 AWG Silicone wire (7.5A, $0.40/ft), https://www.amazon.com/Silicone-Electrical-Conductor-Parallel-Flexible/dp/B07FMRDP87
 16 AWG Silicone wire (12A, $0.70/ft), https://www.amazon.com/Silicone-Electrical-Conductor-Parallel-Flexible/dp/B07FMLVF84
+5x1 mm magnets, https://www.amazon.com/gp/product/B07K6GBB46/
 
 XT60 connector male
 

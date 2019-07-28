@@ -1,0 +1,28 @@
+ArduStryfe 
+
+Video sequences:
+-  Intro, internal overview
+-  Main board soldering
+-  Display wiring
+-  Shell open, Stryfe overview, prep
+-  Battery, Rev switch, jam switch, clip switch
+-  Magazine magnet, hall test
+-  Motor wiring, final assembly
+
+
+Todo:
+-  prep kit
+-  magnet on 6-round mag
+-  update display holder, print
+-  Document wire lengths
+
+Bat 9" 230 mm
+Mtr 4" 100 mm
+Photo 6" 150 mm
+Disp 3" 75 mm
+Jam 4" 100 mm
+Rev 12" 300 mm
+CLP 6" 150 mm
+
+
+Silver C&T Hawiann Turtle OR 627 CSY
