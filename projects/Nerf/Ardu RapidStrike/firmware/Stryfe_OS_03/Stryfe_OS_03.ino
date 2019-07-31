@@ -28,7 +28,13 @@ int DART_IR = A1;
 int buttonPin = A0;
 int revSwitch = 3;
 int CLIP = 7;
+int LED = 13;
+long LEDtime_ms = 0;
+
 int flywheelPWM = 9;
+int flywheelPWM_full = 255;
+int flywheelPWM_idle = 50;
+bool flywheelIdleFlag = false;
 
 uint8_t clipU3pin = 10;
 uint8_t clipU4pin = 11;
@@ -111,6 +117,7 @@ void setup() {
 
   pinMode(flywheelPWM, OUTPUT);
   pinMode(SPKR, OUTPUT); 
+  pinMode(LED, OUTPUT);
 
   pciSetup(DART_IR);
 
@@ -141,16 +148,24 @@ void setup() {
     if(total_count < 10){display.print(F("0"));}
     display.print(total_count);
     display.display();  
+    digitalWrite(LED, HIGH);
     tone(SPKR, 400, 100);
     delay(100);
     tone(SPKR, 800, 75);
     delay(75);
     tone(SPKR, 1200, 50);
     delay(50);
+    digitalWrite(LED, LOW);
   }
   else{
     debug_flag = true;
     tone(SPKR, 400, 500);
+    for(int x=0; x<4; x++){
+      digitalWrite(LED, HIGH);
+      delay(250);
+      digitalWrite(LED, LOW);
+      delay(250);
+    }
   }
 
   if (debug_flag){
@@ -163,6 +178,7 @@ void setup() {
       Serial.println(", no I2C display found");   
     }
   }
+
 }
 
 
@@ -201,8 +217,8 @@ void showDisplay(){
       display.print(dart_speed_fps, 1);
     }
     else {
-      display.setCursor(0, 18);
-      display.print(dart_speed_fps, 1);
+      display.setCursor(12, 18);
+      display.print(dart_speed_fps, 0);
     }
     display.setCursor(33, 34);
     display.setTextSize(1);
@@ -326,28 +342,46 @@ void loop() {
     if (clip_id == 6) { clip_capacity = 25; }  // 1 1 0   
     if (clip_id == 7) { clip_capacity = 35; }  // 1 1 1     
     shot_count = clip_capacity;
+    beep_time_ms = millis() + beep_delay;
   }
-  
-  //if (!digitalRead(revSwitch) && (voltage > voltage_low)){
+
+  if (!digitalRead(buttonPin)){
+    tone(SPKR, 800, 200);
+    digitalWrite(LED, HIGH);
+    while(!digitalRead(buttonPin)){
+      delay(1);
+    }
+    digitalWrite(LED, LOW);
+    beep_time_ms = millis() + beep_delay;
+    flywheelIdleFlag = ! flywheelIdleFlag; 
+  }
+
+    //if (!digitalRead(revSwitch) && (voltage > voltage_low)){
   if (!digitalRead(revSwitch)){
-    analogWrite(flywheelPWM, 255);
-    beep_time_ms = millis() + beep_delay;  // 5 min delay
+    analogWrite(flywheelPWM, flywheelPWM_full);
+    beep_time_ms = millis() + beep_delay; 
   }
   else{
-    digitalWrite(flywheelPWM, LOW);
+    if (flywheelIdleFlag){
+      analogWrite(flywheelPWM, flywheelPWM_idle);
+    }
+    else{
+      digitalWrite(flywheelPWM, LOW);
+    }
+  }
+
+  if (cur_clip && (shot_count == 0)){
+    LEDtime_ms = millis() + 1000;
   }
 
   if (dart_flag){ // dart has exited gate
-
+    LEDtime_ms = millis() + 500;
     if (clip_capacity > 0){
       shot_count -= 1;
       if(shot_count <= 0){
         tone(SPKR, 400, 1000);
         shot_count = 0;
         clip_capacity = 0;  // lets start counting up
-      }
-      else{
-        tone(SPKR, 1200, 250);
       }
     }
     else{
@@ -417,6 +451,13 @@ void loop() {
   if (millis() > beep_time_ms){  // nag beep every 5 min when idle or ever 5 seconds when battery low
     beep_time_ms = beep_time_ms + beep_delay;
     tone(SPKR, 800, beep_length);
+  }
+
+  if (millis() < LEDtime_ms){
+    digitalWrite(LED, HIGH);
+  }
+  else{
+    digitalWrite(LED, LOW);
   }
    
 }

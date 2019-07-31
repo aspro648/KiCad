@@ -11,7 +11,7 @@ Main Board
 - 1 ea., 1N4001 1A Gen Purpose diode, https://www.digikey.com/short/p9ffm9
 - 3 ea., Hall Effect Sensor, Diodes Incorporated AH9246-P-B, https://www.digikey.com/short/p4f5dw
 - 1 ea., MOSFET N-CH 30V 58A DPAK, Infineon IRLR8729, https://www.digikey.com/short/pm0rdq
-- 1 ea., PTC RESET FUSE 16V 5A RADIAL, https://www.digikey.com/short/ph7qmn
+- 1 ea., PTC RESET FUSE 16V 2.5A RADIAL, Littlefuse RGEF250, https://www.digikey.com/short/pbfb9c
 - 4 ea., CER 0.1UF 25V Y5V RADIAL 2.5mm lead spacing, generic, https://www.digikey.com/short/jn9pm2
 - 2 ea., CER 1UF 25V X7R RADIAL 2.5 lead spacing, generic https://www.digikey.com/short/p4fr3w
 - 1 ea., 0.96 Inch 128x64 I2C OLED, https://www.amazon.com/gp/product/B072Q2X2LL/
@@ -21,7 +21,8 @@ Main Board
 - 1 ea., NPN photo transistor, https://www.digikey.com/short/pmwzdb
 
 - 1 ea., 100 ohm resistor 1/8W 5% generic, https://www.digikey.com/short/pmwz22
-- 3 ea., 1K ohm resistor 1/8W 5% generic, https://www.digikey.com/short/pmwzwq
+- 1 ea., 330 ohm resistor 1/8W 5% generic, 
+- 2 ea., 1K ohm resistor 1/8W 5% generic, https://www.digikey.com/short/pmwzwq
 - 5 ea., 10K Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4frj2 
 
 - 1 ea., 10K Resistors, 1/4W 1%, https://www.digikey.com/short/p4fr2q
@@ -39,11 +40,12 @@ Main Board
 - 1 ea., 4POS Picoblade header, https://www.digikey.com/short/p9tw2z or https://www.mouser.com/ProductDetail/Molex/53047-0410?qs=DcEdecHHM4i8IPBxVAuJtg%3D%3D#.XR5yWR8Gu1Y.gmail
 - 1 ea., 4POS PicoBlade housing, https://www.digikey.com/short/p4wzd1
 
-12" PRE-CRIMP 1853 RED, https://www.digikey.com/short/p4wzvf
-12" PRE-CRIMP 1853 BLACK, https://www.digikey.com/short/p4wz1p
-12" PRE-CRIMP 1853 BLUE, https://www.digikey.com/short/p4wz14
-12" PRE-CRIMP 1853 ORANGE, https://www.digikey.com/short/p4wz1r
-12" PRE-CRIMP 1853 GREEN, https://www.digikey.com/short/p4w4c4
+12" PRE-CRIMP 1852 RED, https://www.digikey.com/short/pbfbnb
+12" PRE-CRIMP 1852 BLACK, https://www.digikey.com/short/pbfbnd
+12" PRE-CRIMP 1852 BLUE, https://www.digikey.com/short/pbfb03
+12" PRE-CRIMP 1852 ORANGE, https://www.digikey.com/short/pbfb0m
+12" PRE-CRIMP 1852 GREEN, https://www.digikey.com/short/pbfbdj
+12" PRE-CRIMP 1852 YELLOW, https://www.digikey.com/short/pbfbdn
 
 18 AWG Silicone wire https://www.amazon.com/gp/product/B01C5CANVG/ref=ox_sc_act_title_1?smid=AITZO53LNBA1K&psc=1
 
@@ -53,7 +55,7 @@ https://www.banggood.com/5X-Upgraded-Amass-XT60U-Male-Female-Bullet-Connectors-P
 Optional:
 FTDI SERIAL TTL-232 USB CABLE, https://www.digikey.com/short/p4w47d
 SPARKFUN FT231X BREAKOUT, https://www.digikey.com/short/p4w4qb
-
+PTC RESET FUSE 16V 5A RADIAL, https://www.digikey.com/short/ph7qmn
 
 Motor Spec Sheet:
 ----------------

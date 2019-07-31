@@ -67,7 +67,7 @@ void setup() {
   }
   Serial.println("Found INA260 chip");
 
-  pinMode(DART_IR, INPUT);            // external pullup
+  pinMode(DART_IR, INPUT_PULLUP);            // external pullup
   pciSetup(DART_IR);
   
   pinMode(flyWheelPin, INPUT);
@@ -127,7 +127,7 @@ void loop() {
    
   }
 
-  if (rpm > 0 && 0){
+  if (rpm > 0 || 1){
     if (!start_flag){
       start_flag = true;
       Serial.print(lastTime);
@@ -147,7 +147,7 @@ void loop() {
         Serial.print(", ");
         Serial.print(curAmp);
         Serial.print(", ");
-        Serial.print(maxAmp);https://cdn.hackaday.io/images/5652491563320737340.jpg
+        Serial.print(maxAmp);
         if (dart_speed_fps > 0){
           Serial.print(", ");
           Serial.println(dart_speed_fps);

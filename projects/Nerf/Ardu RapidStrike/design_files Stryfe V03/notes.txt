@@ -16,6 +16,7 @@ Todo:
 -  update display holder, print
 -  Document wire lengths
 
+Wire Lengths:
 Bat 9" 230 mm
 Mtr 4" 100 mm
 Photo 6" 150 mm
@@ -24,5 +25,16 @@ Jam 4" 100 mm
 Rev 12" 300 mm
 CLP 6" 150 mm
 
+Pinouts:
+  Photo:
+	1 signal
+	2 Power
+	3 Ground
+
+  I2C
+	1 data
+	2 clock
+	3 VCC
+	4 Ground
 
 Silver C&T Hawiann Turtle OR 627 CSY
