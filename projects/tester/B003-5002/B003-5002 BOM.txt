@@ -5,4 +5,5 @@ B003-5002 Jarngrepir3 PCA Power Cable Tester
 1 ea., CONN RCPT USB2.0 TYPEB 4POS R/A, Keystone 924, https://www.digikey.com/short/p9nczt
 1 ea., 330 Ohm resitstor
 1 ea., 3mm Green LED
+1 ea., PTC RESET FUSE 265V 30MA RADIAL 5mm lead spacing, EPCOS (TDK) B59890C0120A070, https://www.digikey.com/short/p9ncr4
 

@@ -16,14 +16,14 @@ Todo:
 -  update display holder, print
 -  Document wire lengths
 
-Wire Lengths:
-Bat 9" 230 mm
-Mtr 4" 100 mm
-Photo 6" 150 mm
-Disp 3" 75 mm
-Jam 4" 100 mm
-Rev 12" 300 mm
-CLP 6" 150 mm
+Wires, Lengths:
+2, Bat 9" 230 mm  (RED, BLK)
+2, Mtr 4" 100 mm  (RED, BLK)
+3, Photo 6" 150 mm (RED, BLK, ORG)
+4, Disp 3" 75 mm   (RED, BLK, ORG, BLU)
+2, Jam 4" 100 mm  (BLU)
+2, Rev 12" 300 mm (GRN)
+2, CLP 6" 150 mm  (YEL)
 
 Pinouts:
   Photo:

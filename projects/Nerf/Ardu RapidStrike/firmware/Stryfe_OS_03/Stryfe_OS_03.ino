@@ -20,8 +20,8 @@ int voltagePin = A3;
 float voltage = 0;
 float vcc = 5.0;
 float vd_factor = 11;
-float voltage_low = 5.0; //6.5;
-float voltage_high = 6.0; //8.4;
+float voltage_low = 6.5; //5.0; //6.5;
+float voltage_high = 8.4; //6.0; //8.4;
 
 int SPKR = 4;
 int DART_IR = A1;
@@ -33,8 +33,9 @@ long LEDtime_ms = 0;
 
 int flywheelPWM = 9;
 int flywheelPWM_full = 255;
-int flywheelPWM_idle = 50;
+int flywheelPWM_idle = 80;
 bool flywheelIdleFlag = false;
+long flywheelSpinupTime_ms = 0;
 
 uint8_t clipU3pin = 10;
 uint8_t clipU4pin = 11;
@@ -116,6 +117,11 @@ void setup() {
   pinMode(clipU6pin, INPUT);
 
   pinMode(flywheelPWM, OUTPUT);
+  //TCCR1B = TCCR1B & B11111000 | B00000001; // set timer 1 divisor to 1 for PWM frequency of 31372.55 Hz
+  TCCR1B = TCCR1B & B11111000 | B00000010; // for PWM frequency of 3921.16 Hz
+  //TCCR1B = TCCR1B & B11111000 | B00000011; // for PWM frequency of 490.20 Hz (The DEFAULT)
+  //TCCR1B = TCCR1B & B11111000 | B00000100; // for PWM frequency of 122.55 Hz
+  //TCCR1B = TCCR1B & B11111000 | B00000101; // for PWM frequency of 30.64 Hz
   pinMode(SPKR, OUTPUT); 
   pinMode(LED, OUTPUT);
 
@@ -345,7 +351,7 @@ void loop() {
     beep_time_ms = millis() + beep_delay;
   }
 
-  if (!digitalRead(buttonPin)){
+  if (!digitalRead(buttonPin) && !debug_flag){
     tone(SPKR, 800, 200);
     digitalWrite(LED, HIGH);
     while(!digitalRead(buttonPin)){
@@ -353,7 +359,8 @@ void loop() {
     }
     digitalWrite(LED, LOW);
     beep_time_ms = millis() + beep_delay;
-    flywheelIdleFlag = ! flywheelIdleFlag; 
+    flywheelIdleFlag = ! flywheelIdleFlag;
+    flywheelSpinupTime_ms = millis() + 250; 
   }
 
     //if (!digitalRead(revSwitch) && (voltage > voltage_low)){
@@ -363,7 +370,12 @@ void loop() {
   }
   else{
     if (flywheelIdleFlag){
-      analogWrite(flywheelPWM, flywheelPWM_idle);
+      if (millis() < flywheelSpinupTime_ms){
+        analogWrite(flywheelPWM, flywheelPWM_full);
+      }
+      else{
+        analogWrite(flywheelPWM, flywheelPWM_idle);
+      }
     }
     else{
       digitalWrite(flywheelPWM, LOW);
