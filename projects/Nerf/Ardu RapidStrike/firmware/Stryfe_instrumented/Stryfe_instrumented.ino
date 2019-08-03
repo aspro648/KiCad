@@ -21,7 +21,7 @@ long dart_interval_us = 0;
 volatile long mtr_time1_us = 0;
 volatile long mtr_time2_us = 0;
 volatile byte cnt = 0;
-int rpm = 0;
+long rpm = 0;
 
 bool start_flag = false;
 float lastAmp = 0;
@@ -71,14 +71,16 @@ void setup() {
   pciSetup(DART_IR);
   
   pinMode(flyWheelPin, INPUT);
-  attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, FALLING);
+  attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, RISING);
   Serial.println("time (ms), rpm, mA, mA max");
   Serial.println("shot, time (s), fps, rpm");
 }
 
 
 void loop() {
+  //detachInterrupt(digitalPinToInterrupt(flyWheelPin));
   long mtr_interval_us = mtr_time1_us - mtr_time2_us;
+  //attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, RISING);
   if (mtr_interval_us > 0){
     rpm = 1E+6 * 60 / mtr_interval_us;
   }
@@ -99,6 +101,7 @@ void loop() {
   curAmp = total / 25.0;
   */
   curAmp = ina260.readCurrent();
+  
   if (curAmp > maxAmp){
     maxAmp = curAmp;
     Serial.print( millis());
@@ -141,13 +144,14 @@ void loop() {
     else{
       long mark = millis();
       if (mark > showTime){
+        //Serial.print(mtr_interval_us);
         Serial.print(mark);
         Serial.print(", ");
         Serial.print(rpm);
         Serial.print(", ");
         Serial.print(curAmp);
-        Serial.print(", ");
-        Serial.print(maxAmp);
+        //Serial.print(", ");
+        //Serial.print(maxAmp);
         if (dart_speed_fps > 0){
           Serial.print(", ");
           Serial.println(dart_speed_fps);
@@ -157,7 +161,7 @@ void loop() {
           Serial.println(",");
         }
         //Serial.println(", ");
-        showTime = mark + 100;
+        showTime = mark + 10;
       }
     }
   }

@@ -40,12 +40,12 @@ Main Board
 - 1 ea., 4POS Picoblade header, https://www.digikey.com/short/p9tw2z or https://www.mouser.com/ProductDetail/Molex/53047-0410?qs=DcEdecHHM4i8IPBxVAuJtg%3D%3D#.XR5yWR8Gu1Y.gmail
 - 1 ea., 4POS PicoBlade housing, https://www.digikey.com/short/p4wzd1
 
-12" PRE-CRIMP 1852 RED, https://www.digikey.com/short/pbfbnb
-12" PRE-CRIMP 1852 BLACK, https://www.digikey.com/short/pbfbnd
-12" PRE-CRIMP 1852 BLUE, https://www.digikey.com/short/pbfb03
-12" PRE-CRIMP 1852 ORANGE, https://www.digikey.com/short/pbfb0m
-12" PRE-CRIMP 1852 GREEN, https://www.digikey.com/short/pbfbdj
-12" PRE-CRIMP 1852 YELLOW, https://www.digikey.com/short/pbfbdn
+- 1 ea., 12" PRE-CRIMP 1852 RED, https://www.digikey.com/short/pbfbnb
+- 1 ea., 12" PRE-CRIMP 1852 BLACK, https://www.digikey.com/short/pbfbnd
+- 1.5 ea., 12" PRE-CRIMP 1852 BLUE, https://www.digikey.com/short/pbfb03
+- 1 ea., 12" PRE-CRIMP 1852 ORANGE, https://www.digikey.com/short/pbfb0m
+- 2 ea., 12" PRE-CRIMP 1852 GREEN, https://www.digikey.com/short/pbfbdj
+- 1 ea., 12" PRE-CRIMP 1852 YELLOW, https://www.digikey.com/short/pbfbdn
 
 18 AWG Silicone wire https://www.amazon.com/gp/product/B01C5CANVG/ref=ox_sc_act_title_1?smid=AITZO53LNBA1K&psc=1
 
@@ -56,6 +56,7 @@ Optional:
 FTDI SERIAL TTL-232 USB CABLE, https://www.digikey.com/short/p4w47d
 SPARKFUN FT231X BREAKOUT, https://www.digikey.com/short/p4w4qb
 PTC RESET FUSE 16V 5A RADIAL, https://www.digikey.com/short/ph7qmn
+PTC RESET FUSE 16V 900MA RADIAL, https://www.digikey.com/short/pbw32n
 
 Motor Spec Sheet:
 ----------------
