@@ -40,10 +40,10 @@ Main Board
 - 1 ea., 4POS Picoblade header, https://www.digikey.com/short/p9tw2z or https://www.mouser.com/ProductDetail/Molex/53047-0410?qs=DcEdecHHM4i8IPBxVAuJtg%3D%3D#.XR5yWR8Gu1Y.gmail
 - 1 ea., 4POS PicoBlade housing, https://www.digikey.com/short/p4wzd1
 
-- 1 ea., 12" PRE-CRIMP 1852 RED, https://www.digikey.com/short/pbfbnb
-- 1 ea., 12" PRE-CRIMP 1852 BLACK, https://www.digikey.com/short/pbfbnd
+- 2 ea., 12" PRE-CRIMP 1852 RED, https://www.digikey.com/short/pbfbnb
+- 2 ea., 12" PRE-CRIMP 1852 BLACK, https://www.digikey.com/short/pbfbnd
 - 1.5 ea., 12" PRE-CRIMP 1852 BLUE, https://www.digikey.com/short/pbfb03
-- 1 ea., 12" PRE-CRIMP 1852 ORANGE, https://www.digikey.com/short/pbfb0m
+- 2 ea., 12" PRE-CRIMP 1852 ORANGE, https://www.digikey.com/short/pbfb0m
 - 2 ea., 12" PRE-CRIMP 1852 GREEN, https://www.digikey.com/short/pbfbdj
 - 1 ea., 12" PRE-CRIMP 1852 YELLOW, https://www.digikey.com/short/pbfbdn
 

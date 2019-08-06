@@ -26,7 +26,7 @@ Main Board
 - 5 ea., 10K Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4frj2 
 
 - 1 ea., 10K Resistors, 1/4W 1%, https://www.digikey.com/short/p4fr2q
-- 1 ea., 100K Resistors, 1/4W 1%, https://www.digikey.com/short/p9tnc3
+- 1 ea., 4.99K Resistors, 1/4W 1%, https://www.digikey.com/short/pbvfd2
 
 - 1 ea., SWITCH TACTILE SPST-NO 0.05A 24V, https://www.digikey.com/short/p4w42v
 - 1 ea., Piezo speaker, TDK PS1240P02CT3,  https://www.digikey.com/short/pmwzfc

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GerberLayoutSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LoadedOutlines>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\pusher.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\pusher.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\pusher.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\pusher.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\pusher.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\pusher.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\pannel\pusher.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\pusher.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\pusher.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</string>
+  </LoadedOutlines>
+  <Instances>
+    <GerberInstance>
+      <Center>
+        <X>-126.998</X>
+        <Y>76.365</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-93.498</X>
+        <Y>76.365</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-59.998</X>
+        <Y>76.365</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-126.998</X>
+        <Y>105.865</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-126.998</X>
+        <Y>135.365</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-93.498</X>
+        <Y>105.865</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-59.998</X>
+        <Y>105.865</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-93.498</X>
+        <Y>135.365</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-59.998</X>
+        <Y>135.365</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\gerbers\MOSFET.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+  </Instances>
+  <Tabs>
+    <BreakTab>
+      <Center>
+        <X>15.1011047</X>
+        <Y>57.9807549</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>14.9658375</X>
+        <Y>28.2220078</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>32.2800179</X>
+        <Y>13.7484341</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>65.82624</X>
+        <Y>13.4779005</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>48.2415276</X>
+        <Y>28.49254</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>48.1062622</X>
+        <Y>57.84549</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>83.00516</X>
+        <Y>57.84549</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>82.59936</X>
+        <Y>28.2220078</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>32.1447525</X>
+        <Y>72.86013</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>65.96151</X>
+        <Y>73.13066</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+  </Tabs>
+  <Width>100</Width>
+  <Height>100</Height>
+  <MarginBetweenBoards>2.5</MarginBetweenBoards>
+  <ConstructNegativePolygon>false</ConstructNegativePolygon>
+  <FillOffset>3</FillOffset>
+  <Smoothing>1</Smoothing>
+  <ExtraTabDrillDistance>0</ExtraTabDrillDistance>
+  <ClipToOutlines>true</ClipToOutlines>
+  <LastExportFolder>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files V05\pannel</LastExportFolder>
+  <DoNotGenerateMouseBites>false</DoNotGenerateMouseBites>
+</GerberLayoutSet>

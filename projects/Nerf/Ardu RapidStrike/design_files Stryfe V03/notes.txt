@@ -37,6 +37,8 @@ Wires, Lengths:
 2, Jam 4" 100 mm  (BLU)
 2, Rev 12" 300 mm (GRN)
 2, CLP 6" 150 mm  (YEL)
+1, DEBUG ORG
+2, LED 8" (RED, BLK) 
 
 Pinouts:
   Photo:
