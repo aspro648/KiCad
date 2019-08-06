@@ -1,7 +1,7 @@
 
 int voltagePin = A3;
 float vcc = 5.0;
-float vd_factor = 11;
+float vd_factor = 3.09;
 
 
 void setup() {                  

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GerberLayoutSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LoadedOutlines>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe V03\gerbers\Ardustrife03.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe V03\gerbers\Ardustrife03.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe V03\gerbers\Ardustrife03.zip</string>
+  </LoadedOutlines>
+  <Instances>
+    <GerberInstance>
+      <Center>
+        <X>-34</X>
+        <Y>137</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe V03\gerbers\Ardustrife03.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>102</X>
+        <Y>-23</Y>
+      </Center>
+      <Angle>-180</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe V03\gerbers\Ardustrife03.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-18</X>
+        <Y>-36</Y>
+      </Center>
+      <Angle>90</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe V03\gerbers\Ardustrife03.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+  </Instances>
+  <Tabs>
+    <BreakTab>
+      <Center>
+        <X>11.827796</X>
+        <Y>61.0527344</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>55.6451836</X>
+        <Y>52.89141</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>66.5291</X>
+        <Y>48.38709</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>66.1291</X>
+        <Y>27.0160313</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+  </Tabs>
+  <Width>100</Width>
+  <Height>100</Height>
+  <MarginBetweenBoards>2</MarginBetweenBoards>
+  <ConstructNegativePolygon>false</ConstructNegativePolygon>
+  <FillOffset>3</FillOffset>
+  <Smoothing>1</Smoothing>
+  <ExtraTabDrillDistance>0</ExtraTabDrillDistance>
+  <ClipToOutlines>true</ClipToOutlines>
+  <LastExportFolder>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe V03\pannel</LastExportFolder>
+  <DoNotGenerateMouseBites>false</DoNotGenerateMouseBites>
+</GerberLayoutSet>

@@ -19,9 +19,10 @@ float version = 0.3;
 int voltagePin = A3;
 float voltage = 0;
 float vcc = 5.0;
-float vd_factor = 11;
-float voltage_low = 6.5; //5.0; //6.5;
-float voltage_high = 8.4; //6.0; //8.4;
+float vd_factor = 3;  //(10K + 5K) / 5K
+float voltage_low;
+float voltage_high;
+float minVoltage = 100;
 
 int SPKR = 4;
 int DART_IR = A1;
@@ -136,6 +137,21 @@ void setup() {
 
   if(!digitalRead(buttonPin)){debug_flag = true;}
 
+  // check jumpers for battery choice
+  pinMode(5, INPUT_PULLUP);
+  pinMode(6, INPUT_PULLUP);
+  // Li cell nominal 3.5V to 4.2V
+  voltage_low = 7.0; 
+  voltage_high = 8.4;
+  if (!digitalRead(5)){  //4 x AA
+    voltage_low = 5.0; //5.0; //6.5;
+    voltage_high = 6.2; //6.0; //8.4;    
+  }
+  if (!digitalRead(6)){  //3S
+    voltage_low = 12.6; 
+    voltage_high = 10.5;    
+  }  
+ 
   // splash screen
   if (OLED){
     display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
@@ -214,7 +230,7 @@ void showDisplay(){
     display.setTextColor(WHITE);
     pews();  // draws bullet shapes
   
-    graph(voltage_low, voltage_high, voltage); // min, max, value
+    graph(voltage_low, voltage_high, minVoltage); // min, max, value
     display.setCursor(5, 18);
     if(dart_speed_fps < 10){
       display.print(F(" "));
@@ -254,7 +270,7 @@ void showDisplayDebug(){
     display.setTextSize(1);
     display.setTextColor(WHITE);
     display.setCursor(7, 3);
-    display.print(voltage, 2);
+    display.print(minVoltage, 2);
     display.print(" v      ");
     display.print("IR:");
     display.println(analogRead(DART_IR));
@@ -428,14 +444,19 @@ void loop() {
   }
   */
 
+  voltage = analogRead(voltagePin) / 1023.0 * vcc * vd_factor; 
+  if (voltage < minVoltage){
+    minVoltage = voltage;
+  }
   if (millis() > nextDisplayTime){ // update display every quarter second
     nextDisplayTime = millis() + 250; 
+    /*
     int voltValue = 0;
     for(uint8_t x=0; x< 25; x++){
       voltValue = voltValue + analogRead(voltagePin); 
     }
     voltage = voltValue / 1023.0 * vcc * vd_factor / 25; 
-
+    */
     if (voltage < voltage_low){
       if (!voltage_flag){
         //beep_time_ms = millis();
@@ -458,6 +479,7 @@ void loop() {
     else{
       showDisplay();
     }
+    minVoltage = 100;  // reset
   }
 
   if (millis() > beep_time_ms){  // nag beep every 5 min when idle or ever 5 seconds when battery low

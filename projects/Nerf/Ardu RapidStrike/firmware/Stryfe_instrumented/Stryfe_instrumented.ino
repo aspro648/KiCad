@@ -9,6 +9,13 @@ long showTime = 0;
 
 int DART_IR = A0;
 int flyWheelPin = 2;
+int voltagePin = A3;
+float voltage = 0;
+float vcc = 5.0;
+float vd_factor = 1; //3.09;  //(9.76 + 4.42) / 4.42
+float voltage_low = 6.5; //5.0; //6.5;
+float voltage_high = 8.4; //6.0; //8.4;
+float minVoltage = 100;
 
 volatile int shot_count = 0;
 volatile long dart_time1_us = 0;
@@ -22,12 +29,10 @@ volatile long mtr_time1_us = 0;
 volatile long mtr_time2_us = 0;
 volatile byte cnt = 0;
 long rpm = 0;
+int loopCount = 0;
+
 
 bool start_flag = false;
-float lastAmp = 0;
-int lastRPM = 0;
-long lastTime = 0;
-
 
 void pciSetup(byte pin){
   // https://playground.arduino.cc/Main/PinChangeInterrupt/
@@ -71,6 +76,7 @@ void setup() {
   pciSetup(DART_IR);
   
   pinMode(flyWheelPin, INPUT);
+  pinMode(voltagePin, INPUT);
   attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, RISING);
   Serial.println("time (ms), rpm, mA, mA max");
   Serial.println("shot, time (s), fps, rpm");
@@ -84,9 +90,17 @@ void loop() {
   if (mtr_interval_us > 0){
     rpm = 1E+6 * 60 / mtr_interval_us;
   }
-  if ((micros() - mtr_time1_us) > 1E+4){
+  if (rpm < 1000){
     rpm = 0;
-    //start_flag = false;
+  }
+  //if ((micros() - mtr_time1_us) > 1E+4){
+  //  rpm = 0;
+  //  //start_flag = false;
+  //}
+
+  voltage = analogRead(voltagePin) / 1023.0 * vcc *vd_factor;
+  if (voltage < minVoltage){
+    minVoltage = voltage;
   }
   /*
   float total = 0;
@@ -101,17 +115,10 @@ void loop() {
   curAmp = total / 25.0;
   */
   curAmp = ina260.readCurrent();
-  
   if (curAmp > maxAmp){
     maxAmp = curAmp;
-    Serial.print( millis());
-    Serial.print(", ");
-    Serial.print(rpm);
-    Serial.print(", ");
-    Serial.print(curAmp);
-    Serial.print(", ");
-    Serial.println(maxAmp);
   }
+  
   if (curAmp < 0){ curAmp = 0;}
 
   if (dart_flag){ // dart has exited gate
@@ -119,7 +126,7 @@ void loop() {
     dart_interval_us = dart_time2_us - dart_time1_us;
     dart_speed_fps = dartLength_mm / dart_interval_us / 25.4 / 12 * 1E+6;      // feet per second
     dart_flag = false;
-   
+    /*
     Serial.print(shot_count);
     Serial.print(", ");
     Serial.print(millis()/1000.0, 1);
@@ -127,45 +134,42 @@ void loop() {
     Serial.print(dart_speed_fps, 1);      
     Serial.print(", ");
     Serial.println(rpm);
-   
+   */
   }
 
-  if (rpm > 0 || 1){
-    if (!start_flag){
-      start_flag = true;
-      Serial.print(lastTime);
+  loopCount += 1;
+  long mark = millis();
+  if (mark > showTime){
+
+    //Serial.print(mtr_interval_us);
+    Serial.print(mark);
+    Serial.print(", ");
+    Serial.print(rpm);
+    Serial.print(", ");
+    Serial.print(maxAmp);
+    Serial.print(", ");
+    Serial.print(minVoltage, 2);
+    //Serial.print(", ");
+    //Serial.print(loopCount);
+    if (dart_speed_fps > 0){
       Serial.print(", ");
-      Serial.print(lastRPM);
-      Serial.print(", ");
-      Serial.print(lastAmp);
-      Serial.print(", ");
-      Serial.println(maxAmp);      
+      Serial.println(dart_speed_fps);
+      dart_speed_fps = 0;
     }
     else{
-      long mark = millis();
-      if (mark > showTime){
-        //Serial.print(mtr_interval_us);
-        Serial.print(mark);
-        Serial.print(", ");
-        Serial.print(rpm);
-        Serial.print(", ");
-        Serial.print(curAmp);
-        //Serial.print(", ");
-        //Serial.print(maxAmp);
-        if (dart_speed_fps > 0){
-          Serial.print(", ");
-          Serial.println(dart_speed_fps);
-          dart_speed_fps = 0;
-        }
-        else{
-          Serial.println(",");
-        }
-        //Serial.println(", ");
-        showTime = mark + 10;
-      }
+      Serial.println(",");
     }
+    
+    //Serial.println(", ");
+    if (mark < 2000){
+      showTime = mark + 10;
+    }
+    else{
+      showTime = mark + 100;
+    }
+    loopCount = 0;
+    maxAmp = 0;
+    minVoltage = 100;
   }
-  lastTime = millis();
-  lastRPM = rpm;
-  lastAmp = curAmp;
+
 }
