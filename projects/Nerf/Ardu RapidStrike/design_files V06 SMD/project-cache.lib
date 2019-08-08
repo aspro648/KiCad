@@ -131,6 +131,30 @@ X P1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# CONN_01X03
+#
+DEF CONN_01X03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "CONN_01X03" 100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Pin_Header_Straight_1X*
+ Pin_Header_Angled_1X*
+ Socket_Strip_Straight_1X*
+ Socket_Strip_Angled_1X*
+$ENDFPLIST
+DRAW
+S -50 -95 10 -105 0 1 0 N
+S -50 5 10 -5 0 1 0 N
+S -50 105 10 95 0 1 0 N
+S -50 150 50 -150 0 1 0 N
+X P1 1 -200 100 150 R 50 50 1 1 P
+X P2 2 -200 0 150 R 50 50 1 1 P
+X P3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # CONN_01X10
 #
 DEF CONN_01X10 J 0 40 Y N 1 F N
@@ -265,36 +289,6 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x05
-#
-DEF Conn_01x05 J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Conn_01x05" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
-$ENDFPLIST
-DRAW
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 250 50 -250 1 1 10 f
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 -200 100 150 R 50 50 1 1 P
-X Pin_3 3 -200 0 150 R 50 50 1 1 P
-X Pin_4 4 -200 -100 150 R 50 50 1 1 P
-X Pin_5 5 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Conn_01x06
 #
 DEF Conn_01x06 J 0 40 Y N 1 F N
@@ -360,6 +354,21 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Jumper_NO_Small
+#
+DEF Jumper_NO_Small JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Jumper_NO_Small" 10 -60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #

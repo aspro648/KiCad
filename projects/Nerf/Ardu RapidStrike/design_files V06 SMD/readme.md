@@ -11,6 +11,9 @@ MOSFET Board
 - 3 ea., 2 POS 5.08mm terminal, https://www.digikey.com/short/p9tv29
 - 1 ea., PTC Fuse 2.5A 1812, https://www.digikey.com/short/p5cbvf
 
+Pusher Fuse 1206: 1A https://www.digikey.com/short/p532qq
+Main: 1812: 3.5A https://www.digikey.com/short/p532pr
+
 Pusher Board
 -------------
 - 1 ea., L293 H-Bridge, STMicroelectronics L293NE, https://www.digikey.com/short/pm20fd
