@@ -588,13 +588,13 @@ Text Label 2550 5800 0    60   ~ 0
 $Comp
 L CONN_01X01 J14
 U 1 1 5CE78195
-P 6000 7750
-F 0 "J14" H 6000 7850 50  0000 C CNN
-F 1 "NPTH" V 6100 7750 50  0000 C CNN
-F 2 "footprints:SolderWirePad_single_2-5mmDrill" H 6000 7750 50  0001 C CNN
-F 3 "" H 6000 7750 50  0001 C CNN
-	1    6000 7750
-	1    0    0    -1  
+P 5150 7150
+F 0 "J14" H 5150 7250 50  0000 C CNN
+F 1 "NPTH" V 5250 7150 50  0000 C CNN
+F 2 "footprints:SolderWirePad_single_2-5mmDrill" H 5150 7150 50  0001 C CNN
+F 3 "" H 5150 7150 50  0001 C CNN
+	1    5150 7150
+	0    1    1    0   
 $EndComp
 NoConn ~ 10050 6300
 Text Label 2550 6900 0    60   ~ 0
@@ -696,7 +696,7 @@ U 1 1 5CDFA006
 P 2500 3300
 F 0 "Q1" H 2650 3450 50  0000 L CNN
 F 1 "IRLR8729" H 2650 3150 50  0000 L CNN
-F 2 "footprints:TO-252-3_TabPin2" H 2700 3400 50  0001 C CNN
+F 2 "footprints:TO-252-2_hand_soldering" H 2700 3400 50  0001 C CNN
 F 3 "" H 2500 3300 50  0001 C CNN
 	1    2500 3300
 	-1   0    0    -1  
