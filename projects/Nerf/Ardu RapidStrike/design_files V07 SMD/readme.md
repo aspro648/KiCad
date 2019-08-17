@@ -8,9 +8,7 @@ Main: 1812: 3.5A https://www.digikey.com/short/p532pr
 
 
 TODO:
-resistor dividor
-through hole piezo
-picoblade to through hole
+
 ISP to back
 second MOSFET?
 
@@ -24,33 +22,33 @@ Main Board
 - 1 ea., TC78H611FNG IC MOTOR DRIVER 16TSSOP, https://www.digikey.com/short/p5559f
 - 1 ea., PTC RESET FUSE 16V Ih=1.25A It=2.5A  1812, https://www.digikey.com/short/p555q2
 - 1 ea., PTC RESET FUSE 16V Ih=500MA It=1A 1210, https://www.digikey.com/short/p532qq
+- 1 ea., F1 PTC 1206, Bel 0ZCJ0025AF2E, https://www.digikey.com/short/jfcbc8
 - 1 ea., DIODE GEN PURP 50V 1A SMB, https://www.digikey.com/short/p555z5
 - 3 ea., Hall Effect Sensor, Diodes Incorporated AH9246-P-B, https://www.digikey.com/short/p5cb4f
 - 1 ea., 0.96 Inch 128x64 I2C OLED, https://www.amazon.com/gp/product/B072Q2X2LL/
 - 1 ea., CONN HEADER R/A 6POS 2.54MM,  https://www.digikey.com/short/p55hf2
 
-- 7 ea., CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/p55hdj
-- 2 ea., CAP CER 1UF 25V X7R 0805, https://www.digikey.com/short/p559tz
-- 1 ea., CAP CER 10UF 25V X5R 0805, https://www.digikey.com/short/p55hv0
+- 7 ea., CAP CER 0.1UF 16V X7R 0805, https://www.digikey.com/short/p5r2hm
+- 2 ea., CAP CER 1UF 16V X7R 0805, https://www.digikey.com/short/p5r25m
+- 1 ea., CAP CER 10UF 16V X5R 0805, https://www.digikey.com/short/p5r2cv
 
 - 1 ea., RES SMD 100 OHM 5% 1/8W 0805, https://www.digikey.com/short/p55997
 - 5 ea., RES SMD 1K OHM 5% 1/8W 0805, https://www.digikey.com/short/p559mn
 - 11 ea., RES 10K OHM 1% 1/4W 0805, https://www.digikey.com/short/p55980
-- 1 ea., RES 4.99K OHM 1% 1/8W 0805, https://www.digikey.com/short/p559pw
 
-- 1 ea., AUDIO PIEZO TRANSDUCER 12.5V SMD, Murata PKMCS0909E4000-R1, https://www.digikey.com/short/qjn4nh
+- 1 ea., AUDIO PIEZO TRANSDUCER 30V TH, https://www.digikey.com/short/p5r22q
 
-- 1 ea., CONN HEADER SMD R/A 2POS 1.25MM, https://www.digikey.com/short/p5590m
+- 1 ea., CONN HEADER R/A 2POS 1.25MM, https://www.digikey.com/short/p5r2dn
 - 1 ea., 2POS PicoBlade housing, https://www.digikey.com/short/p4wz0d
 
-- 1 ea., CONN HEADER SMD R/A 3POS 1.25MM, https://www.digikey.com/short/p55bc8
+- 1 ea., CONN HEADER SMD R/A 3POS https://www.digikey.com/short/p5r208
 - 1 ea., 3POS PicoBlade housing, https://www.digikey.com/short/pmwzf2
 
-- 1 ea., CONN HEADER SMD R/A 4POS 1.25MM, https://www.digikey.com/short/p55b7t
-- 2 ea., 4POS PicoBlade housing, https://www.digikey.com/short/p4wzd1
+- 1 ea., CONN HEADER R/A 4POS 1.25MM, https://www.digikey.com/short/p5r2nj
+- 1 ea., 4POS PicoBlade housing, https://www.digikey.com/short/p4wzd1
 
-- 1 ea., CONN HEADER SMD R/A 8POS 1.25MM, https://www.digikey.com/short/p55b70
-- 2 ea., CONN HOUSING 8POS 1.25MM NATURAL, https://www.digikey.com/short/p55btj
+- 1 ea., CONN HEADER SMD R/A 10POS 1.25MM, https://www.digikey.com/short/p5r2vz
+- 1 ea., CONN HOUSING 10POS 1.25MM NATURAL, https://www.digikey.com/short/p5rhr3
 
 12" PRE-CRIMP 1853 RED, https://www.digikey.com/short/p4wzvf
 12" PRE-CRIMP 1853 BLACK, https://www.digikey.com/short/p4wz1p
