@@ -18,11 +18,13 @@ Main Board
 - 1 ea., IC MCU 8BIT 32KB FLASH 32TQFP, https://www.digikey.com/short/p5cb88
 - 1 ea., Y1 CER RES 16.0000MHZ 15PF SMD, CSTNE16M0V530000R0, https://www.digikey.com/short/p55m1p
 - 1 ea., IC REG LINEAR 5V 250MA SOT89-3, Microchip MCP1702-5002E/TO, https://www.digikey.com/short/p5cbrh
-- 1 ea., MOSFET N-CH 30V 58A DPAK, Infineon IRLR8729, https://www.digikey.com/short/pm0rdq3
+- 2 ea., MOSFET N-CH 30V 58A DPAK, Infineon IRLR8729, https://www.digikey.com/short/pm0rdq3
 - 1 ea., TC78H611FNG IC MOTOR DRIVER 16TSSOP, https://www.digikey.com/short/p5559f
-- 1 ea., PTC RESET FUSE 16V Ih=1.25A It=2.5A  1812, https://www.digikey.com/short/p555q2
-- 1 ea., PTC RESET FUSE 16V Ih=500MA It=1A 1210, https://www.digikey.com/short/p532qq
-- 1 ea., DIODE GEN PURP 50V 1A SMB, https://www.digikey.com/short/p555z5
+- 1 ea., PTC RESET FUSE 16V Ih=2.5A RADIAL, Littlefuse RGEF250, https://www.digikey.com/short/pbfb9c
+- 1 ea., PTC RESET FUSE 16V Ih=900MA RADIAL, RUSBF090-2, https://www.digikey.com/short/p529j2
+- 1 ea., PTC RESET FUSE 16V Ih=8A RADIAL, RGEF800K, https://www.digikey.com/short/p5293q
+- 2 ea., PTC RESET FUSE 16V Ih=500MA It=1A 1210, https://www.digikey.com/short/p532qq
+- 2 ea., DIODE GEN PURP 50V 1A SMB, https://www.digikey.com/short/p555z5
 - 3 ea., Hall Effect Sensor, Diodes Incorporated AH9246-P-B, https://www.digikey.com/short/p5cb4f
 - 1 ea., 0.96 Inch 128x64 I2C OLED, https://www.amazon.com/gp/product/B072Q2X2LL/
 - 1 ea., CONN HEADER R/A 6POS 2.54MM,  https://www.digikey.com/short/p55hf2

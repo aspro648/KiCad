@@ -1026,7 +1026,7 @@ F 3 "" H 1600 6250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 4800 3600 0    60   ~ 0
-A0 spare\nA1 DART IR\nA2 Voltage\nA3 Speaker\nD2 Pusher SW\nD3 Rev SW\nD4 BUTTON\nD5 Pusher A\nD6 Pusher B\nD7 Trig SW\nD8 CLIP\nD9 Flywheel\nD10 Clip U3\nD11 Clip U4\nD12 Clip U6\nD13 LED
+A0 spare\nA1 DART IR\nA2 Voltage\nA3 Speaker\nD2 Pusher SW\nD3 Rev SW\nD4 BUTTON\nD5 SOLENOID\nD6 \nD7 Trig SW\nD8 CLIP\nD9 Flywheel\nD10 Clip U3\nD11 Clip U4\nD12 Clip U6\nD13 LED
 Text Label 5700 4500 0    60   ~ 0
 3(**)
 $Comp
@@ -1204,7 +1204,7 @@ L Jumper_NO_Small JP1
 U 1 1 5D4E8DE0
 P 6650 3800
 F 0 "JP1" H 6650 3850 50  0000 C CNN
-F 1 "2S" H 6400 3800 50  0000 C CNN
+F 1 "OPT_A" H 6350 3800 50  0000 C CNN
 F 2 "footprints:JMPR" H 6650 3800 50  0001 C CNN
 F 3 "" H 6650 3800 50  0001 C CNN
 	1    6650 3800
@@ -1215,7 +1215,7 @@ L Jumper_NO_Small JP2
 U 1 1 5D4E94F0
 P 6650 3900
 F 0 "JP2" H 6650 3950 50  0000 C CNN
-F 1 "NiMH" H 6350 3900 50  0000 C CNN
+F 1 "OPT_B" H 6350 3900 50  0000 C CNN
 F 2 "footprints:JMPR" H 6650 3900 50  0001 C CNN
 F 3 "" H 6650 3900 50  0001 C CNN
 	1    6650 3900
