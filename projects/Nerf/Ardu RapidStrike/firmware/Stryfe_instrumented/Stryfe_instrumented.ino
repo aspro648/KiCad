@@ -98,7 +98,8 @@ void loop() {
   //  //start_flag = false;
   //}
 
-  voltage = analogRead(voltagePin) / 1023.0 * vcc *vd_factor;
+  //voltage = analogRead(voltagePin) / 1023.0 * vcc *vd_factor;
+  voltage = ina260.readBusVoltage()/1000;
   if (voltage < minVoltage){
     minVoltage = voltage;
   }
@@ -148,7 +149,8 @@ void loop() {
     Serial.print(", ");
     Serial.print(maxAmp);
     Serial.print(", ");
-    Serial.print(minVoltage, 2);
+    //Serial.print(minVoltage, 2);
+    Serial.print(voltage, 2);    
     //Serial.print(", ");
     //Serial.print(loopCount);
     if (dart_speed_fps > 0){
