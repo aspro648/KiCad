@@ -19,7 +19,7 @@ float version = 0.3;
 int voltagePin = A3;
 float voltage = 0;
 float vcc = 5.0;
-float vd_factor = 3;  //(10K + 5K) / 5K
+float vd_factor = 2;  //(10K + 5K) / 5K
 float voltage_low;
 float voltage_high;
 float minVoltage = 100;

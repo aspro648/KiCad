@@ -78,7 +78,7 @@ void setup() {
   pinMode(flyWheelPin, INPUT);
   pinMode(voltagePin, INPUT);
   attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, RISING);
-  Serial.println("time (ms), rpm, mA, mA max");
+  //Serial.println("time (ms), rpm, mA, V");
   Serial.println("shot, time (s), fps, rpm");
 }
 
@@ -127,7 +127,6 @@ void loop() {
     dart_interval_us = dart_time2_us - dart_time1_us;
     dart_speed_fps = dartLength_mm / dart_interval_us / 25.4 / 12 * 1E+6;      // feet per second
     dart_flag = false;
-    /*
     Serial.print(shot_count);
     Serial.print(", ");
     Serial.print(millis()/1000.0, 1);
@@ -135,12 +134,12 @@ void loop() {
     Serial.print(dart_speed_fps, 1);      
     Serial.print(", ");
     Serial.println(rpm);
-   */
+
   }
 
   loopCount += 1;
   long mark = millis();
-  if (mark > showTime){
+  if (mark > showTime && 0){
 
     //Serial.print(mtr_interval_us);
     Serial.print(mark);

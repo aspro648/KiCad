@@ -78,8 +78,8 @@ void setup() {
   pinMode(flyWheelPin, INPUT);
   pinMode(voltagePin, INPUT);
   attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, RISING);
-  Serial.println("time (ms), rpm, mA, mA max");
-  Serial.println("shot, time (s), fps, rpm");
+  Serial.println("time (ms), rpm, mA, V");
+  //Serial.println("shot, time (s), fps, rpm");
 }
 
 
