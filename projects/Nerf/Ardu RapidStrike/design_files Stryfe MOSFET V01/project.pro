@@ -1,4 +1,4 @@
-update=5/18/2019 7:58:30 PM
+update=8/23/2019 3:41:17 PM
 version=1
 last_client=kicad
 [general]
@@ -74,3 +74,4 @@ LibName30=valves
 LibName31=motor_drivers
 LibName32=switches
 LibName33=sensors
+LibName34=motors
