@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP microbit_edge_connector
+D micro:bit vertial edge connector
+K microbit edge connector vertical
+F https://www.microbit.co.uk/device/pins
+$ENDCMP
+#
+#End Doc Library
