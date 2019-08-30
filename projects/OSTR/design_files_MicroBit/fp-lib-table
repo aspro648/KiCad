@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name library)(type KiCad)(uri "$(KIPRJMOD)/library.pretty")(options "")(descr ""))
+  (lib (name Connectors_4UCON)(type KiCad)(uri "$(KIPRJMOD)/kicad_microbit_connector-master/Connectors_4UCON.pretty")(options "")(descr ""))
+)
