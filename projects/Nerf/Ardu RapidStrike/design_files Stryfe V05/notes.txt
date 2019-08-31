@@ -1,0 +1,53 @@
+ArduStryfe 
+
+cups, course salt
+
+Drop cloth
+screw drivers
+sandwich bags
+crayons or markers
+paper towels
+paint
+tape
+scrub pads
+
+plastic wrap
+coloring sheets
+
+
+
+Video sequences:
+-  Intro, internal overview
+-  Main board soldering
+-  Display wiring
+-  Shell open, Stryfe overview, prep
+-  Battery, Rev switch, jam switch, clip switch
+-  Magazine magnet, hall test
+-  Motor wiring, final assembly
+
+
+Todo:
+-  PTC to batt line?
+
+Wires, Lengths:
+2, Bat 9" 230 mm  (RED, BLK)
+2, Mtr 4" 100 mm  (RED, BLK)
+3, Photo 6" 150 mm (RED, BLK, ORG)
+4, Disp 3" 75 mm   (RED, BLK, ORG, BLU)
+2, Jam 4" 100 mm  (BLU)
+2, Rev 12" 300 mm (GRN)
+2, CLP 6" 150 mm  (YEL)
+
+Pinouts:
+  Photo:
+	1 signal
+	2 Power
+	3 Ground
+
+  I2C
+	1 data
+	2 clock
+	3 VCC
+	4 Ground
+
+Silver C&T Hawiann Turtle OR 627 CSY
