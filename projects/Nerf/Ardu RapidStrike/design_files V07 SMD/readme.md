@@ -15,7 +15,7 @@ second MOSFET?
 
 Main Board
 ----------------
-- 1 ea., IC MCU 8BIT 32KB FLASH 32TQFP, https://www.digikey.com/short/p5cb88
+- 1 ea., IC MCU 8BIT 32KB FLASH 32TQFP, ATMEGA328P-AUR, https://www.digikey.com/short/prrf1p
 - 1 ea., Y1 CER RES 16.0000MHZ 15PF SMD, CSTNE16M0V530000R0, https://www.digikey.com/short/p55m1p
 - 1 ea., IC REG LINEAR 5V 250MA SOT89-3, Microchip MCP1702-5002E/TO, https://www.digikey.com/short/p5cbrh
 - 1 ea., MOSFET N-CH 30V 58A DPAK, Infineon IRLR8729, https://www.digikey.com/short/pm0rdq3

@@ -77,13 +77,18 @@ void setup() {
   
   pinMode(flyWheelPin, INPUT);
   pinMode(voltagePin, INPUT);
-  attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, RISING);
+  voltage = ina260.readBusVoltage()/1000;
+  Serial.print("Voltage = ");
+  Serial.println(voltage, 2);
+  //attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, RISING);
   //Serial.println("time (ms), rpm, mA, V");
-  Serial.println("shot, time (s), fps, rpm");
+  Serial.println("shot, time (s), fps");
 }
 
 
 void loop() {
+  
+  /*
   //detachInterrupt(digitalPinToInterrupt(flyWheelPin));
   long mtr_interval_us = mtr_time1_us - mtr_time2_us;
   //attachInterrupt(digitalPinToInterrupt(flyWheelPin), flywheel_interrupt, RISING);
@@ -93,6 +98,7 @@ void loop() {
   if (rpm < 10){
     rpm = 0;
   }
+  
   //if ((micros() - mtr_time1_us) > 1E+4){
   //  rpm = 0;
   //  //start_flag = false;
@@ -103,6 +109,7 @@ void loop() {
   if (voltage < minVoltage){
     minVoltage = voltage;
   }
+  */
   /*
   float total = 0;
   for(int x=0; x<10; x++){
@@ -114,14 +121,14 @@ void loop() {
     }
   }
   curAmp = total / 25.0;
-  */
+
   curAmp = ina260.readCurrent();
   if (curAmp > maxAmp){
     maxAmp = curAmp;
   }
-  
+   
   if (curAmp < 0){ curAmp = 0;}
-
+  */
   if (dart_flag){ // dart has exited gate
     shot_count += 1;
     dart_interval_us = dart_time2_us - dart_time1_us;
@@ -131,9 +138,9 @@ void loop() {
     Serial.print(", ");
     Serial.print(millis()/1000.0, 1);
     Serial.print(",  ");
-    Serial.print(dart_speed_fps, 1);      
-    Serial.print(", ");
-    Serial.println(rpm);
+    Serial.println(dart_speed_fps, 1);      
+    //Serial.print(", ");
+    //Serial.println(rpm);
 
   }
 

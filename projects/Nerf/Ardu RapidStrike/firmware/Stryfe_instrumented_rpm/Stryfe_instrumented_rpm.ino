@@ -147,7 +147,7 @@ void loop() {
     Serial.print(", ");
     Serial.print(rpm);
     Serial.print(", ");
-    Serial.print(maxAmp);
+    Serial.print(maxAmp, 0);
     Serial.print(", ");
     //Serial.print(minVoltage, 2);
     Serial.print(voltage, 2);    
