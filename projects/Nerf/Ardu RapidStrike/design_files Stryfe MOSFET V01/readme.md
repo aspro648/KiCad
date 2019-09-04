@@ -7,7 +7,16 @@ Main Board
 ----------------
 - 1 ea., 1N4001 1A Gen Purpose diode, https://www.digikey.com/short/p9ffm9
 - 1 ea., MOSFET N-CH 30V 62A TO-220AB, Infineon IRLB8721PBF, https://www.digikey.com/short/p4fhcm
+- 1 ea., PTC RESET FUSE 16V 900MA RADIAL, Littlefuse RUSBF090-2, https://www.digikey.com/short/p5vbvt
 - 1 ea., PTC RESET FUSE 16V 2.5A RADIAL, Littlefuse RGEF250, https://www.digikey.com/short/pbfb9c
+
+AA   3.5A @ 2.5s: RUSBF110 https://www.digikey.com/short/p5v5mz
+LiPo 6.5A @ 2s:   RUSBF135 https://www.digikey.com/short/p5v5mc
+MTRS  30A @ 3s: RGEF900  https://www.digikey.com/short/p5v54j
+
+2.5A @ 2s: AHEF050: https://www.digikey.com/short/prwn0r
+3.5A @ 2s: AHEF070: https://www.digikey.com/short/prwnv9
+
 - 1 ea., 10K Resistors, 1/8W 5% generic, https://www.digikey.com/short/p4frj2 
 - 1 ea., 2POS Picoblade vertical header, https://www.digikey.com/short/p9twrj
 - 1 ea., 2POS PicoBlade housing, https://www.digikey.com/short/p4wz0d
