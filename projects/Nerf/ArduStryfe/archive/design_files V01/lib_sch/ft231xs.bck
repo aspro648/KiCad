@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FT231XS
+D Full Speed USB to Full Handshake UART, SSOP-20
+K FTDI USB UART interface converter
+F http://www.ftdichip.com/Products/ICs/FT231X.html
+$ENDCMP
+#
+#End Doc Library
