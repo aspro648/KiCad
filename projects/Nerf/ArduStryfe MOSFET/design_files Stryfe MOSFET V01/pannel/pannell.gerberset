@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GerberLayoutSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LoadedOutlines>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</string>
+  </LoadedOutlines>
+  <Instances>
+    <GerberInstance>
+      <Center>
+        <X>-123</X>
+        <Y>107</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-73</X>
+        <Y>107</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>222</X>
+        <Y>-50</Y>
+      </Center>
+      <Angle>-180</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-72</X>
+        <Y>166.1</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-123</X>
+        <Y>166.099991</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>171</X>
+        <Y>-50</Y>
+      </Center>
+      <Angle>180</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Nerf\Ardu RapidStrike\design_files Stryfe MOSFET V01\gerbers\MOSFET R0.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+  </Instances>
+  <Tabs>
+    <BreakTab>
+      <Center>
+        <X>3.85406566</X>
+        <Y>31.7626839</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>94.9788055</X>
+        <Y>24.9927731</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>49.03287</X>
+        <Y>12.2819157</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>49.5855141</X>
+        <Y>44.47354</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>49.4473534</X>
+        <Y>71.55319</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>22.7821884</X>
+        <Y>58.0133667</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>74.59274</X>
+        <Y>58.0133667</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+  </Tabs>
+  <Width>100</Width>
+  <Height>100</Height>
+  <MarginBetweenBoards>2</MarginBetweenBoards>
+  <ConstructNegativePolygon>false</ConstructNegativePolygon>
+  <FillOffset>3</FillOffset>
+  <Smoothing>1</Smoothing>
+  <ExtraTabDrillDistance>0</ExtraTabDrillDistance>
+  <ClipToOutlines>true</ClipToOutlines>
+  <LastExportFolder />
+  <DoNotGenerateMouseBites>false</DoNotGenerateMouseBites>
+</GerberLayoutSet>
