@@ -356,7 +356,7 @@ L R R2
 U 1 1 59FA7F9D
 P 6250 5600
 F 0 "R2" V 6330 5600 50  0000 C CNN
-F 1 "100" V 6250 5600 50  0000 C CNN
+F 1 "22" V 6250 5600 50  0000 C CNN
 F 2 "library:Resistor_Horz" V 6180 5600 50  0001 C CNN
 F 3 "" H 6250 5600 50  0000 C CNN
 	1    6250 5600
@@ -367,7 +367,7 @@ L R R5
 U 1 1 59FA7FFE
 P 5350 5600
 F 0 "R5" V 5430 5600 50  0000 C CNN
-F 1 "100" V 5350 5600 50  0000 C CNN
+F 1 "22" V 5350 5600 50  0000 C CNN
 F 2 "library:Resistor_Horz" V 5280 5600 50  0001 C CNN
 F 3 "" H 5350 5600 50  0000 C CNN
 	1    5350 5600
@@ -375,28 +375,6 @@ F 3 "" H 5350 5600 50  0000 C CNN
 $EndComp
 Text Notes 5350 6500 0    60   ~ 0
 LEFT SIDE    RIGHT SIDE
-$Comp
-L R R6
-U 1 1 59FB2507
-P 5500 4400
-F 0 "R6" V 5580 4400 50  0000 C CNN
-F 1 "10K" V 5500 4400 50  0000 C CNN
-F 2 "library:Resistor_Horz" V 5430 4400 50  0001 C CNN
-F 3 "" H 5500 4400 50  0000 C CNN
-	1    5500 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R7
-U 1 1 59FB2613
-P 5150 4400
-F 0 "R7" V 5230 4400 50  0000 C CNN
-F 1 "10K" V 5150 4400 50  0000 C CNN
-F 2 "library:Resistor_Horz" V 5080 4400 50  0001 C CNN
-F 3 "" H 5150 4400 50  0000 C CNN
-	1    5150 4400
-	1    0    0    -1  
-$EndComp
 $Comp
 L PWR_FLAG #FLG010
 U 1 1 5ADA8A03
@@ -419,31 +397,16 @@ F 3 "" H 1200 1000 50  0001 C CNN
 	1    1200 1000
 	-1   0    0    1   
 $EndComp
-$Comp
-L +3.3V #PWR012
-U 1 1 5ADA9793
-P 5350 4050
-F 0 "#PWR012" H 5350 3900 50  0001 C CNN
-F 1 "+3.3V" H 5350 4190 50  0000 C CNN
-F 2 "" H 5350 4050 50  0001 C CNN
-F 3 "" H 5350 4050 50  0001 C CNN
-	1    5350 4050
-	1    0    0    -1  
-$EndComp
 Text Label 3850 5250 0    60   ~ 0
-P6
+P15
 Text Label 3850 4750 0    60   ~ 0
-P5
-Text Label 3850 5050 0    60   ~ 0
-P4
-Text Label 3850 5150 0    60   ~ 0
-D10
-Text Label 3850 4950 0    60   ~ 0
 P3
-Text Label 3850 4850 0    60   ~ 0
-D13
+Text Label 3850 5050 0    60   ~ 0
+P14
+Text Label 3850 4950 0    60   ~ 0
+P4
 Text Label 6950 2500 0    60   ~ 0
-P2
+P16
 $Comp
 L microbit_edge_connector J3
 U 1 1 5D66BD33
@@ -458,10 +421,10 @@ $EndComp
 Text Notes 1450 7050 0    60   ~ 0
 https://github.com/anthonykirby/kicad_microbit_connector
 $Comp
-L +3.3V #PWR013
+L +3.3V #PWR012
 U 1 1 5D673BD2
 P 2200 3050
-F 0 "#PWR013" H 2200 2900 50  0001 C CNN
+F 0 "#PWR012" H 2200 2900 50  0001 C CNN
 F 1 "+3.3V" H 2200 3190 50  0000 C CNN
 F 2 "" H 2200 3050 50  0001 C CNN
 F 3 "" H 2200 3050 50  0001 C CNN
@@ -469,24 +432,24 @@ F 3 "" H 2200 3050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR014
+L GND #PWR013
 U 1 1 5D673FEB
 P 2200 2750
-F 0 "#PWR014" H 2200 2500 50  0001 C CNN
+F 0 "#PWR013" H 2200 2500 50  0001 C CNN
 F 1 "GND" H 2200 2600 50  0000 C CNN
 F 2 "" H 2200 2750 60  0000 C CNN
 F 3 "" H 2200 2750 60  0000 C CNN
 	1    2200 2750
 	0    -1   -1   0   
 $EndComp
-Text Label 5850 3450 0    60   ~ 0
-P12
-Text Label 5850 3350 0    60   ~ 0
-P10
-Text Label 5850 3250 0    60   ~ 0
-P9
-Text Label 5850 3150 0    60   ~ 0
+Text Label 5850 3550 0    60   ~ 0
 P8
+Text Label 5850 3450 0    60   ~ 0
+P1
+Text Label 5850 3350 0    60   ~ 0
+P7
+Text Label 5850 3250 0    60   ~ 0
+P6
 NoConn ~ 1950 2850
 NoConn ~ 1950 2950
 NoConn ~ 1950 5550
@@ -526,7 +489,7 @@ L MCP1703A-3302/MB U2
 U 1 1 5D67D625
 P 4300 2800
 F 0 "U2" H 4450 2550 50  0000 C CNN
-F 1 "MCP1703A-3302/MB" H 4300 2950 50  0000 C CNN
+F 1 "MCP1702" H 4300 2950 50  0000 C CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 4350 3050 50  0001 C CNN
 F 3 "" H 4300 2750 50  0001 C CNN
 	1    4300 2800
@@ -544,10 +507,10 @@ F 3 "" H 3700 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L GND #PWR014
 U 1 1 5D67D729
 P 4300 3500
-F 0 "#PWR015" H 4300 3250 50  0001 C CNN
+F 0 "#PWR014" H 4300 3250 50  0001 C CNN
 F 1 "GND" H 4300 3350 50  0000 C CNN
 F 2 "" H 4300 3500 60  0000 C CNN
 F 3 "" H 4300 3500 60  0000 C CNN
@@ -555,10 +518,10 @@ F 3 "" H 4300 3500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR016
+L +3.3V #PWR015
 U 1 1 5D67D83D
 P 3450 2800
-F 0 "#PWR016" H 3450 2650 50  0001 C CNN
+F 0 "#PWR015" H 3450 2650 50  0001 C CNN
 F 1 "+3.3V" H 3450 2940 50  0000 C CNN
 F 2 "" H 3450 2800 50  0001 C CNN
 F 3 "" H 3450 2800 50  0001 C CNN
@@ -650,15 +613,13 @@ Connection ~ 7250 3300
 Wire Wire Line
 	3850 5250 5150 5250
 Wire Wire Line
-	5150 4550 5150 5750
-Wire Wire Line
 	6550 4750 6550 5750
 Wire Wire Line
 	5350 5150 5350 5450
 Wire Wire Line
 	6000 4950 6000 5450
 Wire Wire Line
-	3850 4850 6250 4850
+	3650 4850 6250 4850
 Wire Wire Line
 	6250 4850 6250 5450
 Wire Wire Line
@@ -670,21 +631,10 @@ Wire Wire Line
 Connection ~ 5350 6150
 Wire Wire Line
 	1200 900  1200 1000
-Connection ~ 5500 4750
-Connection ~ 5150 5250
-Wire Wire Line
-	5150 4250 5150 4050
-Wire Wire Line
-	5150 4050 5500 4050
-Wire Wire Line
-	5500 4050 5500 4250
-Connection ~ 5350 4050
 Wire Wire Line
 	6000 4950 3850 4950
 Wire Wire Line
-	3850 5150 5350 5150
-Wire Wire Line
-	5500 4550 5500 4750
+	3650 5150 5350 5150
 Wire Wire Line
 	1950 3050 2200 3050
 Wire Wire Line
@@ -790,7 +740,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 3650 2150 3650
 Wire Wire Line
-	4600 2800 6550 2800
+	4600 2800 7250 2800
 Wire Wire Line
 	4300 3100 4300 3500
 Wire Wire Line
@@ -806,11 +756,52 @@ Connection ~ 4300 3400
 Wire Wire Line
 	5150 3400 5150 3100
 Text Label 5850 3850 0    60   ~ 0
-P16
-Text Label 5850 3750 0    60   ~ 0
-P15
-Text Label 5850 3650 0    60   ~ 0
-P14
-Text Label 5850 3550 0    60   ~ 0
 P13
+Text Label 5850 3150 0    60   ~ 0
+P0
+Text Label 5850 3750 0    60   ~ 0
+P10
+Text Label 5850 3650 0    60   ~ 0
+P9
+$Comp
+L Q_NPN_EBC Q3
+U 1 1 5D69A1F0
+P 3400 5050
+F 0 "Q3" H 3600 5100 50  0000 L CNN
+F 1 "NPN" H 3600 5000 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3600 5150 50  0001 C CNN
+F 3 "" H 3400 5050 50  0001 C CNN
+	1    3400 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR016
+U 1 1 5D69A5CD
+P 3100 4900
+F 0 "#PWR016" H 3100 4750 50  0001 C CNN
+F 1 "+3.3V" H 3100 5040 50  0000 C CNN
+F 2 "" H 3100 4900 50  0001 C CNN
+F 3 "" H 3100 4900 50  0001 C CNN
+	1    3100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5250 3400 5350
+Wire Wire Line
+	3400 5350 3100 5350
+Wire Wire Line
+	3100 4900 3100 4950
+Wire Wire Line
+	3100 4950 3200 4950
+Wire Wire Line
+	3600 4950 3650 4950
+Wire Wire Line
+	3650 4850 3650 5150
+Connection ~ 3650 4950
+Text Label 3100 5350 0    60   ~ 0
+P2
+Text Notes 1450 7350 0    60   ~ 0
+MCP1702\nhttps://www.digikey.com/short/prhctc
+Wire Wire Line
+	5150 5250 5150 5750
 $EndSCHEMATC
