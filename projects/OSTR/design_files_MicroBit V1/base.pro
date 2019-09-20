@@ -1,4 +1,4 @@
-update=8/28/2019 4:21:48 PM
+update=9/19/2019 12:41:13 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -39,8 +39,8 @@ LabSize=60
 version=1
 LibDir=
 [eeschema/libraries]
-LibName1=lib_sch/project
-LibName2=base-rescue
+LibName1=base-rescue
+LibName2=lib_sch/project
 LibName3=power
 LibName4=device
 LibName5=transistors
