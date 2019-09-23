@@ -766,12 +766,12 @@ Wire Wire Line
 $Comp
 L Conn_01x04 J8
 U 1 1 5D7DB0FA
-P 5300 5600
-F 0 "J8" H 5300 5800 50  0000 C CNN
-F 1 "Sensors" V 5450 5550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5300 5600 50  0001 C CNN
-F 3 "" H 5300 5600 50  0001 C CNN
-	1    5300 5600
+P 5300 6050
+F 0 "J8" H 5300 6250 50  0000 C CNN
+F 1 "Sensors" V 5450 6000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5300 6050 50  0001 C CNN
+F 3 "" H 5300 6050 50  0001 C CNN
+	1    5300 6050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -836,13 +836,13 @@ Wire Wire Line
 $Comp
 L Conn_01x04 J9
 U 1 1 5D7DC1DC
-P 5200 6050
-F 0 "J9" H 5200 6250 50  0000 C CNN
-F 1 "Sensors" V 5350 6000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 5200 6050 50  0001 C CNN
-F 3 "" H 5200 6050 50  0001 C CNN
-	1    5200 6050
-	0    -1   1    0   
+P 5300 5600
+F 0 "J9" H 5300 5800 50  0000 C CNN
+F 1 "Sensors" V 5450 5550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 5300 5600 50  0001 C CNN
+F 3 "" H 5300 5600 50  0001 C CNN
+	1    5300 5600
+	0    1    1    0   
 $EndComp
 Connection ~ 5100 5400
 Connection ~ 5200 5400
