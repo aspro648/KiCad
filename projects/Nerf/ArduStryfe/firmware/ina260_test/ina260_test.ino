@@ -51,15 +51,15 @@ void loop() {
   }
   count += 1;
   if (millis() > showTime){
-    Serial.print(totVolt/1000/count, 2);
-    Serial.print("  ");
-    Serial.print(maxVoltage/1000, 2);
-    Serial.print(" max,  ");
+    //Serial.print(totVolt/1000/count, 2);
+    //Serial.print("  ");
+    //Serial.print(maxVoltage/1000, 2);
+    //Serial.print(" max,  ");
     Serial.print(totAmp / count, 0);
     Serial.print(" ");
     Serial.print(int(maxAmp));
-    Serial.print(" max, ");
-    Serial.println(count);
+    Serial.println(" max, ");
+    //Serial.println(count);
     showTime = showTime + 100;
     count = 0;
     totVolt = 0;
