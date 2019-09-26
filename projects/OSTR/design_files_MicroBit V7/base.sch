@@ -1,6 +1,6 @@
 EESchema Schematic File Version 2
-LIBS:project
 LIBS:base-rescue
+LIBS:project
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -601,7 +601,7 @@ F 3 "" H 6200 3500 60  0000 C CNN
 $EndComp
 Connection ~ 6200 3350
 $Comp
-L MMBF170 Q3
+L MMBF170-RESCUE-base Q3
 U 1 1 5D7B1EE2
 P 7350 2300
 F 0 "Q3" H 7550 2375 50  0000 L CNN

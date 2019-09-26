@@ -33,7 +33,7 @@ Electronics:
 - 2 ea. JST B5B-XH-A Receptical, [JST B5B-XH-A](https://www.digikey.com/short/qcrr5m)
 - 1 ea. SPST switch, [E-Switch EG1218](https://www.digikey.com/short/qcwd5b)
 - 1 ea. SMT STRAIGHT CONNECTOR FOR MICRO, https://www.digikey.com/short/pfd0mb
-- 1 ea. P-MOSFET
+- 1 ea. TRANS PNP 160V 1.5A TO126N, https://www.digikey.com/short/p2q7zp
 - 1 ea. 5V Reg
 - 1 ea. Kickback diode
 - 1 ea. SMD 10K
