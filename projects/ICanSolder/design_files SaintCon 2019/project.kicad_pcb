@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.7)
+(kicad_pcb (version 4) (host pcbnew 4.0.6)
 
   (general
     (links 7)
     (no_connects 0)
-    (area 158.942315 64.61 202.465715 103.097401)
+    (area 159.969999 72.339999 190.550001 102.920001)
     (thickness 1.6)
     (drawings 22)
     (tracks 22)
@@ -1255,8 +1255,8 @@
   (gr_text CR2032 (at 165.354 100.838) (layer B.SilkS)
     (effects (font (size 1.25 1.25) (thickness 0.2)) (justify mirror))
   )
-  (gr_text "Philcon 2019" (at 175.26 99.695) (layer F.Mask)
-    (effects (font (size 3 2.75) (thickness 0.6875) italic))
+  (gr_text "SAINTCON 2019" (at 175.26 99.695) (layer F.Mask)
+    (effects (font (size 3 2.5) (thickness 0.625) italic))
   )
   (gr_line (start 160.02 100.33) (end 160.02 74.93) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 187.96 102.87) (end 162.56 102.87) (angle 90) (layer Edge.Cuts) (width 0.1))
