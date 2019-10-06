@@ -167,7 +167,7 @@ L SPST SW1
 U 1 1 59BB6E38
 P 4450 1950
 F 0 "SW1" H 4450 2050 50  0000 C CNN
-F 1 "SPST" H 4450 1850 50  0000 C CNN
+F 1 "PWR" H 4450 1850 50  0000 C CNN
 F 2 "library:SW_Micro_SPST" H 4450 1950 50  0001 C CNN
 F 3 "" H 4450 1950 50  0000 C CNN
 	1    4450 1950
@@ -557,7 +557,7 @@ Text Label 6750 3750 0    60   ~ 0
 P10
 Text Label 6750 3650 0    60   ~ 0
 P9
-Text Label 6200 2300 0    60   ~ 0
+Text Label 3800 5000 0    60   ~ 0
 P14
 Text Notes 1450 7350 0    60   ~ 0
 MCP1702\nhttps://www.digikey.com/short/prhctc
@@ -812,7 +812,7 @@ F 3 "" H 4600 5000 50  0001 C CNN
 	1    4600 5000
 	1    0    0    -1  
 $EndComp
-Text Label 3800 5000 0    60   ~ 0
+Text Label 6200 2300 0    60   ~ 0
 P15
 Wire Wire Line
 	4700 5200 4700 5300
@@ -883,4 +883,6 @@ F 3 "" H 6750 2300 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	6600 2300 6200 2300
+Text Notes 4300 1050 0    60   ~ 0
+2 coils energized per stepper = 850 mA, 5 W, 7 ohm
 $EndSCHEMATC

@@ -1,11 +1,11 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.6)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
     (links 81)
     (no_connects 0)
-    (area 121.792999 59.562999 160.147001 118.237001)
+    (area 107.572858 45.56 175.795715 125.222001)
     (thickness 1.6)
-    (drawings 42)
+    (drawings 43)
     (tracks 263)
     (zones 0)
     (modules 29)
@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.6096)
+    (last_trace_width 0.1524)
     (user_trace_width 0.254)
     (user_trace_width 0.3048)
     (user_trace_width 0.4064)
@@ -2042,6 +2042,9 @@
     )
   )
 
+  (gr_text "TPIC6B595 ?\nhttps://www.adafruit.com/product/457\nhttps://flashgamer.com/blog/comments/arduino-controlling-24-leds-with-shift-registers\ntlc59213a\nTLC59210IN" (at 194.818 67.818) (layer Dwgs.User)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
+  )
   (gr_text P2 (at 148.463 87.63 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )

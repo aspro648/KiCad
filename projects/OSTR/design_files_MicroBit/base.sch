@@ -885,4 +885,6 @@ Wire Wire Line
 	6600 2300 6200 2300
 Text Notes 4300 1050 0    60   ~ 0
 2 coils energized per stepper = 850 mA, 5 W, 7 ohm
+Text Notes 2650 4850 0    60   ~ 0
+P0 - 1B\nP1 - 4B\nP2 - Sensor\nP3 - Sensor\nP4 - Speaker\nP5 - Button A\nP6 - 2B\nP7 - 3B\nP8 - 5B\nP9 - 6B\nP10- 7B\nP11- Button B\nP12\nP13- 8B\nP14- Sensor Power\nP15- PNP?\nP16- Servo\n
 $EndSCHEMATC
