@@ -858,7 +858,7 @@ X0000833464Y0001152049D01*
 G04 next file*
 G04 #@! TF.FileFunction,Copper,L2,Bot,Signal*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 4.0.7) date 09/05/18 21:08:50*
+G04 Created by KiCad (PCBNEW 4.0.6) date 10/10/19 11:50:36*
 G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
@@ -1626,7 +1626,7 @@ X0000833464Y0002486684D01*
 G04 next file*
 G04 #@! TF.FileFunction,Copper,L2,Bot,Signal*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 4.0.7) date 09/05/18 21:08:50*
+G04 Created by KiCad (PCBNEW 4.0.6) date 10/10/19 11:50:36*
 G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
@@ -2394,7 +2394,7 @@ X0000833464Y0003821318D01*
 G04 next file*
 G04 #@! TF.FileFunction,Copper,L2,Bot,Signal*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 4.0.7) date 09/05/18 21:08:50*
+G04 Created by KiCad (PCBNEW 4.0.6) date 10/10/19 11:50:36*
 G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
@@ -3162,7 +3162,7 @@ X0002168070Y0001152049D01*
 G04 next file*
 G04 #@! TF.FileFunction,Copper,L2,Bot,Signal*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 4.0.7) date 09/05/18 21:08:50*
+G04 Created by KiCad (PCBNEW 4.0.6) date 10/10/19 11:50:36*
 G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
@@ -3930,7 +3930,7 @@ X0003502677Y0001152049D01*
 G04 next file*
 G04 #@! TF.FileFunction,Copper,L2,Bot,Signal*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 4.0.7) date 09/05/18 21:08:50*
+G04 Created by KiCad (PCBNEW 4.0.6) date 10/10/19 11:50:36*
 G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
@@ -4698,7 +4698,7 @@ X0002168070Y0002486684D01*
 G04 next file*
 G04 #@! TF.FileFunction,Copper,L2,Bot,Signal*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 4.0.7) date 09/05/18 21:08:50*
+G04 Created by KiCad (PCBNEW 4.0.6) date 10/10/19 11:50:36*
 G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
@@ -5466,7 +5466,7 @@ X0002168070Y0003821318D01*
 G04 next file*
 G04 #@! TF.FileFunction,Copper,L2,Bot,Signal*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 4.0.7) date 09/05/18 21:08:50*
+G04 Created by KiCad (PCBNEW 4.0.6) date 10/10/19 11:50:36*
 G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*
@@ -6234,7 +6234,7 @@ X0003502677Y0002486684D01*
 G04 next file*
 G04 #@! TF.FileFunction,Copper,L2,Bot,Signal*
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 4.0.7) date 09/05/18 21:08:50*
+G04 Created by KiCad (PCBNEW 4.0.6) date 10/10/19 11:50:36*
 G01*
 G04 APERTURE LIST*
 G04 APERTURE END LIST*

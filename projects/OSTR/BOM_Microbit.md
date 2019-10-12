@@ -33,10 +33,9 @@ Electronics:
 - 2 ea. JST B5B-XH-A Receptical, [JST B5B-XH-A](https://www.digikey.com/short/qcrr5m)
 - 1 ea. SPST switch, [E-Switch EG1218](https://www.digikey.com/short/qcwd5b)
 - 1 ea. SMT STRAIGHT CONNECTOR FOR MICRO, https://www.digikey.com/short/pfd0mb
-- 1 ea. TRANS PNP 160V 1.5A TO126N, https://www.digikey.com/short/p2q7zp
-- 1 ea. 5V Reg
-- 1 ea. Kickback diode
-- 1 ea. SMD 10K
+- 1 ea. IC REG LINEAR 3.3V 250MA TO92-3, MCP1702-3302E/TO, https://www.digikey.com/short/p2b11q
+- 1 ea. 1N4001 1A Gen Purpose diode, https://www.digikey.com/short/p9ffm9
+- 1 ea. TRANS NPN 40V 0.6A TO-92, 2N4401BU,  https://www.digikey.com/short/p25ctq
 - 1 ea. pin male header, [Sullins PREC040SAAN-RC](https://www.digikey.com/short/jzr38f)
 - 2 ea. TERMINAL 3.5MM 2POS, [On Shore ED555/2DS](http://www.digikey.com/short/7zj1f4)
 - 2 ea. 2 x AA Holder, [Keystone 2463](http://www.digikey.com/short/tz5bd1)
@@ -48,7 +47,12 @@ Electronics:
 - 2 ea. IR Emitter 940nm 1.2V, https://www.digikey.com/short/jw9m1r
 - 2 ea. 22 ohm resistor 1/8W, 
 - 2 ea. 330 ohm resistor 1/8W, [Stackpole CF18JT330R](https://www.digikey.com/short/jzr35t)
+- 2 ea. 1K resistor 1/8W
+- 1 ea. 10K resistor 1/8W
 - 2 ea. 3mm LEDs, [Wurth 151031VS06000](http://www.digikey.com/short/3335hz)
+- 1 ea. CONN HDR 4POS 0.1 GOLD PCB R/A, PPPC041LGBN-RC, https://www.digikey.com/short/p25c80
+- 1 ea. CONN HEADER R/A 4POS 2.54MM, M20-9750446, https://www.digikey.com/short/p25cjh
+- 1 ea. CONN HDR 4POS 0.1 GOLD PCB, S7037-ND, https://www.digikey.com/short/p25c43
 - 2 ea. Geared 5V Stepper, [28byj](http://a.co/hwCrUy4)
 - 1 ea. Micro servo, [SG 9G](http://www.adafruit.com/products/169
 - 1 ea. USB 2.0 A Male to Micro B cable, http://a.co/bYaNDg6

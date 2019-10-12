@@ -151,7 +151,6 @@ if not os.path.isdir('certificates'):
 # load name and awards
 loadNames(db)
 
-#data = {"Mårten Wikman": "July 2018"}
 
 for name, date in data.iteritems():
     # make certificate
