@@ -2,14 +2,15 @@ SMD Challenge Bodge Edition
 ----------------
 
 ![SMD Challenge](images/project.png) 
-This SMD Challenge is designed to test your troubleshooting and repair skills. The layout was done by the summer intern and didn't get reviewed before being sent out for fab. The PCBs and parts showed up today, and it falls on you to build the working demo for the client visit tomorrow morning.  All you have to do is make the LEDs blink in order, before you go home today, or you are fired. Good luck.
+"Bodge" means to do a temporary repair. Sometimes there are errors in layouts that require modifications to get the circuit working. This SMD Challenge is designed to test your troubleshooting and repair skills. 
 
+Here is the scenario: The layout seemed simple so you gave it to the new guy to do and it didn't get reviewed before being sent out for fab. The PCBs and parts showed up today, and it falls on you to build the working demo for the client visit tomorrow morning.  All you have to do is make the LEDs blink in order, before you go home today, or you are fired. Good luck.
 
 Bill Of Materials
 ----------------
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [design_files](design_files/) folder.
-- 1 ea., Atmel ATTINY85V-10SUR, https://www.digikey.com/short/3253mp, flashed beforehand from [firmware](firmware/) folder
+- 1 ea., Atmel ATTINY25 or 85 SOIC-8, https://www.digikey.com/short/3253mp, flashed beforehand from [firmware](firmware/) folder.
 - 1 ea., CAP CER 0.1UF 0603 SMD, https://www.digikey.com/short/pq0m22 
 - 5 ea., LEDs 0603, your choice of colors
 - 5 ea., Resistors 0603 SMD, maybe 100 ohm-ish?
@@ -26,7 +27,7 @@ This project is programed using the Open Source [Arduino](https://www.arduino.cc
 
 Assembly Instructions
 ----------------
-I have posted [minimal instructions at HackADay](https://hackaday.io/project/25265-an-unfortunate-smd-project).
+I have posted [minimal information at HackADay](https://hackaday.io/project/25265-an-unfortunate-smd-project).
 If you are stuck, and in tears, send me a cry for help. I am not evil, and most of the errors on the board are ones I have made in the past, so you can learn from my mistakes.
 
 License

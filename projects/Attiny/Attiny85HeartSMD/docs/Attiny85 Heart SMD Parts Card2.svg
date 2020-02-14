@@ -14,7 +14,7 @@
    viewBox="0 0 765 990"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="Attiny85 Heart SMD Parts Card2.svg"
    inkscape:export-filename="C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\Attiny85HeartSMD\docs\Attiny85 Heart SMD Parts Card 2.png"
    inkscape:export-xdpi="150"
@@ -28,17 +28,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.72776573"
-     inkscape:cx="124.35303"
-     inkscape:cy="616.14306"
+     inkscape:zoom="2.5186676"
+     inkscape:cx="187.08222"
+     inkscape:cy="605.63907"
      inkscape:document-units="in"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="in"
      inkscape:snap-text-baseline="true"
-     inkscape:window-width="1533"
+     inkscape:window-width="1527"
      inkscape:window-height="877"
-     inkscape:window-x="59"
+     inkscape:window-x="65"
      inkscape:window-y="-8"
      inkscape:window-maximized="1">
     <inkscape:grid
@@ -99,12 +99,12 @@
        inkscape:export-xdpi="150"
        inkscape:export-ydpi="150"><tspan
          sodipodi:role="line"
-         x="146.63086"
+         x="91.875"
          y="493.61221"
          style="font-size:11.25px;line-height:1.25;text-align:start;text-anchor:start"
-         id="tspan3412">330 Ohm </tspan><tspan
+         id="tspan3412">100 Ohm </tspan><tspan
          sodipodi:role="line"
-         x="143.04932"
+         x="91.875"
          y="507.67471"
          style="font-size:11.25px;line-height:1.25;text-align:start;text-anchor:start"
          id="tspan843">Resistor</tspan></text>
@@ -195,5 +195,5 @@
            y="360"
            style="font-size:17.5px" /></flowRegion><flowPara
          id="flowPara3364-3"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:1.25;font-family:'Marker Felt';-inkscape-font-specification:'Marker Felt Medium'">https://goo.gl/d9P6wK</flowPara></flowRoot>  </g>
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:1.25;font-family:'Marker Felt';-inkscape-font-specification:'Marker Felt Medium'">http://bit.ly/ICanSMD</flowPara></flowRoot>  </g>
 </svg>

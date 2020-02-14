@@ -14,11 +14,11 @@ See a [demo](https://youtu.be/9H9jX7037jc).
 Bill Of Materials
 =================
   
-- 1 ea. ATTINY85, Atmel ATTINY85V-10SUR, Digikey ATTINY85V-10SURCT-ND
+- 1 ea. Atmel ATTINY25V-10SNR, Digikey 1611-ATTINY25V-10SNRCT-ND
 - 1 ea. SMD SPST switch, C&K JS102011SAQN, Digikey 401-1999-1-ND
 - 1 ea. SMD Battery holder, Linx BAT-HLD-001, Digikey BAT-HLD-001-ND
 - 1 ea. 54 mcd Red 1206 LED, Lite-On LTST-C150KRKT, Digikey 160-1405-1-ND
-- 1 ea. 330 ohm 1206 SMD Resistor, Yageo RC1206JR-07330RL, Digikey 311-330ERCT-ND
+- 1 ea. RES SMD 100 OHM 5% 1/4W 1206, Digiket P100ECT-ND
 - 1 ea. 0.1 uF cap 1206, KEMET C1206C104K5RAC7867, Digikey 399-1249-1-ND
 - 1 ea. CR2032 Battery, Panasonic CR2032, Digikey P189-ND (requires ground shipping, or buy locally).
 
