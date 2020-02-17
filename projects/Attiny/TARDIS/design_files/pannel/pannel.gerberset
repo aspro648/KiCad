@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GerberLayoutSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LoadedOutlines>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis_JLC.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis.zip</string>
+  </LoadedOutlines>
+  <Instances>
+    <GerberInstance>
+      <Center>
+        <X>-129.54</X>
+        <Y>142.24</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis_JLC.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>155</X>
+        <Y>-43</Y>
+      </Center>
+      <Angle>180</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-101</X>
+        <Y>142</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-73</X>
+        <Y>142</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>183</X>
+        <Y>-43</Y>
+      </Center>
+      <Angle>180</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>211</X>
+        <Y>-43</Y>
+      </Center>
+      <Angle>180</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\gerbers\tardis.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+  </Instances>
+  <Tabs>
+    <BreakTab>
+      <Center>
+        <X>12.2661161</X>
+        <Y>49.5807343</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>39.93763</X>
+        <Y>49.5518341</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>68.65731</X>
+        <Y>49.3711</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>27</X>
+        <Y>22</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>55.2</X>
+        <Y>22</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>54.7</X>
+        <Y>75</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>26.5</X>
+        <Y>75</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+  </Tabs>
+  <Width>100</Width>
+  <Height>100</Height>
+  <MarginBetweenBoards>2</MarginBetweenBoards>
+  <ConstructNegativePolygon>false</ConstructNegativePolygon>
+  <FillOffset>3</FillOffset>
+  <Smoothing>1</Smoothing>
+  <ExtraTabDrillDistance>0</ExtraTabDrillDistance>
+  <ClipToOutlines>true</ClipToOutlines>
+  <LastExportFolder>C:\Users\Maker's Box\Documents\git\KiCad\projects\Attiny\TARDIS\design_files\pannel</LastExportFolder>
+  <DoNotGenerateMouseBites>false</DoNotGenerateMouseBites>
+</GerberLayoutSet>
