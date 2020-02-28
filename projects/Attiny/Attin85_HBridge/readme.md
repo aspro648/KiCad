@@ -1,8 +1,7 @@
-Beetje H-Bridge
+Attiny H-Bridge
 
-![Beetje Block](project.png) 
+![Attiny Block](images/project.png) 
 
-Project website: https://hackaday.io/project/160638-beetje-bloks
 
 
 Bill Of Materials
@@ -19,6 +18,15 @@ Bill Of Materials
 Revisions
 ------------------
 
+
+Firmware
+========
+This project is programed using the Open Source [Arduino](https://www.arduino.cc/). I use my Open Source [AVR Programming Shield](https://www.tindie.com/products/MakersBox/yet-another-programming-shield/) to program the Attiny. The firmware is located in the [firmware](firmware/) folder.
+
+
+Assembly Instructions
+=====================
+TBD
 
 
 License
