@@ -23,7 +23,7 @@ avrdude -C ..\etc\avrdude.conf -P COM10 -b 19200 -c avrisp -p attiny85 -v -e -U 
 #include <avr/wdt.h>
 
 // make Pin assignments based on board type
-#if defined(__AVR_ATtiny85__) // ATTINY!
+#if defined(__AVR_ATtiny85__) || defined(__AVR_ATtiny25__)// ATTINY!
   #define ATTINY 1
   #define touchPin 1     // A1/D2
   #define touchPullUp 2
