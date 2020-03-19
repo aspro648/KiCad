@@ -1,4 +1,4 @@
-update=9/28/2018 3:45:11 PM
+update=3/18/2020 11:26:06 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -63,13 +73,4 @@ LibName31=atmel
 LibName32=contrib
 LibName33=valves
 LibName34=lib_sch/pcf8523
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName35=C:/Users/kolsen/Documents/git/KiCad/projects/Beetje/design_files_SD_card/lib_sch/Beetje_Headers

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:project-rescue
 LIBS:project
 LIBS:power
 LIBS:device
@@ -314,7 +315,7 @@ Wire Wire Line
 Connection ~ 3150 3500
 Connection ~ 3150 3600
 $Comp
-L Jumper_NC_Small JP1
+L Jumper_NC_Small-RESCUE-project JP1
 U 1 1 5B7117D3
 P 7350 3250
 F 0 "JP1" H 7350 3330 50  0000 C CNN
@@ -349,7 +350,7 @@ Wire Wire Line
 Connection ~ 7550 3250
 Connection ~ 7450 3250
 $Comp
-L Jumper_NC_Small JP2
+L Jumper_NC_Small-RESCUE-project JP2
 U 1 1 5B71BE0C
 P 7350 3750
 F 0 "JP2" H 7350 3830 50  0000 C CNN
@@ -384,7 +385,7 @@ Wire Wire Line
 Connection ~ 7550 3750
 Connection ~ 7450 3750
 $Comp
-L Jumper_NC_Small JP3
+L Jumper_NC_Small-RESCUE-project JP3
 U 1 1 5B71BE74
 P 7350 4250
 F 0 "JP3" H 7350 4330 50  0000 C CNN
@@ -419,7 +420,7 @@ Wire Wire Line
 Connection ~ 7550 4250
 Connection ~ 7450 4250
 $Comp
-L Jumper_NC_Small JP4
+L Jumper_NC_Small-RESCUE-project JP4
 U 1 1 5B71BE88
 P 7350 4750
 F 0 "JP4" H 7350 4830 50  0000 C CNN
@@ -454,7 +455,7 @@ Wire Wire Line
 Connection ~ 7550 4750
 Connection ~ 7450 4750
 $Comp
-L Jumper_NC_Small JP5
+L Jumper_NC_Small-RESCUE-project JP5
 U 1 1 5B71C18C
 P 7350 5300
 F 0 "JP5" H 7350 5380 50  0000 C CNN
@@ -489,7 +490,7 @@ Wire Wire Line
 Connection ~ 7550 5300
 Connection ~ 7450 5300
 $Comp
-L Jumper_NC_Small JP6
+L Jumper_NC_Small-RESCUE-project JP6
 U 1 1 5B71C1A0
 P 7350 5800
 F 0 "JP6" H 7350 5880 50  0000 C CNN
@@ -524,7 +525,7 @@ Wire Wire Line
 Connection ~ 7550 5800
 Connection ~ 7450 5800
 $Comp
-L Jumper_NC_Small JP7
+L Jumper_NC_Small-RESCUE-project JP7
 U 1 1 5B71C95F
 P 5300 3250
 F 0 "JP7" H 5300 3330 50  0000 C CNN
@@ -559,7 +560,7 @@ Wire Wire Line
 Connection ~ 5500 3250
 Connection ~ 5400 3250
 $Comp
-L Jumper_NC_Small JP8
+L Jumper_NC_Small-RESCUE-project JP8
 U 1 1 5B71C973
 P 5300 3750
 F 0 "JP8" H 5300 3830 50  0000 C CNN
@@ -594,7 +595,7 @@ Wire Wire Line
 Connection ~ 5500 3750
 Connection ~ 5400 3750
 $Comp
-L Jumper_NC_Small JP9
+L Jumper_NC_Small-RESCUE-project JP9
 U 1 1 5B71C987
 P 5300 4250
 F 0 "JP9" H 5300 4330 50  0000 C CNN
@@ -629,7 +630,7 @@ Wire Wire Line
 Connection ~ 5500 4250
 Connection ~ 5400 4250
 $Comp
-L Jumper_NC_Small JP10
+L Jumper_NC_Small-RESCUE-project JP10
 U 1 1 5B71C99B
 P 5300 4750
 F 0 "JP10" H 5300 4830 50  0000 C CNN
@@ -664,7 +665,7 @@ Wire Wire Line
 Connection ~ 5500 4750
 Connection ~ 5400 4750
 $Comp
-L Jumper_NC_Small JP11
+L Jumper_NC_Small-RESCUE-project JP11
 U 1 1 5B71C9AF
 P 5300 5300
 F 0 "JP11" H 5300 5380 50  0000 C CNN
@@ -699,7 +700,7 @@ Wire Wire Line
 Connection ~ 5500 5300
 Connection ~ 5400 5300
 $Comp
-L Jumper_NC_Small JP12
+L Jumper_NC_Small-RESCUE-project JP12
 U 1 1 5B71C9C3
 P 5300 5800
 F 0 "JP12" H 5300 5880 50  0000 C CNN
@@ -734,7 +735,7 @@ Wire Wire Line
 Connection ~ 5500 5800
 Connection ~ 5400 5800
 $Comp
-L Jumper_NC_Small JP13
+L Jumper_NC_Small-RESCUE-project JP13
 U 1 1 5B71CA8B
 P 5300 6500
 F 0 "JP13" H 5300 6580 50  0000 C CNN
@@ -769,7 +770,7 @@ Wire Wire Line
 Connection ~ 5500 6500
 Connection ~ 5400 6500
 $Comp
-L Jumper_NC_Small JP14
+L Jumper_NC_Small-RESCUE-project JP14
 U 1 1 5B71CA9F
 P 5300 7000
 F 0 "JP14" H 5300 7080 50  0000 C CNN
@@ -847,4 +848,128 @@ F 3 "" H 4900 5200 50  0001 C CNN
 	1    4900 5200
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	-2100 2250 -2300 2250
+Wire Wire Line
+	-2300 2350 -2100 2350
+Wire Wire Line
+	-2100 2450 -2300 2450
+Wire Wire Line
+	-2100 2550 -2300 2550
+Wire Wire Line
+	-2100 2650 -2300 2650
+Wire Wire Line
+	-2100 2750 -2300 2750
+Wire Wire Line
+	-2100 2850 -2150 2850
+Wire Wire Line
+	-2100 2950 -2200 2950
+$Comp
+L +BATT #PWR06
+U 1 1 5B402C38
+P -2150 2850
+F 0 "#PWR06" H -2150 2700 50  0001 C CNN
+F 1 "+BATT" V -2150 3100 50  0000 C CNN
+F 2 "" H -2150 2850 50  0001 C CNN
+F 3 "" H -2150 2850 50  0001 C CNN
+	1    -2150 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VBUS #PWR07
+U 1 1 5B402FA5
+P -2200 2950
+F 0 "#PWR07" H -2200 2800 50  0001 C CNN
+F 1 "VBUS" V -2200 3150 50  0000 C CNN
+F 2 "" H -2200 2950 50  0001 C CNN
+F 3 "" H -2200 2950 50  0001 C CNN
+	1    -2200 2950
+	0    -1   -1   0   
+$EndComp
+Text Label -2300 2450 0    60   ~ 0
+D10
+Text Label -2300 2350 0    60   ~ 0
+D9
+Text Label -900 2450 0    60   ~ 0
+SCL
+Text Label -900 2550 0    60   ~ 0
+SDA
+Text Label -2300 2250 0    60   ~ 0
+~RESET
+Text Label -850 2250 0    60   ~ 0
+A0
+Text Label -2300 2750 0    60   ~ 0
+SCK
+Text Label -2300 2650 0    60   ~ 0
+MOSI
+Text Label -2300 2550 0    60   ~ 0
+MISO
+$Comp
+L GND #PWR08
+U 1 1 5B41D2F5
+P -1000 2750
+F 0 "#PWR08" H -1000 2500 50  0001 C CNN
+F 1 "GND" V -1000 2550 50  0000 C CNN
+F 2 "" H -1000 2750 50  0001 C CNN
+F 3 "" H -1000 2750 50  0001 C CNN
+	1    -1000 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x08 J4
+U 1 1 5B6D51CD
+P -1900 2550
+F 0 "J4" H -1900 2950 50  0000 C CNN
+F 1 "Beetje_Top" H -2100 2050 50  0000 C CNN
+F 2 "footprints:Beetje_Top" H -1900 2550 50  0001 C CNN
+F 3 "" H -1900 2550 50  0001 C CNN
+	1    -1900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J2
+U 1 1 5B6D5224
+P -1250 2450
+F 0 "J2" H -1250 2750 50  0000 C CNN
+F 1 "Beetje_Bottom" H -1400 2050 50  0000 C CNN
+F 2 "footprints:Beetje_Bottom" H -1250 2450 50  0001 C CNN
+F 3 "" H -1250 2450 50  0001 C CNN
+	1    -1250 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	-1050 2250 -750 2250
+Wire Wire Line
+	-1050 2350 -750 2350
+Wire Wire Line
+	-1050 2450 -750 2450
+Wire Wire Line
+	-1050 2550 -750 2550
+Wire Wire Line
+	-1050 2650 -1000 2650
+Wire Wire Line
+	-1050 2750 -1000 2750
+$Comp
+L VCC #PWR010
+U 1 1 5B6E81BF
+P -1000 2650
+F 0 "#PWR010" H -1000 2500 50  0001 C CNN
+F 1 "VCC" V -1000 2850 50  0000 C CNN
+F 2 "" H -1000 2650 50  0001 C CNN
+F 3 "" H -1000 2650 50  0001 C CNN
+	1    -1000 2650
+	0    1    1    0   
+$EndComp
+Text Label -850 2350 0    60   ~ 0
+D6
+Text Notes -2500 2100 0    60   ~ 0
+Beetje Footprint
+Wire Notes Line
+	-2600 1950 -600 1950
+Wire Notes Line
+	-600 1950 -600 3150
+Wire Notes Line
+	-600 3150 -2600 3150
+Wire Notes Line
+	-2600 3150 -2600 1950
 $EndSCHEMATC

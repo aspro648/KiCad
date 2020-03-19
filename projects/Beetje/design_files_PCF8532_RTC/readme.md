@@ -12,7 +12,9 @@ Bill Of Materials
   
 - 1 ea., Perfect Purple PCB from OSH Park from [design_files](design_files/) folder.
 - 1 ea., U1 IC RTC CLK/CALENDAR I2C 8-SOIC, NXP PCF8523T/1,118, https://www.digikey.com/short/j5n049
-- 1 ea., Y1 CRYSTAL 32.7680KHZ 12.5PF 2-SMD, ECS ECS-.327-12.5-34B-TR, https://www.digikey.com/short/jfhppz
+- 1 ea., Y1 CRYSTAL 32.7680KHZ 12.5PF 
+	- 2-SMD, ECS ECS-.327-12.5-34B-TR, https://www.digikey.com/short/jfhppz
+	- 4-SOJ, 5.50mm pitch ECS-.327-12.5-17X-TR https://www.digikey.com/short/zjc7d7
 - 1 ea., R1 RES 1K OHM 5% 0805, https://www.digikey.com/short/j2d0wt
 - 2 ea., R2-3 RES 4K7 OHM 5% 0805, https://www.digikey.com/short/j2d0wd 
 - 1 ea., C1 CAP 1uF 0805, https://www.digikey.com/short/jwjfn1
@@ -28,7 +30,8 @@ Optional
 
 Revisions
 ------------------
-
+0.2 2SMD CRYSTAL
+0.3 Battery top.  Option of crystal.
 
 
 License

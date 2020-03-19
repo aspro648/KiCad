@@ -1,0 +1,127 @@
+
+Wire Wire Line
+	-2100 2250 -2300 2250
+Wire Wire Line
+	-2300 2350 -2100 2350
+Wire Wire Line
+	-2100 2450 -2300 2450
+Wire Wire Line
+	-2100 2550 -2300 2550
+Wire Wire Line
+	-2100 2650 -2300 2650
+Wire Wire Line
+	-2100 2750 -2300 2750
+Wire Wire Line
+	-2100 2850 -2150 2850
+Wire Wire Line
+	-2100 2950 -2200 2950
+$Comp
+L +BATT #PWR06
+U 1 1 5B402C38
+P -2150 2850
+F 0 "#PWR06" H -2150 2700 50  0001 C CNN
+F 1 "+BATT" V -2150 3100 50  0000 C CNN
+F 2 "" H -2150 2850 50  0001 C CNN
+F 3 "" H -2150 2850 50  0001 C CNN
+	1    -2150 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VBUS #PWR07
+U 1 1 5B402FA5
+P -2200 2950
+F 0 "#PWR07" H -2200 2800 50  0001 C CNN
+F 1 "VBUS" V -2200 3150 50  0000 C CNN
+F 2 "" H -2200 2950 50  0001 C CNN
+F 3 "" H -2200 2950 50  0001 C CNN
+	1    -2200 2950
+	0    -1   -1   0   
+$EndComp
+Text Label -2300 2450 0    60   ~ 0
+D10
+Text Label -2300 2350 0    60   ~ 0
+D9
+Text Label -900 2450 0    60   ~ 0
+SCL
+Text Label -900 2550 0    60   ~ 0
+SDA
+Text Label -2300 2250 0    60   ~ 0
+~RESET
+Text Label -850 2250 0    60   ~ 0
+A0
+Text Label -2300 2750 0    60   ~ 0
+SCK
+Text Label -2300 2650 0    60   ~ 0
+MOSI
+Text Label -2300 2550 0    60   ~ 0
+MISO
+$Comp
+L GND #PWR08
+U 1 1 5B41D2F5
+P -1000 2750
+F 0 "#PWR08" H -1000 2500 50  0001 C CNN
+F 1 "GND" V -1000 2550 50  0000 C CNN
+F 2 "" H -1000 2750 50  0001 C CNN
+F 3 "" H -1000 2750 50  0001 C CNN
+	1    -1000 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x08 J4
+U 1 1 5B6D51CD
+P -1900 2550
+F 0 "J4" H -1900 2950 50  0000 C CNN
+F 1 "Beetje_Top" H -2100 2050 50  0000 C CNN
+F 2 "footprints:Beetje_Top" H -1900 2550 50  0001 C CNN
+F 3 "" H -1900 2550 50  0001 C CNN
+	1    -1900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J2
+U 1 1 5B6D5224
+P -1250 2450
+F 0 "J2" H -1250 2750 50  0000 C CNN
+F 1 "Beetje_Bottom" H -1400 2050 50  0000 C CNN
+F 2 "footprints:Beetje_Bottom" H -1250 2450 50  0001 C CNN
+F 3 "" H -1250 2450 50  0001 C CNN
+	1    -1250 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	-1050 2250 -750 2250
+Wire Wire Line
+	-1050 2350 -750 2350
+Wire Wire Line
+	-1050 2450 -750 2450
+Wire Wire Line
+	-1050 2550 -750 2550
+Wire Wire Line
+	-1050 2650 -1000 2650
+Wire Wire Line
+	-1050 2750 -1000 2750
+$Comp
+L VCC #PWR010
+U 1 1 5B6E81BF
+P -1000 2650
+F 0 "#PWR010" H -1000 2500 50  0001 C CNN
+F 1 "VCC" V -1000 2850 50  0000 C CNN
+F 2 "" H -1000 2650 50  0001 C CNN
+F 3 "" H -1000 2650 50  0001 C CNN
+	1    -1000 2650
+	0    1    1    0   
+$EndComp
+Text Label -850 2350 0    60   ~ 0
+D6
+Text Notes -2500 2100 0    60   ~ 0
+Beetje Footprint
+Wire Notes Line
+	-2600 1950 -600 1950
+Wire Notes Line
+	-600 1950 -600 3150
+Wire Notes Line
+	-600 3150 -2600 3150
+Wire Notes Line
+	-2600 3150 -2600 1950
+
+

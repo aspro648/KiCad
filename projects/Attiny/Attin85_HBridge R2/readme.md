@@ -8,12 +8,14 @@ Bill Of Materials
 ----------------
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [project.kicad_pcb](project.kicad_pcb) file.
-- 1 ea., ATTINY84
+- 1 ea., ATTINY84A, https://www.digikey.com/short/z8dt12
 - 1 ea., TC78H651FNG IC MOTOR DRIVER 16TSSOP, https://www.digikey.com/short/z8r9nr
 - 2 ea., TRIMMER 10K OHM 0.1W J LEAD TOP, https://www.digikey.com/short/zq5dpc
-- 1 ea., CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/pq0ncp 
-- 1 ea., CAP ALUM 10UF 20% 25V SMD, EMVE250ADA100ME55G, https://www.digikey.com/short/zq5d2b
-
+- 1 ea., CAP CER 0.1UF 16V X7R 0603, https://www.digikey.com/short/z8dz80
+- 1 ea., CAP CER 1UF 16V X7R 0805, https://www.digikey.com/short/z8dz2m
+- 1 ea., CAP CER 100UF 6.3V X6T 1206, https://www.digikey.com/short/z8d5j5
+- 1 ea., DIODE SCHOTTKY DIODE SCHOTTKY 70V SOD323, https://www.digikey.com/short/z8d372
+- 8 ea., RES SMD 10K OHM 5% 1/10W 0603, https://www.digikey.com/short/z8d3q2
 
 Revisions
 ------------------

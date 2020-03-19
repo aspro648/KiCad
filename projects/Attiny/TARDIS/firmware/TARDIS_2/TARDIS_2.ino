@@ -22,24 +22,17 @@ avrdude -C ..\etc\avrdude.conf -P COM10 -b 19200 -c avrisp -p attiny85 -v -e -U 
 #include <avr/sleep.h>
 #include <avr/wdt.h>
 
-// make Pin assignments based on board type
-#if defined(__AVR_ATtiny85__) || defined(__AVR_ATtiny25__)// ATTINY!
-  #define ATTINY 1
-  #define touchPin 1     // A1/D2
-  #define touchPullUp 2
-  #define photoPin 3     // A0/D5
-  #define photoPullUp 3
-  #define speakerPin 0
-  #define LEDpin 1       // top LED
-#else // Arduino board with FunShield (for development)
-  #define ATTINY 0
-  #define touchPin A3     // 
-  #define touchPullUp A3
-  #define photoPin A1     
-  #define photoPullUp A1
-  #define speakerPin 11
-  #define LEDpin 9      // RGB-RED
-#endif
+
+
+
+
+  byte touchPin =1;     // A1/D2
+  byte touchPullUp =2;
+  byte photoPin =3;     // A0/D5
+  byte photoPullUp =3;
+  byte speakerPin =0;
+  byte LEDpin =1;       // top LED
+
 
 
 // watchdog timer stuff
@@ -54,7 +47,7 @@ volatile boolean watchdog_flag = true;
 
 int counter = 0;         // counts times light & sound loops
 int counter2 = 0;        // nightlight timer
-int counter2Limit = 100; // nightlight delay
+byte counter2Limit = 100; // nightlight delay
 int touchVal;
 int touchThreshold = 950;
 boolean AWAKE;
@@ -63,16 +56,11 @@ boolean silenced;
 
 void setup() { // runs only once
   // enable serial for debug if regular Arduino
-  #if (!ATTINY) 
-    Serial.begin(9600);
-    Serial.println("ATTINY TARDIS");
-  #endif
   
   analogReference(DEFAULT);
   
   // set pinModes
   pinMode(touchPin, INPUT);
-  pinMode(photoPin, INPUT);
   pinMode(LEDpin, OUTPUT); 
     
   // setup sleep ISR
@@ -117,14 +105,10 @@ void loop() {
         analogWrite(LEDpin, y);
       }
       delay(5);
-      if(!ATTINY && x%10==0){
-        //Serial.print(x);
-        //Serial.print(" ");
-        //Serial.println(y);
-      }
+
     }
-    digitalWrite(LEDpin, LOW);
- 
+    //digitalWrite(LEDpin, LOW);
+    PORTB = PORTB | B00000010;
  
     counter++;
     if (!silenced && counter == 5){
@@ -152,14 +136,6 @@ void loop() {
     checkTouch();
   }
   
-  #if (!ATTINY)
-    if (true){//counter % 10 == 0){
-      Serial.print("L ");
-      Serial.print(AWAKE);
-      Serial.print(" ");
-      Serial.println(counter2);
-    }
-  #endif
     delay(100);
 
 
@@ -169,10 +145,10 @@ void loop() {
 
 
 int getReading(byte pin, byte pullUp){
-  int n=25;
+  byte n=25;
   digitalWrite(pullUp, HIGH); // internal pullup
   long val = 0;
-  for(int x=0; x<n; x++){
+  for(byte x=0; x<n; x++){
     val += analogRead(pin);
   }
   val = val / n;
@@ -237,15 +213,10 @@ void setup_watchdog(int ii) {
   ww=bb;
 
   MCUSR &= ~(1<<WDRF);
-  #if(ATTINY)                              // slightly different register names
     WDTCR |= (1<<WDCE) | (1<<WDE); //WDTCR
     WDTCR = bb;// set new watchdog timeout value
     WDTCR |= _BV(WDIE); 
-  #else
-    WDTCSR |= (1<<WDCE) | (1<<WDE); //WDTCR
-    WDTCSR = bb;// set new watchdog timeout value
-    WDTCSR |= _BV(WDIE);
-  #endif 
+
 }
   
   
