@@ -1,6 +1,14 @@
-Beetje H-Bridge
+Beetje Full Bridge
 
 ![Beetje Block](project.png) 
+Full bridge motor driver using Ti DRV8871.  Capable of 6.5V ~ 45V output at 3.6A.  Current can be limited by resistor settings.
+
+D10	D11	MTR_A 	MTR_B
+0	0	Hi-Z	Hi-Z
+0	1	L 		H
+1	0	H 		L
+1	1	L 		L   (brake, low-side slow decay)
+
 
 Project website: https://hackaday.io/project/160638-beetje-bloks
 
@@ -26,7 +34,7 @@ Bill Of Materials
 
 Revisions
 ------------------
-
+0.1 Rename to Full bridge, because that is what it is, I learned.
 
 
 License
