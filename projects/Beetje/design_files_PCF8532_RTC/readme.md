@@ -17,10 +17,10 @@ Bill Of Materials
 	- 4-SOJ, 5.50mm pitch ECS-.327-12.5-17X-TR https://www.digikey.com/short/zjc7d7
 - 1 ea., R1 RES 1K OHM 5% 0805, https://www.digikey.com/short/j2d0wt
 - 2 ea., R2-3 RES 4K7 OHM 5% 0805, https://www.digikey.com/short/j2d0wd 
-- 1 ea., C1 CAP 1uF 0805, https://www.digikey.com/short/jwjfn1
+- 1 ea., CAP CER 1UF 16V X7R 0805, https://www.digikey.com/short/z8dz2m
 - 1 ea., C2 CAP 3.3uF 0805, https://www.digikey.com/short/jnw857
 - 1 ea., BT1 CR1220 Holder, MPD BK-885-TR, https://www.digikey.com/short/jfhzc9
-
+- 1 ea., 64-pin header(enough for 4.5 boards) Mill-max 311-43-164-41-001000, https://www.digikey.com/short/jnqdm2
 
 Optional
 ----------------

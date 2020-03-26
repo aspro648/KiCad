@@ -17,7 +17,7 @@ Bill Of Materials
 - 1 ea., R1 RES 1K OHM 5% 0805, https://www.digikey.com/short/j2d0wt
 - 1 ea., R2 10K SMD 0805, https://www.digikey.com/short/j2d0w4 
 - 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/short/jfcn42
-
+- 1 ea., 64-pin header(enough for 4.5 boards) Mill-max 311-43-164-41-001000, https://www.digikey.com/short/jnqdm2
 
 License
 ----------------
