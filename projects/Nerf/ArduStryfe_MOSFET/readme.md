@@ -18,6 +18,15 @@ Main Board
 - 2 ea., 12" PRE-CRIMP 1852 BLACK, https://www.digikey.com/short/pbfbnd
 
 
+
+Instructions:
+---------------
+- Introduction: https://youtu.be/5wztz3zYocw
+- Board Assembly: https://youtu.be/rl1lUju0amI
+- Blaster Prep: https://youtu.be/Yv6PZLno3lg
+- Board Integration: https://youtu.be/C6j1vpwMKu0
+
+
 Revisions
 ----------------
 
