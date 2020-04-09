@@ -1399,7 +1399,7 @@
   (gr_arc (start 165.1 105.41) (end 165.1 106.68) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 165.1 93.98) (end 163.83 93.98) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 163.83 105.41) (end 163.83 93.98) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_text "SD\nMicro\nBlok\n" (at 143.129 97.282) (layer F.SilkS)
+  (gr_text "Micro\nSD\nBlok\n" (at 143.129 97.282) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3) italic) (justify left))
   )
   (gr_text "Rev 0.1\nApr 2020" (at 154.94 96.52) (layer B.SilkS)

@@ -4,7 +4,8 @@ Bill Of Materials
 ----------------
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [design_files](design_files/) folder.
-- 1 ea., U1 IC ALTIMETER I2C VERSION 8LGA, NXP MPL3115A2R1, https://www.digikey.com/short/jf5qh3
+- 1 ea., U2 IC ALTIMETER I2C VERSION 8LGA, NXP MPL3115A2R1, https://www.digikey.com/short/zp3t2w
+- 1 ea., U1 SENS HUMID/TEMP 3.6V I2C 3% 6DFN, Silicon Labs SI7021-A20-IMR, https://www.digikey.com/short/zp3t44
 - 2 ea., C3,4 CAP CER 0.1UF 50V X7R 0805, https://www.digikey.com/short/j58qjp
 - 1 ea., C2 CAP CER 10UF 10V X5R 1206, https://www.digikey.com/short/j58q80
 - 2 ea., R1, R2 4K7 0603 SMD Resistor, https://www.digikey.com/short/j2qcwt

@@ -15,22 +15,24 @@ Bill Of Materials
 ----------------
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [project.kicad_pcb](project.kicad_pcb) file.
-- 2 ea., CAP CER 10UF 25V 1206, https://www.digikey.com/short/j29pwm
-- 1 ea., U1 IC LI-ION/LI-POLY CTRLR 10MSOP, MCP73833T-AMI/UN, https://www.digikey.com/short/zjdzwb
+- 1 ea., C1 CAP CER 10UF SMD 0805, https://www.digikey.com/short/j5d39w 
+- 1 ea., U1 IC CONTROLLR LI-ION 4.2V SOT23-5, Microchip MCP73831T-2ATI/OT, https://www.digikey.com/short/jfnvjp
 - 1 ea., BATTERY LITHIUM 3.7V 150MA, TinyCircuits ASR00003, https://www.digikey.com/short/jf925w
 - 1 ea., JST SH CONN HEADER SH 2POS 1MM, SM02B-SRSS-TB(LF)(SN), https://www.digikey.com/short/jfdccc
 - 1 ea., JST PH CONN HEADER PH SIDE 2POS 2MM, S2B-PH-K-S(LF)(SN), https://www.digikey.com/short/jfdct5
-- 1 ea., R4 Resistor 10K SMD 0805, https://www.digikey.com/short/j2d0w4
-- 1 ea., R5 Resistor 4K7 SMD 0805, https://www.digikey.com/short/zjdz12
-- 3 ea., R1-R3 Resistor 1K SMD 0805, https://www.digikey.com/short/j2d0wt
+- 1 ea., R3 Resistor 10K SMD 0805, https://www.digikey.com/short/j2d0w4
+- 2 ea., R1, R2 Resistor 1K SMD 0805, https://www.digikey.com/short/j2d0wt
 - 1 ea., D1 LED red SMD 0805, https://www.digikey.com/short/j20zct
 - 1 ea., D2 LED green SMD 0805, https://www.digikey.com/short/j20p1h
-- 1 ea., D3 LED ORANGE CLEAR 0805 SMD, https://www.digikey.com/short/qjwthb
-- 2 ea., D4 DIODE SCHOTTKY 20V 1A SOD123FL, MBR120ESFT1G, https://www.digikey.com/short/jnqvz9
-- 1 ea., SMD SPST switch, C&K JS102011SAQN, Digikey 401-1999-1-ND
+- 1 ea., D3 TVS DIODE 3.3V 6.8V DO216AA, https://www.digikey.com/short/jn741r
+
+or maybe https://www.digikey.com/short/jn7mwh?
 
 Optional
 
+- 1 ea., CONN HEADER .100" SNGL STR 40POS, https://www.digikey.com/short/jfcn42
+- J2, CONN HEADER FEMALE 6POS .1" GOLD, https://www.digikey.com/short/jfcnz3
+- J4, CONN HEADER FEMALE 8POS .1" GOLD, https://www.digikey.com/short/jfcnzj
 
 
 Revisions
@@ -39,7 +41,7 @@ Revisions
 - 0.1 Sep 2018 Switch to 0805 packages. Swap J1 & J3 connector polarities.  Add power switch and reverse current diode.
 - 0.2 Sep 2018 Pinout to match 32U4 rev 0.3, added pour planes per datasheet, rerouted.
 - 0.3 Sep 2018 Fixed LED footprints.
-- 0.5 Apr 2020 Switch to MCP7833 Chip, enlarged header holes.
+
 
 License
 ----------------
