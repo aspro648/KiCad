@@ -29,9 +29,6 @@ Bill Of Materials
 - 2 ea., D4 DIODE SCHOTTKY 20V 1A SOD123FL, MBR120ESFT1G, https://www.digikey.com/short/jnqvz9
 - 1 ea., SMD SPST switch, C&K JS102011SAQN, Digikey 401-1999-1-ND
 
-Optional
-
-
 
 Revisions
 ------------------
@@ -40,6 +37,8 @@ Revisions
 - 0.2 Sep 2018 Pinout to match 32U4 rev 0.3, added pour planes per datasheet, rerouted.
 - 0.3 Sep 2018 Fixed LED footprints.
 - 0.5 Apr 2020 Switch to MCP7833 Chip, enlarged header holes.
+- 0.6 Apr 2020 Switched silkscreen on CHG/DONE LEDs
+
 
 License
 ----------------

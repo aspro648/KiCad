@@ -1,0 +1,173 @@
+EESchema Schematic File Version 2
+LIBS:LEGO_LED-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LEGO_LED-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Full Adder"
+Date ""
+Rev ""
+Comp "MakersBox"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR01
+U 1 1 5663B8F6
+P 800 800
+F 0 "#PWR01" H 800 650 50  0001 C CNN
+F 1 "+5V" H 800 940 50  0000 C CNN
+F 2 "" H 800 800 60  0000 C CNN
+F 3 "" H 800 800 60  0000 C CNN
+	1    800  800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5663B910
+P 1200 800
+F 0 "#PWR02" H 1200 550 50  0001 C CNN
+F 1 "GND" H 1200 650 50  0000 C CNN
+F 2 "" H 1200 800 60  0000 C CNN
+F 3 "" H 1200 800 60  0000 C CNN
+	1    1200 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5667CD4C
+P 800 800
+F 0 "#FLG03" H 800 895 50  0001 C CNN
+F 1 "PWR_FLAG" H 800 980 50  0000 C CNN
+F 2 "" H 800 800 60  0000 C CNN
+F 3 "" H 800 800 60  0000 C CNN
+	1    800  800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5667D1F4
+P 1200 800
+F 0 "#FLG04" H 1200 895 50  0001 C CNN
+F 1 "PWR_FLAG" H 1200 980 50  0000 C CNN
+F 2 "" H 1200 800 60  0000 C CNN
+F 3 "" H 1200 800 60  0000 C CNN
+	1    1200 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 566DEFA7
+P 4350 1750
+F 0 "P2" H 4350 1850 50  0000 C CNN
+F 1 "Pad" V 4450 1750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.00mm" H 4350 1750 60  0001 C CNN
+F 3 "" H 4350 1750 60  0000 C CNN
+	1    4350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-LEGO_LED D2
+U 1 1 566E0899
+P 3850 1950
+F 0 "D2" H 3850 2050 50  0000 C CNN
+F 1 "LED" H 3850 1850 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 3850 1950 60  0001 C CNN
+F 3 "" H 3850 1950 60  0000 C CNN
+	1    3850 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P1
+U 1 1 56AD93F6
+P 2950 1750
+F 0 "P1" H 2950 1850 50  0000 C CNN
+F 1 "Pad" V 3050 1750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.00mm" H 2950 1750 60  0001 C CNN
+F 3 "" H 2950 1750 60  0000 C CNN
+	1    2950 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 56AD975B
+P 2950 2150
+F 0 "P3" H 2950 2250 50  0000 C CNN
+F 1 "Pad" V 3050 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.00mm" H 2950 2150 60  0001 C CNN
+F 3 "" H 2950 2150 60  0000 C CNN
+	1    2950 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 56AD9780
+P 4350 2150
+F 0 "P4" H 4350 2250 50  0000 C CNN
+F 1 "Pad" V 4450 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.00mm" H 4350 2150 60  0001 C CNN
+F 3 "" H 4350 2150 60  0000 C CNN
+	1    4350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5E9DF5E1
+P 3450 1950
+F 0 "R2" V 3530 1950 50  0000 C CNN
+F 1 "R" V 3450 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3380 1950 50  0001 C CNN
+F 3 "" H 3450 1950 50  0001 C CNN
+	1    3450 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 1950 3650 1950
+Wire Wire Line
+	4050 1950 4100 1950
+Wire Wire Line
+	4100 1950 4100 2150
+Wire Wire Line
+	3150 2150 4150 2150
+Connection ~ 4100 2150
+Wire Wire Line
+	3150 1750 4150 1750
+Wire Wire Line
+	3200 1750 3200 1950
+Wire Wire Line
+	3200 1950 3300 1950
+Connection ~ 3200 1750
+$EndSCHEMATC
