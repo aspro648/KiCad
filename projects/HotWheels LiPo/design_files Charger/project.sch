@@ -39,7 +39,7 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Beetje LiPo Blok "
+Title "LiPo LED Board "
 Date "2018-09-11"
 Rev "0.2"
 Comp "www.MakersBox.us"
@@ -241,7 +241,7 @@ U 1 1 5B7F07B5
 P 3150 3750
 F 0 "J3" H 3150 3900 50  0000 C CNN
 F 1 "BAT" V 3250 3750 50  0000 C CNN
-F 2 "footprints:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 3150 3750 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_PicoBlade_53048-0210_02x1.25mm_Angled" H 3150 3750 50  0001 C CNN
 F 3 "" H 3150 3750 50  0001 C CNN
 	1    3150 3750
 	-1   0    0    -1  
@@ -772,4 +772,25 @@ Connection ~ 3350 3300
 Connection ~ 2600 3300
 Connection ~ 3350 3400
 Connection ~ 2600 3400
+$Comp
+L CONN_01X02 J10
+U 1 1 5EAB43D0
+P 3150 4050
+F 0 "J10" H 3150 4200 50  0000 C CNN
+F 1 "JST_PH" V 3250 4050 50  0000 C CNN
+F 2 "footprints:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 3150 4050 50  0001 C CNN
+F 3 "" H 3150 4050 50  0001 C CNN
+	1    3150 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4000 3400 4000
+Wire Wire Line
+	3400 4000 3400 3700
+Connection ~ 3400 3700
+Wire Wire Line
+	3350 4100 3450 4100
+Wire Wire Line
+	3450 4100 3450 3800
+Connection ~ 3450 3800
 $EndSCHEMATC
