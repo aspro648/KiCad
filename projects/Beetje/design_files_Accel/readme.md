@@ -8,7 +8,7 @@ Bill Of Materials
 ----------------
   
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [project.kicad_pcb](project.kicad_pcb) file.
-- 1 ea., U1 ACCEL 2-16G I2C/SPI 16LGA, STM LIS3DHTR, https://www.digikey.com/short/j5n09v 
+- 1 ea., U1 ACCEL 2-16G I2C/SPI 16LGA, STM LIS3DHTR, https://www.digikey.com/short/zzdzr7
 - 1 ea., C1 10uF CAP SMD 0805, https://www.digikey.com/short/jnwj88
 - 1 ea., C2 0.1uF CAP SMD 0805, https://www.digikey.com/short/j58qjp
 - 1 ea., R1 10K OHM SMD 0805, https://www.digikey.com/short/j2d0w4 
