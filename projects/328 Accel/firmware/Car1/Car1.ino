@@ -1,6 +1,11 @@
 // https://github.com/sparkfun/SparkFun_LIS331_Arduino_Library
 // https://learn.sparkfun.com/tutorials/h3lis331dl-accelerometer-breakout-hookup-guide
 
+// Download  "breadboard-1-6-x.zip" from
+// https://www.arduino.cc/en/Tutorial/ArduinoToBreadboard
+
+// Change hardware/breadboard/avr/boards.txt to
+// atmega328bb.build.mcu=atmega328
 
 #include "SparkFun_LIS331.h"
 #include <Wire.h>

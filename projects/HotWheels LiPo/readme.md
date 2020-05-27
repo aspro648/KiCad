@@ -18,8 +18,10 @@ Bill Of Materials
 	- TinyCircuits ASR00003 150 mAh (20x20x5.1mm), https://www.digikey.com/short/jf925w (JST SH)
 	- Adafruit 100 mAh (31x11.5x3.8mm) https://www.digikey.com/short/zzznfn (JST PH)
 	- SparkFun 110 mAh (28x12x5.7mm) https://www.digikey.com/short/zz43fr (JST PH)
+	- TinyCircuits ASR0011 70mAh (16.0mm x 15.0mm x 5.0mm), https://www.digikey.com/short/z40wd0 (JST SH)
 	
 Depending on battery:
+	- 1 ea., JST SH CONN HEADER SMD R/A 2POS 1MM, SM02B-SRSS-TB(LF)(SN), https://www.digikey.com/short/z4vw0z
 	- 1 ea., Molex Picoblade CONN HEADER R/A 2POS 1.25MM, https://www.digikey.com/short/p5r2dn or 
 	- 1 ea., JST PH CONN HEADER PH SIDE 2POS 2MM, S2B-PH-K-S(LF)(SN), https://www.digikey.com/short/jfdct5
 	- Just solder leads to SMD pads
