@@ -34,11 +34,24 @@ long blinkTime = 0;
 boolean blinkFlag = false;
 
 
+int HLD = 75;
+bool HLF = true;
+long HLT = 0;
+int TLD = 200;
+bool TLF = true;
+long TLT = 0;
+int ULD = 150;
+bool ULF = true;
+long ULT = 0;
+int DLD = 100;
+bool DLF = true;
+long DLT = 0;
+
 void setup(){
 
   pinMode(HL, OUTPUT);
   pinMode(TL, OUTPUT);
-  pinMode(BL, OUTPUT);
+  //pinMode(BL, OUTPUT);
   pinMode(DL, OUTPUT);
   pinMode(UL, OUTPUT);
 
@@ -49,7 +62,7 @@ void setup(){
   
 
   // put your setup code here, to run once:
-  pinMode(9,INPUT);       // Interrupt pin input
+  //pinMode(9,INPUT);       // Interrupt pin input
   Wire.begin();
   xl.setI2CAddr(0x18);    // This MUST be called BEFORE .begin() so 
                           //  .begin() can communicate with the chip
@@ -84,10 +97,6 @@ void setup(){
   xl.setFullScale(LIS331::LOW_RANGE);  //(LOW_RANGE 2g, MID_RANGE 4g, HIGH_RANGE 8g)
 
   
-  analogWrite(HL, intensity);
-  analogWrite(TL, intensity);
-  analogWrite(UL, intensity);
-
   // load array
   int16_t x, y, z;
   long total = 0;
@@ -107,6 +116,8 @@ void setup(){
 
 
 void loop(){
+
+  
   static long loopTimer = 0;
   int16_t x, y, z, ave;
   xl.readAxes(x, y, z);  // The readAxes() function transfers the
@@ -124,7 +135,7 @@ void loop(){
       total += data[j];
     }
     ave = total / 25;
-    if(abs(ave - last_ave) < 10){
+    if(abs(ave - last_ave) < 150){
       if (!still){
         stillTime = millis();
       }
@@ -166,21 +177,36 @@ void loop(){
     Serial.println(brakes);
     delay(25);
   }
-  
 
-  if (valz < -0.25){  // we is upsidedown
-    //digitalWrite(HL, LOW);
-    digitalWrite(UL, LOW);
-    if (millis() > blinkTime){
-      blinkTime = millis() + 1000;
-      blinkFlag = !blinkFlag;
+  if (!brakes){
+    long curTime = millis();
+
+    if (curTime > HLT){
+      HLF = !HLF;
+      HLT = curTime + HLD;
     }
-    digitalWrite(BL, blinkFlag);
-  }
-  else{
-    analogWrite(HL, intensity);
-    analogWrite(UL, intensity);
-    if ((millis() - stillTime) > 1000){
+
+    if (curTime > TLT){
+      TLF = !TLF;
+      TLT = curTime + TLD;
+    }
+
+    if (curTime > ULT){
+      ULF = !ULF;
+      ULT = curTime + ULD;
+    }
+    
+    if (curTime > DLT){
+      DLF = !DLF;
+      DLT = curTime + DLD;
+    }
+
+    digitalWrite(HL, HLF);
+    digitalWrite(TL, TLF);
+    digitalWrite(UL, ULF);
+    digitalWrite(DL, DLF);
+            
+    if ((millis() - stillTime) > 2000){
       if(still){
         brakes = true;
       }
@@ -188,13 +214,21 @@ void loop(){
     else {
       brakes = false;
     }
-    
+
+    /*
     if (brakes){
       analogWrite(BL, intensity);
     }
     else{
       digitalWrite(BL, LOW);
-    }
+    }*/
+  }
+  else{
+    digitalWrite(HL, LOW);
+    digitalWrite(TL, LOW);
+    digitalWrite(UL, LOW);
+    digitalWrite(DL, LOW);
+    
   }
 
   /*
