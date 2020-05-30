@@ -60,7 +60,7 @@ void setup(){
   digitalWrite(UL, LOW);
   delay(1000);
   
-
+  /*
   // put your setup code here, to run once:
   //pinMode(9,INPUT);       // Interrupt pin input
   Wire.begin();
@@ -108,6 +108,13 @@ void setup(){
   last_ave = total / 25;
   if(DEBUG){
     Serial.begin(115200);
+  }
+  */
+  for(int j=0; j<2; j++){
+    digitalWrite(HL, HIGH);
+    delay(1000);
+    digitalWrite(HL, LOW);
+    delay(1000);
   }
 }
 
