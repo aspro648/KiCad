@@ -15,11 +15,8 @@ Bill Of Materials
 - 2 ea., CAP CER 10UF 10V X5R 0805, https://www.digikey.com/short/zz5p5h
 - 1 ea., Smallest 3.7 LiPo you can find (VERIFY CONNECTOR AND POLARITY).
 	- V911 Helicoper 130mAh https://www.amazon.com/gp/product/B00BSK2NZG/ (JST PH?)
-	- Turnigy 150mAh with pico-blade https://hobbyking.com/en_us/turnigy-nano-tech-150mah-1s-25-40c-lipo-pack.html (Molex Pico-blade)
-	- TinyCircuits ASR00003 150 mAh (20x20x5.1mm), https://www.digikey.com/short/jf925w (JST SH)
-	- Adafruit 100 mAh (31x11.5x3.8mm) https://www.digikey.com/short/zzznfn (JST PH)
-	- SparkFun 110 mAh (28x12x5.7mm) https://www.digikey.com/short/zz43fr (JST PH)
 	- TinyCircuits ASR0011 70mAh (16.0mm x 15.0mm x 5.0mm), https://www.digikey.com/short/z40wd0 (JST SH)
+	- SparkFun 50 mAh (20.0mm x 11.0mm x 3.0mm), https://www.digikey.com/short/zmm58m (JST PH)
 	
 Depending on battery:
 	- 1 ea., JST SH CONN HEADER SMD R/A 2POS 1MM, SM02B-SRSS-TB(LF)(SN), https://www.digikey.com/short/z4vw0z

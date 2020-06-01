@@ -1,4 +1,4 @@
-(module MOUSEBITEx1 (layer F.Cu) (tedit 5ED30D2C)
+(module MOUSEBITE (layer F.Cu) (tedit 5ED30B18)
   (descr "module 1 pin (ou trou mecanique de percage)")
   (tags DEV)
   (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
@@ -7,5 +7,7 @@
   (fp_text value 1pin (at 0.254 0) (layer F.Fab)
     (effects (font (size 0.254 0.254) (thickness 0.0254)))
   )
+  (pad "" np_thru_hole circle (at -1.016 0) (size 0.3302 0.3302) (drill 0.3302) (layers *.Cu *.Mask))
+  (pad "" np_thru_hole circle (at 1.016 0) (size 0.3302 0.3302) (drill 0.3302) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 0 0) (size 0.3302 0.3302) (drill 0.3302) (layers *.Cu *.Mask))
 )

@@ -40,9 +40,9 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "LiPo LED Board "
-Date "2018-09-11"
-Rev "0.2"
+Title "Hot Wheels Arduino Lights"
+Date "2020-05-30"
+Rev "0.3"
 Comp "www.MakersBox.us"
 Comment1 "648.ken@gmail.com"
 Comment2 ""
@@ -165,7 +165,7 @@ U 1 1 5B7F07B5
 P 3150 3900
 F 0 "J3" H 3150 4050 50  0000 C CNN
 F 1 "BAT" V 3250 3900 50  0000 C CNN
-F 2 "Connectors_JST:JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled" H 3150 3900 50  0001 C CNN
+F 2 "footprints:JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled" H 3150 3900 50  0001 C CNN
 F 3 "" H 3150 3900 50  0001 C CNN
 	1    3150 3900
 	-1   0    0    1   
@@ -231,7 +231,7 @@ U 1 1 5EA80039
 P 10000 2350
 F 0 "J1" H 10000 2500 50  0000 C CNN
 F 1 "HL" V 10100 2350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 10000 2350 50  0001 C CNN
+F 2 "footprints:PIN_HEADER_LED" H 10000 2350 50  0001 C CNN
 F 3 "" H 10000 2350 50  0001 C CNN
 	1    10000 2350
 	1    0    0    -1  
@@ -239,12 +239,12 @@ $EndComp
 $Comp
 L GND #PWR010
 U 1 1 5EA808F7
-P 9650 3750
-F 0 "#PWR010" H 9650 3500 50  0001 C CNN
-F 1 "GND" H 9650 3600 50  0000 C CNN
-F 2 "" H 9650 3750 50  0001 C CNN
-F 3 "" H 9650 3750 50  0001 C CNN
-	1    9650 3750
+P 9650 4100
+F 0 "#PWR010" H 9650 3850 50  0001 C CNN
+F 1 "GND" H 9650 3950 50  0000 C CNN
+F 2 "" H 9650 4100 50  0001 C CNN
+F 3 "" H 9650 4100 50  0001 C CNN
+	1    9650 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -253,7 +253,7 @@ U 1 1 5EA92CF9
 P 10000 2650
 F 0 "J6" H 10000 2800 50  0000 C CNN
 F 1 "HL" V 10100 2650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 10000 2650 50  0001 C CNN
+F 2 "footprints:PIN_HEADER_LED" H 10000 2650 50  0001 C CNN
 F 3 "" H 10000 2650 50  0001 C CNN
 	1    10000 2650
 	1    0    0    -1  
@@ -264,7 +264,7 @@ U 1 1 5EA92D66
 P 10000 2950
 F 0 "J7" H 10000 3100 50  0000 C CNN
 F 1 "TL" V 10100 2950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 10000 2950 50  0001 C CNN
+F 2 "footprints:PIN_HEADER_LED" H 10000 2950 50  0001 C CNN
 F 3 "" H 10000 2950 50  0001 C CNN
 	1    10000 2950
 	1    0    0    -1  
@@ -275,7 +275,7 @@ U 1 1 5EA92DD8
 P 10000 3250
 F 0 "J8" H 10000 3400 50  0000 C CNN
 F 1 "TL" V 10100 3250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 10000 3250 50  0001 C CNN
+F 2 "footprints:PIN_HEADER_LED" H 10000 3250 50  0001 C CNN
 F 3 "" H 10000 3250 50  0001 C CNN
 	1    10000 3250
 	1    0    0    -1  
@@ -330,7 +330,7 @@ U 1 1 5ED146A0
 P 2800 3500
 F 0 "J56" H 2950 3500 50  0000 C CNN
 F 1 "Conn" H 2750 3500 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 2800 3500 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 2800 3500 50  0001 C CNN
 F 3 "" H 2800 3500 50  0001 C CNN
 	1    2800 3500
 	1    0    0    -1  
@@ -341,7 +341,7 @@ U 1 1 5ED14BF8
 P 2800 3600
 F 0 "J57" H 2950 3600 50  0000 C CNN
 F 1 "Conn" H 2750 3600 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 2800 3600 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 2800 3600 50  0001 C CNN
 F 3 "" H 2800 3600 50  0001 C CNN
 	1    2800 3600
 	1    0    0    -1  
@@ -352,7 +352,7 @@ U 1 1 5ED14F3B
 P 3250 3500
 F 0 "J58" H 3400 3500 50  0000 C CNN
 F 1 "Conn" H 3200 3500 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3250 3500 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3250 3500 50  0001 C CNN
 F 3 "" H 3250 3500 50  0001 C CNN
 	1    3250 3500
 	-1   0    0    1   
@@ -363,7 +363,7 @@ U 1 1 5ED1500E
 P 3250 3600
 F 0 "J59" H 3400 3600 50  0000 C CNN
 F 1 "Conn" H 3200 3600 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3250 3600 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3250 3600 50  0001 C CNN
 F 3 "" H 3250 3600 50  0001 C CNN
 	1    3250 3600
 	-1   0    0    1   
@@ -374,7 +374,7 @@ U 1 1 5ED152A2
 P 2800 3050
 F 0 "J46" H 2950 3050 50  0000 C CNN
 F 1 "Conn" H 2750 3050 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 2800 3050 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 2800 3050 50  0001 C CNN
 F 3 "" H 2800 3050 50  0001 C CNN
 	1    2800 3050
 	1    0    0    -1  
@@ -385,7 +385,7 @@ U 1 1 5ED15332
 P 2800 3150
 F 0 "J47" H 2950 3150 50  0000 C CNN
 F 1 "Conn" H 2750 3150 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 2800 3150 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 2800 3150 50  0001 C CNN
 F 3 "" H 2800 3150 50  0001 C CNN
 	1    2800 3150
 	1    0    0    -1  
@@ -396,7 +396,7 @@ U 1 1 5ED153BB
 P 3250 3050
 F 0 "J48" H 3400 3050 50  0000 C CNN
 F 1 "Conn" H 3200 3050 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3250 3050 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3250 3050 50  0001 C CNN
 F 3 "" H 3250 3050 50  0001 C CNN
 	1    3250 3050
 	-1   0    0    1   
@@ -407,7 +407,7 @@ U 1 1 5ED1544B
 P 3250 3150
 F 0 "J49" H 3400 3150 50  0000 C CNN
 F 1 "Conn" H 3200 3150 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3250 3150 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3250 3150 50  0001 C CNN
 F 3 "" H 3250 3150 50  0001 C CNN
 	1    3250 3150
 	-1   0    0    1   
@@ -415,12 +415,12 @@ $EndComp
 $Comp
 L CONN_01X02 J2
 U 1 1 5ED17FDB
-P 2400 3100
-F 0 "J2" H 2400 3250 50  0000 C CNN
-F 1 "CHG" V 2500 3100 50  0000 C CNN
-F 2 "Connectors_JST:JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled" H 2400 3100 50  0001 C CNN
-F 3 "" H 2400 3100 50  0001 C CNN
-	1    2400 3100
+P 2300 3100
+F 0 "J2" H 2300 3250 50  0000 C CNN
+F 1 "CHG" V 2400 3100 50  0000 C CNN
+F 2 "footprints:JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled" H 2300 3100 50  0001 C CNN
+F 3 "" H 2300 3100 50  0001 C CNN
+	1    2300 3100
 	-1   0    0    1   
 $EndComp
 Connection ~ 9650 1850
@@ -465,7 +465,7 @@ Connection ~ 9650 3300
 Wire Wire Line
 	9650 3300 9800 3300
 Wire Wire Line
-	9650 1600 9650 3750
+	9650 1600 9650 4100
 Wire Wire Line
 	9800 2400 9650 2400
 Wire Wire Line
@@ -477,15 +477,15 @@ Wire Wire Line
 Wire Wire Line
 	9250 2300 9800 2300
 Wire Wire Line
-	8700 3200 8950 3200
+	8450 3200 8950 3200
 Wire Wire Line
 	8450 2900 8950 2900
 Wire Wire Line
-	8700 2600 8950 2600
+	8450 2600 8950 2600
 Wire Wire Line
 	8450 2300 8950 2300
 Wire Wire Line
-	2600 3150 3800 3150
+	2500 3150 3800 3150
 Wire Wire Line
 	2450 4100 2450 3600
 Wire Wire Line
@@ -500,7 +500,7 @@ Connection ~ 2600 3500
 Connection ~ 3450 3600
 Connection ~ 2600 3600
 Wire Wire Line
-	2600 3050 3650 3050
+	2500 3050 3650 3050
 Connection ~ 3650 3500
 Wire Wire Line
 	4250 2800 4250 3850
@@ -585,7 +585,7 @@ Wire Wire Line
 Connection ~ 8700 1600
 Text Label 8450 2300 0    60   ~ 0
 D3
-Text Label 8450 3300 0    60   ~ 0
+Text Label 8450 2900 0    60   ~ 0
 D6
 Wire Wire Line
 	3650 3850 3350 3850
@@ -619,7 +619,7 @@ U 1 1 5ED1E202
 P 3250 3700
 F 0 "J55" H 3400 3700 50  0000 C CNN
 F 1 "Conn" H 3200 3700 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3250 3700 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3250 3700 50  0001 C CNN
 F 3 "" H 3250 3700 50  0001 C CNN
 	1    3250 3700
 	-1   0    0    1   
@@ -630,7 +630,7 @@ U 1 1 5ED1E308
 P 3250 2750
 F 0 "J44" H 3400 2750 50  0000 C CNN
 F 1 "Conn" H 3200 2750 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3250 2750 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3250 2750 50  0001 C CNN
 F 3 "" H 3250 2750 50  0001 C CNN
 	1    3250 2750
 	-1   0    0    1   
@@ -645,7 +645,7 @@ U 1 1 5ED1E7F7
 P 3250 3400
 F 0 "J54" H 3400 3400 50  0000 C CNN
 F 1 "Conn" H 3200 3400 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3250 3400 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3250 3400 50  0001 C CNN
 F 3 "" H 3250 3400 50  0001 C CNN
 	1    3250 3400
 	-1   0    0    1   
@@ -656,7 +656,7 @@ U 1 1 5ED1FB3C
 P 3250 3250
 F 0 "J45" H 3400 3250 50  0000 C CNN
 F 1 "Conn" H 3200 3250 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3250 3250 50  0001 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3250 3250 50  0001 C CNN
 F 3 "" H 3250 3250 50  0001 C CNN
 	1    3250 3250
 	-1   0    0    1   
@@ -691,7 +691,7 @@ U 1 1 5ED27C44
 P 1850 2050
 F 0 "U1" H 1700 2275 50  0000 C CNN
 F 1 "MIC5225-3.3" H 1850 2275 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 1850 2375 50  0001 C CNN
+F 2 "footprints:SOT-23-5" H 1850 2375 50  0001 C CNN
 F 3 "" H 1850 2050 50  0001 C CNN
 	1    1850 2050
 	1    0    0    -1  
@@ -713,7 +713,7 @@ U 1 1 5ED27F1B
 P 1300 2050
 F 0 "R1" V 1380 2050 50  0000 C CNN
 F 1 "100K" V 1300 2050 50  0000 C CNN
-F 2 "footprints:R_0805_HandSoldering" V 1230 2050 50  0001 C CNN
+F 2 "footprints:R_0603" V 1230 2050 50  0001 C CNN
 F 3 "" H 1300 2050 50  0001 C CNN
 	1    1300 2050
 	0    -1   -1   0   
@@ -799,7 +799,7 @@ U 1 1 5ED295E1
 P 5650 4050
 F 0 "U3" H 4900 5300 50  0000 L BNN
 F 1 "ATMEGA328-MU" H 6050 2650 50  0000 L BNN
-F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 5650 4050 50  0001 C CIN
+F 2 "footprints:QFN-32-1EP_5x5mm_Pitch0.5mm" H 5650 4050 50  0001 C CIN
 F 3 "" H 5650 4050 50  0001 C CNN
 	1    5650 4050
 	1    0    0    -1  
@@ -834,7 +834,7 @@ U 1 1 5ED29F70
 P 4400 6600
 F 0 "R4" V 4450 6450 50  0000 C CNN
 F 1 "10K" V 4400 6600 50  0000 C CNN
-F 2 "footprints:R_0805_HandSoldering" V 4330 6600 50  0001 C CNN
+F 2 "footprints:R_0603" V 4330 6600 50  0001 C CNN
 F 3 "" H 4400 6600 50  0001 C CNN
 	1    4400 6600
 	0    -1   -1   0   
@@ -845,7 +845,7 @@ U 1 1 5ED2A269
 P 4400 6500
 F 0 "R3" V 4450 6350 50  0000 C CNN
 F 1 "10K" V 4400 6500 50  0000 C CNN
-F 2 "footprints:R_0805_HandSoldering" V 4330 6500 50  0001 C CNN
+F 2 "footprints:R_0603" V 4330 6500 50  0001 C CNN
 F 3 "" H 4400 6500 50  0001 C CNN
 	1    4400 6500
 	0    -1   -1   0   
@@ -856,7 +856,7 @@ U 1 1 5ED2A2EE
 P 4400 6300
 F 0 "R2" V 4450 6150 50  0000 C CNN
 F 1 "10K" V 4400 6300 50  0000 C CNN
-F 2 "footprints:R_0805_HandSoldering" V 4330 6300 50  0001 C CNN
+F 2 "footprints:R_0603" V 4330 6300 50  0001 C CNN
 F 3 "" H 4400 6300 50  0001 C CNN
 	1    4400 6300
 	0    -1   -1   0   
@@ -975,9 +975,9 @@ Wire Wire Line
 Wire Wire Line
 	6650 3800 6900 3800
 Wire Wire Line
-	6650 3900 6900 3900
+	6650 3900 7050 3900
 Wire Wire Line
-	6650 4000 6900 4000
+	6650 4000 7200 4000
 Wire Wire Line
 	6650 4100 6900 4100
 Wire Wire Line
@@ -1048,62 +1048,247 @@ Text Label 6800 4100 0    60   ~ 0
 A3
 Text Label 8400 1600 0    60   ~ 0
 MOSI
-Wire Wire Line
-	8700 2600 8700 2300
-Connection ~ 8700 2300
-Wire Wire Line
-	8700 3200 8700 2900
-Connection ~ 8700 2900
-Text Label 8450 2900 0    60   ~ 0
+Text Label 8450 2600 0    60   ~ 0
 D5
 $Comp
 L R R5
 U 1 1 5ED30B99
-P 9100 3000
-F 0 "R5" V 9150 2850 50  0000 C CNN
-F 1 "100" V 9100 3000 50  0000 C CNN
-F 2 "footprints:R_0603" V 9030 3000 50  0001 C CNN
-F 3 "" H 9100 3000 50  0001 C CNN
-	1    9100 3000
+P 9100 3550
+F 0 "R5" V 9150 3400 50  0000 C CNN
+F 1 "100" V 9100 3550 50  0000 C CNN
+F 2 "footprints:R_0603" V 9030 3550 50  0001 C CNN
+F 3 "" H 9100 3550 50  0001 C CNN
+	1    9100 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L R R10
 U 1 1 5ED30C24
-P 9100 3300
-F 0 "R10" V 9150 3150 50  0000 C CNN
-F 1 "100" V 9100 3300 50  0000 C CNN
-F 2 "footprints:R_0603" V 9030 3300 50  0001 C CNN
-F 3 "" H 9100 3300 50  0001 C CNN
-	1    9100 3300
+P 9100 3850
+F 0 "R10" V 9150 3700 50  0000 C CNN
+F 1 "100" V 9100 3850 50  0000 C CNN
+F 2 "footprints:R_0603" V 9030 3850 50  0001 C CNN
+F 3 "" H 9100 3850 50  0001 C CNN
+	1    9100 3850
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8450 3300 8950 3300
-Wire Wire Line
-	9250 3300 9500 3300
-Wire Wire Line
-	9500 3300 9500 3200
-Connection ~ 9500 3200
-Wire Wire Line
-	9250 3000 9500 3000
-Wire Wire Line
-	9500 3000 9500 2900
-Connection ~ 9500 2900
-Wire Wire Line
-	8950 3000 8800 3000
-Wire Wire Line
-	8800 3000 8800 3300
-Connection ~ 8800 3300
+	8450 3550 8950 3550
+Connection ~ 8700 3550
 NoConn ~ 6900 3800
-NoConn ~ 6900 3900
-NoConn ~ 6900 4000
 NoConn ~ 6900 4100
 NoConn ~ 6900 4550
 NoConn ~ 6900 4650
 NoConn ~ 6900 4950
 NoConn ~ 6900 5250
 NoConn ~ 6900 2950
-NoConn ~ 6900 3050
 NoConn ~ 2200 4500
+Wire Wire Line
+	8700 3550 8700 3850
+Wire Wire Line
+	8700 3850 8950 3850
+Text Notes 5650 6050 0    60   ~ 0
+328 PWM Pins:\n3, 5, 6, 9, 10, 11
+Text Label 8450 3200 0    60   ~ 0
+D9
+Text Label 8450 3550 0    60   ~ 0
+D10
+Wire Wire Line
+	9250 3550 9400 3550
+Wire Wire Line
+	9400 3550 9400 2900
+Connection ~ 9400 2900
+Wire Wire Line
+	9250 3850 9500 3850
+Wire Wire Line
+	9500 3850 9500 3200
+Connection ~ 9500 3200
+$Comp
+L LED D1
+U 1 1 5ED3231F
+P 9200 4900
+F 0 "D1" H 9200 5000 50  0000 C CNN
+F 1 "LED" H 9200 4800 50  0000 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 9200 4900 50  0001 C CNN
+F 3 "" H 9200 4900 50  0001 C CNN
+	1    9200 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J4
+U 1 1 5ED327F9
+P 9850 4950
+F 0 "J4" H 9850 5100 50  0000 C CNN
+F 1 "LED" V 9950 4950 50  0000 C CNN
+F 2 "footprints:LED_PADS" H 9850 4950 50  0001 C CNN
+F 3 "" H 9850 4950 50  0001 C CNN
+	1    9850 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4900 9350 4900
+Wire Wire Line
+	9050 4900 8900 4900
+Wire Wire Line
+	8900 4900 8900 5000
+Wire Wire Line
+	8900 5000 9650 5000
+$Comp
+L LED D2
+U 1 1 5ED33204
+P 9200 5200
+F 0 "D2" H 9200 5300 50  0000 C CNN
+F 1 "LED" H 9200 5100 50  0000 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 9200 5200 50  0001 C CNN
+F 3 "" H 9200 5200 50  0001 C CNN
+	1    9200 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J5
+U 1 1 5ED3320A
+P 9850 5250
+F 0 "J5" H 9850 5400 50  0000 C CNN
+F 1 "LED" V 9950 5250 50  0000 C CNN
+F 2 "footprints:LED_PADS" H 9850 5250 50  0001 C CNN
+F 3 "" H 9850 5250 50  0001 C CNN
+	1    9850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5200 9350 5200
+Wire Wire Line
+	9050 5200 8900 5200
+Wire Wire Line
+	8900 5200 8900 5300
+Wire Wire Line
+	8900 5300 9650 5300
+$Comp
+L LED D3
+U 1 1 5ED332CC
+P 9200 5500
+F 0 "D3" H 9200 5600 50  0000 C CNN
+F 1 "LED" H 9200 5400 50  0000 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 9200 5500 50  0001 C CNN
+F 3 "" H 9200 5500 50  0001 C CNN
+	1    9200 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J9
+U 1 1 5ED332D2
+P 9850 5550
+F 0 "J9" H 9850 5700 50  0000 C CNN
+F 1 "LED" V 9950 5550 50  0000 C CNN
+F 2 "footprints:LED_PADS" H 9850 5550 50  0001 C CNN
+F 3 "" H 9850 5550 50  0001 C CNN
+	1    9850 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5500 9350 5500
+Wire Wire Line
+	9050 5500 8900 5500
+Wire Wire Line
+	8900 5500 8900 5600
+Wire Wire Line
+	8900 5600 9650 5600
+$Comp
+L LED D6
+U 1 1 5ED332DC
+P 9200 5800
+F 0 "D6" H 9200 5900 50  0000 C CNN
+F 1 "LED" H 9200 5700 50  0000 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 9200 5800 50  0001 C CNN
+F 3 "" H 9200 5800 50  0001 C CNN
+	1    9200 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J10
+U 1 1 5ED332E2
+P 9850 5850
+F 0 "J10" H 9850 6000 50  0000 C CNN
+F 1 "LED" V 9950 5850 50  0000 C CNN
+F 2 "footprints:LED_PADS" H 9850 5850 50  0001 C CNN
+F 3 "" H 9850 5850 50  0001 C CNN
+	1    9850 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5800 9350 5800
+Wire Wire Line
+	9050 5800 8900 5800
+Wire Wire Line
+	8900 5800 8900 5900
+Wire Wire Line
+	8900 5900 9650 5900
+$Comp
+L GND #PWR022
+U 1 1 5ED343AE
+P 7650 4050
+F 0 "#PWR022" H 7650 3800 50  0001 C CNN
+F 1 "GND" H 7650 3900 50  0000 C CNN
+F 2 "" H 7650 4050 50  0001 C CNN
+F 3 "" H 7650 4050 50  0001 C CNN
+	1    7650 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4000 7650 4000
+Wire Wire Line
+	7650 3850 7650 4050
+$Comp
+L Jumper_NO_Small JP2
+U 1 1 5ED346AB
+P 7300 4000
+F 0 "JP2" H 7200 4050 50  0000 C CNN
+F 1 "A2" H 7310 3940 50  0000 C CNN
+F 2 "footprints:Jumper" H 7300 4000 50  0001 C CNN
+F 3 "" H 7300 4000 50  0001 C CNN
+	1    7300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NO_Small JP3
+U 1 1 5ED34F09
+P 7300 3850
+F 0 "JP3" H 7200 3900 50  0000 C CNN
+F 1 "A1" H 7310 3790 50  0000 C CNN
+F 2 "footprints:Jumper" H 7300 3850 50  0001 C CNN
+F 3 "" H 7300 3850 50  0001 C CNN
+	1    7300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3900 7050 3850
+Wire Wire Line
+	7050 3850 7200 3850
+Wire Wire Line
+	7400 3850 7650 3850
+Connection ~ 7650 4000
+$Comp
+L CONN_01X02 J22
+U 1 1 5ED3C5FE
+P 2300 2800
+F 0 "J22" H 2300 2950 50  0000 C CNN
+F 1 "CHG" V 2400 2800 50  0000 C CNN
+F 2 "footprints:JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled" H 2300 2800 50  0001 C CNN
+F 3 "" H 2300 2800 50  0001 C CNN
+	1    2300 2800
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2600 3050
+Wire Wire Line
+	2500 2850 2500 3050
+Wire Wire Line
+	2500 2750 2550 2750
+Wire Wire Line
+	2550 2750 2550 3150
+Connection ~ 2550 3150
+Connection ~ 2500 3050
+Text Notes 1800 2900 0    60   ~ 0
+JST-PH
+Text Notes 1800 3200 0    60   ~ 0
+JST-SH
 $EndSCHEMATC

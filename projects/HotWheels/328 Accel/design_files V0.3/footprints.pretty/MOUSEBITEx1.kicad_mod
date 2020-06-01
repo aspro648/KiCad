@@ -1,4 +1,4 @@
-(module MOUSEBITEx1 (layer F.Cu) (tedit 5ED30D2C)
+(module MOUSEBITEx1 (layer F.Cu) (tedit 5ED30BB5)
   (descr "module 1 pin (ou trou mecanique de percage)")
   (tags DEV)
   (fp_text reference REF** (at 0 0) (layer F.SilkS) hide

@@ -55,12 +55,20 @@ void setup(){
   pinMode(DL, OUTPUT);
   pinMode(UL, OUTPUT);
 
+  digitalWrite(HL, HIGH);
+  delay(100);
+  digitalWrite(HL, LOW);
   digitalWrite(UL, HIGH);
-  delay(1000);
+  delay(100);
   digitalWrite(UL, LOW);
-  delay(1000);
+  digitalWrite(DL, HIGH);
+  delay(100);
+  digitalWrite(DL, LOW);
+  digitalWrite(TL, HIGH);
+  delay(100);
+  digitalWrite(TL, LOW);
+
   
-  /*
   // put your setup code here, to run once:
   //pinMode(9,INPUT);       // Interrupt pin input
   Wire.begin();
@@ -109,12 +117,13 @@ void setup(){
   if(DEBUG){
     Serial.begin(115200);
   }
-  */
-  for(int j=0; j<2; j++){
+
+
+  for(int j=0; j<0; j++){
     digitalWrite(HL, HIGH);
-    delay(1000);
+    delay(250);
     digitalWrite(HL, LOW);
-    delay(1000);
+    delay(250);
   }
 }
 
@@ -142,7 +151,7 @@ void loop(){
       total += data[j];
     }
     ave = total / 25;
-    if(abs(ave - last_ave) < 150){
+    if(abs(ave - last_ave) < 50){
       if (!still){
         stillTime = millis();
       }
@@ -213,7 +222,7 @@ void loop(){
     digitalWrite(UL, ULF);
     digitalWrite(DL, DLF);
             
-    if ((millis() - stillTime) > 2000){
+    if ((millis() - stillTime) > 4000){
       if(still){
         brakes = true;
       }
@@ -237,6 +246,11 @@ void loop(){
     digitalWrite(DL, LOW);
     
   }
+    if ((millis() - stillTime) > 60000){
+      stillTime = millis();
+      still = false;
+      brakes = false;
+    }
 
   /*
   if (still){
