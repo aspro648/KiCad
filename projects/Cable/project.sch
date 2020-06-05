@@ -1,0 +1,337 @@
+EESchema Schematic File Version 2
+LIBS:project-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:relays
+LIBS:Relay_SolidState
+LIBS:project-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DB25_FEMALE J1
+U 1 1 5ED7D99C
+P 1350 3800
+F 0 "J1" H 1450 2500 50  0000 C CNN
+F 1 "ROBOT DB25" H 1300 5200 50  0000 C CNN
+F 2 "" H 1350 3800 50  0001 C CNN
+F 3 "" H 1350 3800 50  0001 C CNN
+	1    1350 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L TLP291 U1
+U 1 1 5ED7DAC4
+P 3050 3050
+F 0 "U1" H 2850 3250 50  0000 L CNN
+F 1 "SSR1" H 3050 3250 50  0000 L CNN
+F 2 "Housings_DIP:DIP-4_W7.62mm_SMD" H 2850 2850 50  0001 L CIN
+F 3 "" H 3050 3050 50  0001 L CNN
+	1    3050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP291 U2
+U 1 1 5ED7DC00
+P 3050 3950
+F 0 "U2" H 2850 4150 50  0000 L CNN
+F 1 "SSR2" H 3050 4150 50  0000 L CNN
+F 2 "Housings_DIP:DIP-4_W7.62mm_SMD" H 2850 3750 50  0001 L CIN
+F 3 "" H 3050 3950 50  0001 L CNN
+	1    3050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L DB25_FEMALE J2
+U 1 1 5ED7DC66
+P 4500 3800
+F 0 "J2" H 4550 2500 50  0000 C CNN
+F 1 "CONTROLLER DB25" H 4450 5200 50  0000 C CNN
+F 2 "" H 4500 3800 50  0001 C CNN
+F 3 "" H 4500 3800 50  0001 C CNN
+	1    4500 3800
+	1    0    0    -1  
+$EndComp
+Text Label 1850 2700 0    60   ~ 0
+OUT1
+Text Label 3850 2700 0    60   ~ 0
+~OUT1
+Text Label 1750 3900 0    60   ~ 0
+OUT7
+Text Label 3850 3900 0    60   ~ 0
+~OUT7
+Text Label 1750 4700 0    60   ~ 0
+24VDC
+Text Label 1750 4800 0    60   ~ 0
+GND
+Text Label 1750 4900 0    60   ~ 0
+24VDC
+Text Label 1750 5000 0    60   ~ 0
+GND
+$Comp
+L DB25_FEMALE J3
+U 1 1 5ED7E2E6
+P 5600 3800
+F 0 "J3" H 5700 2500 50  0000 C CNN
+F 1 "CONTROL BOX" H 5550 5200 50  0000 C CNN
+F 2 "" H 5600 3800 50  0001 C CNN
+F 3 "" H 5600 3800 50  0001 C CNN
+	1    5600 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L DB9_FEMALE J4
+U 1 1 5ED7E390
+P 8550 3000
+F 0 "J4" H 8550 3550 50  0000 C CNN
+F 1 "DB9" H 8550 2425 50  0000 C CNN
+F 2 "" H 8550 3000 50  0001 C CNN
+F 3 "" H 8550 3000 50  0001 C CNN
+	1    8550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L DB9_FEMALE J5
+U 1 1 5ED7E435
+P 8500 4500
+F 0 "J5" H 8500 5050 50  0000 C CNN
+F 1 "DB9" H 8500 3925 50  0000 C CNN
+F 2 "" H 8500 4500 50  0001 C CNN
+F 3 "" H 8500 4500 50  0001 C CNN
+	1    8500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CPC1002N-RESCUE-project U3
+U 1 1 5ED7E5CB
+P 6600 2800
+F 0 "U3" H 6400 3000 50  0000 L CNN
+F 1 "AQZ102" H 6600 3000 50  0000 L CNN
+F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 6400 2600 50  0001 L CIN
+F 3 "" H 6600 2800 50  0001 L CNN
+	1    6600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5ED7E66D
+P 7400 2450
+F 0 "R1" V 7480 2450 50  0000 C CNN
+F 1 "2K" V 7400 2450 50  0000 C CNN
+F 2 "" V 7330 2450 50  0001 C CNN
+F 3 "" H 7400 2450 50  0001 C CNN
+	1    7400 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L L L1
+U 1 1 5ED7E6EE
+P 7750 2450
+F 0 "L1" V 7700 2450 50  0000 C CNN
+F 1 "AIR VALVE" V 7825 2450 50  0000 C CNN
+F 2 "" H 7750 2450 50  0001 C CNN
+F 3 "" H 7750 2450 50  0001 C CNN
+	1    7750 2450
+	0    -1   -1   0   
+$EndComp
+Text Notes 7500 2600 0    40   ~ 0
+SY3120-SLZ-C4
+Text Notes 5950 2700 0    60   ~ 0
+BRN
+Text Notes 5950 3900 0    60   ~ 0
+RED
+Text Notes 5950 4700 0    60   ~ 0
+BLU
+Text Notes 5950 4800 0    60   ~ 0
+BLK
+Text Notes 5950 5000 0    60   ~ 0
+WHT
+Text Notes 6900 2900 0    60   ~ 0
+RED
+Text Notes 6900 2700 0    60   ~ 0
+BLU
+Text Notes 7000 2300 0    60   ~ 0
+CONTROL BOX
+Text Notes 2750 2300 0    60   ~ 0
+CABLE HACK
+Text Notes 1700 5350 0    60   ~ 0
+2x SSR RELAY SPST-NO 3MA 5-30V, Phoenix Contact 2908172,\n1x DB25 Breakout Board, KingPow DB25-MG6 
+Text Label 6500 3400 0    60   ~ 0
+~OUT1
+Text Label 6500 3900 0    60   ~ 0
+~OUT7
+Text Label 6500 4700 0    60   ~ 0
+24VDC
+Text Label 6500 4800 0    60   ~ 0
+GND
+Text Label 6500 5000 0    60   ~ 0
+GND
+Wire Wire Line
+	1650 2700 2400 2700
+Wire Wire Line
+	2400 2700 2400 3150
+Wire Wire Line
+	2400 3150 2750 3150
+Wire Wire Line
+	1650 4700 4200 4700
+Wire Wire Line
+	2200 2950 2200 4700
+Wire Wire Line
+	2200 2950 2750 2950
+Wire Wire Line
+	3350 2950 3600 2950
+Wire Wire Line
+	3600 2950 3600 3450
+Wire Wire Line
+	3600 3450 2200 3450
+Connection ~ 2200 3450
+Wire Wire Line
+	3350 3150 3750 3150
+Wire Wire Line
+	3750 3150 3750 2700
+Wire Wire Line
+	3750 2700 4200 2700
+Wire Wire Line
+	2750 4050 2400 4050
+Wire Wire Line
+	2400 4050 2400 3900
+Wire Wire Line
+	2400 3900 1650 3900
+Wire Wire Line
+	3350 4050 3750 4050
+Wire Wire Line
+	3750 4050 3750 3900
+Wire Wire Line
+	3750 3900 4200 3900
+Wire Wire Line
+	2550 4900 1650 4900
+Wire Wire Line
+	2550 3850 2550 4900
+Wire Wire Line
+	2550 3850 2750 3850
+Wire Wire Line
+	3350 3850 3600 3850
+Wire Wire Line
+	3600 3850 3600 4400
+Wire Wire Line
+	3600 4400 2550 4400
+Connection ~ 2550 4400
+Wire Wire Line
+	1650 4800 4200 4800
+Wire Wire Line
+	1650 5000 4200 5000
+Connection ~ 2200 4700
+Wire Wire Line
+	5900 4800 8200 4800
+Wire Wire Line
+	7800 4800 7800 3300
+Wire Wire Line
+	7800 3300 8250 3300
+Connection ~ 7800 4800
+Wire Wire Line
+	7950 5000 5900 5000
+Wire Wire Line
+	7950 2700 7950 5000
+Wire Wire Line
+	7950 4200 8200 4200
+Wire Wire Line
+	7950 2700 8250 2700
+Connection ~ 7950 4200
+Wire Wire Line
+	5950 4800 5950 5000
+Connection ~ 5950 5000
+Connection ~ 5950 4800
+Wire Wire Line
+	6150 3400 8250 3400
+Wire Wire Line
+	8050 3400 8050 4900
+Wire Wire Line
+	8050 4900 8200 4900
+Connection ~ 8050 3400
+Wire Wire Line
+	7550 2450 7600 2450
+Wire Wire Line
+	7900 2450 8050 2450
+Wire Wire Line
+	8050 2450 8050 3300
+Connection ~ 8050 3300
+Wire Wire Line
+	5900 3900 7550 3900
+Wire Wire Line
+	7550 2800 7550 4300
+Wire Wire Line
+	7550 2800 8250 2800
+Wire Wire Line
+	7550 4300 8200 4300
+Connection ~ 7550 3900
+Wire Wire Line
+	5900 4700 7300 4700
+Wire Wire Line
+	7300 4700 7300 2700
+Wire Wire Line
+	7300 2700 6900 2700
+Wire Notes Line
+	950  2200 9000 2200
+Wire Notes Line
+	9000 5400 950  5400
+Wire Wire Line
+	5900 2700 6300 2700
+Wire Wire Line
+	6150 2700 6150 3400
+Connection ~ 6150 2700
+Wire Wire Line
+	6300 2900 6250 2900
+Wire Wire Line
+	6250 2900 6250 5000
+Connection ~ 6250 5000
+Wire Wire Line
+	6900 2900 7200 2900
+Wire Wire Line
+	7200 2900 7200 2450
+Wire Wire Line
+	7200 2450 7250 2450
+Wire Notes Line
+	950  5400 950  2200
+Wire Notes Line
+	5100 2200 5100 5400
+Wire Notes Line
+	9000 2200 9000 5400
+$EndSCHEMATC

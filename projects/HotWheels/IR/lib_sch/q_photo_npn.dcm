@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Q_Photo_NPN
+D Phototransistor NPN, 2-pin (C=1, E=2)
+K npn phototransistor
+$ENDCMP
+#
+$CMP Q_Photo_NPN_CE
+D Phototransistor NPN, 2-pin (C=1, E=2)
+K npn phototransistor
+$ENDCMP
+#
+#End Doc Library
