@@ -14,7 +14,7 @@ LIS331 xl;
 
 boolean DEBUG = false;
 
-int HL = 10;
+int HL = 3;
 int TL = 5;
 int BL = 6;
 int DL = 9;
