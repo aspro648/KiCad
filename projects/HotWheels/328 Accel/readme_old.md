@@ -1,4 +1,4 @@
-Hot Wheels Arduino
+Hot Wheels Arduino Lights
 
 ![Image](project.png) 
 
@@ -9,10 +9,10 @@ Bill Of Materials
 ----------------
 - 1 ea., Perfect Purple PCB from OSH Park, with not so perfect layout from [design_files/project.kicad_pcb](project.kicad_pcb) file.
 - 1 ea., ATMEGA328P-MNRCT-ND 32-VQFN (5x5), https://www.digikey.com/short/zmmczh
-- 1 ea., ACCEL 2-16G I2C/SPI 14LGA, ADXL343BCCZ-RL, https://www.digikey.com/short/zhh4w5
+- 1 ea., ACCEL 2-16G I2C/SPI 16LGA, STM LIS331DLHTR, https://www.digikey.com/short/zzdzr7
 - 1 ea., IC REG LINEAR 3.3V 150MA SOT23-5, MIC5225-3.3YM5-TR, https://www.digikey.com/short/zmmcmv
-- 2 ea., CAP CER 0.1UF 16V X7R 0603, KEMET C0603C104M4RACTU, https://www.digikey.com/short/zhh41d
-- 2 ea., CAP CER 10UF 10V X5R 0603, Murata GRM188R61A106KE69J, https://www.digikey.com/short/zhhm7c
+- 2 ea., 0.1uF CAP SMD 0805, https://www.digikey.com/short/j58qjp
+- 2 ea., CAP CER 10UF 10V X5R 0805, https://www.digikey.com/short/zz5p5h
 - 1 ea., Smallest 3.7 LiPo you can find (VERIFY CONNECTOR AND POLARITY).
 	- V911 Helicoper 130mAh https://www.amazon.com/gp/product/B00BSK2NZG/ (JST PH?)
 	- TinyCircuits ASR0011 70mAh (16.0mm x 15.0mm x 5.0mm), https://www.digikey.com/short/z40wd0 (JST SH)
@@ -41,7 +41,7 @@ Revisions
 - 0.0 April 2020 Initial Design (untested, but based on working Beetje LiPo schematic).
 - 0.2 April 2020 Added 3V3 regulator (LIS331 limit is 3.6V!)
 - 0.3 April 2020 New board design.
-- 0.5 June 2020 LIS3 -> ADXL345 for ease of assembly.
+
 
 License
 ----------------
