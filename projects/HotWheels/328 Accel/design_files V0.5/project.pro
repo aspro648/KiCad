@@ -1,4 +1,4 @@
-update=5/29/2020 7:15:03 PM
+update=6/16/2020 9:15:54 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -74,3 +74,5 @@ LibName32=contrib
 LibName33=valves
 LibName34=lib_sch/MCP73833
 LibName35=lib_sch/LIS3DH
+LibName36=sensors
+LibName37=Sensor_Motion
