@@ -227,13 +227,13 @@ $EndComp
 $Comp
 L SW_SPDT SW1
 U 1 1 5B9534D5
-P 2400 4550
-F 0 "SW1" H 2400 4720 50  0000 C CNN
-F 1 "SW_SPDT" H 2400 4350 50  0000 C CNN
-F 2 "footprints:SPST_SMD" H 2400 4550 50  0001 C CNN
-F 3 "" H 2400 4550 50  0001 C CNN
-	1    2400 4550
-	1    0    0    -1  
+P 2400 4450
+F 0 "SW1" H 2400 4620 50  0000 C CNN
+F 1 "SW_SPDT" H 2400 4250 50  0000 C CNN
+F 2 "footprints:SPST_SMD" H 2400 4450 50  0001 C CNN
+F 3 "" H 2400 4450 50  0001 C CNN
+	1    2400 4450
+	-1   0    0    1   
 $EndComp
 Text Notes 4250 5200 0    60   ~ 0
 R5:\n10K= 100 mA\n5K = 200 mA\n2K = 500 mA\n1K = 1000 mA
@@ -341,7 +341,7 @@ L USB_B J2
 U 1 1 5EA71AD7
 P 1850 3000
 F 0 "J2" H 1650 3450 50  0000 L CNN
-F 1 "USB-MICRO" H 1650 3350 50  0000 L CNN
+F 1 "CHG" H 1650 3350 50  0000 L CNN
 F 2 "footprints:USB_Micro-B_Molex-105017-0001" H 2000 2950 50  0001 C CNN
 F 3 "" H 2000 2950 50  0001 C CNN
 	1    1850 3000
@@ -696,19 +696,8 @@ Connection ~ 2600 3400
 $Comp
 L Conn_01x01 J56
 U 1 1 5ED146A0
-P 2800 3400
-F 0 "J56" H 2900 3350 50  0000 C CNN
-F 1 "Conn" H 2750 3400 50  0000 C CNN
-F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 2800 3400 50  0001 C CNN
-F 3 "" H 2800 3400 50  0001 C CNN
-	1    2800 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x01 J57
-U 1 1 5ED14BF8
 P 2800 3300
-F 0 "J57" H 2900 3250 50  0000 C CNN
+F 0 "J56" H 2900 3250 50  0000 C CNN
 F 1 "Conn" H 2750 3300 50  0000 C CNN
 F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 2800 3300 50  0001 C CNN
 F 3 "" H 2800 3300 50  0001 C CNN
@@ -716,25 +705,36 @@ F 3 "" H 2800 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Conn_01x01 J57
+U 1 1 5ED14BF8
+P 2800 3400
+F 0 "J57" H 2900 3350 50  0000 C CNN
+F 1 "Conn" H 2750 3400 50  0000 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 2800 3400 50  0001 C CNN
+F 3 "" H 2800 3400 50  0001 C CNN
+	1    2800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
 L Conn_01x01 J58
 U 1 1 5ED14F3B
-P 3150 3400
-F 0 "J58" H 3250 3400 50  0000 C CNN
-F 1 "Conn" H 3100 3400 50  0000 C CNN
-F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3150 3400 50  0001 C CNN
-F 3 "" H 3150 3400 50  0001 C CNN
-	1    3150 3400
+P 3150 3300
+F 0 "J58" H 3250 3300 50  0000 C CNN
+F 1 "Conn" H 3100 3300 50  0000 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3150 3300 50  0001 C CNN
+F 3 "" H 3150 3300 50  0001 C CNN
+	1    3150 3300
 	-1   0    0    1   
 $EndComp
 $Comp
 L Conn_01x01 J59
 U 1 1 5ED1500E
-P 3150 3200
-F 0 "J59" H 3250 3200 50  0000 C CNN
-F 1 "Conn" H 3100 3200 50  0000 C CNN
-F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3150 3200 50  0001 C CNN
-F 3 "" H 3150 3200 50  0001 C CNN
-	1    3150 3200
+P 3150 3400
+F 0 "J59" H 3250 3400 50  0000 C CNN
+F 1 "Conn" H 3100 3400 50  0000 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3150 3400 50  0001 C CNN
+F 3 "" H 3150 3400 50  0001 C CNN
+	1    3150 3400
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -784,7 +784,7 @@ $EndComp
 Text Label 3350 3300 0    60   ~ 0
 VBAT
 Text Label 3350 3400 0    60   ~ 0
-Vin
+VCC
 NoConn ~ 5600 3500
 $Comp
 L Conn_01x01 J44
@@ -811,23 +811,23 @@ $EndComp
 $Comp
 L Conn_01x01 J55
 U 1 1 5ED247A3
-P 3150 3300
-F 0 "J55" H 3250 3300 50  0000 C CNN
-F 1 "Conn" H 3100 3300 50  0000 C CNN
-F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3150 3300 50  0001 C CNN
-F 3 "" H 3150 3300 50  0001 C CNN
-	1    3150 3300
+P 3150 3500
+F 0 "J55" H 3250 3500 50  0000 C CNN
+F 1 "Conn" H 3100 3500 50  0000 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3150 3500 50  0001 C CNN
+F 3 "" H 3150 3500 50  0001 C CNN
+	1    3150 3500
 	-1   0    0    1   
 $EndComp
 $Comp
 L Conn_01x01 J54
 U 1 1 5ED24822
-P 3150 3500
-F 0 "J54" H 3250 3500 50  0000 C CNN
-F 1 "Conn" H 3100 3500 50  0000 C CNN
-F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3150 3500 50  0001 C CNN
-F 3 "" H 3150 3500 50  0001 C CNN
-	1    3150 3500
+P 3150 3200
+F 0 "J54" H 3250 3200 50  0000 C CNN
+F 1 "Conn" H 3100 3200 50  0000 C CNN
+F 2 "footprints:SolderWirePad_single_0-8mmDrill" H 3150 3200 50  0001 C CNN
+F 3 "" H 3150 3200 50  0001 C CNN
+	1    3150 3200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
