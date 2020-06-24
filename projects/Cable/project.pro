@@ -1,4 +1,4 @@
-update=6/3/2020 4:20:53 PM
+update=6/22/2020 2:38:07 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,13 @@ LibName29=contrib
 LibName30=valves
 LibName31=relays
 LibName32=Relay_SolidState
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

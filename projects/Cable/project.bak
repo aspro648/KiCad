@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:project-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -139,7 +140,7 @@ F 3 "" H 8500 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CPC1002N U3
+L CPC1002N-RESCUE-project U3
 U 1 1 5ED7E5CB
 P 6600 2800
 F 0 "U3" H 6400 3000 50  0000 L CNN
