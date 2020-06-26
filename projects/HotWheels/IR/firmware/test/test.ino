@@ -34,8 +34,11 @@ Adafruit_7segment matrix = Adafruit_7segment();
 
 int LED1 = A1;
 int LED2 = A3;
+int LED34 = MISO;
 int photo1 = A0;
 int photo2 = A2;
+int photo3 = MOSI;
+int photo4 = SCK;
 
 
 // the setup function runs once when you press reset or power the board
@@ -44,29 +47,63 @@ void setup() {
   matrix.begin(0x70);
   matrix.flip(true);
   pinMode(LED1, OUTPUT);
-  pinMode(photo1, INPUT);
+  pinMode(photo1, INPUT_PULLUP);
   pinMode(LED2, OUTPUT);
-  pinMode(photo2, INPUT);
+  pinMode(photo2, INPUT_PULLUP);
+  pinMode(photo3, INPUT_PULLUP);
+  pinMode(photo4, INPUT_PULLUP);
+  pinMode(LED34, OUTPUT);
+
   Serial.begin(9600);
+  Serial.println("HW IR test");
 }
+
 
 // the loop function runs over and over again forever
 void loop() {
   int sig1 = analogRead(photo1);
   int sig2 = analogRead(photo2);
+  int sig3 = digitalRead(photo3);
+  int sig4 = digitalRead(photo4);
+
+  int sig1a = map(sig1, 0, 1023, 0, 10);
+  int sig2a = map(sig2, 0, 1023, 0, 10);  
   float val = sig2/1024.0;
-  long t = 1234;
   
-  //matrix.print(1.34);
-  matrix.writeDigitRaw(2, 0x10) ; // decimal point
-  matrix.writeDigitNum(0, 1);
-  matrix.writeDigitNum(1, 2);
+  //matrix.print(sig1);
+  //matrix.writeDigitRaw(2, 0x10) ; // decimal point
+  matrix.writeDigitNum(0, sig1a);
+  matrix.writeDigitNum(1, sig2a);
+  matrix.writeDigitNum(3, sig3);
+  matrix.writeDigitNum(4, sig4);
   matrix.writeDisplay();
   Serial.print(sig1);
   Serial.print(" ");
-  Serial.println(sig2);
-  //digitalWrite(LED2, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(100);                       // wait for a second
-  digitalWrite(LED2, LOW);    // turn the LED off by making the voltage LOW
+  Serial.print(sig2);
+  Serial.print(" ");
+  Serial.print(sig3);
+  Serial.print(" ");
+  Serial.println(sig4);
+  if (sig1 < 500){
+    digitalWrite(LED1, HIGH);
+  }
+  else{
+    digitalWrite(LED1, LOW);
+  }
+  
+  if (sig2 < 500){
+    digitalWrite(LED2, HIGH);
+  }
+  else{
+    digitalWrite(LED2, LOW);
+  }  
+
+  if(sig3 || sig4){
+    digitalWrite(LED34, HIGH);
+  }
+  else{
+    digitalWrite(LED34, LOW);
+  }
+
   delay(100);                       // wait for a second
 }
