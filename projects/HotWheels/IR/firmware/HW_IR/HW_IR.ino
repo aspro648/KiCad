@@ -39,6 +39,7 @@ int photo1 = A0;
 int photo2 = A2;
 int photo3 = MOSI;
 int photo4 = SCK;
+int raceNumber = 1;
 
 volatile long startTime = 0;
 volatile long stopTime1 = 0;
@@ -133,7 +134,10 @@ void setup() {
   pinMode(LED34, OUTPUT);
   
   Serial.begin(9600);
-  Serial.println("HW IR Ver 0.1");
+  Serial.println("HW IR Ver 0.2");
+  Serial.print("Race Number ");
+  Serial.print(raceNumber);
+  Serial.println(":");
 }
 
 
@@ -157,6 +161,10 @@ void loop() {
         Serial.println(" sec.");
         if(!timming2){
           Serial.println();
+          raceNumber += 1;
+          Serial.print("Race Number ");
+          Serial.print(raceNumber);
+          Serial.println(":");
         }
       }
     }
@@ -169,6 +177,10 @@ void loop() {
         Serial.println(" sec.");
         if(!timming1){
           Serial.println();
+          raceNumber += 1;
+          Serial.print("Race Number ");
+          Serial.print(raceNumber);
+          Serial.println(":");
         }
       }
     }
@@ -185,11 +197,15 @@ void loop() {
     if(blink){
       if(interval1){      
         interval = interval1;
+        digitalWrite(LED1, HIGH);
+        digitalWrite(LED2, LOW);
       }
     }
     else{
       if(interval2){
         interval = interval2;
+        digitalWrite(LED2, HIGH);
+        digitalWrite(LED1, LOW);
       }
     }
   }
