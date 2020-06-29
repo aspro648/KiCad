@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri "$(KIPRJMOD)/footprints.pretty")(options "")(descr "Project Footprints"))
+  (lib (name beetje_footprints)(type KiCad)(uri "$(KIPRJMOD)/beetje_footprints.pretty")(options "")(descr ""))
+)
