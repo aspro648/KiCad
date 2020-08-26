@@ -11,25 +11,28 @@ Bill Of Materials
 
 
 - 1 ea., U1, ATMEGA32U4-AU, IC MCU 8BIT 32KB FLASH 44TQFP, https://www.digikey.com/short/jb25pc
-- 1 ea,, 10uF SMD 0805, https://www.digikey.com/short/j5d39w 
-- 1 ea., 1uF SMD 0805
-- 1 ea., 0.1uf SMD 0805
+- 1 ea,, CAP CER 10UF 16V X5R 0805, https://www.digikey.com/short/j5d39w 
+- 1 ea., CAP CER 1UF 16V Y5V 0805, https://www.digikey.com/short/z9ff39
+- 1 ea., CAP CER 0.1UF 25V Y5V 0805, https://www.digikey.com/short/z9fft1
 - 1 ea., F1 PTC 1206, Bel 0ZCJ0025AF2E, https://www.digikey.com/short/jfcbc8
-- 2 ea., R4, R5 Resistor 4.7K SMD 0805,
-- 2 ea., R6, R7, 22 Ohm 5% 0805 SMD resistor
-- 1 ea., X1 CONN RCPT MICRO USB R/A SMD, Molex 1050170001, https://www.digikey.com/short/jb2205
-- 1 ea., Y1 Resonator 8MHZ, CSTNE8M00G55Z000R0, https://www.digikey.com/short/jb22j1
-- 2 ea. Photo Transistor, [Everlight PT928-6B-F](https://www.digikey.com/short/qtrp5m)
-- 2 ea. IR Emitter, [Everlight IR928-6C-F](https://www.digikey.com/short/jzr3b8)
-- 1 ea., RJ45
-- 1 ea., PicoBlade 4 pin
+- 1 ea., CONN RCPT MICRO USB R/A SMD, Molex 1050170001, https://www.digikey.com/short/jb2205
+- 1 ea., Resonator 8MHZ, CSTNE8M00G55Z000R0, https://www.digikey.com/short/jb22j1
+- 2 ea., Photo Transistor, [Everlight PT928-6B-F](https://www.digikey.com/short/qtrp5m)
+- 2 ea., IR Emitter, [Everlight IR928-6C-F](https://www.digikey.com/short/jzr3b8)
+- 1 ea., CONN MOD JACK 8P8C R/A UNSHLD, https://www.digikey.com/short/z9fffp
+- 2 ea., RES SMD 4.7K OHM 5% 1/8W 0805, https://www.digikey.com/short/z9ffzz
+- 2 ea., 22 Ohm 5% 0805 SMD resistor, https://www.digikey.com/short/z9ffp2
 - 2 ea., RES SMD 330 OHM 5% 1/8W 0805, Yageo RC0805JR-07330RL, https://www.digikey.com/short/3wzz2f 
 - 2 ea., RES SMD 180 OHM 5% 1/8W 0805, Yageo RC0805JR-07180RL, https://www.digikey.com/short/zmwcbj
 - 2 ea., RES SMD 10K OHM 5% 1/4W 0805, Yageo RC0805JR-0710KL, https://www.digikey.com/short/zmwc28
 - 1 ea., 6mm tactile
 - 2 ea., 5 mm LED
+- 2 ea., 3 pin RA
+- 1 ea., CONN HEADER R/A 4POS 1.25MM, https://www.digikey.com/short/z9f2qn
+- 1 ea., CONN HOUSING 4POS 1.25MM NATURAL, https://www.digikey.com/short/z9f2j3
+- 4 ea., 12" PRE-CRIMP 1852 BLACK, https://www.digikey.com/short/z9f2mj
 
-https://www.thingiverse.com/thing:1797719/files
+
 
 Design Files
 ============

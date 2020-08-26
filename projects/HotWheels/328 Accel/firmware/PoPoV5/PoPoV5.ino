@@ -23,7 +23,6 @@ int intensity = 75;
 float lvl_set = 0.2;
 float lvl_rst = 0.1;
 int i = 0;
-long onTime = 30000;
 
 bool brakes = false;
 bool still = false;
@@ -223,7 +222,7 @@ void loop(){
     digitalWrite(UL, ULF);
     digitalWrite(DL, DLF);
             
-    if ((millis() - stillTime) > onTime){
+    if ((millis() - stillTime) > 4000){
       if(still){
         brakes = true;
       }
@@ -247,7 +246,7 @@ void loop(){
     digitalWrite(DL, LOW);
     
   }
-    if ((millis() - stillTime) > 600000){
+    if ((millis() - stillTime) > 60000){
       stillTime = millis();
       still = false;
       brakes = false;
