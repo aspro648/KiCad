@@ -1,4 +1,0 @@
-H047-5005 IMU Flex Extender Tester BOM
-
-1 ea., CONN FPC 14POS 0.50MM R/A, Panasonic AYF531465T, https://www.digikey.com/short/p9w1zq
-1 ea., CONN HDR 24POS SMD GOLD, Panasonic AXT624124, https://www.digikey.com/short/p9w1zf

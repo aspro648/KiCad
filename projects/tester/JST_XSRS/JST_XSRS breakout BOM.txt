@@ -1,0 +1,9 @@
+JST_XSRS BOM
+
+2-Pin
+- 1 ea. CONN HEADER SMD R/A 2POS 0.6MM, JST SM02B-XSRS-ETB(LF)(SN), https://www.digikey.com/short/z03200
+- 1 ea. CONN HEADER R/A 2POS 1.25MM, Molex WM1742-ND, https://www.digikey.com/short/z03wc8
+
+4-Pin
+- 1 ea. CONN HEADER SMD R/A 4POS 0.6MM, JST SM04B-XSRS-ETB(LF)(SN), https://www.digikey.com/short/z032vw
+- 1 ea. CONN HEADER R/A 4POS 1.25MM, Molex WM1744-ND, https://www.digikey.com/short/z03w7c

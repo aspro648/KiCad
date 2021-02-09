@@ -35,8 +35,8 @@ Adafruit_7segment matrix = Adafruit_7segment();
 int LED1 = A1;
 int LED2 = A3;
 int LED34 = MISO;
-int photo1 = A0;
-int photo2 = A2;
+int photo1 = A2;
+int photo2 = A0;
 int photo3 = MOSI;
 int photo4 = SCK;
 

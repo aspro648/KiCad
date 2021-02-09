@@ -1,0 +1,17 @@
+Universal Cable Tester:
+
+- 1 ea. UCT Ver 0.0 PCB https://oshpark.com/shared_projects/CIS0lhES
+- 2 ea. CONN HDR 18POS 0.1 TIN PCB, Sullins PPTC181LFBN-RC or Equiv., https://www.digikey.com/short/z0hqqz
+- 3 ea. IC I/O EXPANDER I2C 16B 28SSOP, MicroChip MCP23017-E/SS, https://www.digikey.com/short/z0hq8m
+- 16 ea., LED GREEN DIFFUSED 0805 SMD, OSRAM LG R971-KN-1 or equiv., https://www.digikey.com/short/z0hq4d
+- 1 ea., LED RED DIFFUSED 0805 SMD, OSRAM LH R974-LP-1 or equiv., https://www.digikey.com/short/z0hqm0
+- 17 ea., RES SMD 330 OHM 1% 1/8W 0805, TE CRG0805F330R or equiv., https://www.digikey.com/short/z0hqhv
+- 2 ea., RES SMD 4.7K OHM 5% 1/8W 0805, Yageo RC0805JR-074K7L or equiv., https://www.digikey.com/short/z0h81j
+- 1 ea., METRO ATMEGA328 W/HDR EVAL BRD, Adafruit 2488 or equiv., https://www.digikey.com/short/z0hjc2
+
+
+UCT Pico-Clasp 12 POS PCB:
+
+- 1 ea. UCT Pico-Clasp 12 POS PCB, https://oshpark.com/shared_projects/EbAGD4ej
+- 1 ea., CONN HEADER VERT 40POS 2.54MM, Sullins PREC040SAAN-RC or equiv., https://www.digikey.com/short/z0hqpz
+- 2 ea., CONN HEADER SMD 12POS 1MM, Molex 5013311207, https://www.digikey.com/short/z0hqfp

@@ -1,27 +1,7 @@
 /*
-  Blink
+ 
 
-  Turns an LED on for one second, then off for one second, repeatedly.
-
-  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO
-  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to
-  the correct LED pin independent of which board is used.
-  If you want to know what pin the on-board LED is connected to on your Arduino
-  model, check the Technical Specs of your board at:
-  https://www.arduino.cc/en/Main/Products
-
-  modified 8 May 2014
-  by Scott Fitzgerald
-  modified 2 Sep 2016
-  by Arturo Guadalupi
-  modified 8 Sep 2016
-  by Colby Newman
-
-  This example code is in the public domain.
-
-  http://www.arduino.cc/en/Tutorial/Blink
-
-  flipped trick from
+  Display flipped trick from
   https://forums.adafruit.com/viewtopic.php?f=47&t=142339&p=703866&hilit=7+segment+decimal+point#p703866
 */
 
@@ -42,6 +22,8 @@ int photo4 = SCK;
 int raceNumber = 1;
 
 volatile long startTime = 0;
+volatile long startTime1 = 0;
+volatile long startTime2 = 0;
 volatile long stopTime1 = 0;
 volatile long stopTime2 = 0;
 long interval = 0;
@@ -68,7 +50,6 @@ ISR (PCINT0_vect) // handle pin change interrupt for D8 to D13 here
  { //https://playground.arduino.cc/Main/PinChangeInterrupt/
     if(digitalRead(photo3) && !timming1){
       timming1 = true;
-      //timming2 = true;
       printFlag1 = false;
       printFlag2 = false;
       interval1 = 0;
@@ -77,9 +58,9 @@ ISR (PCINT0_vect) // handle pin change interrupt for D8 to D13 here
       digitalWrite(LED2, LOW);
       digitalWrite(LED34, HIGH);
       startTime = millis();
+      startTime1 = startTime;
     }
     if(digitalRead(photo4) && !timming2){
-      //timming1 = true;
       timming2 = true;
       printFlag1 = false;
       printFlag2 = false;
@@ -89,13 +70,12 @@ ISR (PCINT0_vect) // handle pin change interrupt for D8 to D13 here
       digitalWrite(LED2, LOW);
       digitalWrite(LED34, HIGH);
       startTime = millis();
+      startTime2 = startTime;
     }
  }  
 
 
-ISR (PCINT1_vect) // handle pin change interrupt for A0 to A5 here
- {
-
+ISR (PCINT1_vect){ // handle pin change interrupt for A0 to A5 here
     if(digitalRead(photo1) && timming1){
       stopTime1 = millis();
       timming1 = false;
@@ -103,7 +83,7 @@ ISR (PCINT1_vect) // handle pin change interrupt for A0 to A5 here
       if(timming2){
         digitalWrite(LED1, HIGH);
       }
-      
+      blink = true;    
     }
 
     if(digitalRead(photo2) && timming2){
@@ -113,6 +93,7 @@ ISR (PCINT1_vect) // handle pin change interrupt for A0 to A5 here
       if(timming1){
         digitalWrite(LED2, HIGH);
       }
+      blink = false;
     }
     nextBlink = millis() + blinkInterval;
  } 
@@ -135,8 +116,8 @@ void setup() {
   pinMode(photo4, INPUT);
   pinMode(LED34, OUTPUT);
   
-  Serial.begin(57600);
-  Serial.println("HW IR Ver 0.2");
+  Serial.begin(9600);
+  Serial.println("HW IR Ver 0.3");
   Serial.print("Race Number ");
   Serial.print(raceNumber);
   Serial.println(":");
@@ -148,15 +129,6 @@ void loop() {
   int sig1 = analogRead(photo1);
   int sig2 = analogRead(photo2);
   float val = sig2/1024.0;
-  
-  //matrix.print(1.34);
-  //matrix.writeDigitRaw(2, 0x10) ; // decimal point
-  //matrix.writeDigitNum(0, 1);
-  //matrix.writeDigitNum(1, 2);
-  //matrix.writeDisplay();
-
-
-
 
     if (!timming1 && !printFlag1){
       if(interval1){
@@ -195,19 +167,28 @@ void loop() {
   }
   else{
     digitalWrite(LED34, LOW);
-    if((millis() > nextBlink)){
-      blink = !blink;
-      nextBlink = nextBlink + blinkInterval;
+
+    if(interval1 && !interval2){
+      interval = interval1;
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);     
     }
-    if(blink){
-      if(interval1){      
+    else if(interval2 && !interval1){
+      interval = interval2;
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED1, LOW);  
+    }
+    else if(interval1 && interval2){
+      if((millis() > nextBlink)){
+        blink = !blink;
+        nextBlink = nextBlink + blinkInterval;
+      }
+      if(blink){
         interval = interval1;
         digitalWrite(LED1, HIGH);
         digitalWrite(LED2, LOW);
       }
-    }
-    else{
-      if(interval2){
+      else{
         interval = interval2;
         digitalWrite(LED2, HIGH);
         digitalWrite(LED1, LOW);
@@ -215,20 +196,19 @@ void loop() {
     }
   }
 
-  /*
-  if(timming1){
-    interval1 = millis()-startTime;
+  if(interval > 10000){  // auto reset after 10 seconds (car fell off track)
+    interval = 0;
+    if(timming2){
+      interval2 = 9999;
+      timming2 = false;
+      printFlag2 = false;
+    }
+    if(timming1){
+      interval1 = 9999;
+      timming1 = false;
+      printFlag1 = false;
+    }   
   }
-  else{
-    interval1 = stopTime1 - startTime;
-  }
-  if(timming1){
-    interval2 = millis()-startTime;
-  }
-  else{
-    interval2 = stopTime2 - startTime;
-  }
-  */
   
   matrix.print(interval);
   matrix.writeDigitRaw(2, 0x10) ; // decimal point
@@ -244,20 +224,6 @@ void loop() {
 
   matrix.writeDisplay();
 
-  /*
-  Serial.print(interval);
-  Serial.print(" ");
-  Serial.print(timming1);
-  Serial.print(" ");
-  Serial.print(timming2);
-  Serial.print(" ");
-  Serial.print(startTime);
-  Serial.print(" ");
-  Serial.print(stopTime1);
-  Serial.print(" ");
-  Serial.print(stopTime2);
-  Serial.println(" ");
-  */
-  delay(1);  // don't need to display any faster than this
+  delay(10);  // don't need to display any faster than this
   
 }
