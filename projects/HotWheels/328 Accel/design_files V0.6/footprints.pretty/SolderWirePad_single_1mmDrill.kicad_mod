@@ -1,0 +1,9 @@
+(module SolderWirePad_single_1mmDrill (layer F.Cu) (tedit 5EE8FB56)
+  (fp_text reference J58 (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Conn (at 0 0) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 2 2) (drill 1.00076) (layers *.Cu *.Mask))
+)
