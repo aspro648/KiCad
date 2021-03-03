@@ -527,4 +527,12 @@ Connection ~ 3350 3850
 Wire Wire Line
 	3100 3600 3250 3600
 Connection ~ 3250 3950
+Text Notes 9300 3900 0    60   ~ 0
+Swith UL & TL\nfor analog read
+Text Notes 9150 2900 0    60   ~ 0
+D2/A1
+Text Notes 9150 3450 0    60   ~ 0
+D4/A2
+Text Notes 9100 4750 0    60   ~ 0
+D3/A3
 $EndSCHEMATC
