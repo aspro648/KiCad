@@ -294,7 +294,7 @@ U 1 1 60332EE4
 P 5700 4000
 F 0 "IC1" H 4550 4400 50  0000 C CNN
 F 1 "ATTINY25" H 6700 3600 50  0000 C CNN
-F 2 "Housings_SOIC:SOIJ-8_5.3x5.3mm_Pitch1.27mm" H 6650 4000 50  0000 C CIN
+F 2 "Housings_SOIC:SOIJ-8_5.3x5.3mm_Pitch1.27mm" H 5500 3600 50  0000 C CIN
 F 3 "" H 5700 4000 50  0000 C CNN
 	1    5700 4000
 	-1   0    0    -1  
@@ -527,4 +527,14 @@ Connection ~ 3350 3850
 Wire Wire Line
 	3100 3600 3250 3600
 Connection ~ 3250 3950
+Text Notes 7950 2150 0    60   ~ 0
+Swith UL & TL for analog read?\nPilot hole.\nExtend J1 pads.\nVias under switch pads?\nISP Reset hole?\ncover ISP pads on top\n+/- HL/TL top and bottom
+Text Notes 9150 2900 0    60   ~ 0
+D2/A1
+Text Notes 9150 3450 0    60   ~ 0
+D4/A2
+Text Notes 9100 4750 0    60   ~ 0
+D3/A3
+Text Notes 9150 4050 0    60   ~ 0
+D0
 $EndSCHEMATC

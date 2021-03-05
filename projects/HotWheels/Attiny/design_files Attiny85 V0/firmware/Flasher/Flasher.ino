@@ -17,7 +17,18 @@ ATMEL ATTINY45/85 Pin Assignments
 ******************************************************************************/
 
 #include <EEPROM.h>
+#include <avr/sleep.h>
 
+
+#ifndef cbi
+  #define cbi(sfr, bit) (_SFR_BYTE(sfr) &= ~_BV(bit))
+#endif
+#ifndef sbi
+  #define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit))
+#endif
+
+
+long sleepyTime = 900000; // sleep after (ms)  900000 = 15 min, 300000 = 5 min
 
 boolean DEBUG = false;
 
@@ -29,24 +40,35 @@ int UL = 0;   // Underlighting
 
 int mode;     // headlights/tailights on or off, cycles with power
 
+int t1 = 125;
+int t2 = 50;
+
 
 void setup(){
+
+  pinMode(2, INPUT_PULLUP);
+  if(analogRead(1) > 1000){  // no headlights
+    mode = 0;
+  }
+  else{
+    
+    mode = EEPROM.read(0);
+    if (mode == 0){
+      mode = 1;
+    }
+    else {
+      mode = 0;
+    }
+    EEPROM.write(0, mode);
+  }
 
   pinMode(HL, OUTPUT);
   pinMode(TL, OUTPUT);
   pinMode(FL1, OUTPUT);
   pinMode(FL2, OUTPUT);
   pinMode(UL, OUTPUT);
-
-  mode = EEPROM.read(0);
-  if (mode == 0){
-    mode = 1;
-  }
-  else {
-    mode = 0;
-  }
-  EEPROM.write(0, mode);
-
+  digitalWrite(HL, LOW);
+  
   int blinkcount = 0;
   /*
   pinMode(3, INPUT_PULLUP);
@@ -75,8 +97,7 @@ void setup(){
   }
 }
 
-int t1 = 125;
-int t2 = 50;
+
 
 
 
@@ -89,6 +110,12 @@ void loop(){
 
 
   while(1){  // flash sequence
+
+    if(millis()>sleepyTime){
+    system_sleep();
+    }
+
+    
     digitalWrite(FL1, HIGH);
     delay(t1);
     digitalWrite(FL1, LOW);
@@ -137,4 +164,23 @@ void loop(){
     }
   }
  
+}
+
+// set system into the sleep state 
+// system wakes up when wtchdog is timed out
+void system_sleep() {
+  digitalWrite(FL1, LOW);
+  digitalWrite(FL2, LOW);  
+  digitalWrite(TL, LOW);
+  digitalWrite(HL, LOW);    
+  digitalWrite(UL, LOW);  
+    
+  cbi(ADCSRA,ADEN);                    // switch Analog to Digitalconverter OFF
+  set_sleep_mode(SLEEP_MODE_PWR_DOWN); // sleep mode is set here
+  sleep_enable();
+  sleep_mode();                        // System sleeps here
+
+  
+  sleep_disable();                     // System continues execution here when watchdog timed out 
+  sbi(ADCSRA,ADEN);                    // switch Analog to Digitalconverter ON
 }
