@@ -114,6 +114,7 @@ Adafruit_MPL3115A2 baro = Adafruit_MPL3115A2();
 float offsetf;   //f
 long timeAloft = 0; //ms
 long aloftStart = 0;
+long timerReset = 10000;
 bool ALOFT = false;
 bool FLIGHT = false; 
 float maxHeight = 0;
@@ -207,6 +208,10 @@ void loop() {
   }
   if (altf < 5){
     ALOFT = false;
+  }
+  if (!ALOFT and millis() > timerReset){  // reset offset every minute to account for drift
+    timerReset = millis() + 10000;
+    offsetf = altm * 3.28084;  //feet    
   }
 
   if (altf > maxHeight){
