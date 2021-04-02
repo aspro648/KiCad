@@ -27,6 +27,8 @@ ATMEL ATTINY45/85 Pin Assignments
   #define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit))
 #endif
 
+// hardware\breadboard\avr\boards.txt
+// atmega328bb.build.board=AVR_ATMEGA328BB
 
 long sleepyTime = 900000; // sleep after (ms)  900000 = 15 min, 300000 = 5 min
 
