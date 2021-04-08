@@ -54,7 +54,7 @@ void setup(){
   pinMode(UL, OUTPUT);
   digitalWrite(HL, LOW);
   
-  int blinkcount = 6;
+  int blinkcount = 0;
   /*
   pinMode(3, INPUT_PULLUP);
   int val = analogRead(3);
@@ -80,6 +80,10 @@ void setup(){
     digitalWrite(UL, LOW);
     delay(100);
   }
+  digitalWrite(HL, HIGH);
+  digitalWrite(TL, HIGH);
+  digitalWrite(FL2, HIGH);
+  
 }
 
 
@@ -87,5 +91,5 @@ void loop(){
   //https://www.instructables.com/Realistic-Fire-Effect-with-Arduino-and-LEDs/
   analogWrite(1, random(120+135));
   analogWrite(0, random(120+135));
-  delay(random(100));
+  delay(random(200));
 }

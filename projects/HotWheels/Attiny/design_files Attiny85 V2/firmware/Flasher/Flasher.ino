@@ -30,7 +30,7 @@ ATMEL ATTINY45/85 Pin Assignments
 // hardware\breadboard\avr\boards.txt
 // atmega328bb.build.board=AVR_ATMEGA328BB
 
-long sleepyTime = 900000; // sleep after (ms)  900000 = 15 min, 300000 = 5 min
+long sleepyTime = 300000; // sleep after (ms)  900000 = 15 min, 300000 = 5 min
 
 boolean DEBUG = false;
 
@@ -49,7 +49,8 @@ int t2 = 50;
 void setup(){
 
   pinMode(2, INPUT_PULLUP);  //D2/A1
-  if(analogRead(1) > 1000){  // no headlights
+  int val = analogRead(2);
+  if(val > 1000){  // no headlights
     mode = 0;
   }
   else{
@@ -70,7 +71,7 @@ void setup(){
   pinMode(FL2, OUTPUT);
   pinMode(UL, OUTPUT);
   digitalWrite(HL, LOW);
-  
+  val = val / 100;
   int blinkcount = 0;
   /*
   pinMode(3, INPUT_PULLUP);
@@ -94,7 +95,7 @@ void setup(){
     digitalWrite(TL, LOW);
     digitalWrite(FL1, LOW);
     digitalWrite(FL2, LOW);
-    digitalWrite(UL, HIGH);
+    digitalWrite(UL, LOW);
     delay(250);
   }
 }
