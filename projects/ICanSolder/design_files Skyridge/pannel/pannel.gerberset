@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GerberLayoutSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LoadedOutlines>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</string>
+    <string>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</string>
+  </LoadedOutlines>
+  <Instances>
+    <GerberInstance>
+      <Center>
+        <X>-160.02</X>
+        <Y>102.87</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-160.02</X>
+        <Y>135.85</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-160.02</X>
+        <Y>168.83</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-127.04</X>
+        <Y>102.87</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-94.06</X>
+        <Y>102.87</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-127.04</X>
+        <Y>135.85</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-127.04</X>
+        <Y>168.83</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-94.06</X>
+        <Y>135.85</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-94.06</X>
+        <Y>168.83</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel\project.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+  </Instances>
+  <Tabs>
+    <BreakTab>
+      <Center>
+        <X>31.44898</X>
+        <Y>79.9387741</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>79.9387741</X>
+        <Y>64.42653</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>64.7102</X>
+        <Y>80.30612</Y>
+      </Center>
+      <Angle>90</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>79.9387741</X>
+        <Y>31.816328</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>47.7959175</X>
+        <Y>31.6326542</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>14.7816343</X>
+        <Y>31.44898</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>14.9000006</X>
+        <Y>64.76122</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>31.816328</X>
+        <Y>14.9183683</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>64.69388</X>
+        <Y>15.1020422</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>47.877552</X>
+        <Y>64.69388</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+  </Tabs>
+  <Width>100</Width>
+  <Height>100</Height>
+  <MarginBetweenBoards>2.5</MarginBetweenBoards>
+  <ConstructNegativePolygon>false</ConstructNegativePolygon>
+  <FillOffset>3</FillOffset>
+  <Smoothing>1</Smoothing>
+  <ExtraTabDrillDistance>0</ExtraTabDrillDistance>
+  <ClipToOutlines>true</ClipToOutlines>
+  <LastExportFolder>C:\Users\Maker's Box\Documents\git\KiCad\projects\ICanSolder\design_files Saintcon\pannel</LastExportFolder>
+  <DoNotGenerateMouseBites>false</DoNotGenerateMouseBites>
+</GerberLayoutSet>
