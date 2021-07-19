@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GerberLayoutSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LoadedOutlines>
+    <string>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolderNJStateFair.zip</string>
+    <string>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolder.zip</string>
+    <string>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolderNJStateFair.zip</string>
+    <string>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolderNJStateFair.zip</string>
+    <string>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolderNJStateFair.zip</string>
+    <string>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolderNJStateFair.zip</string>
+    <string>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolder.zip</string>
+    <string>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolder.zip</string>
+    <string>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolder.zip</string>
+  </LoadedOutlines>
+  <Instances>
+    <GerberInstance>
+      <Center>
+        <X>-160.02</X>
+        <Y>102.87</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolderNJStateFair.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-160.02</X>
+        <Y>136.35000000000002</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolder.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-160.02</X>
+        <Y>169.83</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolderNJStateFair.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-126.54000000000002</X>
+        <Y>102.87</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolderNJStateFair.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-93.060000000000031</X>
+        <Y>102.87</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolderNJStateFair.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-126.54000000000002</X>
+        <Y>136.35000000000002</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolderNJStateFair.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-126.54000000000002</X>
+        <Y>169.83</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolder.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-93.060000000000031</X>
+        <Y>136.35000000000002</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolder.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+    <GerberInstance>
+      <Center>
+        <X>-93.060000000000031</X>
+        <Y>169.83</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel\ICanSolder.zip</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
+  </Instances>
+  <Tabs>
+    <BreakTab>
+      <Center>
+        <X>15.062053680419922</X>
+        <Y>65.411087036132813</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>14.732450485229492</X>
+        <Y>31.8718204498291</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>31.981687545776367</X>
+        <Y>15.501524925231934</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>65.4913558959961</X>
+        <Y>15.171920776367188</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>82.850456237792969</X>
+        <Y>31.981687545776367</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>82.740592956542969</X>
+        <Y>65.4913558959961</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>48.791454315185547</X>
+        <Y>65.47161865234375</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>49.560527801513672</X>
+        <Y>31.901422500610352</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>31.891555786132813</X>
+        <Y>81.42218017578125</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+    <BreakTab>
+      <Center>
+        <X>65.4913558959961</X>
+        <Y>81.202445983886719</Y>
+      </Center>
+      <Angle>0</Angle>
+      <Radius>3</Radius>
+      <Valid>false</Valid>
+    </BreakTab>
+  </Tabs>
+  <Width>100</Width>
+  <Height>100</Height>
+  <MarginBetweenBoards>3</MarginBetweenBoards>
+  <ConstructNegativePolygon>false</ConstructNegativePolygon>
+  <FillOffset>3</FillOffset>
+  <Smoothing>1</Smoothing>
+  <ExtraTabDrillDistance>0</ExtraTabDrillDistance>
+  <ClipToOutlines>true</ClipToOutlines>
+  <LastExportFolder>C:\Users\648ke\git\KiCad\projects\ICanSolder\design_files NJ State Fair\pannel</LastExportFolder>
+  <DoNotGenerateMouseBites>false</DoNotGenerateMouseBites>
+  <MergeFileTypes>false</MergeFileTypes>
+</GerberLayoutSet>
