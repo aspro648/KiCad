@@ -1,0 +1,14 @@
+BOM IR Gate 
+
+1 ea. PCB
+
+2 ea. 3mm LED
+2 ea. IR LED
+2 ea. IR NPN 
+
+1 ea. Picoblade 53048-0610 6-position connector
+2 ea. Resistor 100 0805 SMD
+2 ea. Resistor 330 0805 SMD
+
+Molex pre-crimped wires and headers
+
