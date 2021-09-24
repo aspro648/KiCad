@@ -1,14 +1,14 @@
 BOM IR Gate 
 
-1 ea. PCB
+- 1 ea. PCB
 
-2 ea. 3mm LED
-2 ea. IR LED
-2 ea. IR NPN 
+- 2 ea. 3mm LED
+- 1 ea. Photo Transistor, [Everlight PT928-6B-F](https://www.digikey.com/short/qtrp5m)
+- 1 ea. IR Emitter, [Everlight IR928-6C-F](https://www.digikey.com/short/jzr3b8)
 
-1 ea. Picoblade 53048-0610 6-position connector
-2 ea. Resistor 100 0805 SMD
-2 ea. Resistor 330 0805 SMD
+- 2 ea. RES SMD 100 OHM 5% 1/8W 0805, https://www.digikey.com/short/tmjp9jqr
+- 2 ea. RES SMD 330 OHM 5% 0.4W 0805, https://www.digikey.com/short/znfwv2tw
 
-Molex pre-crimped wires and headers
-
+- 1 ea., 6POS PicoBlade header, https://www.digikey.com/short/p4wz22
+- 2 ea., 6POS PicoBlade housing, https://www.digikey.com/short/p4wz28
+- 12" PRE-CRIMP 1853 BLACK, https://www.digikey.com/short/p4wz1p

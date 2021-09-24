@@ -1,11 +1,15 @@
 BOM IR Gate Featherwing
 
-1 ea. PCB
-1 ea. Adafruit nrf Feather
-5 ea. Resistor 10K 0805
-1 ea. Push button 6mm
-1 ea. pin header
-2 ea. Picoblade 53048-0610 6-position connector (IR Gate)
-2 ea. Picoblade 53048-0510 5-position connector (I2C)
-1 ea. 3mm LED
-1 ea. Molex SL 171971-0003 vertical connector (optional)
+- 1 ea. PCB
+- 1 ea. ADAFRUIT FEATHER NRF52840 EXPRES, Adafruit 4062 https://www.digikey.com/short/nfj7dzdr
+- 1 ea. FEATHER HEADER KIT FML, Adafruit 2886, https://www.digikey.com/short/fr42fq1v
+- 5 ea. RES SMD 10K OHM 5% 1/8W 0805, https://www.digikey.com/short/r4qfbrrn
+- 1 ea. Tactitle switch, [TE 1825910-6](https://www.digikey.com/short/q32j9w)
+- 1 ea. pin male header, [Sullins PREC040SAAN-RC](https://www.digikey.com/short/jzr38f)
+- 2 ea., 6POS PicoBlade header, https://www.digikey.com/short/p4wz22
+- 2 ea., 5POS Picoblade header, https://www.digikey.com/short/p4wzdp
+- 1 ea. 3mm LED (blue or green)
+- 1 ea. Molex SL 171971-0003 vertical connector (optional, remote)
+
+
+microphone https://www.digikey.com/en/products/detail/pui-audio-inc/PNM-5054L-C3310-R/9673318
