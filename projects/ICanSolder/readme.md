@@ -11,9 +11,9 @@ Bill Of Materials
 =================
   
 - 1 ea., Perfect Purple PCB from OSH Park
-- 1 ea., SW1 SWITCH SLIDE SPDT, C&K JS102011SAQN, https://www.digikey.com/short/j58qp5
-- 1 ea., D1 RES 100 OHM 1/4W 5% AXIAL, 
-- 1 ea., R1 5mm RGB Multicolor Slow Flashing, http://a.co/d/8MpfUT4
+- 1 ea., SWITCH SLIDE SPDT 200MA 30V, E-switch EG1903-ND, https://www.digikey.com/short/dpdz53r8
+- 1 ea., R1 RES 100 OHM 1/4W 5% AXIAL, https://www.digikey.com/short/j5dv23z5
+- 1 ea., D1 5mm RGB Multicolor Slow Flashing, http://a.co/d/8MpfUT4
 - 1 ea., BT1 CR2032 Batt retainer, Linx BAT-HLD-001-THM, https://www.digikey.com/product-detail/en/BAT-HLD-001-THM/BAT-HLD-001-THM-ND/3044009
 - 1 ea., Tie Tack & clutch, https://www.dhgate.com/product/10mm-post-nails-post-gold-silver-brass-tie/391539398.html
 - 1 ea., CR2032 Battery, Panasonic CR2032, Digikey P189-ND (requires ground shipping, or buy locally).
