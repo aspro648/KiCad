@@ -34,7 +34,7 @@ void setup() {
 
 void loop() {
 
-  int val1 = digitalRead(g1_NPN1);
+  int val1 = analogRead(g1_NPN1);
   int val2 = digitalRead(g1_NPN2);
   Serial.print(digitalPinToInterrupt(interruptPin));
   Serial.print(" ");
