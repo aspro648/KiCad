@@ -1,8 +1,10 @@
 
 /*
 
-cd C:\Users\MakersBox\Downloads\arduino-1.6.4\hardware\tools\avr\bin
-avrdude -C ..\etc\avrdude.conf -P COM3 -b 19200 -c avrisp -p attiny85 -v -e -U lfuse:w:0xE2:m -U hfuse:w:0xD7:m -U efuse:w:0xFf:m  -U flash:w:SMD_challenge_Cylon.cpp.hex
+updatd 10/17/2021:
+cd C:\Users\648ke\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino18\bin
+avrdude -CC:\Users\648ke\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2/avrdude.conf -v -e -U lfuse:w:0xE2:m -U hfuse:w:0xD7:m -U efuse:w:0xFf:m -pattiny44 -cstk500v1 -PCOM21 -b19200 -Uflash:w:SMD_challenge_Misery44.hex
+
 verifying lfuse memory against 0xE2:
 verifying hfuse memory against 0xD7
 verifying efuse memory against 0xFF
@@ -88,6 +90,3 @@ void flash(int led){  // psuedo PWM
     delay(3);
   }
 }
-
-
-
