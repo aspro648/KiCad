@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP23018_ML
+D 16-bit I/O expander, I2C, interrupts, w pull-ups, QFN-28
+K I2C parallel port expander
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf
+$ENDCMP
+#
+#End Doc Library
