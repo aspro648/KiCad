@@ -25,7 +25,7 @@ bool STATES[] = {true, true, true, true, true};
 
 
 // Pins are different between Arduino and Attiny
-#if defined(__AVR_ATtiny25__)
+#if defined(__AVR_ATtiny85__)
   #define ARDUINO 0
   #define ledPin 0     
   #define lightPin 3    // CdS or pushbutton hooked from PB4 (Pin 3, A2/D4) to ground
@@ -45,7 +45,7 @@ bool STATES[] = {true, true, true, true, true};
 void setup(){
   #if (ARDUINO)
     Serial.begin(9600);
-    Serial.println("SMD_heart");
+    Serial.println("SMD_bodge");
   #endif
 
   // setup heart pin

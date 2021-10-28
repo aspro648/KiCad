@@ -1,0 +1,495 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "IR Gate"
+Date "2021-09-26"
+Rev "0.2"
+Comp "www.MakersBox.us"
+Comment1 "648.ken@gmail.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L project:GND #PWR01
+U 1 1 5B3FDCF5
+P 6350 1250
+F 0 "#PWR01" H 6350 1000 50  0001 C CNN
+F 1 "GND" H 6350 1100 50  0000 C CNN
+F 2 "" H 6350 1250 50  0001 C CNN
+F 3 "" H 6350 1250 50  0001 C CNN
+	1    6350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG02
+U 1 1 5B3FDD50
+P 5900 1250
+F 0 "#FLG02" H 5900 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 5900 1400 50  0000 C CNN
+F 2 "" H 5900 1250 50  0001 C CNN
+F 3 "" H 5900 1250 50  0001 C CNN
+	1    5900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG03
+U 1 1 5B3FDD67
+P 6350 1250
+F 0 "#FLG03" H 6350 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6350 1400 50  0000 C CNN
+F 2 "" H 6350 1250 50  0001 C CNN
+F 3 "" H 6350 1250 50  0001 C CNN
+	1    6350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:VCC #PWR010
+U 1 1 5B6E5416
+P 5900 1250
+F 0 "#PWR010" H 5900 1100 50  0001 C CNN
+F 1 "VCC" H 5900 1400 50  0000 C CNN
+F 2 "" H 5900 1250 50  0001 C CNN
+F 3 "" H 5900 1250 50  0001 C CNN
+	1    5900 1250
+	-1   0    0    1   
+$EndComp
+Text Notes 2250 8600 0    60   ~ 0
+SparkFun's Qwiic:\nBlack = GND\nRed = 3.3V\nBlue = SDA\nYellow = SCL
+$Comp
+L Device:Q_Photo_NPN Q1
+U 1 1 5EF963C8
+P 3800 2300
+F 0 "Q1" H 4000 2350 50  0000 L CNN
+F 1 "NPN1" H 4000 2250 50  0000 L CNN
+F 2 "footprints:PHOTOTRANS" H 4000 2400 50  0001 C CNN
+F 3 "" H 3800 2300 50  0001 C CNN
+	1    3800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR018
+U 1 1 5EF96B37
+P 3900 2600
+F 0 "#PWR018" H 3900 2350 50  0001 C CNN
+F 1 "GND" H 3900 2450 50  0000 C CNN
+F 2 "" H 3900 2600 50  0001 C CNN
+F 3 "" H 3900 2600 50  0001 C CNN
+	1    3900 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2600 3900 2500
+Text Label 4050 2050 0    60   ~ 0
+NPN1
+$Comp
+L Device:Q_Photo_NPN Q2
+U 1 1 5EF99F4B
+P 4600 2300
+F 0 "Q2" H 4800 2350 50  0000 L CNN
+F 1 "NPN2" H 4800 2250 50  0000 L CNN
+F 2 "footprints:PHOTOTRANS" H 4800 2400 50  0001 C CNN
+F 3 "" H 4600 2300 50  0001 C CNN
+	1    4600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR020
+U 1 1 5EF99F51
+P 4700 2600
+F 0 "#PWR020" H 4700 2350 50  0001 C CNN
+F 1 "GND" H 4700 2450 50  0000 C CNN
+F 2 "" H 4700 2600 50  0001 C CNN
+F 3 "" H 4700 2600 50  0001 C CNN
+	1    4700 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2600 4700 2500
+$Comp
+L project:R R10
+U 1 1 5EF9A86A
+P 3900 5350
+F 0 "R10" V 3980 5350 50  0000 C CNN
+F 1 "100" V 3900 5350 50  0000 C CNN
+F 2 "footprints:R_0805_2012Metric" V 3830 5350 50  0001 C CNN
+F 3 "" H 3900 5350 50  0001 C CNN
+	1    3900 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:VCC #PWR022
+U 1 1 5EF9A8F1
+P 3900 5200
+F 0 "#PWR022" H 3900 5050 50  0001 C CNN
+F 1 "VCC" H 3900 5350 50  0000 C CNN
+F 2 "" H 3900 5200 50  0001 C CNN
+F 3 "" H 3900 5200 50  0001 C CNN
+	1    3900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:LED D8
+U 1 1 5EF9A987
+P 3900 5700
+F 0 "D8" H 3900 5800 50  0000 C CNN
+F 1 "IR" H 3900 5600 50  0000 C CNN
+F 2 "footprints:IR_LED" H 3900 5700 50  0001 C CNN
+F 3 "" H 3900 5700 50  0001 C CNN
+	1    3900 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:GND #PWR023
+U 1 1 5EF9AA12
+P 3900 5900
+F 0 "#PWR023" H 3900 5650 50  0001 C CNN
+F 1 "GND" H 3900 5750 50  0000 C CNN
+F 2 "" H 3900 5900 50  0001 C CNN
+F 3 "" H 3900 5900 50  0001 C CNN
+	1    3900 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5500 3900 5550
+Wire Wire Line
+	3900 5850 3900 5900
+$Comp
+L project:VCC #PWR024
+U 1 1 5EF9BA85
+P 4350 5200
+F 0 "#PWR024" H 4350 5050 50  0001 C CNN
+F 1 "VCC" H 4350 5350 50  0000 C CNN
+F 2 "" H 4350 5200 50  0001 C CNN
+F 3 "" H 4350 5200 50  0001 C CNN
+	1    4350 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:LED D7
+U 1 1 5EF9BA8B
+P 4350 5700
+F 0 "D7" H 4350 5800 50  0000 C CNN
+F 1 "IR" H 4350 5600 50  0000 C CNN
+F 2 "footprints:IR_LED" H 4350 5700 50  0001 C CNN
+F 3 "" H 4350 5700 50  0001 C CNN
+	1    4350 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:GND #PWR025
+U 1 1 5EF9BA91
+P 4350 5900
+F 0 "#PWR025" H 4350 5650 50  0001 C CNN
+F 1 "GND" H 4350 5750 50  0000 C CNN
+F 2 "" H 4350 5900 50  0001 C CNN
+F 3 "" H 4350 5900 50  0001 C CNN
+	1    4350 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5500 4350 5550
+Wire Wire Line
+	4350 5850 4350 5900
+$Comp
+L project:R R13
+U 1 1 5EF9BB07
+P 3900 3750
+F 0 "R13" V 3980 3750 50  0000 C CNN
+F 1 "10K" V 3900 3750 50  0000 C CNN
+F 2 "footprints:R_0805_2012Metric" V 3830 3750 50  0001 C CNN
+F 3 "" H 3900 3750 50  0001 C CNN
+	1    3900 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:R R14
+U 1 1 5EF9BD37
+P 4300 3750
+F 0 "R14" V 4380 3750 50  0000 C CNN
+F 1 "10K" V 4300 3750 50  0000 C CNN
+F 2 "footprints:R_0805_2012Metric" V 4230 3750 50  0001 C CNN
+F 3 "" H 4300 3750 50  0001 C CNN
+	1    4300 3750
+	-1   0    0    1   
+$EndComp
+Text Label 4950 2050 0    60   ~ 0
+NPN2
+Wire Wire Line
+	3900 2050 3900 2100
+Wire Wire Line
+	4700 2050 4700 2100
+Wire Wire Line
+	3900 3500 3900 3600
+Wire Wire Line
+	4300 3500 4300 3600
+Wire Wire Line
+	3900 2050 4150 2050
+Wire Wire Line
+	4700 2050 5100 2050
+$Comp
+L project:VCC #PWR0101
+U 1 1 614B4C5F
+P 5950 4050
+F 0 "#PWR0101" H 5950 3900 50  0001 C CNN
+F 1 "VCC" H 5950 4200 50  0000 C CNN
+F 2 "" H 5950 4050 50  0001 C CNN
+F 3 "" H 5950 4050 50  0001 C CNN
+	1    5950 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4050 5950 4250
+Wire Wire Line
+	5950 4250 6250 4250
+Text Label 6000 4650 0    60   ~ 0
+NPN1
+Text Label 6000 4750 0    60   ~ 0
+NPN2
+$Comp
+L project:GND #PWR0103
+U 1 1 614FEA69
+P 6100 6350
+F 0 "#PWR0103" H 6100 6100 50  0001 C CNN
+F 1 "GND" H 6100 6200 50  0000 C CNN
+F 2 "" H 6100 6350 50  0001 C CNN
+F 3 "" H 6100 6350 50  0001 C CNN
+	1    6100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:VCC #PWR0104
+U 1 1 614FEE83
+P 6100 5850
+F 0 "#PWR0104" H 6100 5700 50  0001 C CNN
+F 1 "VCC" H 6100 6000 50  0000 C CNN
+F 2 "" H 6100 5850 50  0001 C CNN
+F 3 "" H 6100 5850 50  0001 C CNN
+	1    6100 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5850 6100 5950
+Wire Wire Line
+	6100 5950 6250 5950
+Wire Wire Line
+	6100 6350 6100 6250
+Wire Wire Line
+	6100 6250 6250 6250
+Wire Wire Line
+	3900 3500 4300 3500
+Connection ~ 4300 3500
+$Comp
+L project:R R11
+U 1 1 5EF9BA7F
+P 4350 5350
+F 0 "R11" V 4430 5350 50  0000 C CNN
+F 1 "100" V 4350 5350 50  0000 C CNN
+F 2 "footprints:R_0805_2012Metric" V 4280 5350 50  0001 C CNN
+F 3 "" H 4350 5350 50  0001 C CNN
+	1    4350 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_Photo_NPN Q3
+U 1 1 6151660A
+P 5350 2300
+F 0 "Q3" H 5550 2350 50  0000 L CNN
+F 1 "NPN2" H 5550 2250 50  0000 L CNN
+F 2 "footprints:PHOTOTRANS" H 5550 2400 50  0001 C CNN
+F 3 "" H 5350 2300 50  0001 C CNN
+	1    5350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR02
+U 1 1 61516610
+P 5450 2600
+F 0 "#PWR02" H 5450 2350 50  0001 C CNN
+F 1 "GND" H 5450 2450 50  0000 C CNN
+F 2 "" H 5450 2600 50  0001 C CNN
+F 3 "" H 5450 2600 50  0001 C CNN
+	1    5450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2600 5450 2500
+Text Label 5700 2050 0    60   ~ 0
+NPN2
+Wire Wire Line
+	5450 2050 5450 2100
+Wire Wire Line
+	5450 2050 5850 2050
+$Comp
+L project:LED D3
+U 1 1 61516B26
+P 4650 5700
+F 0 "D3" H 4650 5800 50  0000 C CNN
+F 1 "IR" H 4650 5600 50  0000 C CNN
+F 2 "footprints:IR_LED" H 4650 5700 50  0001 C CNN
+F 3 "" H 4650 5700 50  0001 C CNN
+	1    4650 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 5500 4650 5500
+Wire Wire Line
+	4650 5500 4650 5550
+Connection ~ 4350 5500
+Wire Wire Line
+	4650 5850 4650 5900
+Wire Wire Line
+	4650 5900 4350 5900
+Connection ~ 4350 5900
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 61751403
+P 6450 4550
+F 0 "J3" H 6530 4542 50  0000 L CNN
+F 1 "Conn_01x08" H 6530 4451 50  0000 L CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0810_1x08_P1.25mm_Horizontal" H 6450 4550 50  0001 C CNN
+F 3 "~" H 6450 4550 50  0001 C CNN
+	1    6450 4550
+	1    0    0    -1  
+$EndComp
+Text Label 6000 4350 0    60   ~ 0
+SDA
+Text Label 6000 4450 0    60   ~ 0
+SCL
+Text Label 6000 4850 0    60   ~ 0
+NPN3
+Text Label 6000 4950 0    60   ~ 0
+NPN4
+$Comp
+L project:VCC #PWR03
+U 1 1 6175914C
+P 4600 3400
+F 0 "#PWR03" H 4600 3250 50  0001 C CNN
+F 1 "VCC" H 4600 3550 50  0000 C CNN
+F 2 "" H 4600 3400 50  0001 C CNN
+F 3 "" H 4600 3400 50  0001 C CNN
+	1    4600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3500 4600 3400
+Wire Wire Line
+	4300 3500 4600 3500
+Wire Wire Line
+	3900 3900 3900 4150
+Wire Wire Line
+	4300 3900 4300 4150
+Text Label 3900 4150 1    60   ~ 0
+NPN1
+Text Label 4300 4150 1    60   ~ 0
+NPN2
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 6175B8B3
+P 4950 4550
+F 0 "J1" H 4868 5067 50  0000 C CNN
+F 1 "Conn_01x08" H 4868 4976 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0810_1x08_P1.25mm_Horizontal" H 4950 4550 50  0001 C CNN
+F 3 "~" H 4950 4550 50  0001 C CNN
+	1    4950 4550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4550 5950 4550
+Wire Wire Line
+	5150 4450 6250 4450
+Wire Wire Line
+	5150 4350 6250 4350
+Wire Wire Line
+	5150 4250 5950 4250
+Connection ~ 5950 4250
+Wire Wire Line
+	5150 4650 5650 4650
+Wire Wire Line
+	5650 4650 5650 4850
+Wire Wire Line
+	5650 4850 6250 4850
+Wire Wire Line
+	5150 4750 5550 4750
+Wire Wire Line
+	5550 4750 5550 4950
+Wire Wire Line
+	5550 4950 6250 4950
+Wire Wire Line
+	5150 4850 5450 4850
+Wire Wire Line
+	5450 4850 5450 5050
+Wire Wire Line
+	5450 5050 5750 5050
+Wire Wire Line
+	5750 5050 5750 4650
+Wire Wire Line
+	5750 4650 6250 4650
+Wire Wire Line
+	5150 4950 5350 4950
+Wire Wire Line
+	5350 4950 5350 5150
+Wire Wire Line
+	5350 5150 5850 5150
+Wire Wire Line
+	5850 5150 5850 4750
+Wire Wire Line
+	5850 4750 6250 4750
+Wire Wire Line
+	5950 4550 5950 5250
+Connection ~ 5950 4550
+Wire Wire Line
+	5950 4550 6250 4550
+$Comp
+L project:GND #PWR04
+U 1 1 6176AAB4
+P 5950 5250
+F 0 "#PWR04" H 5950 5000 50  0001 C CNN
+F 1 "GND" H 5950 5100 50  0000 C CNN
+F 2 "" H 5950 5250 50  0001 C CNN
+F 3 "" H 5950 5250 50  0001 C CNN
+	1    5950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 6176ED41
+P 6450 6050
+F 0 "J4" H 6530 6042 50  0000 L CNN
+F 1 "I2C" H 6530 5951 50  0000 L CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0410_1x04_P1.25mm_Horizontal" H 6450 6050 50  0001 C CNN
+F 3 "~" H 6450 6050 50  0001 C CNN
+	1    6450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 61770869
+P 5350 6050
+F 0 "J2" H 5268 6367 50  0000 C CNN
+F 1 "I2C" H 5268 6276 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0410_1x04_P1.25mm_Horizontal" H 5350 6050 50  0001 C CNN
+F 3 "~" H 5350 6050 50  0001 C CNN
+	1    5350 6050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5950 5550 5950
+Connection ~ 6100 5950
+Wire Wire Line
+	5550 6050 6250 6050
+Wire Wire Line
+	6250 6150 5550 6150
+Wire Wire Line
+	6100 6250 5550 6250
+Connection ~ 6100 6250
+Text Label 6100 6050 0    60   ~ 0
+SDA
+Text Label 6100 6150 0    60   ~ 0
+SCL
+Text Notes 2600 4000 0    60   ~ 0
+Pullups will allow\ndectection if\ngate connected.
+$EndSCHEMATC

@@ -12,4 +12,5 @@ BOM IR Gate Featherwing
 - 1 ea. Molex SL 171971-0003 vertical connector (optional, remote)
 
 
-microphone https://www.digikey.com/en/products/detail/pui-audio-inc/PNM-5054L-C3310-R/9673318
+RJ-12 https://www.digikey.com/en/products/detail/stewart-connector/SS-90000-003/14548962
+Cable: https://www.amazon.com/Cables-Go-09600-Straight-Modular/dp/B0002J1QV6
