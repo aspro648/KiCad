@@ -15,12 +15,13 @@ bool DISPLAY1 = false;
 bool DISPLAY2 = false;
 
 // finish line
-int g1_p1 = A2;  // exit
-int g1_p2 = A3;  // entrance
+int g1_p1 = A0;  // exit
+int g1_p2 = A1;  // entrance
 
 // staring line
-int g2_p1 = A0;  // exit
-int g2_p2 = A1;  // entrance
+int g2_p1 = A2;  // exit
+int g2_p2 = A3;  // entrance
+
 
 volatile unsigned long timer_start_us;
 volatile unsigned long timer_stop_us = 0;
@@ -44,8 +45,8 @@ int checkI2C(int address){
 
 void setup() {
 
-  pinMode(g1_p1, INPUT_PULLUP);  
-  pinMode(g1_p2, INPUT_PULLUP);
+  pinMode(g1_p1, INPUT);  
+  pinMode(g1_p2, INPUT);
 
   pinMode(g2_p1, INPUT);  
   pinMode(g2_p2, INPUT);
@@ -92,6 +93,18 @@ void setup() {
 void loop() {
   unsigned long duration_us;
   float duration_s;
+
+  while(1){  // if testing
+    Serial.print(analogRead(g1_p1));
+    Serial.print("  ");
+    Serial.print(analogRead(g1_p2)); 
+    Serial.print("  ");  
+    Serial.print(analogRead(g2_p1));
+    Serial.print("  ");
+    Serial.println(analogRead(g2_p2)); 
+    delay(100);
+  }
+
 
   if(timing){
     if ((micros() - timer_start_us) > 1E+6){
