@@ -14,19 +14,25 @@ Adafruit_7segment display2 = Adafruit_7segment();
 bool DISPLAY1 = false;
 bool DISPLAY2 = false;
 
-// finish line
+// gate 1
 int g1_p1 = A0;  // exit
 int g1_p2 = A1;  // entrance
 
-// staring line
+// gate 2
 int g2_p1 = A2;  // exit
 int g2_p2 = A3;  // entrance
 
 
-volatile unsigned long timer_start_us;
-volatile unsigned long timer_stop_us = 0;
-volatile bool timing = false;
+int LED1 = 13;
+int LED2 = 8;
 
+volatile unsigned long timer1_start_us;     // speed trap
+volatile unsigned long timer1_stop_us = 0; 
+volatile bool timing1 = false;
+
+volatile unsigned long timer1_start_ms;     // event timer
+volatile unsigned long timer1_stop_ms;
+volatile bool racing1 = false;
 
 
 void pciSetup(byte pin){
@@ -50,8 +56,13 @@ void setup() {
 
   pinMode(g2_p1, INPUT);  
   pinMode(g2_p2, INPUT);
+
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
   
   Serial.begin(9600);
+  Serial.println("test_timer_dual.ino");
+
 
   // check I2C connections
   byte error, address; //variable for error and I2C address
@@ -77,6 +88,12 @@ void setup() {
   Serial.println(analogRead(g2_p1));
   Serial.print("Gate 2 NPN2 = ");
   Serial.println(analogRead(g2_p2)); 
+
+  digitalWrite(LED1, HIGH);
+  digitalWrite(LED2, HIGH);
+  delay(1000);
+  digitalWrite(LED1, LOW);
+  digitalWrite(LED2, LOW);
   
   display1.println();
   display1.writeDisplay();
@@ -85,16 +102,18 @@ void setup() {
 
   pciSetup(g1_p1);
   pciSetup(g1_p2);
+  pciSetup(g2_p1);
+  pciSetup(g2_p2);
 
 }
 
 
 
 void loop() {
-  unsigned long duration_us;
-  float duration_s;
+  unsigned long duration1_us;  // speed trap time
+  unsigned long duration1_ms;  // track time
 
-  while(1){  // if testing
+  while(0){  // if testing
     Serial.print(analogRead(g1_p1));
     Serial.print("  ");
     Serial.print(analogRead(g1_p2)); 
@@ -104,29 +123,45 @@ void loop() {
     Serial.println(analogRead(g2_p2)); 
     delay(100);
   }
+  while(0){  // if testing
+    Serial.print(digitalRead(g1_p1));
+    Serial.print("  ");
+    Serial.print(digitalRead(g1_p2)); 
+    Serial.print("  ");  
+    Serial.print(digitalRead(g2_p1));
+    Serial.print("  ");
+    Serial.println(digitalRead(g2_p2)); 
+    delay(100);
+  }
+  
 
-
-  if(timing){
-    if ((micros() - timer_start_us) > 1E+6){
-      timing = false;
+  if(timing1){
+    if ((micros() - timer1_start_us) > 1E+6){
+      timing1 = false;
+      racing1 = false;
+      Serial.println("reset");
+    }   
+  }
+  if(racing1){
+    if ((millis() - timer1_start_ms) > 10000){
+      racing1 = false;
+      digitalWrite(LED1, LOW);
       Serial.println("reset");
     }
-    //float time_s = float((micros() - timer_start_us) / 1000000.0);
-    //display1.println(time_s);
-    //Serial.println(time_s);
-    //display1.writeDisplay();     
   }
-  if(timer_stop_us){
-    duration_us = timer_stop_us - timer_start_us;
-    float duration_s = duration_us / 1000000.0;
-    //display1.println(duration_us/1000.0);
-    //display1.writeDisplay(); 
-    Serial.print(duration_us);  
-    Serial.print("us,  scale mph = ");   
-    Serial.println(2911000.0 / duration_us);
-    //display2.println(2911000.0 / duration_us);
+  if(timer1_stop_us){
+    duration1_us = timer1_stop_us - timer1_start_us;
+    duration1_ms = timer1_stop_ms - timer1_start_ms;
+
+    Serial.print("gate 1 : ");
+    Serial.print(duration1_ms / 1000.0);  
+    Serial.print("s,  scale mph = ");   
+    Serial.println(2911000.0 / duration1_us);
+
     //display2.writeDisplay();  
-    timer_stop_us = 0;
+    timer1_stop_us = 0;
+    timer1_stop_ms = 0;
+    digitalWrite(LED1, LOW);
   }
   //Serial.print(analogRead(g1_p1));
   //Serial.print("  ");
@@ -140,7 +175,6 @@ void loop() {
 // interrupt routines
 ISR (PCINT1_vect) {  // handle pin change interrupt for A0 to A5 here
 
-
   /* entrace exit algo
   if (digitalRead(g1_p1) && digitalRead(g1_p2)){
     timer_stop_us = micros();
@@ -151,18 +185,23 @@ ISR (PCINT1_vect) {  // handle pin change interrupt for A0 to A5 here
     timing = true;    
   }
   */
-  
 
   // one way
-  if (timing && digitalRead(g1_p1)){ // exit
-    timer_stop_us = micros();
-    timing = false;
+  if (timing1 && digitalRead(g1_p1)){ // exit
+    timer1_stop_us = micros();
+    timer1_stop_ms = millis();
+    timing1 = false;
+    racing1 = false;
   }
-  else if(!timing && digitalRead(g1_p2)){ // entrance
-    timer_start_us = micros();
-    timing = true;
+  else if(!timing1 && digitalRead(g1_p2)){ // entrance
+    timer1_start_us = micros();
+    timing1 = true;
   }
   
-
-
+  if (!racing1 && digitalRead(g2_p2)){  //start race
+    timer1_start_ms = millis();
+    digitalWrite(LED1, HIGH);
+    racing1 = true;
+  }
+  
 }
