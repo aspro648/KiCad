@@ -68,16 +68,16 @@ void setup() {
   byte error, address; //variable for error and I2C address
   Wire.begin(); // Wire communication begin
 
-  if(!checkI2C(0x70)){
+  if(!checkI2C(0x72)){
     Serial.println("Display 1 dectected");
     DISPLAY1 = true;
-    display1.begin(0x70);
+    display1.begin(0x72);
     display1.setBrightness(4);   // 0 - 15
   }
-  if(!checkI2C(0x71)){
+  if(!checkI2C(0x73)){
     Serial.println("Display 2 dectected");
     DISPLAY2 = true;
-    display2.begin(0x71);
+    display2.begin(0x73);
     display2.setBrightness(4);   // 0 - 15
   }
 
