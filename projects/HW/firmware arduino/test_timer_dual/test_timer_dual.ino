@@ -90,6 +90,13 @@ void setup() {
   Serial.print("Gate 2 NPN2 = ");
   Serial.println(analogRead(g2_p2)); 
 
+  display1.println(9.765, 3);
+  display2.println(136.2);
+  display1.writeDisplay();
+  display2.writeDisplay();
+
+  while(1){};
+
   if (DISPLAY1){
     dashes();
   }
