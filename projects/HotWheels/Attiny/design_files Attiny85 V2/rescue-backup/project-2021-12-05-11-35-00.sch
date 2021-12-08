@@ -1,5 +1,39 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:project
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MCP73833
+LIBS:project-cache
+EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -14,7 +48,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L project:VBUS #PWR01
+L VBUS #PWR01
 U 1 1 5B3FDCD2
 P 1000 950
 F 0 "#PWR01" H 1000 800 50  0001 C CNN
@@ -25,7 +59,7 @@ F 3 "" H 1000 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L project:GND #PWR02
+L GND #PWR02
 U 1 1 5B3FDCF5
 P 2250 950
 F 0 "#PWR02" H 2250 700 50  0001 C CNN
@@ -36,7 +70,7 @@ F 3 "" H 2250 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:PWR_FLAG #FLG03
+L PWR_FLAG #FLG03
 U 1 1 5B3FDD3A
 P 1000 950
 F 0 "#FLG03" H 1000 1025 50  0001 C CNN
@@ -47,7 +81,7 @@ F 3 "" H 1000 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:PWR_FLAG #FLG04
+L PWR_FLAG #FLG04
 U 1 1 5B3FDD50
 P 1800 950
 F 0 "#FLG04" H 1800 1025 50  0001 C CNN
@@ -58,7 +92,7 @@ F 3 "" H 1800 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:PWR_FLAG #FLG05
+L PWR_FLAG #FLG05
 U 1 1 5B3FDD67
 P 2250 950
 F 0 "#FLG05" H 2250 1025 50  0001 C CNN
@@ -69,7 +103,7 @@ F 3 "" H 2250 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:VCC #PWR06
+L VCC #PWR06
 U 1 1 5B6E5416
 P 1800 950
 F 0 "#PWR06" H 1800 800 50  0001 C CNN
@@ -80,7 +114,7 @@ F 3 "" H 1800 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L project:PWR_FLAG #FLG07
+L PWR_FLAG #FLG07
 U 1 1 5B3FFE6E
 P 1400 950
 F 0 "#FLG07" H 1400 1025 50  0001 C CNN
@@ -91,7 +125,7 @@ F 3 "" H 1400 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:+BATT #PWR08
+L +BATT #PWR08
 U 1 1 5B6E4208
 P 1400 950
 F 0 "#PWR08" H 1400 800 50  0001 C CNN
@@ -102,7 +136,7 @@ F 3 "" H 1400 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L project:C C1
+L C C1
 U 1 1 5B77416F
 P 4250 4000
 F 0 "C1" H 4275 4100 50  0000 L CNN
@@ -113,7 +147,7 @@ F 3 "" H 4250 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:GND #PWR09
+L GND #PWR09
 U 1 1 5B7EE8E2
 P 4250 4750
 F 0 "#PWR09" H 4250 4500 50  0001 C CNN
@@ -124,7 +158,7 @@ F 3 "" H 4250 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:CONN_01X02 J1
+L CONN_01X02 J1
 U 1 1 5B7F07B5
 P 2650 3900
 F 0 "J1" H 2650 4050 50  0000 C CNN
@@ -135,7 +169,7 @@ F 3 "" H 2650 3900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L project-rescue:SW_SPDT SW1
+L SW_SPDT SW1
 U 1 1 5B9534D5
 P 3900 3750
 F 0 "SW1" H 3900 3920 50  0000 C CNN
@@ -146,7 +180,7 @@ F 3 "" H 3900 3750 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L project:R R1
+L R R1
 U 1 1 5EA72640
 P 8250 2750
 F 0 "R1" V 8330 2750 50  0000 C CNN
@@ -157,7 +191,7 @@ F 3 "" H 8250 2750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L project:R R2
+L R R2
 U 1 1 5EA726D2
 P 8250 2950
 F 0 "R2" V 8330 2950 50  0000 C CNN
@@ -168,7 +202,7 @@ F 3 "" H 8250 2950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L project:R R3
+L R R3
 U 1 1 5EA72763
 P 8250 3350
 F 0 "R3" V 8330 3350 50  0000 C CNN
@@ -179,7 +213,7 @@ F 3 "" H 8250 3350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L project:R R4
+L R R4
 U 1 1 5EA727AD
 P 8250 3550
 F 0 "R4" V 8330 3550 50  0000 C CNN
@@ -190,7 +224,7 @@ F 3 "" H 8250 3550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L project:GND #PWR010
+L GND #PWR010
 U 1 1 5EA808F7
 P 8550 5100
 F 0 "#PWR010" H 8550 4850 50  0001 C CNN
@@ -201,7 +235,7 @@ F 3 "" H 8550 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project-rescue:AVR-ISP-6 CON1
+L AVR-ISP-6 CON1
 U 1 1 5ED19E25
 P 5750 2100
 F 0 "CON1" H 5645 2340 50  0000 C CNN
@@ -212,7 +246,7 @@ F 3 "" H 5725 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:VCC #PWR011
+L VCC #PWR011
 U 1 1 5ED1A18F
 P 4250 3200
 F 0 "#PWR011" H 4250 3050 50  0001 C CNN
@@ -223,7 +257,7 @@ F 3 "" H 4250 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:VCC #PWR012
+L VCC #PWR012
 U 1 1 5ED1A2CE
 P 6150 1850
 F 0 "#PWR012" H 6150 1700 50  0001 C CNN
@@ -234,7 +268,7 @@ F 3 "" H 6150 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:GND #PWR013
+L GND #PWR013
 U 1 1 5ED1A3C3
 P 6150 2450
 F 0 "#PWR013" H 6150 2200 50  0001 C CNN
@@ -255,7 +289,7 @@ D2
 Text Label 7800 3350 0    60   ~ 0
 D4
 $Comp
-L project-rescue:ATTINY25-S IC1
+L ATTINY25-S IC1
 U 1 1 60332EE4
 P 5700 4000
 F 0 "IC1" H 4550 4400 50  0000 C CNN
@@ -295,11 +329,11 @@ Wire Wire Line
 Wire Wire Line
 	7750 3350 8100 3350
 Wire Wire Line
-	7750 2750 7950 2750
+	7750 2750 8100 2750
 Wire Wire Line
-	4250 3200 4250 3750
+	4250 3200 4250 3850
 Wire Wire Line
-	4250 4150 4250 4250
+	4250 4150 4250 4750
 Wire Wire Line
 	5850 2000 6150 2000
 Wire Wire Line
@@ -341,7 +375,7 @@ Connection ~ 7950 2750
 Wire Wire Line
 	7750 3550 8100 3550
 $Comp
-L project:R R5
+L R R5
 U 1 1 6033C136
 P 8250 3950
 F 0 "R5" V 8330 3950 50  0000 C CNN
@@ -352,7 +386,7 @@ F 3 "" H 8250 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L project:R R6
+L R R6
 U 1 1 6033C13C
 P 8250 4150
 F 0 "R6" V 8330 4150 50  0000 C CNN
@@ -363,7 +397,7 @@ F 3 "" H 8250 4150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L project:R R7
+L R R7
 U 1 1 6033C142
 P 8250 4550
 F 0 "R7" V 8330 4550 50  0000 C CNN
@@ -374,7 +408,7 @@ F 3 "" H 8250 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L project:R R8
+L R R8
 U 1 1 6033C148
 P 8250 4750
 F 0 "R8" V 8330 4750 50  0000 C CNN
@@ -403,9 +437,9 @@ Wire Wire Line
 Wire Wire Line
 	8400 3950 8700 3950
 Wire Wire Line
-	7750 4550 8000 4550
+	7750 4550 8100 4550
 Wire Wire Line
-	7750 3950 7950 3950
+	7750 3950 8100 3950
 Wire Wire Line
 	7950 3950 7950 4150
 Wire Wire Line
@@ -416,9 +450,9 @@ Wire Wire Line
 Text Label 7800 3550 0    60   ~ 0
 D3
 Wire Wire Line
-	8550 2850 8550 3450
+	8550 2850 8550 5100
 $Comp
-L project-rescue:CONN_01X03 J2
+L CONN_01X03 J2
 U 1 1 6034473D
 P 8900 2850
 F 0 "J2" H 8900 3050 50  0000 C CNN
@@ -429,7 +463,7 @@ F 3 "" H 8900 2850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project-rescue:CONN_01X03 J4
+L CONN_01X03 J4
 U 1 1 6034517D
 P 8900 3450
 F 0 "J4" H 8900 3650 50  0000 C CNN
@@ -440,7 +474,7 @@ F 3 "" H 8900 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project-rescue:CONN_01X03 J6
+L CONN_01X03 J6
 U 1 1 603453CB
 P 8900 4050
 F 0 "J6" H 8900 4250 50  0000 C CNN
@@ -451,7 +485,7 @@ F 3 "" H 8900 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project-rescue:CONN_01X03 J8
+L CONN_01X03 J8
 U 1 1 60345696
 P 8900 4650
 F 0 "J8" H 8900 4850 50  0000 C CNN
@@ -464,11 +498,11 @@ $EndComp
 Wire Wire Line
 	3200 3950 2850 3950
 Wire Wire Line
-	3200 3250 3200 3600
+	3200 3250 3200 4700
 Wire Wire Line
 	3200 4700 4250 4700
 $Comp
-L project:CONN_01X02 J3
+L CONN_01X02 J3
 U 1 1 60347008
 P 2650 3550
 F 0 "J3" H 2650 3700 50  0000 C CNN
@@ -497,7 +531,7 @@ D3/A3
 Text Notes 9150 4050 0    60   ~ 0
 D0
 $Comp
-L project:CONN_01X02 J5
+L CONN_01X02 J5
 U 1 1 6041C3A6
 P 2650 3200
 F 0 "J5" H 2650 3350 50  0000 C CNN
@@ -514,9 +548,9 @@ Wire Wire Line
 	3350 3150 2850 3150
 Connection ~ 3350 3500
 Wire Wire Line
-	4100 3750 4250 3750
+	4100 3750 4350 3750
 $Comp
-L project-rescue:F_Small F1
+L F_Small F1
 U 1 1 604282C7
 P 3350 3600
 F 0 "F1" H 3310 3660 50  0000 L CNN
@@ -527,7 +561,7 @@ F 3 "" H 3350 3600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L project-rescue:F_Small F2
+L F_Small F2
 U 1 1 6042844A
 P 3000 3850
 F 0 "F2" H 2960 3910 50  0000 L CNN
@@ -542,36 +576,11 @@ Wire Wire Line
 Wire Wire Line
 	3350 3700 3350 3850
 Wire Wire Line
-	3100 3850 3350 3850
+	3100 3850 3700 3850
 Wire Wire Line
 	8000 4750 8000 4550
 Connection ~ 8000 4550
+Connection ~ 8000 4750
 Text Notes 9150 4650 0    60   ~ 0
 D1
-Wire Wire Line
-	8550 3450 8550 4050
-Wire Wire Line
-	4250 3750 4250 3850
-Wire Wire Line
-	4250 3750 4350 3750
-Wire Wire Line
-	4250 4250 4250 4700
-Wire Wire Line
-	4250 4700 4250 4750
-Wire Wire Line
-	7950 2750 8100 2750
-Wire Wire Line
-	8550 4050 8550 4650
-Wire Wire Line
-	8550 4650 8550 5100
-Wire Wire Line
-	7950 3950 8100 3950
-Wire Wire Line
-	3350 3850 3700 3850
-Wire Wire Line
-	3200 3950 3200 4700
-Wire Wire Line
-	3200 3600 3200 3950
-Wire Wire Line
-	8000 4550 8100 4550
 $EndSCHEMATC
