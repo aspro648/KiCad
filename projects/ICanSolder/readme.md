@@ -16,7 +16,7 @@ Bill Of Materials
 - 1 ea., D1 5mm RGB Multicolor Slow Flashing, http://a.co/d/8MpfUT4
 - 1 ea., BT1 CR2032 Batt retainer, Linx BAT-HLD-001-THM, https://www.digikey.com/product-detail/en/BAT-HLD-001-THM/BAT-HLD-001-THM-ND/3044009
 - 1 ea., Tie Tack & clutch, https://www.dhgate.com/product/10mm-post-nails-post-gold-silver-brass-tie/391539398.html
-- 1 ea., CR2032 Battery, Panasonic CR2032, Digikey P189-ND (requires ground shipping, or buy locally).
+- 1 ea., CR2032 Battery, https://www.amazon.com/dp/B078GC5K81 or similar
 
 
 Design Files
