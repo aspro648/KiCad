@@ -1,4 +1,4 @@
-update=Mon 22 Feb 2021 07:39:58 PM PST
+update=3/20/2022 10:21:00 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -38,39 +38,3 @@ LabSize=60
 [eeschema]
 version=1
 LibDir=
-[eeschema/libraries]
-LibName1=project-rescue
-LibName2=lib_sch/project
-LibName3=power
-LibName4=device
-LibName5=switches
-LibName6=relays
-LibName7=motors
-LibName8=transistors
-LibName9=conn
-LibName10=linear
-LibName11=regul
-LibName12=74xx
-LibName13=cmos4000
-LibName14=adc-dac
-LibName15=memory
-LibName16=xilinx
-LibName17=microcontrollers
-LibName18=dsp
-LibName19=microchip
-LibName20=analog_switches
-LibName21=motorola
-LibName22=texas
-LibName23=intel
-LibName24=audio
-LibName25=interface
-LibName26=digital-audio
-LibName27=philips
-LibName28=display
-LibName29=cypress
-LibName30=siliconi
-LibName31=opto
-LibName32=atmel
-LibName33=contrib
-LibName34=valves
-LibName35=lib_sch/MCP73833

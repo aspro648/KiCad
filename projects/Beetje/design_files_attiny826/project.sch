@@ -1,0 +1,1053 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Beetje 32U4 Board"
+Date "2018-09-28"
+Rev "0.4"
+Comp "www.MakersBox.us"
+Comment1 "648.ken@gmail.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L project:ATMEGA32U4-AU U1
+U 1 1 5B3FD92A
+P 6150 4350
+F 0 "U1" H 5200 6050 50  0000 C CNN
+F 1 "ATMEGA32U4-AU" H 6850 2850 50  0000 C CNN
+F 2 "beetje_footprints:TQFP-44_10x10mm_Pitch0.8mm" H 6150 4350 50  0001 C CIN
+F 3 "" H 7250 5450 50  0001 C CNN
+	1    6150 4350
+	1    0    0    -1  
+$EndComp
+Text Label 7400 2900 0    60   ~ 0
+SCK
+Text Label 7350 3000 0    60   ~ 0
+MOSI
+Text Label 7350 3100 0    60   ~ 0
+MISO
+Text Label 7450 3200 0    60   ~ 0
+D8
+Text Label 7450 3300 0    60   ~ 0
+D9
+Text Label 7400 3400 0    60   ~ 0
+D10
+Text Label 7400 3500 0    60   ~ 0
+D11
+Text Label 7450 3700 0    60   ~ 0
+D5
+Text Label 7400 3800 0    60   ~ 0
+D13
+Text Label 7400 4000 0    60   ~ 0
+SCL
+Text Label 7400 4100 0    60   ~ 0
+SDA
+Text Label 7450 4200 0    60   ~ 0
+D0
+Text Label 7450 4300 0    60   ~ 0
+D1
+Text Label 7450 4400 0    60   ~ 0
+D4
+Text Label 7400 4600 0    60   ~ 0
+D12
+Text Label 7450 4700 0    60   ~ 0
+D6
+Text Label 7450 5000 0    60   ~ 0
+D7
+Text Label 7450 5200 0    60   ~ 0
+A5
+Text Label 7450 5300 0    60   ~ 0
+A4
+Text Label 7450 5400 0    60   ~ 0
+A3
+Text Label 7450 5500 0    60   ~ 0
+A2
+Text Label 7450 5600 0    60   ~ 0
+A1
+Text Label 7450 5700 0    60   ~ 0
+A0
+$Comp
+L project:VBUS #PWR01
+U 1 1 5B3FDCD2
+P 1250 1000
+F 0 "#PWR01" H 1250 850 50  0001 C CNN
+F 1 "VBUS" H 1250 1150 50  0000 C CNN
+F 2 "" H 1250 1000 50  0001 C CNN
+F 3 "" H 1250 1000 50  0001 C CNN
+	1    1250 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:GND #PWR02
+U 1 1 5B3FDCF5
+P 2500 1000
+F 0 "#PWR02" H 2500 750 50  0001 C CNN
+F 1 "GND" H 2500 850 50  0000 C CNN
+F 2 "" H 2500 1000 50  0001 C CNN
+F 3 "" H 2500 1000 50  0001 C CNN
+	1    2500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG03
+U 1 1 5B3FDD3A
+P 1250 1000
+F 0 "#FLG03" H 1250 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1250 1150 50  0000 C CNN
+F 2 "" H 1250 1000 50  0001 C CNN
+F 3 "" H 1250 1000 50  0001 C CNN
+	1    1250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG04
+U 1 1 5B3FDD50
+P 2050 1000
+F 0 "#FLG04" H 2050 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 2050 1150 50  0000 C CNN
+F 2 "" H 2050 1000 50  0001 C CNN
+F 3 "" H 2050 1000 50  0001 C CNN
+	1    2050 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG05
+U 1 1 5B3FDD67
+P 2500 1000
+F 0 "#FLG05" H 2500 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 2500 1150 50  0000 C CNN
+F 2 "" H 2500 1000 50  0001 C CNN
+F 3 "" H 2500 1000 50  0001 C CNN
+	1    2500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR06
+U 1 1 5B3FDE3A
+P 6050 5950
+F 0 "#PWR06" H 6050 5700 50  0001 C CNN
+F 1 "GND" H 6050 5800 50  0000 C CNN
+F 2 "" H 6050 5950 50  0001 C CNN
+F 3 "" H 6050 5950 50  0001 C CNN
+	1    6050 5950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5700 2550
+$Comp
+L project:C C3
+U 1 1 5B3FDF75
+P 4850 4650
+F 0 "C3" H 4875 4750 50  0000 L CNN
+F 1 "10uF" H 4875 4550 50  0000 L CNN
+F 2 "beetje_footprints:C_0805" H 4888 4500 50  0001 C CNN
+F 3 "" H 4850 4650 50  0001 C CNN
+	1    4850 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR07
+U 1 1 5B3FDF98
+P 4850 4800
+F 0 "#PWR07" H 4850 4550 50  0001 C CNN
+F 1 "GND" H 4850 4650 50  0000 C CNN
+F 2 "" H 4850 4800 50  0001 C CNN
+F 3 "" H 4850 4800 50  0001 C CNN
+	1    4850 4800
+	1    0    0    -1  
+$EndComp
+Text Label 4750 2800 0    60   ~ 0
+~RESET
+Text Label 4800 5200 0    60   ~ 0
+AREF
+$Comp
+L project:GND #PWR08
+U 1 1 5B3FE24E
+P 4450 3300
+F 0 "#PWR08" H 4450 3050 50  0001 C CNN
+F 1 "GND" H 4450 3150 50  0000 C CNN
+F 2 "" H 4450 3300 50  0001 C CNN
+F 3 "" H 4450 3300 50  0001 C CNN
+	1    4450 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L project:VBUS #PWR09
+U 1 1 5B3FE2CD
+P 4850 3950
+F 0 "#PWR09" H 4850 3800 50  0001 C CNN
+F 1 "VBUS" H 4850 4100 50  0000 C CNN
+F 2 "" H 4850 3950 50  0001 C CNN
+F 3 "" H 4850 3950 50  0001 C CNN
+	1    4850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:USB_OTG X1
+U 1 1 5B3FE368
+P 3950 4150
+F 0 "X1" H 3750 4600 50  0000 L CNN
+F 1 "USB_OTG" H 3750 4500 50  0000 L CNN
+F 2 "beetje_footprints:USB_Micro-B_Molex-105017-0001" H 4100 4100 50  0001 C CNN
+F 3 "" H 4100 4100 50  0001 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:R R6
+U 1 1 5B3FE405
+P 4550 4150
+F 0 "R6" V 4500 4000 50  0000 C CNN
+F 1 "22" V 4550 4150 50  0000 C CNN
+F 2 "beetje_footprints:R_0603" V 4480 4150 50  0001 C CNN
+F 3 "" H 4550 4150 50  0001 C CNN
+	1    4550 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L project:R R7
+U 1 1 5B3FE482
+P 4550 4250
+F 0 "R7" V 4600 4100 50  0000 C CNN
+F 1 "22" V 4550 4250 50  0000 C CNN
+F 2 "beetje_footprints:R_0603" V 4480 4250 50  0001 C CNN
+F 3 "" H 4550 4250 50  0001 C CNN
+	1    4550 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L project:GND #PWR010
+U 1 1 5B3FE6F5
+P 3950 4650
+F 0 "#PWR010" H 3950 4400 50  0001 C CNN
+F 1 "GND" H 3950 4500 50  0000 C CNN
+F 2 "" H 3950 4650 50  0001 C CNN
+F 3 "" H 3950 4650 50  0001 C CNN
+	1    3950 4650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4250 4350
+$Comp
+L project:MIC5219-2.5 U2
+U 1 1 5B3FF118
+P 1750 1950
+F 0 "U2" H 1600 2175 50  0000 C CNN
+F 1 "MIC5225-3.3" H 1400 1600 50  0000 L CNN
+F 2 "beetje_footprints:SOT-23-5" H 1750 2275 50  0001 C CNN
+F 3 "" H 1750 1950 50  0001 C CNN
+	1    1750 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR011
+U 1 1 5B3FF1A9
+P 1750 2450
+F 0 "#PWR011" H 1750 2200 50  0001 C CNN
+F 1 "GND" H 1750 2300 50  0000 C CNN
+F 2 "" H 1750 2450 50  0001 C CNN
+F 3 "" H 1750 2450 50  0001 C CNN
+	1    1750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:R R8
+U 1 1 5B3FF1C8
+P 1250 1950
+F 0 "R8" V 1330 1950 50  0000 C CNN
+F 1 "100K" V 1250 1950 50  0000 C CNN
+F 2 "beetje_footprints:R_0603" V 1180 1950 50  0001 C CNN
+F 3 "" H 1250 1950 50  0001 C CNN
+	1    1250 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L project:C C1
+U 1 1 5B3FF285
+P 1000 2300
+F 0 "C1" H 1025 2400 50  0000 L CNN
+F 1 "10uF" H 1025 2200 50  0000 L CNN
+F 2 "beetje_footprints:C_0805" H 1038 2150 50  0001 C CNN
+F 3 "" H 1000 2300 50  0001 C CNN
+	1    1000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:C C2
+U 1 1 5B3FF2D3
+P 2150 2300
+F 0 "C2" H 2175 2400 50  0000 L CNN
+F 1 "10uF" H 2175 2200 50  0000 L CNN
+F 2 "beetje_footprints:C_0805" H 2188 2150 50  0001 C CNN
+F 3 "" H 2150 2300 50  0001 C CNN
+	1    2150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:C C4
+U 1 1 5B3FF331
+P 2450 2300
+F 0 "C4" H 2475 2400 50  0000 L CNN
+F 1 "1uF" H 2475 2200 50  0000 L CNN
+F 2 "beetje_footprints:C_0603" H 2488 2150 50  0001 C CNN
+F 3 "" H 2450 2300 50  0001 C CNN
+	1    2450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:D_Schottky D5
+U 1 1 5B3FF7CC
+P 1350 1650
+F 0 "D5" H 1350 1750 50  0000 C CNN
+F 1 "MBR120" H 1350 1550 50  0000 C CNN
+F 2 "beetje_footprints:D_SOD-123F" H 1350 1650 50  0001 C CNN
+F 3 "" H 1350 1650 50  0001 C CNN
+	1    1350 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:D_Schottky D4
+U 1 1 5B3FF83D
+P 1000 1650
+F 0 "D4" H 1000 1750 50  0000 C CNN
+F 1 "MBR120" H 1000 1550 50  0000 C CNN
+F 2 "beetje_footprints:D_SOD-123F" H 1000 1650 50  0001 C CNN
+F 3 "" H 1000 1650 50  0001 C CNN
+	1    1000 1650
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2050 1950
+$Comp
+L project:VBUS #PWR012
+U 1 1 5B3FFD91
+P 1350 1450
+F 0 "#PWR012" H 1350 1300 50  0001 C CNN
+F 1 "VBUS" H 1350 1600 50  0000 C CNN
+F 2 "" H 1350 1450 50  0001 C CNN
+F 3 "" H 1350 1450 50  0001 C CNN
+	1    1350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG013
+U 1 1 5B3FFE6E
+P 1650 1000
+F 0 "#FLG013" H 1650 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1650 1150 50  0000 C CNN
+F 2 "" H 1650 1000 50  0001 C CNN
+F 3 "" H 1650 1000 50  0001 C CNN
+	1    1650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:+BATT #PWR014
+U 1 1 5B4001C8
+P 1650 1000
+F 0 "#PWR014" H 1650 850 50  0001 C CNN
+F 1 "+BATT" H 1650 1140 50  0000 C CNN
+F 2 "" H 1650 1000 50  0001 C CNN
+F 3 "" H 1650 1000 50  0001 C CNN
+	1    1650 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:+BATT #PWR015
+U 1 1 5B400243
+P 1000 1500
+F 0 "#PWR015" H 1000 1350 50  0001 C CNN
+F 1 "+BATT" H 1000 1640 50  0000 C CNN
+F 2 "" H 1000 1500 50  0001 C CNN
+F 3 "" H 1000 1500 50  0001 C CNN
+	1    1000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:SW_Push SW1
+U 1 1 5B4008ED
+P 4500 2800
+F 0 "SW1" H 4550 2900 50  0000 L CNN
+F 1 "RST" H 4500 2740 50  0000 C CNN
+F 2 "beetje_footprints:EVQ-P7A" H 4500 3000 50  0001 C CNN
+F 3 "" H 4500 3000 50  0001 C CNN
+	1    4500 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR016
+U 1 1 5B40099C
+P 4250 2850
+F 0 "#PWR016" H 4250 2600 50  0001 C CNN
+F 1 "GND" H 4250 2700 50  0000 C CNN
+F 2 "" H 4250 2850 50  0001 C CNN
+F 3 "" H 4250 2850 50  0001 C CNN
+	1    4250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:+BATT #PWR017
+U 1 1 5B402C38
+P 1200 7550
+F 0 "#PWR017" H 1200 7400 50  0001 C CNN
+F 1 "+BATT" V 1200 7800 50  0000 C CNN
+F 2 "" H 1200 7550 50  0001 C CNN
+F 3 "" H 1200 7550 50  0001 C CNN
+	1    1200 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:VBUS #PWR018
+U 1 1 5B402FA5
+P 1200 7650
+F 0 "#PWR018" H 1200 7500 50  0001 C CNN
+F 1 "VBUS" V 1200 7850 50  0000 C CNN
+F 2 "" H 1200 7650 50  0001 C CNN
+F 3 "" H 1200 7650 50  0001 C CNN
+	1    1200 7650
+	0    -1   -1   0   
+$EndComp
+Text Label 1050 7150 0    60   ~ 0
+D10
+Text Label 1050 7050 0    60   ~ 0
+D9
+Text Label 2450 7150 0    60   ~ 0
+SCL
+Text Label 2450 7250 0    60   ~ 0
+SDA
+Text Label 1050 6950 0    60   ~ 0
+~RESET
+Text Label 2500 6950 0    60   ~ 0
+A0
+Text Label 2500 7050 0    60   ~ 0
+D6
+Text Label 1050 7450 0    60   ~ 0
+SCK
+Text Label 1050 7350 0    60   ~ 0
+MOSI
+Text Label 1050 7250 0    60   ~ 0
+MISO
+$Comp
+L project:R R3
+U 1 1 5B406515
+P 8550 4750
+F 0 "R3" V 8630 4750 50  0000 C CNN
+F 1 "1K" V 8550 4750 50  0000 C CNN
+F 2 "beetje_footprints:R_0603" V 8480 4750 50  0001 C CNN
+F 3 "" H 8550 4750 50  0001 C CNN
+	1    8550 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:LED D3
+U 1 1 5B40657A
+P 8550 5150
+F 0 "D3" H 8550 5250 50  0000 C CNN
+F 1 "D13" H 8550 5050 50  0000 C CNN
+F 2 "beetje_footprints:LED_0603" H 8550 5150 50  0001 C CNN
+F 3 "" H 8550 5150 50  0001 C CNN
+	1    8550 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:GND #PWR019
+U 1 1 5B40667D
+P 8550 5450
+F 0 "#PWR019" H 8550 5200 50  0001 C CNN
+F 1 "GND" H 8550 5300 50  0000 C CNN
+F 2 "" H 8550 5450 50  0001 C CNN
+F 3 "" H 8550 5450 50  0001 C CNN
+	1    8550 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:Resonator Y1
+U 1 1 5B40C204
+P 4700 3300
+F 0 "Y1" H 4700 3525 50  0000 C CNN
+F 1 "8 Mhz" H 4700 3450 50  0000 C CNN
+F 2 "beetje_footprints:Resonator_SMD_CTSC_1.3mmx3.2mm" H 4675 3300 50  0001 C CNN
+F 3 "" H 4675 3300 50  0001 C CNN
+	1    4700 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L project:GND #PWR020
+U 1 1 5B41D2F5
+P 2400 7450
+F 0 "#PWR020" H 2400 7200 50  0001 C CNN
+F 1 "GND" V 2400 7250 50  0000 C CNN
+F 2 "" H 2400 7450 50  0001 C CNN
+F 3 "" H 2400 7450 50  0001 C CNN
+	1    2400 7450
+	0    -1   -1   0   
+$EndComp
+Text Label 7300 2800 0    60   ~ 0
+RXLED
+Text Label 7300 4500 0    60   ~ 0
+TXLED
+Text Label 750  1950 0    60   ~ 0
+VHI
+$Comp
+L project:R R2
+U 1 1 5B44E5C9
+P 9150 5150
+F 0 "R2" V 9230 5150 50  0000 C CNN
+F 1 "1K" V 9150 5150 50  0000 C CNN
+F 2 "beetje_footprints:R_0603" V 9080 5150 50  0001 C CNN
+F 3 "" H 9150 5150 50  0001 C CNN
+	1    9150 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:LED D2
+U 1 1 5B44E5CF
+P 9150 4800
+F 0 "D2" H 9150 4900 50  0000 C CNN
+F 1 "RX" H 9150 4700 50  0000 C CNN
+F 2 "beetje_footprints:LED_0603" H 9150 4800 50  0001 C CNN
+F 3 "" H 9150 4800 50  0001 C CNN
+	1    9150 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:R R1
+U 1 1 5B44E637
+P 8850 5150
+F 0 "R1" V 8930 5150 50  0000 C CNN
+F 1 "1K" V 8850 5150 50  0000 C CNN
+F 2 "beetje_footprints:R_0603" V 8780 5150 50  0001 C CNN
+F 3 "" H 8850 5150 50  0001 C CNN
+	1    8850 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:LED D1
+U 1 1 5B44E63D
+P 8850 4800
+F 0 "D1" H 8850 4900 50  0000 C CNN
+F 1 "TX" H 8850 4700 50  0000 C CNN
+F 2 "beetje_footprints:LED_0603" H 8850 4800 50  0001 C CNN
+F 3 "" H 8850 4800 50  0001 C CNN
+	1    8850 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:Conn_01x08 J4
+U 1 1 5B6D51CD
+P 1450 7250
+F 0 "J4" H 1450 7650 50  0000 C CNN
+F 1 "Beetje Top" H 1300 6750 50  0000 C CNN
+F 2 "beetje_footprints:Beetje_Top" H 1450 7250 50  0001 C CNN
+F 3 "" H 1450 7250 50  0001 C CNN
+	1    1450 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:Conn_01x06 J2
+U 1 1 5B6D5224
+P 2100 7150
+F 0 "J2" H 2100 7450 50  0000 C CNN
+F 1 "Beetje Bottom" H 1850 6750 50  0000 C CNN
+F 2 "beetje_footprints:Beetje_Bottom" H 2100 7150 50  0001 C CNN
+F 3 "" H 2100 7150 50  0001 C CNN
+	1    2100 7150
+	-1   0    0    -1  
+$EndComp
+Text Label 4850 4150 0    60   ~ 0
+D+
+Text Label 4850 4250 0    60   ~ 0
+D-
+$Comp
+L project:R JMP1
+U 1 1 5B6E3800
+P 1750 1500
+F 0 "JMP1" V 1830 1500 50  0000 C CNN
+F 1 "5V" V 1750 1500 50  0000 C CNN
+F 2 "beetje_footprints:Jumper" V 1680 1500 50  0001 C CNN
+F 3 "" H 1750 1500 50  0001 C CNN
+	1    1750 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L project:Polyfuse F1
+U 1 1 5B6E44FA
+P 4500 3950
+F 0 "F1" V 4400 3850 50  0000 C CNN
+F 1 "Polyfuse" V 4550 4100 50  0000 C CNN
+F 2 "beetje_footprints:R_1206" H 4550 3750 50  0001 L CNN
+F 3 "" H 4500 3950 50  0001 C CNN
+	1    4500 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L project:VCC #PWR021
+U 1 1 5B6E5416
+P 2050 1000
+F 0 "#PWR021" H 2050 850 50  0001 C CNN
+F 1 "VCC" H 2050 1150 50  0000 C CNN
+F 2 "" H 2050 1000 50  0001 C CNN
+F 3 "" H 2050 1000 50  0001 C CNN
+	1    2050 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:VCC #PWR022
+U 1 1 5B6E54FC
+P 2450 1850
+F 0 "#PWR022" H 2450 1700 50  0001 C CNN
+F 1 "VCC" H 2450 2000 50  0000 C CNN
+F 2 "" H 2450 1850 50  0001 C CNN
+F 3 "" H 2450 1850 50  0001 C CNN
+	1    2450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:VCC #PWR023
+U 1 1 5B6E5E4F
+P 6150 2550
+F 0 "#PWR023" H 6150 2400 50  0001 C CNN
+F 1 "VCC" H 6150 2700 50  0000 C CNN
+F 2 "" H 6150 2550 50  0001 C CNN
+F 3 "" H 6150 2550 50  0001 C CNN
+	1    6150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:VCC #PWR024
+U 1 1 5B6E6F0E
+P 4850 4400
+F 0 "#PWR024" H 4850 4250 50  0001 C CNN
+F 1 "VCC" H 4850 4550 50  0000 C CNN
+F 2 "" H 4850 4400 50  0001 C CNN
+F 3 "" H 4850 4400 50  0001 C CNN
+	1    4850 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:VCC #PWR025
+U 1 1 5B6E6F7E
+P 7550 4900
+F 0 "#PWR025" H 7550 4750 50  0001 C CNN
+F 1 "VCC" H 7550 5050 50  0000 C CNN
+F 2 "" H 7550 4900 50  0001 C CNN
+F 3 "" H 7550 4900 50  0001 C CNN
+	1    7550 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L project:VCC #PWR026
+U 1 1 5B6E81BF
+P 2400 7350
+F 0 "#PWR026" H 2400 7200 50  0001 C CNN
+F 1 "VCC" V 2400 7550 50  0000 C CNN
+F 2 "" H 2400 7350 50  0001 C CNN
+F 3 "" H 2400 7350 50  0001 C CNN
+	1    2400 7350
+	0    1    1    0   
+$EndComp
+NoConn ~ 7550 3200
+NoConn ~ 7550 3500
+NoConn ~ 7550 3700
+NoConn ~ 7550 4200
+NoConn ~ 7550 4300
+NoConn ~ 7550 4600
+NoConn ~ 7550 5000
+NoConn ~ 7550 5200
+NoConn ~ 7550 5300
+NoConn ~ 7550 5400
+NoConn ~ 7550 5500
+NoConn ~ 4800 5200
+NoConn ~ 4500 3950
+$Comp
+L project:VCC #PWR027
+U 1 1 5B6DE626
+P 9000 4600
+F 0 "#PWR027" H 9000 4450 50  0001 C CNN
+F 1 "VCC" H 9000 4750 50  0000 C CNN
+F 2 "" H 9000 4600 50  0001 C CNN
+F 3 "" H 9000 4600 50  0001 C CNN
+	1    9000 4600
+	1    0    0    -1  
+$EndComp
+Text Notes 2900 1200 0    60   ~ 0
+3.3V:\nU2 = MIC5225-3.3\nY1 = 8 Mhz\nJMP1 = Open
+Text Notes 2900 1700 0    60   ~ 0
+5V:\nU2 = MIC5225-5\nY1 = 16 Mhz\nJMP1 = Short
+Text Notes 700  6800 0    60   ~ 0
+Beetje Footprint Rev 0.3
+$Comp
+L project:SW_Push SW2
+U 1 1 5B976DB7
+P 8150 4900
+F 0 "SW2" H 8200 5000 50  0000 L CNN
+F 1 "D4" H 8150 4840 50  0000 C CNN
+F 2 "beetje_footprints:EVQ-P7A" H 8150 5100 50  0001 C CNN
+F 3 "" H 8150 5100 50  0001 C CNN
+	1    8150 4900
+	0    1    1    0   
+$EndComp
+NoConn ~ 7550 5600
+$Comp
+L project:VCC #PWR028
+U 1 1 5B6EA804
+P 8600 1600
+F 0 "#PWR028" H 8600 1450 50  0001 C CNN
+F 1 "VCC" H 8600 1750 50  0000 C CNN
+F 2 "" H 8600 1600 50  0001 C CNN
+F 3 "" H 8600 1600 50  0001 C CNN
+	1    8600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR029
+U 1 1 5B5296C8
+P 8600 1800
+F 0 "#PWR029" H 8600 1550 50  0001 C CNN
+F 1 "GND" H 8600 1650 50  0000 C CNN
+F 2 "" H 8600 1800 50  0001 C CNN
+F 3 "" H 8600 1800 50  0001 C CNN
+	1    8600 1800
+	1    0    0    -1  
+$EndComp
+Text Label 8400 1700 0    60   ~ 0
+MOSI
+Text Label 7350 1800 0    60   ~ 0
+~RESET
+Text Label 7350 1700 0    60   ~ 0
+SCK
+Text Label 7350 1600 0    60   ~ 0
+MISO
+$Comp
+L project:AVR-ISP-6 CON1
+U 1 1 5B52901B
+P 7950 1700
+F 0 "CON1" H 7845 1940 50  0000 C CNN
+F 1 "AVR-ISP-6" H 7685 1470 50  0000 L BNN
+F 2 "beetje_footprints:Pin_Header_Straight_2x03_Pitch2.54mm" V 7430 1740 50  0001 C CNN
+F 3 "" H 7925 1700 50  0001 C CNN
+	1    7950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:R R4
+U 1 1 5B988358
+P 8100 3500
+F 0 "R4" V 8180 3500 50  0000 C CNN
+F 1 "4K7" V 8100 3500 50  0000 C CNN
+F 2 "beetje_footprints:R_0603" V 8030 3500 50  0001 C CNN
+F 3 "" H 8100 3500 50  0001 C CNN
+	1    8100 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:R R5
+U 1 1 5B988442
+P 8300 3500
+F 0 "R5" V 8380 3500 50  0000 C CNN
+F 1 "4K7" V 8300 3500 50  0000 C CNN
+F 2 "beetje_footprints:R_0603" V 8230 3500 50  0001 C CNN
+F 3 "" H 8300 3500 50  0001 C CNN
+	1    8300 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:VCC #PWR030
+U 1 1 5B9884AE
+P 8200 3250
+F 0 "#PWR030" H 8200 3100 50  0001 C CNN
+F 1 "VCC" H 8200 3400 50  0000 C CNN
+F 2 "" H 8200 3250 50  0001 C CNN
+F 3 "" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2800 9500 2800
+Wire Wire Line
+	7250 2900 7550 2900
+Wire Wire Line
+	7250 3000 7550 3000
+Wire Wire Line
+	7250 3100 7550 3100
+Wire Wire Line
+	7250 3200 7550 3200
+Wire Wire Line
+	7250 3300 7550 3300
+Wire Wire Line
+	7250 3400 7550 3400
+Wire Wire Line
+	7250 3500 7550 3500
+Wire Wire Line
+	7250 3700 7550 3700
+Wire Wire Line
+	7250 4000 8100 4000
+Wire Wire Line
+	7250 4100 8300 4100
+Wire Wire Line
+	7250 4200 7550 4200
+Wire Wire Line
+	7250 4300 7550 4300
+Wire Wire Line
+	7250 4400 8150 4400
+Wire Wire Line
+	7250 4600 7550 4600
+Wire Wire Line
+	7250 4700 7550 4700
+Wire Wire Line
+	7250 4900 7550 4900
+Wire Wire Line
+	7250 5000 7550 5000
+Wire Wire Line
+	7250 5200 7550 5200
+Wire Wire Line
+	7250 5300 7550 5300
+Wire Wire Line
+	7250 5400 7550 5400
+Wire Wire Line
+	7250 5500 7550 5500
+Wire Wire Line
+	7250 5600 7550 5600
+Wire Wire Line
+	7250 5700 7550 5700
+Wire Wire Line
+	5750 5950 6000 5950
+Connection ~ 6200 5950
+Connection ~ 6100 5950
+Connection ~ 6000 5950
+Connection ~ 6050 5950
+Wire Wire Line
+	5950 2550 6050 2550
+Connection ~ 6300 2550
+Connection ~ 6050 2550
+Connection ~ 6150 2550
+Wire Wire Line
+	4700 2800 5000 2800
+Wire Wire Line
+	5000 4400 4850 4400
+Wire Wire Line
+	4850 4400 4850 4500
+Connection ~ 4850 4400
+Wire Wire Line
+	5000 5200 4800 5200
+Wire Wire Line
+	4850 4000 5000 4000
+Wire Wire Line
+	4850 4000 4850 3950
+Wire Wire Line
+	5000 4150 4700 4150
+Wire Wire Line
+	5000 4250 4700 4250
+Wire Wire Line
+	1000 2450 1750 2450
+Wire Wire Line
+	1750 2450 1750 2250
+Connection ~ 1750 2450
+Connection ~ 2150 2450
+Wire Wire Line
+	2050 1850 2150 1850
+Wire Wire Line
+	2450 1850 2450 2150
+Wire Wire Line
+	2150 1500 2150 1850
+Connection ~ 2150 1850
+Connection ~ 2450 1850
+Wire Wire Line
+	1450 1950 1400 1950
+Wire Wire Line
+	750  1950 1000 1950
+Wire Wire Line
+	1000 1800 1000 1950
+Connection ~ 1000 1950
+Wire Wire Line
+	1100 1850 1350 1850
+Wire Wire Line
+	1100 1950 1100 1850
+Wire Wire Line
+	1350 1850 1350 1800
+Wire Wire Line
+	4300 2800 4250 2800
+Wire Wire Line
+	4250 2800 4250 2850
+Wire Wire Line
+	1250 6950 1050 6950
+Wire Wire Line
+	1050 7050 1250 7050
+Wire Wire Line
+	1250 7150 1050 7150
+Wire Wire Line
+	1250 7250 1050 7250
+Wire Wire Line
+	1250 7350 1050 7350
+Wire Wire Line
+	1250 7450 1050 7450
+Wire Wire Line
+	1250 7550 1200 7550
+Wire Wire Line
+	1250 7650 1200 7650
+Wire Wire Line
+	8550 4900 8550 5000
+Wire Wire Line
+	8550 5300 8550 5350
+Wire Wire Line
+	5000 3400 4950 3400
+Wire Wire Line
+	4950 3400 4950 3500
+Wire Wire Line
+	4950 3500 4700 3500
+Wire Wire Line
+	4700 3500 4700 3450
+Wire Wire Line
+	5000 3200 5000 3100
+Wire Wire Line
+	5000 3100 4700 3100
+Wire Wire Line
+	4700 3100 4700 3150
+Wire Wire Line
+	4450 3300 4500 3300
+Wire Wire Line
+	3850 4550 3950 4550
+Connection ~ 1350 1850
+Wire Wire Line
+	8550 3800 8550 4600
+Wire Wire Line
+	4250 4150 4400 4150
+Wire Wire Line
+	4250 4250 4400 4250
+Connection ~ 4850 3950
+Wire Wire Line
+	2300 6950 2600 6950
+Wire Wire Line
+	2300 7050 2600 7050
+Wire Wire Line
+	2300 7150 2600 7150
+Wire Wire Line
+	2300 7250 2600 7250
+Wire Wire Line
+	2300 7350 2400 7350
+Wire Wire Line
+	2300 7450 2400 7450
+Wire Wire Line
+	1350 1500 1600 1500
+Wire Wire Line
+	1900 1500 2150 1500
+Wire Wire Line
+	1350 1500 1350 1450
+Wire Wire Line
+	4250 3950 4350 3950
+Wire Wire Line
+	4850 3950 4650 3950
+Wire Wire Line
+	8850 5000 8850 4950
+Wire Wire Line
+	7850 4500 7850 5800
+Wire Wire Line
+	8850 5800 8850 5300
+Wire Wire Line
+	9150 5300 9150 5800
+Wire Wire Line
+	9500 2800 9500 5800
+Wire Wire Line
+	9150 5000 9150 4950
+Wire Wire Line
+	8850 4650 9000 4650
+Wire Wire Line
+	9000 4650 9000 4600
+Connection ~ 9000 4650
+Wire Notes Line
+	2850 800  2850 1750
+Wire Notes Line
+	2850 1750 3850 1750
+Wire Notes Line
+	3850 1750 3850 800 
+Wire Notes Line
+	3850 800  2850 800 
+Wire Notes Line
+	2850 1250 3850 1250
+Wire Wire Line
+	7250 4500 7850 4500
+Wire Wire Line
+	7250 3800 8550 3800
+Wire Wire Line
+	7850 5800 8850 5800
+Wire Wire Line
+	9500 5800 9150 5800
+Wire Notes Line
+	650  6700 650  7850
+Wire Notes Line
+	650  7850 2700 7850
+Wire Notes Line
+	2700 7850 2700 6700
+Wire Notes Line
+	2700 6700 650  6700
+Wire Wire Line
+	3950 4550 3950 4650
+Wire Wire Line
+	8150 5350 8550 5350
+Connection ~ 8550 5350
+Wire Wire Line
+	8150 5350 8150 5100
+Wire Wire Line
+	8150 4400 8150 4700
+Wire Wire Line
+	8050 1800 8600 1800
+Wire Wire Line
+	8050 1600 8600 1600
+Wire Wire Line
+	8050 1700 8600 1700
+Wire Wire Line
+	7800 1800 7350 1800
+Wire Wire Line
+	7800 1600 7350 1600
+Wire Wire Line
+	7800 1700 7350 1700
+Wire Wire Line
+	8100 4000 8100 3650
+Wire Wire Line
+	8300 4100 8300 3650
+Wire Wire Line
+	8100 3350 8100 3250
+Wire Wire Line
+	8100 3250 8200 3250
+Wire Wire Line
+	8300 3250 8300 3350
+Connection ~ 8200 3250
+Text Notes 2800 7850 0    60   ~ 0
+SparkFun's Qwiic:\nBlack = GND\nRed = 3.3V\nBlue = SDA\nYellow = SCL
+Wire Wire Line
+	6200 5950 6300 5950
+Wire Wire Line
+	6100 5950 6200 5950
+Wire Wire Line
+	6000 5950 6050 5950
+Wire Wire Line
+	6050 5950 6100 5950
+Wire Wire Line
+	6300 2550 6400 2550
+Wire Wire Line
+	6050 2550 6150 2550
+Wire Wire Line
+	6150 2550 6300 2550
+Wire Wire Line
+	1750 2450 2150 2450
+Wire Wire Line
+	2150 2450 2450 2450
+Wire Wire Line
+	2150 1850 2450 1850
+Wire Wire Line
+	2150 1850 2150 2150
+Wire Wire Line
+	1000 1950 1100 1950
+Wire Wire Line
+	1000 1950 1000 2150
+Wire Wire Line
+	1350 1850 1450 1850
+Wire Wire Line
+	9000 4650 9150 4650
+Wire Wire Line
+	8550 5350 8550 5450
+Wire Wire Line
+	8200 3250 8300 3250
+Connection ~ 1100 1950
+Connection ~ 1350 1500
+$EndSCHEMATC

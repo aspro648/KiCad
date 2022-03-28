@@ -1,0 +1,416 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "HW LiPo LED Board "
+Date "2020-05-30"
+Rev "0.3"
+Comp "www.MakersBox.us"
+Comment1 "648.ken@gmail.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L project:VBUS #PWR01
+U 1 1 5B3FDCD2
+P -6650 4600
+F 0 "#PWR01" H -6650 4450 50  0001 C CNN
+F 1 "VBUS" H -6650 4750 50  0000 C CNN
+F 2 "" H -6650 4600 50  0001 C CNN
+F 3 "" H -6650 4600 50  0001 C CNN
+	1    -6650 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:GND #PWR02
+U 1 1 5B3FDCF5
+P -5400 4600
+F 0 "#PWR02" H -5400 4350 50  0001 C CNN
+F 1 "GND" H -5400 4450 50  0000 C CNN
+F 2 "" H -5400 4600 50  0001 C CNN
+F 3 "" H -5400 4600 50  0001 C CNN
+	1    -5400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG03
+U 1 1 5B3FDD3A
+P -6650 4600
+F 0 "#FLG03" H -6650 4675 50  0001 C CNN
+F 1 "PWR_FLAG" H -6650 4750 50  0000 C CNN
+F 2 "" H -6650 4600 50  0001 C CNN
+F 3 "" H -6650 4600 50  0001 C CNN
+	1    -6650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG04
+U 1 1 5B3FDD50
+P -5850 4600
+F 0 "#FLG04" H -5850 4675 50  0001 C CNN
+F 1 "PWR_FLAG" H -5850 4750 50  0000 C CNN
+F 2 "" H -5850 4600 50  0001 C CNN
+F 3 "" H -5850 4600 50  0001 C CNN
+	1    -5850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG05
+U 1 1 5B3FDD67
+P -5400 4600
+F 0 "#FLG05" H -5400 4675 50  0001 C CNN
+F 1 "PWR_FLAG" H -5400 4750 50  0000 C CNN
+F 2 "" H -5400 4600 50  0001 C CNN
+F 3 "" H -5400 4600 50  0001 C CNN
+	1    -5400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:VCC #PWR06
+U 1 1 5B6E5416
+P -5850 4600
+F 0 "#PWR06" H -5850 4450 50  0001 C CNN
+F 1 "VCC" H -5850 4750 50  0000 C CNN
+F 2 "" H -5850 4600 50  0001 C CNN
+F 3 "" H -5850 4600 50  0001 C CNN
+	1    -5850 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG07
+U 1 1 5B3FFE6E
+P -6250 4600
+F 0 "#FLG07" H -6250 4675 50  0001 C CNN
+F 1 "PWR_FLAG" H -6250 4750 50  0000 C CNN
+F 2 "" H -6250 4600 50  0001 C CNN
+F 3 "" H -6250 4600 50  0001 C CNN
+	1    -6250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:+BATT #PWR08
+U 1 1 5B6E4208
+P -6250 4600
+F 0 "#PWR08" H -6250 4450 50  0001 C CNN
+F 1 "+BATT" V -6250 4850 50  0000 C CNN
+F 2 "" H -6250 4600 50  0001 C CNN
+F 3 "" H -6250 4600 50  0001 C CNN
+	1    -6250 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:C C1
+U 1 1 5B77416F
+P -4400 5600
+F 0 "C1" H -4375 5700 50  0000 L CNN
+F 1 "10uF" H -4375 5500 50  0000 L CNN
+F 2 "footprints:C_0805" H -4362 5450 50  0001 C CNN
+F 3 "" H -4400 5600 50  0001 C CNN
+	1    -4400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR09
+U 1 1 5B7EE8E2
+P -4400 6800
+F 0 "#PWR09" H -4400 6550 50  0001 C CNN
+F 1 "GND" H -4400 6650 50  0000 C CNN
+F 2 "" H -4400 6800 50  0001 C CNN
+F 3 "" H -4400 6800 50  0001 C CNN
+	1    -4400 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:VBUS #PWR010
+U 1 1 5B7EF05A
+P -4400 5250
+F 0 "#PWR010" H -4400 5100 50  0001 C CNN
+F 1 "VBUS" H -4400 5400 50  0000 C CNN
+F 2 "" H -4400 5250 50  0001 C CNN
+F 3 "" H -4400 5250 50  0001 C CNN
+	1    -4400 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:LED D2
+U 1 1 5B7EF1B7
+P -2000 5500
+F 0 "D2" H -2000 5600 50  0000 C CNN
+F 1 "CHG" H -2000 5400 50  0000 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H -2000 5500 50  0001 C CNN
+F 3 "" H -2000 5500 50  0001 C CNN
+	1    -2000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:R R2
+U 1 1 5B7EF1EF
+P -2400 5500
+F 0 "R2" V -2320 5500 50  0000 C CNN
+F 1 "1K" V -2400 5500 50  0000 C CNN
+F 2 "footprints:R_0603" V -2470 5500 50  0001 C CNN
+F 3 "" H -2400 5500 50  0001 C CNN
+	1    -2400 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:R R5
+U 1 1 5B7EFA67
+P -4150 6450
+F 0 "R5" V -4100 6300 50  0000 C CNN
+F 1 "10K" V -4150 6450 50  0000 C CNN
+F 2 "footprints:R_0603" V -4220 6450 50  0001 C CNN
+F 3 "" H -4150 6450 50  0001 C CNN
+	1    -4150 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:C C2
+U 1 1 5B7EFC72
+P -2650 6550
+F 0 "C2" H -2625 6650 50  0000 L CNN
+F 1 "10uF" H -2625 6450 50  0000 L CNN
+F 2 "footprints:C_0805" H -2612 6400 50  0001 C CNN
+F 3 "" H -2650 6550 50  0001 C CNN
+	1    -2650 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:CONN_01X02 J3
+U 1 1 5B7F07B5
+P -5350 6350
+F 0 "J3" H -5350 6500 50  0000 C CNN
+F 1 "BAT" V -5250 6350 50  0000 C CNN
+F 2 "Connectors_Molex:Connector_Molex_PicoBlade_53048-0210" H -5350 6350 50  0001 C CNN
+F 3 "" H -5350 6350 50  0001 C CNN
+	1    -5350 6350
+	-1   0    0    -1  
+$EndComp
+Text Notes -4250 7800 0    60   ~ 0
+R5:\n10K= 100 mA\n5K = 200 mA\n2K = 500 mA\n1K = 1000 mA
+$Comp
+L MCP73833:MCP73833-AMI_UN-ND U1
+U 1 1 5E84C831
+P -3400 5900
+F 0 "U1" H -3500 6140 60  0000 R CNN
+F 1 "MCP73833" H -3290 5350 60  0000 L CNN
+F 2 "footprints:MSOP-10_3x3mm_Pitch0.5mm" H -3200 6100 60  0001 L CNN
+F 3 "" H -3200 6200 60  0001 L CNN
+	1    -3400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:LED D3
+U 1 1 5E84D467
+P -2000 5800
+F 0 "D3" H -2000 5900 50  0000 C CNN
+F 1 "DONE" H -2000 5700 50  0000 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H -2000 5800 50  0001 C CNN
+F 3 "" H -2000 5800 50  0001 C CNN
+	1    -2000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:R R3
+U 1 1 5E84D4BF
+P -2400 5800
+F 0 "R3" V -2320 5800 50  0000 C CNN
+F 1 "1K" V -2400 5800 50  0000 C CNN
+F 2 "footprints:R_0603" V -2470 5800 50  0001 C CNN
+F 3 "" H -2400 5800 50  0001 C CNN
+	1    -2400 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:VBUS #PWR011
+U 1 1 5E84DD68
+P -1650 5350
+F 0 "#PWR011" H -1650 5200 50  0001 C CNN
+F 1 "VBUS" H -1650 5500 50  0000 C CNN
+F 2 "" H -1650 5350 50  0001 C CNN
+F 3 "" H -1650 5350 50  0001 C CNN
+	1    -1650 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR012
+U 1 1 5E84E372
+P -3300 6800
+F 0 "#PWR012" H -3300 6550 50  0001 C CNN
+F 1 "GND" H -3300 6650 50  0000 C CNN
+F 2 "" H -3300 6800 50  0001 C CNN
+F 3 "" H -3300 6800 50  0001 C CNN
+	1    -3300 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR013
+U 1 1 5E84EF0B
+P -2650 6800
+F 0 "#PWR013" H -2650 6550 50  0001 C CNN
+F 1 "GND" H -2650 6650 50  0000 C CNN
+F 2 "" H -2650 6800 50  0001 C CNN
+F 3 "" H -2650 6800 50  0001 C CNN
+	1    -2650 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR014
+U 1 1 5E84F107
+P -4150 6800
+F 0 "#PWR014" H -4150 6550 50  0001 C CNN
+F 1 "GND" H -4150 6650 50  0000 C CNN
+F 2 "" H -4150 6800 50  0001 C CNN
+F 3 "" H -4150 6800 50  0001 C CNN
+	1    -4150 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:R R4
+U 1 1 5E84F5CB
+P -3900 6450
+F 0 "R4" V -3850 6300 50  0000 C CNN
+F 1 "10K" V -3900 6450 50  0000 C CNN
+F 2 "footprints:R_0603" V -3970 6450 50  0001 C CNN
+F 3 "" H -3900 6450 50  0001 C CNN
+	1    -3900 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR015
+U 1 1 5E84F669
+P -3900 6800
+F 0 "#PWR015" H -3900 6550 50  0001 C CNN
+F 1 "GND" H -3900 6650 50  0000 C CNN
+F 2 "" H -3900 6800 50  0001 C CNN
+F 3 "" H -3900 6800 50  0001 C CNN
+	1    -3900 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:USB_B-RESCUE-project J2
+U 1 1 5EA71AD7
+P -6650 5600
+F 0 "J2" H -6850 6050 50  0000 L CNN
+F 1 "USB-MICRO" H -6850 5950 50  0000 L CNN
+F 2 "footprints:USB_Micro-B_Molex-105017-0001" H -6500 5550 50  0001 C CNN
+F 3 "" H -6500 5550 50  0001 C CNN
+	1    -6650 5600
+	1    0    0    -1  
+$EndComp
+NoConn ~ -6350 5600
+NoConn ~ -6350 5700
+Text Label -5150 5400 0    60   ~ 0
+VBUS
+Text Label -5150 5500 0    60   ~ 0
+GND
+Wire Wire Line
+	-5150 6300 -4850 6300
+Wire Wire Line
+	-4850 6300 -4850 7150
+Connection ~ -4700 5750
+Wire Wire Line
+	-4700 5500 -4700 5750
+Wire Wire Line
+	-4700 6400 -5150 6400
+Wire Wire Line
+	-2900 6300 -2650 6300
+Connection ~ -3400 5400
+Wire Wire Line
+	-2400 6300 -2400 7150
+Wire Wire Line
+	-2400 7150 -4850 7150
+Wire Wire Line
+	-6350 5400 -4400 5400
+Wire Wire Line
+	-6250 5500 -4700 5500
+Wire Wire Line
+	-4700 5750 -4400 5750
+Wire Wire Line
+	-6750 6200 -6750 6000
+Wire Wire Line
+	-6650 6000 -6650 6200
+Wire Wire Line
+	-6250 6200 -6250 5500
+Connection ~ -6650 6200
+Wire Wire Line
+	-6750 6200 -6650 6200
+Wire Wire Line
+	-3900 6600 -3900 6800
+Wire Wire Line
+	-3900 6100 -3900 6300
+Wire Wire Line
+	-3700 6100 -3900 6100
+Wire Wire Line
+	-4150 6600 -4150 6800
+Wire Wire Line
+	-4150 6000 -4150 6300
+Wire Wire Line
+	-3700 6000 -4150 6000
+Wire Wire Line
+	-2650 6700 -2650 6800
+Wire Wire Line
+	-2650 6200 -2650 6300
+Wire Wire Line
+	-2900 6200 -2650 6200
+Connection ~ -2650 6300
+Wire Wire Line
+	-3300 6500 -3300 6800
+Wire Wire Line
+	-4400 5750 -4400 6800
+Connection ~ -4400 5400
+Wire Wire Line
+	-3400 5400 -3400 5600
+Wire Wire Line
+	-3300 5400 -3300 5600
+Wire Wire Line
+	-4400 5250 -4400 5400
+Connection ~ -1650 5500
+Wire Wire Line
+	-1850 5500 -1650 5500
+Wire Wire Line
+	-1650 5800 -1850 5800
+Wire Wire Line
+	-1650 5350 -1650 5500
+Wire Wire Line
+	-2250 5800 -2150 5800
+Wire Wire Line
+	-2250 5500 -2150 5500
+Wire Wire Line
+	-2750 5500 -2550 5500
+Wire Wire Line
+	-2750 5900 -2750 5500
+Wire Wire Line
+	-2900 5900 -2750 5900
+Wire Wire Line
+	-2650 5800 -2550 5800
+Wire Wire Line
+	-2650 6000 -2650 5800
+Wire Wire Line
+	-2900 6000 -2650 6000
+NoConn ~ -2900 6100
+Wire Wire Line
+	-4700 5750 -4700 6400
+Wire Wire Line
+	-3400 5400 -3300 5400
+Wire Wire Line
+	-6650 6200 -6250 6200
+Wire Wire Line
+	-2650 6300 -2400 6300
+Wire Wire Line
+	-2650 6300 -2650 6400
+Wire Wire Line
+	-4400 5400 -3400 5400
+Wire Wire Line
+	-4400 5400 -4400 5450
+Wire Wire Line
+	-1650 5500 -1650 5800
+Text Notes -3900 4950 0    60   ~ 0
+footprints:MSOP-10_3x3mm_Pitch0.5mm
+Text Notes -3900 4850 0    60   ~ 0
+MCP73833-AMI/UN-ND
+Connection ~ -4400 5750
+$EndSCHEMATC
