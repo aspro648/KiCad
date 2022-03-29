@@ -1,40 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:project-rescue
-LIBS:project
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:MCP73833
-LIBS:project-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -49,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L VBUS #PWR01
+L project:VBUS #PWR01
 U 1 1 5B3FDCD2
 P 1000 950
 F 0 "#PWR01" H 1000 800 50  0001 C CNN
@@ -60,7 +25,7 @@ F 3 "" H 1000 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR02
+L project:GND #PWR02
 U 1 1 5B3FDCF5
 P 2250 950
 F 0 "#PWR02" H 2250 700 50  0001 C CNN
@@ -71,7 +36,7 @@ F 3 "" H 2250 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG03
+L project:PWR_FLAG #FLG03
 U 1 1 5B3FDD3A
 P 1000 950
 F 0 "#FLG03" H 1000 1025 50  0001 C CNN
@@ -82,7 +47,7 @@ F 3 "" H 1000 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG04
+L project:PWR_FLAG #FLG04
 U 1 1 5B3FDD50
 P 1800 950
 F 0 "#FLG04" H 1800 1025 50  0001 C CNN
@@ -93,7 +58,7 @@ F 3 "" H 1800 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG05
+L project:PWR_FLAG #FLG05
 U 1 1 5B3FDD67
 P 2250 950
 F 0 "#FLG05" H 2250 1025 50  0001 C CNN
@@ -104,7 +69,7 @@ F 3 "" H 2250 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR06
+L project:VCC #PWR06
 U 1 1 5B6E5416
 P 1800 950
 F 0 "#PWR06" H 1800 800 50  0001 C CNN
@@ -115,7 +80,7 @@ F 3 "" H 1800 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PWR_FLAG #FLG07
+L project:PWR_FLAG #FLG07
 U 1 1 5B3FFE6E
 P 1400 950
 F 0 "#FLG07" H 1400 1025 50  0001 C CNN
@@ -126,7 +91,7 @@ F 3 "" H 1400 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR08
+L project:+BATT #PWR08
 U 1 1 5B6E4208
 P 1400 950
 F 0 "#PWR08" H 1400 800 50  0001 C CNN
@@ -137,7 +102,7 @@ F 3 "" H 1400 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C1
+L project:C C1
 U 1 1 5B77416F
 P 4100 3000
 F 0 "C1" H 4125 3100 50  0000 L CNN
@@ -148,7 +113,7 @@ F 3 "" H 4100 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L project:GND #PWR09
 U 1 1 5B7EE8E2
 P 4100 4200
 F 0 "#PWR09" H 4100 3950 50  0001 C CNN
@@ -159,7 +124,7 @@ F 3 "" H 4100 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VBUS #PWR010
+L project:VBUS #PWR010
 U 1 1 5B7EF05A
 P 4100 2650
 F 0 "#PWR010" H 4100 2500 50  0001 C CNN
@@ -170,7 +135,7 @@ F 3 "" H 4100 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2
+L project:LED D2
 U 1 1 5B7EF1B7
 P 6500 2900
 F 0 "D2" H 6500 3000 50  0000 C CNN
@@ -181,7 +146,7 @@ F 3 "" H 6500 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L project:R R2
 U 1 1 5B7EF1EF
 P 6100 2900
 F 0 "R2" V 6180 2900 50  0000 C CNN
@@ -192,7 +157,7 @@ F 3 "" H 6100 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R5
+L project:R R5
 U 1 1 5B7EFA67
 P 4350 3850
 F 0 "R5" V 4400 3700 50  0000 C CNN
@@ -203,7 +168,7 @@ F 3 "" H 4350 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L project:C C2
 U 1 1 5B7EFC72
 P 5850 3950
 F 0 "C2" H 5875 4050 50  0000 L CNN
@@ -214,7 +179,7 @@ F 3 "" H 5850 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 J3
+L project:CONN_01X02 J3
 U 1 1 5B7F07B5
 P 3150 3750
 F 0 "J3" H 3150 3900 50  0000 C CNN
@@ -227,7 +192,7 @@ $EndComp
 Text Notes 4250 5200 0    60   ~ 0
 R5:\n10K= 100 mA\n5K = 200 mA\n2K = 500 mA\n1K = 1000 mA
 $Comp
-L MCP73833-AMI/UN-ND U1
+L MCP73833:MCP73833-AMI_UN-ND U1
 U 1 1 5E84C831
 P 5100 3300
 F 0 "U1" H 5000 3540 60  0000 R CNN
@@ -238,7 +203,7 @@ F 3 "" H 5300 3600 60  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3
+L project:LED D3
 U 1 1 5E84D467
 P 6500 3200
 F 0 "D3" H 6500 3300 50  0000 C CNN
@@ -249,7 +214,7 @@ F 3 "" H 6500 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L project:R R3
 U 1 1 5E84D4BF
 P 6100 3200
 F 0 "R3" V 6180 3200 50  0000 C CNN
@@ -260,7 +225,7 @@ F 3 "" H 6100 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VBUS #PWR011
+L project:VBUS #PWR011
 U 1 1 5E84DD68
 P 6850 2750
 F 0 "#PWR011" H 6850 2600 50  0001 C CNN
@@ -271,7 +236,7 @@ F 3 "" H 6850 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L project:GND #PWR012
 U 1 1 5E84E372
 P 5200 4200
 F 0 "#PWR012" H 5200 3950 50  0001 C CNN
@@ -282,7 +247,7 @@ F 3 "" H 5200 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L project:GND #PWR013
 U 1 1 5E84EF0B
 P 5850 4200
 F 0 "#PWR013" H 5850 3950 50  0001 C CNN
@@ -293,7 +258,7 @@ F 3 "" H 5850 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L project:GND #PWR014
 U 1 1 5E84F107
 P 4350 4200
 F 0 "#PWR014" H 4350 3950 50  0001 C CNN
@@ -304,7 +269,7 @@ F 3 "" H 4350 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L project:R R4
 U 1 1 5E84F5CB
 P 4600 3850
 F 0 "R4" V 4650 3700 50  0000 C CNN
@@ -315,7 +280,7 @@ F 3 "" H 4600 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L project:GND #PWR015
 U 1 1 5E84F669
 P 4600 4200
 F 0 "#PWR015" H 4600 3950 50  0001 C CNN
@@ -326,7 +291,7 @@ F 3 "" H 4600 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L USB_B-RESCUE-project J2
+L project-rescue:USB_B-RESCUE-project J2
 U 1 1 5EA71AD7
 P 1850 3000
 F 0 "J2" H 1650 3450 50  0000 L CNN
@@ -348,18 +313,18 @@ Wire Wire Line
 	3650 3700 3650 4550
 Connection ~ 3800 3150
 Wire Wire Line
-	3800 2900 3800 3800
+	3800 2900 3800 3150
 Wire Wire Line
 	3800 3800 3350 3800
 Wire Wire Line
-	5600 3700 6100 3700
+	5600 3700 5850 3700
 Connection ~ 5100 2800
 Wire Wire Line
 	6100 3700 6100 4550
 Wire Wire Line
 	6100 4550 3650 4550
 Wire Wire Line
-	2150 2800 5200 2800
+	2150 2800 4100 2800
 Wire Wire Line
 	2250 2900 3800 2900
 Wire Wire Line
@@ -372,7 +337,7 @@ Wire Wire Line
 	2250 3600 2250 2900
 Connection ~ 1850 3600
 Wire Wire Line
-	1750 3600 2250 3600
+	1750 3600 1850 3600
 Wire Wire Line
 	4600 4000 4600 4200
 Wire Wire Line
@@ -388,7 +353,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 4100 5850 4200
 Wire Wire Line
-	5850 3600 5850 3800
+	5850 3600 5850 3700
 Wire Wire Line
 	5600 3600 5850 3600
 Connection ~ 5850 3700
@@ -402,14 +367,14 @@ Wire Wire Line
 Wire Wire Line
 	5200 2800 5200 3000
 Wire Wire Line
-	4100 2650 4100 2850
+	4100 2650 4100 2800
 Connection ~ 6850 2900
 Wire Wire Line
 	6650 2900 6850 2900
 Wire Wire Line
 	6850 3200 6650 3200
 Wire Wire Line
-	6850 2750 6850 3200
+	6850 2750 6850 2900
 Wire Wire Line
 	6250 3200 6350 3200
 Wire Wire Line
@@ -427,4 +392,24 @@ Wire Wire Line
 Wire Wire Line
 	5600 3400 5850 3400
 NoConn ~ 5600 3500
+Wire Wire Line
+	3800 3150 3800 3800
+Wire Wire Line
+	5100 2800 5200 2800
+Wire Wire Line
+	1850 3600 2250 3600
+Wire Wire Line
+	5850 3700 6100 3700
+Wire Wire Line
+	5850 3700 5850 3800
+Wire Wire Line
+	4100 2800 5100 2800
+Wire Wire Line
+	4100 2800 4100 2850
+Wire Wire Line
+	6850 2900 6850 3200
+Text Notes 4600 2350 0    60   ~ 0
+footprints:MSOP-10_3x3mm_Pitch0.5mm
+Text Notes 4600 2250 0    60   ~ 0
+MCP73833-AMI/UN-ND
 $EndSCHEMATC

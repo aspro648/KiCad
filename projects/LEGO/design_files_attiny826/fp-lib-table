@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri C:/Users/Stage/Documents/Kicad/beetje_footprints.pretty)(options "")(descr "Project Footprints"))
+)
