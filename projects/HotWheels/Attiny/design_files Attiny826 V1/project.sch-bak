@@ -135,10 +135,10 @@ F 3 "" H 2200 2450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L project:R R2
+L project:R R11
 U 1 1 5EA72640
 P 8250 2750
-F 0 "R2" V 8330 2750 50  0000 C CNN
+F 0 "R11" V 8330 2750 50  0000 C CNN
 F 1 "100" V 8250 2750 50  0000 C CNN
 F 2 "footprints:R_0805" V 8180 2750 50  0001 C CNN
 F 3 "" H 8250 2750 50  0001 C CNN
@@ -150,7 +150,7 @@ L project:R R3
 U 1 1 5EA726D2
 P 8250 2950
 F 0 "R3" V 8330 2950 50  0000 C CNN
-F 1 "100" V 8250 2950 50  0000 C CNN
+F 1 "*" V 8250 2950 50  0000 C CNN
 F 2 "footprints:R_0805" V 8180 2950 50  0001 C CNN
 F 3 "" H 8250 2950 50  0001 C CNN
 	1    8250 2950
@@ -224,7 +224,7 @@ L project:R R6
 U 1 1 6033C136
 P 8250 3950
 F 0 "R6" V 8330 3950 50  0000 C CNN
-F 1 "100" V 8250 3950 50  0000 C CNN
+F 1 "*" V 8250 3950 50  0000 C CNN
 F 2 "footprints:R_0805" V 8180 3950 50  0001 C CNN
 F 3 "" H 8250 3950 50  0001 C CNN
 	1    8250 3950
@@ -244,12 +244,12 @@ $EndComp
 $Comp
 L project:R R8
 U 1 1 6033C142
-P 8250 4550
-F 0 "R8" V 8330 4550 50  0000 C CNN
-F 1 "100" V 8250 4550 50  0000 C CNN
-F 2 "footprints:R_0805" V 8180 4550 50  0001 C CNN
-F 3 "" H 8250 4550 50  0001 C CNN
-	1    8250 4550
+P 8850 4550
+F 0 "R8" V 8930 4550 50  0000 C CNN
+F 1 "100" V 8850 4550 50  0000 C CNN
+F 2 "footprints:R_0805" V 8780 4550 50  0001 C CNN
+F 3 "" H 8850 4550 50  0001 C CNN
+	1    8850 4550
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -265,8 +265,6 @@ F 3 "" H 8250 4750 50  0001 C CNN
 $EndComp
 Connection ~ 8550 4050
 Connection ~ 8550 4650
-Wire Wire Line
-	8550 4650 8700 4650
 Wire Wire Line
 	8550 4050 8700 4050
 Wire Wire Line
@@ -310,17 +308,6 @@ F 1 "FL" V 9000 4050 50  0000 C CNN
 F 2 "footprints:Pin_Header_THD_1x03" H 8900 4050 50  0001 C CNN
 F 3 "" H 8900 4050 50  0000 C CNN
 	1    8900 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L project-rescue:CONN_01X03 J8
-U 1 1 60345696
-P 8900 4650
-F 0 "J8" H 8900 4850 50  0000 C CNN
-F 1 "UL" V 9000 4650 50  0000 C CNN
-F 2 "footprints:Pin_Header_THD_1x03" H 8900 4650 50  0001 C CNN
-F 3 "" H 8900 4650 50  0000 C CNN
-	1    8900 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -417,10 +404,10 @@ F 3 "" H 4950 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:R R1
+L project:R R10
 U 1 1 5B44E5C9
 P 5900 2300
-F 0 "R1" V 5980 2300 50  0000 C CNN
+F 0 "R10" V 5980 2300 50  0000 C CNN
 F 1 "100" V 5900 2300 50  0000 C CNN
 F 2 "footprints:R_0805" V 5830 2300 50  0001 C CNN
 F 3 "" H 5900 2300 50  0001 C CNN
@@ -539,19 +526,6 @@ Wire Wire Line
 	5550 2850 5750 2850
 Text Label 5550 2850 0    60   ~ 0
 UPDI
-$Comp
-L Connector:Conn_01x04_Female J4
-U 1 1 62349C56
-P 6300 2200
-F 0 "J4" H 6328 2176 50  0000 L CNN
-F 1 "UDPI" H 6328 2085 50  0000 L CNN
-F 2 "footprints:UDPI_header" H 6300 2200 50  0001 C CNN
-F 3 "~" H 6300 2200 50  0001 C CNN
-	1    6300 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 2100 5950 2100
 Wire Wire Line
 	6100 2400 5950 2400
 Wire Wire Line
@@ -582,7 +556,6 @@ Text Label 5550 2300 0    60   ~ 0
 UPDI
 Wire Wire Line
 	6050 2300 6100 2300
-NoConn ~ 6100 2200
 Wire Wire Line
 	5750 2300 5550 2300
 Text Label 5600 2950 0    60   ~ 0
@@ -634,7 +607,7 @@ D12
 Text Label 4150 4050 0    60   ~ 0
 D13
 Text Label 7750 2950 0    60   ~ 0
-D5
+D4
 Text Label 7750 2750 0    60   ~ 0
 D1
 Text Label 7750 4150 0    60   ~ 0
@@ -648,7 +621,7 @@ D8
 Text Label 7750 3550 0    60   ~ 0
 D9
 Text Label 7750 4550 0    60   ~ 0
-D6
+D0
 Text Notes 7300 2750 0    60   ~ 0
 pwm
 Text Notes 7450 3350 0    60   ~ 0
@@ -705,29 +678,6 @@ Wire Wire Line
 	7700 4250 7700 4150
 Wire Wire Line
 	7700 4150 8100 4150
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 623C9D12
-P 7600 4650
-F 0 "JP3" V 7554 4718 50  0000 L CNN
-F 1 "SolderJumper_2_Open" V 7850 4200 50  0000 L CNN
-F 2 "footprints:Jumper" H 7600 4650 50  0001 C CNN
-F 3 "~" H 7600 4650 50  0001 C CNN
-	1    7600 4650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7600 4800 7600 4850
-Wire Wire Line
-	7600 4850 7750 4850
-Wire Wire Line
-	7750 4850 7750 4750
-Wire Wire Line
-	7600 4500 7600 4450
-Wire Wire Line
-	7600 4450 7750 4450
-Wire Wire Line
-	7750 4450 7750 4550
 Wire Wire Line
 	7600 3050 7600 3000
 Wire Wire Line
@@ -736,4 +686,125 @@ Wire Wire Line
 	7600 2700 7600 2650
 Wire Wire Line
 	7600 2650 7700 2650
+$Comp
+L Device:LED D0
+U 1 1 623E4990
+P 8250 4550
+F 0 "D0" H 8250 4350 50  0000 C CNN
+F 1 "LED" H 8250 4450 50  0000 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 8250 4550 50  0001 C CNN
+F 3 "~" H 8250 4550 50  0001 C CNN
+	1    8250 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 623E5336
+P 8850 4750
+F 0 "D7" H 8850 4950 50  0000 C CNN
+F 1 "LED" H 8850 4850 50  0000 C CNN
+F 2 "footprints:LED_0805_HandSoldering" H 8850 4750 50  0001 C CNN
+F 3 "~" H 8850 4750 50  0001 C CNN
+	1    8850 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9000 4750 9100 4750
+Wire Wire Line
+	9100 4750 9100 4650
+Wire Wire Line
+	8550 4650 9100 4650
+Wire Wire Line
+	9000 4550 9100 4550
+Wire Wire Line
+	9100 4550 9100 4650
+Connection ~ 9100 4650
+Text Notes 7350 4550 0    60   ~ 0
+pwm
+$Comp
+L Connector:Conn_01x03_Female J4
+U 1 1 623F35D1
+P 6300 2300
+F 0 "J4" H 6328 2326 50  0000 L CNN
+F 1 "UDPI" H 6328 2235 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 6300 2300 50  0001 C CNN
+F 3 "~" H 6300 2300 50  0001 C CNN
+	1    6300 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2200 5950 2200
+Wire Wire Line
+	5950 2200 5950 2100
+$Comp
+L project:VCC #PWR013
+U 1 1 623666E7
+P 6750 5150
+F 0 "#PWR013" H 6750 5000 50  0001 C CNN
+F 1 "VCC" H 6750 5300 50  0000 C CNN
+F 2 "" H 6750 5150 50  0001 C CNN
+F 3 "" H 6750 5150 50  0001 C CNN
+	1    6750 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:R R1
+U 1 1 62366FAD
+P 7000 5200
+F 0 "R1" V 7080 5200 50  0000 C CNN
+F 1 "1" V 7000 5200 50  0000 C CNN
+F 2 "footprints:R_0603" V 6930 5200 50  0001 C CNN
+F 3 "" H 7000 5200 50  0001 C CNN
+	1    7000 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:R R2
+U 1 1 62367648
+P 7550 5200
+F 0 "R2" V 7630 5200 50  0000 C CNN
+F 1 "2" V 7550 5200 50  0000 C CNN
+F 2 "footprints:R_0603" V 7480 5200 50  0001 C CNN
+F 3 "" H 7550 5200 50  0001 C CNN
+	1    7550 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:GND #PWR014
+U 1 1 623679D4
+P 7950 5250
+F 0 "#PWR014" H 7950 5000 50  0001 C CNN
+F 1 "GND" H 7950 5100 50  0000 C CNN
+F 2 "" H 7950 5250 50  0001 C CNN
+F 3 "" H 7950 5250 50  0001 C CNN
+	1    7950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5150 6750 5200
+Wire Wire Line
+	6750 5200 6850 5200
+Wire Wire Line
+	7150 5200 7250 5200
+Wire Wire Line
+	7700 5200 7950 5200
+Wire Wire Line
+	7950 5200 7950 5250
+Wire Wire Line
+	7250 5200 7250 5400
+Wire Wire Line
+	7250 5400 6900 5400
+Connection ~ 7250 5200
+Wire Wire Line
+	7250 5200 7400 5200
+Text Label 6900 5400 0    60   ~ 0
+A5
+Text Notes 7050 5550 0    60   ~ 0
+39K / 10K ?
+Text Notes 6700 5750 0    60   ~ 0
+A5 = Vcc * ( R2 / (R1 + R2) ) \nhttps://gist.github.com/dwhacks/7208805
+Text Notes 9200 2950 0    60   ~ 0
+For pwm of both LEDs, \nomit * resistor and \nbridge jumper.
+Text Notes 7350 1850 0    60   ~ 0
+Mode increment revert if\n>1 sec?
 $EndSCHEMATC
