@@ -30,10 +30,15 @@ void loop(){
 
 
 void flash(int led){  // psuedo PWM
+  digitalWrite(led, HIGH);
+  delay(100);
+  digitalWrite(led, LOW);
+  /*
   for(int x=0; x<25; x++){
     digitalWrite(led, HIGH);
     delay(1);
     digitalWrite(led, LOW);
     delay(3);
   }
+  */
 }
