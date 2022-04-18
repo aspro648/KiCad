@@ -64,26 +64,30 @@ void setup(){
   pinMode(UL2, OUTPUT);
   pinMode(Vin, INPUT);
 
-  analogReference(INTERNAL2V5);
-  while(1){
+  digitalWrite(FL1, HIGH);
+  //analogReference(INTERNAL2V5);
+
+  while(0){
     int v = analogRead(Vin);
+    //int v = Vi * (39000 + 10000)/1000 
+    
   
-    if (v > 225){
+    if (v > 270){
       digitalWrite(HL1, HIGH);
     }
-    if (v > 250){
+    if (v > 272){
       digitalWrite(HL2, HIGH);
     }
-    if (v > 275){
+    if (v > 274){
       digitalWrite(TL1, HIGH);
     }
-    if (v > 300){
+    if (v > 278){
       digitalWrite(TL2, HIGH);
     }
-    if (v > 325){
+    if (v > 280){
       digitalWrite(UL1, HIGH);
     }
-    if (v > 350){
+    if (v > 300){
       digitalWrite(UL2, HIGH);
     }
   }
@@ -126,9 +130,11 @@ void setup(){
 void loop(){
   if(mode > 0){  // night mode
     digitalWrite(HL1, HIGH);
-    digitalWrite(TL1, HIGH);
+    //digitalWrite(TL1, HIGH);
+    analogWrite(TL1, 50);
     digitalWrite(HL2, HIGH);
     digitalWrite(TL2, HIGH);
+    analogWrite(TL2, 50);
   }
 
   if(mode != 1){
