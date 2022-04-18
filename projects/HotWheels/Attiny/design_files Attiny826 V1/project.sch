@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Lights Attiny826"
-Date "2022-03-18"
-Rev "0.0"
+Date "2022-04-17"
+Rev "0.1"
 Comp "www.MakersBox.us"
 Comment1 "648.ken@gmail.com"
 Comment2 ""
@@ -214,11 +214,11 @@ Wire Wire Line
 Wire Wire Line
 	8400 2750 8700 2750
 Wire Wire Line
-	7750 3350 8100 3350
+	7750 3350 8000 3350
 Wire Wire Line
 	2550 1900 2550 2450
 Wire Wire Line
-	7750 3550 8100 3550
+	8000 3550 8100 3550
 $Comp
 L project:R R6
 U 1 1 6033C136
@@ -542,9 +542,9 @@ D2
 Text Label 5600 3550 0    60   ~ 0
 D3
 Text Label 5600 3750 0    60   ~ 0
-D9
+SCL
 Text Label 5600 3850 0    60   ~ 0
-D8
+SDA
 Text Label 5600 3950 0    60   ~ 0
 D7
 Text Label 5600 4050 0    60   ~ 0
@@ -572,44 +572,36 @@ D12
 Text Label 4150 4050 0    60   ~ 0
 D13
 Text Label 3150 5650 0    60   ~ 0
-D4
-Text Label 7750 2750 0    60   ~ 0
+D3
+Text Label 7800 3350 0    60   ~ 0
 D1
 Text Label 7750 3950 0    60   ~ 0
 D16
 Text Label 7800 4150 0    60   ~ 0
 D7
-Text Label 7750 3350 0    60   ~ 0
-D8
-Text Label 7750 3550 0    60   ~ 0
-D9
-Text Label 7750 2950 0    60   ~ 0
+Text Label 7750 2750 0    60   ~ 0
 D0
-Text Notes 7300 2750 0    60   ~ 0
+Text Notes 7400 2750 0    60   ~ 0
 pwm
 Text Notes 7350 3350 0    60   ~ 0
-pwm
-Text Notes 7350 3550 0    60   ~ 0
 pwm
 Text Notes 7350 4150 0    60   ~ 0
 pwm
 Wire Wire Line
-	7700 2750 8100 2750
+	7700 2750 8000 2750
 Wire Wire Line
-	7700 2950 8100 2950
+	8000 2950 8100 2950
 Wire Wire Line
 	7700 3950 8100 3950
 Wire Wire Line
 	7700 4150 8100 4150
-Text Notes 7350 2950 0    60   ~ 0
-pwm
 $Comp
 L Connector:Conn_01x03_Female J4
 U 1 1 623F35D1
 P 6300 2300
 F 0 "J4" H 6328 2326 50  0000 L CNN
 F 1 "UDPI" H 6328 2235 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 6300 2300 50  0001 C CNN
+F 2 "footprints:PinHeader_1x03_P2.00mm_Vertical" H 6300 2300 50  0001 C CNN
 F 3 "~" H 6300 2300 50  0001 C CNN
 	1    6300 2300
 	1    0    0    -1  
@@ -651,27 +643,12 @@ F 3 "" H 7550 5200 50  0001 C CNN
 	1    7550 5200
 	0    -1   -1   0   
 $EndComp
-$Comp
-L project:GND #PWR014
-U 1 1 623679D4
-P 7950 5250
-F 0 "#PWR014" H 7950 5000 50  0001 C CNN
-F 1 "GND" H 7950 5100 50  0000 C CNN
-F 2 "" H 7950 5250 50  0001 C CNN
-F 3 "" H 7950 5250 50  0001 C CNN
-	1    7950 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6750 5150 6750 5200
 Wire Wire Line
 	6750 5200 6850 5200
 Wire Wire Line
 	7150 5200 7250 5200
-Wire Wire Line
-	7700 5200 7950 5200
-Wire Wire Line
-	7950 5200 7950 5250
 Wire Wire Line
 	7250 5200 7250 5400
 Wire Wire Line
@@ -680,13 +657,11 @@ Connection ~ 7250 5200
 Wire Wire Line
 	7250 5200 7400 5200
 Text Label 6900 5400 0    60   ~ 0
-A5
+D4
 Text Notes 7050 5550 0    60   ~ 0
 39K / 10K ?
 Text Notes 6700 5750 0    60   ~ 0
 A5 = Vcc * ( R2 / (R1 + R2) ) \nhttps://gist.github.com/dwhacks/7208805
-Text Notes 9200 2950 0    60   ~ 0
-For pwm of both LEDs, \nomit * resistor and \nbridge jumper.
 Text Notes 7350 1850 0    60   ~ 0
 Mode increment revert if\n>1 sec?
 $Comp
@@ -695,7 +670,7 @@ U 1 1 624A44DE
 P 3750 5650
 F 0 "D0" H 4094 5696 50  0000 L CNN
 F 1 "SK6812MINI" H 4094 5605 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 3800 5350 50  0001 L TNN
+F 2 "footprints:WS2812B-2020" H 3800 5350 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 3850 5275 50  0001 L TNN
 	1    3750 5650
 	1    0    0    -1  
@@ -706,7 +681,7 @@ U 1 1 624A7834
 P 4700 5650
 F 0 "D7" H 5044 5696 50  0000 L CNN
 F 1 "SK6812MINI" H 5044 5605 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 4750 5350 50  0001 L TNN
+F 2 "footprints:WS2812B-2020" H 4750 5350 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 4800 5275 50  0001 L TNN
 	1    4700 5650
 	1    0    0    -1  
@@ -839,5 +814,42 @@ pwm
 Wire Wire Line
 	8550 4050 8550 5100
 Text Notes 3250 6650 0    60   ~ 0
-Neopixel Mini 3535\nhttps://www.adafruit.com/product/2659
+NeoPixel Nano 2020\nhttps://www.adafruit.com/product/4684
+Wire Wire Line
+	1900 3750 2150 3750
+Text Label 1900 3950 0    60   ~ 0
+SCL
+Text Label 1900 3750 0    60   ~ 0
+SDA
+Wire Wire Line
+	8000 3550 8000 3350
+Connection ~ 8000 3350
+Wire Wire Line
+	8000 3350 8100 3350
+Wire Wire Line
+	8000 2950 8000 2750
+Connection ~ 8000 2750
+Wire Wire Line
+	8000 2750 8100 2750
+Wire Wire Line
+	7700 5200 7950 5200
+Text Label 7800 5200 0    60   ~ 0
+D5
+$Comp
+L Connector:Conn_01x03_Female J8
+U 1 1 625B2420
+P 2350 3850
+F 0 "J8" H 2378 3876 50  0000 L CNN
+F 1 "I2C" H 2378 3785 50  0000 L CNN
+F 2 "footprints:PinHeader_1x03_P2.00mm_Vertical" H 2350 3850 50  0001 C CNN
+F 3 "~" H 2350 3850 50  0001 C CNN
+	1    2350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3950 1900 3950
+Text Label 1900 3850 0    60   ~ 0
+D12
+Wire Wire Line
+	2150 3850 1900 3850
 $EndSCHEMATC
