@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="597.11473"
-     inkscape:cy="89.729549"
+     inkscape:zoom="1.979899"
+     inkscape:cx="153.18582"
+     inkscape:cy="375.66893"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -107,33 +107,39 @@
          x="69.643219"
          y="72.368874"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:8.0954px;font-family:Arial;-inkscape-font-specification:'Arial Condensed';stroke-width:0.409778">Electronics Technician</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-weight:900;font-size:33.8667px;line-height:0;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
-       x="66.790924"
-       y="124.46577"
-       id="text846-9"
+    <g
+       id="g75754"
+       transform="matrix(1.1054451,0,0,1.1054451,-3.6807082,-12.727761)"
        inkscape:export-xdpi="163.83"
-       inkscape:export-ydpi="163.83"><tspan
-         sodipodi:role="line"
-         id="tspan844-3"
+       inkscape:export-ydpi="163.83">
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:33.8667px;line-height:0;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
          x="66.790924"
-         y="124.46577"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.8667px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;fill-opacity:1;stroke-width:0.5">Ken</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.2017px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.504944;stroke-linecap:round"
-       x="63.260113"
-       y="145.75146"
-       id="text850-6"
-       transform="scale(1.0416936,0.95997518)"
-       inkscape:export-xdpi="163.83"
-       inkscape:export-ydpi="163.83"><tspan
-         sodipodi:role="line"
-         id="tspan848-4"
+         y="125.52409"
+         id="text846-9"
+         inkscape:export-xdpi="163.83"
+         inkscape:export-ydpi="163.83"><tspan
+           sodipodi:role="line"
+           id="tspan844-3"
+           x="66.790924"
+           y="125.52409"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.8667px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;fill-opacity:1;stroke-width:0.5">Ken</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.2017px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.504944;stroke-linecap:round"
          x="63.260113"
          y="145.75146"
-         style="font-size:17.1008px;stroke-width:0.504945">OLSEN</tspan></text>
+         id="text850-6"
+         transform="scale(1.0416936,0.95997518)"
+         inkscape:export-xdpi="163.83"
+         inkscape:export-ydpi="163.83"><tspan
+           sodipodi:role="line"
+           id="tspan848-4"
+           x="63.260113"
+           y="145.75146"
+           style="font-size:17.1008px;stroke-width:0.504945">OLSEN</tspan></text>
+    </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.0954px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.409777;stroke-linecap:round"
