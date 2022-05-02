@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri "C:/Users/648ke/git/KiCad/projects/LEGO/design_files_attiny826_LiPo badge/footprints.pretty")(options "")(descr "Project Footprints"))
+)
