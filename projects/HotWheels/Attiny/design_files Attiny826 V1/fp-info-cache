@@ -1,4 +1,4 @@
-19294054903937137
+19295706760694668
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83362,6 +83362,13 @@ Micro-USB SMD Typ-B
 0
 13
 6
+footprints
+VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm
+VQFN, 20 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/20%20Lead%20VQFN%203x3x0_9mm_1_7EP%20U2B%20C04-21496a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VQFN NoLead
+0
+25
+21
 footprints
 WS2812B-2020
 https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf

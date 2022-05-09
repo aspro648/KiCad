@@ -36,17 +36,18 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1522"
-     inkscape:window-height="877"
+     inkscape:window-width="1333"
+     inkscape:window-height="861"
      id="namedview242"
      showgrid="false"
      inkscape:zoom="3.7550605"
      inkscape:cx="-21.027257"
      inkscape:cy="35.515339"
-     inkscape:window-x="70"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg240" />
+     inkscape:window-x="162"
+     inkscape:window-y="22"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg240"
+     inkscape:document-rotation="0" />
   <title
      id="title2">SVG Picture created as project-brd.svg date 2022/05/02 20:02:11 </title>
   <desc
@@ -462,5 +463,5 @@
        id="tspan1210"
        x="6158.3564"
        y="8211.1426"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:555.556px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:104.167">Attiny826 V1</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:555.556px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:104.167">HW Attiny826 V1</tspan></text>
 </svg>

@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="153.18582"
-     inkscape:cy="375.66893"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="375.47492"
+     inkscape:cy="439.87116"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -196,5 +196,48 @@
          x="174.99437"
          y="17.890522"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold Condensed';stroke:none;stroke-width:0.5">linkedin.com/in/olsenken</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:30.7854px;line-height:0;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';text-align:end;text-anchor:end;fill:none;stroke:#000000;stroke-width:0.454508;stroke-linecap:round"
+       x="155.95543"
+       y="122.14169"
+       id="text846-95"
+       inkscape:export-xdpi="299.9249"
+       inkscape:export-ydpi="299.9249"
+       transform="scale(1.0135013,0.98667857)"><tspan
+         sodipodi:role="line"
+         id="tspan844-0"
+         x="155.95543"
+         y="122.14169"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30.7854px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;fill-opacity:1;stroke-width:0.454509">Ken</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.09px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.459003;stroke-linecap:round"
+       x="148.93387"
+       y="141.866"
+       id="text850-3"
+       transform="scale(1.0557578,0.94718695)"
+       inkscape:export-xdpi="299.9249"
+       inkscape:export-ydpi="299.9249"><tspan
+         sodipodi:role="line"
+         id="tspan848-45"
+         x="148.93387"
+         y="141.866"
+         style="font-size:15.545px;stroke-width:0.459004">OLSEN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.55496px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.38242;stroke-linecap:round"
+       x="146.22836"
+       y="176.66512"
+       id="text854-5"
+       transform="scale(1.2215695,0.81861899)"
+       inkscape:export-filename="C:\Users\648ke\text854-5.png"
+       inkscape:export-xdpi="299.9249"
+       inkscape:export-ydpi="299.9249"><tspan
+         sodipodi:role="line"
+         id="tspan852-3"
+         x="146.22836"
+         y="176.66512"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:7.55496px;font-family:Arial;-inkscape-font-specification:'Arial Condensed';stroke-width:0.382421">Electronics Technician</tspan></text>
   </g>
 </svg>

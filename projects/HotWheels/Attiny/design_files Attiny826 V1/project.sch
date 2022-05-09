@@ -400,7 +400,7 @@ U 1 1 62315021
 P 4950 3550
 F 0 "U1" H 4500 4400 50  0000 C CNN
 F 1 "ATtiny826" H 5200 4400 50  0000 C CNN
-F 2 "Package_DFN_QFN:VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm" H 4950 3550 50  0001 C CIN
+F 2 "footprints:VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm" H 4950 3550 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny806_1606_Data_Sheet_40002029A.pdf" H 4950 3550 50  0001 C CNN
 	1    4950 3550
 	1    0    0    -1  
