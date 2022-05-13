@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Attiny826"
 Date "2022-03-18"
 Rev "0.0"
@@ -587,7 +587,7 @@ $EndComp
 Text Notes 3650 7700 0    60   ~ 0
 *RP1:\n10K= 100 mA\n5K = 200 mA\n2K = 500 mA\n1K = 1000 mA
 $Comp
-L MCP73833:MCP73833-AMI_UN-ND U2
+L project-rescue:MCP73833-AMI_UN-ND-MCP73833 U2
 U 1 1 5E84C831
 P 3250 5900
 F 0 "U2" H 3150 6140 60  0000 R CNN
@@ -746,9 +746,9 @@ Wire Wire Line
 	2500 5500 2500 5650
 Wire Wire Line
 	4750 5700 4750 6000
-Text Notes 4350 7450 0    60   ~ 0
+Text Notes 2750 7100 0    60   ~ 0
 footprints:MSOP-10_3x3mm_Pitch0.5mm
-Text Notes 4750 7300 0    60   ~ 0
+Text Notes 2950 7000 0    60   ~ 0
 MCP73833-AMI/UN-ND
 $Comp
 L project:+BATT #PWR0102
@@ -769,10 +769,6 @@ Text Notes 6800 6350 0    60   ~ 0
 Vm = Vcc * ( R2 / (R1 + R2) ) \nhttps://gist.github.com/dwhacks/7208805
 Text Label 4500 3950 0    60   ~ 0
 D6
-Text Notes 950  4100 0    60   ~ 0
-MBR0520L-TP\nDIODE SCHOTTKY 20V 500MA SOD123
-Text Notes 950  4450 0    60   ~ 0
-BZT52-B3V6_R1_00001\nSOD-123, ZENER
 $Comp
 L project:GND #PWR0104
 U 1 1 624C17BF
@@ -1150,224 +1146,103 @@ $EndComp
 $Comp
 L project:R R21
 U 1 1 62885C68
-P 1200 950
-F 0 "R21" V 1280 950 50  0000 C CNN
-F 1 "805" V 1200 950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1130 950 50  0001 C CNN
-F 3 "" H 1200 950 50  0001 C CNN
-	1    1200 950 
+P 1550 1550
+F 0 "R21" V 1630 1550 50  0000 C CNN
+F 1 "805" V 1550 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1480 1550 50  0001 C CNN
+F 3 "" H 1550 1550 50  0001 C CNN
+	1    1550 1550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L project:R R33
 U 1 1 628A2921
-P 1200 750
-F 0 "R33" V 1280 750 50  0000 C CNN
-F 1 "1206" V 1200 750 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 1130 750 50  0001 C CNN
-F 3 "" H 1200 750 50  0001 C CNN
-	1    1200 750 
+P 1550 1350
+F 0 "R33" V 1630 1350 50  0000 C CNN
+F 1 "1206" V 1550 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1480 1350 50  0001 C CNN
+F 3 "" H 1550 1350 50  0001 C CNN
+	1    1550 1350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L project:R R17
 U 1 1 628A2C5E
-P 1200 1150
-F 0 "R17" V 1280 1150 50  0000 C CNN
-F 1 "603" V 1200 1150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1130 1150 50  0001 C CNN
-F 3 "" H 1200 1150 50  0001 C CNN
-	1    1200 1150
+P 1550 1750
+F 0 "R17" V 1630 1750 50  0000 C CNN
+F 1 "603" V 1550 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1480 1750 50  0001 C CNN
+F 3 "" H 1550 1750 50  0001 C CNN
+	1    1550 1750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L project:R R19
 U 1 1 628A2F37
-P 1200 1350
-F 0 "R19" V 1280 1350 50  0000 C CNN
-F 1 "402" V 1200 1350 50  0000 C CNN
-F 2 "footprints:R_0402" V 1130 1350 50  0001 C CNN
-F 3 "" H 1200 1350 50  0001 C CNN
-	1    1200 1350
+P 1550 1950
+F 0 "R19" V 1630 1950 50  0000 C CNN
+F 1 "402" V 1550 1950 50  0000 C CNN
+F 2 "footprints:R_0402" V 1480 1950 50  0001 C CNN
+F 3 "" H 1550 1950 50  0001 C CNN
+	1    1550 1950
 	0    -1   -1   0   
 $EndComp
-Text Notes 750  1300 0    60   ~ 0
+Text Notes 1100 1900 0    60   ~ 0
 1206\n0805\n0603\n0402\n0201\n1005
 $Comp
 L project:R R22
 U 1 1 628D938B
-P 1200 1500
-F 0 "R22" V 1280 1500 50  0000 C CNN
-F 1 "201" V 1200 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 1130 1500 50  0001 C CNN
-F 3 "" H 1200 1500 50  0001 C CNN
-	1    1200 1500
+P 1550 2100
+F 0 "R22" V 1630 2100 50  0000 C CNN
+F 1 "201" V 1550 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 1480 2100 50  0001 C CNN
+F 3 "" H 1550 2100 50  0001 C CNN
+	1    1550 2100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L project:R R8
 U 1 1 628D9877
-P 1200 1650
-F 0 "R8" V 1280 1650 50  0000 C CNN
-F 1 "1005" V 1200 1650 50  0000 C CNN
-F 2 "Resistor_SMD:R_01005_0402Metric" V 1130 1650 50  0001 C CNN
-F 3 "" H 1200 1650 50  0001 C CNN
-	1    1200 1650
+P 1550 2250
+F 0 "R8" V 1630 2250 50  0000 C CNN
+F 1 "1005" V 1550 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_01005_0402Metric" V 1480 2250 50  0001 C CNN
+F 3 "" H 1550 2250 50  0001 C CNN
+	1    1550 2250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:TestPoint TP2
 U 1 1 628D9DF4
-P 1050 750
-F 0 "TP2" H 850 900 50  0000 L CNN
-F 1 "TestPoint" H 1250 900 50  0001 L CNN
-F 2 "footprints:TestPoint_Pad_D1.0mm" H 1250 750 50  0001 C CNN
-F 3 "~" H 1250 750 50  0001 C CNN
-	1    1050 750 
+P 1400 1350
+F 0 "TP2" H 1200 1500 50  0000 L CNN
+F 1 "TestPoint" H 1600 1500 50  0001 L CNN
+F 2 "footprints:TestPoint_Pad_D1.0mm" H 1600 1350 50  0001 C CNN
+F 3 "~" H 1600 1350 50  0001 C CNN
+	1    1400 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 750  1350 950 
+	1700 1350 1700 1550
 Wire Wire Line
-	1050 950  1050 1150
+	1400 1550 1400 1750
 Wire Wire Line
-	1350 1150 1350 1350
+	1700 1750 1700 1950
 Wire Wire Line
-	1050 1350 1050 1500
+	1400 1950 1400 2100
 Wire Wire Line
-	1350 1500 1350 1650
+	1700 2100 1700 2250
 Wire Wire Line
-	1050 1650 950  1650
+	1400 2250 1300 2250
 $Comp
 L Connector:TestPoint TP1
 U 1 1 628FB4E6
-P 950 1650
-F 0 "TP1" H 800 1850 50  0000 L CNN
-F 1 "TestPoint" H 1008 1677 50  0001 L CNN
-F 2 "footprints:TestPoint_Pad_D1.0mm" H 1150 1650 50  0001 C CNN
-F 3 "~" H 1150 1650 50  0001 C CNN
-	1    950  1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC807 Q1
-U 1 1 6294CEE0
-P -2000 1300
-F 0 "Q1" H -1809 1391 50  0000 L CNN
-F 1 "SOT-23" H -1809 1300 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H -1750 1400 50  0000 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC808-D.pdf" H -2000 1300 50  0001 L CNN
-	1    -2000 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC818W Q2
-U 1 1 6294F3E4
-P -2000 1850
-F 0 "Q2" H -1809 1941 50  0000 L CNN
-F 1 "SOT-323" H -1809 1850 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H -1809 1759 50  0000 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H -2000 1850 50  0001 L CNN
-	1    -2000 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Driver_FET:MCP1415 U7
-U 1 1 62954E3C
-P -2000 2450
-F 0 "U7" H -1556 2541 50  0000 L CNN
-F 1 "SOT-23-5" H -1556 2450 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H -1556 2359 50  0000 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002092F.pdf" H -2200 2700 50  0001 C CNN
-	1    -2000 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Driver_FET:NCV8402xST Q3
-U 1 1 6295956C
-P -1900 4550
-F 0 "Q3" H -1472 4641 50  0000 L CNN
-F 1 "SOT-223" H -1472 4550 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223" H -1472 4459 50  0000 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/NCV8402-D.PDF" H -1600 4550 50  0001 C CNN
-	1    -1900 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Driver_FET:PM8834M U9
-U 1 1 6295D4A9
-P -1950 5750
-F 0 "U9" H -1950 6521 50  0000 C CNN
-F 1 "MSOP-8" H -1950 6430 50  0000 C CNN
-F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.95x2.15mm" H -1500 6250 50  0000 C CNN
-F 3 "http://www.st.com/resource/en/datasheet/pm8834.pdf" H -1950 5750 50  0001 C CNN
-	1    -1950 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Driver_FET:MCP14A1202xMNY U8
-U 1 1 6295EA76
-P -2000 6700
-F 0 "U8" H -1656 6791 50  0000 L CNN
-F 1 "TDFN-8" H -1656 6700 50  0000 L CNN
-F 2 "Package_DFN_QFN:TDFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.4mm" H -1656 6609 50  0000 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP14A1201-Family-Data-Sheet-DS20006228A.pdf" H -2000 6400 50  0001 C CNN
-	1    -2000 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Microchip_ATtiny:ATtiny13V-10MU U5
-U 1 1 6295F8C2
-P -3650 1550
-F 0 "U5" H -4193 1641 50  0000 R CNN
-F 1 "QFN-20" H -4193 1550 50  0000 R CNN
-F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H -4193 1459 50  0000 R CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf" H -3650 1550 50  0001 C CNN
-	1    -3650 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Microchip_ATtiny:ATtiny40-XU U6
-U 1 1 62960C6A
-P -3650 3550
-F 0 "U6" H -4179 3641 50  0000 R CNN
-F 1 "TSSOP-20" H -4179 3550 50  0000 R CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H -4179 3459 50  0000 R CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8263-8-bit-avr-microcontroller-tinyavr-attiny40_datasheet.pdf" H -3650 3550 50  0001 C CNN
-	1    -3650 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Microchip_ATtiny:ATtiny1616-M U3
-U 1 1 62961F8F
-P -3800 6150
-F 0 "U3" H -3800 7321 50  0000 C CNN
-F 1 "VQFN-20" H -3800 7230 50  0000 C CNN
-F 2 "Package_DFN_QFN:VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm" H -3800 7139 50  0000 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3216_ATtiny1616-data-sheet-40001997B.pdf" H -3800 6150 50  0001 C CNN
-	1    -3800 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Microchip_ATtiny:ATtiny84A-CCU U4
-U 1 1 62963E47
-P -3800 8300
-F 0 "U4" H -4329 8391 50  0000 R CNN
-F 1 "UFBGA-15" H -4329 8300 50  0000 R CNN
-F 2 "Package_BGA:UFBGA-15_3.0x3.0mm_Layout4x4_P0.65mm" H -4329 8209 50  0000 R CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8183.pdf" H -3800 8300 50  0001 C CNN
-	1    -3800 8300
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Microchip_ATtiny:ATtiny13V-10SSU U10
-U 1 1 629680AF
-P -1600 3400
-F 0 "U10" H -2129 3446 50  0000 R CNN
-F 1 "SOIC-8" H -2129 3355 50  0000 R CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H -1600 3400 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf" H -1600 3400 50  0001 C CNN
-	1    -1600 3400
+P 1300 2250
+F 0 "TP1" H 1150 2450 50  0000 L CNN
+F 1 "TestPoint" H 1358 2277 50  0001 L CNN
+F 2 "footprints:TestPoint_Pad_D1.0mm" H 1500 2250 50  0001 C CNN
+F 3 "~" H 1500 2250 50  0001 C CNN
+	1    1300 2250
 	1    0    0    -1  
 $EndComp
 Text Label 4500 3750 0    60   ~ 0
@@ -1770,4 +1645,10 @@ F 3 "" H 8450 1450 50  0001 C CNN
 	1    8450 1450
 	0    1    1    0   
 $EndComp
+$Sheet
+S 1100 7200 1000 400 
+U 627F5198
+F0 "footprints" 60
+F1 "footprints.sch" 60
+$EndSheet
 $EndSCHEMATC
