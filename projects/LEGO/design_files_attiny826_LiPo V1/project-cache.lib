@@ -99,33 +99,11 @@ X B 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# project-rescue_MCP73833-AMI_UN-ND-MCP73833
+# project-rescue_+BATT-project
 #
-DEF project-rescue_MCP73833-AMI_UN-ND-MCP73833 U 0 40 Y Y 1 F N
-F0 "U" -100 240 60 H V R CNN
-F1 "project-rescue_MCP73833-AMI_UN-ND-MCP73833" 110 -550 60 H V L CNN
-F2 "digikey-footprints:MSOP-10_W3mm" 200 200 60 H I L CNN
-F3 "" 200 300 60 H I L CNN
-DRAW
-S -200 200 400 -500 0 1 0 f
-X VDD 1 0 300 100 D 50 50 1 1 W
-X VBAT 10 500 -400 100 L 50 50 1 1 w
-X VDD 2 100 300 100 D 50 50 1 1 W
-X STAT1 3 500 0 100 L 50 50 1 1 O
-X STAT2 4 500 -100 100 L 50 50 1 1 O
-X VSS 5 100 -600 100 U 50 50 1 1 W
-X PROG 6 -300 -100 100 R 50 50 1 1 I
-X ~PG~(~TE~) 7 500 -200 100 L 50 50 1 1 O
-X THERM 8 -300 -200 100 R 50 50 1 1 I
-X VBAT 9 500 -300 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# project_+BATT
-#
-DEF project_+BATT #PWR 0 0 Y Y 1 F P
+DEF project-rescue_+BATT-project #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "project_+BATT" 0 140 50 H V C CNN
+F1 "project-rescue_+BATT-project" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -136,11 +114,11 @@ X +BATT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# project_C
+# project-rescue_C-project
 #
-DEF project_C C 0 10 N Y 1 F N
+DEF project-rescue_C-project C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "project_C" 25 -100 50 H V L CNN
+F1 "project-rescue_C-project" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -154,11 +132,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# project_GND
+# project-rescue_GND-project
 #
-DEF project_GND #PWR 0 0 Y Y 1 F P
+DEF project-rescue_GND-project #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "project_GND" 0 -150 50 H V C CNN
+F1 "project-rescue_GND-project" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -167,11 +145,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# project_LED
+# project-rescue_LED-project
 #
-DEF project_LED D 0 40 Y N 1 F N
+DEF project-rescue_LED-project D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "project_LED" 0 -100 50 H V C CNN
+F1 "project-rescue_LED-project" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -188,11 +166,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# project_PWR_FLAG
+# project-rescue_PWR_FLAG-project
 #
-DEF project_PWR_FLAG #FLG 0 0 N N 1 F P
+DEF project-rescue_PWR_FLAG-project #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "project_PWR_FLAG" 0 150 50 H V C CNN
+F1 "project-rescue_PWR_FLAG-project" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -201,11 +179,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# project_R
+# project-rescue_R-project
 #
-DEF project_R R 0 0 N Y 1 F N
+DEF project-rescue_R-project R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "project_R" 0 0 50 V V C CNN
+F1 "project-rescue_R-project" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -219,11 +197,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# project_USB_OTG
+# project-rescue_USB_OTG-project
 #
-DEF project_USB_OTG J 0 40 Y Y 1 F N
+DEF project-rescue_USB_OTG-project J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "project_USB_OTG" -200 350 50 H V L CNN
+F1 "project-rescue_USB_OTG-project" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
 $FPLIST
@@ -254,11 +232,11 @@ X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# project_VBUS
+# project-rescue_VBUS-project
 #
-DEF project_VBUS #PWR 0 0 Y Y 1 F P
+DEF project-rescue_VBUS-project #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "project_VBUS" 0 150 50 H V C CNN
+F1 "project-rescue_VBUS-project" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -269,17 +247,39 @@ X VBUS 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# project_VCC
+# project-rescue_VCC-project
 #
-DEF project_VCC #PWR 0 0 Y Y 1 F P
+DEF project-rescue_VCC-project #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "project_VCC" 0 150 50 H V C CNN
+F1 "project-rescue_VCC-project" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 C 0 75 25 0 1 0 N
 P 2 0 1 0 0 0 0 50 N
 X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# project_project-rescue_MCP73833-AMI_UN-ND-MCP73833
+#
+DEF project_project-rescue_MCP73833-AMI_UN-ND-MCP73833 U 0 40 Y Y 1 F N
+F0 "U" -100 240 60 H V R CNN
+F1 "project_project-rescue_MCP73833-AMI_UN-ND-MCP73833" 110 -550 60 H V L CNN
+F2 "digikey-footprints:MSOP-10_W3mm" 200 200 60 H I L CNN
+F3 "" 200 300 60 H I L CNN
+DRAW
+S -200 200 400 -500 0 1 0 f
+X VDD 1 0 300 100 D 50 50 1 1 W
+X VBAT 10 500 -400 100 L 50 50 1 1 w
+X VDD 2 100 300 100 D 50 50 1 1 W
+X STAT1 3 500 0 100 L 50 50 1 1 O
+X STAT2 4 500 -100 100 L 50 50 1 1 O
+X VSS 5 100 -600 100 U 50 50 1 1 W
+X PROG 6 -300 -100 100 R 50 50 1 1 I
+X ~PG~(~TE~) 7 500 -200 100 L 50 50 1 1 O
+X THERM 8 -300 -200 100 R 50 50 1 1 I
+X VBAT 9 500 -300 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #

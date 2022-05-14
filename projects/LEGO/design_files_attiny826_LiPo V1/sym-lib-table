@@ -1,5 +1,4 @@
 (sym_lib_table
   (lib (name project)(type Legacy)(uri ${KIPRJMOD}/lib_sch/project.lib)(options "")(descr ""))
-  (lib (name MCP73833)(type Legacy)(uri C:/Users/648ke/git/KiCad/projects/LEGO/design_files_attiny826_LiPo/lib_sch/MCP73833.lib)(options "")(descr ""))
   (lib (name project-rescue)(type Legacy)(uri ${KIPRJMOD}/project-rescue.lib)(options "")(descr ""))
 )
