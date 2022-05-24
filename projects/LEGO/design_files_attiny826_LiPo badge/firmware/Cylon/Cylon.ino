@@ -2,33 +2,37 @@
 /*
  * 
 https://github.com/SpenceKonde/megaTinyCore
-https://github.com/SpenceKonde/megaTinyCore/blob/master/megaavr/extras/ATtiny_x26.md
 
 Attiny 826
-
-voltage = analogRead(v_pin) * (39K + 10K)/10K * (2.5V/1024)
-4.2V = 351
-3.7V = 309
 
 */
 
 #include <EEPROM.h>
+#include <tinyNeoPixel.h>
 
-int LEDS[] = {0, 1, 7, 9, 8, 15, 16};
+
+#define PIN            PIN_PB4  // neopixle
+#define NUMPIXELS      1
+tinyNeoPixel pixels = tinyNeoPixel(NUMPIXELS, PIN, NEO_GRB);
+
+int LEDS[] = {13, 12, 11, 14, 15, 16, 1, 2, 3, 4, 6, 7, 10, 1, 16, 15, 14, 11, 12};
 boolean states[] = {false, false, false, false, false, false, false}; 
 int led = 3;  // for random walk
 long startTime = 0;
 boolean startFlag = true;
 int mode;
 
-int v_pin = PIN_PB4;
-int v_hi = 342;   // 4.1V
-int v_low = 292;  // 3.5V
+int R = 0;
+int G = 0;
+int B = 255;
+
 
 void setup(){
-  analogReference(INTERNAL2V5);
-  pinMode(v_pin, INPUT);
-  
+
+
+  pixels.setBrightness(25); //0-255
+  pixels.begin(); // This initializes the NeoPixel library
+
   mode = EEPROM.read(0);
   if (mode > 3){  // probaly 255 on first execution
     EEPROM.write(0, 0);
@@ -48,38 +52,15 @@ void setup(){
   for(int LED=0; LED<int(sizeof(LEDS)/sizeof(int)); LED++){
     pinMode(LEDS[LED], OUTPUT);
   }
-  showVoltage();
-}
-
-
-void showVoltage(){
-  int val = analogRead(v_pin);
-  int x = map(val, v_low, v_hi, 0, 7);  //adc value to LED number
-  if (x <= 0){  // blink all LEDs three time for low voltage
-    for(int i=0; i<5; i++){
-      digitalWrite(LEDS[0], HIGH);
-      delay(250);
-      digitalWrite(LEDS[0], LOW);
-      delay(250);      
-    }
-  }
-  else{
-    for(int LED=0; LED<x; LED++){
-      digitalWrite(LEDS[LED], HIGH);
-      delay(100);
-    }
-    delay(1000);
-    for(int LED=0; LED<int(sizeof(LEDS)/sizeof(int)); LED++){
-      digitalWrite(LEDS[LED], LOW);
-    }    
-  }
+  mode = 0;
 }
 
 
 void loop(){
 
-  if(startFlag){
-    if(millis() > 4000){ 
+  //if(startFlag){
+  if(0){
+    if(millis() > 3000){ 
       int newmode = mode - 1;
       if (newmode < 0){
         newmode = 3;
@@ -114,13 +95,36 @@ void loop(){
 
 
 void mode0(){ // over and back
+  int i = 28;
+  B = 255;
+  G = 0;
   for(int LED=0; LED<int(sizeof(LEDS)/sizeof(int)); LED++){
-    flash(LEDS[LED]);
+    flash(LED);
+    pixels.setPixelColor(0, pixels.Color(R, G, B));
+    pixels.show();
+    if (LED < 9){
+      B = B - i;
+      if(B <0) {B = 0;};
+      G = G + i;
+      if(G > 255) {G = 255;};
+    }
+    else{
+      B = B + i;
+      if(B > 255) {B = 255;};
+      G = G - i;    
+      if(G <0) { G = 0;};  
+    }
   }  
 
+  /*
   for(int LED = (sizeof(LEDS)/sizeof(int))-1; LED >= 0; LED--){
-    flash(LEDS[LED]);
-  } 
+    flash(LED);
+    pixels.setPixelColor(0, pixels.Color(R, G, B));
+    pixels.show();
+    B = B + i;
+    G = G - i;
+  } */
+
 }
 
 
@@ -159,16 +163,51 @@ void mode3(){ // random walk
 }
 
 
-void flash(int led){  // psuedo PWM
-  digitalWrite(led, HIGH);
-  delay(100);
-  digitalWrite(led, LOW);
-  /*
+void flash1(int led){  // psuedo PWM
+  //int delayus = 0;
+  //digitalWrite(led, HIGH);
+  //delay(100);
+  //digitalWrite(led, LOW);
+
   for(int x=0; x<25; x++){
     digitalWrite(led, HIGH);
-    delay(1);
+    delayMicroseconds(1000);
     digitalWrite(led, LOW);
-    delay(3);
+    delayMicroseconds(4000);
+    //delay(4);
   }
-  */
+}
+  
+void flash(int LED){
+  int i = 0;  // interval in us (0 -1000)
+  int t = 100; // length of fade in ms
+
+  int LEDahead = 0;
+  if(LED < sizeof(LEDS)/sizeof(int)){
+    LEDahead = LED + 1;
+  }
+  int LEDbehind = 0;
+  if(LED > 0){
+    LEDbehind = LED - 1;
+  }
+
+  for(int x=0; x < t/2; x++){ // ramp up
+    digitalWrite(LEDS[LED], HIGH);
+    //if (LEDbehind) {digitalWrite(LEDS[LEDbehind], LOW);}
+    delayMicroseconds(x);
+    digitalWrite(LEDS[LED], LOW);
+    //if (LEDbehind) {digitalWrite(LEDS[LEDbehind], HIGH);}
+    delayMicroseconds(2000 - x);
+    i = i + 1;
+  }
+  //if (LEDbehind) {digitalWrite(LEDS[LEDbehind], LOW);}
+
+  for(int x=t/2; x >= 0; x--){ // ramp down
+    digitalWrite(LEDS[LED], HIGH);
+    delayMicroseconds(x);
+    digitalWrite(LEDS[LED], LOW);
+    delayMicroseconds(2000 - x);
+    i = i - 1;
+  }
+
 }

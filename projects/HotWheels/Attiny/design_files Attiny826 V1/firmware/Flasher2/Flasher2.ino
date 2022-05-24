@@ -16,7 +16,7 @@ https://github.com/SpenceKonde/ATTinyCore
 #include <tinyNeoPixel.h>
 
 
-#define PIN            3  // neopixle
+#define PIN            5  // neopixle
 #define NUMPIXELS      2
 
 #ifndef cbi

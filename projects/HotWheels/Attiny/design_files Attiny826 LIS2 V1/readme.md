@@ -17,10 +17,10 @@ Bill Of Materials
     - Nexperia USA Inc., BSS138PW, https://www.digikey.com/short/zbn8bp5t
     - Infineon Technologies, BSS138WH6433XTMA1, https://www.digikey.com/short/9pr0qbn3
 	- Diodes Inc BSS138W-7-F, https://www.digikey.com/short/ptn4zw78 
-- 1 ea., CAP CER 10uF 50V 0805,
-- 3 ea., CAP CER 0.1uF 0605
-- 6 ea., 4.7K SMD 0605
-- 2 ea., 10K SMD 0605
+- 1 ea., CAP CER 10uF 0805, https://www.digikey.com/short/hbvp3nn5 
+- 3 ea., CAP CER 0.1uF 0605, https://www.digikey.com/short/h3jddqhm 
+- 6 ea., 4.7K SMD 0605, https://www.digikey.com/short/54v5jbfm
+- 2 ea., 10K SMD 0605, https://www.digikey.com/short/2cd3frf7
 
 
 Revisions

@@ -9,7 +9,7 @@ Bill Of Materials
 ----------------
 - 1 ea., Perfect Purple PCB from OSH Park from [design_files/project.kicad_pcb](project.kicad_pcb) file.
 - 1 ea., Attiny826 IC MCU 8BIT 8KB FLASH 20VQFN, https://www.digikey.com/short/b9cq02np
-- 1 ea., CAP CER 10uF 50V 0805,
+- 1 ea., CAP CER 10uF 0805, https://www.digikey.com/short/hbvp3nn5
 - 2 ea., CAP CER 1uF 0605
 - 1 ea., CAP CER 0.1uF 0605
 - 2 ea., NeoPixel Nano 2020, https://www.adafruit.com/product/4684 or https://www.digikey.com/short/480tzjf0
