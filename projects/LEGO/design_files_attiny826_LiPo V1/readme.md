@@ -23,7 +23,7 @@ Bill Of Materials
 - LEDs: 
     - 3 ea., LED RED DIFFUSED 0603 SMD (CHG)
 	- 1 ea., LED GREEN DIFFUSE 0603 SMD (DONE)
-    - 7 ea., LED WHITE 0804
+    - 7 ea., LED WHITE 0805, https://www.digikey.com/short/j45hzdv8
     
 
 Revisions
