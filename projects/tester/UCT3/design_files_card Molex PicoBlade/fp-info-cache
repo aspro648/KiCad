@@ -1,0 +1,85 @@
+20019788965737
+footprints
+G125-MS11005L0P
+G125-MS11005L0P
+Connector
+0
+20
+20
+footprints
+Harwin_Gecko-G125-MVX0605L0X_2x03_P1.25mm_Vertical
+Harwin Gecko Connector, 6 pins, dual row male, vertical entry, no latches, PN:G125-MVX0605L0X
+connector harwin gecko
+0
+6
+6
+footprints
+Harwin_Gecko-G125-MVX1205L0X_2x06_P1.25mm_Vertical
+Harwin Gecko Connector, 12 pins, dual row male, vertical entry, no latches, PN:G125-MVX1205L0X
+connector harwin gecko
+0
+12
+12
+footprints
+Harwin_Gecko-G125-MVX1605L0X_2x08_P1.25mm_Vertical
+Harwin Gecko Connector, 16 pins, dual row male, vertical entry, no latches, PN:G125-MVX1605L0X
+connector harwin gecko
+0
+16
+16
+footprints
+Harwin_Gecko-G125-MVX2005L0X_2x10_P1.25mm_Vertical
+Harwin Gecko Connector, 20 pins, dual row male, vertical entry, no latches, PN:G125-MVX2005L0X
+connector harwin gecko
+0
+20
+20
+footprints
+M80-5T110YYMC
+M80-5T110YYMC
+Connector
+0
+10
+10
+footprints
+MEC8-110-XX-XX-D-RA1
+0.8mm RIGHT ANGLE EDGE CARD ASSEMBLY.
+
+0
+20
+20
+footprints
+MEC8_card
+0.8mm RIGHT ANGLE EDGE CARD ASSEMBLY.
+
+0
+20
+20
+footprints
+MEC8_top_bottom
+0.8mm RIGHT ANGLE EDGE CARD ASSEMBLY.
+
+0
+20
+20
+footprints
+Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical
+Molex PicoBlade Connector System, 53047-0510, 5 Pins per row (http://www.molex.com/pdm_docs/sd/530470610_sd.pdf), generated with kicad-footprint-generator
+connector Molex PicoBlade side entry
+0
+5
+5
+footprints
+Molex_PicoBlade_53047-1510_1x15_P1.25mm_Vertical
+Molex PicoBlade Connector System, 53047-1510, 15 Pins per row (http://www.molex.com/pdm_docs/sd/530470610_sd.pdf), generated with kicad-footprint-generator
+connector Molex PicoBlade side entry
+0
+15
+15
+footprints
+P1.25mm_x15_testpads
+Molex PicoBlade series connector, 53261-1571 (http://www.molex.com/pdm_docs/sd/532610271_sd.pdf), generated with kicad-footprint-generator
+connector Molex PicoBlade top entry
+0
+15
+15

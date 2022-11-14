@@ -10,13 +10,13 @@ data = {}
 def loadNames(fName):
     ''' Open db.csv and parse names and award'''
 
-    print '\nLoading "%s"' % fName
+    print ('\nLoading "%s"' % fName)
     global data
     try:
         inFile = open(fName, 'r')
     except:
-        print "\nCouldn't find %s file!" % fName
-        print "Is it in same directory as python script?\n"
+        print ("\nCouldn't find %s file!" % fName)
+        print ("Is it in same directory as python script?\n")
         sys.exit()
     for line in inFile.readlines()[1:]:
         vals = line.strip().split(',')
@@ -26,23 +26,23 @@ def loadNames(fName):
     inFile.close()
         
         
-def addText(img, text, fontName, fontSize, (x, y), fill='black', limit=None):
+def addText(img, text, fontName, fontSize, x, y, fill='black', limit=None):
     ''' Add centered text to image at (x, y) from center '''
     #im = Image.new('RGB', (730, 54))
     imgX, imgY = img.size
     draw = ImageDraw.Draw(img)
     fontFile = 'files/fonts/' + fontName
-    print fontFile, os.path.isfile(fontFile)
+    print (fontFile, os.path.isfile(fontFile))
     font = ImageFont.truetype(fontFile, fontSize)
     xx,yy = draw.textsize(text, font=font)
     if 'too long' in text.lower():
-        print xx
+        print (xx)
     if limit:
         while xx > limit:
             fontSize = int(fontSize * 0.95)
             font = ImageFont.truetype(fontName, fontSize)
             xx,yy = draw.textsize(text, font=font)
-            print fontSize, ' ', xx            
+            print (fontSize, ' ', xx)           
 
     # determine offset from center
     x = int((imgX - xx) / 2) + x
@@ -52,7 +52,7 @@ def addText(img, text, fontName, fontSize, (x, y), fill='black', limit=None):
     return img
 
 
-def addLine(img, (x, y), width):
+def addLine(img, x, y, width):
     ''' add a horizontal line at (x, y) from center '''
     imgX, imgY = img.size
     draw = ImageDraw.Draw(img)
@@ -74,24 +74,24 @@ def addLine(img, (x, y), width):
 
 def createCert(name, date):
 
-    print '%s -> %s' % (name, date)
+    print ('%s -> %s' % (name, date))
     # open certificate border
     img = Image.open('files/award_template.png')
     
     # add name and award
-    addText(img, 'Certificate of Membership in the', 'OLDENGL.TTF', 72, (0, 0), limit=1200)
-    addText(img, '0201 Club', 'OLDENGL.TTF', 120, (0, 95), limit=1200)        
-    addText(img, 'for completion of the SMD Challenge by', 'georgiai.ttf', 36, (0, 200))
-    addText(img, name, 'BRUSHSCI.TTF', 140, (0, 300), limit=650)
+    addText(img, 'Certificate of Membership in the', 'OLDENGL.TTF', 72, 0, 0, limit=1200)
+    addText(img, '0201 Club', 'OLDENGL.TTF', 120, 0, 95, limit=1200)        
+    addText(img, 'for completion of the SMD Challenge by', 'georgiai.ttf', 36, 0, 200)
+    addText(img, name, 'BRUSHSCI.TTF', 140, 0, 300, limit=650)
     #if award != '' or True:
     #    #addText(img, 'and membership in the', 'georgiaz.ttf', 32, (0, 260))
     #    #addText(img, '0201 Club', 'georgiab.ttf', 64, (0, 330), limit=700)
-    addText(img, '%s' % date, 'georgiai.ttf', 32, (0, 410))
+    addText(img, '%s' % date, 'georgiai.ttf', 32, 0, 410)
 
     # add signature
-    addText(img, cubmaster, 'MISTRAL.TTF', 60, (450, 400), fill='darkblue')
-    addText(img, 'www.MakersBox.us', 'georgiai.ttf', 32, (450, 444))
-    addLine(img, (450, 424), 420)
+    addText(img, cubmaster, 'MISTRAL.TTF', 60, 450, 400, fill='darkblue')
+    addText(img, 'www.MakersBox.us', 'georgiai.ttf', 32, 450, 444)
+    addLine(img, 450, 424, 420)
 
     # add seal
     seal = Image.open('files/seal.png')
@@ -130,13 +130,13 @@ def createCert(name, date):
             imgX, imgY = pic1.size
             pic1 = pic1.resize((int(imgX * 350 / imgY), 350))
             img.paste(pic1, (int(1650 / 2 - 175), 197), pic1)        
-            print "\tNo picture found!"
+            print ("\tNo picture found!")
 
     # save to 'certificate' folder
     if name == '': name = 'blank'
     name = name.replace('"', '-')
     img.save('certificates/%s.png' % name, 'PNG')
-    print 'certificates/%s.png' % name
+    print ('certificates/%s.png' % name)
 
 db = 'awards.csv'
 event = "Certificate of Membership"
@@ -146,13 +146,13 @@ event_logo = 'files/smd_challenge.png'
 
 if not os.path.isdir('certificates'):
     os.mkdir('certificates')
-    print 'Created certicates directory'
+    print ('Created certicates directory')
 
 # load name and awards
 loadNames(db)
 
 
-for name, date in data.iteritems():
+for name, date in data.items():
     # make certificate
     if not os.path.isfile('certificates/%s.png' % name):
         createCert(name, date)
