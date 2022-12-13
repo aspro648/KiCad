@@ -1,4 +1,4 @@
-19228016308611642
+19233021834834417
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83034,12 +83034,26 @@ Connector
 20
 20
 footprints
+Harwin_Gecko-G125-FVX0605L0X_2x03_P1.25mm_Vertical
+Harwin Gecko Connector, 6 pins, dual row female, vertical entry, PN:G125-FVX0605L0X
+connector harwin gecko
+0
+6
+6
+footprints
 Harwin_Gecko-G125-MVX0605L0X_2x03_P1.25mm_Vertical
 Harwin Gecko Connector, 6 pins, dual row male, vertical entry, no latches, PN:G125-MVX0605L0X
 connector harwin gecko
 0
 6
 6
+footprints
+Harwin_Gecko-G125-MVX1005L0X_2x05_P1.25mm_Vertical
+Harwin Gecko Connector, 10 pins, dual row male, vertical entry, no latches, PN:G125-MVX1005L0X
+connector harwin gecko
+0
+10
+10
 footprints
 Harwin_Gecko-G125-MVX1205L0X_2x06_P1.25mm_Vertical
 Harwin Gecko Connector, 12 pins, dual row male, vertical entry, no latches, PN:G125-MVX1205L0X
@@ -83089,3 +83103,10 @@ MEC8_top_bottom
 0
 20
 20
+footprints
+SnakeSmall
+
+
+0
+0
+0

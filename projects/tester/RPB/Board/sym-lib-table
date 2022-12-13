@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name project)(type Legacy)(uri ${KIPRJMOD}/lib_sch/project.lib)(options "")(descr ""))
+  (lib (name arduino)(type Legacy)(uri ${KIPRJMOD}/lib_sch/arduino.lib)(options "")(descr ""))
+  (lib (name IN-PI33TBTPRPGPB)(type Legacy)(uri ${KIPRJMOD}/lib_sch/IN-PI33TBTPRPGPB.lib)(options "")(descr ""))
+)

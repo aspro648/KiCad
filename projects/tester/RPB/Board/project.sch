@@ -1,0 +1,1827 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Rapid Prototyping Board"
+Date "2022-11-19"
+Rev "1.0"
+Comp ""
+Comment1 "648.ken@gmail.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L project:ATMEGA32U4-AU U1
+U 1 1 5B3FD92A
+P 7400 2850
+F 0 "U1" H 6450 4550 50  0000 C CNN
+F 1 "ATMEGA32U4-AU" H 8100 1350 50  0000 C CNN
+F 2 "footprints:TQFP-44_10x10mm_Pitch0.8mm" H 7400 2850 50  0001 C CIN
+F 3 "" H 8500 3950 50  0001 C CNN
+	1    7400 2850
+	1    0    0    -1  
+$EndComp
+Text Label 8650 1400 0    60   ~ 0
+SCK
+Text Label 8600 1500 0    60   ~ 0
+MOSI
+Text Label 8600 1600 0    60   ~ 0
+MISO
+Text Label 8700 1700 0    60   ~ 0
+D8
+Text Label 8700 1800 0    60   ~ 0
+D9
+Text Label 8650 1900 0    60   ~ 0
+D10
+Text Label 8650 2000 0    60   ~ 0
+D11
+Text Label 8700 2200 0    60   ~ 0
+D5
+Text Label 8650 2300 0    60   ~ 0
+D13
+Text Label 8700 2500 0    60   ~ 0
+D3_SCL
+Text Label 8700 2600 0    60   ~ 0
+D2_SDA
+Text Label 8700 2700 0    60   ~ 0
+D0
+Text Label 8700 2800 0    60   ~ 0
+D1
+Text Label 8700 2900 0    60   ~ 0
+D4
+Text Label 8650 3100 0    60   ~ 0
+D12
+Text Label 8700 3200 0    60   ~ 0
+D6
+Text Label 8700 3500 0    60   ~ 0
+D7
+Text Label 8700 3700 0    60   ~ 0
+A5
+Text Label 8700 3800 0    60   ~ 0
+A4
+Text Label 8700 3900 0    60   ~ 0
+A3
+Text Label 8700 4000 0    60   ~ 0
+A2
+Text Label 8700 4100 0    60   ~ 0
+A1
+Text Label 8700 4200 0    60   ~ 0
+A0
+$Comp
+L project:GND #PWR01
+U 1 1 5B3FDCF5
+P 2150 900
+F 0 "#PWR01" H 2150 650 50  0001 C CNN
+F 1 "GND" H 2150 750 50  0000 C CNN
+F 2 "" H 2150 900 50  0001 C CNN
+F 3 "" H 2150 900 50  0001 C CNN
+	1    2150 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG02
+U 1 1 5B3FDD3A
+P 900 900
+F 0 "#FLG02" H 900 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 1050 50  0000 C CNN
+F 2 "" H 900 900 50  0001 C CNN
+F 3 "" H 900 900 50  0001 C CNN
+	1    900  900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG03
+U 1 1 5B3FDD50
+P 1700 900
+F 0 "#FLG03" H 1700 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 1700 1050 50  0000 C CNN
+F 2 "" H 1700 900 50  0001 C CNN
+F 3 "" H 1700 900 50  0001 C CNN
+	1    1700 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PWR_FLAG #FLG04
+U 1 1 5B3FDD67
+P 2150 900
+F 0 "#FLG04" H 2150 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 2150 1050 50  0000 C CNN
+F 2 "" H 2150 900 50  0001 C CNN
+F 3 "" H 2150 900 50  0001 C CNN
+	1    2150 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR05
+U 1 1 5B3FDE3A
+P 7300 4450
+F 0 "#PWR05" H 7300 4200 50  0001 C CNN
+F 1 "GND" H 7300 4300 50  0000 C CNN
+F 2 "" H 7300 4450 50  0001 C CNN
+F 3 "" H 7300 4450 50  0001 C CNN
+	1    7300 4450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6950 1050
+$Comp
+L project:C C1
+U 1 1 5B3FDF75
+P 6100 3150
+F 0 "C1" H 6125 3250 50  0000 L CNN
+F 1 "10uF" H 6125 3050 50  0000 L CNN
+F 2 "footprints:C_0805" H 6138 3000 50  0001 C CNN
+F 3 "" H 6100 3150 50  0001 C CNN
+	1    6100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR06
+U 1 1 5B3FDF98
+P 6100 3300
+F 0 "#PWR06" H 6100 3050 50  0001 C CNN
+F 1 "GND" H 6100 3150 50  0000 C CNN
+F 2 "" H 6100 3300 50  0001 C CNN
+F 3 "" H 6100 3300 50  0001 C CNN
+	1    6100 3300
+	1    0    0    -1  
+$EndComp
+Text Label 6000 1300 0    60   ~ 0
+~RESET
+Text Label 6050 3700 0    60   ~ 0
+AREF
+$Comp
+L project:GND #PWR07
+U 1 1 5B3FE24E
+P 5500 1850
+F 0 "#PWR07" H 5500 1600 50  0001 C CNN
+F 1 "GND" H 5500 1700 50  0000 C CNN
+F 2 "" H 5500 1850 50  0001 C CNN
+F 3 "" H 5500 1850 50  0001 C CNN
+	1    5500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:USB_OTG J1
+U 1 1 5B3FE368
+P 4600 2650
+F 0 "J1" H 4400 3100 50  0000 L CNN
+F 1 "USB_OTG" H 4400 3000 50  0000 L CNN
+F 2 "footprints:USB_Micro-B_Molex-105017-0001" H 4750 2600 50  0001 C CNN
+F 3 "" H 4750 2600 50  0001 C CNN
+	1    4600 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:R R24
+U 1 1 5B3FE405
+P 5800 2650
+F 0 "R24" V 5750 2500 50  0000 C CNN
+F 1 "22" V 5800 2650 50  0000 C CNN
+F 2 "footprints:R_0603" V 5730 2650 50  0001 C CNN
+F 3 "" H 5800 2650 50  0001 C CNN
+	1    5800 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L project:R R25
+U 1 1 5B3FE482
+P 5800 2750
+F 0 "R25" V 5850 2600 50  0000 C CNN
+F 1 "22" V 5800 2750 50  0000 C CNN
+F 2 "footprints:R_0603" V 5730 2750 50  0001 C CNN
+F 3 "" H 5800 2750 50  0001 C CNN
+	1    5800 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L project:GND #PWR09
+U 1 1 5B3FE6F5
+P 4600 3300
+F 0 "#PWR09" H 4600 3050 50  0001 C CNN
+F 1 "GND" H 4600 3150 50  0000 C CNN
+F 2 "" H 4600 3300 50  0001 C CNN
+F 3 "" H 4600 3300 50  0001 C CNN
+	1    4600 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 2850
+$Comp
+L project:PWR_FLAG #FLG010
+U 1 1 5B3FFE6E
+P 1300 900
+F 0 "#FLG010" H 1300 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 1050 50  0000 C CNN
+F 2 "" H 1300 900 50  0001 C CNN
+F 3 "" H 1300 900 50  0001 C CNN
+	1    1300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:SW_Push SW1
+U 1 1 5B4008ED
+P 5750 1300
+F 0 "SW1" H 5800 1400 50  0000 L CNN
+F 1 "RESET" H 5750 1240 50  0000 C CNN
+F 2 "footprints:SW_TS10-63-26-BE-250-SMT-TR" H 5750 1500 50  0001 C CNN
+F 3 "" H 5750 1500 50  0001 C CNN
+	1    5750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR011
+U 1 1 5B40099C
+P 5500 1350
+F 0 "#PWR011" H 5500 1100 50  0001 C CNN
+F 1 "GND" H 5500 1200 50  0000 C CNN
+F 2 "" H 5500 1350 50  0001 C CNN
+F 3 "" H 5500 1350 50  0001 C CNN
+	1    5500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:R R11
+U 1 1 5B406515
+P 5900 5200
+F 0 "R11" V 5850 5000 50  0000 C CNN
+F 1 "1K" V 5900 5200 50  0000 C CNN
+F 2 "footprints:R_0603" V 5830 5200 50  0001 C CNN
+F 3 "" H 5900 5200 50  0001 C CNN
+	1    5900 5200
+	0    1    1    0   
+$EndComp
+Text Label 8550 1300 0    60   ~ 0
+RXLED
+Text Label 8550 3000 0    60   ~ 0
+TXLED
+$Comp
+L project:R R23
+U 1 1 5B44E5C9
+P 9650 3650
+F 0 "R23" V 9730 3650 50  0000 C CNN
+F 1 "1K" V 9650 3650 50  0000 C CNN
+F 2 "footprints:R_0603" V 9580 3650 50  0001 C CNN
+F 3 "" H 9650 3650 50  0001 C CNN
+	1    9650 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:LED D23
+U 1 1 5B44E5CF
+P 9650 3300
+F 0 "D23" H 9650 3400 50  0000 C CNN
+F 1 "RX" H 9650 3200 50  0000 C CNN
+F 2 "footprints:LED_0603" H 9650 3300 50  0001 C CNN
+F 3 "" H 9650 3300 50  0001 C CNN
+	1    9650 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:R R22
+U 1 1 5B44E637
+P 9350 3650
+F 0 "R22" V 9430 3650 50  0000 C CNN
+F 1 "1K" V 9350 3650 50  0000 C CNN
+F 2 "footprints:R_0603" V 9280 3650 50  0001 C CNN
+F 3 "" H 9350 3650 50  0001 C CNN
+	1    9350 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:LED D22
+U 1 1 5B44E63D
+P 9350 3300
+F 0 "D22" H 9350 3400 50  0000 C CNN
+F 1 "TX" H 9350 3200 50  0000 C CNN
+F 2 "footprints:LED_0603" H 9350 3300 50  0001 C CNN
+F 3 "" H 9350 3300 50  0001 C CNN
+	1    9350 3300
+	0    -1   -1   0   
+$EndComp
+Text Label 6100 2650 0    60   ~ 0
+D+
+Text Label 6100 2750 0    60   ~ 0
+D-
+$Comp
+L project:Polyfuse F1
+U 1 1 5B6E44FA
+P 5750 2450
+F 0 "F1" V 5650 2350 50  0000 C CNN
+F 1 "Polyfuse" V 5800 2600 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" H 5800 2250 50  0001 L CNN
+F 3 "" H 5750 2450 50  0001 C CNN
+	1    5750 2450
+	0    1    1    0   
+$EndComp
+NoConn ~ 5750 2450
+$Comp
+L project:VBUS #PWR016
+U 1 1 5B8EB917
+P 1300 900
+F 0 "#PWR016" H 1300 750 50  0001 C CNN
+F 1 "VBUS" H 1300 1050 50  0000 C CNN
+F 2 "" H 1300 900 50  0001 C CNN
+F 3 "" H 1300 900 50  0001 C CNN
+	1    1300 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:+5V #PWR017
+U 1 1 5B8EBC6C
+P 900 900
+F 0 "#PWR017" H 900 750 50  0001 C CNN
+F 1 "+5V" H 900 1040 50  0000 C CNN
+F 2 "" H 900 900 50  0001 C CNN
+F 3 "" H 900 900 50  0001 C CNN
+	1    900  900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:+5V #PWR029
+U 1 1 5B904C22
+P 7400 950
+F 0 "#PWR029" H 7400 800 50  0001 C CNN
+F 1 "+5V" H 7400 1090 50  0000 C CNN
+F 2 "" H 7400 950 50  0001 C CNN
+F 3 "" H 7400 950 50  0001 C CNN
+	1    7400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:+5V #PWR030
+U 1 1 5B904D8B
+P 6050 2900
+F 0 "#PWR030" H 6050 2750 50  0001 C CNN
+F 1 "+5V" V 6050 3100 50  0000 C CNN
+F 2 "" H 6050 2900 50  0001 C CNN
+F 3 "" H 6050 2900 50  0001 C CNN
+	1    6050 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:+5V #PWR031
+U 1 1 5B905779
+P 8800 3400
+F 0 "#PWR031" H 8800 3250 50  0001 C CNN
+F 1 "+5V" V 8800 3600 50  0000 C CNN
+F 2 "" H 8800 3400 50  0001 C CNN
+F 3 "" H 8800 3400 50  0001 C CNN
+	1    8800 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L project:+5V #PWR032
+U 1 1 5B907A34
+P 9500 3100
+F 0 "#PWR032" H 9500 2950 50  0001 C CNN
+F 1 "+5V" H 9500 3240 50  0000 C CNN
+F 2 "" H 9500 3100 50  0001 C CNN
+F 3 "" H 9500 3100 50  0001 C CNN
+	1    9500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:+3V3 #PWR037
+U 1 1 5B9148DC
+P 1700 900
+F 0 "#PWR037" H 1700 750 50  0001 C CNN
+F 1 "+3V3" H 1700 1040 50  0000 C CNN
+F 2 "" H 1700 900 50  0001 C CNN
+F 3 "" H 1700 900 50  0001 C CNN
+	1    1700 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:LED D21
+U 1 1 5B91ACD7
+P 3200 2200
+F 0 "D21" H 3200 2300 50  0000 C CNN
+F 1 "PWR" H 3200 2100 50  0000 C CNN
+F 2 "footprints:LED_0603" H 3200 2200 50  0001 C CNN
+F 3 "" H 3200 2200 50  0001 C CNN
+	1    3200 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:R R21
+U 1 1 5B91AE4B
+P 3200 2600
+F 0 "R21" V 3280 2600 50  0000 C CNN
+F 1 "1K" V 3200 2600 50  0000 C CNN
+F 2 "footprints:R_0603" V 3130 2600 50  0001 C CNN
+F 3 "" H 3200 2600 50  0001 C CNN
+	1    3200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR038
+U 1 1 5B91AEE8
+P 3200 2850
+F 0 "#PWR038" H 3200 2600 50  0001 C CNN
+F 1 "GND" H 3200 2700 50  0000 C CNN
+F 2 "" H 3200 2850 50  0001 C CNN
+F 3 "" H 3200 2850 50  0001 C CNN
+	1    3200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:+5V #PWR039
+U 1 1 5B91AF56
+P 3200 1950
+F 0 "#PWR039" H 3200 1800 50  0001 C CNN
+F 1 "+5V" H 3200 2090 50  0000 C CNN
+F 2 "" H 3200 1950 50  0001 C CNN
+F 3 "" H 3200 1950 50  0001 C CNN
+	1    3200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:Varistor RV1
+U 1 1 5B924B9E
+P 5100 3050
+F 0 "RV1" V 5150 3250 50  0000 C CNN
+F 1 "Varistor" V 4975 3050 50  0000 C CNN
+F 2 "footprints:R_0603" V 5030 3050 50  0001 C CNN
+F 3 "" H 5100 3050 50  0001 C CNN
+	1    5100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:Varistor RV2
+U 1 1 5B924C22
+P 5350 3050
+F 0 "RV2" V 5400 3250 50  0000 C CNN
+F 1 "Varistor" V 5450 3050 50  0000 C CNN
+F 2 "footprints:R_0603" V 5280 3050 50  0001 C CNN
+F 3 "" H 5350 3050 50  0001 C CNN
+	1    5350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 1300 10150 1300
+Wire Wire Line
+	8500 1400 8800 1400
+Wire Wire Line
+	8500 1500 8800 1500
+Wire Wire Line
+	8500 1600 8800 1600
+Wire Wire Line
+	8500 1700 8800 1700
+Wire Wire Line
+	8500 1800 8800 1800
+Wire Wire Line
+	8500 1900 8800 1900
+Wire Wire Line
+	8500 2000 8800 2000
+Wire Wire Line
+	8500 2200 8800 2200
+Wire Wire Line
+	8500 2500 8800 2500
+Wire Wire Line
+	8500 2600 8800 2600
+Wire Wire Line
+	8500 2700 8800 2700
+Wire Wire Line
+	8500 2800 8800 2800
+Wire Wire Line
+	8500 2900 8800 2900
+Wire Wire Line
+	8500 3100 8800 3100
+Wire Wire Line
+	8500 3200 8800 3200
+Wire Wire Line
+	8500 3400 8800 3400
+Wire Wire Line
+	8500 3500 8800 3500
+Wire Wire Line
+	8500 3700 8800 3700
+Wire Wire Line
+	8500 3800 8800 3800
+Wire Wire Line
+	8500 3900 8800 3900
+Wire Wire Line
+	8500 4000 8800 4000
+Wire Wire Line
+	8500 4100 8800 4100
+Wire Wire Line
+	8500 4200 8800 4200
+Wire Wire Line
+	7000 4450 7250 4450
+Connection ~ 7450 4450
+Connection ~ 7350 4450
+Connection ~ 7250 4450
+Connection ~ 7300 4450
+Connection ~ 7550 1050
+Connection ~ 7300 1050
+Connection ~ 7400 1050
+Wire Wire Line
+	5950 1300 6250 1300
+Wire Wire Line
+	6050 2900 6100 2900
+Wire Wire Line
+	6100 2900 6100 3000
+Connection ~ 6100 2900
+Wire Wire Line
+	6250 3700 6050 3700
+Wire Wire Line
+	6100 2500 6250 2500
+Wire Wire Line
+	6100 2500 6100 2450
+Wire Wire Line
+	6250 2650 5950 2650
+Wire Wire Line
+	6250 2750 5950 2750
+Wire Wire Line
+	5550 1300 5500 1300
+Wire Wire Line
+	5500 1300 5500 1350
+Wire Wire Line
+	4500 3050 4600 3050
+Wire Wire Line
+	4900 2650 5100 2650
+Wire Wire Line
+	4900 2750 5350 2750
+Wire Wire Line
+	4900 2450 5600 2450
+Wire Wire Line
+	6100 2450 5900 2450
+Wire Wire Line
+	9350 3500 9350 3450
+Wire Wire Line
+	9150 3000 9150 4300
+Wire Wire Line
+	9350 4300 9350 3800
+Wire Wire Line
+	9650 3800 9650 4300
+Wire Wire Line
+	10150 1300 10150 4300
+Wire Wire Line
+	9650 3500 9650 3450
+Wire Wire Line
+	9350 3150 9500 3150
+Wire Wire Line
+	9500 3150 9500 3100
+Connection ~ 9500 3150
+Wire Wire Line
+	9150 3000 8500 3000
+Wire Wire Line
+	4600 3050 4600 3250
+Wire Wire Line
+	7400 1050 7400 950 
+Wire Wire Line
+	8500 2300 8800 2300
+Wire Wire Line
+	9150 4300 9350 4300
+Wire Wire Line
+	10150 4300 9650 4300
+Wire Wire Line
+	3200 1950 3200 2050
+Wire Wire Line
+	3200 2350 3200 2450
+Wire Wire Line
+	3200 2750 3200 2850
+Wire Wire Line
+	7200 1050 7300 1050
+Connection ~ 5100 2650
+Wire Wire Line
+	5100 2650 5100 2900
+Wire Wire Line
+	4600 3250 5100 3250
+Connection ~ 4600 3250
+Wire Wire Line
+	5350 2750 5350 2900
+Connection ~ 5350 2750
+Wire Wire Line
+	5350 3250 5350 3200
+Connection ~ 5100 3250
+Wire Wire Line
+	5100 3200 5100 3250
+$Comp
+L project:R R26
+U 1 1 5B93795F
+P 6050 1800
+F 0 "R26" H 5950 1800 50  0000 C CNN
+F 1 "1M" V 6050 1800 50  0000 C CNN
+F 2 "footprints:R_0603" V 5980 1800 50  0001 C CNN
+F 3 "" H 6050 1800 50  0001 C CNN
+	1    6050 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L project:Resonator Y1
+U 1 1 5B40C204
+P 5850 1800
+F 0 "Y1" V 5750 1900 50  0000 C CNN
+F 1 "16 Mhz" V 6050 1750 50  0000 C CNN
+F 2 "footprints:Resonator_SMD_CTSC_1.3mmx3.2mm" H 5825 1800 50  0001 C CNN
+F 3 "" H 5825 1800 50  0001 C CNN
+	1    5850 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 1800 5500 1800
+Wire Wire Line
+	5500 1800 5500 1850
+Wire Wire Line
+	5850 1950 6050 1950
+Wire Wire Line
+	6250 1950 6250 1900
+Connection ~ 6050 1950
+Wire Wire Line
+	6250 1650 6250 1700
+Wire Wire Line
+	5850 1650 6050 1650
+Connection ~ 6050 1650
+Wire Wire Line
+	7450 4450 7550 4450
+Wire Wire Line
+	7350 4450 7450 4450
+Wire Wire Line
+	7250 4450 7300 4450
+Wire Wire Line
+	7300 4450 7350 4450
+Wire Wire Line
+	7550 1050 7650 1050
+Wire Wire Line
+	7300 1050 7400 1050
+Wire Wire Line
+	7400 1050 7550 1050
+Wire Wire Line
+	6100 2900 6250 2900
+Wire Wire Line
+	9500 3150 9650 3150
+Wire Wire Line
+	5100 2650 5650 2650
+Wire Wire Line
+	4600 3250 4600 3300
+Wire Wire Line
+	5350 2750 5650 2750
+Wire Wire Line
+	5100 3250 5350 3250
+Wire Wire Line
+	6050 1950 6250 1950
+Wire Wire Line
+	6050 1650 6250 1650
+$Comp
+L Connector:AVR-ISP-6 J2
+U 1 1 636F3416
+P 4300 1350
+F 0 "J2" H 3971 1446 50  0000 R CNN
+F 1 "ISP" H 3971 1355 50  0000 R CNN
+F 2 "footprints:Pin_Header_Straight_2x03_Pitch2.54mm" V 4050 1400 50  0001 C CNN
+F 3 " ~" H 3025 800 50  0001 C CNN
+	1    4300 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR0101
+U 1 1 636F43F0
+P 4200 1750
+F 0 "#PWR0101" H 4200 1500 50  0001 C CNN
+F 1 "GND" H 4200 1600 50  0000 C CNN
+F 2 "" H 4200 1750 50  0001 C CNN
+F 3 "" H 4200 1750 50  0001 C CNN
+	1    4200 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:+5V #PWR0102
+U 1 1 636F4EDB
+P 4200 850
+F 0 "#PWR0102" H 4200 700 50  0001 C CNN
+F 1 "+5V" H 4200 990 50  0000 C CNN
+F 2 "" H 4200 850 50  0001 C CNN
+F 3 "" H 4200 850 50  0001 C CNN
+	1    4200 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1150 4900 1150
+Wire Wire Line
+	4700 1250 4900 1250
+Wire Wire Line
+	4700 1350 4900 1350
+Wire Wire Line
+	4700 1450 4900 1450
+Text Label 4700 1150 0    60   ~ 0
+MISO
+Text Label 4700 1250 0    60   ~ 0
+MOSI
+Text Label 4750 1350 0    60   ~ 0
+SCK
+Text Label 4700 1450 0    60   ~ 0
+~RESET
+Wire Wire Line
+	1700 5100 1450 5100
+Wire Wire Line
+	1700 5200 1450 5200
+Wire Wire Line
+	1700 5300 1450 5300
+Wire Wire Line
+	1700 5400 1450 5400
+Wire Wire Line
+	1700 5500 1450 5500
+Wire Wire Line
+	1700 5600 1450 5600
+Wire Wire Line
+	1700 5700 1450 5700
+Wire Wire Line
+	1700 5800 1450 5800
+Wire Wire Line
+	2200 5200 2450 5200
+Wire Wire Line
+	2200 5300 2450 5300
+Wire Wire Line
+	2200 5400 2450 5400
+Wire Wire Line
+	2200 5500 2450 5500
+Wire Wire Line
+	2200 5600 2450 5600
+Wire Wire Line
+	5000 5200 4750 5200
+Wire Wire Line
+	5500 5200 5750 5200
+$Comp
+L project:+5V #PWR0103
+U 1 1 63888C90
+P 6100 2400
+F 0 "#PWR0103" H 6100 2250 50  0001 C CNN
+F 1 "+5V" H 6100 2540 50  0000 C CNN
+F 2 "" H 6100 2400 50  0001 C CNN
+F 3 "" H 6100 2400 50  0001 C CNN
+	1    6100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2450 6100 2400
+Connection ~ 6100 2450
+$Comp
+L project:R R1
+U 1 1 6389CC0A
+P 4600 5200
+F 0 "R1" V 4650 5000 50  0000 C CNN
+F 1 "1K" V 4600 5200 50  0000 C CNN
+F 2 "footprints:R_0603" V 4530 5200 50  0001 C CNN
+F 3 "" H 4600 5200 50  0001 C CNN
+	1    4600 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:LED D11
+U 1 1 638A8DBC
+P 6350 5200
+F 0 "D11" H 6550 5150 50  0000 C CNN
+F 1 "11" H 6100 5150 50  0000 C CNN
+F 2 "footprints:LED_0603" H 6350 5200 50  0001 C CNN
+F 3 "" H 6350 5200 50  0001 C CNN
+	1    6350 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 5200 6200 5200
+Wire Wire Line
+	6500 5200 6700 5200
+$Comp
+L project:R R12
+U 1 1 638C1D39
+P 5900 5300
+F 0 "R12" V 5850 5100 50  0000 C CNN
+F 1 "1K" V 5900 5300 50  0000 C CNN
+F 2 "footprints:R_0603" V 5830 5300 50  0001 C CNN
+F 3 "" H 5900 5300 50  0001 C CNN
+	1    5900 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 5300 5750 5300
+$Comp
+L project:LED D12
+U 1 1 638C1D40
+P 6350 5300
+F 0 "D12" H 6550 5250 50  0000 C CNN
+F 1 "12" H 6100 5250 50  0000 C CNN
+F 2 "footprints:LED_0603" H 6350 5300 50  0001 C CNN
+F 3 "" H 6350 5300 50  0001 C CNN
+	1    6350 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 5300 6200 5300
+Wire Wire Line
+	6500 5300 6700 5300
+$Comp
+L project:R R13
+U 1 1 638C917A
+P 5900 5400
+F 0 "R13" V 5850 5200 50  0000 C CNN
+F 1 "1K" V 5900 5400 50  0000 C CNN
+F 2 "footprints:R_0603" V 5830 5400 50  0001 C CNN
+F 3 "" H 5900 5400 50  0001 C CNN
+	1    5900 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 5400 5750 5400
+$Comp
+L project:LED D13
+U 1 1 638C9181
+P 6350 5400
+F 0 "D13" H 6550 5350 50  0000 C CNN
+F 1 "13" H 6100 5350 50  0000 C CNN
+F 2 "footprints:LED_0603" H 6350 5400 50  0001 C CNN
+F 3 "" H 6350 5400 50  0001 C CNN
+	1    6350 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 5400 6200 5400
+Wire Wire Line
+	6500 5400 6700 5400
+$Comp
+L project:R R14
+U 1 1 638D06B6
+P 5900 5500
+F 0 "R14" V 5850 5300 50  0000 C CNN
+F 1 "1K" V 5900 5500 50  0000 C CNN
+F 2 "footprints:R_0603" V 5830 5500 50  0001 C CNN
+F 3 "" H 5900 5500 50  0001 C CNN
+	1    5900 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 5500 5750 5500
+$Comp
+L project:LED D14
+U 1 1 638D06BD
+P 6350 5500
+F 0 "D14" H 6550 5450 50  0000 C CNN
+F 1 "14" H 6100 5450 50  0000 C CNN
+F 2 "footprints:LED_0603" H 6350 5500 50  0001 C CNN
+F 3 "" H 6350 5500 50  0001 C CNN
+	1    6350 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 5500 6200 5500
+Wire Wire Line
+	6500 5500 6700 5500
+$Comp
+L project:R R15
+U 1 1 638D8183
+P 5900 5600
+F 0 "R15" V 5850 5400 50  0000 C CNN
+F 1 "1K" V 5900 5600 50  0000 C CNN
+F 2 "footprints:R_0603" V 5830 5600 50  0001 C CNN
+F 3 "" H 5900 5600 50  0001 C CNN
+	1    5900 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 5600 5750 5600
+$Comp
+L project:LED D15
+U 1 1 638D818A
+P 6350 5600
+F 0 "D15" H 6550 5550 50  0000 C CNN
+F 1 "15" H 6100 5550 50  0000 C CNN
+F 2 "footprints:LED_0603" H 6350 5600 50  0001 C CNN
+F 3 "" H 6350 5600 50  0001 C CNN
+	1    6350 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 5600 6200 5600
+Wire Wire Line
+	6500 5600 6700 5600
+$Comp
+L project:R R16
+U 1 1 638E0205
+P 5900 5700
+F 0 "R16" V 5850 5500 50  0000 C CNN
+F 1 "1K" V 5900 5700 50  0000 C CNN
+F 2 "footprints:R_0603" V 5830 5700 50  0001 C CNN
+F 3 "" H 5900 5700 50  0001 C CNN
+	1    5900 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 5700 5750 5700
+$Comp
+L project:LED D16
+U 1 1 638E020C
+P 6350 5700
+F 0 "D16" H 6550 5650 50  0000 C CNN
+F 1 "16" H 6100 5650 50  0000 C CNN
+F 2 "footprints:LED_0603" H 6350 5700 50  0001 C CNN
+F 3 "" H 6350 5700 50  0001 C CNN
+	1    6350 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 5700 6200 5700
+Wire Wire Line
+	6500 5700 6700 5700
+$Comp
+L project:R R17
+U 1 1 638E8C60
+P 5900 5800
+F 0 "R17" V 5850 5600 50  0000 C CNN
+F 1 "1K" V 5900 5800 50  0000 C CNN
+F 2 "footprints:R_0603" V 5830 5800 50  0001 C CNN
+F 3 "" H 5900 5800 50  0001 C CNN
+	1    5900 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 5800 5750 5800
+$Comp
+L project:LED D17
+U 1 1 638E8C67
+P 6350 5800
+F 0 "D17" H 6550 5750 50  0000 C CNN
+F 1 "17" H 6100 5750 50  0000 C CNN
+F 2 "footprints:LED_0603" H 6350 5800 50  0001 C CNN
+F 3 "" H 6350 5800 50  0001 C CNN
+	1    6350 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 5800 6200 5800
+Wire Wire Line
+	6500 5800 6700 5800
+$Comp
+L project:R R18
+U 1 1 638F24B6
+P 5900 5900
+F 0 "R18" V 5850 5700 50  0000 C CNN
+F 1 "1K" V 5900 5900 50  0000 C CNN
+F 2 "footprints:R_0603" V 5830 5900 50  0001 C CNN
+F 3 "" H 5900 5900 50  0001 C CNN
+	1    5900 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 5900 5750 5900
+$Comp
+L project:LED D18
+U 1 1 638F24BD
+P 6350 5900
+F 0 "D18" H 6550 5850 50  0000 C CNN
+F 1 "18" H 6100 5850 50  0000 C CNN
+F 2 "footprints:LED_0603" H 6350 5900 50  0001 C CNN
+F 3 "" H 6350 5900 50  0001 C CNN
+	1    6350 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 5900 6200 5900
+Wire Wire Line
+	6500 5900 6700 5900
+$Comp
+L project:R R19
+U 1 1 638FBA6E
+P 5900 6000
+F 0 "R19" V 5850 5800 50  0000 C CNN
+F 1 "1K" V 5900 6000 50  0000 C CNN
+F 2 "footprints:R_0603" V 5830 6000 50  0001 C CNN
+F 3 "" H 5900 6000 50  0001 C CNN
+	1    5900 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 6000 5750 6000
+$Comp
+L project:LED D19
+U 1 1 638FBA75
+P 6350 6000
+F 0 "D19" H 6550 5950 50  0000 C CNN
+F 1 "19" H 6100 5950 50  0000 C CNN
+F 2 "footprints:LED_0603" H 6350 6000 50  0001 C CNN
+F 3 "" H 6350 6000 50  0001 C CNN
+	1    6350 6000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 6000 6200 6000
+Wire Wire Line
+	6500 6000 6700 6000
+$Comp
+L project:R R20
+U 1 1 6390532C
+P 5900 6100
+F 0 "R20" V 5850 5900 50  0000 C CNN
+F 1 "1K" V 5900 6100 50  0000 C CNN
+F 2 "footprints:R_0603" V 5830 6100 50  0001 C CNN
+F 3 "" H 5900 6100 50  0001 C CNN
+	1    5900 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 6100 5750 6100
+$Comp
+L project:LED D20
+U 1 1 63905333
+P 6350 6100
+F 0 "D20" H 6550 6050 50  0000 C CNN
+F 1 "20" H 6100 6050 50  0000 C CNN
+F 2 "footprints:LED_0603" H 6350 6100 50  0001 C CNN
+F 3 "" H 6350 6100 50  0001 C CNN
+	1    6350 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 6100 6200 6100
+Wire Wire Line
+	6500 6100 6700 6100
+Wire Wire Line
+	4450 5200 4250 5200
+Wire Wire Line
+	3950 5200 3750 5200
+Wire Wire Line
+	5000 5300 4750 5300
+$Comp
+L project:R R2
+U 1 1 63945E01
+P 4600 5300
+F 0 "R2" V 4650 5100 50  0000 C CNN
+F 1 "1K" V 4600 5300 50  0000 C CNN
+F 2 "footprints:R_0603" V 4530 5300 50  0001 C CNN
+F 3 "" H 4600 5300 50  0001 C CNN
+	1    4600 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 5300 4250 5300
+Wire Wire Line
+	3950 5300 3750 5300
+Wire Wire Line
+	5000 5400 4750 5400
+$Comp
+L project:R R3
+U 1 1 6394F9D5
+P 4600 5400
+F 0 "R3" V 4650 5200 50  0000 C CNN
+F 1 "1K" V 4600 5400 50  0000 C CNN
+F 2 "footprints:R_0603" V 4530 5400 50  0001 C CNN
+F 3 "" H 4600 5400 50  0001 C CNN
+	1    4600 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:LED D3
+U 1 1 6394F9DB
+P 4100 5400
+F 0 "D3" H 4300 5450 50  0000 C CNN
+F 1 "3" H 3850 5450 50  0000 C CNN
+F 2 "footprints:LED_0603" H 4100 5400 50  0001 C CNN
+F 3 "" H 4100 5400 50  0001 C CNN
+	1    4100 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5400 4250 5400
+Wire Wire Line
+	3950 5400 3750 5400
+Wire Wire Line
+	5000 5500 4750 5500
+$Comp
+L project:R R4
+U 1 1 63959FC2
+P 4600 5500
+F 0 "R4" V 4650 5300 50  0000 C CNN
+F 1 "1K" V 4600 5500 50  0000 C CNN
+F 2 "footprints:R_0603" V 4530 5500 50  0001 C CNN
+F 3 "" H 4600 5500 50  0001 C CNN
+	1    4600 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:LED D4
+U 1 1 63959FC8
+P 4100 5500
+F 0 "D4" H 4300 5550 50  0000 C CNN
+F 1 "4" H 3850 5550 50  0000 C CNN
+F 2 "footprints:LED_0603" H 4100 5500 50  0001 C CNN
+F 3 "" H 4100 5500 50  0001 C CNN
+	1    4100 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5500 4250 5500
+Wire Wire Line
+	3950 5500 3750 5500
+Wire Wire Line
+	5000 5600 4750 5600
+$Comp
+L project:R R5
+U 1 1 63970AEE
+P 4600 5600
+F 0 "R5" V 4650 5400 50  0000 C CNN
+F 1 "1K" V 4600 5600 50  0000 C CNN
+F 2 "footprints:R_0603" V 4530 5600 50  0001 C CNN
+F 3 "" H 4600 5600 50  0001 C CNN
+	1    4600 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:LED D5
+U 1 1 63970AF4
+P 4100 5600
+F 0 "D5" H 4300 5650 50  0000 C CNN
+F 1 "5" H 3850 5650 50  0000 C CNN
+F 2 "footprints:LED_0603" H 4100 5600 50  0001 C CNN
+F 3 "" H 4100 5600 50  0001 C CNN
+	1    4100 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5600 4250 5600
+Wire Wire Line
+	3950 5600 3750 5600
+Wire Wire Line
+	5000 5700 4750 5700
+$Comp
+L project:R R6
+U 1 1 6397C287
+P 4600 5700
+F 0 "R6" V 4650 5500 50  0000 C CNN
+F 1 "1K" V 4600 5700 50  0000 C CNN
+F 2 "footprints:R_0603" V 4530 5700 50  0001 C CNN
+F 3 "" H 4600 5700 50  0001 C CNN
+	1    4600 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:LED D6
+U 1 1 6397C28D
+P 4100 5700
+F 0 "D6" H 4300 5750 50  0000 C CNN
+F 1 "6" H 3850 5750 50  0000 C CNN
+F 2 "footprints:LED_0603" H 4100 5700 50  0001 C CNN
+F 3 "" H 4100 5700 50  0001 C CNN
+	1    4100 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5700 4250 5700
+Wire Wire Line
+	3950 5700 3750 5700
+Wire Wire Line
+	5000 5800 4750 5800
+$Comp
+L project:R R7
+U 1 1 63988069
+P 4600 5800
+F 0 "R7" V 4650 5600 50  0000 C CNN
+F 1 "1K" V 4600 5800 50  0000 C CNN
+F 2 "footprints:R_0603" V 4530 5800 50  0001 C CNN
+F 3 "" H 4600 5800 50  0001 C CNN
+	1    4600 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:LED D7
+U 1 1 6398806F
+P 4100 5800
+F 0 "D7" H 4300 5850 50  0000 C CNN
+F 1 "7" H 3850 5850 50  0000 C CNN
+F 2 "footprints:LED_0603" H 4100 5800 50  0001 C CNN
+F 3 "" H 4100 5800 50  0001 C CNN
+	1    4100 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5800 4250 5800
+Wire Wire Line
+	3950 5800 3750 5800
+Wire Wire Line
+	5000 5900 4750 5900
+$Comp
+L project:R R8
+U 1 1 63994667
+P 4600 5900
+F 0 "R8" V 4650 5700 50  0000 C CNN
+F 1 "1K" V 4600 5900 50  0000 C CNN
+F 2 "footprints:R_0603" V 4530 5900 50  0001 C CNN
+F 3 "" H 4600 5900 50  0001 C CNN
+	1    4600 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:LED D8
+U 1 1 6399466D
+P 4100 5900
+F 0 "D8" H 4300 5950 50  0000 C CNN
+F 1 "8" H 3850 5950 50  0000 C CNN
+F 2 "footprints:LED_0603" H 4100 5900 50  0001 C CNN
+F 3 "" H 4100 5900 50  0001 C CNN
+	1    4100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5900 4250 5900
+Wire Wire Line
+	3950 5900 3750 5900
+Wire Wire Line
+	5000 6000 4750 6000
+$Comp
+L project:R R9
+U 1 1 639A152B
+P 4600 6000
+F 0 "R9" V 4650 5800 50  0000 C CNN
+F 1 "1K" V 4600 6000 50  0000 C CNN
+F 2 "footprints:R_0603" V 4530 6000 50  0001 C CNN
+F 3 "" H 4600 6000 50  0001 C CNN
+	1    4600 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:LED D9
+U 1 1 639A1531
+P 4100 6000
+F 0 "D9" H 4300 6050 50  0000 C CNN
+F 1 "9" H 3850 6050 50  0000 C CNN
+F 2 "footprints:LED_0603" H 4100 6000 50  0001 C CNN
+F 3 "" H 4100 6000 50  0001 C CNN
+	1    4100 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6000 4250 6000
+Wire Wire Line
+	3950 6000 3750 6000
+Wire Wire Line
+	5000 6100 4750 6100
+$Comp
+L project:R R10
+U 1 1 639AEE4A
+P 4600 6100
+F 0 "R10" V 4650 5900 50  0000 C CNN
+F 1 "1K" V 4600 6100 50  0000 C CNN
+F 2 "footprints:R_0603" V 4530 6100 50  0001 C CNN
+F 3 "" H 4600 6100 50  0001 C CNN
+	1    4600 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:LED D10
+U 1 1 639AEE50
+P 4100 6100
+F 0 "D10" H 4300 6150 50  0000 C CNN
+F 1 "10" H 3850 6150 50  0000 C CNN
+F 2 "footprints:LED_0603" H 4100 6100 50  0001 C CNN
+F 3 "" H 4100 6100 50  0001 C CNN
+	1    4100 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6100 4250 6100
+Wire Wire Line
+	3950 6100 3750 6100
+$Comp
+L project:LED D2
+U 1 1 63945E07
+P 4100 5300
+F 0 "D2" H 4300 5350 50  0000 C CNN
+F 1 "2" H 3850 5350 50  0000 C CNN
+F 2 "footprints:LED_0603" H 4100 5300 50  0001 C CNN
+F 3 "" H 4100 5300 50  0001 C CNN
+	1    4100 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:LED D1
+U 1 1 638A0660
+P 4100 5200
+F 0 "D1" H 4300 5250 50  0000 C CNN
+F 1 "1" H 3850 5250 50  0000 C CNN
+F 2 "footprints:LED_0603" H 4100 5200 50  0001 C CNN
+F 3 "" H 4100 5200 50  0001 C CNN
+	1    4100 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR0104
+U 1 1 639C003C
+P 3750 6200
+F 0 "#PWR0104" H 3750 5950 50  0001 C CNN
+F 1 "GND" H 3750 6050 50  0000 C CNN
+F 2 "" H 3750 6200 50  0001 C CNN
+F 3 "" H 3750 6200 50  0001 C CNN
+	1    3750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR0105
+U 1 1 639C06BE
+P 6700 6200
+F 0 "#PWR0105" H 6700 5950 50  0001 C CNN
+F 1 "GND" H 6700 6050 50  0000 C CNN
+F 2 "" H 6700 6200 50  0001 C CNN
+F 3 "" H 6700 6200 50  0001 C CNN
+	1    6700 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5200 3750 5300
+Wire Wire Line
+	3750 5300 3750 5400
+Connection ~ 3750 5300
+Wire Wire Line
+	3750 5400 3750 5500
+Connection ~ 3750 5400
+Wire Wire Line
+	3750 5500 3750 5600
+Connection ~ 3750 5500
+Wire Wire Line
+	3750 5600 3750 5700
+Connection ~ 3750 5600
+Wire Wire Line
+	3750 5700 3750 5800
+Connection ~ 3750 5700
+Wire Wire Line
+	3750 5800 3750 5900
+Connection ~ 3750 5800
+Wire Wire Line
+	3750 5900 3750 6000
+Connection ~ 3750 5900
+Wire Wire Line
+	3750 6000 3750 6100
+Connection ~ 3750 6000
+Wire Wire Line
+	3750 6100 3750 6200
+Connection ~ 3750 6100
+Wire Wire Line
+	6700 5200 6700 5300
+Wire Wire Line
+	6700 5300 6700 5400
+Connection ~ 6700 5300
+Wire Wire Line
+	6700 5400 6700 5500
+Connection ~ 6700 5400
+Wire Wire Line
+	6700 5500 6700 5600
+Connection ~ 6700 5500
+Wire Wire Line
+	6700 5600 6700 5700
+Connection ~ 6700 5600
+Wire Wire Line
+	6700 5700 6700 5800
+Connection ~ 6700 5700
+Wire Wire Line
+	6700 5800 6700 5900
+Connection ~ 6700 5800
+Wire Wire Line
+	6700 5900 6700 6000
+Connection ~ 6700 5900
+Wire Wire Line
+	6700 6000 6700 6100
+Connection ~ 6700 6000
+Wire Wire Line
+	6700 6100 6700 6200
+Connection ~ 6700 6100
+$Comp
+L Connector_Generic:Conn_01x01 P1
+U 1 1 63B86BE6
+P 9300 850
+F 0 "P1" V 9200 850 50  0000 L CNN
+F 1 "M3" H 9400 850 50  0000 L CNN
+F 2 "footprints:M3mount" H 9300 850 50  0001 C CNN
+F 3 "~" H 9300 850 50  0001 C CNN
+	1    9300 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P2
+U 1 1 63B87676
+P 9450 850
+F 0 "P2" V 9350 850 50  0000 L CNN
+F 1 "M3" H 9550 850 50  0000 L CNN
+F 2 "footprints:M3mount" H 9450 850 50  0001 C CNN
+F 3 "~" H 9450 850 50  0001 C CNN
+	1    9450 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P3
+U 1 1 63B878C2
+P 9600 850
+F 0 "P3" V 9500 850 50  0000 L CNN
+F 1 "M3" H 9700 850 50  0000 L CNN
+F 2 "footprints:M3mount" H 9600 850 50  0001 C CNN
+F 3 "~" H 9600 850 50  0001 C CNN
+	1    9600 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P4
+U 1 1 63B87BB6
+P 9750 850
+F 0 "P4" V 9650 850 50  0000 L CNN
+F 1 "M3" H 9850 850 50  0000 L CNN
+F 2 "footprints:M3mount" H 9750 850 50  0001 C CNN
+F 3 "~" H 9750 850 50  0001 C CNN
+	1    9750 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P5
+U 1 1 63B87E0B
+P 9900 850
+F 0 "P5" V 9800 850 50  0000 L CNN
+F 1 "Standoff" H 10000 850 50  0000 L CNN
+F 2 "footprints:M25standoff" H 9900 850 50  0001 C CNN
+F 3 "~" H 9900 850 50  0001 C CNN
+	1    9900 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P6
+U 1 1 63B880DA
+P 10050 850
+F 0 "P6" V 9950 850 50  0000 L CNN
+F 1 "Standoff" H 10150 850 50  0000 L CNN
+F 2 "footprints:M25standoff" H 10050 850 50  0001 C CNN
+F 3 "~" H 10050 850 50  0001 C CNN
+	1    10050 850 
+	0    1    1    0   
+$EndComp
+Text Label 1450 5800 0    60   ~ 0
+MISO
+Text Label 2250 6200 0    60   ~ 0
+D2_SDA
+Text Label 2250 6100 0    60   ~ 0
+D3_SCL
+Text Label 1450 5600 0    60   ~ 0
+D4
+Text Label 2300 5900 0    60   ~ 0
+D5
+Text Label 1450 5400 0    60   ~ 0
+D6
+Text Label 2300 5700 0    60   ~ 0
+D7
+Text Label 1450 5300 0    60   ~ 0
+D8
+Text Label 1450 5200 0    60   ~ 0
+D9
+Text Label 1450 5100 0    60   ~ 0
+D10
+Text Label 2300 6000 0    60   ~ 0
+D11
+Text Label 1450 5500 0    60   ~ 0
+D12
+Text Label 2300 5800 0    60   ~ 0
+D13
+Text Label 2300 5600 0    60   ~ 0
+A0
+Text Label 2300 5400 0    60   ~ 0
+A2
+Text Label 2300 5300 0    60   ~ 0
+A3
+Text Label 2300 5200 0    60   ~ 0
+A4
+Text Label 2300 5100 0    60   ~ 0
+A5
+NoConn ~ 6050 3700
+$Comp
+L Graphic:SYM_Arrow_Large CardOutline1
+U 1 1 63747108
+P 2350 7650
+F 0 "CardOutline1" H 2346 7753 50  0000 C CNN
+F 1 "SYM_Arrow_Large" H 2350 7570 50  0001 C CNN
+F 2 "footprints:MEC8-113-CARD-OUTLINE" H 2350 7650 50  0001 C CNN
+F 3 "~" H 2350 7650 50  0001 C CNN
+	1    2350 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_Arrow_Large CardOutline2
+U 1 1 63748B06
+P 2350 7850
+F 0 "CardOutline2" H 2346 7953 50  0000 C CNN
+F 1 "SYM_Arrow_Large" H 2350 7770 50  0001 C CNN
+F 2 "footprints:MEC8-113-CARD-OUTLINE" H 2350 7850 50  0001 C CNN
+F 3 "~" H 2350 7850 50  0001 C CNN
+	1    2350 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_Arrow_Large SnakeFront1
+U 1 1 6390CCB5
+P 2950 7650
+F 0 "SnakeFront1" H 2946 7753 50  0000 C CNN
+F 1 "SYM_Arrow_Large" H 2950 7570 50  0001 C CNN
+F 2 "footprints:Snake" H 2950 7650 50  0001 C CNN
+F 3 "~" H 2950 7650 50  0001 C CNN
+	1    2950 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_Arrow_Large SnakeBack1
+U 1 1 6390D071
+P 2950 7850
+F 0 "SnakeBack1" H 2946 7953 50  0000 C CNN
+F 1 "SYM_Arrow_Large" H 2950 7770 50  0001 C CNN
+F 2 "footprints:Snake" H 2950 7850 50  0001 C CNN
+F 3 "~" H 2950 7850 50  0001 C CNN
+	1    2950 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR0106
+U 1 1 63918180
+P 2600 6300
+F 0 "#PWR0106" H 2600 6050 50  0001 C CNN
+F 1 "GND" H 2600 6150 50  0000 C CNN
+F 2 "" H 2600 6300 50  0001 C CNN
+F 3 "" H 2600 6300 50  0001 C CNN
+	1    2600 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:+5V #PWR0107
+U 1 1 6391848B
+P 1450 6300
+F 0 "#PWR0107" H 1450 6150 50  0001 C CNN
+F 1 "+5V" H 1450 6440 50  0000 C CNN
+F 2 "" H 1450 6300 50  0001 C CNN
+F 3 "" H 1450 6300 50  0001 C CNN
+	1    1450 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1450 6000 1700 6000
+Text Label 1450 5900 0    60   ~ 0
+MOSI
+Wire Wire Line
+	1450 5900 1700 5900
+Wire Wire Line
+	2200 5700 2450 5700
+Wire Wire Line
+	2200 5800 2450 5800
+$Comp
+L Graphic:SYM_Arrow_Large MadeWithKiCAD1
+U 1 1 63AF2EFE
+P 3500 7650
+F 0 "MadeWithKiCAD1" H 3496 7753 50  0000 C CNN
+F 1 "SYM_Arrow_Large" H 3500 7570 50  0001 C CNN
+F 2 "footprints:KiCad-Logo2_8mm_SilkScreen" H 3500 7650 50  0001 C CNN
+F 3 "~" H 3500 7650 50  0001 C CNN
+	1    3500 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_Arrow_Large OSHW1
+U 1 1 63AF328A
+P 3500 7850
+F 0 "OSHW1" H 3496 7953 50  0000 C CNN
+F 1 "SYM_Arrow_Large" H 3500 7770 50  0001 C CNN
+F 2 "footprints:OSHW-Logo_11.4x12mm_SilkScreen" H 3500 7850 50  0001 C CNN
+F 3 "~" H 3500 7850 50  0001 C CNN
+	1    3500 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_Arrow_Large MadeInOregon1
+U 1 1 63AF35D1
+P 4000 7850
+F 0 "MadeInOregon1" H 3996 7953 50  0000 C CNN
+F 1 "SYM_Arrow_Large" H 4000 7770 50  0001 C CNN
+F 2 "footprints:MadeInOregonRev25" H 4000 7850 50  0001 C CNN
+F 3 "~" H 4000 7850 50  0001 C CNN
+	1    4000 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x13_Top_Bottom X1
+U 1 1 63791FF3
+P 1900 5700
+F 0 "X1" H 1950 6517 50  0000 C CNN
+F 1 "MEC8-113" H 1950 6426 50  0000 C CNN
+F 2 "footprints:SAMTEC_MEC8-113-TOP-BOTTOM" H 1900 5700 50  0001 C CNN
+F 3 "~" H 1900 5700 50  0001 C CNN
+	1    1900 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6100 1450 6100
+Wire Wire Line
+	2200 5900 2450 5900
+Wire Wire Line
+	2200 6000 2450 6000
+Wire Wire Line
+	2200 6300 2600 6300
+Text Label 1450 5700 0    60   ~ 0
+D1
+Text Label 1450 6000 0    60   ~ 0
+SCK
+Text Label 1450 6100 0    60   ~ 0
+~RESET
+$Comp
+L Connector_Generic:Conn_02x13_Top_Bottom X2
+U 1 1 6383987D
+P 5200 5800
+F 0 "X2" H 5250 6617 50  0000 C CNN
+F 1 "MEC8-113" H 5250 6526 50  0000 C CNN
+F 2 "footprints:SAMTEC_MEC8-113-TOP-BOTTOM" H 5200 5800 50  0001 C CNN
+F 3 "~" H 5200 5800 50  0001 C CNN
+	1    5200 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 6200 4700 6200
+Wire Wire Line
+	5000 6300 4800 6300
+Wire Wire Line
+	5500 6200 5800 6200
+$Comp
+L project:GND #PWR0108
+U 1 1 638B0CDF
+P 5700 6500
+F 0 "#PWR0108" H 5700 6250 50  0001 C CNN
+F 1 "GND" H 5700 6350 50  0000 C CNN
+F 2 "" H 5700 6500 50  0001 C CNN
+F 3 "" H 5700 6500 50  0001 C CNN
+	1    5700 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:+5V #PWR0109
+U 1 1 638B134C
+P 4700 6400
+F 0 "#PWR0109" H 4700 6250 50  0001 C CNN
+F 1 "+5V" H 4700 6540 50  0000 C CNN
+F 2 "" H 4700 6400 50  0001 C CNN
+F 3 "" H 4700 6400 50  0001 C CNN
+	1    4700 6400
+	0    -1   -1   0   
+$EndComp
+Text Label 4700 6200 0    60   ~ 0
+~RESET
+Text Label 2300 5500 0    60   ~ 0
+A1
+Wire Wire Line
+	2200 5100 2450 5100
+Wire Wire Line
+	5500 6300 5800 6300
+Wire Wire Line
+	5000 6400 4700 6400
+Text Label 5500 6200 0    60   ~ 0
+D3_SCL
+Text Label 5500 6300 0    60   ~ 0
+D2_SDA
+Wire Wire Line
+	5700 6400 5500 6400
+Wire Wire Line
+	5700 6400 5700 6500
+$Comp
+L project:SW_Push SW2
+U 1 1 63C32EBE
+P 2750 2350
+F 0 "SW2" H 2800 2450 50  0000 L CNN
+F 1 "SCK" H 2750 2290 50  0000 C CNN
+F 2 "footprints:SW_TS10-63-26-BE-250-SMT-TR" H 2750 2550 50  0001 C CNN
+F 3 "" H 2750 2550 50  0001 C CNN
+	1    2750 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L project:GND #PWR0111
+U 1 1 63C33BCD
+P 2750 2800
+F 0 "#PWR0111" H 2750 2550 50  0001 C CNN
+F 1 "GND" H 2750 2650 50  0000 C CNN
+F 2 "" H 2750 2800 50  0001 C CNN
+F 3 "" H 2750 2800 50  0001 C CNN
+	1    2750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2800 2750 2550
+Wire Wire Line
+	2750 2150 2750 1900
+Wire Wire Line
+	2750 1900 2950 1900
+Text Label 2800 1900 0    60   ~ 0
+D0
+$Comp
+L project:R R28
+U 1 1 63C57C78
+P 2700 6100
+F 0 "R28" V 2750 5900 50  0000 C CNN
+F 1 "4K7" V 2700 6100 50  0000 C CNN
+F 2 "footprints:R_0603" V 2630 6100 50  0001 C CNN
+F 3 "" H 2700 6100 50  0001 C CNN
+	1    2700 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:R R29
+U 1 1 63C58743
+P 2700 6200
+F 0 "R29" V 2750 6000 50  0000 C CNN
+F 1 "4K7" V 2700 6200 50  0000 C CNN
+F 2 "footprints:R_0603" V 2630 6200 50  0001 C CNN
+F 3 "" H 2700 6200 50  0001 C CNN
+	1    2700 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project:+5V #PWR0112
+U 1 1 63C588C4
+P 3000 6000
+F 0 "#PWR0112" H 3000 5850 50  0001 C CNN
+F 1 "+5V" H 3000 6140 50  0000 C CNN
+F 2 "" H 3000 6000 50  0001 C CNN
+F 3 "" H 3000 6000 50  0001 C CNN
+	1    3000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6200 1700 6200
+Wire Wire Line
+	1450 6300 1700 6300
+Wire Wire Line
+	3400 3550 3200 3550
+Text Label 3200 3550 0    60   ~ 0
+D13
+$Comp
+L project:+5V #PWR0113
+U 1 1 63D02304
+P 2050 3400
+F 0 "#PWR0113" H 2050 3250 50  0001 C CNN
+F 1 "+5V" H 2050 3540 50  0000 C CNN
+F 2 "" H 2050 3400 50  0001 C CNN
+F 3 "" H 2050 3400 50  0001 C CNN
+	1    2050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:GND #PWR0114
+U 1 1 63D02EDA
+P 3400 3750
+F 0 "#PWR0114" H 3400 3500 50  0001 C CNN
+F 1 "GND" H 3400 3600 50  0000 C CNN
+F 2 "" H 3400 3750 50  0001 C CNN
+F 3 "" H 3400 3750 50  0001 C CNN
+	1    3400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L IN-PI33TBTPRPGPB:IN-PI33TBTPRPGPB LED1
+U 1 1 63D19A79
+P 2100 3550
+F 0 "LED1" H 2650 3700 50  0000 C CNN
+F 1 "IN-PI33TBTPRPGPB" H 2650 3300 50  0000 C CNN
+F 2 "footprints:INPI33TBTPRPGPB" H 3050 3650 50  0001 L CNN
+F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Addressable%20LED/IN-PI33TBTPRPGPB_v1.2.pdf" H 3050 3550 50  0001 L CNN
+F 4 "Standard LEDs - SMD Top View / PLCC / 3.5 x 3.5 x 1.95 / 4-pin / Tricolor with IC" H 3050 3450 50  0001 L CNN "Description"
+F 5 "1.95" H 3050 3350 50  0001 L CNN "Height"
+F 6 "743-IN-PI33TBTPRPGPB" H 3050 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Inolux/IN-PI33TBTPRPGPB?qs=mAH9sUMRCtvvGOFLJ4nPDQ%3D%3D" H 3050 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Inolux" H 3050 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "IN-PI33TBTPRPGPB" H 3050 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2100 3550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2100 3650
+Wire Wire Line
+	2100 3550 2050 3550
+Wire Wire Line
+	2050 3550 2050 3400
+Wire Wire Line
+	3200 3650 3400 3650
+Wire Wire Line
+	3400 3650 3400 3750
+Text Notes 2150 4150 0    60   ~ 0
+This is not the same\npinout as Adafruit NeoPixel!
+Wire Wire Line
+	2850 6200 3000 6200
+Wire Wire Line
+	3000 6200 3000 6100
+Wire Wire Line
+	2850 6100 3000 6100
+Connection ~ 3000 6100
+Wire Wire Line
+	3000 6100 3000 6000
+Wire Wire Line
+	2200 6200 2550 6200
+Wire Wire Line
+	2200 6100 2550 6100
+Wire Wire Line
+	1450 6300 1450 6200
+Connection ~ 1450 6300
+$Comp
+L project:GND #PWR?
+U 1 1 63F8BC64
+P 4800 6300
+F 0 "#PWR?" H 4800 6050 50  0001 C CNN
+F 1 "GND" H 4800 6150 50  0000 C CNN
+F 2 "" H 4800 6300 50  0001 C CNN
+F 3 "" H 4800 6300 50  0001 C CNN
+	1    4800 6300
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,281 @@
+65230863743328
+footprints
+Beetje_Bottom
+Through hole straight pin header, 1x06, 2.54mm pitch, single row
+Through hole pin header THT 1x06 2.54mm single row
+0
+6
+6
+footprints
+Beetje_Top
+Through hole straight pin header, 1x08, 2.54mm pitch, single row
+Through hole pin header THT 1x08 2.54mm single row
+0
+8
+8
+footprints
+C_0603
+Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)
+capacitor 0603
+0
+2
+2
+footprints
+C_0805
+Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)
+capacitor 0805
+0
+2
+2
+footprints
+D_SOD-123F
+D_SOD-123F
+D_SOD-123F
+0
+2
+2
+footprints
+EVQ-P7A
+CK components KMR2 tactile switch http://www.ckswitches.com/media/1479/kmr2.pdf
+tactile switch kmr2
+0
+4
+2
+footprints
+JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled
+http://www.jst-mfg.com/product/pdf/eng/eSH.pdf
+connector jst sh
+0
+4
+2
+footprints
+JUMPER_NC_0603
+Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 0603
+0
+3
+1
+footprints
+Jumper
+
+
+0
+2
+2
+footprints
+KiCad-Logo2_8mm_SilkScreen
+KiCad Logo
+Logo KiCad
+0
+0
+0
+footprints
+LED_0402_1005Metric
+LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+LED
+0
+2
+2
+footprints
+LED_0603
+LED 0603 smd package
+LED led 0603 SMD smd SMT smt smdled SMDLED smtled SMTLED
+0
+2
+2
+footprints
+LED_0805_2012Metric
+LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+LED
+0
+2
+2
+footprints
+LED_1206_3216Metric
+LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+LED
+0
+2
+2
+footprints
+LIS3DH
+
+
+0
+16
+16
+footprints
+MSOP-10_3x3mm_Pitch0.5mm
+10-Lead Plastic Micro Small Outline Package (MS) [MSOP] (see Microchip Packaging Specification 00000049BS.pdf)
+SSOP 0.5
+0
+10
+10
+footprints
+MadeInOregonRev25
+
+
+0
+0
+0
+footprints
+Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical
+Molex PicoBlade Connector System, 53047-0210, 2 Pins per row (http://www.molex.com/pdm_docs/sd/530470610_sd.pdf), generated with kicad-footprint-generator
+connector Molex PicoBlade side entry
+0
+2
+2
+footprints
+Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal
+Molex PicoBlade Connector System, 53048-0210, 2 Pins per row (http://www.molex.com/pdm_docs/sd/530480210_sd.pdf), generated with kicad-footprint-generator
+connector Molex PicoBlade top entry
+0
+2
+2
+footprints
+NPTH
+wire loop as test point, loop diameter 3.8mm, hole diameter 2.8mm
+test point wire loop bead
+0
+0
+0
+footprints
+Pin_Header_Straight_1x05_Pitch2.54mm
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
+footprints
+Pin_Header_Straight_1x06_Pitch2.54mm
+Through hole straight pin header, 1x06, 2.54mm pitch, single row
+Through hole pin header THT 1x06 2.54mm single row
+0
+6
+6
+footprints
+Pin_Header_Straight_1x08_Pitch2.54mm
+Through hole straight pin header, 1x08, 2.54mm pitch, single row
+Through hole pin header THT 1x08 2.54mm single row
+0
+8
+8
+footprints
+Pin_Header_Straight_1x14_Pitch2.54mm
+Through hole straight pin header, 1x14, 2.54mm pitch, single row
+Through hole pin header THT 1x14 2.54mm single row
+0
+14
+14
+footprints
+Pin_Header_Straight_2x03_Pitch2.54mm
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+6
+6
+footprints
+Pin_holder
+solder Pin_ diameter 1.0mm, hole diameter 1.0mm (press fit), length 10.0mm
+solder Pin_ press fit
+0
+1
+1
+footprints
+R_0402_1005Metric
+Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+footprints
+R_0603
+Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 0603
+0
+2
+2
+footprints
+R_1206
+Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 1206
+0
+2
+2
+footprints
+Resonator_SMD_CTSC_1.3mmx3.2mm
+SMD Resomator/Filter Murata TPSKA, http://cdn-reichelt.de/documents/datenblatt/B400/SFECV-107.pdf, hand-soldering, 7.9x3.8mm^2 package
+SMD SMT ceramic resonator filter filter hand-soldering
+0
+3
+3
+footprints
+SOT-23-5
+5-pin SOT23 package
+SOT-23-5
+0
+5
+5
+footprints
+SPST_SMD
+Through hole pin header
+pin header
+0
+3
+3
+footprints
+ST_HLGA-10_2.5x2.5mm_P0.6mm_LayoutBorder3x2y
+
+
+0
+10
+10
+footprints
+SW_SPST_KMR2
+CK components KMR2 tactile switch http://www.ckswitches.com/media/1479/kmr2.pdf
+tactile switch kmr2
+0
+4
+2
+footprints
+TQFP-44_10x10mm_Pitch0.8mm
+44-Lead Plastic Thin Quad Flatpack (PT) - 10x10x1.0 mm Body [TQFP] (see Microchip Packaging Specification 00000049BS.pdf)
+QFP 0.8
+0
+44
+44
+footprints
+TSOP-5_1.65x3.05mm_Pitch0.95mm
+TSOP-5 package (comparable to TSOT-23), https://www.vishay.com/docs/71200/71200.pdf
+Jedec MO-193C TSOP-5L
+0
+5
+5
+footprints
+TestPoint_Pad_D1.0mm
+SMD pad as test Point, diameter 1.0mm
+test point SMD pad
+0
+1
+1
+footprints
+UDPI_header
+Through hole straight pin header, 1x04, 2.00mm pitch, single row
+Through hole pin header THT 1x04 2.00mm single row
+0
+4
+4
+footprints
+USB_Micro-B_Molex-105017-0001
+http://www.molex.com/pdm_docs/sd/1050170001_sd.pdf
+Micro-USB SMD Typ-B
+0
+13
+6
+footprints
+VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm
+VQFN, 20 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/20%20Lead%20VQFN%203x3x0_9mm_1_7EP%20U2B%20C04-21496a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VQFN NoLead
+0
+25
+21

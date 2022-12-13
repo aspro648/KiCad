@@ -16,17 +16,21 @@ Bill Of Materials
 - 23 ea., R1-R23 Resistor 1K OHM SMD 0603, Stackpole RNCP0603FTD1K00, https://www.digikey.com/short/704h9hfn
 - 2 ea., R24, R25 Resistor 22 OHM SMD 0603, Yageo RC0603JR-0722RL, https://www.digikey.com/short/93jrm3t2
 - 1 ea., R26 Resistor 1M OHM SMD 0603 Yageo RC0603JR-071ML, https://www.digikey.com/short/z0jnrwbq
-- 1 ea., SW1 SWITCH TACTILE SPST-NO 0.05A 12V, Wurth 434121025816, https://www.digikey.com/short/qbm0p0c9
+- 2 ea., SW1 SWITCH TACTILE SPST-NO 0.05A 12V, Wurth 434121025816, https://www.digikey.com/short/qbm0p0c9
 - 1 ea., J1 CONN RCPT MICRO USB R/A SMD, Molex 1050170001, https://www.digikey.com/short/jb2205
 - 2 ea., X1, X2 CONN EDGE DUAL FMALE 20POS, Samtek MEC8-110-02-L-D-RA1, https://www.digikey.com/short/f4rv8cjm
 - 2 ea., ROUND STANDOFF M2.5 STEEL 2.7MM, Wurth 9774027151R, https://www.digikey.com/short/47zwt3m4
 - 2 ea., M2.5x6 pan-head phillips screw
-- 2 ea., JP1, JP2 CONN HEADER R/A 2POS 1.27MM, Samtek TMS-102-02-G-S-RA, https://www.digikey.com/short/3nj9qf7w
-- 2 ea., CONN JUMPER SHORTING 1.27MM GOLD, Sullins NPB02SVAN-RC, https://www.digikey.com/short/37zj2f7v
+- 2 ea., Resistor 4K7 OHM SMD 0603
 
-PCB Main $25.50/3 = $8.50
-PCB Cards $7.85/3
-Parts $34.37
+- 1 ea., 3535 RGB LED,  IN-PI33TBTPRPGPB https://www.digikey.com/short/qf2t8bqj
+
+Card:
+10K
+24LC32AT-I/MC, https://www.digikey.com/short/r3f225vm
+- 2 ea., M2.5 thumbscrew https://www.mcmaster.com/99607A263/
+https://www.amazon.com/M2-5x6mm-Knurled-Screws-Stainless-Metric/dp/B01NBH813V
+
 
 License
 ----------------

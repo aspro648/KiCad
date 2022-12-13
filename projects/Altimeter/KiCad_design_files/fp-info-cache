@@ -1,0 +1,190 @@
+45047064106163
+footprints
+Jumper
+
+
+0
+2
+2
+footprints
+KiCad-Logo2_8mm_SilkScreen
+KiCad Logo
+Logo KiCad
+0
+0
+0
+footprints
+LED_0603
+LED 0603 smd package
+LED led 0603 SMD smd SMT smt smdled SMDLED smtled SMTLED
+0
+2
+2
+footprints
+LED_0805_HandSoldering
+Resistor SMD 0805, hand soldering
+resistor 0805
+0
+2
+2
+footprints
+M25standoff
+Single banana socket, footprint - 6mm drill
+banana socket
+0
+1
+1
+footprints
+MEC8-110-XX-XX-D-RA1
+0.8mm RIGHT ANGLE EDGE CARD ASSEMBLY.
+
+0
+20
+20
+footprints
+MEC8-113-CARD
+
+
+0
+26
+26
+footprints
+MEC8-113-CARD_2
+
+
+0
+26
+26
+footprints
+MEC8-113-CARD_2outline
+
+
+0
+0
+0
+footprints
+MEC8_card
+0.8mm RIGHT ANGLE EDGE CARD ASSEMBLY.
+
+0
+20
+20
+footprints
+MEC8_top_bottom
+0.8mm RIGHT ANGLE EDGE CARD ASSEMBLY.
+
+0
+20
+20
+footprints
+MadeInOregonRev25
+
+
+0
+0
+0
+footprints
+OSHW-Logo_5.7x6mm_SilkScreen
+Open Source Hardware Logo
+Logo OSHW
+0
+0
+0
+footprints
+PinHeader_1x06_P2.54mm_Vertical
+Through hole straight pin header, 1x06, 2.54mm pitch, single row
+Through hole pin header THT 1x06 2.54mm single row
+0
+6
+6
+footprints
+PinHeader_1x10_P2.54mm_Vertical
+Through hole straight pin header, 1x10, 2.54mm pitch, single row
+Through hole pin header THT 1x10 2.54mm single row
+0
+10
+10
+footprints
+Pin_Header_Straight_1x05_Pitch2.54mm
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
+footprints
+Pin_Header_Straight_1x06_Pitch2.54mm
+Through hole straight pin header, 1x06, 2.54mm pitch, single row
+Through hole pin header THT 1x06 2.54mm single row
+0
+6
+6
+footprints
+Pin_Header_Straight_1x08_Pitch2.54mm
+Through hole straight pin header, 1x08, 2.54mm pitch, single row
+Through hole pin header THT 1x08 2.54mm single row
+0
+8
+8
+footprints
+Pin_Header_Straight_1x14_Pitch2.54mm
+Through hole straight pin header, 1x14, 2.54mm pitch, single row
+Through hole pin header THT 1x14 2.54mm single row
+0
+14
+14
+footprints
+Pin_Header_Straight_2x03_Pitch2.54mm
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+6
+6
+footprints
+R_0603
+Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 0603
+0
+2
+2
+footprints
+R_0805_HandSoldering
+Resistor SMD 0805, hand soldering
+resistor 0805
+0
+2
+2
+footprints
+R_1206
+Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 1206
+0
+2
+2
+footprints
+R_1206_HandSoldering
+Resistor SMD 1206, hand soldering
+resistor 1206
+0
+2
+2
+footprints
+SAMTEC_MEC6-110-02-L-D-RA1-TR
+
+
+0
+20
+20
+footprints
+SAMTEC_MEC8-113-02-X-D-RA1
+
+
+0
+26
+26
+footprints
+SAMTEC_MEC8-113-TOP-BOTTOM
+
+
+0
+26
+26

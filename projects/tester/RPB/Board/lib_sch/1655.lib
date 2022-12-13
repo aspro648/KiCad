@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 1655
+#
+DEF 1655 D 0 40 Y Y 1 L N
+F0 "D" -400 350 50 H V L BNN
+F1 "1655" -400 -350 50 H V L BNN
+F2 "LED_1655" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "1.6 mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F5 "01" 0 0 50 H I L BNN "PARTREV"
+F6 "Adafruit Industries" 0 0 50 H I L BNN "MANUFACTURER"
+F7 "Manufacturer recommendations" 0 0 50 H I L BNN "STANDARD"
+DRAW
+S -400 -300 400 300 0 0 10 f
+X DIN 2 -600 0 200 R 40 40 0 0 I 
+X DOUT 4 600 0 200 L 40 40 0 0 O 
+X VDD 3 600 200 200 L 40 40 0 0 W 
+X VSS 1 600 -200 200 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library
